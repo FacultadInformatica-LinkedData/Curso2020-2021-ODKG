@@ -1,5 +1,5 @@
-Course 2020-2021
-================
+Course 2020-2021 (Open Data and Knowledge Graphs)
+=================================================
 
 This is the repository that we will use for our collaborative work and for uploading all the assignments for our course.
 
