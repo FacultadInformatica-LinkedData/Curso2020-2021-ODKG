@@ -1,7 +1,1 @@
-Joel Ramirez Moreno; TMPLR11; Malware Detection PE-Based Analysis Using Deep Learning Algorithm Dataset; https://figshare.com/articles/Malware_Detection_PE-Based_Analysis_Using_Deep_Learning_Algorithm_Dataset/6635642/1;
-Dataset contains 8970 malware and 1000 benign binaries files. Malware files which are divided into 5 types: 
-Locker (300), Mediyes (1450), Winwebsec (4400), Zbot (2100), Zeroaccess (690).
-All of malware files are collected from https://virusshare.com/ and malicia-project.com.
-Benign excutable files are taken from installed folders of applications of legitimate software from different categories.
-They can be downloaded in https://download.cnet.com/windows/.
-All of files are verified by VirusTotal (https://www.virustotal.com) to make sure each file belong to their type.
+Your name; Your GitHub user; Dataset name; Dataset URL; Dataset brief description; Joel Ramirez Moreno; TMPLR11; Malware Detection PE-Based Analysis Using Deep Learning Algorithm Dataset; https://figshare.com/articles/Malware_Detection_PE-Based_Analysis_Using_Deep_Learning_Algorithm_Dataset/6635642/1 ;Dataset contains 8970 malware and 1000 benign binaries files divided in 5 types.;
