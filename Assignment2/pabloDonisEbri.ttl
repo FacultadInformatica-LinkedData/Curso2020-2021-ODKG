@@ -1,7 +1,7 @@
 
 @base <http://www.example.com/personalAssigment2>.
 @prefix : <http://www.example.com/personalAssigment2#>.
-@prefix rel <http://www.example.com/personalAssigment2/properties>.
+@prefix rel: <http://www.example.com/personalAssigment2/properties>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
 
