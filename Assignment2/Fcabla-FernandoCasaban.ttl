@@ -1,0 +1,24 @@
+
+@base <http://www.exampleElements.net/odkg/classes/ >.
+@prefix sensors:<http://www.exampleElements.net/odkg/sensors/>.
+@prefix measures:<http://www.exampleElements.net/odkg/measures/>.
+@prefix computers:<http://www.exampleElements.net/odkg/computers/>.
+@prefix users:<http://www.exampleElements.net/odkg/users/>.
+
+@prefix cl: <http://www.example1.org/odkg/classes#>.
+@prefix se: <http://www.example1.org/odkg/classes/sensors#>.
+@prefix me: <http://www.example1.org/odkg/classes/measures#>.
+@prefix co: <http://www.example1.org/odkg/classes/computers#>.
+@prefix us: <http://www.example1.org/odkg/classes/computers/users#>.
+
+:Class01 			cl:includes 		sensors:Sensor029;
+         			cl:includes 		computers:Computer101.
+                          
+sensors:Sensor029		e:hasMeasurement	measures:Measurement8401.
+
+measures:Measurement8401	me:hasTemperature 	29;
+                          	me:atTime		"2010-06-12T12:00:12"^^xsd:dateTime.
+                          
+computers:Computer101		co:hasOwner		users:User10A.
+
+users:User10A			us:hasName		"Pedro".
