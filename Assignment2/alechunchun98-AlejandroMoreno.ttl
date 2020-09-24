@@ -1,0 +1,22 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix Includes: <http://example.org/#Includes>.
+@prefix hasMeaurement: <http://example.org/#hasMeaurement>.
+@prefix hasTemperature: <http://example.org/#hasTemperature>.
+@prefix atTime: <http://example.org/#atTime>.
+@prefix hasOwner: <http://example.org/#hasOwner>.
+@prefix hasName: <http://example.org/#hasName>.
+@prefix : <http://example.org/#> .
+
+:Class01 Includes: :Sensor029;
+         Includes: :Computer101.
+
+:Sensor029 hasMeaurement: :Measurement8401.
+
+:Measurement8401 hasTemperature: 28;
+                 atTime: "2010-06-12T12:00:12"^^xsd:datetime.
+
+:Computer101 hasOwner: :User10A.
+
+:User10A hasName: "Pedro".
+
+
