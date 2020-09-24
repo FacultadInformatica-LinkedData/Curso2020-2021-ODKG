@@ -1,8 +1,7 @@
-
-@base <http://www.example.com/personalAssigment2>.
-@prefix : <http://www.example.com/personalAssigment2#>.
-@prefix rel: <http://www.example.com/personalAssigment2/properties>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+  
+@prefix : <http://www.example.com/Assgiment2/>.
+@prefix rel: <http://www.example.com/Assigment2/properties/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 
 :Class01 rel:includes :Sensor029;
@@ -11,7 +10,8 @@
 :Sensor  rel:hasMeasurement :Measurement8401.
 
 :Measurement8401 rel:hasTemperature 29;
-				 rel:atTime "2010-06-12T 12:00:12"^^xsd:dateTimeStamp.
+                                rel:atTime "2010-06-12T12:00:12"^^xsd:datetime.
+				 
 
 :Computer101 rel:hasOwner :User10A.
 
