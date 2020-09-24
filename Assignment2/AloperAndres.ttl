@@ -1,0 +1,29 @@
+@base <http://www.exampleA2.org/ODKG/class/ > .
+@prefix sensor: <http://www.exampleA2.org/sensor/ > .
+@prefix computer: <http://exampleA2.org/computer/ > .
+@prefix measurement: <http://exampleA2.org/measurement/ > .
+@prefix user: <http://exampleA2.org/user/ > .
+
+#Contents of the folders
+@prefix class: <http://www.exampleA2.org/ODKG/class# > .
+@prefix snsr: <http://www.exampleA2.org/sensor# > .
+@prefix cmptr: <http://exampleA2.org/computer# > .
+@prefix msrmnt: <http://exampleA2.org/measurement# > .
+@prefix userp: <http://exampleA2.org/user# > .
+
+:Class01 class:includes sensor:Sensor029 ;
+	 class.includes computer:Computer101;
+.
+
+sensors:Sensor029	snsr:HasMeasurement	measurement:Measurement8401;
+.
+
+measures:Measurement8401	msrmnt:HasTemperature	"29"^^xsd:byte;
+	msrmnt:atTime	"2010-06-12T12:00:12"^^xsd:dateTime;
+.
+
+computer:Computer101	cmptr:hasOwner	user:User10A;
+.
+
+user:User10A	userp.hasName	"Pedro";
+.
