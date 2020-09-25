@@ -25,5 +25,5 @@ measures:Measurement8401	msrmnt:HasTemperature	"29"^^xsd:byte;
 computer:Computer101	cmptr:hasOwner	user:User10A;
 .
 
-user:User10A	userp.hasName	"Pedro";
+user:User10A	userp:hasName	"Pedro";
 .
