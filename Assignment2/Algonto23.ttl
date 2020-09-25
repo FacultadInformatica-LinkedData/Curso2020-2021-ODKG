@@ -3,6 +3,7 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix schema: <http://schema.org/> .
 @prefix : <http://example.org/#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 :Class01 :includes :Sensor029;
          :includes :Computer101.
@@ -14,4 +15,4 @@
 :Sensor029 :hasMeasurement :Measurement8401.
 
 :Measurement8401 :hasTemperature 29;
-                 :atTime "2010-06-12T12:00:12".
+                 :atTime "2010-06-12T12:00:12"^^xsd:dateTime.
