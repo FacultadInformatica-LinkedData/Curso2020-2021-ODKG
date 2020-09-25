@@ -1,5 +1,6 @@
-@prefix rdf : <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
 @prefix : <http://example.org/#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>  . 
+
 
 <class01> <includes> <Sensor029>, <Computer101> .
 
@@ -10,4 +11,4 @@
 
 <Sensor029> <hasMeasurment> <Measurment8401> .
 
-<User10A> <hasName> <Pedro> .
+<User10A> <hasName> "Pedro"^^xsd:string .
