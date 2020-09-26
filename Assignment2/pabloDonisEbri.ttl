@@ -15,7 +15,7 @@
 
 :Computer101 rel:hasOwner :User10A.
 
-:User10A rel:hasName "Pedro"^^xsd:string
+:User10A rel:hasName "Pedro"
 
 
 
