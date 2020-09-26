@@ -11,11 +11,11 @@
 :Sensor  rel:hasMeasurement :Measurement8401.
 
 :Measurement8401 rel:hasTemperature 29;
-				 rel:atTime "2010-06-12T 12:00:12"^^xsd:dateTimeStamp.
+				 rel:atTime "2010-06-12T 12:00:12"^^xsd:dateTime.
 
 :Computer101 rel:hasOwner :User10A.
 
-:User10A rel:hasName :Pedro
+:User10A rel:hasName "Pedro"^^xsd:string
 
 
 
