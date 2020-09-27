@@ -1,60 +1,51 @@
-## Assignment 3 - SPARQL queries
-# Hugo Enrile Lacalle
-# SPARQL Endpoint: http://dbpedia.org/snorql/
-
 1. Get all the properties that can be applied to instances of the Politician class (<http://dbpedia.org/ontology/Politician>)
 
 PREFIX ex: <http://dbpedia.org/ontology/>
 
-SELECT DISTINCT ?p 
+SELECT DISTINCT ?prop 
 WHERE{
-  ?x a ex:Politician. ?x ?p ?y
+  ?x a ex:Politician. ?x ?prop ?y
 } 
-LIMIT 100
 
 2. Get all the properties, except rdf:type, that can be applied to instances of the Politician class
 
 PREFIX ex: <http://dbpedia.org/ontology/>
 
-SELECT DISTINCT ?p 
+SELECT DISTINCT ?prop 
 WHERE{
-  ?x a ex:Politician. ?x ?p ?y
-  FILTER (?p != rdf:type)
-} 
-LIMIT 100
+  ?x a ex:Politician. ?x ?prop ?y
+  FILTER (?prop != rdf:type)
+}
 
 3. Which different values exist for the properties, except for rdf:type, applicable to the instances of Politician?
 
 PREFIX ex: <http://dbpedia.org/ontology/>
 
-SELECT DISTINCT ?v
+SELECT DISTINCT ?value 
 WHERE{
-  ?x a ex:Politician. ?x ?p ?v 
-  FILTER (?p != rdf:type)
-} 
-LIMIT 100
+  ?x a ex:Politician. ?x ?prop ?y
+  FILTER (?prop != rdf:type)
+  ?value ?prop ?x
+}
 
 4. For each of these applicable properties, except for rdf:type, which different values do they take globally for all those instances?
 
 PREFIX ex: <http://dbpedia.org/ontology/>
 
-SELECT DISTINCT ?p ?v
+SELECT DISTINCT ?value ?prop
 WHERE{
-  ?x a ex:Politician. ?x ?p ?v 
-  FILTER (?p != rdf:type)
-} 
-LIMIT 100
+  ?x a ex:Politician. ?x ?prop ?y
+  FILTER (?prop != rdf:type)
+  ?value ?prop ?x
+}
 
 5. For each of the properties, except rdf:type, that can be applied to instances of the Politician class, how many distinct values do they take in those instances?
 
 PREFIX ex: <http://dbpedia.org/ontology/>
-
-SELECT DISTINCT ?p COUNT(?v)
+SELECT DISTINCT ?prop COUNT (DISTINCT ?value)
 WHERE{
-  ?x a ex:Politician. ?x ?p ?v 
-  FILTER (?p != rdf:type)
-} 
-LIMIT 100
-
-
+  ?x a ex:Politician. ?x ?prop ?y
+  FILTER (?prop != rdf:type)
+  ?value ?prop ?x
+}
 
