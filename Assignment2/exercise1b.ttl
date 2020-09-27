@@ -1,0 +1,22 @@
+# exercise 1.b.
+# Maria Sol Dominguez Carnuccio
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@base <http://dbpedia.org/resource/> .
+
+<Class01> dbo:includes <Sensor029> ,
+					   <Commputer101> ;
+
+<Sensor029> dbo:hasMeasurement <Measurement8401> .
+
+<Measurement8401> dbo:hasTemperature 29 ;
+				 dbo:atTime	"2010-06-12T12:00:12"^^xsd:dateTime .
+
+<Computer101> dbo:hasOwner <User10A> .
+
+<User10A> dbo:hasName "Pedro" .
+
+
+
+
