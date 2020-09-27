@@ -1,0 +1,26 @@
+1:Get all the properties that can be applied to instances of the Politician class (<http://dbpedia.org/ontology/Politician>)
+
+PREFIX ex: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?prop
+WHERE{
+    ?x rdf:type ex:Politician.
+    ?x ?prop ?o
+}
+
+2:Get all the properties, except rdf:type, that can be applied to instances of the Politician class
+
+PREFIX ex: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?prop
+WHERE{
+    ?x rdf:type ex:Politician.
+    ?x ?prop ?o FILTER (?prop != rdf:type)
+}
+
+3:Which different values exist for the properties, except for rdf:type, applicable to the instances of Politician?
+
+PREFIX ex: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?o
+WHERE{
+    ?x rdf:type ex:Politician.
+    ?x ?prop ?o FILTER (?prop != rdf:type)
+}
