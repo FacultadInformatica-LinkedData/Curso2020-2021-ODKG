@@ -1,0 +1,187 @@
+-----------------Question 1-----------------
+SELECT DISTINCT ?class
+
+ WHERE
+
+ {
+
+   {?x a ?class} #all the classes that have instances
+
+   UNION
+
+   {?class rdf:type rdfs:Class}
+
+ }
+
+-----------------Question 2-----------------
+PREFIX ex: <http://GP-onto.fi.upm.es/exercise2#>
+ 
+SELECT DISTINCT ?x
+
+ WHERE
+
+ {
+
+ ?x rdfs:subClassOf/rdfs:subClassof* ex:Establishment
+
+ } LIMIT 100
+ 
+-----------------Question 3------------------
+PREFIX ex: <http://GP-onto.fi.upm.es/exercise2#>
+ 
+SELECT DISTINCT ?x
+
+ WHERE
+
+ {
+
+ ?x a ex:City #a=rdf:type 
+
+ } LIMIT 100
+ 
+-----------------Question 4------------------
+PREFIX ex: <http://GP-onto.fi.upm.es/exercise2#>
+
+ SELECT DISTINCT ?x
+ WHERE
+
+ {
+
+   ex:Santiago_de_Compostela ex:hasInhabitantNumber ?x
+ }
+
+ LIMIT 100
+ 
+-----------------Question 5-----------------
+PREFIX ex: <http://GP-onto.fi.upm.es/exercise2#>
+
+ SELECT DISTINCT ?x ?y
+ WHERE
+
+ {
+
+   ex:Santiago_de_Compostela ex:hasInhabitantNumber ?x.
+   ex:Arzua ex:hasInhabitantNumber ?y
+ }
+
+ LIMIT 100
+----------------Question 6-----------------
+ PREFIX ex: <http://GP-onto.fi.upm.es/exercise2#>
+
+ SELECT DISTINCT ?x ?name ?y
+ WHERE
+{
+	?x ex:hasInhabitantNumber ?y.
+	?x rdfs:label ?name
+}
+ORDER BY ?y desc (?name)
+
+ LIMIT 100
+ 
+--------------Question 7-----------------
+ PREFIX ex: <http://GP-onto.fi.upm.es/exercise2#>
+
+ SELECT DISTINCT ?x ?y
+ WHERE
+{
+	?x rdf:type/rdfs:subClassOf* ex:Locality .
+	OPTIONAL{?x ex:hasInhabitantNumber ?y.}
+}
+
+
+ LIMIT 100
+--------------Question 8-----------------
+ PREFIX ex: <http://GP-onto.fi.upm.es/exercise2#>
+
+ SELECT DISTINCT ?x ?y
+ WHERE
+{
+	?x rdf:type/rdfs:subClassOf* ex:Locality .
+	OPTIONAL
+	{
+		?x ex:hasInhabitantNumber ?y.
+		
+	}
+	FILTER (?y > 200000)
+}
+
+
+ LIMIT 100
+--------------Question 9-----------------
+ PREFIX ex: <http://GP-onto.fi.upm.es/exercise2#>
+
+ SELECT DISTINCT ?address ?street ?number ?locality ?province
+ WHERE 
+{
+    ex:Pazo_Breogan ex:hasAddress ?address .
+	?address  ex:hasStreet ?street.
+    ?address   ex:hasNumber ?number.
+    ex:Pazo_Breogan  ex:isPlacedIn ?locality.
+    ?locality  ex:inProvince ?province.
+
+}
+
+
+ LIMIT 100
+
+--------------Question 10-----------------
+ PREFIX ex: <http://GP-onto.fi.upm.es/exercise2#>
+
+ SELECT DISTINCT ?class
+ WHERE 
+{
+    ?class rdfs:subClassOf/rdfs:subClassof* ex:Location
+
+}
+
+
+ LIMIT 100
+
+--------------Question 11-----------------
+PREFIX ex: <http://GP-onto.fi.upm.es/exercise2#>
+ 
+SELECT DISTINCT ?x
+
+ WHERE
+
+ {
+
+ ?x a/rdfs:subClassOf* ex:Locality.
+
+ } LIMIT 100
+ 
+ --------------Question 12-----------------
+PREFIX ex: <http://GP-onto.fi.upm.es/exercise2#>
+
+DESCRIBE ?x
+WHERE
+{
+
+ ?x rdfs:label ex:Madrid.
+
+} 
+LIMIT 100
+
+ --------------Question 13-----------------
+PREFIX ex: <http://GP-onto.fi.upm.es/exercise2#>
+
+CONSTRUCT {?Place ex:isIn ?Province }
+
+ WHERE
+
+ {
+?Place rdfs:subClassOf ex:TouristicLocation.
+?Location rdf:type ?Place .
+?Location ex:isPlacedIn ?Locality.
+?Locality ex:inProvince ?Province.
+ } LIMIT 100
+ 
+  --------------Question 14-----------------
+PREFIX ex: <http://GP-onto.fi.upm.es/exercise2#>
+
+ASK {?x rdf:type ex:Town}
+
+  --------------Question 15-----------------
+PREFIX ex: <http://GP-onto.fi.upm.es/exercise2#>
+
+ASK {?x rdf:type ex:Chapel}
