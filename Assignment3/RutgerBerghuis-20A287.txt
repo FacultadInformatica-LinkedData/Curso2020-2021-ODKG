@@ -48,4 +48,3 @@ WHERE{
   FILTER (?prop != rdf:type)
   ?value ?prop ?x
 }
-
