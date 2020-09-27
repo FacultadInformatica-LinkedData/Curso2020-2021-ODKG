@@ -1,4 +1,4 @@
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix : <http://example.org/#> .
 
 :Class01 
@@ -11,7 +11,7 @@
 .
 
 :Measurement8401
-  :atTime "2010-06-12T 12:00:12"^^rdfs:dateTimeStamp;
+  :atTime "2010-06-12T 12:00:12"^^xsd:dateTimeStamp;
   :hasTemperature 29
 .
 
