@@ -35,10 +35,11 @@ This is the normal process that you will have to follow in order to interact wit
 For example, I (my Github username is 'ocorcho') would upload the following file :
 * ocorcho-OscarCorcho.ttl (Exercise 1.b in Turtle).
 
-**Assignment 3 - SPARQL**. Upload the SPARQL queries after completing the completing the tasks mentioned in the slides. Before uploading the files create a folder with your **YourGitHubID-StudentID** (e.g., Assignment3/dchaves-u120106/) in [Assignment3](./Assignment3/) folder.
+**Assignment 3 - SPARQL**. Upload the SPARQL queries after completing the completing the tasks mentioned in the slides. Before uploading the files create a folder with your **YourGitHubID-StudentID** (e.g., Assignment4/dchaves-u120106/) in [Assignment3](./Assignment3/) folder.
+
+**Assignment 4 - Exercise on RDFLib**. Upload the .py or .ipynb files Task06 and Task07 after completing the tasks 6.x and 7.x mentioned in those files. Before uploading the files create a folder with your **YourGitHubID-StudentID** (e.g., Assignment4/dchaves-u120106/) in [Assignment4](./Assignment4/) folder.
 
 **The following set of instructions will be updated as we progress during the course**
 
-**Assignment 4 - Exercise on RDFLib**. Upload the .py or .ipynb files Task06 and Task07 after completing the tasks 6.x and 7.x mentioned in those files. Before uploading the files create a folder with your **YourGitHubID-StudentID** (e.g., Assignment3/dchaves-u120106/) in [Assignment4](./Assignment4/) folder.
 
 
