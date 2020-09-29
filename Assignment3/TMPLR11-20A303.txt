@@ -1,0 +1,53 @@
+1- Get all the properties that can be applied to instances of the Politician class (<http://dbpedia.org/ontology/Politician>)
+
+PREFIX ex: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?p 
+WHERE{
+  ?x a ex:Politician. ?x ?p ?y
+} 
+LIMIT 100
+
+2- Get all the properties, except rdf:type, that can be applied to instances of the Politician class
+
+PREFIX ex: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?p 
+WHERE{
+  ?x a ex:Politician. ?x ?p ?y
+  FILTER (?p != rdf:type)
+} 
+LIMIT 100
+
+3- Which different values exist for the properties, except for rdf:type, applicable to the instances of Politician?
+
+PREFIX ex: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?v
+WHERE{
+  ?x a ex:Politician. ?x ?p ?v 
+  FILTER (?p != rdf:type)
+} 
+LIMIT 100
+
+4- For each of these applicable properties, except for rdf:type, which different values do they take globally for all those instances?
+
+PREFIX ex: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?p ?v
+WHERE{
+  ?x a ex:Politician. ?x ?p ?v 
+  FILTER (?p != rdf:type)
+} 
+LIMIT 100
+
+5- For each of the properties, except rdf:type, that can be applied to instances of the Politician class, how many distinct values do they take in those instances?
+
+PREFIX ex: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?p COUNT(?v)
+WHERE{
+  ?x a ex:Politician. ?x ?p ?v 
+  FILTER (?p != rdf:type)
+} 
+LIMIT 100
