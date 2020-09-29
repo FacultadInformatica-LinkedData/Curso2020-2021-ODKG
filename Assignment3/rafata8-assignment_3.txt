@@ -1,0 +1,81 @@
+####assignment 3
+# Rafael Timermans Díez
+
+--------------------------------     1    ------------------------
+PREFIX pol: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?y
+WHERE
+{
+  ?y rdfs:domain pol:Politician
+}
+LIMIT 100
+
+
+### its not recursive so i guess that the query only gives me the results that only the politician has, 
+###but not more general liker person
+
+#easier one would be this, but its only the instances, not all the posibilities
+
+PREFIX pol: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?x
+WHERE
+{
+  ?y a pol:Politician.
+  ?y ?x ?z
+}
+LIMIT 100
+
+
+-----------------------------------    2        ----------------------------------
+
+
+PREFIX pol: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?x
+WHERE
+{
+  ?y a pol:Politician.
+  ?y ?x ?z.
+  FILTER (?x != rdf:type)
+}
+LIMIT 100
+
+
+
+----------------------------------- 3   -------------------------------------
+PREFIX pol: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?val
+WHERE
+{
+  ?x a pol:Politician.
+  ?x ?y ?val.
+  FILTER (?y != rdf:type)
+}
+LIMIT 100
+
+
+
+-----------------------------------   4    --------------------------------------
+PREFIX pol: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?prop ?val
+WHERE
+{
+  ?x a pol:Politician.
+  ?x ?prop ?val.
+  FILTER (?prop != rdf:type)
+}
+LIMIT 100
+
+
+
+
+-----------------------------    5      ----------------------------
+PREFIX pol: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?prop COUNT( DISTINCT ?val)
+WHERE
+{
+  ?x a pol:Politician.
+  ?x ?prop ?val.
+  FILTER (?prop != rdf:type)
+}
+LIMIT 100
+
