@@ -1,0 +1,28 @@
+@prefix rep:<foaf:http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rel: <http://www.perceive.net/schemas/20031015/relationship/> .
+
+rep:Agent rdf:type rdfs:Class .
+rep:Person rdfs:subClassOf rep:Agent .
+
+<Vegeta> rdf:type rep:Person;
+           rep:name "Vegeta";
+           rep:aimChatID "SayansPrince";
+	   rep:gender "male";
+.
+
+<Karot>  rdf:type rep:Person;
+       rep:name "Son Goku";
+       rep:gender "male";
+.
+
+<Freezer>  rdf:type rep:Person;
+         rep:name "Freezer";
+	 rep:gender "unknown";
+.
+
+<Freezer> rel:enemyOf <Karot>;
+        rel:enemyOf <Vegeta>;
+.
+
