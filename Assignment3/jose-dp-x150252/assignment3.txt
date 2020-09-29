@@ -1,0 +1,53 @@
+1)
+
+PREFIX pre: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?prop
+WHERE
+{
+  ?pol a/rdfs:subClassOf* pre:Politician .
+  ?pol ?prop ?x
+}
+
+2)
+
+PREFIX pre: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?prop
+WHERE
+{
+  ?pol a/rdfs:subClassOf* pre:Politician .
+  ?pol ?prop ?x .
+  FILTER (?prop != rdf:type) .
+}
+
+3)
+
+PREFIX pre: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?val
+WHERE
+{
+  ?pol a/rdfs:subClassOf* pre:Politician .
+  ?pol ?prop ?val .
+  FILTER (?prop != rdf:type) .
+}
+
+4)
+
+PREFIX pre: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?prop ?val
+WHERE
+{
+  ?pol a/rdfs:subClassOf* pre:Politician .
+  ?pol ?prop ?val .
+  FILTER (?prop != rdf:type) .
+}
+
+5)
+
+PREFIX pre: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?prop COUNT(DISTINCT ?val)
+WHERE
+{
+  ?pol a/rdfs:subClassOf* pre:Politician .
+  ?pol ?prop ?val .
+  FILTER (?prop != rdf:type) .
+}
