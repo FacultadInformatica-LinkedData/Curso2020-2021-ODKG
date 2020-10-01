@@ -1,0 +1,60 @@
+Create the SPARQL query and the result for the following queries expressed in natural language. The endpoint that you can use for this exercise is: http://es.dbpedia.org/sparql
+
+1-Get all the properties that can be applied to instances of the Politician class (<http://dbpedia.org/ontology/Politician>)
+
+PREFIX : <http://dbpedia.org/ontology/>
+
+
+SELECT DISTINCT ?prop
+WHERE{
+   ?x a/rdfs:subClassOf* :Politician.
+   ?x ?prop ?z.
+}LIMIT 1000
+
+2-Get all the properties, except rdf:type, that can be applied to instances of the Politician class
+
+PREFIX : <http://dbpedia.org/ontology/>
+
+
+SELECT DISTINCT ?prop
+WHERE{
+   ?x a/rdfs:subClassOf* :Politician.
+   ?x ?prop ?z.
+FILTER (?prop != rdf:type)
+}LIMIT 1000
+
+3-Which different values exist for the properties, except for rdf:type, applicable to the instances of Politician?
+
+PREFIX : <http://dbpedia.org/ontology/>
+
+
+SELECT DISTINCT ?z
+WHERE{
+   ?x a/rdfs:subClassOf* :Politician.
+   ?x ?prop ?z.
+FILTER (?prop != rdf:type)
+}LIMIT 1000
+
+4-For each of these applicable properties, except for rdf:type, which different values do they take globally for all those instances?
+
+PREFIX : <http://dbpedia.org/ontology/>
+
+
+SELECT DISTINCT ?z ?prop
+WHERE{
+   ?x a/rdfs:subClassOf* :Politician.
+   ?x ?prop ?z.
+FILTER (?prop != rdf:type)
+}LIMIT 1000
+
+5-For each of these applicable properties, except for rdf:type, how many distinct values do they take globally for all those instances?
+
+PREFIX : <http://dbpedia.org/ontology/>
+
+
+SELECT DISTINCT COUNT( DISTINCT ?prop) ?z
+WHERE{
+   ?x a/rdfs:subClassOf* :Politician.
+   ?x ?prop ?z.
+FILTER (?prop != rdf:type)
+}LIMIT 1000
