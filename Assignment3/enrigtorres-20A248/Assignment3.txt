@@ -37,7 +37,7 @@ WHERE{
 5.For each of these applicable properties, except for rdf:type, how many distinct values do they take globally for all those instances?
 
 PREFIX ex: <http://dbpedia.org/ontology/>
-SELECT DISTINCT COUNT(?o)
+SELECT DISTINCT ?prop COUNT(?o)
 WHERE{
     ?x rdf:type ex:Politician.
     ?x ?prop ?o FILTER (?prop != rdf:type)
