@@ -1,0 +1,18 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix : <http://ex.org/#> .
+@prefix people: <http://www.ex/people#> .
+@prefix computer: <http://www.ex/computers#> .
+@prefix measure: <http://www.ex/measure#> .
+@prefix class: <http://www.ex/class#> .
+@prefix sensor: <http://www.ex/sensor#> .
+@prefix user: <http://www.ex/people/user#> .
+
+
+class:Class01 class:includes sensor:Sensor029;
+class:includes computer:Computer101.
+sensor:Sensor029 sensor:hasMeasurement measure:Measurement8401.
+measure:Measurement8401 measure:hasTemperature 29;
+ measure:atTime "2010-06-12T 12:00:12".
+computer:Computer101 computer:hasOwner user:User10A.
+user:User10A user:hasName "Pedro".
