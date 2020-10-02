@@ -1,0 +1,78 @@
+AUTHOR: ANA MARÍN ESTAÑ
+________________________________________
+
+1. Get all the properties that can be applied to instances of the Politician class (<http://dbpedia.org/ontology/Politician>)
+
+PREFIX DBpedia: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?p 
+WHERE {
+	?s a DBpedia:Politician.
+	?s ?p ?o
+}
+
+https://es.dbpedia.org/sparql?default-graph-uri=&query=PREFIX+DBpedia%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0ASELECT+DISTINCT+%3Fp+%0D%0A%0D%0AWHERE+%7B%0D%0A%3Fs+a+DBpedia%3APolitician.%0D%0A%3Fs+%3Fp+%3Fo%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+
+________________________________________
+
+2. Get all the properties, except rdf:type, that can be applied to instances of the Politician class
+
+PREFIX DBpedia: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?p 
+WHERE {
+	?s a DBpedia:Politician.
+	?s ?p ?o.
+	MINUS {
+		?s a ?o
+	}
+}
+
+https://es.dbpedia.org/sparql?default-graph-uri=&query=PREFIX+DBpedia%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0ASELECT+DISTINCT+%3Fp+%0D%0A%0D%0AWHERE+%7B%0D%0A%0D%0A%3Fs+a+DBpedia%3APolitician.%0D%0A%3Fs+%3Fp+%3Fo.%0D%0A%0D%0AMINUS+%7B%0D%0A%3Fs+a+%3Fo%0D%0A%0D%0A%7D%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+________________________________________
+
+3. Which different values exist for the properties, except for rdf:type, applicable to the instances of Politician?
+
+PREFIX DBpedia: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?o 
+
+WHERE {
+	?s a DBpedia:Politician.
+	?s ?p ?o.
+	MINUS {
+		?s a ?o
+	}
+}
+
+https://es.dbpedia.org/sparql?default-graph-uri=&query=PREFIX+DBpedia%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0ASELECT+DISTINCT+%3Fo+%0D%0A%0D%0AWHERE+%7B%0D%0A%09%3Fs+a+DBpedia%3APolitician.%0D%0A%09%3Fs+%3Fp+%3Fo.%0D%0A%09MINUS+%7B%0D%0A%09%09%3Fs+a+%3Fo%0D%0A%09%7D%0D%0A%7D%0D%0A&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+________________________________________
+
+4. For each of these applicable properties, except for rdf:type, which different values do they take globally for all those instances?
+
+PREFIX DBpedia: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?p ?o 
+
+WHERE {
+	?s a DBpedia:Politician.
+	?s ?p ?o.
+	MINUS {
+		?s a ?o
+	}
+}
+
+https://es.dbpedia.org/sparql?default-graph-uri=&query=PREFIX+DBpedia%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0ASELECT+DISTINCT+%3Fp+%3Fo+%0D%0A%0D%0AWHERE+%7B%0D%0A%09%3Fs+a+DBpedia%3APolitician.%0D%0A%09%3Fs+%3Fp+%3Fo.%0D%0A%09MINUS+%7B%0D%0A%09%09%3Fs+a+%3Fo%0D%0A%09%7D%0D%0A%7D%0D%0A&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+________________________________________
+
+5. For each of these applicable properties, except for rdf:type, how many distinct values do they take globally for all those instances?
+
+PREFIX DBpedia: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?p AS ?property (COUNT(?o) as ?num_values)
+WHERE {
+	?s a DBpedia:Politician.
+	?s ?p ?o
+	MINUS {
+		?s a ?o
+	}
+}
+
+https://es.dbpedia.org/sparql?default-graph-uri=&query=PREFIX+DBpedia%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0ASELECT+DISTINCT+%3Fp+AS+%3Fproperty+%28COUNT%28%3Fo%29+as+%3Fnum_values%29%0D%0AWHERE+%7B%0D%0A%09%3Fs+a+DBpedia%3APolitician.%0D%0A%09%3Fs+%3Fp+%3Fo%0D%0A%09MINUS+%7B%0D%0A%09%09%3Fs+a+%3Fo%0D%0A%09%7D%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+

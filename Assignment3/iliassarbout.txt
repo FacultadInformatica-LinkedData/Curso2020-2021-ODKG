@@ -1,0 +1,71 @@
+1. Get all the properties that can be applied to instances of the Politician class (<http://dbpedia.org/ontology/Politician>)
+
+PREFIX ex: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?prop
+WHERE{
+{
+?z a/rdfs:subClassOf/rdfs:subClassOf*  ex:Politician.
+?x ?prop ?z
+}
+UNION{
+?prop  rdfs:range ?z #there might be properties applicable but not instancied. But it looks like rdfs is not updated because the part after UNION replies with no answer.
+}
+} LIMIT 100
+
+
+
+
+2. Get all the properties, except rdf:type, that can be applied to instances of the Politician class.
+
+PREFIX ex: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?prop
+WHERE{
+?z a/rdfs:subClassOf/rdfs:subClassOf*  ex:Politician . #instances of the Politician class
+?x ?prop ?z .                                            #the property is applied to an instance.
+FILTER(?prop != rdf:type)
+}
+
+3. Which different values exist for the properties, except for rdf:type, applicable to the instances of Politician?
+
+
+PREFIX ex: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?z
+WHERE{
+?z a/rdfs:subClassOf/rdfs:subClassOf*  ex:Politician . #instances of the Politician class
+?x ?prop ?z .                                          #the property is applied to an instance and we get the instances.
+FILTER(?prop != rdf:type)                              #except rdf:type
+}
+
+
+4. For each of these applicable properties, except for rdf:type, which different values do they take globally for all those instances?
+
+PREFIX ex: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?value
+WHERE{
+?z a/rdfs:subClassOf/rdfs:subClassOf*  ex:Politician . #instances of the Politician class
+?x ?prop ?z .                                          #the property is applied to an instance.
+FILTER(?prop != rdf:type)                              #except rdf:type
+?y ?prop ?value                                        #values taken by those properties
+}
+
+
+5. For each of these applicable properties, except for rdf:type, how many distinct values do they take globally for all those instances?
+
+
+PREFIX ex: <http://dbpedia.org/ontology/>
+
+
+SELECT DISTINCT COUNT(?value)
+WHERE{
+?z a/rdfs:subClassOf/rdfs:subClassOf*  ex:Politician . #instances of the Politician class
+?x ?prop ?z .                                          #the property is applied to an instance.
+FILTER(?prop != rdf:type)                              #except rdf:type
+?y ?prop ?value                                        #values taken by those properties
+}
+
+Answer : 690831000
+
