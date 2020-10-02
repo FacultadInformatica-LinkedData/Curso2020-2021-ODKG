@@ -21,7 +21,7 @@ WHERE
 
 3. Which different values exist for the properties, except rdf:type, of the instances of the Politician class?
 
-SELECT DISTINCT ?p
+SELECT DISTINCT ?z
 WHERE 
 {
   ?x a <http://dbpedia.org/ontology/Politician>.
