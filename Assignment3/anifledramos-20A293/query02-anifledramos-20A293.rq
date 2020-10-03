@@ -1,3 +1,5 @@
+PREFIX dbo: <http://dbpedia.org/ontology/>
+
 SELECT DISTINCT ?property
 WHERE 
 {

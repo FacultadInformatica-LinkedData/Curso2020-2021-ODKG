@@ -1,3 +1,5 @@
+PREFIX dbo: <http://dbpedia.org/ontology/>
+
 SELECT DISTINCT ?property COUNT (DISTINCT ?value) as ?value_count
 WHERE 
 {
