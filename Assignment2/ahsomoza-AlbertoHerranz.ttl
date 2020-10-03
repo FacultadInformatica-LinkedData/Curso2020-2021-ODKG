@@ -1,0 +1,14 @@
+@prefix : <http://ahsomoza.example#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Class01  :includes :Sensor029;
+          :includes :Computer101.
+          
+:User10A  :hasName  :Pedro.
+
+:Measurement8401  :hastemperature 29;
+                  :atTime "2010-06-12T12:00:12"^^xsd:dateTime .
+                  
+:Sensor029  :hasMeasurement :Measurement8401
+
+:Computer101  :hasOwner :User10A
