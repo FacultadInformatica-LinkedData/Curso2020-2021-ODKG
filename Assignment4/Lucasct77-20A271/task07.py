@@ -20,29 +20,31 @@ from rdflib.plugins.sparql import prepareQuery
 g = Graph()
 g.namespace_manager.bind('ns', Namespace("http://somewhere#"), override=False)
 g.namespace_manager.bind('vcard', Namespace("http://www.w3.org/2001/vcard-rdf/3.0#"), override=False)
-g.parse(github_storage+"/resources/example6.rdf", format="xml")
+g.parse(github_storage + "/resources/example6.rdf", format="xml")
 
 ns = Namespace("http://somewhere#")
 
 for a, b, c in g:
-  print(a, b, c)
+    print(a, b, c)
 
 """**TASK 7.1: List all subclasses of "Person" with RDFLib and SPARQL**"""
 for a, b, c in g.triples((None, RDFS.subClassOf, ns.Person)):
-  print(a)
+    print(a)
+    for a2, b2, c2 in g.triples((None, RDFS.subClassOf, a)):
+        print(a2)
 
 q1 = prepareQuery('''
   SELECT 
     ?sclass
   WHERE { 
-    ?sclass rdfs:subClassOf ns:Person. 
+    ?sclass rdfs:subClassOf/rdfs:subClassOf* ns:Person. 
   }
   ''',
-  initNs = { "ns": ns}
-)
+                  initNs={"ns": ns}
+                  )
 
-for a, b, c in g.query(q1):
-  print(a)
+for a, in g.query(q1):
+    print(a)
 
 """**TASK 7.2: List all individuals of "Person" with RDFLib and SPARQL (remember the subClasses)**"""
 
@@ -60,7 +62,7 @@ q2 = prepareQuery('''
       }
     ''',
                   initNs={"ns": ns}
-  )
+                  )
 
 for a in g.query(q2):
     print(a)
@@ -76,7 +78,7 @@ q3 = prepareQuery('''
       }
     ''',
                   initNs={"ns": ns}
-  )
+                  )
 
 for a in g.query(q3):
     print(a)

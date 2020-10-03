@@ -27,6 +27,7 @@ g2.parse(github_storage+"resources/data02.rdf", format="xml")
 g1.namespace_manager.bind('ns', Namespace("http://data.org#"), override=False)
 g2.namespace_manager.bind('ns', Namespace("http://data.org#"), override=False)
 ns = Namespace("http://data.org#")
+vcard = Namespace("http://www.w3.org/2001/vcard-rdf/3.0#")
 
 for a, b, c in g1:
     print(a, b, c)
@@ -34,13 +35,18 @@ for a, b, c in g1:
 print(g1.serialize(format="turtle").decode("UTF-8"))
 
 for a, b, c in g1.triples((None, RDF.type, ns.Person)):
-    print(a, b, c)
+    email = g1.value(subject=a, predicate=vcard.EMAIL)
+    family = g1.value(subject=a, predicate=vcard.Family)
+    given = g1.value(subject=a, predicate=vcard.Given)
 
-for a, b, c in g2:
-    print(a, b, c)
+    email2 = g2.value(subject=a, predicate=vcard.EMAIL)
+    family2 = g2.value(subject=a, predicate=vcard.Family)
+    given2 = g2.value(subject=a, predicate=vcard.Given)
+    if not email and email2:
+        g1.add((a, vcard.EMAIL, email2))
+    if not family and family2:
+        g1.add((a, vcard.Family, family2))
+    if not given and given2:
+        g1.add((a, vcard.Given, given2))
 
-
-# Both graphs have the same individuals, so we can combine them into 1
-g = g1 + g2
-
-print(g.serialize(format="turtle").decode("UTF-8"))
+print(g1.serialize(format="turtle").decode("UTF-8"))
