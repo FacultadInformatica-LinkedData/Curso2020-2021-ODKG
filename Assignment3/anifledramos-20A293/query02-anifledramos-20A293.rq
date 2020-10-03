@@ -1,0 +1,8 @@
+SELECT DISTINCT ?property
+WHERE 
+{
+	?x rdf:type dbo:Politician.
+	?x ?property ?y
+	FILTER (?property != rdf:type)
+}
+LIMIT 100

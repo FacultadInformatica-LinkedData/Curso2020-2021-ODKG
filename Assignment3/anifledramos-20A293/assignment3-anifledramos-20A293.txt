@@ -1,0 +1,57 @@
+### Assignment 3 - María Delfina Ramos Vidal
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+
+## 1. Get all the properties that can be applied to instances of the Politician class (<http://dbpedia.org/ontology/Politician>)
+
+SELECT DISTINCT ?property
+WHERE 
+{
+	?x rdf:type dbo:Politician.
+	?x ?property ?y
+} 
+LIMIT 100
+
+## 2. Get all the properties, except rdf:type, that can be applied to instances of the Politician class
+
+SELECT DISTINCT ?property
+WHERE 
+{
+	?x rdf:type dbo:Politician.
+	?x ?property ?y
+	FILTER (?property != rdf:type)
+}
+LIMIT 100
+
+## 3. Which different values exist for the properties, except for rdf:type, applicable to the instances of Politician?
+
+SELECT DISTINCT ?value
+WHERE 
+{
+	?x rdf:type dbo:Politician.
+	?x ?property ?value
+	FILTER (?property != rdf:type)
+}
+LIMIT 100
+
+## 4. For each of these applicable properties, except for rdf:type, which different values do they take globally for all those instances?
+
+SELECT DISTINCT ?property ?value
+WHERE 
+{
+	?x rdf:type dbo:Politician.
+	?x ?property ?value
+	FILTER (?property != rdf:type)
+}
+LIMIT 100
+
+## 5. For each of these applicable properties, except for rdf:type, how many distinct values do they take globally for all those instances?
+
+SELECT DISTINCT ?property COUNT (DISTINCT ?value) as ?value_count
+WHERE 
+{
+	?x rdf:type dbo:Politician.
+	?x ?property ?value
+	FILTER (?property != rdf:type)
+}
+LIMIT 100
