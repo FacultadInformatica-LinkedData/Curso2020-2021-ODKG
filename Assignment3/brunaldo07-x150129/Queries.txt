@@ -1,0 +1,78 @@
+Open Data and Knowledge Graphs - Ejercicio SPARQL: Advanced Queries
+Bruno Díez Buitrago 
+
+////////////////////////////////////////////////////////////////////////////
+
+
+1. 
+PREFIX ex: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?y
+ WHERE
+ {
+   {
+   ?x a ex:Politician.
+   ?x ?y ?z
+   }
+ UNION
+  {?class rdf:type ex:Politician}
+ }
+
+LIMIT 100
+
+////////////////////////////////////////////////////////////////////////////
+
+2. 
+PREFIX ex: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?y
+ WHERE
+ {
+   {
+   ?x a ex:Politician.
+   ?x ?y ?z
+   }
+ UNION
+  {?class rdf:type ex:Politician}
+FILTER (?y != rdf:type)
+ }
+
+LIMIT 100
+
+////////////////////////////////////////////////////////////////////////////
+
+3.
+PREFIX ex: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?z
+ WHERE
+ {
+   ?x a ex:Politician.
+   ?x ?y ?z
+FILTER (?y != rdf:type)
+ }
+LIMIT 100
+ 
+
+////////////////////////////////////////////////////////////////////////////
+
+4.
+PREFIX ex: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?z
+ WHERE
+ {
+   ?x a ex:Politician.
+   ?x ?y ?z
+FILTER (?y != rdf:type)
+ }
+LIMIT 100
+
+
+////////////////////////////////////////////////////////////////////////////
+
+5.
+PREFIX ex: <http://dbpedia.org/ontology/>
+SELECT DISTINCT COUNT(?z)
+ WHERE
+ {
+   ?x a ex:Politician.
+   ?x ?y ?z.
+FILTER (?y != rdf:type)
+ }
