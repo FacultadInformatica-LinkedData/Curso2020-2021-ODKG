@@ -8,4 +8,4 @@ This is the directory where Group XX uploads their materials related to the hand
 * Name: María Delfina Ramos Vidal, Github username: anifledramos
 * Name: Yuzhi Wu, Github username: yusi118
 * Name: Thibaulut Debard, Github username: thibdeba
-* Name: Yuxue Liang, Github username: 
+* Name: Yuxue Liang, Github username: yuxue-liang
