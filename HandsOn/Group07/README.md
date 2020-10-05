@@ -1,7 +1,7 @@
 Hands-on assignment
 ==================
 
-This is the directory where Group XX uploads their materials related to the hands-on.
+This is the directory where Group 07 uploads their materials related to the hands-on.
 
 # Members of the group
 
