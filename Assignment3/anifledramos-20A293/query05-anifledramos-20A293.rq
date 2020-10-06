@@ -1,0 +1,10 @@
+PREFIX dbo: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?property COUNT (DISTINCT ?value) as ?value_count
+WHERE 
+{
+	?x rdf:type dbo:Politician.
+	?x ?property ?value
+	FILTER (?property != rdf:type)
+}
+LIMIT 100
