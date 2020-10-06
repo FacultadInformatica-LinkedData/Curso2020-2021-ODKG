@@ -1,0 +1,47 @@
+1. Get all the properties that can be applied to instances of the Politician class (<http://dbpedia.org/ontology/Politician>)
+
+SELECT DISTINCT ?properties 
+WHERE {
+?x a <http://dbpedia.org/ontology/Politician>.
+?x ?properties ?y
+}
+
+
+2. Get all the properties, except rdf:type, that can be applied to instances of the Politician class
+
+SELECT DISTINCT ?properties 
+WHERE {
+?x a <http://dbpedia.org/ontology/Politician>.
+?x ?properties ?y
+FILTER (?properties != rdf:type)
+}
+
+
+3. Which different values exist for the properties, except for rdf:type, applicable to the instances of Politician?
+
+SELECT DISTINCT ?values 
+WHERE {
+?x a <http://dbpedia.org/ontology/Politician>.
+?x ?properties ?values
+FILTER (?properties != rdf:type)
+}
+
+
+4. For each of these applicable properties, except for rdf:type, which different values do they take globally for all those instances?
+
+SELECT DISTINCT ?properties ?values 
+WHERE {
+?x a <http://dbpedia.org/ontology/Politician>.
+?x ?properties ?values
+FILTER (?properties != rdf:type)
+}
+
+
+5. For each of these applicable properties, except for rdf:type, how many distinct values do they take globally for all those instances?
+
+SELECT DISTINCT ?properties COUNT (DISTINCT ?values) 
+WHERE {
+?x a <http://dbpedia.org/ontology/Politician>.
+?x ?properties ?values
+FILTER (?properties != rdf:type)
+}
