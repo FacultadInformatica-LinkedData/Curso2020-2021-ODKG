@@ -1,0 +1,38 @@
+Field,Value
+Title,Purchase Order Data
+URL,purchase-order-data
+Description,"<p>The State Contract and Procurement Registration System (SCPRS) was established in 2003, as a centralized database of information on State contracts and purchases over $5000.  eSCPRS represents the data captured in the State's eProcurement (eP) system, Bidsync, as of March 16, 2009.  The data provided is an extract from that system for fiscal years 2012-2013, 2013-2014, and 2014-2015</p>
+<p><strong>Data Limitations:</strong><br />
+Some purchase orders have multiple UNSPSC numbers, however only first was used to identify the purchase order. Multiple UNSPSC numbers were included to provide additional data for a DGS special event however this affects the formatting of the file. The source system Bidsync is being deprecated and these issues will be resolved in the future as state systems transition to Fi$cal.</p>
+<p><strong>Data Collection Methodology:</strong></p>
+<p>The data collection process starts with a data file from eSCPRS that is scrubbed and standardized prior to being uploaded into a SQL Server database. There are four primary tables. The Supplier, Department and United Nations Standard Products and Services Code (UNSPSC) tables are reference tables. The Supplier and Department tables are updated and mapped to the appropriate numbering schema and naming conventions. The UNSPSC table is used to categorize line item information and requires no further manipulation.  The Purchase Order table contains raw data that requires conversion to the correct data format and mapping to the corresponding data fields. A stacking method is applied to the table to eliminate blanks where needed. Extraneous characters are removed from fields.  The four tables are joined together and queries are executed to update the final Purchase Order Dataset table. Once the scrubbing and standardization process is complete the data is then uploaded into the SQL Server database.</p>
+<p><strong>Secondary/Related Resources:</strong></p>
+<ul>
+<li>State Contract Manual (SCM) vol. 2 <a href=""http://www.dgs.ca.gov/pd/Resources/publications/SCM2.aspx"">http://www.dgs.ca.gov/pd/Resources/publications/SCM2.aspx</a></li>
+<li>State Contract Manual (SCM) vol. 3 <a href=""http://www.dgs.ca.gov/pd/Resources/publications/SCM3.aspx"">http://www.dgs.ca.gov/pd/Resources/publications/SCM3.aspx</a></li>
+<li>Buying Green <a href=""http://www.dgs.ca.gov/buyinggreen/Home.aspx"">http://www.dgs.ca.gov/buyinggreen/Home.aspx</a></li>
+<li>United Nations Standard Products and Services Code, <a href=""http://www.unspsc.org/"">http://www.unspsc.org/</a></li>
+</ul>
+"
+Tags,"Commodity Title,DVBE,Department,Desktop Computers,Gasoline,IT Goods,IT Services,Ink Cartridges,Item Description,Item Name,Medical Training Services,Non-IT Goods,Non-IT Services,Notebook Computers,Paper,Photocopiers,Public Health Administration,SB,Statewide Contracts,Supplier Name,Toner,UNSPSC"
+License,
+Topic,
+Organization,California Department of General Services
+Public Access Level,Public
+Rights,No Restrictions on Public Use
+Program Contact Name,admin
+Program Contact Email,opencalifornia@govops.ca.gov
+Author,California Department of General Services
+Homepage URL,https://data.ca.gov/dataset/purchase-order-data
+Frequency,Irregular
+Temporal Coverage,2012-01-02T05:00:00+00:00/2016-01-01T05:00:00+00:00
+Granularity,
+Geographic Coverage Location,
+Spatial,
+Data Standard,
+Language,
+Source Link,
+Additional Information,
+Related Resources,
+Secondary Sources,
+Citation,
