@@ -16,3 +16,23 @@ feature 13 C_DEFINITIVO: This value has a range of 0 to 467590457.3
 feature 14 C_AUTORIZADO: This value has a range of 0 to 467571978.4
 feature 15 C_DISPUESTO: This value has a range of 0 to 467571978.4
 feature 16 OBL_RECONOC: This value has a range of 0 to 467571978.4
+
+
+
+Resource naming stragety:
+
+First we define the classes of Gastos and Ingresos which correspond to the two datasets selected. Then we identify the classes of the datasets which correspond to some columns (Programa, Centro, Seccion and Capitulo). This four Classes have a property of ID and a property that gives the description .
+
+The Classes of Gastos and Ingresos have some specific properties about all the monetary values (for example "creditoDispuesto"). The domain created is: http://group10#     with a hash URI
+
+
+
+Given the example URI: http://group10#Gastos
+- http://        -> Is the hypertext transfer protocol
+- group10#       -> Is the domain using a hash URI
+- Gastos         -> Is an example of a Class
+
+Another example URI: http://group10#recaudado
+- http://        -> Is the hypertext transfer protocol
+- group10#       -> Is the domain using a hash URI
+- recaudado      -> Is an example of a Property
