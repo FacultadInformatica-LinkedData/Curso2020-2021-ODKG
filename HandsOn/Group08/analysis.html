@@ -1,0 +1,457 @@
+<h2><strong> DATASETS </strong></h2>
+<p>&nbsp;</p>
+<p><strong> ContratosEmergenciaSMS.csv </strong></p>
+<table border="Yes">
+<tbody>
+<tr>
+<td>
+<p>Data</p>
+</td>
+<td>
+<p>Type</p>
+</td>
+<td>
+<p>Range</p>
+</td>
+<td>
+<p>Description</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Producto</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>[a-z][A-Z][&aacute;-&uacute;]</p>
+</td>
+<td>
+<p>The product or the service that was demanded.</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+<p>Tipo</p>
+</td>
+<td rowspan="2">
+<p>Categorical</p>
+</td>
+<td>
+<p>SERVICIO</p>
+</td>
+<td rowspan="2">
+<p>Value of "Producto" is a product or a service.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SUMINISTRO</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>NIF</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>?[A-Z][0-9]</p>
+</td>
+<td>
+<p>National identifier of the company or the person hired to satisfy the demand.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Adjudicatario</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>[a-z][A-Z][&aacute;-&uacute;]</p>
+</td>
+<td>
+<p>Name of the company or the person hired to satisfy the demand.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Fecha</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>[0-9] +"/" + [0-9] + "/" + [0-9]</p>
+</td>
+<td>
+<p>Date of the record (dd/mm/yy).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cantidad Pedido</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>[0-9]</p>
+</td>
+<td>
+<p>Number of products ordered.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cantidad Recibido</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>[0-9]</p>
+</td>
+<td>
+<p>Number of products received.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cantidad Pendiente</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>[0-9]</p>
+</td>
+<td>
+<p>Number of products that were ordered but not received.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Importe del Pedido</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>[0-9]</p>
+</td>
+<td>
+<p>Order amount.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Importe Pagado</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>[0-9]</p>
+</td>
+<td>
+<p>Paid amount.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Importe Pendiente</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>[0-9]</p>
+</td>
+<td>
+<p>Pending amount.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Column1</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>[0-9] + "%"</p>
+</td>
+<td>
+<p>% VAT</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><strong> agregados.csv </strong> &nbsp;</p>
+<table border="Yes">
+<tbody>
+<tr>
+<td>
+<p>Data</p>
+</td>
+<td>
+<p>Type</p>
+</td>
+<td>
+<p>Range</p>
+</td>
+<td>
+<p>Description</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>CCAA</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>[A-Z][A-Z]</p>
+</td>
+<td>
+<p>ISO code of each of the regions&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>FECHA</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>[0-9] + &ldquo;/&rdquo; +[0-9] + &ldquo;/&rdquo; + [0-9]</p>
+</td>
+<td>
+<p>Date of sanitary registration [dd/mm/yy]</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>CASOS</p>
+</td>
+<td>
+<p>Integer</p>
+</td>
+<td>
+<p>[</p>
+</td>
+<td>
+<p>Total number of cases by regions. The column is empty.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>PCR+</p>
+</td>
+<td>
+<p>Integer</p>
+</td>
+<td>
+<p>[0-67049]</p>
+</td>
+<td>
+<p>Number of people positive for COVID-19 based on the PCR technique&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>TestAc+</p>
+</td>
+<td>
+<p>Integer</p>
+</td>
+<td>
+<p>[0-8634]</p>
+</td>
+<td>
+<p>Number of people positive for COVID-19 based on the test Ac&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Hospitalizados</p>
+</td>
+<td>
+<p>Integer</p>
+</td>
+<td>
+<p>[0-42497]</p>
+</td>
+<td>
+<p>Number of people hospitalized</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>UCI</p>
+</td>
+<td>
+<p>Integer</p>
+</td>
+<td>
+<p>[0-3617]</p>
+</td>
+<td>
+<p>Number of people in ICU</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Fallecidos</p>
+</td>
+<td>
+<p>Integer</p>
+</td>
+<td>
+<p>[0-8931]</p>
+</td>
+<td>
+<p>Number of people</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><strong> datos_ccaa.csv </strong></p>
+<p>&nbsp;</p>
+<table border="Yes">
+<tbody>
+<tr>
+<td>
+<p>Data</p>
+</td>
+<td>
+<p>Type</p>
+</td>
+<td>
+<p>Range</p>
+</td>
+<td>
+<p>Description</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Caa_iso</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>[A-Z][A-Z]</p>
+</td>
+<td>
+<p>ISO code of each of the regions&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>FECHA</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>[0-9] + &ldquo;/&rdquo; +[0-9] + &ldquo;/&rdquo; + [0-9]</p>
+</td>
+<td>
+<p>Date of sanitary registration [dd/mm/yy]</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Num_casos</p>
+</td>
+<td>
+<p>Integer</p>
+</td>
+<td>
+<p>[0-6588 ]&nbsp;&nbsp;</p>
+</td>
+<td>
+<p>Total number of cases by regions.&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Num_caso_pcr&nbsp;</p>
+</td>
+<td>
+<p>Integer</p>
+</td>
+<td>
+<p>[0-6588 ]&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+</td>
+<td>
+<p>Number of people positive for COVID-19 based on the PCR technique&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Num_casos_prueba_test_ac&nbsp;</p>
+</td>
+<td>
+<p>Integer</p>
+</td>
+<td>
+<p>&nbsp;[0-286]&nbsp;</p>
+</td>
+<td>
+<p>Number of people positive for COVID-19 based on the test Ac&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Num_casos_prueba_otras</p>
+</td>
+<td>
+<p>Integer</p>
+</td>
+<td>
+<p>[0-75]</p>
+</td>
+<td>
+<p>Number of people positive for COVID-19 based on other test</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>&nbsp;Num_casos_prueba_desconocida</p>
+</td>
+<td>
+<p>Integer</p>
+</td>
+<td>
+<p>[0-3617]</p>
+</td>
+<td>
+<p>Number of people positive for COVID-19 based on unknown techniques</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2><strong> LICENSE </strong></h2>
+<p>Dataset Contratos de emergencia del SMS durante el periodo de Alarma por COVID-19</p>
+<p>Publisher: Regi&oacute;n de Murcia <br /> License: https://datosabiertos.regiondemurcia.es/avisolegal</p>
+<p>Dataset Agregados y CCAA ICIII</p>
+<p>Publisher: Biblioteca Nacional de Ciencias de la Salud (Instituto de Salud Carlos III) <br /> License: CC BY-NC-SA</p>
+<p>Potential License: CC BY-NC-SA</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
