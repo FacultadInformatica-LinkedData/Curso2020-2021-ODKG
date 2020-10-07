@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns="http://group10#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xml:base="http://group10">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:ID="Gastos"/>
+  <owl:Class rdf:ID="Programa"/>
+  <owl:Class rdf:ID="Centro"/>
+  <owl:Class rdf:ID="Seccion"/>
+  <owl:Class rdf:ID="Capitulo"/>
+  <owl:Class rdf:ID="Ingresos"/>
+  <owl:ObjectProperty rdf:ID="tieneCapitulo">
+    <rdfs:range rdf:resource="#Capitulo"/>
+    <rdfs:domain rdf:resource="#Centro"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="tieneIngresos">
+    <rdfs:range rdf:resource="#Ingresos"/>
+    <rdfs:domain rdf:resource="#Centro"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="tieneCentro">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Gastos"/>
+          <owl:Class rdf:about="#Ingresos"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="#Centro"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="tieneGasto">
+    <rdfs:range rdf:resource="#Gastos"/>
+    <rdfs:domain rdf:resource="#Centro"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="tieneSeccion">
+    <rdfs:domain rdf:resource="#Centro"/>
+    <rdfs:range rdf:resource="#Seccion"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="tienePrograma">
+    <rdfs:domain rdf:resource="#Centro"/>
+    <rdfs:range rdf:resource="#Programa"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="previsionIngresos">
+    <rdfs:domain rdf:resource="#Ingresos"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="creditoGastado">
+    <rdfs:domain rdf:resource="#Gastos"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="recaudado">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="#Ingresos"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="id">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="creditoDispuesto">
+    <rdfs:domain rdf:resource="#Gastos"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="descripcion">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >&lt;p style="margin-top: 0"&gt;&#xD;
+      Description&#xD;
+    &lt;/p&gt;</rdfs:comment>
+  </owl:DatatypeProperty>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.5, Build 660)  http://protege.stanford.edu -->
