@@ -1,0 +1,124 @@
+@prefix : <http://MadridPublicContracts/ontology> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+
+# Classes
+
+### Contrato
+:Contract rdf:type owl:Class .
+
+### Organización
+:Org rdf:type owl:Class .
+
+### Organización pública
+:Publicorg rdf:type owl:Class ;
+                    rdfs:subClassOf :org .				
+					
+# Contract properties
+
+### Año xsd:gYear
+			 
+### Mes			 
+:hasMonth rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Contract ;
+             rdfs:range xsd:string.
+			 
+### Numero Contrato		 
+:hasExpNumber rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Contract ;
+             rdfs:range xsd:integer.
+			 
+### Numero Expediente		 
+:hasContractNumber rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Contract ;
+             rdfs:range xsd:integer.
+			 
+### Descripcion Contrato 			 
+:hasDescription rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Contract ;
+             rdfs:range xsd:string.
+			 
+### Tipo Contrato			 
+:hasContractType rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Contract ;
+             rdfs:range xsd:string.
+			 
+### Procedimiento Adjudicacion		 
+:hasProcedure rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Contract ;
+             rdfs:range xsd:string.
+			 
+### Articulo
+:hasArticle rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Contract ;
+             rdfs:range xsd:integer.
+			 
+### Apartado		 
+:hasSection rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Contract ;
+             rdfs:range xsd:string.
+			 
+### Criterios Adjudicacion			 
+:hasCriteria rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Contract ;
+             rdfs:range xsd:string.
+			 
+### Presupuesto Total(IVA Incluido)			 
+:hasBudget rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Contract ;
+             rdfs:range xsd:double.
+			 
+### Importe Adjudicacion (IVA Incluido)	 
+:hasAmount rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Contract ;
+             rdfs:range xsd:double.
+			 
+### Fecha Adjudicacion
+:hasContractDate rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Contract ;
+             rdfs:range xsd:date.
+			 
+### Nombre/Razon Social		 
+:nameSR rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Contract ;
+             rdfs:range xsd:string.
+			 
+### Acuerdo Marco			 
+:isDeal rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Contract ;
+             rdfs:range xsd:string.
+			 
+### Ingreso/Coste Cero	 
+:isZeroCost rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Contract ;
+             rdfs:range xsd:string.
+			 
+### Observaciones
+:hasComments rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Contract ;
+             rdfs:range xsd:string .
+			 
+### Nombre/Razon Social
+:contractee rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Contract ;
+                  rdfs:range :Org .
+				  
+### NIF/CIF Adjudicatario		  
+:hasNID rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Org ;
+                  rdfs:range xsd:string .
+
+				  
+:contractor rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Contract ;
+                  rdfs:range :PublicOrg .	
+				  
+### Descripcion Centro 			 
+:orgType rdf:type owl:DatatypeProperty ;
+             rdfs:domain :PublicOrg ;
+             rdfs:range xsd:string.				  
