@@ -1,0 +1,206 @@
+@prefix : <http://www.example.com/group09#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.example.com/group09#> .
+
+<http://www.example.com/group09#> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#budgetPrice
+<http://contsem.unizar.es/def/sector-publico/pproc#budgetPrice> rdf:type owl:ObjectProperty ;
+                                                                rdfs:domain <http://contsem.unizar.es/def/sector-publico/pproc#ContractEconomicConditions> ;
+                                                                rdfs:range <http://contsem.unizar.es/def/sector-publico/pproc#BundlePriceSpecification> .
+
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#contractEconomicConditions
+<http://contsem.unizar.es/def/sector-publico/pproc#contractEconomicConditions> rdf:type owl:ObjectProperty ;
+                                                                               rdfs:domain <http://contsem.unizar.es/def/sector-publico/pproc#ContractObject> ;
+                                                                               rdfs:range <http://contsem.unizar.es/def/sector-publico/pproc#ContractEconomicConditions> .
+
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#contractObject
+<http://contsem.unizar.es/def/sector-publico/pproc#contractObject> rdf:type owl:ObjectProperty ;
+                                                                   rdfs:domain <http://contsem.unizar.es/def/sector-publico/pproc#PublicContract> ;
+                                                                   rdfs:range <http://contsem.unizar.es/def/sector-publico/pproc#ContractObject> .
+
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#contractTemporalConditions
+<http://contsem.unizar.es/def/sector-publico/pproc#contractTemporalConditions> rdf:type owl:ObjectProperty ;
+                                                                               rdfs:domain <http://contsem.unizar.es/def/sector-publico/pproc#ContractObject> ;
+                                                                               rdfs:range <http://contsem.unizar.es/def/sector-publico/pproc#ContractTemporalConditions> .
+
+
+###  http://contsem.unizar.es/def/sector-publico/pproc.html#contractingBody
+<http://contsem.unizar.es/def/sector-publico/pproc.html#contractingBody> rdf:type owl:ObjectProperty ;
+                                                                         rdfs:domain <http://contsem.unizar.es/def/sector-publico/pproc#Contract> ;
+                                                                         rdfs:range <http://www.w3.org/ns/org#Organization> .
+
+
+###  http://contsem.unizar.es/def/sector-publico/pproc.html#managingDepartment
+<http://contsem.unizar.es/def/sector-publico/pproc.html#managingDepartment> rdf:type owl:ObjectProperty ;
+                                                                            rdfs:domain <http://contsem.unizar.es/def/sector-publico/pproc#Contract> ;
+                                                                            rdfs:range <http://www.w3.org/ns/org#Organization> .
+
+
+###  http://purl.org/procurement/public-contracts#contractingAuthority
+<http://purl.org/procurement/public-contracts#contractingAuthority> rdf:type owl:ObjectProperty ;
+                                                                    rdfs:domain <http://contsem.unizar.es/def/sector-publico/pproc#Contract> ;
+                                                                    rdfs:range <http://www.w3.org/ns/org#Organization> .
+
+
+###  http://purl.org/procurement/public-contracts#supplier
+<http://purl.org/procurement/public-contracts#supplier> rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain <http://www.w3.org/ns/org#Organization> ;
+                                                        rdfs:range <http://contsem.unizar.es/def/sector-publico/pproc#Contract> .
+
+
+###  https://www.w3.org/ns/org#subOrganizationOf
+<https://www.w3.org/ns/org#subOrganizationOf> rdf:type owl:ObjectProperty ;
+                                              rdfs:domain <http://www.w3.org/ns/org#Organization> ;
+                                              rdfs:range <http://www.w3.org/ns/org#Organization> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#estimatedDuration
+<http://contsem.unizar.es/def/sector-publico/pproc#estimatedDuration> rdf:type owl:DatatypeProperty ;
+                                                                      rdfs:domain <http://contsem.unizar.es/def/sector-publico/pproc#ContractTemporalConditions> ;
+                                                                      rdfs:range xsd:float .
+
+
+###  http://purl.org/goodrelations/v1#hasCurrency
+<http://purl.org/goodrelations/v1#hasCurrency> rdf:type owl:DatatypeProperty ;
+                                               rdfs:domain <http://purl.org/goodrelations/v1#PriceSpecification> ;
+                                               rdfs:range xsd:string .
+
+
+###  http://purl.org/goodrelations/v1#hasCurrencyValue
+<http://purl.org/goodrelations/v1#hasCurrencyValue> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <http://purl.org/goodrelations/v1#PriceSpecification> ;
+                                                    rdfs:range xsd:float .
+
+
+###  http://purl.org/goodrelations/v1#valueAddedTaxIncluded
+<http://purl.org/goodrelations/v1#valueAddedTaxIncluded> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <http://purl.org/goodrelations/v1#PriceSpecification> ;
+                                                         rdfs:range xsd:boolean .
+
+
+###  http://schema.org/name
+<http://schema.org/name> rdf:type owl:DatatypeProperty ;
+                         rdfs:domain <http://www.w3.org/ns/org#Organization> ;
+                         rdfs:range xsd:string .
+
+
+###  http://www.example.com/group09#awardDate
+:awardDate rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain <http://contsem.unizar.es/def/sector-publico/pproc#PublicContract> ;
+           rdfs:range xsd:dateTime ;
+           rdfs:comment "Fecha de aprobación"@es .
+
+
+###  http://www.example.com/group09#awardNum
+:awardNum rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain <http://contsem.unizar.es/def/sector-publico/pproc#PublicContract> ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Número de reconocimiento"@es .
+
+
+###  http://www.example.com/group09#objectOfContract
+:objectOfContract rdf:type owl:DatatypeProperty ;
+                  rdfs:domain <http://contsem.unizar.es/def/sector-publico/pproc#ContractObject> ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "Objeto del contrato"@es .
+
+
+###  http://www.example.com/group09#recordNum
+:recordNum rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain <http://contsem.unizar.es/def/sector-publico/pproc#PublicContract> ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Número de expediente"@es .
+
+
+###  http://www.example.com/group09#registryReportDate
+:registryReportDate rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf owl:topDataProperty ;
+                    rdfs:domain <http://contsem.unizar.es/def/sector-publico/pproc#PublicContract> ;
+                    rdfs:range xsd:dateTime ;
+                    rdfs:comment "Fecha de comunicación de registro"@es .
+
+
+###  http://www.w3.org/ns/org#identifier
+<http://www.w3.org/ns/org#identifier> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <http://www.w3.org/ns/org#Organization> ;
+                                      rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#BundlePriceSpecification
+<http://contsem.unizar.es/def/sector-publico/pproc#BundlePriceSpecification> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://purl.org/goodrelations/v1#PriceSpecification> .
+
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#Contract
+<http://contsem.unizar.es/def/sector-publico/pproc#Contract> rdf:type owl:Class .
+
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#ContractEconomicConditions
+<http://contsem.unizar.es/def/sector-publico/pproc#ContractEconomicConditions> rdf:type owl:Class .
+
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#ContractObject
+<http://contsem.unizar.es/def/sector-publico/pproc#ContractObject> rdf:type owl:Class .
+
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#ContractTemporalConditions
+<http://contsem.unizar.es/def/sector-publico/pproc#ContractTemporalConditions> rdf:type owl:Class .
+
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#PublicContract
+<http://contsem.unizar.es/def/sector-publico/pproc#PublicContract> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <http://contsem.unizar.es/def/sector-publico/pproc#Contract> .
+
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract
+<http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <http://contsem.unizar.es/def/sector-publico/pproc#PublicContract> .
+
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#SuppliesContract
+<http://contsem.unizar.es/def/sector-publico/pproc#SuppliesContract> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <http://contsem.unizar.es/def/sector-publico/pproc#PublicContract> .
+
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#WorksContract
+<http://contsem.unizar.es/def/sector-publico/pproc#WorksContract> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://contsem.unizar.es/def/sector-publico/pproc#PublicContract> .
+
+
+###  http://purl.org/goodrelations/v1#PriceSpecification
+<http://purl.org/goodrelations/v1#PriceSpecification> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/org#Organization
+<http://www.w3.org/ns/org#Organization> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/org#OrganizationalUnit
+<http://www.w3.org/ns/org#OrganizationalUnit> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://www.w3.org/ns/org#Organization> .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
