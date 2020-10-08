@@ -1,0 +1,47 @@
+@prefix : <https:/www.GovernmentProcurementCard.es/ontology#> .
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@base <https:/www.GovernmentProcurementCard.es/ontology#> .
+
+<http://www.odkggroup7/ontology> rdf:type owl:Ontology ;
+                                 dc:title "undefined"@en; 
+                                 dc:description "undefined"@en . 
+
+#### Properties definitions #####
+
+owl:Seller rdf:type owl:ObjectProperty ;
+                  rdfs:range :Organization .
+                  rdfs:domain :TransactionInformation ;
+		  rdfs:label :"seller"@IRI-based . 
+
+owl:Transaction rdf:type owl:ObjectProperty ;
+		  rdfs:range :Order .
+                  rdfs:domain :TransactionInformation ;
+		  rdfs:label :"trans"@IRI-based . 
+
+
+#### Classes definitions ####
+
+:seller rdf:type owl:Class; 
+
+ rdfs:subClassOf [ rdf:type owl:seller ; 
+                            owl:onProperty :makesOffer; rdfs:domain :trans;
+                            owl:someValuesFrom xsd:date]
+
+
+:trans rdf:type owl:Class; 
+          rdfs:subClassOf [ rdf:type owl:trans ; 
+                            owl:onProperty :hasTransactionDate;
+                            owl:someValuesFrom xsd:date];
+
+          rdfs:subClassOf [ rdf:type owl:trans ; 
+                            owl:onProperty :hasTransactionAmount;
+                            owl:someValuesFrom xsd:int];
+
+          rdfs:subClassOf [ rdf:type owl:trans ; 
+                            owl:onProperty :hasExplanation;
+                            owl:someValuesFrom xsd:string]
