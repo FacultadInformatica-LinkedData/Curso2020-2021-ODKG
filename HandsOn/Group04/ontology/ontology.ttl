@@ -15,7 +15,7 @@
 ###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasAcquisitionType
 :hasAcquisitionType rdf:type owl:ObjectProperty ;
                     rdfs:domain :subAcquisitionType ;
-                    rdfs:range :subAcquisitionType .
+                    rdfs:range :AcquisitionType .
 
 
 ###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasAquisitionMethod
@@ -157,8 +157,7 @@
 ###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasQuantity
 :hasQuantity rdf:type owl:DatatypeProperty ;
              rdfs:domain :Purchase ;
-             rdfs:range rdf:PlainLiteral ,
-                        owl:real .
+             rdfs:range rdf:PlainLiteral .
 
 
 ###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasRecquisitionNumber
