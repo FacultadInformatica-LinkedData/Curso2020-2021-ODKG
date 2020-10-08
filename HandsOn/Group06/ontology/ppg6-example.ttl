@@ -1,0 +1,35 @@
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://publicprocurement.odkg.es/group06/resource/Contract/Company1
+:Company1 rdf:type owl:NamedIndividual ,
+                   :Company ;
+          :name "NIRCO,S.L." .
+
+
+###  http://publicprocurement.odkg.es/group06/resource/Contract/Contract1
+:Contract1 rdf:type owl:NamedIndividual ,
+                    :Contract ;
+           :contractingParty :publicOrg1 ;
+           :contractor :Company1 ;
+           :awardAmount 8064.9 ;
+           :awardDate "16/03/2020" ;
+           :contractObject "CABINA SEGURETAT CLASSE II" ;
+           :cpv 45215100 ;
+           :description "Contractació d'aparells mèdics, de laboratori, equipament informàtic, equipament de teleassistència a domicili, materials per a equipament mèdic, mobiliari general i obres de condicionament general d'espais comuns de l'Hospital Universitari Germans Trias i Pujol" ;
+           :expedientNumber 1101192853 ;
+           :expedientType "Emergència" ;
+           :linktoPublication "https://contractaciopublica.gencat.cat/ecofin_pscp/AppJava/awardnotice.pscp?reqCode=viewPcan&idDoc=64029684&lawType=3" ;
+           :publicationDate "12/06/2020" ;
+           :tenderBudget 196017.22 ;
+           :typeOfContract "Obres" ;
+           :valueOfContract 196017.22 .
+
+
+###  http://publicprocurement.odkg.es/group06/resource/Contract/publicOrg1
+:publicOrg1 rdf:type owl:NamedIndividual ,
+                     :PublicOrganization ;
+            :name "Institut Català de la Salut (ICS)" ;
+            :scope "DEPARTAMENTS I SECTOR PÚBLIC DE LA GENERALITAT DE CATALUNYA" .
+

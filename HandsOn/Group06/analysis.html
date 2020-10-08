@@ -1,0 +1,43 @@
+Analyse Data Set:
+	- Subjective scope: Subjective scope to which the contracting body belongs (String)
+	- Contracting authority: Body that has contracted that batch (String)
+	- File code: File code reported by the contracting authorities (String)
+	- Object of the contract: Description of the object of the specific lot (String)
+	- Description of the service: Description provided by the contracting authority where the details of the contract are explained (String)
+	- Type of file: Form of processing of the file (String)
+	- Type of contract: Type of contract (String)
+	- Bidding budget (without IVA): Bidding budget without IVA in euros (Float)
+	- Estimated value of the contract: Estimated value of the contract in euros (Float)
+	- Publication date: Date the contract is published (Date)
+	- winning company: company winning the contract (String)
+	- Award amount (without IVA): Final amount awarded without IVA in euros (Float)
+	- Link to the publication: Link to the publication in the PSCP (URL)
+	- CPV code: CPV code informed according to the contract description (String)
+	- Award date: Date on which the contract is awarded (Date)
+
+License:
+	Open Data Commons Attribution License 
+	https://opendatacommons.org/licenses/by/1-0/
+	https://contractaciopublica.gencat.cat/ecofin_pscp/AppJava/search.pscp?reqCode=start&set-locale=ca_ES
+
+Resource naming strategy:
+    Domain -> http://publicprocurement.odkg.es/
+    +
+    Path -> group06/
+    +         
+    1) ontology/       
+        +
+        1.1) ppg6#[className]             
+        1.2) ppg6#[propertyName]
+	2) resource/
+	    + 
+	    [className] / [identifier]
+
+    Example:
+    http://publicprocurement.odkg.es/
+    http://publicprocurement.odkg.es/group06/
+    http://publicprocurement.odkg.es/group06/ontology/
+    http://publicprocurement.odkg.es/group06/ontology/ppg6#Contract
+    http://publicprocurement.odkg.es/group06/ontology/ppg6#hasDescription
+    http://publicprocurement.odkg.es/group06/resource/
+    http://publicprocurement.odkg.es/group06/resource/Contract/123456
