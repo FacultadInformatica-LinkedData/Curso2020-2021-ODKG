@@ -1,198 +1,232 @@
 <h2><strong> DATASETS </strong></h2>
 <p>&nbsp;</p>
 <p><strong> ContratosEmergenciaSMS.csv </strong></p>
-<table border="Yes">
+<table style="width: 958px;" border="Yes">
 <tbody>
 <tr>
-<td>
+<td style="width: 107px;">
 <p>Data</p>
 </td>
-<td>
+<td style="width: 62px;">
 <p>Type</p>
 </td>
-<td>
-<p>Range</p>
+<td style="width: 181px;">
+<p>Comments/Range (rounded)</p>
 </td>
-<td>
+<td style="width: 358px;">
 <p>Description</p>
 </td>
+<td style="width: 226px;">
+<p>Problems</p>
+</td>
 </tr>
 <tr>
-<td>
+<td style="width: 107px;">
 <p>Producto</p>
 </td>
-<td>
+<td style="width: 62px;">
 <p>String</p>
 </td>
-<td>
-<p>[a-z][A-Z][&aacute;-&uacute;]</p>
+<td style="width: 181px;">
+<p>Not unique</p>
 </td>
-<td>
+<td style="width: 358px;">
 <p>The product or the service that was demanded.</p>
 </td>
+<td style="width: 226px;">&nbsp;</td>
 </tr>
 <tr>
-<td rowspan="2">
+<td style="width: 107px;" rowspan="2">
 <p>Tipo</p>
 </td>
-<td rowspan="2">
+<td style="width: 62px;" rowspan="2">
 <p>Categorical</p>
 </td>
-<td>
+<td style="width: 181px;">
 <p>SERVICIO</p>
 </td>
-<td rowspan="2">
+<td style="width: 358px;" rowspan="2">
 <p>Value of "Producto" is a product or a service.</p>
 </td>
+<td style="width: 226px;">
+<p>(*1)</p>
+</td>
 </tr>
 <tr>
-<td>
+<td style="width: 181px;">
 <p>SUMINISTRO</p>
 </td>
+<td style="width: 226px;">&nbsp;</td>
 </tr>
 <tr>
-<td>
+<td style="width: 107px;">
 <p>NIF</p>
 </td>
-<td>
+<td style="width: 62px;">
 <p>String</p>
 </td>
-<td>
-<p>?[A-Z][0-9]</p>
+<td style="width: 181px;">
+<p>Not unique</p>
 </td>
-<td>
+<td style="width: 358px;">
 <p>National identifier of the company or the person hired to satisfy the demand.</p>
 </td>
+<td style="width: 226px;">
+<p>43 records have a corrupted format</p>
+</td>
 </tr>
 <tr>
-<td>
+<td style="width: 107px;">
 <p>Adjudicatario</p>
 </td>
-<td>
+<td style="width: 62px;">
 <p>String</p>
 </td>
-<td>
-<p>[a-z][A-Z][&aacute;-&uacute;]</p>
+<td style="width: 181px;">
+<p>Not unique</p>
 </td>
-<td>
+<td style="width: 358px;">
 <p>Name of the company or the person hired to satisfy the demand.</p>
 </td>
+<td style="width: 226px;">&nbsp;</td>
 </tr>
 <tr>
-<td>
+<td style="width: 107px;">
 <p>Fecha</p>
 </td>
-<td>
+<td style="width: 62px;">
 <p>String</p>
 </td>
-<td>
-<p>[0-9] +"/" + [0-9] + "/" + [0-9]</p>
+<td style="width: 181px;">
+<p>[0-9]+"/" +[0-9] + "/" + [0-9], not unique</p>
 </td>
-<td>
+<td style="width: 358px;">
 <p>Date of the record (dd/mm/yy).</p>
 </td>
+<td style="width: 226px;">&nbsp;</td>
 </tr>
 <tr>
-<td>
+<td style="width: 107px;">
 <p>Cantidad Pedido</p>
 </td>
-<td>
+<td style="width: 62px;">
 <p>String</p>
 </td>
-<td>
-<p>[0-9]</p>
+<td style="width: 181px;">
+<p>0 &mdash; 7,100,000</p>
 </td>
-<td>
+<td style="width: 358px;">
 <p>Number of products ordered.</p>
 </td>
+<td style="width: 226px;">
+<p>Instead of string type, it should be decimal.&nbsp;(*1)</p>
+</td>
 </tr>
 <tr>
-<td>
+<td style="width: 107px;">
 <p>Cantidad Recibido</p>
 </td>
-<td>
+<td style="width: 62px;">
 <p>String</p>
 </td>
-<td>
-<p>[0-9]</p>
+<td style="width: 181px;">
+<p>0 &mdash; 3,600,000</p>
 </td>
-<td>
+<td style="width: 358px;">
 <p>Number of products received.</p>
 </td>
+<td style="width: 226px;">
+<p>Instead of string type, it should be decimal.&nbsp;(*1)</p>
+</td>
 </tr>
 <tr>
-<td>
+<td style="width: 107px;">
 <p>Cantidad Pendiente</p>
 </td>
-<td>
+<td style="width: 62px;">
 <p>String</p>
 </td>
-<td>
-<p>[0-9]</p>
+<td style="width: 181px;">
+<p>0 &mdash; 6,500,000</p>
 </td>
-<td>
+<td style="width: 358px;">
 <p>Number of products that were ordered but not received.</p>
 </td>
+<td style="width: 226px;">
+<p>Instead of string type, it should be decimal.&nbsp;(*1)</p>
+</td>
 </tr>
 <tr>
-<td>
+<td style="width: 107px;">
 <p>Importe del Pedido</p>
 </td>
-<td>
+<td style="width: 62px;">
 <p>String</p>
 </td>
-<td>
-<p>[0-9]</p>
+<td style="width: 181px;">
+<p>0 &mdash; 3,200,000</p>
 </td>
-<td>
+<td style="width: 358px;">
 <p>Order amount.</p>
 </td>
+<td style="width: 226px;">
+<p>Instead of string type, it should be decimal.&nbsp;(*1)</p>
+</td>
 </tr>
 <tr>
-<td>
+<td style="width: 107px;">
 <p>Importe Pagado</p>
 </td>
-<td>
+<td style="width: 62px;">
 <p>String</p>
 </td>
-<td>
-<p>[0-9]</p>
+<td style="width: 181px;">
+<p>0 &mdash; 3,200,000</p>
 </td>
-<td>
+<td style="width: 358px;">
 <p>Paid amount.</p>
 </td>
+<td style="width: 226px;">
+<p>Instead of string type, it should be decimal.&nbsp;(*1)</p>
+</td>
 </tr>
 <tr>
-<td>
+<td style="width: 107px;">
 <p>Importe Pendiente</p>
 </td>
-<td>
+<td style="width: 62px;">
 <p>String</p>
 </td>
-<td>
-<p>[0-9]</p>
+<td style="width: 181px;">
+<p>0 &mdash; 2,400,000</p>
 </td>
-<td>
+<td style="width: 358px;">
 <p>Pending amount.</p>
+</td>
+<td style="width: 226px;">
+<p>Instead of string type, it should be decimal.&nbsp;(*1)</p>
 </td>
 </tr>
 <tr>
-<td>
-<p>Column1</p>
+<td style="width: 107px;">
+<p>Unnamed column</p>
 </td>
-<td>
+<td style="width: 62px;">
 <p>String</p>
 </td>
-<td>
+<td style="width: 181px;">
 <p>[0-9] + "%"</p>
 </td>
-<td>
+<td style="width: 358px;">
 <p>% VAT</p>
+</td>
+<td style="width: 226px;">
+<p>No description found and the column has no name. Suspected to be VAT.</p>
 </td>
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</p>
+<p>&nbsp;(*1) For the value "SERVICIO" of the variable "TIPO", the number of products ordered are equivalent to the order amount.</p>
 <p><strong> agregados.csv </strong> &nbsp;</p>
 <table border="Yes">
 <tbody>
