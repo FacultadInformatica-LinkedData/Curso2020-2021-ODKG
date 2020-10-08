@@ -79,6 +79,15 @@
         <DataProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc#estimatedDuration"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="http://purl.org/goodrelations/v1#hasCurrency"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.org/goodrelations/v1#hasCurrencyValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.org/goodrelations/v1#valueAddedTaxIncluded"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="http://schema.org/name"/>
     </Declaration>
     <Declaration>
@@ -88,6 +97,9 @@
         <DataProperty IRI="awardNum"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="objectOfContract"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="recordNum"/>
     </Declaration>
     <Declaration>
@@ -95,6 +107,33 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://www.w3.org/ns/org#identifier"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AyuntamientoMadrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="BundlePrice1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ContractObject"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ContractingBody1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Contractor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Contrato1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Department1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="EconomicConditions"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="TemporalConditions1"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="http://contsem.unizar.es/def/sector-publico/pproc#BundlePriceSpecification"/>
@@ -120,6 +159,157 @@
         <Class IRI="http://www.w3.org/ns/org#OrganizationalUnit"/>
         <Class IRI="http://www.w3.org/ns/org#Organization"/>
     </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/org#Organization"/>
+        <NamedIndividual IRI="AyuntamientoMadrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://contsem.unizar.es/def/sector-publico/pproc#BundlePriceSpecification"/>
+        <NamedIndividual IRI="BundlePrice1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://contsem.unizar.es/def/sector-publico/pproc#ContractObject"/>
+        <NamedIndividual IRI="ContractObject"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/org#Organization"/>
+        <NamedIndividual IRI="ContractingBody1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/org#Organization"/>
+        <NamedIndividual IRI="Contractor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://contsem.unizar.es/def/sector-publico/pproc#SuppliesContract"/>
+        <NamedIndividual IRI="Contrato1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/org#OrganizationalUnit"/>
+        <NamedIndividual IRI="Department1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://contsem.unizar.es/def/sector-publico/pproc#ContractEconomicConditions"/>
+        <NamedIndividual IRI="EconomicConditions"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://contsem.unizar.es/def/sector-publico/pproc#ContractTemporalConditions"/>
+        <NamedIndividual IRI="TemporalConditions1"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc#contractEconomicConditions"/>
+        <NamedIndividual IRI="ContractObject"/>
+        <NamedIndividual IRI="EconomicConditions"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc#contractTemporalConditions"/>
+        <NamedIndividual IRI="ContractObject"/>
+        <NamedIndividual IRI="TemporalConditions1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://www.w3.org/ns/org#subOrganizationOf"/>
+        <NamedIndividual IRI="ContractingBody1"/>
+        <NamedIndividual IRI="Department1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/procurement/public-contracts#supplier"/>
+        <NamedIndividual IRI="Contractor"/>
+        <NamedIndividual IRI="Contrato1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc#contractObject"/>
+        <NamedIndividual IRI="Contrato1"/>
+        <NamedIndividual IRI="ContractObject"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc.html#contractingBody"/>
+        <NamedIndividual IRI="Contrato1"/>
+        <NamedIndividual IRI="ContractingBody1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc.html#managingDepartment"/>
+        <NamedIndividual IRI="Contrato1"/>
+        <NamedIndividual IRI="Department1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/procurement/public-contracts#contractingAuthority"/>
+        <NamedIndividual IRI="Contrato1"/>
+        <NamedIndividual IRI="AyuntamientoMadrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://www.w3.org/ns/org#subOrganizationOf"/>
+        <NamedIndividual IRI="Department1"/>
+        <NamedIndividual IRI="AyuntamientoMadrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc#budgetPrice"/>
+        <NamedIndividual IRI="EconomicConditions"/>
+        <NamedIndividual IRI="BundlePrice1"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://purl.org/goodrelations/v1#hasCurrency"/>
+        <NamedIndividual IRI="BundlePrice1"/>
+        <Literal>EUR</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://purl.org/goodrelations/v1#hasCurrencyValue"/>
+        <NamedIndividual IRI="BundlePrice1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1197.60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://purl.org/goodrelations/v1#valueAddedTaxIncluded"/>
+        <NamedIndividual IRI="BundlePrice1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="objectOfContract"/>
+        <NamedIndividual IRI="ContractObject"/>
+        <Literal xml:lang="es">SUMINISTRO UNA BOMBA NEUMATICA PARA EL TALLER DEL CENTRO DE OPERACIONES DE LA ELIPA.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://schema.org/name"/>
+        <NamedIndividual IRI="ContractingBody1"/>
+        <Literal>Director</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://schema.org/name"/>
+        <NamedIndividual IRI="Contractor"/>
+        <Literal xml:lang="es">GONPERSA TRADE, S.L.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.w3.org/ns/org#identifier"/>
+        <NamedIndividual IRI="Contractor"/>
+        <Literal>B83579441</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="awardDate"/>
+        <NamedIndividual IRI="Contrato1"/>
+        <Literal>17/12/2019</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="awardNum"/>
+        <NamedIndividual IRI="Contrato1"/>
+        <Literal>M202000001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="recordNum"/>
+        <NamedIndividual IRI="Contrato1"/>
+        <Literal>EMT/2019/10109</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="registryReportDate"/>
+        <NamedIndividual IRI="Contrato1"/>
+        <Literal>02/01/2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://schema.org/name"/>
+        <NamedIndividual IRI="Department1"/>
+        <Literal>EMPRESA MUNICIPAL DE TRANSPORTES S.A.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc#estimatedDuration"/>
+        <NamedIndividual IRI="TemporalConditions1"/>
+        <Literal>0,5</Literal>
+    </DataPropertyAssertion>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc#budgetPrice"/>
         <Class IRI="http://contsem.unizar.es/def/sector-publico/pproc#ContractEconomicConditions"/>
@@ -213,6 +403,18 @@
         <Class IRI="http://contsem.unizar.es/def/sector-publico/pproc#ContractTemporalConditions"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="http://purl.org/goodrelations/v1#hasCurrency"/>
+        <Class IRI="http://purl.org/goodrelations/v1#PriceSpecification"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://purl.org/goodrelations/v1#hasCurrencyValue"/>
+        <Class IRI="http://purl.org/goodrelations/v1#PriceSpecification"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://purl.org/goodrelations/v1#valueAddedTaxIncluded"/>
+        <Class IRI="http://purl.org/goodrelations/v1#PriceSpecification"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="http://schema.org/name"/>
         <Class IRI="http://www.w3.org/ns/org#Organization"/>
     </DataPropertyDomain>
@@ -223,6 +425,10 @@
     <DataPropertyDomain>
         <DataProperty IRI="awardNum"/>
         <Class IRI="http://contsem.unizar.es/def/sector-publico/pproc#PublicContract"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="objectOfContract"/>
+        <Class IRI="http://contsem.unizar.es/def/sector-publico/pproc#ContractObject"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="recordNum"/>
@@ -241,6 +447,18 @@
         <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="http://purl.org/goodrelations/v1#hasCurrency"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://purl.org/goodrelations/v1#hasCurrencyValue"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://purl.org/goodrelations/v1#valueAddedTaxIncluded"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="http://schema.org/name"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
@@ -250,6 +468,10 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="awardNum"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="objectOfContract"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -273,6 +495,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>awardNum</IRI>
         <Literal xml:lang="es">Número de reconocimiento</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>objectOfContract</IRI>
+        <Literal xml:lang="es">Objeto del contrato</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
