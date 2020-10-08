@@ -84,7 +84,7 @@
              rdfs:range xsd:date.
 			 
 ### Nombre/Razon Social		 
-:NameSR rdf:type owl:DatatypeProperty ;
+:nameSR rdf:type owl:DatatypeProperty ;
              rdfs:domain :Contract ;
              rdfs:range xsd:string.
 			 

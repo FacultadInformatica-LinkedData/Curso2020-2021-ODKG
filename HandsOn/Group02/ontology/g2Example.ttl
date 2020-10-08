@@ -23,7 +23,7 @@
 	:hasBudget 362802;
 	:hasAmount 185975.62;
 	:hasContractDate "13/09/2019"^^xsd:date;
-	:NameSR ""
+	:nameSR ""
 	:isDeal "";
 	:isZeroCost "";
 	:hasComments "".
