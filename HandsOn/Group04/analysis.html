@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<h3>Creation Date</h3>
+<b>Type : </b> Date <br>
+<b>Range : </b> 2012-07-02 to 2015-06-30 <br>
+<b>Description :</b> Creation date <br>
+
+<hr>
+
+<h3>Purchase Date</h3>
+<b>Type : </b> Date <br>
+<b>Range : </b> Ok <br>
+<b>Description :</b> Purchase Date. 17422 null values readen and nonsense dates. <br>
+
+
+<hr>
+
+<h3>Fiscal Year</h3>
+<b>Type : </b> Couple of years <br>
+<b>Range : </b> From 2012-2013 to 2014-2015 <br>
+<b>Description :</b> Fiscal Year <br>
+
+
+<hr>
+
+<h3>LPA Number</h3>
+<b>Type : </b> Plain text <br>
+<b>Range : </b> / <br>
+<b>Description :</b> Leveraged Procurement Agreement Contract Number. Numbers, tirets and also includes characters. 253607 null values.<br>
+
+
+<hr>
+
+<h3>Purchase order number</h3>
+<b>Type : </b> Plain text <br>
+<b>Range : </b> / <br>
+<b>Description :</b> includes only numbers, sometime characters and also '-'. Sometimes the same as requisiton number. No null values. <br>
+
+
+<hr>
+
+<h3>Requisition number</h3>
+<b>Type : </b> Plain text <br>
+<b>Range : </b> / <br>
+<b>Description :</b> Fiscal designated unique number of the associated Requisition. 330138 null values.  <br>
+
+
+<hr>
+
+<h3>Acquisition Type</h3>
+<b>Type : </b> Plain text <br>
+<b>Range : </b> 5 possible values : IT Goods, IT Services, IT Telecommunications, NON-IT Goods, NON-IT Services. No null values. <br>
+<b>Description :</b> Information about what the acquisition is related to. <br>
+
+
+<hr>
+
+<h3>Sub-Acquisition type</h3>
+<b>Type : </b> Plain text <br>
+<b>Range : </b> 25 possible non-null values and 276170 null values.  <br>
+<b>Description :</b> For Non-IT Services Acqusition Type, user must also indicate what type of Non-IT services they are purchasing. <br> What the contract is related to (Personal services, public works, etc.) <br>
+
+<hr>
+
+<h3>Acquisition Method</h3>
+<b>Type : </b> Plain Text <br>
+<b>Range : </b> / <br>
+<b>Description :</b> Method of Acquisition used to execute the procurement.  20 possible non-null values. No null values. <br>
+
+<hr>
+
+
+<h3>Sub-Acquisition Method</h3>
+<b>Type : </b> Plain Text <br>
+<b>Range : </b> / <br>
+<b>Description :</b> Method of Acquisition used to execute the procurement.  26 possible non-null values. 313621 null values. <br>
+
+<hr>
+<h3>Department Name</h3>
+<b>Type : </b> Plain Text <br>
+<b>Range : </b> / <br>
+<b>Description :</b> Name of purchasing department. 111 possible non null values. No null values. <br>
+<hr>
+
+<h3>Supplier Code </h3>
+<b>Type : </b> Number <br>
+<b>Range : </b> 0-1796774 <br>
+<b>Description :</b> Fiscal assigned unique Vendor ID. 36 null values. Lot of 0 values (probably non valids cause supposed to be unique).  <br>
+<hr>
+
+<h3>Supplier Name</h3>
+<b>Type : </b> Plain Text <br>
+<b>Range : </b> / <br>
+<b>Description :</b> Vendor Name as indicated on the State of California Payee Data Record (Std. 204). No null values. <br>
+<hr>
+
+<h3>Supplier Qualifications</h3>
+<b>Type : </b> Plain Text <br>
+<b>Range : </b> / <br>
+<b>Description :</b> Any certifications associated with this vendor: SB, DVBE, MB, etc. 278 possible values + 36 null values. <br>
+<hr>
+
+<h3>Supplier ZIP Code</h3>
+<b>Type : </b> Plain Text <br>
+<b>Range : </b> / <br>
+<b>Description :</b> SUpplier ZIP Code. 202759 null values. <br>
+<hr>
+
+<h3>CalCard</h3>
+<b>Type : </b> Binary (Plain text) <br>
+<b>Range : </b> YES/NO <br>
+<b>Description :</b> 5372 YES, 339132 NO. No null values. Indicate whether the purchase was made with a Cal card (king of credit card specific to california : http://www.auditorcontroller.org/Portals/0/Documents/Meetings/P-Card_Presentation.ppt <br>
+<hr>
+
+<h3>Item Name</h3>
+<b>Type : </b> Plain Text <br>
+<b>Range : </b> / <br>
+<b>Description :</b> Item Name. 30 null values. <br>
+<hr>
+
+<h3>Item Description</h3>
+<b>Type : </b> Plain Text <br>
+<b>Range : </b> / <br>
+<b>Description :</b> Item Description. Often the same as Item name. 44 null Values. <br>
+<hr>
+
+<h3>Quantity</h3>
+<b>Type : </b> Number <br>
+<b>Range : </b> 1- 20000000 <br>
+<b>Description :</b> Floating numbers (like 4.5). 30 null values. <br>
+<hr>
+
+<h3>Unit Price</h3>
+<b>Type : </b> Number <br>
+<b>Range : </b> 0.01-7337038064 <br>
+<b>Description :</b> Unit Price. With comas and preceed by $. 30 null values. <br>
+<hr>
+
+<h3>Total Price</h3>
+<b>Type : </b> Number <br>
+<b>Range : </b> 0.01-7337038064 <br>
+<b>Description :</b> Total price. 30 null values. <br>
+<hr>
+
+<h3>Classification Codes</h3>
+<b>Type : </b> Number <br>
+<b>Range : </b> / <br>
+<b>Description :</b> Undocumented. The same as UNSPSC?. <br>
+<hr>
+
+<h3>Normalized UNSPSC</h3>
+<b>Type : </b> Number  <br>
+<b>Range : </b> UP to 8 digit. <br>
+<b>Description :</b> United Nations Standard Products and Services Code. An open, global, multi-sector standard for efficient, accurate classification of products and services (8-digit number). 1017 null values. <br>
+<hr>
+
+<h3>Commodity Title</h3>
+<b>Type : </b>  <br>
+<b>Range : </b>  <br>
+<b>Description :</b> Description of the commodity or service code. <br>
+<hr>
+
+<h3>Class</h3>
+<b>Type : </b> Number <br>
+<b>Range : </b> / <br>
+<b>Description :</b> Code for class. <br>
+<hr>
+
+<h3>Class Title</h3>
+<b>Type : </b> Plain Text <br>
+<b>Range : </b> / <br>
+<b>Description :</b> Class of the goods (Peppers, beans, etc.). 3293 null values. <br><hr>
+
+<h3>Family</h3>
+<b>Type : </b> Number <br>
+<b>Range : </b> / <br>
+<b>Description :</b> Code for family. Sometime pretty close to Class Title. <br>
+<hr>
+
+<h3>Family Title</h3>
+<b>Type : </b>  <br>
+<b>Range : </b>  <br>
+<b>Description :</b> Family of the goods (Fresh vegeratbles, etc.).  <br>
+<hr>
+
+<h3>Segment</h3>
+<b>Type : </b> Number <br>
+<b>Range : </b> / <br>
+<b>Description :</b> Undocumented. <br>
+
+<hr>
+
+<h3>Segment Title</h3>
+<b>Type : </b> Plain Text <br>
+<b>Range : </b> / <br>
+<b>Description :</b> Undocumented (example : Food Beverage and Tobacco Products) <br>
+
+<hr>
+
+<h3>Location</h3>
+<b>Type : </b> GPS coordonates <br>
+<b>Range : </b> / <br>
+<b>Description :</b> Vendor coordonates (?) <br>
+<hr>
+
+<h3>REMOVE AMERISOURCE</h3>
+<b>Type : </b> null <br>
+<b>Range : </b> null <br>
+<b>Description :</b> Always null. <br>
+
+
+
+
+
+
+
+</body>
+
+</html>
