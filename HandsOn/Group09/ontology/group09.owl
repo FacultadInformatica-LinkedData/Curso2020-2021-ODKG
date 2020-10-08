@@ -48,6 +48,54 @@
     <Declaration>
         <Class IRI="http://www.w3.org/ns/org#OrganizationalUnit"/>
     </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc#budgetPrice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc#contractEconomicConditions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc#contractObject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc#contractTemporalConditions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc.html#contractingBody"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc.html#managingDepartment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/procurement/public-contracts#contractingAuthority"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/procurement/public-contracts#supplier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://www.w3.org/ns/org#subOrganizationOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc#estimatedDuration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://schema.org/name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="awardDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="awardNum"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="recordNum"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="registryReportDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.w3.org/ns/org#identifier"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="http://contsem.unizar.es/def/sector-publico/pproc#BundlePriceSpecification"/>
         <Class IRI="http://purl.org/goodrelations/v1#PriceSpecification"/>
@@ -72,6 +120,170 @@
         <Class IRI="http://www.w3.org/ns/org#OrganizationalUnit"/>
         <Class IRI="http://www.w3.org/ns/org#Organization"/>
     </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc#budgetPrice"/>
+        <Class IRI="http://contsem.unizar.es/def/sector-publico/pproc#ContractEconomicConditions"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc#contractEconomicConditions"/>
+        <Class IRI="http://contsem.unizar.es/def/sector-publico/pproc#ContractObject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc#contractObject"/>
+        <Class IRI="http://contsem.unizar.es/def/sector-publico/pproc#PublicContract"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc#contractTemporalConditions"/>
+        <Class IRI="http://contsem.unizar.es/def/sector-publico/pproc#ContractObject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc.html#contractingBody"/>
+        <Class IRI="http://contsem.unizar.es/def/sector-publico/pproc#Contract"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc.html#managingDepartment"/>
+        <Class IRI="http://contsem.unizar.es/def/sector-publico/pproc#Contract"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.org/procurement/public-contracts#contractingAuthority"/>
+        <Class IRI="http://contsem.unizar.es/def/sector-publico/pproc#Contract"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.org/procurement/public-contracts#supplier"/>
+        <Class IRI="http://www.w3.org/ns/org#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://www.w3.org/ns/org#subOrganizationOf"/>
+        <Class IRI="http://www.w3.org/ns/org#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc#budgetPrice"/>
+        <Class IRI="http://contsem.unizar.es/def/sector-publico/pproc#BundlePriceSpecification"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc#contractEconomicConditions"/>
+        <Class IRI="http://contsem.unizar.es/def/sector-publico/pproc#ContractEconomicConditions"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc#contractObject"/>
+        <Class IRI="http://contsem.unizar.es/def/sector-publico/pproc#ContractObject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc#contractTemporalConditions"/>
+        <Class IRI="http://contsem.unizar.es/def/sector-publico/pproc#ContractTemporalConditions"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc.html#contractingBody"/>
+        <Class IRI="http://www.w3.org/ns/org#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc.html#managingDepartment"/>
+        <Class IRI="http://www.w3.org/ns/org#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.org/procurement/public-contracts#contractingAuthority"/>
+        <Class IRI="http://www.w3.org/ns/org#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.org/procurement/public-contracts#supplier"/>
+        <Class IRI="http://contsem.unizar.es/def/sector-publico/pproc#Contract"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://www.w3.org/ns/org#subOrganizationOf"/>
+        <Class IRI="http://www.w3.org/ns/org#Organization"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="awardDate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="awardNum"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="recordNum"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="registryReportDate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc#estimatedDuration"/>
+        <Class IRI="http://contsem.unizar.es/def/sector-publico/pproc#ContractTemporalConditions"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://schema.org/name"/>
+        <Class IRI="http://www.w3.org/ns/org#Organization"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="awardDate"/>
+        <Class IRI="http://contsem.unizar.es/def/sector-publico/pproc#PublicContract"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="awardNum"/>
+        <Class IRI="http://contsem.unizar.es/def/sector-publico/pproc#PublicContract"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="recordNum"/>
+        <Class IRI="http://contsem.unizar.es/def/sector-publico/pproc#PublicContract"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="registryReportDate"/>
+        <Class IRI="http://contsem.unizar.es/def/sector-publico/pproc#PublicContract"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.w3.org/ns/org#identifier"/>
+        <Class IRI="http://www.w3.org/ns/org#Organization"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://contsem.unizar.es/def/sector-publico/pproc#estimatedDuration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://schema.org/name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="awardDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="awardNum"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="recordNum"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="registryReportDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.w3.org/ns/org#identifier"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>awardDate</IRI>
+        <Literal xml:lang="es">Fecha de aprobación</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>awardNum</IRI>
+        <Literal xml:lang="es">Número de reconocimiento</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>recordNum</IRI>
+        <Literal xml:lang="es">Número de expediente</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>registryReportDate</IRI>
+        <Literal xml:lang="es">Fecha de comunicación de registro</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
