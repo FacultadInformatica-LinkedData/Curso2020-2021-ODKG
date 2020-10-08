@@ -1,0 +1,151 @@
+@prefix : <http://www.semanticweb.org/lenovo/ontologies/2020/9/untitled-ontology-2#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/lenovo/ontologies/2020/9/untitled-ontology-2> .
+
+<http://www.semanticweb.org/lenovo/ontologies/2020/9/untitled-ontology-2> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/lenovo/ontologies/2020/9/untitled-ontology-2#hasAddress
+:hasAddress rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2020/9/untitled-ontology-2#hasCAN
+:hasCAN rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2020/9/untitled-ontology-2#hasContract
+:hasContract rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/lenovo/ontologies/2020/9/untitled-ontology-2#hasActivity
+:hasActivity rdf:type owl:DatatypeProperty ;
+             rdfs:domain :CAN ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2020/9/untitled-ontology-2#hasCPV
+:hasCPV rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Contract ;
+        rdfs:range xsd:long .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2020/9/untitled-ontology-2#hasCompletedOn
+:hasCompletedOn rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Contract ;
+                rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2020/9/untitled-ontology-2#hasDuration
+:hasDuration rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Contract ;
+             rdfs:range xsd:double .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2020/9/untitled-ontology-2#hasGPA
+:hasGPA rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Contract ;
+        rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2020/9/untitled-ontology-2#hasISO
+:hasISO rdf:type owl:DatatypeProperty ;
+        rdfs:domain :CAN ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2020/9/untitled-ontology-2#hasMultipleCAN
+:hasMultipleCAN rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2020/9/untitled-ontology-2#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:domain :CAN ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2020/9/untitled-ontology-2#hasPostalCode
+:hasPostalCode rdf:type owl:DatatypeProperty ;
+               rdfs:domain :CAN ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2020/9/untitled-ontology-2#hasStartedOn
+:hasStartedOn rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Contract ;
+              rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2020/9/untitled-ontology-2#hasTown
+:hasTown rdf:type owl:DatatypeProperty ;
+         rdfs:domain :CAN ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2020/9/untitled-ontology-2#hasType
+:hasType rdf:type owl:DatatypeProperty ;
+         rdfs:domain :CAN ,
+                     :Contract ,
+                     :Notice ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2020/9/untitled-ontology-2#hasValue
+:hasValue rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Contract ;
+          rdfs:range xsd:double .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2020/9/untitled-ontology-2#institutionOf
+:institutionOf rdf:type owl:DatatypeProperty ;
+               rdfs:domain :CAN ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2020/9/untitled-ontology-2#isCancelled
+:isCancelled rdf:type owl:DatatypeProperty ;
+             rdfs:domain :CAN ,
+                         :Notice ;
+             rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2020/9/untitled-ontology-2#isFunded
+:isFunded rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Contract ;
+          rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2020/9/untitled-ontology-2#isRenewed
+:isRenewed rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Contract ;
+           rdfs:range xsd:boolean .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/lenovo/ontologies/2020/9/untitled-ontology-2#CAN
+:CAN rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2020/9/untitled-ontology-2#Contract
+:Contract rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2020/9/untitled-ontology-2#Notice
+:Notice rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
