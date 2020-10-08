@@ -7,9 +7,72 @@
 <body>
 	<h1>Group02 Analysis</h1>
 	<h2>Analysis of the Data Set</h2>
-	<h3>Resource Naming Strategy</h3>
-	
-	
+<p>Here is a brief analysis of the data: what different values its columns take, and what are the maximum, minimum and average in the case of columns with numbers.</p>
+
+<p><span lang=EN style='mso-ansi-language:EN'>First, a cleaning of the data is
+required. Because of the use of the accent mark in Spanish, it does not detect
+the different rows correctly, even when they are separated with “;”. The first
+thing to do is to separate the columns manually. Given that not many rows are
+affected, it does not take an excessive amount of time.<o:p></o:p></span></p>
+
+<h3>First dataset</h3>
+
+<p><span lang=EN style='mso-ansi-language:EN'>In the first dataset (which
+refers to contract activities), there are 30 columns and 721 rows. The first
+columns indicate the year, which is always 2020, and the second indicates the
+month (from January to June). The third and fourth columns are descriptions and
+concretions on the centers to which the contract is applied. The next two columns
+refer to a number of contract, which is assigned in chronological order, and to
+an expedient number. Both of them are meant to identify the contract.<o:p></o:p></span></p>
+
+<p><span lang=EN style='mso-ansi-language:EN'>Then, in the next column, there
+is a description of the contract. That can take several values. Each one is
+almost unique. The type of contract (services, works or supply) and how it was
+awarded and under which articles and subarticles are specified in 5 columns.<o:p></o:p></span></p>
+
+<p><span lang=EN style='mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+EN'>The next two columns refer to the budget and the award ammount of those
+contracts. Their values are kept between 0 and 30 million in both of the
+columns. Since no contract is given for 0 €, all the zeros in those columns are
+not valid.<o:p></o:p></span></p>
+
+<p><span lang=EN style='mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+EN'>The adjudication dates, the formalization dates and the time limits are
+specified in another three columns. The numbers of the time limits for each
+contract are just so different that they do not seem to make any sense. Names
+and NIF/CIF of the addressees of the contract are also specified in two
+columns.<o:p></o:p></span></p>
+
+<p><span lang=EN style='mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+EN'>The last three columns specify whether the contracts were made under “acuerdo
+marco” or with incom/cost zero, and some observations which are not relevant.<o:p></o:p></span></p>
+
+<h3>Second dataset<o:p></o:p></h3>
+
+<p><span lang=EN style='mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+EN'>In the second dataset (the one of the “juntas”), there are 29 columns and
+only 21 rows. That indicates this dataset may not be useful if it was not to be
+linked with other datasets.<o:p></o:p></span></p>
+
+<p><span lang=EN style='mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+EN'>The first columns indicate the kilometer point, the name of each “junta” and
+a description that is the same for every row and should be ignored. The
+timetables, in another column, are almost the same, although it is some useful
+information. The equipment column has only one value for a “junta”. Again, it
+could be included, but it may not be relevant enough.<o:p></o:p></span></p>
+
+<p><span lang=EN style='mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+EN'>Another column describes which means of public transport can be used for
+each “junta”, which is really useful if someone was to visit it. The column dedicated
+for description just refers to a webpage and it’s useless, since there is
+already a column (accessibility) with the webpages of each “junta”. Then, in
+several rows, we have the adresses of each junta, divided by street, number,
+stairs, door, district, postal code, etc., as well as coordinates and
+latitude/longitude.<o:p></o:p></span></p>
+
+<p><span lang=EN style='mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+EN'>Last, there are columns dedicated to means of contact. There is no much
+information in them, except for the “email” row.<o:p></o:p></span></p>
 
 	<h2>Analysis of the License</h2>
 	<p> 
