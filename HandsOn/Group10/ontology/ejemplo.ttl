@@ -57,7 +57,6 @@ default:recaudado
 
 default:id
       a       owl:DatatypeProperty ;
-      rdfs:comment ""^^xsd:string ;
       rdfs:domain
               [ a       owl:Class ;
                 owl:unionOf (default:Gastos default:Programa default:Centro default:Seccion default:Ingresos default:Capitulo)
@@ -74,9 +73,6 @@ default:Ingresos
 
 default:descripcion
       a       owl:DatatypeProperty ;
-      rdfs:comment """<p style=\"margin-top: 0\">
-      Description
-    </p>"""^^xsd:string ;
       rdfs:domain
               [ a       owl:Class ;
                 owl:unionOf (default:Gastos default:Programa default:Centro default:Seccion default:Ingresos default:Capitulo)
@@ -105,10 +101,6 @@ default:tieneCentro
                 owl:unionOf (default:Gastos default:Ingresos)
               ] ;
       rdfs:range default:Centro .
-
-default:ImpuesttosDirectos
-      default:descripcion "Impuestos directos"^^xsd:string ;
-      default:id "1"^^xsd:int .
 
 <http://group10#Centro/AyuntamientoMadrid>
       a       default:Centro ;

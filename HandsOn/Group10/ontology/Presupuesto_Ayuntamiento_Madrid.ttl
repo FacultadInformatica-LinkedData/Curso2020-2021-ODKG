@@ -73,7 +73,10 @@ default:recaudado
 
 default:id
       a       owl:DatatypeProperty ;
-      rdfs:comment ""^^xsd:string ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (default:Gastos default:Programa default:Centro default:Seccion default:Ingresos default:Capitulo)
+              ] ;
       rdfs:range xsd:int .
 
 default:Programa
@@ -89,7 +92,8 @@ default:Ingresos
 
 default:descripcion
       a       owl:DatatypeProperty ;
-      rdfs:comment """<p style=\"margin-top: 0\">
-      Description
-    </p>"""^^xsd:string ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (default:Gastos default:Programa default:Centro default:Seccion default:Ingresos default:Capitulo)
+              ] ;
       rdfs:range xsd:string .
