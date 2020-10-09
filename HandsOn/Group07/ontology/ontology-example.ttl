@@ -1,0 +1,825 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@base  trans:<https:/www.GovernmentProcurementCard.es/ontology#>.
+@prefix  id:<https:/www.GovernmentProcurementCard.es/resource/name/>.
+
+ #1
+id:BROXAP_LTD  a  trans:seller;
+        trans:makesOffer  trans:27032015_BROXAP_LTD .
+
+ trans:27032015_BROXAP_LTD   a trans:Transaction;
+         trans:hasTransactionDate  "27/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "75840"^^xsd:int;
+         trans:hasExplanation     "Items for offender workshops/industries"xsd:string.
+
+
+ #2
+id:SCREWFIX_DIRECT  a  trans:seller;
+        trans:makesOffer  trans:26032015_SCREWFIX_DIRECT .
+
+ trans:26032015_SCREWFIX_DIRECT   a trans:Transaction;
+         trans:hasTransactionDate  "26/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "82288"^^xsd:int;
+         trans:hasExplanation     "Estates - Supplies forMaintenance ofBuilding/Electrical/Plumbing"xsd:string.
+
+#3
+id:ALEXANDER_BROWN_AND_CO  a  trans:seller;
+        trans:makesOffer  trans:20032015_ALEXANDER_BROWN_AND_CO.
+
+ trans:20032015_ALEXANDER_BROWN_AND_CO  a trans:Transaction;
+         trans:hasTransactionDate  "20/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "166919"^^xsd:int;
+         trans:hasExplanation     "Estates - Services for Building/Electrical/Plumbing"xsd:string.
+
+#4
+id:ALEXANDER_BROWN_AND_CO  a  trans:seller;
+        trans:makesOffer  trans:19032015_ALEXANDER_BROWN_AND_CO  .
+
+ trans:19032015_ALEXANDER_BROWN_AND_CO   a trans:Transaction;
+         trans:hasTransactionDate  "19/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "150000"^^xsd:int;
+         trans:hasExplanation     "Estates - Supplies for Maintenance of Building/Electrical/Plumbing"xsd:string.
+
+#5
+id:ALEXANDER_BROWN_AND_CO  a  trans:seller;
+        trans:makesOffer  trans:19032015_ALEXANDER_BROWN_AND_CO  .
+
+ trans:19032015_ALEXANDER_BROWN_AND_CO  a trans:Transaction;
+         trans:hasTransactionDate  "19/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "150000"^^xsd:int;
+         trans:hasExplanation     "Estates - Supplies for Maintenance of Building/Electrical/Plumbing"xsd:string.
+
+#6
+id:MOORE_LARGE  a  trans:seller;
+        trans:makesOffer  trans:09032015_MOORE_LARGE  .
+
+ trans:09032015_MOORE_LARGE  a trans:Transaction;
+         trans:hasTransactionDate  "09/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "66975"^^xsd:int;
+         trans:hasExplanation     "Educational/Learning/Training - Equipment or Supplies"xsd:string.
+
+#7
+id:PC_WORLD  a  trans:seller;
+        trans:makesOffer  trans:16032015_PC_WORLD   .
+
+ trans:16032015_PC_WORLD  a trans:Transaction;
+         trans:hasTransactionDate  "16/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "83997"^^xsd:int;
+         trans:hasExplanation     "Educational/Learning/Training - Equipment or Supplies"xsd:string.
+#8
+id:EDMUNSON_ELEC  a  trans:seller;
+        trans:makesOffer  trans:16032015_EDMUNSON_ELEC .
+
+ trans:16032015_EDMUNSON_ELEC  a trans:Transaction;
+         trans:hasTransactionDate  "16/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "83858"^^xsd:int;
+         trans:hasExplanation     "Estates - Services for Building/Electrical/Plumbing"xsd:string.
+
+#9
+id:PANTILES_TROPHIES  a  trans:seller;
+        trans:makesOffer  trans:190032015_PANTILES_TROPHIES  .
+
+ trans:190032015_PANTILES_TROPHIES  a trans:Transaction;
+         trans:hasTransactionDate  "19/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "63250"^^xsd:int;
+         trans:hasExplanation     "Staff - Reward and recognition"xsd:string.
+
+#10
+id:NAS_UK  a  trans:seller;
+        trans:makesOffer  trans:18032015_NAS_UK   .
+
+ trans:18032015_NAS_UK  a trans:Transaction;
+         trans:hasTransactionDate  "18/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "75600"^^xsd:int;
+         trans:hasExplanation     "Staff Training"xsd:string.
+
+#11
+id:DARWIN_VETERINARY_CENT  a  trans:seller;
+        trans:makesOffer  trans:4032015_ARWIN_VETERINARY_CENT  .
+
+ trans:4032015_ARWIN_VETERINARY_CENT  a trans:Transaction;
+         trans:hasTransactionDate  "04/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "58921"^^xsd:int;
+         trans:hasExplanation     "Dogs - Vet Treatment Prison Service (Sniffer Dogs)"xsd:string.
+
+#12
+id:CENTRAL_SOURCE_LTD  a  trans:seller;
+        trans:makesOffer  trans:16032015_CENTRAL_SOURCE_LTD .
+
+ trans:16032015_CENTRAL_SOURCE_LTD   a trans:Transaction;
+         trans:hasTransactionDate  "16/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "72000"^^xsd:int;
+         trans:hasExplanation     "Estates - Services for Building/Electrical/Plumbing"xsd:string.
+
+#13
+id:SHELVINGSTORE  a  trans:seller;
+        trans:makesOffer  trans:16032015_SHELVINGSTORE  .
+
+ trans:16032015_SHELVINGSTORE   a trans:Transaction;
+         trans:hasTransactionDate  "16/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "68648"^^xsd:int;
+         trans:hasExplanation     "Office Supplies"xsd:string.
+
+#14
+id:Amazon_Svcs_Europe_SAR  a  trans:seller;
+        trans:makesOffer  trans:31032015_Amazon_Svcs_Europe_SAR   .
+
+ trans:31032015_Amazon_Svcs_Europe_SAR  a trans:Transaction;
+         trans:hasTransactionDate  "31/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "96600"^^xsd:int;
+         trans:hasExplanation     "Educational/Learning/Training - Equipment or Supplies "xsd:string.
+#15
+id:SCREWFIX_DIRECT  a  trans:seller;
+        trans:makesOffer  trans:31032015_SCREWFIX_DIRECT  .
+
+ trans:31032015_SCREWFIX_DIRECT   a trans:Transaction;
+         trans:hasTransactionDate  "31/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "67578"^^xsd:int;
+         trans:hasExplanation     "Educational/Learning/Training - Equipment or Supplies"xsd:string.
+
+#16
+id:GEAR4MUSIC  a  trans:seller;
+        trans:makesOffer  trans:26032015_GEAR4MUSIC  .
+
+ trans:26032015_GEAR4MUSIC  a trans:Transaction;
+         trans:hasTransactionDate  "26/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "83613"^^xsd:int;
+         trans:hasExplanation     "Educational/Learning/Training - Equipment or Supplies "xsd:string.
+
+#17
+id:DV247_LIMITED  a  trans:seller;
+        trans:makesOffer  trans:26032015_V247_LIMITED   .
+
+ trans:26032015_V247_LIMITED   a trans:Transaction;
+         trans:hasTransactionDate  "26/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "97500"^^xsd:int;
+         trans:hasExplanation     "Educational/Learning/Training - Equipment or Supplies"xsd:string.
+
+#18
+id:GAK_CO_UK  a  trans:seller;
+        trans:makesOffer  trans:26032015_GAK_CO_UK   .
+
+ trans:26032015_GAK_CO_UK   a trans:Transaction;
+         trans:hasTransactionDate  "26/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "99597"^^xsd:int;
+         trans:hasExplanation     "Educational/Learning/Training - Equipment or Supplies"xsd:string.
+
+#19
+id:SCREWFIX_DIRECT  a  trans:seller;
+        trans:makesOffer  trans:26032015_SCREWFIX_DIRECT  .
+
+ trans:26032015_SCREWFIX_DIRECT   a trans:Transaction;
+         trans:hasTransactionDate  "26/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "97996"^^xsd:int;
+         trans:hasExplanation     "Educational/Learning/Training - Equipment or Supplies"xsd:string.
+#20
+id:EXPERT_ELECTRICAL_SUPP  a  trans:seller;
+        trans:makesOffer  trans:27032015_EXPERT_ELECTRICAL_SUPP  .
+
+ trans:27032015_EXPERT_ELECTRICAL_SUPP  a trans:Transaction;
+         trans:hasTransactionDate  "27/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "72415"^^xsd:int;
+         trans:hasExplanation     "Educational/Learning/Training - Equipment or Supplies"xsd:string.
+#21
+id:BURY_VAN_HIRE_LIMITED  a  trans:seller;
+        trans:makesOffer  trans:25032015_BURY_VAN_HIRE_LIMITED   .
+
+ trans:25032015_BURY_VAN_HIRE_LIMITED   a trans:Transaction;
+         trans:hasTransactionDate  "25/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "55600"^^xsd:int;
+         trans:hasExplanation     "Vehicle - Transport"xsd:string.
+#22
+id:PARR_ROCHDALE_LTD  a  trans:seller;
+        trans:makesOffer  trans:13032015_PARR_ROCHDALE_LTD  .
+
+ trans:13032015_PARR_ROCHDALE_LTD  a trans:Transaction;
+         trans:hasTransactionDate  "13/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "59474"^^xsd:int;
+         trans:hasExplanation     "Estates - Services for Building/Electrical/Plumbing"xsd:string.
+
+#23
+id:TRAVIS_PERKINS  a  trans:seller;
+        trans:makesOffer  trans:09032015_RAVIS_PERKINS   .
+
+ trans:09032015_RAVIS_PERKINS   a trans:Transaction;
+         trans:hasTransactionDate  "09/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "79830"^^xsd:int;
+         trans:hasExplanation     "Educational/Learning/Training - Equipment or Supplies"xsd:string.
+#24
+id:TRAVIS_PERKINS a  trans:seller;
+        trans:makesOffer  trans:06032015_TRAVIS_PERKINS  .
+
+ trans:06032015_TRAVIS_PERKINS  a trans:Transaction;
+         trans:hasTransactionDate  "06/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "68718"^^xsd:int;
+         trans:hasExplanation     "Educational/Learning/Training - Equipment or Supplies"xsd:string.
+
+#25
+id:TRAVIS_PERKINS  a  trans:seller;
+        trans:makesOffer  trans:04032015_TRAVIS_PERKINS .
+
+ trans:04032015_TRAVIS_PERKINS   a trans:Transaction;
+         trans:hasTransactionDate  "04/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "52267"^^xsd:int;
+         trans:hasExplanation     "Educational/Learning/Training - Equipment or Supplies"xsd:string.
+#26
+id:TRAVIS_PERKINS  a  trans:seller;
+        trans:makesOffer  trans:03032015_TRAVIS_PERKINS  .
+
+ trans:03032015_TRAVIS_PERKINS  a trans:Transaction;
+         trans:hasTransactionDate  "03/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "71628"^^xsd:int;
+         trans:hasExplanation     "Educational/Learning/Training - Equipment or Supplies"xsd:string.
+#27
+id:TRAVIS_PERKINS  a  trans:seller;
+        trans:makesOffer  trans:03032015_TRAVIS_PERKINS  .
+
+ trans:03032015_TRAVIS_PERKINS   a trans:Transaction;
+         trans:hasTransactionDate  "03/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "78832"^^xsd:int;
+         trans:hasExplanation     "Educational/Learning/Training - Equipment or Supplies"xsd:string.
+#28
+id:CITY_ELECTRICAL_FA  a  trans:seller;
+        trans:makesOffer  trans:18032015_CITY_ELECTRICAL_FA  .
+
+ trans:18032015_CITY_ELECTRICAL_FA  a trans:Transaction;
+         trans:hasTransactionDate  "18/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "117300"^^xsd:int;
+         trans:hasExplanation     "Dogs - Kenneling for Prison Service (Sniffer Dogs)"xsd:string.
+#29
+id:RIDGEWAY_OXFORD_NORTH  a  trans:seller;
+        trans:makesOffer  trans: 6032015_RIDGEWAY_OXFORD_NORTH .
+
+ trans:6032015_RIDGEWAY_OXFORD_NORTH  a trans:Transaction;
+         trans:hasTransactionDate  "06/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "98355"^^xsd:int;
+         trans:hasExplanation     "Vehicle - MOT & Service"xsd:string.
+#30
+id:KINGSKERSWELL_POST_OFF  a  trans:seller;
+        trans:makesOffer  trans: 30032015_INGSKERSWELL_POST_OFF  .
+
+ trans:30032015_INGSKERSWELL_POST_OFF  a trans:Transaction;
+         trans:hasTransactionDate  "30/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "61130"^^xsd:int;
+         trans:hasExplanation     "Official Newspapers for prison library"xsd:string.
+#31
+id:PAPERSTONE  a  trans:seller;
+        trans:makesOffer  trans: 23032015_APERSTONE  .
+
+ trans:23032015_APERSTONE   a trans:Transaction;
+         trans:hasTransactionDate  "23/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "90942"^^xsd:int;
+         trans:hasExplanation     "Health and Safety Supplies"xsd:string.
+#32
+id:SIGNGEER_LTD  a  trans:seller;
+        trans:makesOffer  trans:31032015_SIGNGEER_LTD   .
+
+ trans:31032015_SIGNGEER_LTD  a trans:Transaction;
+         trans:hasTransactionDate  "31/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "52800"^^xsd:int;
+         trans:hasExplanation     "Educational/Learning/Training - Equipment or Supplies"xsd:string.
+#33
+id:PHYSIQUE_SPORTS  a  trans:seller;
+        trans:makesOffer  trans:13032015_PHYSIQUE_SPORTS  .
+
+ trans:13032015_PHYSIQUE_SPORTS  a trans:Transaction;
+         trans:hasTransactionDate  "13/03/2015"^^xsd:date;
+        trans:hasTransactionAmount  "57000"^^xsd:int;
+         trans:hasExplanation     "Health and fitness equipment"xsd:string.
+#34
+id:PHYSIQUE_SPORTS  a  trans:seller;
+        trans:makesOffer  trans:13032015_PHYSIQUE_SPORTS  .
+
+ trans:13032015_PHYSIQUE_SPORTS  a trans:Transaction;
+         trans:hasTransactionDate  "13/03/2015"^^xsd:date;
+        trans:hasTransactionAmount  "57000"^^xsd:int;
+         trans:hasExplanation     "Health and fitness equipment"xsd:string.
+#35
+id:CHARTERHOUSE_HOLDI  a  trans:seller;
+        trans:makesOffer  trans:26032015_CHARTERHOUSE_HOLDI  .
+
+ trans:26032015_CHARTERHOUSE_HOLDI  a trans:Transaction;
+         trans:hasTransactionDate  "26/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "107400"^^xsd:int;
+         trans:hasExplanation     "Educational/Learning/Training - Equipment or Supplies"xsd:string.
+
+#36
+id:UPNORTH_ENGINEERING_SE  a  trans:seller;
+        trans:makesOffer  trans: 26032015_UPNORTH_ENGINEERING_SE .
+
+ trans:26032015_UPNORTH_ENGINEERING_SE  a trans:Transaction;
+         trans:hasTransactionDate  "26/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "277160"^^xsd:int;
+         trans:hasExplanation     "Estates - Services for Building/Electrical/Plumbing"xsd:string.
+#37
+id:DIGITAL_PHOTO_SOLUTION  a  trans:seller;
+        trans:makesOffer  trans:24032015_DIGITAL_PHOTO_SOLUTION  .
+
+ trans:24032015_DIGITAL_PHOTO_SOLUTION  a trans:Transaction;
+         trans:hasTransactionDate  "24/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "407880"^^xsd:int;
+         trans:hasExplanation     "Educational/Learning/Training - Equipment or Supplies"xsd:string.
+         
+#38
+id:STOCKS_SEW_BROTHER  a  trans:seller;
+        trans:makesOffer  trans:23032015_STOCKS_SEW_BROTHER   .
+
+ trans:3032015_STOCKS_SEW_BROTHER   a trans:Transaction;
+         trans:hasTransactionDate  "23/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "799800"^^xsd:int;
+         trans:hasExplanation     "Items for offender workshops/industries"xsd:string.
+
+#39
+id:UPNORTH_ENGINEERING_SE a  trans:seller;
+        trans:makesOffer  trans:12032015_UPNORTH_ENGINEERING_SE  .
+
+ trans:12032015_UPNORTH_ENGINEERING_SE   a trans:Transaction;
+         trans:hasTransactionDate  "12/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "116759"^^xsd:int;
+         trans:hasExplanation     "Estates - Supplies for Maintenance of Building/Electrical/Plumbing"xsd:string.
+#40
+id:CHARTERHOUSE_HOLDI  a  trans:seller;
+        trans:makesOffer  trans:12032015_CHARTERHOUSE_HOLDI    .
+
+ trans:12032015_CHARTERHOUSE_HOLDI   a trans:Transaction;
+         trans:hasTransactionDate  "12/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "317280"^^xsd:int;
+         trans:hasExplanation     "Educational/Learning/Training - Equipment or Supplies"xsd:string.
+#41
+id:LIGHTHOUSE  a  trans:seller;
+        trans:makesOffer  trans:09032015_LIGHTHOUSE  .
+
+ trans:09032015_LIGHTHOUSE   a trans:Transaction;
+         trans:hasTransactionDate  "09/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "460920"^^xsd:int;
+         trans:hasExplanation     "Educational/Learning/Training - Equipment or Supplies"xsd:string.
+#42
+id:L_PROSSER a  trans:seller;
+        trans:makesOffer  trans:06032015_L_PROSSER  .
+
+ trans:06032015_L_PROSSER    a trans:Transaction;
+         trans:hasTransactionDate  "06/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "64800"^^xsd:int;
+         trans:hasExplanation     "Waste disposal products/services including Chemical"xsd:string.
+#43
+id:FRANKLIN_STEEL_STOCKHO  a  trans:seller;
+        trans:makesOffer  trans:05032015_RANKLIN_STEEL_STOCKHO  .
+
+ trans:05032015_RANKLIN_STEEL_STOCKHO  a trans:Transaction;
+         trans:hasTransactionDate  "05/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "99797"^^xsd:int;
+         trans:hasExplanation     "Estates - Industrial supplies/equipment"xsd:string.
+#44
+id:JEWSON_LTD  a  trans:seller;
+        trans:makesOffer  trans:03032015_JEWSON_LTD  .
+
+ trans:03032015_JEWSON_LTD  a trans:Transaction;
+         trans:hasTransactionDate  "03/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "88755"^^xsd:int;
+         trans:hasExplanation     "Estates - Industrial supplies/equipment"xsd:string.
+#45
+id:LORD_HIRE_CENTRES  a  trans:seller;
+        trans:makesOffer  trans:03032015_LORD_HIRE_CENTRES   .
+
+ trans:03032015_LORD_HIRE_CENTRES  a trans:Transaction;
+         trans:hasTransactionDate  "03/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "72208"^^xsd:int;
+         trans:hasExplanation     "Estates - Supplies for Maintenance of Building/Electrical/Plumbing"xsd:string.
+#46
+id:HAMILTON_POLLOCK  a  trans:seller;
+        trans:makesOffer  trans:02032015_HAMILTON_POLLOCK  .
+
+ trans:02032015_HAMILTON_POLLOCK   a trans:Transaction;
+         trans:hasTransactionDate  "02/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "237000"^^xsd:int;
+         trans:hasExplanation     "Items for offender workshops/industries"xsd:string.
+#47
+id:CANVAS_STRETCHER  a  trans:seller;
+        trans:makesOffer  trans:23032015_CANVAS_STRETCHER  .
+
+ trans:23032015_CANVAS_STRETCHER   a trans:Transaction;
+         trans:hasTransactionDate  "23/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "55218"^^xsd:int;
+         trans:hasExplanation     "Items for offender workshops/industries"xsd:string.
+#48
+id:THE_MANCHESTER_CIVIL_J  a  trans:seller;
+        trans:makesOffer  trans: 13032015_THE_MANCHESTER_CIVIL_J  .
+
+ trans:13032015_THE_MANCHESTER_CIVIL_J   a trans:Transaction;
+         trans:hasTransactionDate  "13/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "66600"^^xsd:int;
+         trans:hasExplanation     "Staff Training"xsd:string.
+#49
+id:TROWBRIDGE_FORD  a  trans:seller;
+        trans:makesOffer  trans:04032015 _TROWBRIDGE_FORD .
+
+ trans:04032015 _TROWBRIDGE_FORD  a trans:Transaction;
+         trans:hasTransactionDate  "04/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "59736"^^xsd:int;
+         trans:hasExplanation     "Vehicle - MOT & Service"xsd:string.
+#50
+id:OPP_LTD_STERLING_VT  a  trans:seller;
+        trans:makesOffer  trans:27032015_PP_LTD_STERLING_VT .
+
+ trans:27032015_PP_LTD_STERLING_VT  a trans:Transaction;
+         trans:hasTransactionDate  "27/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "81150"^^xsd:int;
+         trans:hasExplanation     "Educational/Learning/Training - Equipment or Supplies"xsd:string.
+#51
+id:BIRKBECK_COLLEGE  a  trans:seller;
+        trans:makesOffer  trans:24032015_BIRKBECK_COLLEGE   .
+
+ trans:24032015_BIRKBECK_COLLEGE  a trans:Transaction;
+         trans:hasTransactionDate  "24/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "75000"^^xsd:int;
+         trans:hasExplanation     "Staff Training"xsd:string.
+#52
+id:UNIVERSAL_RENTALS  a  trans:seller;
+        trans:makesOffer  trans: 12032015_UNIVERSAL_RENTALS .
+
+ trans:12032015_UNIVERSAL_RENTALS   a trans:Transaction;
+         trans:hasTransactionDate  "12/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "67200"^^xsd:int;
+         trans:hasExplanation     "Educational/Learning/Training - Equipment or Supplies"xsd:string.
+#53
+id:SHL_Group_Ltd  a  trans:seller;
+        trans:makesOffer  trans:11032015_SHL_Group_Ltd  .
+
+ trans:11032015_SHL_Group_Ltd   a trans:Transaction;
+         trans:hasTransactionDate  "11/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "95400"^^xsd:int;
+         trans:hasExplanation     "Professional Subscriptions and Membership Fees"xsd:string.
+#54
+id:AUTOGLASS  a  trans:seller;
+        trans:makesOffer  trans: 31032015_UTOGLASS .
+
+ trans:31032015_UTOGLASS  a trans:Transaction;
+         trans:hasTransactionDate  "31/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "63605"^^xsd:int;
+         trans:hasExplanation     "Vehicle - New or Repairs and Maintenance"xsd:string.
+#55
+id:ALEXANDRA_WEBSITE  a  trans:seller;
+        trans:makesOffer  trans:25032015_ALEXANDRA_WEBSITE  .
+
+ trans:25032015_ALEXANDRA_WEBSITE  a trans:Transaction;
+         trans:hasTransactionDate  "25/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "51088"^^xsd:int;
+         trans:hasExplanation     "Items for offender workshops/industries"xsd:string.
+
+#56
+id:PULMAN  a  trans:seller;
+        trans:makesOffer  trans:31032015_PULMAN   .
+
+ trans:31032015_PULMAN   a trans:Transaction;
+         trans:hasTransactionDate  "31/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "64931"^^xsd:int;
+         trans:hasExplanation     "Vehicle - New or Repairs and Maintenance"xsd:string.
+#57
+id:PULMAN   a  trans:seller;
+        trans:makesOffer  trans:31032015_PULMAN  .
+
+ trans: 31032015_PULMAN  a trans:Transaction;
+         trans:hasTransactionDate  "31/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "56177"^^xsd:int;
+         trans:hasExplanation     "Vehicle - New or Repairs and Maintenance"xsd:string.
+#58
+id:NOVA_CHROME_UK_LTD  a  trans:seller;
+        trans:makesOffer  trans: 20032015_NOVA_CHROME_UK_LTD .
+
+ trans:20032015_NOVA_CHROME_UK_LTD  a trans:Transaction;
+         trans:hasTransactionDate  "20/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "85140"^^xsd:int;
+         trans:hasExplanation     "Educational/Learning/Training - Equipment or Supplies"xsd:string.
+#59
+id:XPRES  a  trans:seller;
+        trans:makesOffer  trans:17032015_XPRES  .
+
+ trans:17032015_XPRES  a trans:Transaction;
+         trans:hasTransactionDate  "17/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "107400"^^xsd:int;
+         trans:hasExplanation     "Educational/Learning/Training - Equipment or Supplies"xsd:string.
+#60
+id:XPRES  a  trans:seller;
+        trans:makesOffer  trans:17032015_XPRES  .
+
+ trans:17032015_XPRES  a trans:Transaction;
+         trans:hasTransactionDate  "17/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "51450"^^xsd:int;
+         trans:hasExplanation     "Educational/Learning/Training - Equipment or Supplies"xsd:string.
+#61
+id:ESSENTRA_PACKAGING  a  trans:seller;
+        trans:makesOffer  trans:16032015_ESSENTRA_PACKAGING  .
+
+ trans:16032015_ESSENTRA_PACKAGING   a trans:Transaction;
+         trans:hasTransactionDate  "16/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "149460"^^xsd:int;
+         trans:hasExplanation     "Assistive Technology and Equipment"xsd:string.
+#62
+id:ARGOS_DIRECT  a  trans:seller;
+        trans:makesOffer  trans:11032015_ARGOS_DIRECT  .
+
+ trans:11032015_ARGOS_DIRECT  a trans:Transaction;
+         trans:hasTransactionDate  "11/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "8399"^^xsd:int;
+         trans:hasExplanation     "IT equipment"xsd:string.
+#63
+id:Amazon_Svcs_Europe_SAR  a  trans:seller;
+        trans:makesOffer  trans:26032015_Amazon_Svcs_Europe_SAR  .
+
+ trans:26032015_Amazon_Svcs_Europe_SAR   a trans:Transaction;
+         trans:hasTransactionDate  "26/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "83800"^^xsd:int;
+         trans:hasExplanation     "Estates - Furniture/fixtures/fittings"xsd:string.
+#64
+id:Amazon_Svcs_Europe_SAR  a  trans:seller;
+        trans:makesOffer  trans:04032015_Amazon_Svcs_Europe_SAR  .
+
+ trans:04032015_Amazon_Svcs_Europe_SAR  a trans:Transaction;
+         trans:hasTransactionDate  "04/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "68970"^^xsd:int;
+         trans:hasExplanation     "Security Equipment "xsd:string.
+#65
+id:CONNEVANS  a  trans:seller;
+        trans:makesOffer  trans:27032015_CONNEVANS  .
+
+ trans:27032015_CONNEVANS   a trans:Transaction;
+         trans:hasTransactionDate  "27/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "51498"^^xsd:int;
+         trans:hasExplanation     "Assistive Technology and Equipment"xsd:string.
+#66
+id:TRIAD_GARAGES_LTD  a  trans:seller;
+        trans:makesOffer  trans:23032015_TRIAD_GARAGES_LTD  .
+
+ trans:23032015_TRIAD_GARAGES_LTD   a trans:Transaction;
+         trans:hasTransactionDate  "23/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "95100"^^xsd:int;
+         trans:hasExplanation     "Vehicle - MOT & Service"xsd:string.
+#67
+id:TRIAD_GARAGES_LTD  a  trans:seller;
+        trans:makesOffer  trans:23032015_TRIAD_GARAGES_LTD  .
+
+ trans:23032015_TRIAD_GARAGES_LTD   a trans:Transaction;
+         trans:hasTransactionDate  "23/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "53308"^^xsd:int;
+         trans:hasExplanation     "Vehicle - MOT & Service"xsd:string.
+#68
+id:SOPER_GROUP_LTD  a  trans:seller;
+        trans:makesOffer  trans:19032015_SOPER_GROUP_LTD  .
+
+ trans:19032015_SOPER_GROUP_LTD  a trans:Transaction;
+         trans:hasTransactionDate  "19/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "68839"^^xsd:int;
+         trans:hasExplanation     "Estates - Industrial supplies/equipment"xsd:string
+#69
+id:TRIAD_GARAGES_LTD  a  trans:seller;
+        trans:makesOffer  trans:16032015_TRIAD_GARAGES_LTD  .
+
+ trans:16032015_TRIAD_GARAGES_LTD   a trans:Transaction;
+         trans:hasTransactionDate  "16/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "56200"^^xsd:int;
+         trans:hasExplanation     "Estates - Industrial supplies/equipment"xsd:string.
+#70
+id:PENTALVER_TRANSPORT_LT  a  trans:seller;
+        trans:makesOffer  trans:19032015_PENTALVER_TRANSPORT_LT  .
+
+ trans:19032015_PENTALVER_TRANSPORT_LT   a trans:Transaction;
+         trans:hasTransactionDate  "19/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "349800"^^xsd:int;
+         trans:hasExplanation     "Estates - Supplies for Maintenance of Building/Electrical/Plumbing"xsd:string.
+#71
+id:DESTINATIONTRIUMPH  a  trans:seller;
+        trans:makesOffer  trans: 10032015_DESTINATIONTRIUMPH  .
+
+ trans: 10032015_DESTINATIONTRIUMPH a trans:Transaction;
+         trans:hasTransactionDate  "10/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "101548"^^xsd:int;
+         trans:hasExplanation     "Vehicle - New or Repairs and Maintenance"xsd:string.
+#72
+id:OWEN_ATV_GARDEN_MACH  a  trans:seller;
+        trans:makesOffer  trans:05032015_OWEN_ATV_GARDEN_MACH  .
+
+ trans:05032015_OWEN_ATV_GARDEN_MACH  a trans:Transaction;
+         trans:hasTransactionDate  "05/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "81350"^^xsd:int;
+         trans:hasExplanation     "Gardening Equipment/Services/Supplies for prisoners to gain recognised qualifications in horticulture"xsd:string.
+#73
+id:EDMUNDSON_ELECTRICAL_L  a  trans:seller;
+        trans:makesOffer  trans:26032015_EDMUNDSON_ELECTRICAL_L .
+
+ trans:26032015_EDMUNDSON_ELECTRICAL_L  a trans:Transaction;
+         trans:hasTransactionDate  "26/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "62060"^^xsd:int;
+         trans:hasExplanation     "Estates - Supplies for Maintenance of Building/Electrical/Plumbing"xsd:string.
+#74
+id:EDMUNDSON_ELECTRICAL_L  a  trans:seller;
+        trans:makesOffer  trans:26032015_EDMUNDSON_ELECTRICAL_L   .
+
+ trans:26032015_EDMUNDSON_ELECTRICAL_L   a trans:Transaction;
+         trans:hasTransactionDate  "26/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "77400"^^xsd:int;
+         trans:hasExplanation     "Estates - Supplies for Maintenance of Building/Electrical/Plumbing"xsd:string.
+#75
+id:EDMUNDSON_ELECTRICAL_L  a  trans:seller;
+        trans:makesOffer  trans:26032015_EDMUNDSON_ELECTRICAL_L  .
+
+ trans:26032015_EDMUNDSON_ELECTRICAL_L  a trans:Transaction;
+         trans:hasTransactionDate  "26/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "51204"^^xsd:int;
+         trans:hasExplanation     "Estates - Supplies for Maintenance of Building/Electrical/Plumbing"xsd:string.
+#76
+id:ARCO_LTD  a  trans:seller;
+        trans:makesOffer  trans:20032015_ARCO_LTD  .
+
+ trans:20032015_ARCO_LTD  a trans:Transaction;
+         trans:hasTransactionDate  "20/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "59474"^^xsd:int;
+         trans:hasExplanation     "Estates - Industrial supplies/equipment"xsd:string.
+#77
+id:MASTERS_TRADITIONAL  a  trans:seller;
+        trans:makesOffer  trans:09032015_MASTERS_TRADITIONAL  .
+
+ trans:09032015_MASTERS_TRADITIONAL  a trans:Transaction;
+         trans:hasTransactionDate  "09/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "54758"^^xsd:int;
+         trans:hasExplanation     "Items for offender workshops/industries"xsd:string.
+#78
+id:MASTERS_TRADITIONAL  a  trans:seller;
+        trans:makesOffer  trans:09032015_MASTERS_TRADITIONAL   .
+
+ trans:9032015_MASTERS_TRADITIONAL   a trans:Transaction;
+         trans:hasTransactionDate  "09/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "97525"^^xsd:int;
+         trans:hasExplanation     "Items for offender workshops/industries"xsd:string.
+#79
+id:MASTERS_TRADITIONAL  a  trans:seller;
+        trans:makesOffer  trans:12032015_MASTERS_TRADITIONAL   .
+
+ trans:12032015_MASTERS_TRADITIONAL  a trans:Transaction;
+         trans:hasTransactionDate  "12/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "97525"^^xsd:int;
+         trans:hasExplanation     "Items for offender workshops/industries"xsd:string.
+#80
+id:PARTS_CENTER_3NA  a  trans:seller;
+        trans:makesOffer  trans:06032015_PARTS_CENTER_3NA   .
+
+ trans:06032015_PARTS_CENTER_3NA   a trans:Transaction;
+         trans:hasTransactionDate  "06/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "84360"^^xsd:int;
+         trans:hasExplanation     "Estates - Services for Building/Electrical/Plumbing"xsd:string.
+#81
+id:IRONMONGERY_DIRECT_LTD  a  trans:seller;
+        trans:makesOffer  trans:30032015_IRONMONGERY_DIRECT_LTD  .
+
+ trans:30032015_IRONMONGERY_DIRECT_LTD  a trans:Transaction;
+         trans:hasTransactionDate  "30/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "61920"^^xsd:int;
+         trans:hasExplanation     "Estates - Supplies for Maintenance of Building/Electrical/Plumbing"xsd:string.
+#82
+id:WATCO_UK_LTD  a  trans:seller;
+        trans:makesOffer  trans:30032015_WATCO_UK_LTD    .
+
+ trans:30032015_WATCO_UK_LTD   a trans:Transaction;
+         trans:hasTransactionDate  "30/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "55488"^^xsd:int;
+         trans:hasExplanation     "Estates - Supplies for Maintenance of Building/Electrical/Plumbing"xsd:string.
+#83
+id:PREMIERPOLYTUNNELS  a  trans:seller;
+        trans:makesOffer  trans: 09032015_PREMIERPOLYTUNNELS .
+
+ trans:09032015_PREMIERPOLYTUNNELS  a trans:Transaction;
+         trans:hasTransactionDate  "09/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "56830"^^xsd:int;
+         trans:hasExplanation     "Gardening Equipment/Services/Supplies for prisoners to gain recognised qualifications in horticulture"xsd:string.
+#84
+id:HOTSET_UK_LTD  a  trans:seller;
+        trans:makesOffer  trans:20032015_HOTSET_UK_LTD   .
+
+ trans:20032015_HOTSET_UK_LTD  a trans:Transaction;
+         trans:hasTransactionDate  "20/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "55852"^^xsd:int;
+         trans:hasExplanation     "Estates - Industrial supplies/equipment"xsd:string.
+#85
+id:MALCOLMS_MUSICLAND  a  trans:seller;
+        trans:makesOffer  trans:20032015_MALCOLMS_MUSICLAND   .
+
+ trans:20032015_MALCOLMS_MUSICLAND  a trans:Transaction;
+         trans:hasTransactionDate  "20/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "74234"^^xsd:int;
+         trans:hasExplanation     "Educational/Learning/Training - Equipment or Supplies"xsd:string.
+#86
+id:Amazon_Svcs_Europe_SAR  a  trans:seller;
+        trans:makesOffer  trans: 20032015_Amazon_Svcs_Europe_SAR  .
+
+ trans:20032015_Amazon_Svcs_Europe_SAR  a trans:Transaction;
+         trans:hasTransactionDate  "20/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "63308"^^xsd:int;
+         trans:hasExplanation     "Educational/Learning/Training - Equipment or Supplies"xsd:string.
+#87
+id:I_C_S_COOL_ENERGY  a  trans:seller;
+        trans:makesOffer  trans:20032015_I_C_S_COOL_ENERGY  .
+
+ trans: 20032015_I_C_S_COOL_ENERGY a trans:Transaction;
+         trans:hasTransactionDate  "20/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "57000"^^xsd:int;
+         trans:hasExplanation     "Estates - Services for Building/Electrical/Plumbing"xsd:string.
+#88
+id:TRADELINE_LTD  a  trans:seller;
+        trans:makesOffer  trans:11032015_TRADELINE_LTD   .
+
+ trans:11032015_TRADELINE_LTD   a trans:Transaction;
+         trans:hasTransactionDate  "11/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "50000"^^xsd:int;
+         trans:hasExplanation     "Estates - Services for Building/Electrical/Plumbing"xsd:string.
+#89
+id:FELFORD_SUPPLIES  a  trans:seller;
+        trans:makesOffer  trans:18032015_FELFORD_SUPPLIES   .
+
+ trans:18032015_FELFORD_SUPPLIES  a trans:Transaction;
+         trans:hasTransactionDate  "18/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "96000"^^xsd:int;
+         trans:hasExplanation     "Health and Safety Supplies"xsd:string.
+#90
+id:FELFORD_SUPPLIES  a  trans:seller;
+        trans:makesOffer  trans: 17032015_FELFORD_SUPPLIES  .
+
+ trans: 17032015_FELFORD_SUPPLIES a trans:Transaction;
+         trans:hasTransactionDate  "17/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "89940"^^xsd:int;
+         trans:hasExplanation     "Health and Safety Supplies"xsd:string.
+#91
+id:EBUYER_LTD  a  trans:seller;
+        trans:makesOffer  trans:26032015_EBUYER_LTD   .
+
+ trans: 26032015_EBUYER_LTD a trans:Transaction;
+         trans:hasTransactionDate  "26/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "66998"^^xsd:int;
+         trans:hasExplanation     "Assistive Technology and Equipment"xsd:string.
+#92
+id:AZELIS_UK_INDUSTRIAL_C  a  trans:seller;
+        trans:makesOffer  trans:20032015_AZELIS_UK_INDUSTRIAL_C  .
+
+ trans:20032015_AZELIS_UK_INDUSTRIAL_C  a trans:Transaction;
+         trans:hasTransactionDate  "20/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "90522"^^xsd:int;
+         trans:hasExplanation     "Estates - Industrial supplies/equipment"xsd:string.
+#93
+id:WICKES  a  trans:seller;
+        trans:makesOffer  trans:19032015_WICKES   .
+
+ trans: 19032015_WICKES a trans:Transaction;
+         trans:hasTransactionDate  "19/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "58560"^^xsd:int;
+         trans:hasExplanation     "Estates - Services for Building/Electrical/Plumbing"xsd:string.
+#94
+id:EBUYER_LTD  a  trans:seller;
+        trans:makesOffer  trans:11032015_EBUYER_LTD  .
+
+ trans: 11032015_EBUYER_LTD a trans:Transaction;
+         trans:hasTransactionDate  "11/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "59999"^^xsd:int;
+         trans:hasExplanation     "Assistive Technology and Equipment"xsd:string.
+#95
+id:ADVANCE_AUTOTECH  a  trans:seller;
+        trans:makesOffer  trans:05032015_DVANCE_AUTOTECH  .
+
+ trans:05032015_DVANCE_AUTOTECH  a trans:Transaction;
+         trans:hasTransactionDate  "05/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "60000"^^xsd:int;
+         trans:hasExplanation     "Vehicle - New or Repairs and Maintenance"xsd:string.
+#96
+id:ADVANCE_AUTOTECH  a  trans:seller;
+        trans:makesOffer  trans: 5032015_DVANCE_AUTOTECH .
+
+ trans: 5032015_DVANCE_AUTOTECH a trans:Transaction;
+         trans:hasTransactionDate  "05/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "50998"^^xsd:int;
+         trans:hasExplanation     "Vehicle - New or Repairs and Maintenance"xsd:string.
+#97
+id:LABORATORY_PRECISION_L  a  trans:seller;
+        trans:makesOffer  trans:5032015_LABORATORY_PRECISION_L  .
+
+ trans:5032015_LABORATORY_PRECISION_L  a trans:Transaction;
+         trans:hasTransactionDate  "05/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "72000"^^xsd:int;
+         trans:hasExplanation     "Items for offender workshops/industries"xsd:string.
+#98
+id:DSG_VAUXHALL  a  trans:seller;
+        trans:makesOffer  trans:30032015_DSG_VAUXHALL   .
+
+ trans:30032015_DSG_VAUXHALL   a trans:Transaction;
+         trans:hasTransactionDate  "30/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "72731"^^xsd:int;
+         trans:hasExplanation     "Vehicle - New or Repairs and Maintenance"xsd:string.
+#99
+id:Amazon_UK_Marketplace  a  trans:seller;
+        trans:makesOffer  trans:30032015_Amazon_UK_Marketplace  .
+
+ trans:30032015_Amazon_UK_Marketplace   a trans:Transaction;
+         trans:hasTransactionDate  "30/03/2015"^^xsd:date;
+         trans:hasTransactionAmount  "77670"^^xsd:int;
+         trans:hasExplanation     "Prison -Operational items"xsd:string.
+
+
