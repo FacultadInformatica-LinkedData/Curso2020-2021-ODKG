@@ -1,302 +1,108 @@
-<?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.group01.org/aragon/"
-     xml:base="http://www.group01.org/aragon/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:ontology="http://www.group01.org/aragon/ontology/">
-    <owl:Ontology rdf:about="http://www.group01.org/aragon/"/>
-    
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ns0: <http://www.group01.org/aragon/ontology/> .
+
+<http://www.group01.org/aragon/> a owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+<http://www.group01.org/aragon/ontology/awardedTo>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://www.group01.org/aragon/ontology/Contract> ;
+  rdfs:range <http://www.group01.org/aragon/ontology/Company> .
+
+<http://www.group01.org/aragon/ontology/hasAwardPrice>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://www.group01.org/aragon/ontology/Contract> ;
+  rdfs:range <http://www.group01.org/aragon/ontology/PriceAmount> .
+
+<http://www.group01.org/aragon/ontology/hasAwardProcedure>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://www.group01.org/aragon/ontology/Contract> ;
+  rdfs:range <http://www.group01.org/aragon/ontology/AwardProcedure> .
+
+<http://www.group01.org/aragon/ontology/hasBiddingPrice>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://www.group01.org/aragon/ontology/Contract> ;
+  rdfs:range <http://www.group01.org/aragon/ontology/PriceAmount> .
+
+<http://www.group01.org/aragon/ontology/hasCurrency>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://www.group01.org/aragon/ontology/PriceAmount> ;
+  rdfs:range <http://www.group01.org/aragon/ontology/Currency> .
+
+<http://www.group01.org/aragon/ontology/hasGovermentRequester>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://www.group01.org/aragon/ontology/Contract> ;
+  rdfs:range <http://www.group01.org/aragon/ontology/GovermentBody> .
+
+<http://www.group01.org/aragon/ontology/hasTypeOfContract>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://www.group01.org/aragon/ontology/Contract> ;
+  rdfs:range <http://www.group01.org/aragon/ontology/TypeOfContract> .
+
+<http://www.group01.org/aragon/ontology/hasYear>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://www.group01.org/aragon/ontology/Contract> ;
+  rdfs:range <http://www.group01.org/aragon/ontology/Year> .
+
+<http://www.group01.org/aragon/ontology/hasDescription>
+  a owl:DatatypeProperty ;
+  rdfs:domain <http://www.group01.org/aragon/ontology/Contract> ;
+  rdfs:range rdfs:Literal .
+
+<http://www.group01.org/aragon/ontology/hasID>
+  a owl:DatatypeProperty ;
+  rdfs:domain <http://www.group01.org/aragon/ontology/Contract> ;
+  rdfs:range rdfs:Literal .
+
+<http://www.group01.org/aragon/ontology/hasValue>
+  a owl:DatatypeProperty ;
+  rdfs:domain <http://www.group01.org/aragon/ontology/PriceAmount> ;
+  rdfs:range xsd:double .
+
+<http://www.group01.org/aragon/ontology/publicationMethod>
+  a owl:DatatypeProperty ;
+  rdfs:domain <http://www.group01.org/aragon/ontology/Contract> ;
+  rdfs:range rdfs:Literal .
+
+<http://www.group01.org/aragon/ontology/AwardProcedure> a owl:Class .
+<http://www.group01.org/aragon/ontology/Company> a owl:Class .
+<http://www.group01.org/aragon/ontology/Contract> a owl:Class .
+<http://www.group01.org/aragon/ontology/Currency> a owl:Class .
+<http://www.group01.org/aragon/ontology/GovermentBody> a owl:Class .
+<http://www.group01.org/aragon/ontology/PriceAmount> a owl:Class .
+<http://www.group01.org/aragon/ontology/TypeOfContract> a owl:Class .
+<http://www.group01.org/aragon/ontology/Year> a owl:Class .
+<http://www.group01.org/aragon/resource/AwardProcedure/porAdministracion> a owl:NamedIndividual, <http://www.group01.org/aragon/ontology/AwardProcedure> .
+<http://www.group01.org/aragon/resource/Company/ExpoZaragoza> a owl:NamedIndividual, <http://www.group01.org/aragon/ontology/Company> .
+<http://www.group01.org/aragon/resource/Contract/Contrato1>
+  a owl:NamedIndividual, <http://www.group01.org/aragon/ontology/Contract> ;
+  ns0:awardedTo <http://www.group01.org/aragon/resource/Company/ExpoZaragoza> ;
+  ns0:hasAwardPrice <http://www.group01.org/aragon/resource/PriceAmount/Importe1> ;
+  ns0:hasAwardProcedure <http://www.group01.org/aragon/resource/AwardProcedure/porAdministracion> ;
+  ns0:hasBiddingPrice <http://www.group01.org/aragon/resource/PriceAmount/Importe2> ;
+  ns0:hasGovermentRequester <http://www.group01.org/aragon/resource/GovermentBody/InstitutoAragonesDeGestionAmbiental> ;
+  ns0:hasTypeOfContract <http://www.group01.org/aragon/resource/TypeOfContract/Obras> ;
+  ns0:hasYear <http://www.group01.org/aragon/resource/Year/2017> ;
+  ns0:hasDescription "Obras adecuación oficinas INAGA ZARAGOZA"^^rdfs:Literal ;
+  ns0:hasID "CONAD20177500000046"^^rdfs:Literal ;
+  ns0:publicationMethod "https://servicios.aragon.es/pcon/pcon-public/"^^rdfs:Literal .
+
+<http://www.group01.org/aragon/resource/Currency/Euros> a owl:NamedIndividual, ns0:Currency .
+<http://www.group01.org/aragon/resource/GovermentBody/InstitutoAragonesDeGestionAmbiental> a owl:NamedIndividual, ns0:GovermentBody .
+<http://www.group01.org/aragon/resource/PriceAmount/Importe1>
+  a owl:NamedIndividual, ns0:PriceAmount ;
+  ns0:hasCurrency <http://www.group01.org/aragon/resource/Currency/Euros> ;
+  ns0:hasValue 7.160690e+3 .
+
+<http://www.group01.org/aragon/resource/PriceAmount/Importe2>
+  a owl:NamedIndividual, ns0:PriceAmount ;
+  ns0:hasCurrency <http://www.group01.org/aragon/resource/Currency/Euros> ;
+  ns0:hasValue 7.263850e+3 .
 
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.group01.org/aragon/ontology/awardedTo -->
-
-    <owl:ObjectProperty rdf:about="http://www.group01.org/aragon/ontology/awardedTo">
-        <rdfs:domain rdf:resource="http://www.group01.org/aragon/ontology/Contract"/>
-        <rdfs:range rdf:resource="http://www.group01.org/aragon/ontology/Company"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.group01.org/aragon/ontology/hasAwardPrice -->
-
-    <owl:ObjectProperty rdf:about="http://www.group01.org/aragon/ontology/hasAwardPrice">
-        <rdfs:domain rdf:resource="http://www.group01.org/aragon/ontology/Contract"/>
-        <rdfs:range rdf:resource="http://www.group01.org/aragon/ontology/PriceAmount"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.group01.org/aragon/ontology/hasAwardProcedure -->
-
-    <owl:ObjectProperty rdf:about="http://www.group01.org/aragon/ontology/hasAwardProcedure">
-        <rdfs:domain rdf:resource="http://www.group01.org/aragon/ontology/Contract"/>
-        <rdfs:range rdf:resource="http://www.group01.org/aragon/ontology/AwardProcedure"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.group01.org/aragon/ontology/hasBiddingPrice -->
-
-    <owl:ObjectProperty rdf:about="http://www.group01.org/aragon/ontology/hasBiddingPrice">
-        <rdfs:domain rdf:resource="http://www.group01.org/aragon/ontology/Contract"/>
-        <rdfs:range rdf:resource="http://www.group01.org/aragon/ontology/PriceAmount"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.group01.org/aragon/ontology/hasCurrency -->
-
-    <owl:ObjectProperty rdf:about="http://www.group01.org/aragon/ontology/hasCurrency">
-        <rdfs:domain rdf:resource="http://www.group01.org/aragon/ontology/PriceAmount"/>
-        <rdfs:range rdf:resource="http://www.group01.org/aragon/ontology/Currency"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.group01.org/aragon/ontology/hasGovermentRequester -->
-
-    <owl:ObjectProperty rdf:about="http://www.group01.org/aragon/ontology/hasGovermentRequester">
-        <rdfs:domain rdf:resource="http://www.group01.org/aragon/ontology/Contract"/>
-        <rdfs:range rdf:resource="http://www.group01.org/aragon/ontology/GovermentBody"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.group01.org/aragon/ontology/hasTypeOfContract -->
-
-    <owl:ObjectProperty rdf:about="http://www.group01.org/aragon/ontology/hasTypeOfContract">
-        <rdfs:domain rdf:resource="http://www.group01.org/aragon/ontology/Contract"/>
-        <rdfs:range rdf:resource="http://www.group01.org/aragon/ontology/TypeOfContract"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.group01.org/aragon/ontology/hasYear -->
-
-    <owl:ObjectProperty rdf:about="http://www.group01.org/aragon/ontology/hasYear">
-        <rdfs:domain rdf:resource="http://www.group01.org/aragon/ontology/Contract"/>
-        <rdfs:range rdf:resource="http://www.group01.org/aragon/ontology/Year"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.group01.org/aragon/ontology/hasDescription -->
-
-    <owl:DatatypeProperty rdf:about="http://www.group01.org/aragon/ontology/hasDescription">
-        <rdfs:domain rdf:resource="http://www.group01.org/aragon/ontology/Contract"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.group01.org/aragon/ontology/hasID -->
-
-    <owl:DatatypeProperty rdf:about="http://www.group01.org/aragon/ontology/hasID">
-        <rdfs:domain rdf:resource="http://www.group01.org/aragon/ontology/Contract"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.group01.org/aragon/ontology/hasValue -->
-
-    <owl:DatatypeProperty rdf:about="http://www.group01.org/aragon/ontology/hasValue">
-        <rdfs:domain rdf:resource="http://www.group01.org/aragon/ontology/PriceAmount"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.group01.org/aragon/ontology/publicationMethod -->
-
-    <owl:DatatypeProperty rdf:about="http://www.group01.org/aragon/ontology/publicationMethod">
-        <rdfs:domain rdf:resource="http://www.group01.org/aragon/ontology/Contract"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.group01.org/aragon/ontology/AwardProcedure -->
-
-    <owl:Class rdf:about="http://www.group01.org/aragon/ontology/AwardProcedure"/>
-    
-
-
-    <!-- http://www.group01.org/aragon/ontology/Company -->
-
-    <owl:Class rdf:about="http://www.group01.org/aragon/ontology/Company"/>
-    
-
-
-    <!-- http://www.group01.org/aragon/ontology/Contract -->
-
-    <owl:Class rdf:about="http://www.group01.org/aragon/ontology/Contract"/>
-    
-
-
-    <!-- http://www.group01.org/aragon/ontology/Currency -->
-
-    <owl:Class rdf:about="http://www.group01.org/aragon/ontology/Currency"/>
-    
-
-
-    <!-- http://www.group01.org/aragon/ontology/GovermentBody -->
-
-    <owl:Class rdf:about="http://www.group01.org/aragon/ontology/GovermentBody"/>
-    
-
-
-    <!-- http://www.group01.org/aragon/ontology/PriceAmount -->
-
-    <owl:Class rdf:about="http://www.group01.org/aragon/ontology/PriceAmount"/>
-    
-
-
-    <!-- http://www.group01.org/aragon/ontology/TypeOfContract -->
-
-    <owl:Class rdf:about="http://www.group01.org/aragon/ontology/TypeOfContract"/>
-    
-
-
-    <!-- http://www.group01.org/aragon/ontology/Year -->
-
-    <owl:Class rdf:about="http://www.group01.org/aragon/ontology/Year"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.group01.org/aragon/resource/AwardProcedure/porAdministracion -->
-
-    <owl:NamedIndividual rdf:about="http://www.group01.org/aragon/resource/AwardProcedure/porAdministracion">
-        <rdf:type rdf:resource="http://www.group01.org/aragon/ontology/AwardProcedure"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.group01.org/aragon/resource/Company/ExpoZaragoza -->
-
-    <owl:NamedIndividual rdf:about="http://www.group01.org/aragon/resource/Company/ExpoZaragoza">
-        <rdf:type rdf:resource="http://www.group01.org/aragon/ontology/Company"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.group01.org/aragon/resource/Contract/Contrato1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.group01.org/aragon/resource/Contract/Contrato1">
-        <rdf:type rdf:resource="http://www.group01.org/aragon/ontology/Contract"/>
-        <ontology:awardedTo rdf:resource="http://www.group01.org/aragon/resource/Company/ExpoZaragoza"/>
-        <ontology:hasAwardPrice rdf:resource="http://www.group01.org/aragon/resource/PriceAmount/Importe1"/>
-        <ontology:hasAwardProcedure rdf:resource="http://www.group01.org/aragon/resource/AwardProcedure/porAdministracion"/>
-        <ontology:hasBiddingPrice rdf:resource="http://www.group01.org/aragon/resource/PriceAmount/Importe2"/>
-        <ontology:hasGovermentRequester rdf:resource="http://www.group01.org/aragon/resource/GovermentBody/InstitutoAragonesDeGestionAmbiental"/>
-        <ontology:hasTypeOfContract rdf:resource="http://www.group01.org/aragon/resource/TypeOfContract/Obras"/>
-        <ontology:hasYear rdf:resource="http://www.group01.org/aragon/resource/Year/2017"/>
-        <ontology:hasDescription rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Obras adecuación oficinas INAGA ZARAGOZA</ontology:hasDescription>
-        <ontology:hasID rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">CONAD20177500000046</ontology:hasID>
-        <ontology:publicationMethod rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://servicios.aragon.es/pcon/pcon-public/</ontology:publicationMethod>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.group01.org/aragon/resource/Currency/Euros -->
-
-    <owl:NamedIndividual rdf:about="http://www.group01.org/aragon/resource/Currency/Euros">
-        <rdf:type rdf:resource="http://www.group01.org/aragon/ontology/Currency"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.group01.org/aragon/resource/GovermentBody/InstitutoAragonesDeGestionAmbiental -->
-
-    <owl:NamedIndividual rdf:about="http://www.group01.org/aragon/resource/GovermentBody/InstitutoAragonesDeGestionAmbiental">
-        <rdf:type rdf:resource="http://www.group01.org/aragon/ontology/GovermentBody"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.group01.org/aragon/resource/PriceAmount/Importe1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.group01.org/aragon/resource/PriceAmount/Importe1">
-        <rdf:type rdf:resource="http://www.group01.org/aragon/ontology/PriceAmount"/>
-        <ontology:hasCurrency rdf:resource="http://www.group01.org/aragon/resource/Currency/Euros"/>
-        <ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7160.69</ontology:hasValue>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.group01.org/aragon/resource/PriceAmount/Importe2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.group01.org/aragon/resource/PriceAmount/Importe2">
-        <rdf:type rdf:resource="http://www.group01.org/aragon/ontology/PriceAmount"/>
-        <ontology:hasCurrency rdf:resource="http://www.group01.org/aragon/resource/Currency/Euros"/>
-        <ontology:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7263.85</ontology:hasValue>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.group01.org/aragon/resource/TypeOfContract/Obras -->
-
-    <owl:NamedIndividual rdf:about="http://www.group01.org/aragon/resource/TypeOfContract/Obras">
-        <rdf:type rdf:resource="http://www.group01.org/aragon/ontology/TypeOfContract"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.group01.org/aragon/resource/Year/2017 -->
-
-    <owl:NamedIndividual rdf:about="http://www.group01.org/aragon/resource/Year/2017">
-        <rdf:type rdf:resource="http://www.group01.org/aragon/ontology/Year"/>
-    </owl:NamedIndividual>
-</rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-
+<http://www.group01.org/aragon/resource/TypeOfContract/Obras> a owl:NamedIndividual, ns0:TypeOfContract .
+<http://www.group01.org/aragon/resource/Year/2017> a owl:NamedIndividual, ns0:Year .
