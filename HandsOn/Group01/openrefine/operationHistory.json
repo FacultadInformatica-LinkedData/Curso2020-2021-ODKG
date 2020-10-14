@@ -902,5 +902,10 @@
       "mode": "row-based"
     },
     "description": "Remove rows"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "filter",
+    "description": "Remove column filter"
   }
 ]
