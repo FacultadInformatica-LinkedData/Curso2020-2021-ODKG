@@ -1,13 +1,8 @@
-#Hands-on assignment 3 – Self assessment#
-
-##Checklist##
+## Checklist
 
 **Deliverables:**
+- [X] A JSON file with the operations performed over the data for fixing and transforming them
+- [X] A CSV file with the updated version of the dataset.
 
-- [x] A JSON file with the operations performed over the data for fixing and transforming them
-- [x] A CSV file with the updated version of the dataset.
-
-
-##Comments on the self-assessment##
-_(If required)_
-
+## Comments on the self-assessment
+No comments
