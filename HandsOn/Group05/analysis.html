@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Open Data - Hands on - Group 5</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style media="screen">
+      #header {
+        width : 100%;
+        border-radius : 20px;
+        margin-top: 30px;
+        margin-bottom:20px;
+        background-color : #B9DEED;
+        padding : 20px;
+      }
+
+      li {
+        color : #4a4849;
+      }
+      li span {
+        font-weight : 600;
+        color : black;
+      }
+      #naming h6 {
+        font-weight : 600;
+        text-shadow : 0 1px 3px rgba(0,0,0,0.15);
+        margin-top : 10px
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+          <section id="header">
+              <h6>Open Data and Knowledge Graph</h6>
+              <h1>Tenders Electronic Daily - public procurement notices</h1>
+              <h5>Group 5<h5>
+              <h4>Thomas Van Dommelen, Dim Hoogeveen, Ivetta Boldizsar, SeyedFarzam Mirmoeini</h4>
+          </section>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+          <section id="introduction">
+              <h2>Potential license</h2>
+<p>The CC BY 4.0 clearly states that we need to attribute the source and modifications made and not restrict the data further, therefore we use the same license and attribute it correctly:</p>
+<ul>
+<li><a href='https://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0 International (CC BY 4.0) licence</a> with © European Union 2020. Modifications have been made by reducing the dataset for our purpose.</li>
+
+</ul>
+          </section>
+        </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <hr/>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+          <section id="naming">
+              <h2> Resource Naming Strategy </h2>
+              <p>The URL of the website from which you can fetch the Data is <span> http://eit-upm-opendata.com</span></p>
+
+              <h6>Notice</h6>
+              <p></p>
+              <ul>
+                <li>get list of ids of Notices : <span>/notices</span></li>
+                <li>get notice with identifier of notice-id : <span>/notice/notice-id</span></li>
+                <li>get contract id of notice-id : <span>/notice/notice-id/#contract</span></li>
+                <li>get CAN id of notice-id : <span>/notice/notice-id/#can</span></li>
+                <li>get type of notice : <span>/notice/notice-id/#type</span></li>
+                <li>get if notice is cancelled or not : <span>/notice/notice-id/#cancelled</span></li>
+                <li>get if notice has mutiple CANs : <span>/notice/notice-id/#multiple-cans</span></li>
+              </ul>
+
+
+              <h6>CAN</h6>
+              <ul>
+                <li>get list of ids of CANS : <span>/cans</span></li>
+                <li>get CAN with identifier of CAN-id : <span>/can/can-id</span></li>
+                <li>get name of CAN : <span>/can/can-id/#name</span></li>
+                <li>get national id of CAN : <span>/can/can-id/#cancelled</span></li>
+                <li>get town of CAN : <span>/can/can-id/#town</span></li>
+                <li>get postal code of CAN : <span>/can/can-id/#postal-code</span></li>
+                <li>get ISO country code of CAN : <span>/can/can-id/#iso-country-code</span></li>
+                <li>get type of CAN : <span>/can/can-id/#type</span></li>
+                <li>get main activity of CAN : <span>/can/can-id/#main-activity</span></li>
+                <li>get EU institution of CAN : <span>/can/can-id/#eu-institution</span></li>
+              </ul>
+
+              <h6>Contract</h6>
+              <p> Contract does not have its own identifier as it uses the identifier of Notice </p>
+              <ul>
+                <li>get list of ids of Contracts : <span>/contracts</span></li>
+                <li>get Contract Id with identifier of notice-id : <span>/contract/notice-id</span></li>
+                <li>get type of Contract : <span>/contract/notice-id/#type</span></li>
+                <li>get CPV of Contract : <span>/contract/notice-id/#cpv</span></li>
+                <li>get GPA of Contract : <span>/contract/notice-id/#gpa</span></li>
+                <li>get Value of Contract : <span>/contract/notice-id/#value</span></li>
+                <li>get if Contract is funded : <span>/contract/notice-id/#is-funded</span></li>
+                <li>get if Contract is renewal : <span>/contract/notice-id/#is-renewal</span></li>
+                <li>get duration of Contract : <span>/contract/notice-id/#duration</span></li>
+                <li>get time stamp of staritng of Contract : <span>/contract/notice-id/#starting</span></li>
+                <li>get time stamp of completion of Contract : <span>/contract/notice-id/#completion</span></li>
+              </ul>
+
+
+          </section>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+Dataset Ejecucion_2019_gastos_001_OOAA analysis:
+
+The schema of the data consist of one table with 8235 instances, each instance has 16 features.
+
+features 1 to 10 consist of 5 pairs of identifiers and descriptions. The first feature of the pair will be the identifier and the second the descriptions.
+Feature 1 and 2, Centro and Descripion Centro: There are 7 different values for Centro/Descripion Centro.
+Feature 3 and 4, Seccion and Descripion Seccion: There are 48 different values for Seccion/Descripion Seccion.
+Feature 5 and 6, Programa and Descripion Programa: There are 161 different values for Programa/Descripion Programa.
+Feature 7 and 8, Capitulo and Descripion Capitulo: There are 9 different values for Capitulo/Descripion Capitulo.
+Feature 9 and 10, Economico and Descripion Economico: There are 255 different values for Economico and 234 for Descripion Economico. (this means that some of the different values of Ecomomico have the same description)
+
+features 11 to 16 consist of 6 features with all numeric values.
+feature 11 CRED_INICIAL: This value has a range of 0 to 347224330
+feature 12 MOD_CREDITO: This value has a range of -97332228.73 to 136106300.5
+feature 13 C_DEFINITIVO: This value has a range of 0 to 467590457.3
+feature 14 C_AUTORIZADO: This value has a range of 0 to 467571978.4
+feature 15 C_DISPUESTO: This value has a range of 0 to 467571978.4
+feature 16 OBL_RECONOC: This value has a range of 0 to 467571978.4
+
+Analysis of the licensing:
+
+We took the data from the web page of government of Madrid that is an open source without Access restrictions, copyright or other control mechanisms. 
+The access to the web page and the use of the information it contains are responsable of the user. The government of Madrid is not responsible about any damage that could come from this facts.
+
+
+Resource naming stragety:
+
+First we define the classes of Gastos and Ingresos which correspond to the two datasets selected. Then we identify the classes of the datasets which correspond to some columns (Programa, Centro, Seccion and Capitulo). This four Classes have a property of ID and a property that gives the description .
+
+The Classes of Gastos and Ingresos have some specific properties about all the monetary values (for example "creditoDispuesto"). The domain created is: http://group10#     with a hash URI
+
+
+
+Given the example URI: http://group10#Gastos
+- http://        -> Is the hypertext transfer protocol
+- group10#       -> Is the domain using a hash URI
+- Gastos         -> Is an example of a Class
+
+Another example URI: http://group10#recaudado
+- http://        -> Is the hypertext transfer protocol
+- group10#       -> Is the domain using a hash URI
+- recaudado      -> Is an example of a Property

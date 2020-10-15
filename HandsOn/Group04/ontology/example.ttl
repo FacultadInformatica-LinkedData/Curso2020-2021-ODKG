@@ -1,0 +1,48 @@
+#to check datatypes
+
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:<http://www.w3.org/2001/XMLSchema#> .
+@prefix :<http://exercise.publicprocurement.es/about/ontology/group04pp#> .
+
+
+<http://exercise.publicprocurement.es/about/ontology/group04pp> a owl:Ontology ;
+    owl:imports <http://exercise.publicprocurement.es/about/ontology/group04pp>  .
+
+
+:Personal_Services a :SubAcquisitionType .
+:NON-IT_GOODS a :AcquisitionType .
+:Personal_Services :hasAcquisitionType :NON-IT_GOODS .
+:Other a :subAcquisitionMethod .
+:OCB a :SubAcquisitionMethod .
+
+
+:Technology_Integration_Group a :Supplier;
+	:hasLatitude "38.580427"^^xsd:float;
+	:hasLongigute "-121.494396"^^xsd:float;
+	:hasZIPCode "95814"^^xsd:string;
+	:hasSupplierCode "1087660"^^xsd:long.
+
+
+:Statewide_Contract a :AcquisitionMethod.
+
+:HP_35A_BLACK_TONER a :Item;
+	:hasDescription "HP 35A BLACK TONER"^^xsd:string;
+	:hasCommodityTitle "Computer2"^^xsd:string;
+	:hasUNSPSC "44103127"^^xsd:long.
+ 
+
+:Dept_of_Consumer_Affairs a :Department.
+
+
+:REQ0013911 a :Purchase;
+	:hasUnitPrice "$45.40"^^xsd:float;
+	:hasQuantity "30.0"^^xsd:float;
+	:hasItem :HP_35A_BLACK_TONER;
+	:madeBy :Dept_Of_Consumer_Affairs;
+	:hasSubAcquisitionType :Personal_Services;
+	:hasSubAcquisitionMethod :OCB;
+	:hasSupplier :Technology_Integration_Group;
+	:hasCreationDate "10/10/2014"^^xsd:dateTime;
+	:hasFiscalYear "2014-2015"^^xsd:string.	

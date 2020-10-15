@@ -1,0 +1,80 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "num_casos",
+    "expression": "grel:value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column num_casos using expression grel:value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "num_casos_prueba_pcr",
+    "expression": "grel:value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column num_casos_prueba_pcr using expression grel:value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "num_casos_prueba_test_ac",
+    "expression": "grel:value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column num_casos_prueba_test_ac using expression grel:value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "num_casos_prueba_otras",
+    "expression": "grel:value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column num_casos_prueba_otras using expression grel:value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "num_casos_prueba_desconocida",
+    "expression": "grel:value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column num_casos_prueba_desconocida using expression grel:value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "fecha",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column fecha using expression value.toDate()"
+  }
+]

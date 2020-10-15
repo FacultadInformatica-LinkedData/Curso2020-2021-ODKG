@@ -1,0 +1,99 @@
+@prefix default:  <http://group10#> .
+@prefix xsp:     <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix protege:  <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix swrl:    <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb:   <http://www.w3.org/2003/11/swrlb#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+default:creditoGastado
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Gastos ;
+      rdfs:range xsd:float .
+
+default:tieneCentro
+      a       owl:ObjectProperty ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (default:Gastos default:Ingresos)
+              ] ;
+      rdfs:range default:Centro .
+
+default:tieneGasto
+      a       owl:ObjectProperty ;
+      rdfs:domain default:Centro ;
+      rdfs:range default:Gastos .
+
+default:Centro
+      a       owl:Class .
+
+default:tieneSeccion
+      a       owl:ObjectProperty ;
+      rdfs:domain default:Centro ;
+      rdfs:range default:Seccion .
+
+default:Seccion
+      a       owl:Class .
+
+default:Capitulo
+      a       owl:Class .
+
+default:tienePrograma
+      a       owl:ObjectProperty ;
+      rdfs:domain default:Centro ;
+      rdfs:range default:Programa .
+
+<http://group10>
+      a       owl:Ontology .
+
+default:tieneCapitulo
+      a       owl:ObjectProperty ;
+      rdfs:domain default:Centro ;
+      rdfs:range default:Capitulo .
+
+default:Gastos
+      a       owl:Class .
+
+default:tieneIngresos
+      a       owl:ObjectProperty ;
+      rdfs:domain default:Centro ;
+      rdfs:range default:Ingresos .
+
+default:previsionIngresos
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Ingresos ;
+      rdfs:range xsd:float .
+
+default:recaudado
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Ingresos ;
+      rdfs:range xsd:float .
+
+default:id
+      a       owl:DatatypeProperty ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (default:Gastos default:Programa default:Centro default:Seccion default:Ingresos default:Capitulo)
+              ] ;
+      rdfs:range xsd:int .
+
+default:Programa
+      a       owl:Class .
+
+default:creditoDispuesto
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Gastos ;
+      rdfs:range xsd:float .
+
+default:Ingresos
+      a       owl:Class .
+
+default:descripcion
+      a       owl:DatatypeProperty ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (default:Gastos default:Programa default:Centro default:Seccion default:Ingresos default:Capitulo)
+              ] ;
+      rdfs:range xsd:string .

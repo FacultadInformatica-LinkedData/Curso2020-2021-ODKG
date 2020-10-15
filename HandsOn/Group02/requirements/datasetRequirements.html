@@ -8,24 +8,27 @@
 	<h1>Group02 Data Requirements</h1>
 	<h2>Selected Datasets</h2>
 	<p> 
-		Census of premises and their activities and restaurant terraces of the Madrid City Council(Censo de locales, sus actividades y terrazas de hostelería y restauración del ayuntamiento de Madrid). <a href="https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=66665cde99be2410VgnVCM1000000b205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default"> Link here.</a> 
+		Contractual activity 2020 - Madrid City Council:  <a href="https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=139afaf464830510VgnVCM1000000b205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&reloadCaptcha=true"> Link here.</a> 
+	</p>
+	<p> 
+		General data about City District Boards <a href="https://datos.madrid.es/sites/v/index.jsp?vgnextoid=a73ecfba69326410VgnVCM1000000b205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD"> Link here.</a> 
 	</p>
 	<p>
-		<b>Description:</b> Microdata file of the census of premises and activities of the Madrid City Council, classified according to their type of access (street door or grouped), situation (open, closed ...), licensing and indication of the economic activity carried out and the terraces and catering that appear registered in that census. 
+		<b>Description:</b> Basic data of the contracts awarded in 2020 by the different Public Administrations and other public sector entities subject to the aforementioned regulations. It includes, among other data, the contracting entity, the type of contract, the contract and advertisement data, and the link to the documentation.
+		Also, a dataset about about City District Boards that act as the contracticting bodies is included. Relevant information abaut tose entities (such as contact information, address...) can be found in this dataset.
 	</p>
 	<p>
-	Data is divided in three datasets:
+	Data is divided in two datasets:
 	</p>
 	<ul>
-		<li>Census of premises and their activities</li>
-		<li>Restaurant terraces</li>
-		<li>Census of premises and their licenses</li>
+		<li>Contractual activity 2020- Madrid City Council</li>
+		<li>General data about City District Boards</li>
 	</ul>
 	
 
 	<h2>R1. Pertainance to the domain</h2>
 	<p> 
-		All datasets selected (Census of premises and activities, restaurant terraces) belong to the smart city domain as they provide information about the different premises in the city of Madrid. This information is uptdated monthly.
+		All datasets selected belong to the public procurement domain domain as they provide information about the public contracts in the city of Madrid. This information is uptdated monthly.
 	</p>
 
 	<h2>R2. Format</h2>
@@ -40,27 +43,20 @@
 
 	<h2>R4. Data can be easily linked with generic real-world entities</h2>
 	<ul>
-		<li><b>coordenadas x-y_local - </b>UTM coordinates enable linking with geolocation.</li>
-		<li><b>id_local - </b>Premise identifier enables linking entities in the three datasets selected forthis project.</li>
-		<li><b>capacity (mesas_es, mesas_ra, sillas_es sillas_ra, mesas_aux_es, mesas_aux_ra) - </b> These entities could be linked with entities related to government capacity restrictions in terraces.</li>
+		<li><b>Linking contracts with information of the contracting bodies - </b> using entity names to link both datasets</li>
+		<li><b>location - </b> information about the contract and entity address enables geolocation</li>
 	</ul>
 
 	<h2>R5. Documentation</h2>
 	<ul>
-		<li> <a href="https://datos.madrid.es/FWProjects/egob/Catalogo/Economia/Ficheros/Estructura_DS_FicheroCLA.pdf"> Documentation about census of premises and their activities</a></li>
-		<li><a href="https://datos.madrid.es/FWProjects/egob/Catalogo/Economia/Ficheros/Estructura_DS_FicheroCLA_Terrazas.pdf">Documentation about restaurant terraces</a></li>
-		<li><a href="https://datos.madrid.es/FWProjects/egob/Catalogo/Economia/ficheros/Estructura_DS_%20FicheroCLA_LICENCIAS.pdf">Documentation about census of premises and their licenses</a></li>
+		<li> <a href="https://datos.madrid.es/FWProjects/egob/Catalogo/XComun/Ficheros/Estructura_DS_ConjuntoDatos.pdf"> Documentation about data structure.</a>(Valid for both tdatasets</li>
 	</ul>
 
 	<h2>R6. Data sources</h2>
 	<ul>
-		<li>Census of premises and their activities</li>
-		<li>Restaurant terraces</li>
-		<li>Census of premisesand their licenses</li>
+		<li><a href="https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=139afaf464830510VgnVCM1000000b205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&reloadCaptcha=true">Contractual activity 2020 - Madrid City Council</a></li>
+		<li><a href="https://datos.madrid.es/sites/v/index.jsp?vgnextoid=a73ecfba69326410VgnVCM1000000b205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD">General data about City District Boards</li>
 	</ul>
-	<p>
-		All datasets datasets pertain to the <a href="https://datos.madrid.es/portal/site/egob">Open data portal of the Madrid City Council </a>
-	</p>
 
 </body>
 </html>
