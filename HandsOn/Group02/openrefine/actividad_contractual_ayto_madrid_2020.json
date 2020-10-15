@@ -1,0 +1,565 @@
+[
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Organismo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "COORDINACIΠGENERAL DE LA ALCALDIA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COORDINACION GENERAL DE LA ALCALDIA"
+      }
+    ],
+    "description": "Mass edit cells in column Organismo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Organismo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DISTRITO DE CHAMART֎"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DISTRITO DE CHAMARTIN"
+      }
+    ],
+    "description": "Mass edit cells in column Organismo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Organismo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DISTRITO DE CHAMBER"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DISTRITO DE CHAMBERI"
+      }
+    ],
+    "description": "Mass edit cells in column Organismo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Organismo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DISTRITO DE CHAMBERֻ"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DISTRITO DE CHAMBERֻI"
+      }
+    ],
+    "description": "Mass edit cells in column Organismo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Organismo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DISTRITO DE CHAMBERֻI"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DISTRITO DE CHAMBERI"
+      }
+    ],
+    "description": "Mass edit cells in column Organismo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Organismo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DISTRITO DE CHAMBERֻ202000499"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DISTRITO DE CHAMBERI"
+      }
+    ],
+    "description": "Mass edit cells in column Organismo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Organismo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DISTRITO DE CHAMBERֻ202000616"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DISTRITO DE CHAMBERI"
+      }
+    ],
+    "description": "Mass edit cells in column Organismo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Organismo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DISTRITO DE CHAMBERֻ202000707"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DISTRITO DE CHAMBERI"
+      }
+    ],
+    "description": "Mass edit cells in column Organismo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Organismo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "TRIBUNAL ECON͉CO-ADMINISTRATIVO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TRIBUNAL ECONOMICO-ADMINISTRATIVO"
+      }
+    ],
+    "description": "Mass edit cells in column Organismo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Organismo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "REA DELEGADA DE INTERNACIONALIZACION Y COOPERACIλ202000576"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "REA DELEGADA DE INTERNACIONALIZACION Y COOPERACION"
+      }
+    ],
+    "description": "Mass edit cells in column Organismo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Organismo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DISTRITO DE TETUN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DISTRITO DE TETUAN"
+      }
+    ],
+    "description": "Mass edit cells in column Organismo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Tipo Contrato",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Concesin de Servicios"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Servicios"
+      }
+    ],
+    "description": "Mass edit cells in column Tipo Contrato"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Procedimiento Adjudicacin",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Tramitacin Emergencia"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tramitacon Emergencia"
+      }
+    ],
+    "description": "Mass edit cells in column Procedimiento Adjudicacin"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "﻿Ao",
+    "newColumnName": "﻿Año",
+    "description": "Rename column ﻿Ao to ﻿Año"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Descripcin Centro",
+    "newColumnName": "Descripcion Centro",
+    "description": "Rename column Descripcin Centro to Descripcion Centro"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Nmero Contrato",
+    "newColumnName": "Numero Contrato",
+    "description": "Rename column Nmero Contrato to Numero Contrato"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Nmero Expediente",
+    "newColumnName": "Numero Expediente",
+    "description": "Rename column Nmero Expediente to Numero Expediente"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Descripcin Contrato",
+    "newColumnName": "Descripcion Contrato",
+    "description": "Rename column Descripcin Contrato to Descripcion Contrato"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Procedimiento Adjudicacin",
+    "newColumnName": "Procedimiento Adjudicacion",
+    "description": "Rename column Procedimiento Adjudicacin to Procedimiento Adjudicacion"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Artculo",
+    "newColumnName": "Articulo",
+    "description": "Rename column Artculo to Articulo"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Criterios Adjudicacin",
+    "newColumnName": "Criterios Adjudicacion",
+    "description": "Rename column Criterios Adjudicacin to Criterios Adjudicacion"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Importe Adjudicacin (IVA Incluido)",
+    "newColumnName": "Importe Adjudicacion (IVA Incluido)",
+    "description": "Rename column Importe Adjudicacin (IVA Incluido) to Importe Adjudicacion (IVA Incluido)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Fecha Adjudicacin",
+    "newColumnName": "Fecha Adjudicacion",
+    "description": "Rename column Fecha Adjudicacin to Fecha Adjudicacion"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Nombre/Razn Social",
+    "newColumnName": "Nombre/Razon Social",
+    "description": "Rename column Nombre/Razn Social to Nombre/Razon Social"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Fecha Formalizacin",
+    "newColumnName": "Fecha Formalizacion",
+    "description": "Rename column Fecha Formalizacin to Fecha Formalizacion"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Presupuesto Total(IVA Incluido)",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Presupuesto Total(IVA Incluido) using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Importe Adjudicacion (IVA Incluido)",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Importe Adjudicacion (IVA Incluido) using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Centro",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Descripcion Centro using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Organismo",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Organismo using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Contrato",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Descripcion Contrato using expression value.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Fecha Adjudicacion",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Fecha Adjudicacion using expression value.toDate()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nombre/Razon Social",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Nombre/Razon Social using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Fecha Formalizacion",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Fecha Formalizacion using expression value.toDate()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Observaciones",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "(*) : ESTE CONTRATO CUENTA CON IGUAL PRESUPUESTO DE LICITACIΠY ADJUDICACIΠPORQUE SE HA ADJUDICADO POR PRECIOS UNITARIOS."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ESTE CONTRATO CUENTA CON IGUAL PRESUPUESTO DE LICITACION Y ADJUDICACION PORQUE SE HA ADJUDICADO POR PRECIOS UNITARIOS."
+      }
+    ],
+    "description": "Mass edit cells in column Observaciones"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column",
+    "description": "Remove column Column"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column2",
+    "description": "Remove column Column2"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column3",
+    "description": "Remove column Column3"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column4",
+    "description": "Remove column Column4"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column5",
+    "description": "Remove column Column5"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column6",
+    "description": "Remove column Column6"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column7",
+    "description": "Remove column Column7"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column8",
+    "description": "Remove column Column8"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Observaciones",
+    "expression": "grel:not(isBlank(value))",
+    "onError": "set-to-blank",
+    "newColumnName": "Adjudicado por precios unitarios",
+    "columnInsertIndex": 22,
+    "description": "Create column Adjudicado por precios unitarios at index 22 based on column Observaciones using expression grel:not(isBlank(value))"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Observaciones",
+    "description": "Remove column Observaciones"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Acuerdo Marco",
+    "expression": "grel:not(isBlank(value))",
+    "onError": "set-to-blank",
+    "newColumnName": "Tiene acuerdo Marco",
+    "columnInsertIndex": 20,
+    "description": "Create column Tiene acuerdo Marco at index 20 based on column Acuerdo Marco using expression grel:not(isBlank(value))"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Acuerdo Marco",
+    "description": "Remove column Acuerdo Marco"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Ingreso/Coste Cero",
+    "expression": "grel:not(isBlank(value))",
+    "onError": "set-to-blank",
+    "newColumnName": "Tiene ingreso/coste cero",
+    "columnInsertIndex": 21,
+    "description": "Create column Tiene ingreso/coste cero at index 21 based on column Ingreso/Coste Cero using expression grel:not(isBlank(value))"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Ingreso/Coste Cero",
+    "description": "Remove column Ingreso/Coste Cero"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Plazo",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Plazo using expression value.toNumber()"
+  }
+]
