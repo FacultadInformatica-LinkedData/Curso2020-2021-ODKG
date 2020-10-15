@@ -1,0 +1,341 @@
+[
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "IMPORTE",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 2,
+    "description": "Split column IMPORTE by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "IMPORTE 2",
+    "newColumnName": "CurrencyValue",
+    "description": "Rename column IMPORTE 2 to CurrencyValue"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CurrencyValue",
+    "newColumnName": "Currency",
+    "description": "Rename column CurrencyValue to Currency"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "IMPORTE 1",
+    "newColumnName": "CurrencyValue",
+    "description": "Rename column IMPORTE 1 to CurrencyValue"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CurrencyValue",
+    "expression": "grel:value.replace('.', '')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CurrencyValue using expression grel:value.replace('.', '')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CurrencyValue",
+    "expression": "grel:value.replace(',', '.')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CurrencyValue using expression grel:value.replace(',', '.')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CurrencyValue",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CurrencyValue using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "FECHA APROBACION",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column FECHA APROBACION using expression value.toDate()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "FCH.COMUNIC.REG",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column FCH.COMUNIC.REG using expression value.toDate()"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ORG.CONTRATACION",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " DEL",
+    "regex": false,
+    "maxColumns": 2,
+    "description": "Split column ORG.CONTRATACION by separator"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ORG.CONTRATACION 1",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " DE ",
+    "regex": false,
+    "maxColumns": 2,
+    "description": "Split column ORG.CONTRATACION 1 by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ORG.CONTRATACION 1 2",
+    "expression": "join ([coalesce(cells['ORG.CONTRATACION 1 2'].value,''),coalesce(cells['ORG.CONTRATACION 2'].value,'')],'')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ORG.CONTRATACION 1 2 using expression join ([coalesce(cells['ORG.CONTRATACION 1 2'].value,''),coalesce(cells['ORG.CONTRATACION 2'].value,'')],'')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ORG.CONTRATACION 2",
+    "description": "Remove column ORG.CONTRATACION 2"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PLAZO",
+    "expression": "grel:value.replace(',', '.')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column PLAZO using expression grel:value.replace(',', '.')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PLAZO",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column PLAZO using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ORG.CONTRATACION 1 1",
+    "newColumnName": "ORG.CONTRATACION",
+    "description": "Rename column ORG.CONTRATACION 1 1 to ORG.CONTRATACION"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ORG.CONTRATACION 1 2",
+    "newColumnName": "ORG.CONTRATACION AREA",
+    "description": "Rename column ORG.CONTRATACION 1 2 to ORG.CONTRATACION AREA"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CurrencyValue",
+    "newColumnName": "CURRENCY VALUE",
+    "description": "Rename column CurrencyValue to CURRENCY VALUE"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Currency",
+    "newColumnName": "CURRENCY",
+    "description": "Rename column Currency to CURRENCY"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NºRECON",
+    "expression": "grel:value.replace(',','')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NºRECON using expression grel:value.replace(',','')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OBJETO DEL CONTRATO",
+    "expression": "grel:value.replace(',','')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column OBJETO DEL CONTRATO using expression grel:value.replace(',','')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ORG.CONTRATACION AREA",
+    "expression": "grel:value.replace(',','')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ORG.CONTRATACION AREA using expression grel:value.replace(',','')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ORG.CONTRATACION",
+    "expression": "grel:value.replace(',','')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ORG.CONTRATACION using expression grel:value.replace(',','')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SECCION",
+    "expression": "grel:value.replace(',','')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column SECCION using expression grel:value.replace(',','')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUMERO EXPEDIENTE",
+    "expression": "grel:value.replace(',','')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NUMERO EXPEDIENTE using expression grel:value.replace(',','')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CONTRATISTA",
+    "expression": "grel:value.replace(',','')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CONTRATISTA using expression grel:value.replace(',','')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "N.I.F",
+    "expression": "grel:value.replace(',','')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column N.I.F using expression grel:value.replace(',','')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO DE CONTRATO",
+    "expression": "grel:value.replace(',','')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column TIPO DE CONTRATO using expression grel:value.replace(',','')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OBJETO DEL CONTRATO",
+    "expression": "grel:value.replace('\\n','')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column OBJETO DEL CONTRATO using expression grel:value.replace('\\n','')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CURRENCY",
+    "expression": "grel:value.replace('€','EUR')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CURRENCY using expression grel:value.replace('€','EUR')"
+  }
+]
