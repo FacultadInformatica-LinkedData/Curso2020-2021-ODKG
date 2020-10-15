@@ -1,0 +1,158 @@
+<html>
+<body>
+<h1>Data Analysis</h1>
+
+<h2>Dataset analysis</h2>
+
+<ul>
+	<li>5170 rows</li>
+	<li>14 attributes</li>
+</ul>
+
+<b>Attribute description:</b>
+<ul>
+	<li><b>Obj:</b>the object of the contract. There are 4163 choices that can't be cluster.
+	</li>
+	<li><b>Organo:</b>the entity of the Aragon Goverment that is doing the request.There are 21 choices:
+		<ul>
+			<li>blank: 129</li>
+			<li>SET RADIOFRECUENCIA (NEURORADIOLOGIA);SERVICIO ARAGONÉS DE SALUD;Negociado;Suministros;7.541,00;1.581,00;https://servicios.aragon.es/pcon/pcon-public/;";CARDINAL HEALTH SPAIN 511,: this seem to be an errror. We think it should only be filled with the value SERVICIO ARAGONÉS DE SALUD.</li>
+			<li>TALADRO: its clearly an error of the row 3352.We don´t see upfront what the value of this cell should be fot this row id.</li>
+			<li>VERTEBRACIÓN DEL TERRITORIO, MOVILIDAD Y VIVIENDA: 67</li>
+			<li>CENTRO DE INVESTIGACIÓN Y TECNOLOGÍA AGROALIMENTAR: 3</li>
+			<li>CIUDADANÍA Y DERECHOS SOCIALES: 1</li>
+			<li>SERVICIO ARAGONÉS DE SALUD: 1258</li>
+			<li>SANIDAD: 283</li>
+			<li>PRESIDENCIA: 192 </li>
+			<li>INSTITUTO ARAGONÉS DEL AGUA: 14</li>
+			<li>INSTITUO ARAGONÉS DE SERVICIOS SOCIALES: 645</li>
+			<li>INSTITUO ARAGONÉS DE LA MUJER: 181 </li>
+			<li>INSTITUO ARAGONÉS DE LA JUVENTUD: 210</li>
+			<li>INSTITUO ARAGONÉS DE GESTIÓN AMBIENTAL: 19 </li>
+			<li>INSTITUO ARAGONÉS DE EMPLEO: 184</li>
+			<li>INSTITUO ARAGONÉS CIENCIAS DE LA SALUD: 2</li>
+			<li>INNOVACIÓN, INVESTIGACIÓN Y UNIVERSIDAD: 59</li>
+			<li>HACIENDA Y ADMINISTRACIÓN PÚBLICA: 38</li>
+			<li>ENTIDAD PÚBLICA ARAGONESA DE SERVICIOS TELEMÁTICOS</li>
+			<li>EDUCACIÓN, CULTURA Y DEPORTE: 1302</li>
+			<li>ECONOMÍA, INDUSTRIA Y EMPLEO: 51</li>
+			<li>DESARROLLO RURAL Y SOSTENIBILIDAD: 511</li>
+			<li>CIUDADANÍA Y DERECHOS SOCIALES: 1</li>
+		</ul>
+	</li>
+	<li><b>Procedimiento de adjudicación:</b> what kind of tender applies. Originally we had 10 choices, but after clustering we have 8.
+		<ul>
+			<li>Abierto: 587</li>
+			<li>Adjudicación directa: 2</li>
+			<li>Contratación centralizada: 85</li>
+			<li>Derivado de acuerdo marco: 279</li>
+			<li>Negociado: 160</li>
+			<li>Por administración: 75</li>
+			<li>Restringido: 1</li>
+			<li>blank: 3980
+			<li>"TALADRO DE MESA. ....": 1 row: id 3352. This value seems to be the objective of the contact (attribute Obj).</li>
+		</ul>
+	</li>
+	<li><b>Tipo de contrato</b>
+		<ul>
+			<li>Gestión Servicios públicos: 2 rows</li>
+			<li>Obras: 35 rows</li>
+			<li>Privados: 2 rows</li>
+			<li>Servicios: 467 rows</li>
+			<li>Suministros: 683 rows</li>
+			<li>VERTEBRACIÓN DEL TERRITORIO, MOVILIDAD Y VIVIENDA: 1 (row id: 3352). This value corresponds to the attibute Organo. </li>
+			<li>blank: 3980</li>
+		</ul>
+	</li>
+	<li><b>Importe de la licitación:</b>
+		<ul>
+			<li>blank: 3981 rows</li>
+			<li>Values between 1,72 and 99.9967,25. </li>
+		</ul>
+	<li><b>Importe de adjudicación</b>
+		<ul>
+			<li>blank: </li>
+			<li>Values between </li>
+		</ul>
+	</li>
+	<li><b>Instrumento de publicación</b>
+		<ul>
+			<li>https://servicios.aragon.es/pcon/pcon-public/: 1189 rows</li>
+			<li>blank: 3981 rows</li>
+		</ul>
+	</li>
+	<li><b>Número de licitatarios</b>
+		<ul>
+			<li>blank: 5169 rows.</li>
+			<li>6000: only row 3352 has this value which corresponds with the ... attribute.</li>
+		</ul>
+	</li>
+	<li><b>Identidad del adjudicatario</b>
+		<ul>
+			<li>Society name: originally there were 1576 choices but after clustering (misspellings, extra blank space...) we have 1569 choices.</li>
+			<li>blank: 131 rows</li>
+		</ul>
+	</li>
+	<li><b>Ejercicio: string type</b>
+		<ul>
+			<li>2017: 5039 rows</li>
+			<li>blank: 131. We are going to complete the missing values with 2017.</li>
+		</ul>
+	</li>
+	<li><b>Código de Expediente:<b> 946 different choices.
+		<ul>
+			<li>blank: 3980 rows</li>
+			<li>BLUE MEDIA COMUNICACIÓN, S.L.: row 3352. This value corresponds to the attribute <i>Identidad del adjudicatario</i>.</li>
+			<li>"CONAD2017xxxxxxxxxx": 944 different codes with these formats. The files id have between 1 and 17 ocurrences.</li>
+		</ul>
+	</li>
+	<li><b>M:</b>
+		<ul>
+			<li>2017:only one row with this value (row 3352). This value corresponds to the attrbute Ejercicio.</li>
+			<li>CONTRATO MENOR: 3850 rows</li>
+			<li>blank: 1319 rows</li>
+		</ul>
+	</li>
+	<li><b>Column 13:</b>is complety empty, with all cells values blank. We are going to erase it.</li>
+	<li><b>Column 14:</b>only one of the 5170 rows is filled with the value: CONTRATO MENOR (row 3352).</li>
+</ul>
+<p>As seen, row 3352 has many errors. We could try fixed them or just erase the row.</p>
+
+
+<h2>Licensing of the Data Source Analysis</h2>
+
+<p>The publisher of the dataset is the Goverment of Aragon which is also its rightsholder.</p>
+<p>The data was published with a
+   <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a> which means that we can:</p>
+<ul>
+   <li><b>Share:</b> copy and redistribute the material in any medium or format</li>
+   <li><b>Adapt:</b> remix, transform, and build upon the material</li>
+</ul>
+<p>as long as we comply with the following conditions:</p>
+<ul>
+  <li><b>Attribution:</b> give credit provinding a link to the license and indicating if we changes were made to the dataset.</li>
+  <li><b>No additional restrictions:</b> we don't apply any legal or technological measures that restrict others anything the license allows to do.</li>
+</ul>
+<p>The license we should use for the dataset generated should be of the same kind:<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a>.</p>
+
+<h2>Resource Naming Strategy</h2>
+<ul>
+  <li><b>Domain:</b> http://www.group01.org/ </li>
+  <ul>
+  	<li><b>Path:</b> aragon/ </li>
+  	<ul>
+  		<li><b>Ontology:</b> ontology/ </li>
+  		<ul>
+  			<li><b>Class:</b> [ClassName] </li>
+  			<li><b>Property:</b> [PropertyName] </li>
+  		</ul>
+  		<li><b>Data:</b> resource/ </li>
+  		<ul>
+  			<li><b>Individual:</b> [ClassName]/[Identifier] </li>
+  		</ul>
+  	</ul>
+  </ul>
+</ul>
+
+</body>
+</html>

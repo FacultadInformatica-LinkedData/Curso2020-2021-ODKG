@@ -1,0 +1,24 @@
+- Data analysis
+
+Finally, the dataset referring to the minor contracts carried out in Madrid during the year 2020 has been chosen. 
+
+The dataset is composed of 12 variables and 2654 records. 
+
+Within the variables there is the recognition number field (string of characters and numbers) composed of the constant string 'M2020' followed by 5 numbers starting from 00001 to 02662. There is also the file number (string of characters and numbers).
+
+On the other hand, there is a field that indicates the name of the contracting sections, the contracting body (whether it is the director, coordinator, manager, etc.), the object of the contract which is of a different nature, specified by the field for the type of contract of a categorical nature (services, works, supplies or others) and the NIF corresponding to the contractor company (both character strings). 
+
+Finally, there is the amount associated with the contract in question (numerical, in euros from 0€ as a collaboration generally, to 48.349,82€), the date of approval of the contract (approved in 2019), the term (also numerical, ranging from 0 to 12) and ends with the date of communication of the registration (from 2 of January 2020 to the 30 of June of this same year).
+
+- License analysis
+
+As for the license, as detailed in the requirements of the dataset, its reuse is allowed for both commercial and non-commercial purposes, understanding reuse as the use of Madrid City Council's own documents for any activity that does not come from a public administration.
+
+
+- Name strategy
+
+In this case, we have followed the guidelines given in the slides seen in class.
+
+The domain that Protégé returns by default has not been followed, but has been replaced by a generic one for our project: www.example.com/group09#
+All the classes that we have chosen are reused classes from another existing ontology (pproc, org, schemas, gr), following the recommendations of good practices, so they use that path.
+The property is not defined based on the class, but is another entity, so they are independent and also, there is not the same path for individuals as for classes.

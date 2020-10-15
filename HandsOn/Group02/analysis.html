@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Group02 Data Requirements</title>
+</head>
+
+<body>
+	<h1>Group02 Analysis</h1>
+	<h2>Analysis of the Data Set</h2>
+<p>Here is a brief analysis of the data: what different values its columns take, and what are the maximum, minimum and average in the case of columns with numbers.</p>
+
+<p><span lang=EN style='mso-ansi-language:EN'>First, a cleaning of the data is
+required. Because of the use of the accent mark in Spanish, it does not detect
+the different rows correctly, even when they are separated with “;”. The first
+thing to do is to separate the columns manually. Given that not many rows are
+affected, it does not take an excessive amount of time.<o:p></o:p></span></p>
+
+<h3>First dataset</h3>
+
+<p><span lang=EN style='mso-ansi-language:EN'>In the first dataset (which
+refers to contract activities), there are 30 columns and 721 rows. The first
+columns indicate the year, which is always 2020, and the second indicates the
+month (from January to June). The third and fourth columns are descriptions and
+concretions on the centers to which the contract is applied. The next two columns
+refer to a number of contract, which is assigned in chronological order, and to
+an expedient number. Both of them are meant to identify the contract.<o:p></o:p></span></p>
+
+<p><span lang=EN style='mso-ansi-language:EN'>Then, in the next column, there
+is a description of the contract. That can take several values. Each one is
+almost unique. The type of contract (services, works or supply) and how it was
+awarded and under which articles and subarticles are specified in 5 columns.<o:p></o:p></span></p>
+
+<p><span lang=EN style='mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+EN'>The next two columns refer to the budget and the award ammount of those
+contracts. Their values are kept between 0 and 30 million in both of the
+columns. Since no contract is given for 0 €, all the zeros in those columns are
+not valid.<o:p></o:p></span></p>
+
+<p><span lang=EN style='mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+EN'>The adjudication dates, the formalization dates and the time limits are
+specified in another three columns. The numbers of the time limits for each
+contract are just so different that they do not seem to make any sense. Names
+and NIF/CIF of the addressees of the contract are also specified in two
+columns.<o:p></o:p></span></p>
+
+<p><span lang=EN style='mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+EN'>The last three columns specify whether the contracts were made under “acuerdo
+marco” or with incom/cost zero, and some observations which are not relevant.<o:p></o:p></span></p>
+
+<h3>Second dataset<o:p></o:p></h3>
+
+<p><span lang=EN style='mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+EN'>In the second dataset (the one of the “juntas”), there are 29 columns and
+only 21 rows. That indicates this dataset may not be useful if it was not to be
+linked with other datasets.<o:p></o:p></span></p>
+
+<p><span lang=EN style='mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+EN'>The first columns indicate the kilometer point, the name of each “junta” and
+a description that is the same for every row and should be ignored. The
+timetables, in another column, are almost the same, although it is some useful
+information. The equipment column has only one value for a “junta”. Again, it
+could be included, but it may not be relevant enough.<o:p></o:p></span></p>
+
+<p><span lang=EN style='mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+EN'>Another column describes which means of public transport can be used for
+each “junta”, which is really useful if someone was to visit it. The column dedicated
+for description just refers to a webpage and it’s useless, since there is
+already a column (accessibility) with the webpages of each “junta”. Then, in
+several rows, we have the adresses of each junta, divided by street, number,
+stairs, door, district, postal code, etc., as well as coordinates and
+latitude/longitude.<o:p></o:p></span></p>
+
+<p><span lang=EN style='mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+EN'>Last, there are columns dedicated to means of contact. There is no much
+information in them, except for the “email” row.<o:p></o:p></span></p>
+
+	<h2>Analysis of the License</h2>
+	<p> 
+		Here there is an examination of the license of the data, ponting out who is the publisher of the dataset and its rightsholder, as well as the licence of the dataset. Moreover, the potential license to be used for the dataset to be generated is defined.
+	</p>
+
+	<ul>
+		<li>Righstholder: the Madrid City countil.</li>
+		<li>Publisher: the Open Data Portal from the Madrid City Council.</li>
+		<li>License: The general conditions of the license allow the reuse of documents for commercial and non-commercial purposes. Reuse is understood as the use of documents held by the Madrid City Council, provided that such use does not constitute a public administrative activity.</li>
+	</ul>
+	<p> 
+		Consequently, the potencial license for the application needs to meet the following conditions:
+	</p>
+	<ul>
+		<li>It is forbidden to distort the meaning of the data.</li>
+		<li>The source of the data to be reused must be cited (Madrid City Council).</li>
+		<li>The date of the last update of the documents to be reused must be mentioned (only if it is included).</li>
+		<li>It may not be indicated, implied or suggested that the source of the data participates, sponsors or supports the reuse that is carried out with the information.</li>
+		<li>The metadata on the update date and the applicable reuse conditions included, when applicable, in the data made available for reuse must be kept, not altered or deleted.</li>
+		<li>In the case of anonymized information for the protection of personal data or other reasons, it is expressly forbidden to carry out tasks of re-identification of people from these data and other possible, past, current or future sources of data and information.</li>
+	</ul>
+	
+	<h2>Resource Naming Strategy</h2>
+	<p>
+	Since our data set is rather small, we will use hash URIs. 
+	The URI domain to be used will be <http://MadridPublicContracts>, as it is directly related to the topic of our application.
+	The classes in the model will follow the form: http://MadridPublicContracts/ontology/<ontologyName>#<className> .
+	The properties in the model will follow the form http://MadridPublicContracts/ontology/<ontologyName>#<propertyName> .
+	Instances in the ontology will have the form http://MadridPublicContracts/resource/<className>#<identifier> .
+	</p>
+</body>
+</html>

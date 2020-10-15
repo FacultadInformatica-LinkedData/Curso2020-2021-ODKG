@@ -1,0 +1,29 @@
+:comp1 a :Publicorg;
+	rdfs:label "MADRID DESTINO, CULTURA, TURISMO Y NEGOCIO, S.A." ;
+	:orgType "EMPRESAS".
+	
+:comp2 a :Org;
+	rdfs:label "EL ANGEL DE PEKIN" ;
+	:hasNID "B82917063".
+	
+	
+:contract1 a :Contract;
+	:contractor :comp1;
+	:contractee :comp2;
+	xsd:gYear 2020;
+	:hasMonth "Enero";
+	:hasContractNumber 202000001;
+	:hasExpNumber "MDC/2019/00177";
+	:hasDescription "ESPECTACULO TEATRAL QUIEN ES EL SR SCHMITT EN LA SALA PRINCIPAL DEL TEATRO DEL 16 DE OCTUBRE AL 10 DE NOVIEMBRE (T.ESPAÑOL)";
+	:hasContractType "Servicios";
+	:hasProcedure "Negociado sin publicidad";
+	:hasArticle 168;
+	:hasSection "a) apartado 2";
+	:hasCriteria "";
+	:hasBudget 362802;
+	:hasAmount 185975.62;
+	:hasContractDate "13/09/2019"^^xsd:date;
+	:nameSR ""
+	:isDeal "";
+	:isZeroCost "";
+	:hasComments "".

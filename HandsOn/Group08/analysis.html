@@ -1,0 +1,521 @@
+<h2><strong> DATASETS </strong></h2>
+<p>&nbsp;</p>
+<p><strong> ContratosEmergenciaSMS.csv </strong></p>
+<table style="width: 958px;" border="Yes">
+<tbody>
+<tr>
+<td style="width: 107px;">
+<p>Data</p>
+</td>
+<td style="width: 62px;">
+<p>Type</p>
+</td>
+<td style="width: 181px;">
+<p>Comments/Range (rounded)</p>
+</td>
+<td style="width: 358px;">
+<p>Description</p>
+</td>
+<td style="width: 226px;">
+<p>Problems</p>
+</td>
+</tr>
+<tr>
+<td style="width: 107px;">
+<p>Producto</p>
+</td>
+<td style="width: 62px;">
+<p>String</p>
+</td>
+<td style="width: 181px;">
+<p>Not unique</p>
+</td>
+<td style="width: 358px;">
+<p>The product or the service that was demanded.</p>
+</td>
+<td style="width: 226px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 107px;" rowspan="2">
+<p>Tipo</p>
+</td>
+<td style="width: 62px;" rowspan="2">
+<p>Categorical</p>
+</td>
+<td style="width: 181px;">
+<p>SERVICIO</p>
+</td>
+<td style="width: 358px;" rowspan="2">
+<p>Value of "Producto" is a product or a service.</p>
+</td>
+<td style="width: 226px;">
+<p>(*1)</p>
+</td>
+</tr>
+<tr>
+<td style="width: 181px;">
+<p>SUMINISTRO</p>
+</td>
+<td style="width: 226px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 107px;">
+<p>NIF</p>
+</td>
+<td style="width: 62px;">
+<p>String</p>
+</td>
+<td style="width: 181px;">
+<p>Not unique</p>
+</td>
+<td style="width: 358px;">
+<p>National identifier of the company or the person hired to satisfy the demand.</p>
+</td>
+<td style="width: 226px;">
+<p>43 records have a corrupted format</p>
+</td>
+</tr>
+<tr>
+<td style="width: 107px;">
+<p>Adjudicatario</p>
+</td>
+<td style="width: 62px;">
+<p>String</p>
+</td>
+<td style="width: 181px;">
+<p>Not unique</p>
+</td>
+<td style="width: 358px;">
+<p>Name of the company or the person hired to satisfy the demand.</p>
+</td>
+<td style="width: 226px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 107px;">
+<p>Fecha</p>
+</td>
+<td style="width: 62px;">
+<p>String</p>
+</td>
+<td style="width: 181px;">
+<p>[0-9]+"/" +[0-9] + "/" + [0-9], not unique</p>
+</td>
+<td style="width: 358px;">
+<p>Date of the record (dd/mm/yy).</p>
+</td>
+<td style="width: 226px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 107px;">
+<p>Cantidad Pedido</p>
+</td>
+<td style="width: 62px;">
+<p>String</p>
+</td>
+<td style="width: 181px;">
+<p>0 &mdash; 7,100,000</p>
+</td>
+<td style="width: 358px;">
+<p>Number of products ordered.</p>
+</td>
+<td style="width: 226px;">
+<p>Instead of string type, it should be decimal.&nbsp;(*1)</p>
+</td>
+</tr>
+<tr>
+<td style="width: 107px;">
+<p>Cantidad Recibido</p>
+</td>
+<td style="width: 62px;">
+<p>String</p>
+</td>
+<td style="width: 181px;">
+<p>0 &mdash; 3,600,000</p>
+</td>
+<td style="width: 358px;">
+<p>Number of products received.</p>
+</td>
+<td style="width: 226px;">
+<p>Instead of string type, it should be decimal.&nbsp;(*1)</p>
+</td>
+</tr>
+<tr>
+<td style="width: 107px;">
+<p>Cantidad Pendiente</p>
+</td>
+<td style="width: 62px;">
+<p>String</p>
+</td>
+<td style="width: 181px;">
+<p>0 &mdash; 6,500,000</p>
+</td>
+<td style="width: 358px;">
+<p>Number of products that were ordered but not received.</p>
+</td>
+<td style="width: 226px;">
+<p>Instead of string type, it should be decimal.&nbsp;(*1)</p>
+</td>
+</tr>
+<tr>
+<td style="width: 107px;">
+<p>Importe del Pedido</p>
+</td>
+<td style="width: 62px;">
+<p>String</p>
+</td>
+<td style="width: 181px;">
+<p>0 &mdash; 3,200,000</p>
+</td>
+<td style="width: 358px;">
+<p>Order amount.</p>
+</td>
+<td style="width: 226px;">
+<p>Instead of string type, it should be decimal.&nbsp;(*1)</p>
+</td>
+</tr>
+<tr>
+<td style="width: 107px;">
+<p>Importe Pagado</p>
+</td>
+<td style="width: 62px;">
+<p>String</p>
+</td>
+<td style="width: 181px;">
+<p>0 &mdash; 3,200,000</p>
+</td>
+<td style="width: 358px;">
+<p>Paid amount.</p>
+</td>
+<td style="width: 226px;">
+<p>Instead of string type, it should be decimal.&nbsp;(*1)</p>
+</td>
+</tr>
+<tr>
+<td style="width: 107px;">
+<p>Importe Pendiente</p>
+</td>
+<td style="width: 62px;">
+<p>String</p>
+</td>
+<td style="width: 181px;">
+<p>0 &mdash; 2,400,000</p>
+</td>
+<td style="width: 358px;">
+<p>Pending amount.</p>
+</td>
+<td style="width: 226px;">
+<p>Instead of string type, it should be decimal.&nbsp;(*1)</p>
+</td>
+</tr>
+<tr>
+<td style="width: 107px;">
+<p>Unnamed column</p>
+</td>
+<td style="width: 62px;">
+<p>String</p>
+</td>
+<td style="width: 181px;">
+<p>[0-9] + "%"</p>
+</td>
+<td style="width: 358px;">
+<p>% VAT</p>
+</td>
+<td style="width: 226px;">
+<p>No description found and the column has no name. Suspected to be VAT.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;(*1) For the value "SERVICIO" of the variable "TIPO", the number of products ordered are equivalent to the order amount.</p>
+<p><strong> agregados.csv </strong> &nbsp;</p>
+<table style="width: 972px;" border="Yes">
+<tbody>
+<tr>
+<td style="width: 80px;">
+<p>Data</p>
+</td>
+<td style="width: 41px;">
+<p>Type</p>
+</td>
+<td style="width: 229px;">
+<p>Range</p>
+</td>
+<td style="width: 340px;">
+<p>Description</p>
+</td>
+<td style="width: 258px;">
+<p>Problems&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="width: 80px;">
+<p>CCAA</p>
+</td>
+<td style="width: 41px;">
+<p>String</p>
+</td>
+<td style="width: 229px;">
+<p>Not unique</p>
+</td>
+<td style="width: 340px;">
+<p>ISO code of each of the regions</p>
+</td>
+<td style="width: 258px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 80px;">
+<p>FECHA</p>
+</td>
+<td style="width: 41px;">
+<p>String</p>
+</td>
+<td style="width: 229px;">
+<p>[0-9] + &ldquo;/&rdquo; +[0-9] + &ldquo;/&rdquo; + [0-9], Not unique</p>
+</td>
+<td style="width: 340px;">
+<p>Date of sanitary registration [dd/mm/yy], not unique&nbsp;</p>
+</td>
+<td style="width: 258px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 80px;">
+<p>CASOS</p>
+</td>
+<td style="width: 41px;">
+<p>Integer</p>
+</td>
+<td style="width: 229px;">
+<p>Null, empty values&nbsp;</p>
+</td>
+<td style="width: 340px;">
+<p>Total number of cases by regions.&nbsp;</p>
+</td>
+<td style="width: 258px;">
+<p>The column is empty.All records are empty</p>
+</td>
+</tr>
+<tr>
+<td style="width: 80px;">
+<p>PCR+</p>
+</td>
+<td style="width: 41px;">
+<p>Integer</p>
+</td>
+<td style="width: 229px;">
+<p>0 - 67,049</p>
+</td>
+<td style="width: 340px;">
+<p>Number of people positive for COVID-19 based on the PCR technique&nbsp;</p>
+</td>
+<td style="width: 258px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 80px;">
+<p>TestAc+</p>
+</td>
+<td style="width: 41px;">
+<p>Integer</p>
+</td>
+<td style="width: 229px;">
+<p>0 - 8,634</p>
+</td>
+<td style="width: 340px;">
+<p>Number of people positive for COVID-19 based on the test Ac&nbsp;</p>
+</td>
+<td style="width: 258px;">&nbsp;Null-values for the first set of the records</td>
+</tr>
+<tr>
+<td style="width: 80px;">
+<p>Hospitalizados</p>
+</td>
+<td style="width: 41px;">
+<p>Integer</p>
+</td>
+<td style="width: 229px;">
+<p>0 - 42,497&nbsp;</p>
+</td>
+<td style="width: 340px;">
+<p>Number of people hospitalized</p>
+</td>
+<td style="width: 258px;">&nbsp;Null-values for the first set of the records</td>
+</tr>
+<tr>
+<td style="width: 80px;">
+<p>UCI</p>
+</td>
+<td style="width: 41px;">
+<p>Integer</p>
+</td>
+<td style="width: 229px;">
+<p>0 - 3,617</p>
+</td>
+<td style="width: 340px;">
+<p>Number of people in ICU</p>
+</td>
+<td style="width: 258px;">&nbsp;Null-values for the first set of the records</td>
+</tr>
+<tr>
+<td style="width: 80px;">
+<p>Fallecidos</p>
+</td>
+<td style="width: 41px;">
+<p>Integer</p>
+</td>
+<td style="width: 229px;">
+<p>0 - 8,931</p>
+</td>
+<td style="width: 340px;">
+<p>Number of people</p>
+</td>
+<td style="width: 258px;">&nbsp;Null-values for the first set of the records</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><strong> datos_ccaa.csv </strong></p>
+<p>&nbsp;</p>
+<table style="width: 989px;" border="Yes">
+<tbody>
+<tr>
+<td style="width: 188px;">
+<p>Data</p>
+</td>
+<td style="width: 41px;">
+<p>Type</p>
+</td>
+<td style="width: 181px;">
+<p>Range</p>
+</td>
+<td style="width: 328px;">
+<p>Description</p>
+</td>
+<td style="width: 227px;">
+<p>Problems&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="width: 188px;">
+<p>Caa_iso</p>
+</td>
+<td style="width: 41px;">
+<p>String</p>
+</td>
+<td style="width: 181px;">
+<p>Not unique</p>
+</td>
+<td style="width: 328px;">
+<p>ISO code of each of the regions&nbsp;</p>
+</td>
+<td style="width: 227px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 188px;">
+<p>FECHA</p>
+</td>
+<td style="width: 41px;">
+<p>String</p>
+</td>
+<td style="width: 181px;">
+<p>[0-9] + &ldquo;/&rdquo; +[0-9] + &ldquo;/&rdquo; + [0-9],&nbsp;</p>
+<p>Not unique</p>
+</td>
+<td style="width: 328px;">
+<p>Date of sanitary registration [dd/mm/yy]</p>
+</td>
+<td style="width: 227px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 188px;">
+<p>Num_casos</p>
+</td>
+<td style="width: 41px;">
+<p>Integer</p>
+</td>
+<td style="width: 181px;">
+<p>0 - 6,588&nbsp;&nbsp;</p>
+</td>
+<td style="width: 328px;">
+<p>Total number of cases by regions.&nbsp;</p>
+</td>
+<td style="width: 227px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 188px;">
+<p>Num_caso_pcr&nbsp;</p>
+</td>
+<td style="width: 41px;">
+<p>Integer</p>
+</td>
+<td style="width: 181px;">
+<p>0 - 6,588&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+</td>
+<td style="width: 328px;">
+<p>Number of people positive for COVID-19 based on the PCR technique&nbsp;</p>
+</td>
+<td style="width: 227px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 188px;">
+<p>Num_casos_prueba_test_ac&nbsp;</p>
+</td>
+<td style="width: 41px;">
+<p>Integer</p>
+</td>
+<td style="width: 181px;">
+<p>0 - 286&nbsp;</p>
+</td>
+<td style="width: 328px;">
+<p>Number of people positive for COVID-19 based on the test Ac&nbsp;</p>
+</td>
+<td style="width: 227px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 188px;">
+<p>Num_casos_prueba_otras</p>
+</td>
+<td style="width: 41px;">
+<p>Integer</p>
+</td>
+<td style="width: 181px;">
+<p>0 - 75</p>
+</td>
+<td style="width: 328px;">
+<p>Number of people positive for COVID-19 based on other test</p>
+</td>
+<td style="width: 227px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 188px;">
+<p>&nbsp;Num_casos_prueba_desconocida</p>
+</td>
+<td style="width: 41px;">
+<p>Integer</p>
+</td>
+<td style="width: 181px;">
+<p>0 - 3,617</p>
+</td>
+<td style="width: 328px;">
+<p>Number of people positive for COVID-19 based on unknown techniques</p>
+</td>
+<td style="width: 227px;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2><strong> LICENSE </strong></h2>
+<p>Dataset Contratos de emergencia del SMS durante el periodo de Alarma por COVID-19</p>
+<p>Publisher: Regi&oacute;n de Murcia <br /> License: https://datosabiertos.regiondemurcia.es/avisolegal</p>
+<p>Dataset Agregados y CCAA ICIII</p>
+<p>Publisher: Biblioteca Nacional de Ciencias de la Salud (Instituto de Salud Carlos III) <br /> License: CC BY-NC-SA</p>
+<p>Potential License: CC BY-NC-SA</p>
+<p>&nbsp;</p>
+<h2>RESOURCE NAMING STRATEGY</h2>
+<p><strong>URI Domain:&nbsp;</strong><span style="color: #0000ff;"><span style="text-decoration: underline;">http://www.publicProcurementMurciaCOVID19.es/</span></span></p>
+<p><strong>Ontology path:&nbsp;</strong><span style="text-decoration: underline;"><span style="color: #0000ff; text-decoration: underline;">http://www.publicProcurementMurciaCOVID19.es/ontology/</span></span></p>
+<p><strong>Individual path:&nbsp;</strong><span style="text-decoration: underline;"><span style="color: #0000ff; text-decoration: underline;">http://www.</span><span style="color: #0000ff; text-decoration: underline;">publicProcurementMurciaCOVID19</span><span style="color: #0000ff; text-decoration: underline;">.es/resource/</span></span></p>
+<p><strong>Ontological pattern (class):&nbsp;</strong><span style="text-decoration: underline;"><span style="color: #0000ff; text-decoration: underline;">http://www.publicProcurementMurciaCOVID19.es/ontology/[ontologyName]#[className]</span></span></p>
+<p><strong>Ontological pattern (property):&nbsp;</strong><span style="text-decoration: underline; color: #0000ff;">http://www.publicProcurementMurciaCOVID19.es/ontology/[ontologyName]#[propertyName]</span></p>
+<p><strong>Individual pattern:&nbsp;</strong><span style="text-decoration: underline; color: #0000ff;">http://www.publicProcurementMurciaCOVID19.es/resource/[className]/[identifier]</span></p>
+<p>&nbsp;(*) Hash URIs for ontological terms and slash URIs for individuals</p>
+<p>&nbsp;</p>
