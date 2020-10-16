@@ -100,6 +100,12 @@
                          rdfs:range xsd:string .
 
 
+###  http://www.example.com/group09#area
+:area rdf:type owl:DatatypeProperty ;
+      rdfs:domain <http://www.w3.org/ns/org#Organization> ;
+      rdfs:range xsd:string .
+
+
 ###  http://www.example.com/group09#awardDate
 :awardDate rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf owl:topDataProperty ;
