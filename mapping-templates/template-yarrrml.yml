@@ -23,7 +23,7 @@ mappings:
       - [vocab:property3,$(integer-column),xsd:integer]
       - p: vocab:relation
         o:
-          - mapping: TriplesMap2
+          - mapping: triplesmap2
             condition:
               function: equal
               parameters:
