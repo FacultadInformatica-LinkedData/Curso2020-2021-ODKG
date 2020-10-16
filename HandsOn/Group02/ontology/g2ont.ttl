@@ -21,8 +21,10 @@
 					
 # Contract properties
 
-### Año xsd:gYear
-			 
+### Año 
+:hasYear rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Contract ;
+             rdfs:range xsd:gYear.			 
 ### Mes			 
 :hasMonth rdf:type owl:DatatypeProperty ;
              rdfs:domain :Contract ;
