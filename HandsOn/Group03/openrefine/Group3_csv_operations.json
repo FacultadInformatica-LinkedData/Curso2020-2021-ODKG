@@ -1,0 +1,713 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "end-user-entity_fr",
+    "description": "Remove column end-user-entity_fr"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "organization-employee-count_fr",
+    "description": "Remove column organization-employee-count_fr"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "contracting-entity-office-name_fr",
+    "description": "Remove column contracting-entity-office-name_fr"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "procurement-entity-name_fr",
+    "description": "Remove column procurement-entity-name_fr"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "country-percentage",
+    "description": "Remove column country-percentage"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "country-description_en",
+    "description": "Remove column country-description_en"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "country-description_fr",
+    "description": "Remove column country-description_fr"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "gsin-description_fr",
+    "description": "Remove column gsin-description_fr"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "competitive-tender_fr",
+    "description": "Remove column competitive-tender_fr"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "amendment-number",
+    "description": "Remove column amendment-number"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "competitive-tender_en",
+    "description": "Remove column competitive-tender_en"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "limited-tender-reason",
+    "description": "Remove column limited-tender-reason"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "limited-tender-reason-description_en",
+    "description": "Remove column limited-tender-reason-description_en"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "limited-tender-reason-description_fr",
+    "description": "Remove column limited-tender-reason-description_fr"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "solicitation-procedure",
+    "description": "Remove column solicitation-procedure"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "solicitation-procedure-description_en",
+    "description": "Remove column solicitation-procedure-description_en"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "solicitation-procedure-description_fr",
+    "description": "Remove column solicitation-procedure-description_fr"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "trade-agreement",
+    "description": "Remove column trade-agreement"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "trade-agreement-description_en",
+    "description": "Remove column trade-agreement-description_en"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "trade-agreement-description_fr",
+    "description": "Remove column trade-agreement-description_fr"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "number-records",
+    "description": "Remove column number-records"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "procurement-entity-name_en",
+    "description": "Remove column procurement-entity-name_en"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "date-file-published",
+    "description": "Remove column date-file-published"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "supplier-operating-name",
+    "description": "Remove column supplier-operating-name"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "supplier-standardized-name",
+    "description": "Remove column supplier-standardized-name"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "total-contract-value",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column total-contract-value using expression value.toNumber()"
+  },
+  {
+    "op": "core/blank-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "﻿contract-number",
+    "description": "Blank down cells in column ﻿contract-number"
+  },
+  {
+    "op": "core/blank-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "﻿contract-number",
+    "description": "Blank down cells in column ﻿contract-number"
+  },
+  {
+    "op": "core/blank-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "﻿contract-number",
+    "description": "Blank down cells in column ﻿contract-number"
+  },
+  {
+    "op": "core/blank-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "﻿contract-number",
+    "description": "Blank down cells in column ﻿contract-number"
+  },
+  {
+    "op": "core/row-reorder",
+    "mode": "row-based",
+    "sorting": {
+      "criteria": [
+        {
+          "valueType": "string",
+          "column": "﻿contract-number",
+          "blankPosition": 2,
+          "errorPosition": 1,
+          "reverse": false,
+          "caseSensitive": true
+        }
+      ]
+    },
+    "description": "Reorder rows"
+  },
+  {
+    "op": "core/blank-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "﻿contract-number",
+    "description": "Blank down cells in column ﻿contract-number"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "﻿contract-number",
+          "expression": "value",
+          "columnName": "﻿contract-number",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "contract-value",
+    "description": "Remove column contract-value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "award-date",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column award-date using expression value.toDate()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "expiry-date",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column expiry-date using expression value.toDate()"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "organization-employee-count_en",
+          "expression": "value",
+          "columnName": "organization-employee-count_en",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "UNKNOWN",
+                "l": "UNKNOWN"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "total-contract-value",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column total-contract-value using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "﻿contract-number",
+    "expression": "grel:value.replace(\"/\",\"-\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ﻿contract-number using expression grel:value.replace(\"/\",\"-\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-legal-name",
+    "expression": "grel:value.replace(\"/\",\"-\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column supplier-legal-name using expression grel:value.replace(\"/\",\"-\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "gsin-description_en",
+    "expression": "grel:value.replace(\"/\",\"-\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column gsin-description_en using expression grel:value.replace(\"/\",\"-\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-address-city",
+    "expression": "grel:value.replace(\"N/A\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column supplier-address-city using expression grel:value.replace(\"N/A\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-address-prov-state",
+    "expression": "grel:value.replace(\"N/A\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column supplier-address-prov-state using expression grel:value.replace(\"N/A\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-address-postal-code",
+    "expression": "grel:value.replace(\"N/A\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column supplier-address-postal-code using expression grel:value.replace(\"N/A\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-address-country",
+    "expression": "grel:value.replace(\"N/A\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column supplier-address-country using expression grel:value.replace(\"N/A\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-address-city",
+    "expression": "grel:value.replace(\"N/A\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column supplier-address-city using expression grel:value.replace(\"N/A\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-address-prov-state",
+    "expression": "grel:value.replace(\"N/A\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column supplier-address-prov-state using expression grel:value.replace(\"N/A\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "contracting-address-street-1",
+    "expression": "grel:value.replace(\"N/A\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column contracting-address-street-1 using expression grel:value.replace(\"N/A\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "contracting-address-street-2",
+    "expression": "grel:value.replace(\"N/A\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column contracting-address-street-2 using expression grel:value.replace(\"N/A\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "contracting-address-city",
+    "expression": "grel:value.replace(\"N/A\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column contracting-address-city using expression grel:value.replace(\"N/A\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "﻿contract-number",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ﻿contract-number using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "award-date",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column award-date using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "expiry-date",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column expiry-date using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "contracting-address-country",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column contracting-address-country using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "contracting-address-postal-code",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column contracting-address-postal-code using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "contracting-address-city",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column contracting-address-city using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "contracting-address-street-2",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column contracting-address-street-2 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "contracting-address-street-2",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column contracting-address-street-2 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "contracting-address-street-1",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column contracting-address-street-1 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "contracting-entity-office-name_en",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column contracting-entity-office-name_en using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "end-user-entity_en",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column end-user-entity_en using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "total-contract-value",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column total-contract-value using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "organization-employee-count_en",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column organization-employee-count_en using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-address-country",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column supplier-address-country using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-address-country",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column supplier-address-country using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-address-postal-code",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column supplier-address-postal-code using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-address-prov-state",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column supplier-address-prov-state using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-address-city",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column supplier-address-city using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-legal-name",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column supplier-legal-name using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "gsin-description_en",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column gsin-description_en using expression value.trim()"
+  }
+]
+  }
+]
