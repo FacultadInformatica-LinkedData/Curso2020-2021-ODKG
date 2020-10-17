@@ -1,4 +1,4 @@
-@prefix default:  <http://group10#> .
+@prefix default:  <http://group10.com/> .
 @prefix xsp:     <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,91 +8,52 @@
 @prefix swrlb:   <http://www.w3.org/2003/11/swrlb#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 
-default:tieneGasto
-      a       owl:ObjectProperty ;
-      rdfs:domain default:Centro ;
-      rdfs:range default:Gastos .
+<http://group10.com/Ingresos/IRPF>
+      a       default:Ingresos ;
+      default:descripcion "Impuesto sobre la Renta de las Personas Físicas"@es ;
+      default:id "10000"@es ;
+      default:previsionIngresos
+              "1.30870792E8"^^xsd:float ;
+      default:recaudado "1.54049248E8"^^xsd:float ;
+      default:tieneCentro <http://group10.com/Centro/AyuntamientoMadrid> .
 
-default:Centro
-      a       owl:Class .
-
-default:tieneSeccion
-      a       owl:ObjectProperty ;
-      rdfs:domain default:Centro ;
-      rdfs:range default:Seccion .
-
-default:Seccion
-      a       owl:Class .
-
-default:Capitulo
-      a       owl:Class .
+default:creditoGastado
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Gastos ;
+      rdfs:range xsd:float .
 
 default:tieneCapitulo
       a       owl:ObjectProperty ;
       rdfs:domain default:Centro ;
       rdfs:range default:Capitulo .
 
-default:Gastos
-      a       owl:Class .
-
-default:tieneIngresos
-      a       owl:ObjectProperty ;
-      rdfs:domain default:Centro ;
-      rdfs:range default:Ingresos .
-
-<http://group10#Seccion/PresidenciaPleno>
-      a       default:Seccion ;
-      default:descripcion "Presidencia del Pleno"@es ;
-      default:id "2"^^xsd:int .
-
-default:recaudado
-      a       owl:DatatypeProperty ;
-      rdfs:domain default:Ingresos ;
-      rdfs:range xsd:float .
-
-<http://group10#Capitulo/ImpuestosDirectos>
-      a       default:Capitulo ;
-      default:descripcion "Impuestos directos"@es ;
-      default:id "10000"^^xsd:int .
-
-default:id
-      a       owl:DatatypeProperty ;
-      rdfs:domain
-              [ a       owl:Class ;
-                owl:unionOf (default:Gastos default:Programa default:Centro default:Seccion default:Ingresos default:Capitulo)
-              ] ;
-      rdfs:range xsd:int .
-
 default:creditoDispuesto
       a       owl:DatatypeProperty ;
       rdfs:domain default:Gastos ;
       rdfs:range xsd:float .
 
-default:Ingresos
+default:Capitulo
       a       owl:Class .
 
-default:descripcion
-      a       owl:DatatypeProperty ;
-      rdfs:domain
-              [ a       owl:Class ;
-                owl:unionOf (default:Gastos default:Programa default:Centro default:Seccion default:Ingresos default:Capitulo)
-              ] ;
-      rdfs:range xsd:string .
+default:tienePrograma
+      a       owl:ObjectProperty ;
+      rdfs:domain default:Centro ;
+      rdfs:range default:Programa .
 
-<http://group10#Gastos/Canones>
+<http://group10.com/Gastos/Canones>
       a       default:Gastos ;
       default:creditoDispuesto
               "3630.0"^^xsd:float ;
       default:creditoGastado
               "3630.0"^^xsd:float ;
       default:descripcion "Cánones"@es ;
-      default:id "20901"^^xsd:int ;
-      default:tieneCentro <http://group10#Centro/AyuntamientoMadrid> .
+      default:id "20901"@es ;
+      default:tieneCentro <http://group10.com/Centro/AyuntamientoMadrid> .
 
-default:creditoGastado
-      a       owl:DatatypeProperty ;
-      rdfs:domain default:Gastos ;
-      rdfs:range xsd:float .
+<http://group10.com/Seccion/PresidenciaPleno>
+      a       default:Seccion ;
+      default:descripcion "Presidencia del Pleno"@es ;
+      default:id "2"@es .
 
 default:tieneCentro
       a       owl:ObjectProperty ;
@@ -102,51 +63,82 @@ default:tieneCentro
               ] ;
       rdfs:range default:Centro .
 
-<http://group10#Centro/AyuntamientoMadrid>
+default:recaudado
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Ingresos ;
+      rdfs:range xsd:float .
+
+default:id
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:string .
+
+default:Gastos
+      a       owl:Class .
+
+<http://group10.com/Centro/AyuntamientoMadrid>
       a       default:Centro ;
       default:descripcion "Ayuntamiento de Madrid"@es ;
-      default:id "1"^^xsd:int ;
+      default:id "1"@es ;
       default:tieneCapitulo
-              <http://group10#Capitulo/GastosEnBienesCorrientesYServicios> , <http://group10#Capitulo/ImpuestosDirectos> ;
-      default:tieneGasto <http://group10#Gastos/Canones> ;
+              <http://group10.com/Capitulo/GastosEnBienesCorrientesYServicios> , <http://group10.com/Capitulo/ImpuestosDirectos> ;
+      default:tieneGasto <http://group10.com/Gastos/Canones> ;
       default:tieneIngresos
-              <http://group10#Ingresos/IRPF> ;
+              <http://group10.com/Ingresos/IRPF> ;
       default:tienePrograma
-              <http://group10#Programa/PromocionPlanDerechosHumanos> ;
+              <http://group10.com/Programa/PromocionPlanDerechosHumanos> ;
       default:tieneSeccion
-              <http://group10#Seccion/PresidenciaPleno> .
+              <http://group10.com/Seccion/PresidenciaPleno> .
 
-default:tienePrograma
+<http://group10.com/Capitulo/GastosEnBienesCorrientesYServicios>
+      a       default:Capitulo ;
+      default:descripcion "Gastos en Bienes Corrientes y Servicios"@es ;
+      default:id "2"@es .
+
+default:tieneGasto
       a       owl:ObjectProperty ;
       rdfs:domain default:Centro ;
-      rdfs:range default:Programa .
+      rdfs:range default:Gastos .
 
-<http://group10>
-      a       owl:Ontology .
+default:Programa
+      a       owl:Class .
 
-<http://group10#Ingresos/IRPF>
-      a       default:Ingresos ;
-      default:descripcion "Impuesto sobre la Renta de las Personas Físicas"@es ;
-      default:id "10000"^^xsd:int ;
-      default:previsionIngresos
-              "1.30870792E8"^^xsd:float ;
-      default:recaudado "1.54049248E8"^^xsd:float ;
-      default:tieneCentro <http://group10#Centro/AyuntamientoMadrid> .
+default:tieneSeccion
+      a       owl:ObjectProperty ;
+      rdfs:domain default:Centro ;
+      rdfs:range default:Seccion .
+
+<http://group10.com/Capitulo/ImpuestosDirectos>
+      a       default:Capitulo ;
+      default:descripcion "Impuestos directos"@es ;
+      default:id "10000"@es .
+
+default:Ingresos
+      a       owl:Class .
 
 default:previsionIngresos
       a       owl:DatatypeProperty ;
       rdfs:domain default:Ingresos ;
       rdfs:range xsd:float .
 
-<http://group10#Capitulo/GastosEnBienesCorrientesYServicios>
-      a       default:Capitulo ;
-      default:descripcion "Gastos en Bienes Corrientes y Servicios"@es ;
-      default:id "2"^^xsd:int .
+default:tieneIngresos
+      a       owl:ObjectProperty ;
+      rdfs:domain default:Centro ;
+      rdfs:range default:Ingresos .
 
-default:Programa
-      a       owl:Class .
+default:descripcion
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:string .
 
-<http://group10#Programa/PromocionPlanDerechosHumanos>
+<http://group10.com/Programa/PromocionPlanDerechosHumanos>
       a       default:Programa ;
       default:descripcion "Promoción del Plan de Derechos Humanos"@es ;
-      default:id "23270"^^xsd:int .
+      default:id "23270"@es .
+
+default:Seccion
+      a       owl:Class .
+
+<http://group10.com>
+      a       owl:Ontology .
+
+default:Centro
+      a       owl:Class .
