@@ -1,0 +1,911 @@
+[
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Column 14",
+          "expression": "value",
+          "columnName": "Column 14",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CONTRATO MENOR",
+                "l": "CONTRATO MENOR"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 14",
+    "description": "Remove column Column 14"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 13",
+    "description": "Remove column Column 13"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Importe de licitación",
+    "expression": "value.replace(\".\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Importe de licitación using expression value.replace(\".\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Importe de licitación",
+    "expression": "value.replace(\",\",\".\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Importe de licitación using expression value.replace(\",\",\".\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Importe de licitación",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Importe de licitación using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Importe de licitación",
+          "expression": "value",
+          "columnName": "Importe de licitación",
+          "from": 0,
+          "to": 67000000,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Importe de adjudicación",
+    "expression": "value.replace(\".\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Importe de adjudicación using expression value.replace(\".\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Importe de licitación",
+          "expression": "value",
+          "columnName": "Importe de licitación",
+          "from": 0,
+          "to": 67000000,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Importe de adjudicación",
+    "expression": "value.replace(\",\",\".\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Importe de adjudicación using expression value.replace(\",\",\".\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Importe de licitación",
+          "expression": "value",
+          "columnName": "Importe de licitación",
+          "from": 0,
+          "to": 67000000,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Importe de adjudicación",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Importe de adjudicación using expression value.toNumber()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Procedimiento de adjudicación",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Derivado de acuerdo\nmarco"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Derivado de acuerdo marco"
+      }
+    ],
+    "description": "Mass edit cells in column Procedimiento de adjudicación"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Procedimiento de adjudicación",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Contratación\ncentralizada"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Contratación centralizada"
+      }
+    ],
+    "description": "Mass edit cells in column Procedimiento de adjudicación"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Obj",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Obj using expression value.toLowercase()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Número de licitadores",
+    "description": "Remove column Número de licitadores"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Identidad del adjudicatario",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "SANAHUJA FORTEA RAMON",
+          "SANAHUJA FORTEA RAMÓN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SANAHUJA FORTEA RAMON"
+      },
+      {
+        "from": [
+          "DISTRIBUCIONES NAVARRO-MIR S.L.",
+          "DISTRIBUCIONES NAVARRO-MIR S.L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DISTRIBUCIONES NAVARRO-MIR S.L."
+      },
+      {
+        "from": [
+          "CONSTRUCCIONES RUBIO MORTE S.A",
+          "CONSTRUCCIONES RUBIO MORTE S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CONSTRUCCIONES RUBIO MORTE S.A"
+      },
+      {
+        "from": [
+          "1299 ARQUITARIA S.L.",
+          "1299 ARQUITARIA, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1299 ARQUITARIA S.L."
+      },
+      {
+        "from": [
+          "BAJEN EMPRESA CONSTRUCTORA S.A",
+          "BAJEN EMPRESA CONSTRUCTORA S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BAJEN EMPRESA CONSTRUCTORA S.A"
+      },
+      {
+        "from": [
+          "VENTUS CIENCIA EXPERIMENTAL S.",
+          "VENTUS CIENCIA EXPERIMENTAL, S"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VENTUS CIENCIA EXPERIMENTAL S."
+      },
+      {
+        "from": [
+          "SERVICIOS MICROINFORMATICA S.A",
+          "SERVICIOS MICROINFORMATICA S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SERVICIOS MICROINFORMATICA S.A"
+      }
+    ],
+    "description": "Mass edit cells in column Identidad del adjudicatario"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Identidad del adjudicatario",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ARAGONESA DE INSTALACIONES\nY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ARAGONESA DE INSTALACIONES Y"
+      }
+    ],
+    "description": "Mass edit cells in column Identidad del adjudicatario"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Identidad del adjudicatario",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ARAGONESA DE INSTALACIONES Y"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ARAGONESA DE INSTALACIONES Y"
+      }
+    ],
+    "description": "Mass edit cells in column Identidad del adjudicatario"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Identidad del adjudicatario",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Identidad del adjudicatario using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Identidad del adjudicatario",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ASOC ARAGONESA PRO SALUD MENTA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ASOC ARAGONESA PRO SALUD MENTAL"
+      }
+    ],
+    "description": "Mass edit cells in column Identidad del adjudicatario"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Identidad del adjudicatario",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Identidad del adjudicatario using expression value.trim()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Identidad del adjudicatario",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "AGILENT TECHNOLOGIES SPAIN S.L",
+          "AGILENT TECHNOLOGIES SPAIN S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AGILENT TECHNOLOGIES SPAIN S.L"
+      }
+    ],
+    "description": "Mass edit cells in column Identidad del adjudicatario"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Ejercicio",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Ejercicio using expression value.toNumber()"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Ejercicio",
+    "description": "Fill down cells in column Ejercicio"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Instrumento de publicación",
+    "description": "Remove column Instrumento de publicación"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Identidad del adjudicatario",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "GAS NATURAL COMERCIALIZADORA S",
+          "GAS NATURAL COMERCIALIZADORA SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GAS NATURAL COMERCIALIZADORA S"
+      },
+      {
+        "from": [
+          "ELABORADOS LAS TORRES S.A.",
+          "ELABORADO LAS TORRES S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ELABORADOS LAS TORRES S.A."
+      },
+      {
+        "from": [
+          "COMERCIAL ARAGONES DE PRODUCTO",
+          "COMERCIAL ARAGONES DE PRODUCTOS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COMERCIAL ARAGONES DE PRODUCTO"
+      }
+    ],
+    "description": "Mass edit cells in column Identidad del adjudicatario"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Identidad del adjudicatario",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "SERVICIOS CONTENEDORES HIGIENI",
+          "SERVICIOS CONTENEDORES HIGIENICOS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SERVICIOS CONTENEDORES HIGIENI"
+      }
+    ],
+    "description": "Mass edit cells in column Identidad del adjudicatario"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Identidad del adjudicatario",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "RANDOM CENTRO DE INFORMATICA S",
+          "RANDOM CENTRO DE INFORMATICA S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RANDOM CENTRO DE INFORMATICA S.A."
+      },
+      {
+        "from": [
+          "SERVICIOS DE TELEASISTENCIA S.",
+          "SERVICIOS DE TELEASISTENCIA S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SERVICIOS DE TELEASISTENCIA S.A."
+      },
+      {
+        "from": [
+          "GARDA SERVICIOS DE SEGURIDAD S",
+          "GARDA SERVICIOS DE SEGURIDAD S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GARDA SERVICIOS DE SEGURIDAD S.A."
+      },
+      {
+        "from": [
+          "INSTRUMENTACION Y COMPONENTES S.A.",
+          "INSTRUMENTACION Y COMPONENTES"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "INSTRUMENTACION Y COMPONENTES S.A."
+      },
+      {
+        "from": [
+          "FERROSER SERVICIOS AUXILIARES",
+          "FERROSER SERVICIOS AUXILIARES S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FERROSER SERVICIOS AUXILIARES S.A."
+      },
+      {
+        "from": [
+          "CITOGEN S.L.",
+          "CYTOGNOS SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CITOGEN S.L."
+      },
+      {
+        "from": [
+          "FRESENIUS MEDICAL CARE ESPAÑA SAU",
+          "FRESENIUS MEDICAL CARE ESPAÑA S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FRESENIUS MEDICAL CARE ESPAÑA SAU"
+      },
+      {
+        "from": [
+          "CONTROL 7 S.A.U.",
+          "CONTROL 7 S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CONTROL 7 S.A.U."
+      }
+    ],
+    "description": "Mass edit cells in column Identidad del adjudicatario"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Identidad del adjudicatario",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ARAIZ SUMINISTROS ELECTRICOS S",
+          "ARAIZ SUMINISTROS ELECTRICOS S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ARAIZ SUMINISTROS ELECTRICOS S.A."
+      }
+    ],
+    "description": "Mass edit cells in column Identidad del adjudicatario"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Identidad del adjudicatario",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "OMBUDS COMPAÑIA DE SEGURIDAD S",
+          "OMBUDS COMPAÑIA DE SEGURIDAD S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OMBUDS COMPAÑIA DE SEGURIDAD S.A."
+      }
+    ],
+    "description": "Mass edit cells in column Identidad del adjudicatario"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Identidad del adjudicatario",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "MERCK CHEMICALS AND LIFE SCIEN",
+          "MERCK CHEMICALS AND LIFE SCIENCE SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MERCK CHEMICALS AND LIFE SCIEN SA"
+      },
+      {
+        "from": [
+          "ARAGONESA DE SERVICIOS TELEMATICOS",
+          "ARAGONESA DE SERVICIOS TELEMAT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ARAGONESA DE SERVICIOS TELEMATICOS"
+      },
+      {
+        "from": [
+          "EUREKA ARQUITECTURA IDEAS S.L.",
+          "EUREKA ARQUITECTURA IDEAS S.L.P."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "EUREKA ARQUITECTURA IDEAS S.L."
+      },
+      {
+        "from": [
+          "HOSPIRA PRODUCTOS FARMACEUTICO",
+          "HOSPIRA PRODUCTOS FARMACEUTICOS Y"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "HOSPIRA PRODUCTOS FARMACEUTICOS"
+      },
+      {
+        "from": [
+          "LIMPIEZA ACONDIC RESTAURAC EDI",
+          "LIMPIEZA ACONDIC RESTAURAC EDIF GAM"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LIMPIEZA ACONDIC RESTAURAC EDI"
+      },
+      {
+        "from": [
+          "FUNDACION RAMON REY ARDID",
+          "FUNDACION RAMON Y ARDID"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FUNDACION RAMON REY ARDID"
+      },
+      {
+        "from": [
+          "TECNICOS DE ALARMAS S.A. TECAL",
+          "TECNICOS DE ALARMAS S.A. TECALSA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TECNICOS DE ALARMAS S.A. TECAL"
+      },
+      {
+        "from": [
+          "COLECTIVO EDUCACION AMBIENTAL",
+          "COLECTIVO EDUCACION AMBIENTAL S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COLECTIVO EDUCACION AMBIENTAL S.L."
+      },
+      {
+        "from": [
+          "IMAR EVENTOS Y COMUNICACION S.",
+          "IMAR EVENTOS Y COMUNICACION S.L.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IMAR EVENTOS Y COMUNICACION S.L.L."
+      },
+      {
+        "from": [
+          "LABORATORIOS LETI, S.L. S.UNIP",
+          "LABORATORIOS LETI, S.L. S.UNIPERSON"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LABORATORIOS LETI, S.L. S.UNIP"
+      },
+      {
+        "from": [
+          "CENTRO INVESTIGACION Y TECNOLO",
+          "CENTRO INVESTIGACION Y TECNOLOGIA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CENTRO INVESTIGACION Y TECNOLOGIA"
+      },
+      {
+        "from": [
+          "SCHWENDTNER GARCIA OSCAR",
+          "SCHWENDTNER GARCIA OSCAR Y CAR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SCHWENDTNER GARCIA OSCAR"
+      },
+      {
+        "from": [
+          "FACTOR IDEAS INTEGRAL SERVICES",
+          "FACTOR IDEAS INTEGRAL SERVICES S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FACTOR IDEAS INTEGRAL SERVICES"
+      },
+      {
+        "from": [
+          "INTERNATIONAL BUSINESS MACHINE",
+          "INTERNATIONAL BUSINESS MACHINES S.A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "INTERNATIONAL BUSINESS MACHINE"
+      },
+      {
+        "from": [
+          "LA HISPANO DE FUENTE EN SEGURE",
+          "LA HISPANO DE FUENTE EN SEGURES SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LA HISPANO DE FUENTE EN SEGURES  SA"
+      },
+      {
+        "from": [
+          "CASTILLA INSTALACION DE OFICIN",
+          "CASTILLA INSTALACION DE OFICINAS SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CASTILLA INSTALACION DE OFICINAS SA"
+      },
+      {
+        "from": [
+          "CORPORACION ALIMENTARIA GUISSO",
+          "CORPORACION ALIMENTARIA GUISSONA SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CORPORACION ALIMENTARIA GUISSONA SA"
+      },
+      {
+        "from": [
+          "MANTENIMIENTOS GLOBALES DE ARA",
+          "MANTENIMIENTOS GLOBALES DE ARAGON"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MANTENIMIENTOS GLOBALES DE ARAGON"
+      },
+      {
+        "from": [
+          "IMAGEN 44 MOBILIARIO OFICINA S.L.",
+          "IMAGEN 44 MOBILIARIO OFICINA S"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IMAGEN 44 MOBILIARIO OFICINA S.L."
+      },
+      {
+        "from": [
+          "ALOSA AUTOCARES Y AUTOBUSES S.L.",
+          "ALOSA AUTOCARES Y AUTOBUSES S."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ALOSA AUTOCARES Y AUTOBUSES S.L."
+      },
+      {
+        "from": [
+          "PROYECTOS REALIZACIONES ARAGON",
+          "PROYECTOS REALIZACIONES ARAGONESAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PROYECTOS REALIZACIONES ARAGON"
+      },
+      {
+        "from": [
+          "TRANSFER SDAD DE MARCAS VIALES SLU",
+          "TRANSFER SDAD DE MARCAS VIALES"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TRANSFER SDAD DE MARCAS VIALES SLU"
+      },
+      {
+        "from": [
+          "TORRES EQUIPAMIENTOS DE OFICIN",
+          "TORRES EQUIPAMIENTOS DE OFICINAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TORRES EQUIPAMIENTOS DE OFICINAS"
+      },
+      {
+        "from": [
+          "SUMINISTROS MATERIAL Y APARATOS DE",
+          "SUMINISTROS MATERIAL Y APARATO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SUMINISTROS MATERIAL Y APARATOS DE"
+      }
+    ],
+    "description": "Mass edit cells in column Identidad del adjudicatario"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "Código Expediente",
+    "index": 0,
+    "description": "Move column Código Expediente to position 0"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Código Expediente",
+          "expression": "value",
+          "columnName": "Código Expediente",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Código Expediente",
+    "expression": "grel:if(facetCount(value, \"value\",\"Código Expediente\")>1,\"Delete\",\"OK\")",
+    "onError": "set-to-blank",
+    "newColumnName": "filter",
+    "columnInsertIndex": 1,
+    "description": "Create column filter at index 1 based on column Código Expediente using expression grel:if(facetCount(value, \"value\",\"Código Expediente\")>1,\"Delete\",\"OK\")"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "filter",
+          "expression": "value",
+          "columnName": "filter",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Delete",
+                "l": "Delete"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "filter",
+    "description": "Remove column filter"
+  }
+]

@@ -1,0 +1,4535 @@
+[
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Objecte del contracte",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Subministrament dequipament de monitorització.",
+          "Subministrament dequipament de monitorització",
+          "subministrament dequipament de monitorització"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Subministrament d'equipament de monitorització."
+      },
+      {
+        "from": [
+          "subministrament basat en lAcord marc dequipament mèdic",
+          "Subministrament basat en lAcord marc dequipament mèdic.",
+          "Subministrament basat en lAcord marc dequipament mèdic"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "subministrament basat en l'Acord marc dequipament mèdic"
+      },
+      {
+        "from": [
+          "Subministrament de Medicaments per l'Hospital Universitari Vall d'Hebron",
+          "Subministrament de Medicaments per l'Hospital Universitari Vall d'Hebron.",
+          "Subministrament de medicaments per l'Hospital Universitari Vall d'Hebron"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Subministrament de Medicaments per l'Hospital Universitari Vall d'Hebron"
+      },
+      {
+        "from": [
+          "Lloguer equip tractament d'aigua portàtil Aqua UNO AQUAWTU 125  + Instal·lació Inicial",
+          "Lloguer equip tractament d'aigua portàtil Aqua UNO AQUAWTU 125 + Instal·lació Inicial"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lloguer equip tractament d'aigua portàtil Aqua UNO AQUAWTU 125  + Instal·lació Inicial"
+      },
+      {
+        "from": [
+          "subministrament de kits de prova ràpida COVID-19",
+          "subministrament de kits prova ràpida COVID-19"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "subministrament de kits de prova ràpida COVID-19"
+      },
+      {
+        "from": [
+          "ECOGRAF PORTATIL",
+          "Ecògraf portàtil"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ECOGRAF PORTATIL"
+      },
+      {
+        "from": [
+          "davantals plàstic rebutjable",
+          "davantals plàstic rebutjable."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "davantals plàstic rebutjable"
+      },
+      {
+        "from": [
+          "CONTRACTACIÓ EMERGÈNCIA SUBMINISTRAMENT BATES CORONAVIRUS",
+          "CONTRACTACIÓ EMERGÈNCIA SUBMINISTRAMENT BATES - CORONAVIRUS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CONTRACTACIÓ EMERGÈNCIA SUBMINISTRAMENT BATES CORONAVIRUS"
+      },
+      {
+        "from": [
+          "Subministrament de mascaretes",
+          "subministrament de mascaretes"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Subministrament de mascaretes"
+      },
+      {
+        "from": [
+          "CONTRACTACIÓ EMERGÈNCIA SUBMINISTRAMENT MASCARETES FFP3",
+          "CONTRACTACIÓ EMERGÈNCIA SUBMINISTRAMENT MASCARETES  FFP3"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CONTRACTACIÓ EMERGÈNCIA SUBMINISTRAMENT MASCARETES FFP3"
+      },
+      {
+        "from": [
+          "MATERIAL LABORATORI COVID-19 (automatització processament mostres)",
+          "Material laboratori COVID-19 (automatització processament mostres)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MATERIAL LABORATORI COVID-19 (automatització processament mostres)"
+      },
+      {
+        "from": [
+          "subministrament de material respiratori",
+          "subministrament de subministrament de material respiratori"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "subministrament de material respiratori"
+      },
+      {
+        "from": [
+          "CONTRACTACIÓ EMERGÈNCIA SUBMINISTRAMENT ESCOVILLONS",
+          "CONTRACTACIÓ EMERGÈNCIA SUBMINISTRAMENT  ESCOVILLONS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CONTRACTACIÓ EMERGÈNCIA SUBMINISTRAMENT ESCOVILLONS"
+      },
+      {
+        "from": [
+          "Subministrament de guants de nitril",
+          "subministrament de guants de nitril"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Subministrament de guants de nitril"
+      },
+      {
+        "from": [
+          "SERVEI DE VIGILANCIA COVID 19",
+          "SERVEI DE VIGILÀNCIA COVID 19"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SERVEI DE VIGILANCIA COVID 19"
+      },
+      {
+        "from": [
+          "MATERIAL DE PROTECCIÓ I SEGURETAT (MÀSCARES FFP2)",
+          "Material de protecció i seguretat (màscares FFP2)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MATERIAL DE PROTECCIÓ I SEGURETAT (MÀSCARES FFP2)"
+      },
+      {
+        "from": [
+          "subministrament de guants de nitril i sondes daspiració",
+          "subministrament de sondes daspiració i guants de nitril"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "subministrament de guants de nitril i sondes d'aspiració"
+      },
+      {
+        "from": [
+          "DESFIBRILADORS",
+          "Desfibriladors"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DESFIBRILADORS"
+      },
+      {
+        "from": [
+          "EXTRACTOR MUCOSIDADES (MUCUS)",
+          "extractor mucosidades (mucus)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "EXTRACTOR MUCOSIDADES (MUCUS)"
+      },
+      {
+        "from": [
+          "Central de monitorització",
+          "CENTRAL DE MONITORITZACIO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Central de monitorització"
+      },
+      {
+        "from": [
+          "CONTRACTACIÓ EMERGÈNCIA SUBMINISTRAMENT  MASCARETA FFP3 BEC ÀNEC A/VÀLV",
+          "CONTRACTACIÓ EMERGÈNCIA SUBMINISTRAMENT MASCARETA FFP3 BEC ÀNEC A/VÀLV"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CONTRACTACIÓ EMERGÈNCIA SUBMINISTRAMENT  MASCARETA FFP3 BEC ÀNEC A/VÀLV"
+      },
+      {
+        "from": [
+          "Bates quirúrgiques",
+          "Bates quirúrgiques."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bates quirúrgiques"
+      },
+      {
+        "from": [
+          "desinfec.multisuperficies escuma 750ml",
+          "DESINFEC.MULTISUPERFICIES ESCUMA 750ML"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "desinfec.multisuperficies escuma 750ml"
+      },
+      {
+        "from": [
+          "SUBMINISTRAMENT DE PETIT MATERIAL SANITARI",
+          "Subministrament de petit material sanitari"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SUBMINISTRAMENT DE PETIT MATERIAL SANITARI"
+      },
+      {
+        "from": [
+          "CONTRACTACIÓ EMERGÈNCIA SUBMINISTRAMENT MASCARETES",
+          "CONTRACTACIÓ EMERGÈNCIA SUBMINISTRAMENT  MASCARETES"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CONTRACTACIÓ EMERGÈNCIA SUBMINISTRAMENT MASCARETES"
+      },
+      {
+        "from": [
+          "SUBMINISTRAMENT DE MATERIAL DE DESINFECCIÓ SANITARIA",
+          "Subministrament de material de desinfecció sanitaria"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SUBMINISTRAMENT DE MATERIAL DE DESINFECCIÓ SANITARIA"
+      },
+      {
+        "from": [
+          "Subministrament de respiradors.",
+          "subministrament de respiradors"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Subministrament de respiradors."
+      },
+      {
+        "from": [
+          "Subministrament de material de protecció per al personal docent dels centres públics.",
+          "Subministrament de material de protecció per al personal docent dels centres públics"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Subministrament de material de protecció per al personal docent dels centres públics."
+      },
+      {
+        "from": [
+          "SUBMINISTRAMENT DE MATERIAL DE VENTILACIO I RESPIRACIO, FILTRES, PER L'HOSPITAL UNIVERSITARI DE BELLVITGE",
+          "SUBMINISTRAMENT MATERIAL VENTILACIO I RESPIRACIÓ, FILTRES, PER L'HOSPITAL UNIVERSITARI DE BELLVITGE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SUBMINISTRAMENT DE MATERIAL DE VENTILACIO I RESPIRACIO, FILTRES, PER L'HOSPITAL UNIVERSITARI DE BELLVITGE"
+      },
+      {
+        "from": [
+          "CARROS",
+          "Carros"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CARROS"
+      },
+      {
+        "from": [
+          "CONTRACTACIÓ EMERGÈNCIA SUBMINISTRAMENT ESCOVILLONS CORONAVIRUS",
+          "CONTRACTACIÓ EMERGÈNCIA SUBMINISTRAMENT ESCOVILLONS  CORONAVIRUS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CONTRACTACIÓ EMERGÈNCIA SUBMINISTRAMENT ESCOVILLONS CORONAVIRUS"
+      },
+      {
+        "from": [
+          "SUBMINISTRAMENT DE MATERIAL DE LABORATORI, REACTIU PER A DETERMINACIO (SARS-CoV-2) PER L'HOSPITAL UNIVERSITARI DE BELLVITGE",
+          "SUBMINISTRAMENT MATERIAL LABORATORI REACTIU PER A DETERMINACIO SARS-COV-2 PER L'HOSPITAL UNIVERSITARI DE BELLVITGE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SUBMINISTRAMENT DE MATERIAL DE LABORATORI, REACTIU PER A DETERMINACIO (SARS-CoV-2) PER L'HOSPITAL UNIVERSITARI DE BELLVITGE"
+      },
+      {
+        "from": [
+          "Servei de reforç extra de manteniment al CAEM per l'increment de pacients amb COVID-19",
+          "Servei de reforç extra de manteniment al CAEM, per l'increment de pacients amb COVID-19"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Servei de reforç extra de manteniment al CAEM per l'increment de pacients amb COVID-19"
+      },
+      {
+        "from": [
+          "subministrament de tovalloletes desinfectants",
+          "Subministrament de tovalloletes desinfectants"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "subministrament de tovalloletes desinfectants"
+      },
+      {
+        "from": [
+          "RESPIRADORS",
+          "Respiradors"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RESPIRADORS"
+      },
+      {
+        "from": [
+          "LLITS",
+          "Llits"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LLITS"
+      },
+      {
+        "from": [
+          "Subministrament de Gasos mèdicinals",
+          "Subministrament de gasos medicinals"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Subministrament de Gasos mèdicinals"
+      },
+      {
+        "from": [
+          "CONTRACTACIÓ EMERGÈNCIA SUBMINISTRAMENT GEL ANTISÈPTIC CORONAVIRUS",
+          "CONTRACTACIÓ EMERGÈNCIA SUBMINISTRAMENT GEL ANTISEPTIC CORONAVIRUS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CONTRACTACIÓ EMERGÈNCIA SUBMINISTRAMENT GEL ANTISÈPTIC CORONAVIRUS"
+      },
+      {
+        "from": [
+          "CONTRACTACIÓ EMERGÈNCIA SUBMINISTRAMENT MASCARETES CORONAVIRUS",
+          "CONTRACTACIÓ EMERGÈNCIA SUBMINISTRAMENT  MASCARETES CORONAVIRUS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CONTRACTACIÓ EMERGÈNCIA SUBMINISTRAMENT MASCARETES CORONAVIRUS"
+      }
+    ],
+    "description": "Mass edit cells in column Objecte del contracte"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Empresa adjudicatària",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "WERFEN ESPAÑA SAU",
+          "WERFEN ESPAÑA, SAU",
+          "WERFEN ESPAÑA, S.A.U",
+          "WERFEN ESPAÑA S.A.U",
+          "WERFEN ESPAÑA S.A.U.",
+          "WERFEN ESPAÑA, S.A.U.",
+          "WERFEN España S.A.U.",
+          "Werfen España S.A.U",
+          "Werfen España S.A.U."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "WERFEN ESPAÑA SAU"
+      },
+      {
+        "from": [
+          "DRAGER MEDICAL HISPANIA, S.A.",
+          "DRAGER MEDICAL HISPANIA S.A.",
+          "Dräger Medical Hispania, SA",
+          "DRÄGER MEDICAL HISPANIA SA",
+          "DRAGER MEDICAL HISPANIA SA",
+          "Drager Medical Hispania, S.A.",
+          "DRÄGER MEDICAL HISPANIA, SA",
+          "Drager medical Hispania, S.A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DRAGER MEDICAL HISPANIA, S.A."
+      },
+      {
+        "from": [
+          "IZASA HOSPITAL S.L.U.",
+          "IZASA HOSPITAL SLU",
+          "IZASA HOSPITAL, SLU",
+          "Izasa Hospital SLU",
+          "Izasa Hospital, SLU",
+          "IZASA HOSPITAL, S.L.U.",
+          "IZASA HOSPITAL SL.U.",
+          "IZASA HOSPITAL, S.L.U"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IZASA HOSPITAL S.L.U."
+      },
+      {
+        "from": [
+          "Iturri SA",
+          "ITURRI, S.A.",
+          "Iturri S.A.",
+          "ITURRI S.A",
+          "ITURRI S.A.",
+          "ITURRI, SA",
+          "ITURRI, S.A",
+          "Iturri, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Iturri SA"
+      },
+      {
+        "from": [
+          "PALEX MEDICAL, S.A.",
+          "PALEX MEDICAL SA",
+          "PALEX MEDICAL, SA",
+          "PALEX MEDICAL S.A",
+          "Palex Medical, S.A.",
+          "PALEX MEDICAL S.A.",
+          "PALEX MEDICAL, S.A",
+          "Palex Medical, S.A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PALEX MEDICAL, S.A."
+      },
+      {
+        "from": [
+          "NIRCO SL",
+          "NIRCO, S.L.",
+          "NIRCO S.L",
+          "NIRCO S.L.",
+          "NIRCO, S,L",
+          "Nirco, S.L.",
+          "Nirco, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NIRCO SL"
+      },
+      {
+        "from": [
+          "MEDTRONIC IBERICA, S.A.",
+          "MEDTRONIC IBERICA SA",
+          "MEDTRONIC IBÉRICA, S.A.",
+          "MEDTRONIC IBERICA, SA",
+          "MEDTRONIC IBERICA, SA,",
+          "Medtronic Iberica, S.A.",
+          "Medtronic Iberica, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MEDTRONIC IBERICA, S.A."
+      },
+      {
+        "from": [
+          "EL CORTE INGLES, S.A.",
+          "EL CORTE INGLÉS, S.A.",
+          "EL CORTE INGLES S.A.",
+          "EL CORTE INGLES  SA",
+          "EL CORTE INGLES SA",
+          "EL CORTE INGLÉS, SA",
+          "El Corte Inglés, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "EL CORTE INGLES, S.A."
+      },
+      {
+        "from": [
+          "DPS HEALTHCARE SOLUTIONS, S.L.",
+          "DPS HEALTHCARE SOLUTIONS SL",
+          "DPS Healthcare Solutions, SL",
+          "DPS HEALTHCARE SOLUTIONS S.L",
+          "Dps Healthcare Solutions SL",
+          "DPS HEALTHCARE SOLUTIONS ,S.L.",
+          "DPS Healthcare Solutions SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DPS HEALTHCARE SOLUTIONS, S.L."
+      },
+      {
+        "from": [
+          "GETINGE GROUP SPAIN SLU",
+          "GETINGE GROUP SPAIN, SLU",
+          "GETINGE GROUP SPAIN S.L.U.",
+          "GETINGE GROUP SPAIN, S.L.U",
+          "GETINGE GROUP SPAIN, S.L.U.",
+          "Getinge Group Spain S.L.U.",
+          "Getinge Group Spain, SLU"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GETINGE GROUP SPAIN SLU"
+      },
+      {
+        "from": [
+          "BARNA IMPORT MEDICA, S.A.",
+          "BARNA IMPORT MEDICA SA",
+          "BARNA IMPORT MEDICA S.A.",
+          "Barna Import Medica, SA",
+          "BARNA IMPORT MEDICA, SA",
+          "BARNA IMPORT MÉDICA, S.A.",
+          "Barna Import Médica, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BARNA IMPORT MEDICA, S.A."
+      },
+      {
+        "from": [
+          "ROCHE DIAGNOSTICS, S.L.",
+          "ROCHE DIAGNOSTICS, SL",
+          "Roche Diagnòstics, S.L.",
+          "ROCHE DIAGNOSTICS S.L.",
+          "ROCHE DIAGNOSTICS SL",
+          "Roche Diagnóstics S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ROCHE DIAGNOSTICS, S.L."
+      },
+      {
+        "from": [
+          "PHILIPS IBERICA SAU",
+          "PHILIPS IBERICA, SAU",
+          "Philips Iberica, S.A.U.",
+          "PHILIPS IBERICA, S.A.U",
+          "Philips Ibèrica S.A.U",
+          "Philips Ibérica, SAU"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PHILIPS IBERICA SAU"
+      },
+      {
+        "from": [
+          "DEXTROMEDICA, S.L.",
+          "DEXTROMEDICA S.L.",
+          "Dextromedica, SL",
+          "DEXTROMEDICA S.L",
+          "DEXTROMÈDICA S.L.",
+          "DEXTROMÉDICA, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DEXTROMEDICA, S.L."
+      },
+      {
+        "from": [
+          "BASTOS MEDICAL SL",
+          "BASTOS MEDICAL, S.L.",
+          "BASTOS MEDICAL S.L.",
+          "Bastos Medical SL",
+          "BASTOS MEDICAL S.L",
+          "BASTOS MEDICAL, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BASTOS MEDICAL SL"
+      },
+      {
+        "from": [
+          "PRODUCTOS CLIMAX SA",
+          "PRODUCTOS CLIMAX S.A.",
+          "PRODUCTOS CLIMAX S.A",
+          "PRODUCTOS CLIMAX, S.A.",
+          "PRODUCTOS CLÍMAX, SA",
+          "Productos Climax, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PRODUCTOS CLIMAX SA"
+      },
+      {
+        "from": [
+          "BEMASCE TECNICA, S.L.",
+          "BEMASCÉ TÉCNICA, SL",
+          "Bemascé Técnica, SL",
+          "BEMASCE TECNICA SL",
+          "BEMASCÉ TÉCNICA S.L",
+          "BEMASCÉ TÉCNICA, S.L.,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BEMASCE TECNICA, S.L."
+      },
+      {
+        "from": [
+          "VESISMIN, S.L.",
+          "VESISMIN SL",
+          "VESISMIN S.L",
+          "VESISMIN S.L.",
+          "VESISMIN, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VESISMIN, S.L."
+      },
+      {
+        "from": [
+          "LABORATORIOS HARTMANN, S.A.",
+          "LABORATORIOS HARTMANN S.A.",
+          "LABORATORIOS HARTMANN, SA",
+          "LABORATORIOS HARTMANN S.A",
+          "LABORATORIOS HARTMANN SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LABORATORIOS HARTMANN, S.A."
+      },
+      {
+        "from": [
+          "FIRMA AMBU S.L.",
+          "FIRMA AMBU SL",
+          "FIRMA AMBU, S.L.",
+          "FIRMA AMBU, S.L",
+          "Firma Ambú, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FIRMA AMBU S.L."
+      },
+      {
+        "from": [
+          "OHL SERVICIOS - INGESAN, S.A.",
+          "OHL SERVICIOS - INGESAN, S.A",
+          "OHL SERVICIOS INGESAN, SA",
+          "OHL SERVICIOS INGESAN S.A.",
+          "OHL Servicios Ingesan, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OHL SERVICIOS - INGESAN, S.A."
+      },
+      {
+        "from": [
+          "ARJO IBERIA, S.L.",
+          "ARJO IBERIA SL",
+          "ARJO IBERIA, S.L",
+          "ARJO IBERIA S.L.",
+          "Arjo Iberia, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ARJO IBERIA, S.L."
+      },
+      {
+        "from": [
+          "AIR LIQUIDE HEALTHCARE ESPAÑA, S.L.",
+          "AIR LIQUIDE HEALTHCARE ESPAÑA S.L.",
+          "AIR LIQUIDE HEALTHCARE ESPAÑA, SL",
+          "AIR LIQUIDE HEALTHCARE ESPAÑA SL",
+          "Air Liquide Healthcare España, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AIR LIQUIDE HEALTHCARE ESPAÑA, S.L."
+      },
+      {
+        "from": [
+          "INTERSURGICAL ESPAÑA, S.L.",
+          "INTERSURGICAL ESPAÑA, SL",
+          "INTERSURGICAL ESPAÑA. SL",
+          "INTERSURGICAL ESPAÑA SL",
+          "INTERSURGICAL ESPANA, S.L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "INTERSURGICAL ESPAÑA, S.L."
+      },
+      {
+        "from": [
+          "ISS FACILITY SERVICES, S.A.",
+          "ISS FACILITY SERVICES, SA",
+          "ISS FACILITY SERVICES S.A.",
+          "ISS Facility Services S.A.",
+          "ISS Facility Services, S.A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ISS FACILITY SERVICES, S.A."
+      },
+      {
+        "from": [
+          "Philips Iberica, SA",
+          "PHILIPS IBÉRICA, SA",
+          "PHILIPS IBERICA, S.A.",
+          "PHILIPS IBÉRICA, S.A.",
+          "Philips Iberica, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Philips Iberica, SA"
+      },
+      {
+        "from": [
+          "IMAN Corporation, S.A.",
+          "IMAN CORPORATION, S.A.",
+          "Iman Corporation S.A.",
+          "Iman Corporation SA",
+          "Iman corporation, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IMAN Corporation, S.A."
+      },
+      {
+        "from": [
+          "SIEMENS HEALTHCARE, S.L.U",
+          "SIEMENS HEALTHCARE, S.L.U.",
+          "SIEMENS HEALTHCARE S.L.U.",
+          "SIEMENS HEALTHCARE, SLU",
+          "Siemens Healthcare, SLU"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SIEMENS HEALTHCARE, S.L.U"
+      },
+      {
+        "from": [
+          "TAPICLINIC S.L",
+          "TAPICLINIC SL",
+          "TAPICLINIC, S.L.",
+          "TAPICLINIC, SL",
+          "Tapiclinic, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TAPICLINIC S.L"
+      },
+      {
+        "from": [
+          "ORION PHARMA SL",
+          "ORION PHARMA, S.L.",
+          "ORION PHARMA, SL",
+          "Orion Pharma, S.L.",
+          "Orion pharma, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ORION PHARMA SL"
+      },
+      {
+        "from": [
+          "SUMINISTROS HOSPITALARIOS, S.A.",
+          "SUMINISTROS HOSPITALARIOS SA",
+          "SUMINISTROS HOSPITALARIOS S.A.",
+          "Suministros hospitalarios, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SUMINISTROS HOSPITALARIOS, S.A."
+      },
+      {
+        "from": [
+          "HERSILL, S.L.",
+          "HERSILL SL",
+          "HERSILL, SL",
+          "HERSILL, SL."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "HERSILL, S.L."
+      },
+      {
+        "from": [
+          "FISHER SCIENTIFIC, S.L.",
+          "FISHER SCIENTIFIC, SL",
+          "FISHER SCIENTIFIC S.L",
+          "FISHER SCIENTIFIC SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FISHER SCIENTIFIC, S.L."
+      },
+      {
+        "from": [
+          "General Electric Healthcare España SAU",
+          "GENERAL ELECTRIC HEALTHCARE ESPAÑA S.A.U.",
+          "GENERAL ELECTRIC HEALTHCARE ESPAÑA, SAU",
+          "General Electric Healthcare España, S.A.U."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "General Electric Healthcare España SAU"
+      },
+      {
+        "from": [
+          "MANMEDIC FIC, S.L.",
+          "MANMEDIC FIC S.L.",
+          "MANMEDIC FIC S.L",
+          "MANMEDIC FIC, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MANMEDIC FIC, S.L."
+      },
+      {
+        "from": [
+          "CELULOSAS VASCAS, S.L.",
+          "CELULOSAS VASCAS S.L.",
+          "CELULOSAS VASCAS SL",
+          "CELULOSAS VASCAS S.L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CELULOSAS VASCAS, S.L."
+      },
+      {
+        "from": [
+          "OTOMEDIC QUIRURGICA SL",
+          "OTOMEDIC QUIRURGICA, S.L.",
+          "OTOMEDIC QUIRURGICA, SL",
+          "OTOMEDIC QUIRÚRGICA, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTOMEDIC QUIRURGICA SL"
+      },
+      {
+        "from": [
+          "SYNLAB Diagnosticos globales S.A.",
+          "Synlab Diagnosticos Globales SA",
+          "Synlab Diagnosticos Globales, S.A.",
+          "Synlab Diagnosticos Globales, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SYNLAB Diagnosticos globales S.A."
+      },
+      {
+        "from": [
+          "CANON MEDICAL SYSTEMS S.A.",
+          "CANON MEDICAL SYSTEMS SA",
+          "CANON MEDICAL SYSTEMS, S.A.",
+          "Canon Medical Systems, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CANON MEDICAL SYSTEMS S.A."
+      },
+      {
+        "from": [
+          "LINDE GAS ESPAÑA S.A.U",
+          "LINDE GAS ESPAÑA S.A.U.",
+          "LINDE GAS ESPAÑA, SAU",
+          "Linde Gas España, SAU"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LINDE GAS ESPAÑA S.A.U"
+      },
+      {
+        "from": [
+          "BERMEJO CALVO EDGAR",
+          "Edgar Bermejo Calvo",
+          "BERMEJO CALVO, EDGAR",
+          "EDGAR BERMEJO CALVO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BERMEJO CALVO EDGAR"
+      },
+      {
+        "from": [
+          "Nacatur 2 ESpaña, SL",
+          "NACATUR 2 ESPAÑA S.L.",
+          "NACATUR 2 ESPAÑA SL",
+          "Nacatur 2 España, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nacatur 2 ESpaña, SL"
+      },
+      {
+        "from": [
+          "STRYKER IBERIA SL",
+          "STRYKER IBERIA, S.L.",
+          "STRYKER IBERIA, SL",
+          "Stryker Iberia, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "STRYKER IBERIA SL"
+      },
+      {
+        "from": [
+          "SANGÜESA, S.A.",
+          "SANGUESA S.A.",
+          "SANGUESA SA",
+          "SANGUESA, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SANGÜESA, S.A."
+      },
+      {
+        "from": [
+          "SRCL CONSENUR, S.L.",
+          "SRCL CONSENUR, SL",
+          "SRCL CONSENUR SL",
+          "SRCL Consenur S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SRCL CONSENUR, S.L."
+      },
+      {
+        "from": [
+          "DISTRAUMA MEDICAL SL",
+          "DISTRAUMA MEDICAL, S.L.",
+          "DISTRAUMA MEDICAL S.L.",
+          "DISTRAUMA MEDICAL, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DISTRAUMA MEDICAL SL"
+      },
+      {
+        "from": [
+          "PRIM SA",
+          "PRIM, S.A.",
+          "PRIM, SA",
+          "PRIM S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PRIM SA"
+      },
+      {
+        "from": [
+          "SMITHS MEDICAL ESPANA S.L",
+          "SMITHS MEDICAL ESPANA, SL",
+          "SMITHS MEDICAL ESPAÑA, S.L",
+          "SMITHS MEDICAL ESPAÑA, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SMITHS MEDICAL ESPANA S.L"
+      },
+      {
+        "from": [
+          "MINDRAY MEDICAL ESPAÑA, SL",
+          "MINDRAY MEDICAL ESPAÑA S.L",
+          "MINDRAY MEDICAL ESPAÑA, S.L.",
+          "Mindray Medical España, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MINDRAY MEDICAL ESPAÑA, SL"
+      },
+      {
+        "from": [
+          "ACTIA SOURCING & SOLUTIONS, S.L.",
+          "ACTIA SOURCING & SOLUTIONS SL",
+          "ACTIA SOURCING & SOLUTIONS, S.L",
+          "ACTIA, SOURCING & SOLUTIONS, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ACTIA SOURCING & SOLUTIONS, S.L."
+      },
+      {
+        "from": [
+          "CONVATEC, S.L.",
+          "CONVATEC SL",
+          "CONVATEC S.L.",
+          "CONVATEC S.L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CONVATEC, S.L."
+      },
+      {
+        "from": [
+          "CARDIOLINK  SL",
+          "CARDIOLINK S.L.",
+          "CARDIOLINK, S.L.",
+          "Cardiolink, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CARDIOLINK  SL"
+      },
+      {
+        "from": [
+          "LIFE TECHNOLOGIES SA",
+          "LIFE TECHNOLOGIES, S.A",
+          "LIFE TECHNOLOGIES, S.A.",
+          "LIFE TECHNOLOGIES, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LIFE TECHNOLOGIES SA"
+      },
+      {
+        "from": [
+          "LABORATORIOS NORMON, S.A.",
+          "LABORATORIOS NORMON SA",
+          "LABORATORIOS NORMON  SA",
+          "Laboratorios NORMON, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LABORATORIOS NORMON, S.A."
+      },
+      {
+        "from": [
+          "INSTRUNET HOSPITAL, S.L.U.",
+          "INSTRUNET HOSPITAL S.L.U.",
+          "INSTRUNET HOSPITAL SLU",
+          "INSTRUNET HOSPITAL, SLU"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "INSTRUNET HOSPITAL, S.L.U."
+      },
+      {
+        "from": [
+          "MARTIN VECINO SL",
+          "MARTIN VECINO, SL",
+          "MARTIN VECINO, S.L.",
+          "Martin Vecino S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MARTIN VECINO SL"
+      },
+      {
+        "from": [
+          "ELIS MANOMATIC S.A.U.",
+          "ELIS MANOMATIC SAU",
+          "ELIS MANOMATIC, S.A.U.",
+          "ELIS MANOMATIC, SAU"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ELIS MANOMATIC S.A.U."
+      },
+      {
+        "from": [
+          "COOK ESPAÑA S.A.",
+          "COOK ESPANA, S.A.",
+          "COOK ESPAÑA SA",
+          "Cook España, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COOK ESPAÑA S.A."
+      },
+      {
+        "from": [
+          "KARL STORZ ENDOSCOPIA IBERICA, S.A.",
+          "KARL STORZ ENDOSCOPIA IBÉRICA, SA",
+          "KARL STORZ ENDOSCOPIA IBERICA SA",
+          "KARL STORZ ENDOSCOPIA IBÉRICA, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "KARL STORZ ENDOSCOPIA IBERICA, S.A."
+      },
+      {
+        "from": [
+          "SILENTIA SPAIN SL",
+          "SILENTIA SPAIN S.L.",
+          "SILENTIA SPAIN, S.L.",
+          "SILENTIA SPAIN, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SILENTIA SPAIN SL"
+      },
+      {
+        "from": [
+          "3M ESPAÑA SL",
+          "3M ESPAÑA, S.L.",
+          "3M ESPAÑA S.L.",
+          "3M España SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3M ESPAÑA SL"
+      },
+      {
+        "from": [
+          "COMERCIAL GUMMI, S.A.",
+          "COMERCIAL GUMMI, SA",
+          "COMERCIAL GUMMI S.A.",
+          "COMERCIAL GUMMI SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COMERCIAL GUMMI, S.A."
+      },
+      {
+        "from": [
+          "B. BRAUN MEDICAL, S.A.",
+          "B Braun Medical SA",
+          "B BRAUN MEDICAL SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "B. BRAUN MEDICAL, S.A."
+      },
+      {
+        "from": [
+          "GRIFOLS MOVACO SA",
+          "GRIFOLS MOVACO, SA",
+          "Grifols Movaco, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GRIFOLS MOVACO SA"
+      },
+      {
+        "from": [
+          "SMITH & NEPHEW, S.A.U.",
+          "SMITH & NEPHEW S.A.U",
+          "SMITH & NEPHEW S.A.U."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SMITH & NEPHEW, S.A.U."
+      },
+      {
+        "from": [
+          "GELIM, S.A.",
+          "GELIM, S.A",
+          "GELIM, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GELIM, S.A."
+      },
+      {
+        "from": [
+          "INNJOO TECHNOLOGY SL",
+          "INNJOO TECHNOLOGY, SL",
+          "INNJOO Technology, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "INNJOO TECHNOLOGY SL"
+      },
+      {
+        "from": [
+          "SARSTEDT S.A.U.",
+          "SARSTEDT, S.A.U.",
+          "SARSTEDT SAU"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SARSTEDT S.A.U."
+      },
+      {
+        "from": [
+          "MEDLINE INTERNATIONAL IBERIA, SL",
+          "MEDLINE INTERNATIONAL IBERIA S.L.",
+          "MEDLINE INTERNATIONAL IBERIA, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MEDLINE INTERNATIONAL IBERIA, SL"
+      },
+      {
+        "from": [
+          "PRODERPHARMA S.L.",
+          "PRODERPHARMA, S.L.",
+          "PRODERPHARMA, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PRODERPHARMA S.L."
+      },
+      {
+        "from": [
+          "COMERCIAL CONTEL, SA",
+          "Comercial Contel, S.A.",
+          "Comercial Contel, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COMERCIAL CONTEL, SA"
+      },
+      {
+        "from": [
+          "MENARINI DIAGNOSTICOS S.A",
+          "Menarini Diagnosticos, SA",
+          "Menarini Diagnòsticos, S.A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MENARINI DIAGNOSTICOS S.A"
+      },
+      {
+        "from": [
+          "TEXTIL ARTEXMON SL",
+          "TEXTIL ARTEXMON S.L.",
+          "TEXTIL ARTEXMON, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TEXTIL ARTEXMON SL"
+      },
+      {
+        "from": [
+          "Accenture, S.L.",
+          "Accenture S.L.",
+          "Accenture, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Accenture, S.L."
+      },
+      {
+        "from": [
+          "GE HEALTHCARE ESPAÑA, S.A.U.",
+          "G.E. HEALTHCARE ESPAÑA, S.A.U.",
+          "GE HEALTHCARE ESPAÑA, S.A.U"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GE HEALTHCARE ESPAÑA, S.A.U."
+      },
+      {
+        "from": [
+          "DEXTROMEDICA,S.L.",
+          "DEXTROMEDICA,S.L",
+          "Dextromedica,SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DEXTROMEDICA,S.L."
+      },
+      {
+        "from": [
+          "MTB Distribuciones Tecnológicas, SL",
+          "MTB DISTRIBUCIONES TECNOLÓGICAS, SL",
+          "MTB DISTRIBUCIONES TECNOLOGICAS, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MTB Distribuciones Tecnológicas, SL"
+      },
+      {
+        "from": [
+          "ABAST SYSTEMS & SOLUTIONS, SL",
+          "ABAST SYSTEMS & SOLUTIONS, S.L.",
+          "Abast Systems & Solutions SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ABAST SYSTEMS & SOLUTIONS, SL"
+      },
+      {
+        "from": [
+          "EQUIPAMIENTOS MEDICOS CANTONI SL",
+          "EQUIPAMIENTOS MEDICOS CANTONI, SL",
+          "EQUIPAMIENTOS MEDICOS CANTONI, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "EQUIPAMIENTOS MEDICOS CANTONI SL"
+      },
+      {
+        "from": [
+          "CONFECCIONS SEIBE SA",
+          "Confeccions SEIBE, S.A.",
+          "Confeccions Seibe, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CONFECCIONS SEIBE SA"
+      },
+      {
+        "from": [
+          "IMAN SEGURIDAD, S.A.",
+          "IMAN Seguridad, S.A.",
+          "Iman Seguridad, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IMAN SEGURIDAD, S.A."
+      },
+      {
+        "from": [
+          "EDWARDS LIFESCIENCES. S.L.",
+          "EDWARDS LIFESCIENCES, S.L.",
+          "EDWARDS LIFESCIENCES, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "EDWARDS LIFESCIENCES. S.L."
+      },
+      {
+        "from": [
+          "KERN PHARMA S.L",
+          "KERN PHARMA, S.L.",
+          "KERN PHARMA SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "KERN PHARMA S.L"
+      },
+      {
+        "from": [
+          "DIVISION ANATOMICOS, S.L.",
+          "DIVISION ANATOMICOS, SL",
+          "Division Anatomicos, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DIVISION ANATOMICOS, S.L."
+      },
+      {
+        "from": [
+          "BECTON DICKINSON, S.A.",
+          "BECTON DICKINSON SA",
+          "BECTON DICKINSON S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BECTON DICKINSON, S.A."
+      },
+      {
+        "from": [
+          "ENERPRO, SL",
+          "Enerpro S.L",
+          "Enerpro S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ENERPRO, SL"
+      },
+      {
+        "from": [
+          "AUBERT, S.A.",
+          "AUBERT SA",
+          "AUBERT, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AUBERT, S.A."
+      },
+      {
+        "from": [
+          "MULTISERVEIS NDAVANT SL",
+          "MULTISERVEIS NDAVANT, S.L",
+          "Multiserveis Ndavant SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MULTISERVEIS NDAVANT SL"
+      },
+      {
+        "from": [
+          "ABBOTT LABORATORIES S.A.",
+          "ABBOTT LABORATORIES SA",
+          "ABBOTT LABORATORIES, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ABBOTT LABORATORIES S.A."
+      },
+      {
+        "from": [
+          "FUJITSU TECHNOLOGY SOLUTIONS S.A.",
+          "FUJITSU TECHNOLOGY SOLUTIONS, S.A.",
+          "Fujitsu Technology Solutions S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FUJITSU TECHNOLOGY SOLUTIONS S.A."
+      },
+      {
+        "from": [
+          "FRESENIUS KABI ESPAÑA S.A.",
+          "FRESENIUS KABI ESPAÑA SA",
+          "FRESENIUS KABI ESPAÑA, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FRESENIUS KABI ESPAÑA S.A."
+      },
+      {
+        "from": [
+          "VWR INTERNATIONAL EUROLAB SL",
+          "VWR INTERNATIONAL EUROLAB S.L.",
+          "VWR INTERNATIONAL EUROLAB, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VWR INTERNATIONAL EUROLAB SL"
+      },
+      {
+        "from": [
+          "ALFASIGMA ESPAÑA, S.L.",
+          "ALFASIGMA ESPAÑA S.L.",
+          "ALFASIGMA ESPAÑA, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ALFASIGMA ESPAÑA, S.L."
+      },
+      {
+        "from": [
+          "NOVARTIS FARMACEUTICA, SA",
+          "NOVARTIS FARMACEUTICA S.A.",
+          "NOVARTIS FARMACEUTICA SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NOVARTIS FARMACEUTICA, SA"
+      },
+      {
+        "from": [
+          "AVIS ALQUILE UN COCHE, S.A.",
+          "AVIS Alquile un coche, S.A",
+          "AVIS ALQUILE UN COCHE, S.A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVIS ALQUILE UN COCHE, S.A."
+      },
+      {
+        "from": [
+          "SISMIC ACTIVE WEAR SL",
+          "SISMIC ACTIVE WEAR S.L",
+          "SISMIC ACTIVE WEAR S.L.,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SISMIC ACTIVE WEAR SL"
+      },
+      {
+        "from": [
+          "FERRETERIA INDUSTRIAL MARTI SA",
+          "FERRETERIA INDUSTRIAL MARTI, S.A",
+          "Ferreteria Industrial Martí, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FERRETERIA INDUSTRIAL MARTI SA"
+      },
+      {
+        "from": [
+          "MULTIANAU, S.L.",
+          "MULTIANAU, S.L",
+          "MULTIANAU, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MULTIANAU, S.L."
+      },
+      {
+        "from": [
+          "TELEFLEX MEDICAL SA",
+          "TELEFLEX MEDICAL, SA",
+          "TELEFLEX MEDICAL, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TELEFLEX MEDICAL SA"
+      },
+      {
+        "from": [
+          "MOLNLYCKE HEALTH CARE S.L.",
+          "MOLNLYCKE HEALTH CARE, S.L.",
+          "MOLNLYCKE HEALTH CARE, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MOLNLYCKE HEALTH CARE S.L."
+      },
+      {
+        "from": [
+          "LINET IBERIA, S.L.",
+          "Linet Iberia, SL",
+          "LINET IBERIA SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LINET IBERIA, S.L."
+      },
+      {
+        "from": [
+          "ARA VINC, S.L.",
+          "ARA VINC SL.",
+          "Ara Vinc, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ARA VINC, S.L."
+      },
+      {
+        "from": [
+          "S.E. CARBUROS METÁLICOS, S.A.",
+          "S.E. Carburos metálicos, S.A.",
+          "S.E. CARBUROS METÁLICOS S.A.."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "S.E. CARBUROS METÁLICOS, S.A."
+      },
+      {
+        "from": [
+          "ALTHEA HEALTHCARE ESPAÑA, S.L.U.",
+          "Althea Healthcare España, SLU",
+          "ALTHEA HEALTHCARE ESPAÑA SLU"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ALTHEA HEALTHCARE ESPAÑA, S.L.U."
+      },
+      {
+        "from": [
+          "ESTEVE TEIJIN HEALTHCARE SL",
+          "ESTEVE TEIJIN HEALTHCARE, SL",
+          "Esteve Teijin Healthcare, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ESTEVE TEIJIN HEALTHCARE SL"
+      },
+      {
+        "from": [
+          "INAD-HOC HABITAT SL",
+          "INAD-HOC HABITAT, SL",
+          "Inad-Hoc Habitat, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "INAD-HOC HABITAT SL"
+      },
+      {
+        "from": [
+          "ASPEN PHARMACARE ESPAÑA, SLU",
+          "ASPEN PHARMACARE ESPAÑA S.L.U",
+          "Aspen Pharmacare España, S.L.U"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ASPEN PHARMACARE ESPAÑA, SLU"
+      },
+      {
+        "from": [
+          "LABORATORIO REIG JOFRE, S.A",
+          "LABORATORIO REIG JOFRE SA",
+          "LABORATORIO REIG JOFRE., S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LABORATORIO REIG JOFRE, S.A"
+      },
+      {
+        "from": [
+          "ECOGEN, S.R.L.",
+          "ECOGEN S.R.L.",
+          "ECOGEN SRL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ECOGEN, S.R.L."
+      },
+      {
+        "from": [
+          "VIRCELL SPAIN, S.L.U.",
+          "VIRCELL SPAIN SLU",
+          "Vircell Spain S.L.U"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VIRCELL SPAIN, S.L.U."
+      },
+      {
+        "from": [
+          "VECMEDICAL SPAIN, S.L.",
+          "VECMEDICAL SPAIN S.L.",
+          "VECMEDICAL SPAIN SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VECMEDICAL SPAIN, S.L."
+      },
+      {
+        "from": [
+          "SACYR FACILITIES, S.A.",
+          "SACYR FACILITIES S.A.",
+          "SACYR FACILITIES SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SACYR FACILITIES, S.A."
+      },
+      {
+        "from": [
+          "EPPENDORF IBERICA S.L.U.",
+          "EPPENDORF IBERICA SLU",
+          "Eppendorf Ibérica SLU"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "EPPENDORF IBERICA S.L.U."
+      },
+      {
+        "from": [
+          "GENERAL ELECTRIC HEALTHCARE ESPAÑA, S.A.",
+          "GENERAL ELECTRIC HEALTHCARE ESPAÑA, SA",
+          "General Electric Healthcare España, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GENERAL ELECTRIC HEALTHCARE ESPAÑA, S.A."
+      },
+      {
+        "from": [
+          "COMSA SERVICE FACILITY MANAGEMENT, S.A.U.",
+          "Comsa Service Facility Management, S.A.U",
+          "COMSA SERVICE FACILITY MANAGEMENT SAU"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COMSA SERVICE FACILITY MANAGEMENT, S.A.U."
+      },
+      {
+        "from": [
+          "BIO-TECHNE R&D SYSTEMS, SL",
+          "BIO-TECHNE R&D SYSTEMS SL",
+          "BIO-TECHNE R&D SYSTEMS, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BIO-TECHNE R&D SYSTEMS, SL"
+      },
+      {
+        "from": [
+          "BARNA IMPORT MEDICA, S.A. (BIMEDICA)",
+          "BARNA IMPORT MEDICA, SA (BIMEDICA)",
+          "Barna Import Médica, SA (BIMEDICA)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BARNA IMPORT MEDICA, S.A. (BIMEDICA)"
+      },
+      {
+        "from": [
+          "LABORATORIO ALDO-UNIÓN, S.L.",
+          "LABORATORIO ALDO-UNION SL",
+          "LABORATORIO ALDO-UNION, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LABORATORIO ALDO-UNIÓN, S.L."
+      },
+      {
+        "from": [
+          "Fujifilm Europe GmbH, Sucursal en España",
+          "FUJIFILM Europe GmbH, Sucursal en España",
+          "Fujifilm Europe GMBH Sucursal En España"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fujifilm Europe GmbH, Sucursal en España"
+      },
+      {
+        "from": [
+          "OFFICE DEPOT S.L.",
+          "OFFICE DEPOT SL",
+          "OFFICE DEPOT, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OFFICE DEPOT S.L."
+      },
+      {
+        "from": [
+          "LINDE MEDICA, S.L.U.",
+          "Linde Medica, SLU",
+          "LINDE MEDICA SLU"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LINDE MEDICA, S.L.U."
+      },
+      {
+        "from": [
+          "BUNZL DISTRIBUTION SPAIN, S.A.",
+          "BUNZL DISTRIBUTION SPAIN S.A.",
+          "BUNZL DISTRIBUTION SPAIN SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BUNZL DISTRIBUTION SPAIN, S.A."
+      },
+      {
+        "from": [
+          "ACCORD HEALTHCARE, S.L.U.",
+          "ACCORD HEALTHCARE SLU",
+          "ACCORD HEALTHCARE, S.L.U"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ACCORD HEALTHCARE, S.L.U."
+      },
+      {
+        "from": [
+          "NEDELLA MEDICAL S.L.",
+          "NEDELLA MEDICAL, S.L.",
+          "NEDELLA MEDICAL SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NEDELLA MEDICAL S.L."
+      },
+      {
+        "from": [
+          "AREA MEDICA, SL",
+          "AREA MEDICA, S.L.",
+          "Àrea Mèdica, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AREA MEDICA, SL"
+      },
+      {
+        "from": [
+          "ESPUMALIA S.L.",
+          "ESPUMALIA SL",
+          "ESPUMALIA, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ESPUMALIA S.L."
+      },
+      {
+        "from": [
+          "SOCIEDAD ESPAÑOLA DE CARBUROS METALICOS, S.A.",
+          "SOCIEDAD ESPAÑOLA DE CARBUROS METÁLICOS, S.A.",
+          "Sociedad Española de Carburos Metálicos SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SOCIEDAD ESPAÑOLA DE CARBUROS METALICOS, S.A."
+      },
+      {
+        "from": [
+          "INCOTRON EYMASA S.L.U",
+          "Incotron Eymasa, SLU",
+          "INCOTRON EYMASA, S.L.U."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "INCOTRON EYMASA S.L.U"
+      },
+      {
+        "from": [
+          "ILUNION CIPO, S.L.",
+          "ILUNION CIPO S.L.",
+          "ILUNION CIPO SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ILUNION CIPO, S.L."
+      },
+      {
+        "from": [
+          "CEPHEID IBERIA SLU",
+          "CEPHEID IBERIA S.L.U.",
+          "CEPHEID IBERIA, S.L.U."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CEPHEID IBERIA SLU"
+      },
+      {
+        "from": [
+          "RIBAS MEDICINA S.L.",
+          "RIBAS MEDICINA, SL",
+          "RIBAS MEDICINA, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RIBAS MEDICINA S.L."
+      },
+      {
+        "from": [
+          "Barna Import, SA",
+          "Barna Import S.A.",
+          "Barna Import SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Barna Import, SA"
+      },
+      {
+        "from": [
+          "REHAB EUROPA, S.L.",
+          "REHAB EUROPA, S.L",
+          "REHAB EUROPA, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "REHAB EUROPA, S.L."
+      },
+      {
+        "from": [
+          "ANALISIS Y SERVICIOS INTEGRALES PORT, SL",
+          "ANÀLISIS Y SERVICIOS INTEGRALES PORT, SL",
+          "Análisis y Servicios Integrales Port, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ANALISIS Y SERVICIOS INTEGRALES PORT, SL"
+      },
+      {
+        "from": [
+          "IZASA SCIENTIFIC, S.L.U.",
+          "IZASA SCIENTIFIC SLU",
+          "Izasa Scientific S.L.U."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IZASA SCIENTIFIC, S.L.U."
+      },
+      {
+        "from": [
+          "ROCHE FARMA, S.A.",
+          "ROCHE FARMA S.A.",
+          "ROCHE FARMA SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ROCHE FARMA, S.A."
+      },
+      {
+        "from": [
+          "PAPEL AUTOMATIC SA",
+          "PAPEL AUTOMATIC S.A.",
+          "PAPEL AUTOMATIC S.A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PAPEL AUTOMATIC SA"
+      },
+      {
+        "from": [
+          "ALTAN PHARMACEUTICALS S.A.U.",
+          "ALTAN PHARMACEUTICALS SAU",
+          "ALTAN PHARMACEUTICALS, SAU"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ALTAN PHARMACEUTICALS S.A.U."
+      },
+      {
+        "from": [
+          "B.BRAUN MEDICAL SA",
+          "B.BRAUN MEDICAL, S.A.",
+          "BBRAUN MEDICAL SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "B.BRAUN MEDICAL SA"
+      },
+      {
+        "from": [
+          "TECHNOTEX QUALITY FABRICS, S.L.",
+          "TECHNOTEX QUALITY FABRICS, SL",
+          "Technotex Quality Fabrics S.L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TECHNOTEX QUALITY FABRICS, S.L."
+      },
+      {
+        "from": [
+          "PERKINELMER ESPAÑA, S.L.",
+          "PERKINELMER ESPAÑA, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PERKINELMER ESPAÑA, S.L."
+      },
+      {
+        "from": [
+          "MOLNLYCKE HEALTH CARE,S.L.",
+          "MOLNLYCKE HEALTH CARE,SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MOLNLYCKE HEALTH CARE,S.L."
+      },
+      {
+        "from": [
+          "B.BRAUN MEDICAL,S.A.",
+          "B.BRAUN MEDICAL,S.A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "B.BRAUN MEDICAL,S.A."
+      },
+      {
+        "from": [
+          "DRACIR SPAIN, S.L.",
+          "DRACIR SPAIN, SL."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DRACIR SPAIN, S.L."
+      },
+      {
+        "from": [
+          "SUCESORES DE P. MOLINA, S.A.",
+          "SUCESORES DE P MOLINA SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SUCESORES DE P. MOLINA, S.A."
+      },
+      {
+        "from": [
+          "SANROSAN, S.A.",
+          "SANROSAN, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SANROSAN, S.A."
+      },
+      {
+        "from": [
+          "TAS IMATGE I COMUNICACIÓ, S.L.",
+          "Tas Imatge i Comunicació, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TAS IMATGE I COMUNICACIÓ, S.L."
+      },
+      {
+        "from": [
+          "PROQUINORTE, S.A.",
+          "PROQUINORTE, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PROQUINORTE, S.A."
+      },
+      {
+        "from": [
+          "SODEXO IBERIA, S.A.",
+          "SODEXO IBERIA, S.A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SODEXO IBERIA, S.A."
+      },
+      {
+        "from": [
+          "GRUPO DISTRIBUIDOR GARAU SL",
+          "GRUPO DISTRIBUIDOR GARAU, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GRUPO DISTRIBUIDOR GARAU SL"
+      },
+      {
+        "from": [
+          "MAELVA SL",
+          "MAELVA, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MAELVA SL"
+      },
+      {
+        "from": [
+          "MICRONIC MANUFACTURING BV",
+          "MICRONIC MANUFACTURING, BV"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MICRONIC MANUFACTURING BV"
+      },
+      {
+        "from": [
+          "Serhs Food Area SL",
+          "SERHS FOOD AREA SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Serhs Food Area SL"
+      },
+      {
+        "from": [
+          "LELEMAN SL",
+          "Leleman, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LELEMAN SL"
+      },
+      {
+        "from": [
+          "SERPA 2009 SL",
+          "SERPA 2009, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SERPA 2009 SL"
+      },
+      {
+        "from": [
+          "SMITHS MEDICAL ESPAÑA SRL",
+          "SMITHS MEDICAL ESPAÑA, S.R.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SMITHS MEDICAL ESPAÑA SRL"
+      },
+      {
+        "from": [
+          "Logar-Punt S.L.",
+          "Logar-Punt, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Logar-Punt S.L."
+      },
+      {
+        "from": [
+          "LIMPTRES, SL",
+          "Limp'Tres SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LIMPTRES, SL"
+      },
+      {
+        "from": [
+          "TALLER AURIA, SOCIETAT COOPERATIVA CATALANA LIMITADA",
+          "TALLER ÀURIA, SOCIETAT COOPERATIVA CATALANA LIMITADA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TALLER AURIA, SOCIETAT COOPERATIVA CATALANA LIMITADA"
+      },
+      {
+        "from": [
+          "LYRECO ESPAÑA, SA",
+          "Lyreco España, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LYRECO ESPAÑA, SA"
+      },
+      {
+        "from": [
+          "TRATAMIENTO, ACONDICIONAMIENTO DE LADERAS Y OBRAS, S.A",
+          "TRATAMIENTO, ACONDICIONAMIENTO DE LADERAS Y OBRAS, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TRATAMIENTO, ACONDICIONAMIENTO DE LADERAS Y OBRAS, S.A"
+      },
+      {
+        "from": [
+          "EVIL LOVE, S.L.",
+          "EVIL LOVE, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "EVIL LOVE, S.L."
+      },
+      {
+        "from": [
+          "INFINITE  DENIM SL",
+          "INFINITE DENIM SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "INFINITE  DENIM SL"
+      },
+      {
+        "from": [
+          "BARNA IMPORT MEDICA,S.A.",
+          "BARNA IMPORT MEDICA.S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BARNA IMPORT MEDICA,S.A."
+      },
+      {
+        "from": [
+          "Deloitte Consulting, S.L.U.",
+          "Deloitte Consulting, S.L.U"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Deloitte Consulting, S.L.U."
+      },
+      {
+        "from": [
+          "RODA LÍNEA GRÁFICA, S.L.",
+          "RODA LÍNEA GRÁFICA, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RODA LÍNEA GRÁFICA, S.L."
+      },
+      {
+        "from": [
+          "ACCIONA FACILITY SERVICES, SA",
+          "ACCIONA FACILITY SERVICES, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ACCIONA FACILITY SERVICES, SA"
+      },
+      {
+        "from": [
+          "SERVEIS DE PERSONAL I NETEJA, SL",
+          "SERVEIS DE PERSONAL I NETEJA SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SERVEIS DE PERSONAL I NETEJA, SL"
+      },
+      {
+        "from": [
+          "G.E. HEALTHCARE ESPAÑA, S.A.",
+          "GE HEALTHCARE ESPANA SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "G.E. HEALTHCARE ESPAÑA, S.A."
+      },
+      {
+        "from": [
+          "FUJIFILM SONOSITE IBERICA SLU",
+          "Fujifilm SonoSite Ibérica S.L.U"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FUJIFILM SONOSITE IBERICA SLU"
+      },
+      {
+        "from": [
+          "Exclusivas Pascual y Furió, SA",
+          "EXCLUSIVAS PASCUAL Y FURIO, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Exclusivas Pascual y Furió, SA"
+      },
+      {
+        "from": [
+          "SANOFI-AVENTIS, S.A.",
+          "Sanofi-Aventis, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SANOFI-AVENTIS, S.A."
+      },
+      {
+        "from": [
+          "EPIS AND TOOLS SL",
+          "EPIS AND TOOLS, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "EPIS AND TOOLS SL"
+      },
+      {
+        "from": [
+          "SONMEDICA SL",
+          "SONMEDICA, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SONMEDICA SL"
+      },
+      {
+        "from": [
+          "TRAMEDIC, S.A.",
+          "TRAMEDIC SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TRAMEDIC, S.A."
+      },
+      {
+        "from": [
+          "COLOPLAST PRODUCTOS MEDICOS S.A.",
+          "COLOPLAST PRODUCTOS MEDICOS SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COLOPLAST PRODUCTOS MEDICOS S.A."
+      },
+      {
+        "from": [
+          "PRODERPHARMA,S.L.",
+          "PRODERPHARMA,S.L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PRODERPHARMA,S.L."
+      },
+      {
+        "from": [
+          "GARBIALDI, S.A.",
+          "Garbialdi, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GARBIALDI, S.A."
+      },
+      {
+        "from": [
+          "FARMABAN SA",
+          "FARMABAN, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FARMABAN SA"
+      },
+      {
+        "from": [
+          "BREAS MEDICAL SRL",
+          "BREAS MEDICAL S.R.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BREAS MEDICAL SRL"
+      },
+      {
+        "from": [
+          "TECAN IBERICA INSTRUMENTACION, SLU",
+          "Tecan Iberica Instrumentación, slu"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TECAN IBERICA INSTRUMENTACION, SLU"
+      },
+      {
+        "from": [
+          "PALEX MEDICAL",
+          "Palex Medical"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PALEX MEDICAL"
+      },
+      {
+        "from": [
+          "TEMEL",
+          "Temel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TEMEL"
+      },
+      {
+        "from": [
+          "MICRODAN ALTA DESINFECCION, S.A.",
+          "MICRODAN ALTA DESINFECCIÓN, S.A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MICRODAN ALTA DESINFECCION, S.A."
+      },
+      {
+        "from": [
+          "MIQUEL CRUSELLAS DORSA",
+          "Miquel Crusellas Dorsa"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MIQUEL CRUSELLAS DORSA"
+      },
+      {
+        "from": [
+          "Eurest Catalunya SLU",
+          "EUREST CATALUNYA, S.L.U."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Eurest Catalunya SLU"
+      },
+      {
+        "from": [
+          "WE CAN DO IT S.L.",
+          "WE CAN DO IT, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "WE CAN DO IT S.L."
+      },
+      {
+        "from": [
+          "LIDERA HIGIENE, S.L.",
+          "LIDERA HIGIENE SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LIDERA HIGIENE, S.L."
+      },
+      {
+        "from": [
+          "Unidix Médica, SL",
+          "UNIDIX MEDICA, S.L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Unidix Médica, SL"
+      },
+      {
+        "from": [
+          "ERGOMETRIX SA",
+          "Ergometrix, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ERGOMETRIX SA"
+      },
+      {
+        "from": [
+          "DIGITAL SCREEN SL",
+          "DIGITAL SCREEN, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DIGITAL SCREEN SL"
+      },
+      {
+        "from": [
+          "NOVELEC DIAGONAL, S.L.",
+          "NOVELEC DIAGONAL SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NOVELEC DIAGONAL, S.L."
+      },
+      {
+        "from": [
+          "KEYLAB MEDICAL, S.L.",
+          "KEYLAB MEDICAL, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "KEYLAB MEDICAL, S.L."
+      },
+      {
+        "from": [
+          "C.V. MEDICA, S.L.",
+          "C.V. MEDICA SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "C.V. MEDICA, S.L."
+      },
+      {
+        "from": [
+          "Servicios Integrales de Soporte a la Electromedicina, SL",
+          "Servicios Integrales de Soporte a la electromedicina, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Servicios Integrales de Soporte a la Electromedicina, SL"
+      },
+      {
+        "from": [
+          "MESSER IBERICA DE GASES SAU",
+          "Messer Iberica de Gases S.A.U."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MESSER IBERICA DE GASES SAU"
+      },
+      {
+        "from": [
+          "VYGON SA",
+          "VYGON, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VYGON SA"
+      },
+      {
+        "from": [
+          "Fujifilm Europe GmbH",
+          "FUJIFILM EUROPE GMBH"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fujifilm Europe GmbH"
+      },
+      {
+        "from": [
+          "TGTS Textil SL",
+          "TGTS Textil S.L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TGTS Textil SL"
+      },
+      {
+        "from": [
+          "LAERDAL MEDICAL AS",
+          "LAERDAL MEDICAL, AS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LAERDAL MEDICAL AS"
+      },
+      {
+        "from": [
+          "FIRA INTERNACIONAL DE BARCELONA",
+          "Fira Internacional de Barcelona"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FIRA INTERNACIONAL DE BARCELONA"
+      },
+      {
+        "from": [
+          "PFIZER SLU",
+          "PFIZER, S.L.U."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PFIZER SLU"
+      },
+      {
+        "from": [
+          "ADARO TECNOLOGÍA, S.A.",
+          "Adaro Tecnologia, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ADARO TECNOLOGÍA, S.A."
+      },
+      {
+        "from": [
+          "CARBUROS METALICOS SA",
+          "CARBUROS METALICOS, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CARBUROS METALICOS SA"
+      },
+      {
+        "from": [
+          "ANTONIO MATACHANA SA",
+          "Antonio Matachana, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ANTONIO MATACHANA SA"
+      },
+      {
+        "from": [
+          "ADTEL, Sistemas de Telecomunicación, SL",
+          "ADTEL SISTEMAS DE TELECOMUNICACION S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ADTEL, Sistemas de Telecomunicación, SL"
+      },
+      {
+        "from": [
+          "MEGAPTERAE, S.L.",
+          "MEGAPTERAE, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MEGAPTERAE, S.L."
+      },
+      {
+        "from": [
+          "BARNACLINIC S.A.",
+          "BARNACLINIC, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BARNACLINIC S.A."
+      },
+      {
+        "from": [
+          "KARL STORZ ENDOSCOPIA IBERICA,S.A.",
+          "KARL STORZ ENDOSCOPIA IBERICA.SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "KARL STORZ ENDOSCOPIA IBERICA,S.A."
+      },
+      {
+        "from": [
+          "BAYER HISPANIA, S.L.",
+          "BAYER HISPANIA SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BAYER HISPANIA, S.L."
+      },
+      {
+        "from": [
+          "COLCHONES SOMICAT S.L.",
+          "COLCHONES SOMICAT SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COLCHONES SOMICAT S.L."
+      },
+      {
+        "from": [
+          "FUJIFILM SONOSITE IBERICA SL",
+          "FUJIFILM SONOSITE IBERICA, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FUJIFILM SONOSITE IBERICA SL"
+      },
+      {
+        "from": [
+          "OCEAN FS CATALUNYA S.A.",
+          "OCEAN FS CATALUNYA, S.A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OCEAN FS CATALUNYA S.A."
+      },
+      {
+        "from": [
+          "ESTEVE PHARMACEUTICALS., S.A",
+          "ESTEVE PHARMACEUTICALS SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ESTEVE PHARMACEUTICALS., S.A"
+      },
+      {
+        "from": [
+          "VEOLIA SERVEIS CATALUNYA S.A.U.",
+          "Veolia Serveis Catalunya SAU"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VEOLIA SERVEIS CATALUNYA S.A.U."
+      },
+      {
+        "from": [
+          "LAERDAL MEDICAL, S.A.",
+          "LAERDAL MEDICAL, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LAERDAL MEDICAL, S.A."
+      },
+      {
+        "from": [
+          "ANTONIO MATACHANA,S.A.",
+          "ANTONIO MATACHANA,S.A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ANTONIO MATACHANA,S.A."
+      },
+      {
+        "from": [
+          "TOUR, S.A.",
+          "TOUR, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TOUR, S.A."
+      },
+      {
+        "from": [
+          "Farmàcia Jose Manuel Farrando",
+          "Farmàcia José Manuel Farrando"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Farmàcia Jose Manuel Farrando"
+      },
+      {
+        "from": [
+          "RUBATEC SA",
+          "RUBATEC, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RUBATEC SA"
+      },
+      {
+        "from": [
+          "SEIDOR, S.A.",
+          "Seidor S.A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SEIDOR, S.A."
+      },
+      {
+        "from": [
+          "OKATENT, S.L",
+          "OKATENT, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OKATENT, S.L"
+      },
+      {
+        "from": [
+          "Viewnext, S.A.",
+          "VIEWNEXT S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Viewnext, S.A."
+      },
+      {
+        "from": [
+          "Optima Facility Services, SL",
+          "OPTIMA FACILITY SERVICES SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Optima Facility Services, SL"
+      },
+      {
+        "from": [
+          "Everis Spain, S.L.U.",
+          "EVERIS SPAIN, S.L.U."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Everis Spain, S.L.U."
+      },
+      {
+        "from": [
+          "RUBBEREX SPAIN S.L.",
+          "RUBBEREX SPAIN SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RUBBEREX SPAIN S.L."
+      },
+      {
+        "from": [
+          "GESTIONES COMERCIALES EDSA SL",
+          "GESTIONES COMERCIALES EDSA S.L,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GESTIONES COMERCIALES EDSA SL"
+      },
+      {
+        "from": [
+          "Adiemed Prevention in Diagnostics, SL",
+          "ADIEMED PREVENTION IN DIAGNOSTICS SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Adiemed Prevention in Diagnostics, SL"
+      },
+      {
+        "from": [
+          "SERVEIS OBRES I MANTENIMENT, S.L.",
+          "SERVEIS OBRES I MANTENIMENT, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SERVEIS OBRES I MANTENIMENT, S.L."
+      },
+      {
+        "from": [
+          "TYPSA (Técnica y Proyectos, S.A.)",
+          "TÉCNICA Y PROYECTOS, SA (TYPSA)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TYPSA (Técnica y Proyectos, S.A.)"
+      },
+      {
+        "from": [
+          "GASPUNT, S.A.",
+          "GASPUNT, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GASPUNT, S.A."
+      },
+      {
+        "from": [
+          "GVB-SPES ESPO SL",
+          "GVB-SPES ESPO, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GVB-SPES ESPO SL"
+      },
+      {
+        "from": [
+          "ILUNION BUGADERIES CATALUNYA SAU",
+          "Ilunion Bugaderies Catalunya S.A.U"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ILUNION BUGADERIES CATALUNYA SAU"
+      },
+      {
+        "from": [
+          "DEVIMETRIX S.L.",
+          "DEVIMETRIX S.L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DEVIMETRIX S.L."
+      },
+      {
+        "from": [
+          "Dextromedia, SL",
+          "DEXTROMEDIA, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dextromedia, SL"
+      },
+      {
+        "from": [
+          "AMIDATA, S.A.U.",
+          "AMIDATA, SAU"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AMIDATA, S.A.U."
+      },
+      {
+        "from": [
+          "BRECAMP,  S.A.",
+          "BRECAMP, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BRECAMP,  S.A."
+      },
+      {
+        "from": [
+          "COMPAREX ESPAÑA SA",
+          "COMPAREX ESPAÑA, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COMPAREX ESPAÑA SA"
+      },
+      {
+        "from": [
+          "PRODUCTOS MEDICOS HOSPITALARIOS SL",
+          "PRODUCTOS MEDICOS HOSPITALARIOS S.L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PRODUCTOS MEDICOS HOSPITALARIOS SL"
+      },
+      {
+        "from": [
+          "NIHON KOHDEN IBERICA, S.L.",
+          "Nihon Kohden Iberica, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NIHON KOHDEN IBERICA, S.L."
+      },
+      {
+        "from": [
+          "PROTEC SOLANA S.L.",
+          "PROTEC SOLANA, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PROTEC SOLANA S.L."
+      },
+      {
+        "from": [
+          "STERIS IBERIA, S.A.",
+          "STERIS Iberia, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "STERIS IBERIA, S.A."
+      },
+      {
+        "from": [
+          "INTEGRATED DNA TECHNOLOGIES SPAIN SL",
+          "INTEGRATED DNA TECHNOLOGIES SPAIN, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "INTEGRATED DNA TECHNOLOGIES SPAIN SL"
+      },
+      {
+        "from": [
+          "FOC, Fibra y Sistemas, SL",
+          "FOC, Fibra y Sistemas, SL."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FOC, Fibra y Sistemas, SL"
+      },
+      {
+        "from": [
+          "Getinge Group Spain, SL",
+          "GETINGE GROUP SPAIN SL."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Getinge Group Spain, SL"
+      },
+      {
+        "from": [
+          "INFOREIN S.A.",
+          "Inforein, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "INFOREIN S.A."
+      },
+      {
+        "from": [
+          "JBM CAMPLLONG, S.L.",
+          "JBM CAMPLLONG, S.L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "JBM CAMPLLONG, S.L."
+      },
+      {
+        "from": [
+          "FISHER & PAYKEL HEALTHCARE",
+          "Fisher & Paykel Healthcare"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FISHER & PAYKEL HEALTHCARE"
+      },
+      {
+        "from": [
+          "I.D. GRUP SA",
+          "ID GRUP, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "I.D. GRUP SA"
+      },
+      {
+        "from": [
+          "SERVEI D'APATS, S.L.",
+          "SERVEI D'APATS S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SERVEI D'APATS, S.L."
+      },
+      {
+        "from": [
+          "ITRAM HIGIENE, S.L.",
+          "Itram Higiene SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ITRAM HIGIENE, S.L."
+      },
+      {
+        "from": [
+          "ALHORA SCFP, SL.",
+          "ALHORA SCFP, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ALHORA SCFP, SL."
+      },
+      {
+        "from": [
+          "ADOLF FRIGOLA I CIA, S.C.P.",
+          "ADOLF FRIGOLA I CIA, SCP"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ADOLF FRIGOLA I CIA, S.C.P."
+      },
+      {
+        "from": [
+          "SABICO SEGURIDAD, S.A.",
+          "SABICO SEGURIDAD SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SABICO SEGURIDAD, S.A."
+      },
+      {
+        "from": [
+          "BEMASCE",
+          "Bemascé"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BEMASCE"
+      },
+      {
+        "from": [
+          "Hospital Hispania, SL",
+          "Hospital Hispania, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hospital Hispania, SL"
+      },
+      {
+        "from": [
+          "Catering ARCASA SL",
+          "Càtering ARCASA SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Catering ARCASA SL"
+      },
+      {
+        "from": [
+          "FUNDACIO PRIVADA TRINIJOVE",
+          "FUNDACIó PRIVADA TRINIJOVE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FUNDACIO PRIVADA TRINIJOVE"
+      },
+      {
+        "from": [
+          "MONTAJES MARES PRFV S.L",
+          "MONTAJES MARES PRFV, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MONTAJES MARES PRFV S.L"
+      },
+      {
+        "from": [
+          "ELIS MANOMATIC, S.A.",
+          "ELIS MANOMATIC SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ELIS MANOMATIC, S.A."
+      },
+      {
+        "from": [
+          "FISHER & PAYKEL HEALTHCARE SAS",
+          "FISHER PAYKEL HEALTHCARE SAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FISHER & PAYKEL HEALTHCARE SAS"
+      },
+      {
+        "from": [
+          "HILL-ROM IBERIA, S.L.",
+          "HILL-ROM IBERIA, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "HILL-ROM IBERIA, S.L."
+      },
+      {
+        "from": [
+          "Bellés Diagnostic i Investigació S.L.",
+          "Bellés Diagnòstic i Investigació S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bellés Diagnostic i Investigació S.L."
+      },
+      {
+        "from": [
+          "DEXTRO MEDICA SL",
+          "DEXTRO MEDICA, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DEXTRO MEDICA SL"
+      },
+      {
+        "from": [
+          "COTOBLAU S.A.",
+          "COTOBLAU, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COTOBLAU S.A."
+      },
+      {
+        "from": [
+          "Transportes Nicaragua, S.A",
+          "Transportes Nicaragua, S.A,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Transportes Nicaragua, S.A"
+      },
+      {
+        "from": [
+          "BAXTER, S.L.",
+          "Baxter, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BAXTER, S.L."
+      },
+      {
+        "from": [
+          "GREEN CYCLES S.L",
+          "GREEN CYCLES SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GREEN CYCLES S.L"
+      },
+      {
+        "from": [
+          "PHILIPS IBERICA,S.A.",
+          "PHILIPS IBERICA,SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PHILIPS IBERICA,S.A."
+      },
+      {
+        "from": [
+          "CORIBERICA SANITARIA, S.L.",
+          "CORIBERICA SANITARIA SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CORIBERICA SANITARIA, S.L."
+      },
+      {
+        "from": [
+          "EURODELCA SA",
+          "EURODELCA, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "EURODELCA SA"
+      },
+      {
+        "from": [
+          "MISSATGERIES AGENSMET, S.L.",
+          "Missatgeries Agensmet, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MISSATGERIES AGENSMET, S.L."
+      },
+      {
+        "from": [
+          "HOLOGIC IBERIA SL",
+          "HOLOGIC IBERIA, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "HOLOGIC IBERIA SL"
+      },
+      {
+        "from": [
+          "BIOMERIEUX ESPAÑA SA",
+          "Biomerieux España, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BIOMERIEUX ESPAÑA SA"
+      },
+      {
+        "from": [
+          "PALEX MEDICAL SA, SOCIETAT UNIPERSONAL",
+          "PALEX MEDICAL, SA, SOCIETAT UNIPERSONAL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PALEX MEDICAL SA, SOCIETAT UNIPERSONAL"
+      },
+      {
+        "from": [
+          "PUENTE CHINA ESPAÑA COMERCIO SL",
+          "Puente China España Comercio, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PUENTE CHINA ESPAÑA COMERCIO SL"
+      },
+      {
+        "from": [
+          "LIMPIEZAS CONTRATADAS S.L.",
+          "LIMPIEZAS CONTRATADAS, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LIMPIEZAS CONTRATADAS S.L."
+      },
+      {
+        "from": [
+          "FUGAPLAST S.L.",
+          "Fugaplast  S.L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FUGAPLAST S.L."
+      },
+      {
+        "from": [
+          "SUMINISTROS HOSPITALARIOS",
+          "Suministros Hospitalarios"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SUMINISTROS HOSPITALARIOS"
+      },
+      {
+        "from": [
+          "PRIM,S.A.",
+          "PRIM,S.A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PRIM,S.A."
+      },
+      {
+        "from": [
+          "LIFETECHNOLOGIES",
+          "Lifetechnologies"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LIFETECHNOLOGIES"
+      },
+      {
+        "from": [
+          "SAYTEL SERVICIOS INFORMÁTICOS S.A .",
+          "SAYTEL SERVICIOS INFORMÁTICOS, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SAYTEL SERVICIOS INFORMÁTICOS S.A ."
+      },
+      {
+        "from": [
+          "DEXTRO MEDICA,S.L.",
+          "DEXTRO MEDICA.S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DEXTRO MEDICA,S.L."
+      },
+      {
+        "from": [
+          "El Corte Ingles",
+          "EL CORTE INGLÉS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "El Corte Ingles"
+      },
+      {
+        "from": [
+          "GESTION INTEGRAL DE INSTALACIONES, S.L.",
+          "Gestión Integral de Instalaciones S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GESTION INTEGRAL DE INSTALACIONES, S.L."
+      },
+      {
+        "from": [
+          "K.R.Z.,S.L.",
+          "KRZ,SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "K.R.Z.,S.L."
+      },
+      {
+        "from": [
+          "MAKROPLAS S.L.",
+          "MAKROPLAS, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MAKROPLAS S.L."
+      },
+      {
+        "from": [
+          "VESTILAB CLEAN ROOM CONTROL, SLU",
+          "Vestilab Clean Room Control, SLU"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VESTILAB CLEAN ROOM CONTROL, SLU"
+      },
+      {
+        "from": [
+          "TELEFÓNICA SOLUCIONES DE INFORMÁTICA Y COMUNICACIONES DE ESPAÑA, S.A.U.",
+          "TELEFONICA SOLUCIONES DE INFORMÁTICA Y COMUNICACIONES DE ESPAÑA, S.A.U."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TELEFÓNICA SOLUCIONES DE INFORMÁTICA Y COMUNICACIONES DE ESPAÑA, S.A.U."
+      },
+      {
+        "from": [
+          "CARDINAL HEALTH SPAIN 511 S.L.",
+          "CARDINAL HEALTH SPAIN 511 SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CARDINAL HEALTH SPAIN 511 S.L."
+      },
+      {
+        "from": [
+          "PISTA CERO S.L",
+          "PISTA CERO S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PISTA CERO S.L"
+      },
+      {
+        "from": [
+          "SOLUTIOMA, S.L.",
+          "SOLUTIOMA, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SOLUTIOMA, S.L."
+      },
+      {
+        "from": [
+          "INSTRUMENTACION Y COMPONENTES SA",
+          "INSTRUMENTACIÓN Y COMPONENTES, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "INSTRUMENTACION Y COMPONENTES SA"
+      },
+      {
+        "from": [
+          "CESPA GESTIÓN DE RESIDUOS, S.A.",
+          "CESPA GESTIÓN DE RESIDUOS, SA."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CESPA GESTIÓN DE RESIDUOS, S.A."
+      },
+      {
+        "from": [
+          "GENERAL ELECTRIC HEALTHCARE ESPAÑA",
+          "GENERAL ELECTRIC HEALTHCARE ESPAÑA,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GENERAL ELECTRIC HEALTHCARE ESPAÑA"
+      },
+      {
+        "from": [
+          "VYAIRE MEDICAL SLU",
+          "VYAIRE MEDICAL, S.L.U."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VYAIRE MEDICAL SLU"
+      },
+      {
+        "from": [
+          "Diset Control de Plagas S.L.",
+          "Diset Control de Plagas, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Diset Control de Plagas S.L."
+      },
+      {
+        "from": [
+          "INACCÉS GEOTÈCNICA VERTICAL, S.L.",
+          "INACCÉS GEOTÈCNICA VERTICAL, S.L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "INACCÉS GEOTÈCNICA VERTICAL, S.L."
+      },
+      {
+        "from": [
+          "ESMEDICAL SUMINISTROS HOSPITALARIOS, S.L.",
+          "esMedical Suministros Hospitalarios SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ESMEDICAL SUMINISTROS HOSPITALARIOS, S.L."
+      },
+      {
+        "from": [
+          "MEDLINE INTERNATIONAL IBERIA,",
+          "MEDLINE INTERNATIONAL IBERIA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MEDLINE INTERNATIONAL IBERIA,"
+      },
+      {
+        "from": [
+          "M.A. RIBAS, SL",
+          "M.A. RIBAS, SL,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "M.A. RIBAS, SL"
+      },
+      {
+        "from": [
+          "VYGON S.A.U.",
+          "VYGON SAU"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VYGON S.A.U."
+      },
+      {
+        "from": [
+          "BOEHRINGER INGELHEIM ESPAÑA SA",
+          "BOEHRINGER INGELHEIM ESPAÑA, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BOEHRINGER INGELHEIM ESPAÑA SA"
+      },
+      {
+        "from": [
+          "INTERNACIONAL QUÍMICA AROMÁTICA SA,",
+          "INTERNACIONAL QUÍMICA AROMÁTICA, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "INTERNACIONAL QUÍMICA AROMÁTICA SA,"
+      },
+      {
+        "from": [
+          "GIVAS EQUIPAMENT IBERICA, SL",
+          "GIVAS EQUIPAMENT IBERICA SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GIVAS EQUIPAMENT IBERICA, SL"
+      },
+      {
+        "from": [
+          "AXATON SL",
+          "AXATON, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AXATON SL"
+      },
+      {
+        "from": [
+          "PRODUCTOS MEDICINALES MEDELA SL",
+          "PRODUCTOS MEDICINALES MEDELA, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PRODUCTOS MEDICINALES MEDELA SL"
+      },
+      {
+        "from": [
+          "L.D. EMPRESA DE LIMPIEZA Y DESINFECCIÓN, S.A.",
+          "LD EMPRESA DE LIMPIEZA Y DESINFECCIÓN, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "L.D. EMPRESA DE LIMPIEZA Y DESINFECCIÓN, S.A."
+      },
+      {
+        "from": [
+          "FUNDACIO SERVEIS DE SUPORT (RESIDOM)",
+          "FUNDACIÓ SERVEIS DE SUPORT (RESIDOM)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FUNDACIO SERVEIS DE SUPORT (RESIDOM)"
+      },
+      {
+        "from": [
+          "TRINITECH EUROPE, S.L.",
+          "Trinitech Europe, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TRINITECH EUROPE, S.L."
+      },
+      {
+        "from": [
+          "ASENS S.L.U.",
+          "ASENS SLU"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ASENS S.L.U."
+      },
+      {
+        "from": [
+          "ANTONIO JOSE SANTOS MARTINEZ",
+          "SANTOS MARTINEZ, ANTONIO JOSE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ANTONIO JOSE SANTOS MARTINEZ"
+      },
+      {
+        "from": [
+          "LINDE GAS ESPAÑA SA",
+          "LINDE GAS ESPAÑA, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LINDE GAS ESPAÑA SA"
+      },
+      {
+        "from": [
+          "TELEFLEX MEDICAL SA RUSCH",
+          "TELEFLEX MEDICAL SA RUSCH."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TELEFLEX MEDICAL SA RUSCH"
+      },
+      {
+        "from": [
+          "DELTALAB, SL",
+          "DELTALAB, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DELTALAB, SL"
+      },
+      {
+        "from": [
+          "LABORATORIOS CAIR ESPAÑA, S.L.",
+          "LABORATORIOS CAIR ESPAÑA, S.L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LABORATORIOS CAIR ESPAÑA, S.L."
+      },
+      {
+        "from": [
+          "TRAPOS Y CABOS RUBI SL",
+          "TRAPOS Y CABOS RUBI, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TRAPOS Y CABOS RUBI SL"
+      },
+      {
+        "from": [
+          "AIR LIQUIDE HEALTHCARE, SL",
+          "AIR LIQUIDE HEALTHCARE SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AIR LIQUIDE HEALTHCARE, SL"
+      },
+      {
+        "from": [
+          "IBERHOSPITEX, S.A.",
+          "IBERHOSPITEX SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IBERHOSPITEX, S.A."
+      },
+      {
+        "from": [
+          "TECNICAS DE SEGURIDAD LABORAL Y AMBIENTAL SL",
+          "Técnicas de seguridad laboral y ambiental, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TECNICAS DE SEGURIDAD LABORAL Y AMBIENTAL SL"
+      },
+      {
+        "from": [
+          "SYNLAB DIAGNÓSTICOS GLOBALES, SAU",
+          "Synlab Diagnósticos Globales, SAU"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SYNLAB DIAGNÓSTICOS GLOBALES, SAU"
+      },
+      {
+        "from": [
+          "CLOSA SEBASTIA SL",
+          "CLOSA SEBASTIÀ S.L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CLOSA SEBASTIA SL"
+      },
+      {
+        "from": [
+          "ALRAVASA, SA",
+          "Alravasa, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ALRAVASA, SA"
+      },
+      {
+        "from": [
+          "Brócoli, SL",
+          "BROCOLI, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Brócoli, SL"
+      },
+      {
+        "from": [
+          "MEDILAB SL",
+          "Medilab S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MEDILAB SL"
+      },
+      {
+        "from": [
+          "AB MEDICA GROUP SA",
+          "AB Medica Group, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AB MEDICA GROUP SA"
+      },
+      {
+        "from": [
+          "EUROIMMUN DIAGNOSTICS ESPAÑA SL",
+          "EUROIMMUN DIAGNOSTICS ESPAÑA, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "EUROIMMUN DIAGNOSTICS ESPAÑA SL"
+      },
+      {
+        "from": [
+          "TRAZABILIDAD GESTION Y TEXTILES SANITARIOS SL",
+          "TRAZABILIDAD GESTIÓN  Y TEXTILES SANITARIOS, SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TRAZABILIDAD GESTION Y TEXTILES SANITARIOS SL"
+      },
+      {
+        "from": [
+          "PRODUCTES INDUSTRIALS DE SANEJAMENT I MANTENIMENT S.L.",
+          "PRODUCTES INDUSTRIALS DE SANEJAMENT I MANTENIMENT, S.L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PRODUCTES INDUSTRIALS DE SANEJAMENT I MANTENIMENT S.L."
+      },
+      {
+        "from": [
+          "PALEX MEDICAL,S.A.",
+          "PALEX MEDICAL.SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PALEX MEDICAL,S.A."
+      },
+      {
+        "from": [
+          "VERTEX TECHNICS S.L.",
+          "VERTEX TECHNICS, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VERTEX TECHNICS S.L."
+      },
+      {
+        "from": [
+          "PHARMA INTERNACIONAL SA",
+          "PHARMA INTERNACIONAL, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PHARMA INTERNACIONAL SA"
+      },
+      {
+        "from": [
+          "PREGECSA SERVICIOS GENERALES, S.A",
+          "PREGECSA SERVICIOS GENERALES, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PREGECSA SERVICIOS GENERALES, S.A"
+      },
+      {
+        "from": [
+          "INTERNATIONAL EMERGENCY SERVICES S.L.",
+          "INTERNATIONAL EMERGENCY SERVICES SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "INTERNATIONAL EMERGENCY SERVICES S.L."
+      },
+      {
+        "from": [
+          "HANS E.RUTH, S.A.",
+          "HANS E.RUTH, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "HANS E.RUTH, S.A."
+      },
+      {
+        "from": [
+          "SERVICIOS MICROINFORMATICA SA",
+          "SERVICIOS MICROINFORMÁTICA, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SERVICIOS MICROINFORMATICA SA"
+      },
+      {
+        "from": [
+          "MONLAB, S.L.",
+          "MONLAB SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MONLAB, S.L."
+      },
+      {
+        "from": [
+          "JG Ingenieros, SA",
+          "JG INGENIEROS, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "JG Ingenieros, SA"
+      },
+      {
+        "from": [
+          "ROCHE HERMANOS, S.A.",
+          "ROCHE HERMANOS S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ROCHE HERMANOS, S.A."
+      },
+      {
+        "from": [
+          "SANDOZ FARMACEUTICA SA",
+          "SANDOZ FARMACEUTICA, S.A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SANDOZ FARMACEUTICA SA"
+      },
+      {
+        "from": [
+          "DYNAMIC EXPRESS COURIER, SL",
+          "DYNAMIC EXPRESS COURIER SL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DYNAMIC EXPRESS COURIER, SL"
+      },
+      {
+        "from": [
+          "FINISH, S.A.",
+          "FINISH, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FINISH, S.A."
+      },
+      {
+        "from": [
+          "TECNISAMPLE SL",
+          "TECNISAMPLE, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TECNISAMPLE SL"
+      },
+      {
+        "from": [
+          "ALFA INSTAL.LACIONS SA",
+          "ALFA INSTAL.LACIONS, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ALFA INSTAL.LACIONS SA"
+      },
+      {
+        "from": [
+          "J TOURON SA",
+          "J. Touron, SA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "J TOURON SA"
+      },
+      {
+        "from": [
+          "BOTIQUIN SANS, SLU",
+          "Botiquin Sans SLU"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BOTIQUIN SANS, SLU"
+      },
+      {
+        "from": [
+          "PLANCHISTERIA INDUSTRIAL MIRPA, S.L",
+          "PLANCHISTERIA INDUSTRIAL MIRPA, S.L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PLANCHISTERIA INDUSTRIAL MIRPA, S.L"
+      }
+    ],
+    "description": "Mass edit cells in column Empresa adjudicatària"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Tipus d'expedient",
+    "description": "Remove column Tipus d'expedient"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Pressupost de licitació (sense IVA)",
+    "expression": "grel:toNumber(value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Pressupost de licitació (sense IVA) using expression grel:toNumber(value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Valor estimat del contracte",
+    "expression": "grel:toNumber(value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Valor estimat del contracte using expression grel:toNumber(value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Import d'adjudicació (sense IVA)",
+    "expression": "grel:toNumber(value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Import d'adjudicació (sense IVA) using expression grel:toNumber(value)"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Codi d'expedient",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2020/1070",
+          "2020-1070"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1070"
+      },
+      {
+        "from": [
+          "2020/1062",
+          "2020-1062"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1062"
+      },
+      {
+        "from": [
+          "2020/1061",
+          "2020-1061"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1061"
+      },
+      {
+        "from": [
+          "2020/1060",
+          "2020-1060"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1060"
+      },
+      {
+        "from": [
+          "2020/1066",
+          "2020-1066"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1066"
+      },
+      {
+        "from": [
+          "2020/1065",
+          "2020-1065"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1065"
+      },
+      {
+        "from": [
+          "2020/1064",
+          "2020-1064"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1064"
+      },
+      {
+        "from": [
+          "2020/1063",
+          "2020-1063"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1063"
+      },
+      {
+        "from": [
+          "2020/1069",
+          "2020-1069"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1069"
+      },
+      {
+        "from": [
+          "2020/1068",
+          "2020-1068"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1068"
+      },
+      {
+        "from": [
+          "2020/1067",
+          "2020-1067"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1067"
+      },
+      {
+        "from": [
+          "2020/1033",
+          "2020-1033"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1033"
+      },
+      {
+        "from": [
+          "2020/1030",
+          "2020-1030"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1030"
+      },
+      {
+        "from": [
+          "2020/1037",
+          "2020-1037"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1037"
+      },
+      {
+        "from": [
+          "2020/1035",
+          "2020-1035"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1035"
+      },
+      {
+        "from": [
+          "2020/1034",
+          "2020-1034"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1034"
+      },
+      {
+        "from": [
+          "2020/1028",
+          "2020-1028"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1028"
+      },
+      {
+        "from": [
+          "2020/1027",
+          "2020-1027"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1027"
+      },
+      {
+        "from": [
+          "2020/1026",
+          "2020-1026"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1026"
+      },
+      {
+        "from": [
+          "2020/1025",
+          "2020-1025"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1025"
+      },
+      {
+        "from": [
+          "2020-1023",
+          "2020/1023"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020-1023"
+      },
+      {
+        "from": [
+          "2020/1051",
+          "2020-1051"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1051"
+      },
+      {
+        "from": [
+          "2020/1050",
+          "2020-1050"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1050"
+      },
+      {
+        "from": [
+          "2020/1055",
+          "2020-1055"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1055"
+      },
+      {
+        "from": [
+          "2020/1054",
+          "2020-1054"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1054"
+      },
+      {
+        "from": [
+          "2020/1053",
+          "2020-1053"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1053"
+      },
+      {
+        "from": [
+          "2020/1052",
+          "2020-1052"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1052"
+      },
+      {
+        "from": [
+          "2020/1059",
+          "2020-1059"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1059"
+      },
+      {
+        "from": [
+          "2020/1058",
+          "2020-1058"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1058"
+      },
+      {
+        "from": [
+          "2020/1057",
+          "2020-1057"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1057"
+      },
+      {
+        "from": [
+          "2020/1049",
+          "2020-1049"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1049"
+      },
+      {
+        "from": [
+          "2020/1040",
+          "2020-1040"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1040"
+      },
+      {
+        "from": [
+          "2020/1044",
+          "2020-1044"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1044"
+      },
+      {
+        "from": [
+          "2020/1042",
+          "2020-1042"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1042"
+      },
+      {
+        "from": [
+          "2020/1041",
+          "2020-1041"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1041"
+      },
+      {
+        "from": [
+          "2020/1048",
+          "2020-1048"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1048"
+      },
+      {
+        "from": [
+          "2020/1046",
+          "2020-1046"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1046"
+      },
+      {
+        "from": [
+          "2020/1045",
+          "2020-1045"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1045"
+      },
+      {
+        "from": [
+          "2020/1039",
+          "2020-1039"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1039"
+      },
+      {
+        "from": [
+          "2020/1038",
+          "2020-1038"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2020/1038"
+      }
+    ],
+    "description": "Mass edit cells in column Codi d'expedient"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Valor estimat del contracte",
+    "description": "Remove column Valor estimat del contracte"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripció de la prestació",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Subministrament de Medicaments per l'Hospital Universitari Vall d'Hebron",
+          "Subministrament de Medicaments per l'Hospital Universitari Vall d'Hebron.",
+          "Subministrament de medicaments per l'Hospital Universitari Vall d'Hebron"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Subministrament de Medicaments per l'Hospital Universitari Vall d'Hebron"
+      },
+      {
+        "from": [
+          "Contracte d'emergència per a la prestació dels serveis de neteja i desinfecció de centres residencials per a gent gran i/o persones amb especial vulnerabilitat per tal de fer front al COVID-19",
+          "Contracte d'emergència per a la prestació dels serveis de neteja i desinfecció de centres residencials per a gent gran i/o persones amb especial vulnerabilitat, per tal de fer front al COVID-19",
+          "Contracte d'emergència per a la prestació dels serveis de neteja i desinfecció de centres residencials per a gent gran i/o persones amb especial vulnerabilitat, per tal de fer front al COVID-19."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Contracte d'emergència per a la prestació dels serveis de neteja i desinfecció de centres residencials per a gent gran i/o persones amb especial vulnerabilitat per tal de fer front al COVID-19"
+      },
+      {
+        "from": [
+          "Material per realitzar tests de detecció massiva de COVID-19",
+          "Material per realitzar tests de detecció massiva de covid-19",
+          "Material per realitzar tests de detecció massiva COVID-19"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Material per realitzar tests de detecció massiva de COVID-19"
+      },
+      {
+        "from": [
+          "Publicació massiva de contractes tramitats d'emergència .",
+          "Publicació massiva de contractes tramitats d'emergència",
+          "Publicació massiva de contractes tramitats d'emergencia"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Publicació massiva de contractes tramitats d'emergència ."
+      },
+      {
+        "from": [
+          "Subministrament de material fungible sanitari - Publicació MASSIVA contractes tramitats d'EMERGÈNCIA",
+          "Subministrament material fungible sanitari - Publicació MASSIVA de contractes tramitats d'EMERGÈNCIA",
+          "Subministrament de material fungible sanitari - Publicació MASSIVA de contractes tramitats d'EMERGÈNCIA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Subministrament de material fungible sanitari - Publicació MASSIVA contractes tramitats d'EMERGÈNCIA"
+      },
+      {
+        "from": [
+          "Contractació emergència subministrament gel antiseptic coronavirus",
+          "Contractació emergència subministrament gel antisèptic coronavirus",
+          "contractació emergència subministrament gel antisèptic coronavirus"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Contractació emergència subministrament gel antiseptic coronavirus"
+      },
+      {
+        "from": [
+          "Subministrament material sanitari (material laboratori)",
+          "Subministrament material sanitari laboratori"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Subministrament material sanitari (material laboratori)"
+      },
+      {
+        "from": [
+          "Contractació emergència subministrament  mascareta ffp3 bec ànec a/vàlv",
+          "Contractació emergència subministrament mascareta ffp3 bec ànec a/vàlv"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Contractació emergència subministrament  mascareta ffp3 bec ànec a/vàlv"
+      },
+      {
+        "from": [
+          "Contractació emergència subministrament pulsioximetres",
+          "Contractació emergència subministrament  pulsioximetres"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Contractació emergència subministrament pulsioximetres"
+      },
+      {
+        "from": [
+          "Contractació emergència subministrament bates coronavirus",
+          "Contractació emergència subministrament bates - coronavirus"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Contractació emergència subministrament bates coronavirus"
+      },
+      {
+        "from": [
+          "Contractació emergència subministrament mascaretes",
+          "Contractació emergència subministrament  mascaretes"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Contractació emergència subministrament mascaretes"
+      },
+      {
+        "from": [
+          "Subministrament de material de protecció per al personal docent dels centres públics.",
+          "Subministrament de material de protecció per al personal docent dels centres públics"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Subministrament de material de protecció per al personal docent dels centres públics."
+      },
+      {
+        "from": [
+          "Subministrament de material de ventilació i respiració, filtres, per l'Hospital Universitari de Bellvitge",
+          "Subministrament de material ventilació i respiració, filtres, per l'Hospital Universitari de Bellvitge"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Subministrament de material de ventilació i respiració, filtres, per l'Hospital Universitari de Bellvitge"
+      },
+      {
+        "from": [
+          "Contractació emergència subministrament mascaretes FFP3",
+          "Contractació emergència subministrament  mascaretes  ffp3"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Contractació emergència subministrament mascaretes FFP3"
+      },
+      {
+        "from": [
+          "Subministrament de material per laboratori per a determinació PCR per l'Hospital Universitari de Bellvitge",
+          "Subministrament material laboratori per a determinació PCR per l'Hospital Universitari de Bellvitge"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Subministrament de material per laboratori per a determinació PCR per l'Hospital Universitari de Bellvitge"
+      },
+      {
+        "from": [
+          "Contractació emergència subministrament escovillons coronavirus",
+          "Contractació emergència subministrament escovillons  coronavirus"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Contractació emergència subministrament escovillons coronavirus"
+      },
+      {
+        "from": [
+          "Contractació emergència subministrament escovillons",
+          "contractació emergència subministrament  escovillons"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Contractació emergència subministrament escovillons"
+      },
+      {
+        "from": [
+          "Subministrament Material laboratori, reactiu per a determinació SARS-COV-2 per l'Hospital Universitari de Bellvitge",
+          "Subministrament de Material de laboratori, reactiu per a determinació (SARS-CoV-2) per l'Hospital Universitari de Bellvitge"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Subministrament Material laboratori, reactiu per a determinació SARS-COV-2 per l'Hospital Universitari de Bellvitge"
+      },
+      {
+        "from": [
+          "Material de seguretat necessari per realitzar tests de detecció massiva de COVID-19",
+          "Material de seguretat necessàri per realitzar tests de detecció massiva de COVID-19"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Material de seguretat necessari per realitzar tests de detecció massiva de COVID-19"
+      },
+      {
+        "from": [
+          "Serveis i subministraments d'ordinadors portàtils, accessoris i llicències així com altres elements que siguinnecessaris per garantir la prestació dels serveis d'FGC",
+          "Serveis i subministraments d'ordinadors portàtils, accessoris i llicències així com altres elements que siguinnecessaris per garantir la prestació dels serveis d'FGC."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Serveis i subministraments d'ordinadors portàtils, accessoris i llicències així com altres elements que siguinnecessaris per garantir la prestació dels serveis d'FGC"
+      },
+      {
+        "from": [
+          "Contracte subscrit amb tramitació d'emergència",
+          "Contracte subscrit amb tramitació d'emergència."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Contracte subscrit amb tramitació d'emergència"
+      },
+      {
+        "from": [
+          "subministrament de quatre  respiradors per a la UCI de l'Hospital Residència Sant Camil, per encàrrec del Consorci Sanitari de l'Alt Penedès i Garraf, per tal de fer front a la crisi sanitària del COVID-19.",
+          "subministrament de quatre respiradors per a la UCI de l'Hospital Residència Sant Camil, per encàrrec del Consorci Sanitari de l'Alt Penedès i Garraf, per tal de fer front a la crisi sanitària del COVID-19."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "subministrament de quatre  respiradors per a la UCI de l'Hospital Residència Sant Camil, per encàrrec del Consorci Sanitari de l'Alt Penedès i Garraf, per tal de fer front a la crisi sanitària del COVID-19."
+      },
+      {
+        "from": [
+          "Subministrament de mascaretes quirúrgiques",
+          "Subministrament de mascaretes quirùrgiques"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Subministrament de mascaretes quirúrgiques"
+      },
+      {
+        "from": [
+          "Publicació massiva de contractes tramitats per emergència, de subministrament d'equipament mèdic  en el marc de l'estratègia de resposta a l'epidèmia del SARS-CoV-2.",
+          "Publicació massiva de contractes tramitats per emergència, de subministrament d'equipament mèdic en el marc de l'estratègia de resposta a l'epidèmia del SARS-CoV-2."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Publicació massiva de contractes tramitats per emergència, de subministrament d'equipament mèdic  en el marc de l'estratègia de resposta a l'epidèmia del SARS-CoV-2."
+      },
+      {
+        "from": [
+          "Contractació emergència subministrament mascaretes coronavirus",
+          "Contractació emergència subministrament  mascaretes coronavirus"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Contractació emergència subministrament mascaretes coronavirus"
+      }
+    ],
+    "description": "Mass edit cells in column Descripció de la prestació"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Data de publicació",
+    "expression": "grel:value.toDate(false,'dd/MM/yyyy')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Data de publicació using expression grel:value.toDate(false,'dd/MM/yyyy')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Data d'adjudicació",
+    "expression": "grel:value.toDate(false,'dd/MM/yyyy')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Data d'adjudicació using expression grel:value.toDate(false,'dd/MM/yyyy')"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "timerange",
+          "name": "Data d'adjudicació",
+          "expression": "value",
+          "columnName": "Data d'adjudicació",
+          "from": 1572220800000,
+          "to": 1574553600000,
+          "selectTime": true,
+          "selectNonTime": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "timerange",
+          "name": "Data d'adjudicació",
+          "expression": "value",
+          "columnName": "Data d'adjudicació",
+          "from": 1578873600000,
+          "to": 1579996800000,
+          "selectTime": true,
+          "selectNonTime": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "timerange",
+          "name": "Data d'adjudicació",
+          "expression": "value",
+          "columnName": "Data d'adjudicació",
+          "from": 1597017600000,
+          "to": 1608422400000,
+          "selectTime": true,
+          "selectNonTime": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Codi d'expedient",
+    "expression": "grel:\"0000\"[0,4-row.index.length()] + row.index",
+    "onError": "set-to-blank",
+    "newColumnName": "id",
+    "columnInsertIndex": 3,
+    "description": "Create column id at index 3 based on column Codi d'expedient using expression grel:\"0000\"[0,4-row.index.length()] + row.index"
+  }
+]

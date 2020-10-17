@@ -10,18 +10,18 @@
 :contract1 a :Contract;
 	:contractor :comp1;
 	:contractee :comp2;
-	xsd:gYear 2020;
+	:hasYear "2020"^^xsd:gYear;
 	:hasMonth "Enero";
-	:hasContractNumber 202000001;
+	:hasContractNumber "202000001"^^xsd:integer;
 	:hasExpNumber "MDC/2019/00177";
 	:hasDescription "ESPECTACULO TEATRAL QUIEN ES EL SR SCHMITT EN LA SALA PRINCIPAL DEL TEATRO DEL 16 DE OCTUBRE AL 10 DE NOVIEMBRE (T.ESPAÑOL)";
 	:hasContractType "Servicios";
 	:hasProcedure "Negociado sin publicidad";
-	:hasArticle 168;
+	:hasArticle "168"^^xsd:integer;
 	:hasSection "a) apartado 2";
 	:hasCriteria "";
-	:hasBudget 362802;
-	:hasAmount 185975.62;
+	:hasBudget "362802.00"^^xsd:double;
+	:hasAmount "185975.62"^^xsd:double;
 	:hasContractDate "13/09/2019"^^xsd:date;
 	:nameSR ""
 	:isDeal "";
