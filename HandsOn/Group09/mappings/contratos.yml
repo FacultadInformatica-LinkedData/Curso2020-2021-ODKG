@@ -1,0 +1,110 @@
+base: http://www.example.com/group09# 
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rev: http://purl.org/stuff/rev#
+  schema: http://schema.org/
+  dct: http://purl.org/dc/terms/
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  
+  : http://www.example.com/group09# 
+  owl: http://www.w3.org/2002/07/owl# 
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# 
+  xml: http://www.w3.org/XML/1998/namespace 
+  xsd: http://www.w3.org/2001/XMLSchema# 
+  rdfs: http://www.w3.org/2000/01/rdf-schema# 
+  pproc: http://purl.org/procurement/public-contracts#
+  org: http://www.w3.org/ns/org#
+  gr: http://purl.org/goodrelations/v1#
+  db: https://es.dbpedia.org/page/
+  pc: http://purl.org/procurement/public-contracts#
+  
+mappings:
+  department:
+    sources:
+      - [ContratosMenores2020-update.csv~csv]
+    s: :/department/$(SECCION) 
+    po:
+      - [a, org:OrganizationalUnit]
+      - [org:subOrganizationOf, db:Ayuntamiento_de_Madrid] 
+      - [schema:name, $(SECCION)]   
+  contractingbody:
+    sources:
+      - [ContratosMenores2020-update.csv~csv]
+    s: :/contractingbody/$(ORG.CONTRATACION)
+    po:
+      - [a, org:Organization]
+      - [schema:name, $(ORG.CONTRATACION)]
+      - [:area, $(ORG.CONTRATACION AREA)]
+      - [org:subOrganizationOf, :/department/$(SECCION)]
+
+  contract:
+    sources:
+      - [ContratosMenores2020-update.csv~csv]
+    s: :/contract/$(NºRECON)
+    po:
+      - [*todo*, pc:]
+      - [pproc:contractObject, :/contract/$(NºRECON)/contractObject]
+      - [pproc:contractingBody, :/contractingbody/$(ORG.CONTRATACION)]
+      - [pproc:managingDepartment,:/department/$(SECCION)]
+      - [pc:contractingAuthority, db:Ayuntamiento_de_Madrid]
+
+  contractObject:
+    sources:
+      - [ContratosMenores2020-update.csv~csv]
+    s: :/contract/$(NºRECON)/contractObject
+    po:
+      - [a, pproc:ContractObject]
+      - [pproc:contractEconomicConditions, :/contract/$(NºRECON)/economicConditions]
+      - [pproc:contractTemporalConditions, :/contract/$(NºRECON)/temporalConditions]
+      - [:objectOfContract, $(OBJETO DEL CONTRATO)]
+
+  economicConditions:
+    sources:
+      - [ContratosMenores2020-update.csv~csv]
+    s: :/contract/$(NºRECON)/economicConditions
+    po:
+      - [a, pproc:ContractEconomicConditions]
+      - [pproc:budgetPrice, :/contract/$(NºRECON)/price]
+
+  price:
+    sources:
+      - [ContratosMenores2020-update.csv~csv]
+    s: :/contract/$(NºRECON)/price
+    po:
+      - [a, pproc:BundlePriceSpecification]
+      - [gr:hasCurrency, $(CURRENCY)]
+      - [gr:hasCurrencyValue, $(CURRENCY VALUE)]
+      - [gr:valueAddedTaxIncluded, $(TAX INCLUDED)]
+
+  temporalConditions:
+    sources:
+      - [ContratosMenores2020-update.csv~csv]
+    s: :/contract/$(NºRECON)/temporalConditions
+    po:
+      - [a, pproc:ContractTemporalConditions]
+      - [pproc:estimatedDuration, $(PLAZO)]
+
+  contractor:
+     sources:
+      - [ContratosMenores2020-update.csv~csv]
+        s: :/contractor/$(N.I.F)
+        po:
+          - [a, org:Organization]
+          - [pproc:supplier, :/contract/$(NºRECON)]
+          - [schema:name, $(CONTRATISTA)]
+          - [org:identifier, $(N.I.F)]
+
+  
+
+
+
+  
+
+  
+
+        
