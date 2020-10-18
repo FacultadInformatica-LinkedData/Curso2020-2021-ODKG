@@ -1,5 +1,6 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#>.
 @prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
 @prefix : <http://MadridPublicContracts/ontology> .
 
 <#TriplesMap1>
@@ -12,95 +13,95 @@ rr:template "http://MadridPublicContracts/ontology/contract/{Numero Contrato}";
 rr:termType rr:IRI; rr:class :Contract ];
 
 rr:predicateObjectMap [
-	rr:predicateMap [ rr:constant :hasYear; rr:termType rr:IRI ]
-	rr:objectMap [ rml:reference "Año"; rr:termType rr:Literal];
+	rr:predicateMap [ rr:constant :hasYear; rr:termType rr:IRI ];
+	rr:objectMap [ rml:reference "Año"; rr:termType rr:Literal ]
 ];
 
 rr:predicateObjectMap [
-	rr:predicateMap [ rr:constant :hasMonth; rr:termType rr:IRI ]
-	rr:objectMap [ rml:reference "Mes"; rr:termType rr:Literal];
+	rr:predicateMap [ rr:constant :hasMonth; rr:termType rr:IRI ];
+	rr:objectMap [ rml:reference "Mes"; rr:termType rr:Literal]
 ];
 
 rr:predicateObjectMap [
-	rr:predicateMap [ rr:constant :hasExpNumber; rr:termType rr:IRI ]
-	rr:objectMap [ rml:reference "hasExpNumber"; rr:termType rr:Literal];
+	rr:predicateMap [ rr:constant :hasExpNumber; rr:termType rr:IRI ];
+	rr:objectMap [ rml:reference "hasExpNumber"; rr:termType rr:Literal]
 ];
 
 rr:predicateObjectMap [
-	rr:predicateMap [ rr:constant :hasYear; rr:termType rr:IRI ]
-	rr:objectMap [ rml:reference "Año"; rr:termType rr:Literal];
+	rr:predicateMap [ rr:constant :hasYear; rr:termType rr:IRI ];
+	rr:objectMap [ rml:reference "Año"; rr:termType rr:Literal]
 ];
 
 rr:predicateObjectMap [
-	rr:predicateMap [ rr:constant :hasDescription; rr:termType rr:IRI ]
-	rr:objectMap [ rml:reference "Descripcion Contrato"; rr:termType rr:Literal];
+	rr:predicateMap [ rr:constant :hasDescription; rr:termType rr:IRI ];
+	rr:objectMap [ rml:reference "Descripcion Contrato"; rr:termType rr:Literal]
 ];
 
 rr:predicateObjectMap [
-	rr:predicateMap [ rr:constant :hasContractType; rr:termType rr:IRI ]
-	rr:objectMap [ rml:reference "Tipo Contrato"; rr:termType rr:Literal];
+	rr:predicateMap [ rr:constant :hasContractType; rr:termType rr:IRI ];
+	rr:objectMap [ rml:reference "Tipo Contrato"; rr:termType rr:Literal]
 ];
 
 rr:predicateObjectMap [
-	rr:predicateMap [ rr:constant :hasProcedure; rr:termType rr:IRI ]
-	rr:objectMap [ rml:reference "Procedimiento Adjudicacion"; rr:termType rr:Literal];
+	rr:predicateMap [ rr:constant :hasProcedure; rr:termType rr:IRI ];
+	rr:objectMap [ rml:reference "Procedimiento Adjudicacion"; rr:termType rr:Literal]
 ];
 
 rr:predicateObjectMap [
-	rr:predicateMap [ rr:constant :hasArticle; rr:termType rr:IRI ]
-	rr:objectMap [ rml:reference "Articulo"; rr:termType rr:Literal];
+	rr:predicateMap [ rr:constant :hasArticle; rr:termType rr:IRI ];
+	rr:objectMap [ rml:reference "Articulo"; rr:termType rr:Literal]
 ];
 
 rr:predicateObjectMap [
-	rr:predicateMap [ rr:constant :hasSection; rr:termType rr:IRI ]
-	rr:objectMap [ rml:reference "Apartado"; rr:termType rr:Literal];
+	rr:predicateMap [ rr:constant :hasSection; rr:termType rr:IRI ];
+	rr:objectMap [ rml:reference "Apartado"; rr:termType rr:Literal]
 ];
 
 rr:predicateObjectMap [
-	rr:predicateMap [ rr:constant :hasCriteria; rr:termType rr:IRI ]
-	rr:objectMap [ rml:reference "Criterios Adjudicacion"; rr:termType rr:Literal];
+	rr:predicateMap [ rr:constant :hasCriteria; rr:termType rr:IRI ];
+	rr:objectMap [ rml:reference "Criterios Adjudicacion"; rr:termType rr:Literal]
 ];
 
 rr:predicateObjectMap [
-	rr:predicateMap [ rr:constant :hasBudget; rr:termType rr:IRI ]
-	rr:objectMap [ rml:reference "Presupuesto Total(IVA Incluido)"; rr:termType rr:Literal];
+	rr:predicateMap [ rr:constant :hasBudget; rr:termType rr:IRI ];
+	rr:objectMap [ rml:reference "Presupuesto Total(IVA Incluido)"; rr:termType rr:Literal]
 ];
 
 rr:predicateObjectMap [
-	rr:predicateMap [ rr:constant :hasAmount; rr:termType rr:IRI ]
-	rr:objectMap [ rml:reference "Importe Adjudicacion (IVA Incluido)"; rr:termType rr:Literal];
+	rr:predicateMap [ rr:constant :hasAmount; rr:termType rr:IRI ];
+	rr:objectMap [ rml:reference "Importe Adjudicacion (IVA Incluido)"; rr:termType rr:Literal]
 ];
 
 rr:predicateObjectMap [
-	rr:predicateMap [ rr:constant :hasContractDate; rr:termType rr:IRI ]
-	rr:objectMap [ rml:reference "Fecha Adjudicacion"; rr:termType rr:Literal];
+	rr:predicateMap [ rr:constant :hasContractDate; rr:termType rr:IRI ];
+	rr:objectMap [ rml:reference "Fecha Adjudicacion"; rr:termType rr:Literal]
 ];
 
 rr:predicateObjectMap [
-	rr:predicateMap [ rr:constant :nameSR; rr:termType rr:IRI ]
-	rr:objectMap [ rml:reference "Nombre/Razon Social"; rr:termType rr:Literal];
+	rr:predicateMap [ rr:constant :nameSR; rr:termType rr:IRI ];
+	rr:objectMap [ rml:reference "Nombre/Razon Social"; rr:termType rr:Literal]
 ];
 
 rr:predicateObjectMap [
-	rr:predicateMap [ rr:constant :isDeal; rr:termType rr:IRI ]
-	rr:objectMap [ rml:reference "Acuerdo Marco"; rr:termType rr:Literal];
+	rr:predicateMap [ rr:constant :isDeal; rr:termType rr:IRI ];
+	rr:objectMap [ rml:reference "Acuerdo Marco"; rr:termType rr:Literal]
 ];
 
 rr:predicateObjectMap [
-	rr:predicateMap [ rr:constant :isZeroCost; rr:termType rr:IRI ]
-	rr:objectMap [ rml:reference "Ingreso/Coste Cero"; rr:termType rr:Literal];
+	rr:predicateMap [ rr:constant :isZeroCost; rr:termType rr:IRI ];
+	rr:objectMap [ rml:reference "Ingreso/Coste Cero"; rr:termType rr:Literal]
 ];
 
 rr:predicateObjectMap [
-	rr:predicateMap [ rr:constant :hasNID; rr:termType rr:IRI ]
+	rr:predicateMap [ rr:constant :hasNID; rr:termType rr:IRI ];
 	rr:objectMap [
 		rr:template "http://MadridPublicContracts/ontology/contractee/{NIF/CIF Adjudicatario}";
-		rr:termType rr:Literal];
+		rr:termType rr:Literal]
 ];
 
 rr:predicateObjectMap [
-	rr:predicateMap [ rr:constant :contractor; rr:termType rr:IRI ]
+	rr:predicateMap [ rr:constant :contractor; rr:termType rr:IRI ];
 	rr:objectMap [
 		rr:template "http://MadridPublicContracts/ontology/contractor/{Organismo}";
-		rr:termType rr:Literal];
+		rr:termType rr:Literal]
 ].
