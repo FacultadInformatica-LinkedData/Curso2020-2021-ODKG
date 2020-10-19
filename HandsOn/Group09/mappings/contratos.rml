@@ -116,7 +116,8 @@
 :pom_007 rr:objectMap :om_007.
 :om_007 a rr:ObjectMap;
     rml:reference "FECHA APROBACION";
-    rr:termType rr:Literal.
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#date>.
 :pom_008 a rr:PredicateObjectMap.
 :map_contract_000 rr:predicateObjectMap :pom_008.
 :pm_008 a rr:PredicateMap.
@@ -143,7 +144,8 @@
 :pom_010 rr:objectMap :om_010.
 :om_010 a rr:ObjectMap;
     rml:reference "FCH.COMUNIC.REG";
-    rr:termType rr:Literal.
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#date>.
 :pom_011 a rr:PredicateObjectMap.
 :map_contract_000 rr:predicateObjectMap :pom_011.
 :pm_011 a rr:PredicateMap.
