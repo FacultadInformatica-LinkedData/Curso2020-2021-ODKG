@@ -124,18 +124,18 @@ mappings:
       - [pproc:estimatedDuration, $(PLAZO), xsd:float]
 
   contractor:
-     sources:
+    sources:
       - [ContratosMenores2020-update.csv~csv]
-      s: :/contractor/$(N.I.F)
-      po:
-        - [a, org:Organization]
-        - p: pproc:supplier
-          o:
-            - mapping: contract
-              condition:
-                function: equal
-                parameters:
-                  - [str1, $(NºRECON)]
-                  - [str2, $(NºRECON)]
-        - [schema:name, $(CONTRATISTA)]
-        - [org:identifier, $(N.I.F)]
+    s: :/contractor/$(N.I.F)
+    po:
+      - [a, org:Organization]
+      - p: pproc:supplier
+        o:
+          - mapping: contract
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(NºRECON)]
+                - [str2, $(NºRECON)]
+      - [schema:name, $(CONTRATISTA)]
+      - [org:identifier, $(N.I.F)]
