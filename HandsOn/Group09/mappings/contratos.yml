@@ -1,4 +1,4 @@
-base: http://www.example.com/group09# 
+base: http://www.example.com/group09#
 prefixes:
   : http://www.example.com/group09#
   schema: http://schema.org/
@@ -7,16 +7,16 @@ prefixes:
   org: http://www.w3.org/ns/org#
   gr: http://purl.org/goodrelations/v1#
   pc: http://purl.org/procurement/public-contracts#
-  
+
 mappings:
   department:
     sources:
       - [ContratosMenores2020-update.csv~csv]
-    s: :/department/$(SECCION) 
+    s: :/department/$(SECCION)
     po:
       - [a, org:OrganizationalUnit]
-      - [org:subOrganizationOf, db:Ayuntamiento_de_Madrid] 
-      - [schema:name, $(SECCION)]   
+#      - [org:subOrganizationOf, db:Ayuntamiento_de_Madrid]
+      - [schema:name, $(SECCION)]
 
   contractingBody:
     sources:
@@ -29,24 +29,33 @@ mappings:
       - p: org:subOrganizationOf
         o:
           - mapping : department
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(NºRECON)]
+                - [str2, $(NºRECON)]
 
   contract:
     sources:
       - [ContratosMenores2020-update.csv~csv]
     s: :/contract/$(NºRECON)
     po:
-      - p: a
-        o: pproc:PublicContract
+      - [a, $(CONTRACT_TYPE)]
       - p: pproc:contractObject
-        o: 
+        o:
           - mapping: contractObject
-      - p: pproc:contractingBody 
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(NºRECON)]
+                - [str2, $(NºRECON)]
+      - p: pproc:contractingBody
         o:
           - mapping: contractingBody
       - p: pproc:managingDepartment
         o:
           - mapping: department
-      - [pc:contractingAuthority, db:Ayuntamiento_de_Madrid]
+#      - [pc:contractingAuthority, db:Ayuntamiento_de_Madrid]
 
   contractObject:
     sources:
@@ -55,11 +64,21 @@ mappings:
     po:
       - [a, pproc:ContractObject]
       - p: pproc:contractEconomicConditions
-        o: 
+        o:
           - mapping: economicConditions
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(NºRECON)]
+                - [str2, $(NºRECON)]
       - p: pproc:contractTemporalConditions
-        o: 
+        o:
           - mapping: temporalConditions
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(NºRECON)]
+                - [str2, $(NºRECON)]
       - [:objectOfContract, $(OBJETO DEL CONTRATO)]
 
   economicConditions:
@@ -69,8 +88,13 @@ mappings:
     po:
       - [a, pproc:ContractEconomicConditions]
       - p: pproc:budgetPrice
-        o: 
+        o:
           - mapping: price
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(NºRECON)]
+                - [str2, $(NºRECON)]
 
   price:
     sources:
@@ -79,8 +103,8 @@ mappings:
     po:
       - [a, pproc:BundlePriceSpecification]
       - [gr:hasCurrency, $(CURRENCY)]
-      - [gr:hasCurrencyValue, $(CURRENCY VALUE)]
-      - [gr:valueAddedTaxIncluded, $(TAX INCLUDED)]
+      - [gr:hasCurrencyValue, $(CURRENCY VALUE), xsd:float]
+      - [gr:valueAddedTaxIncluded, $(TAX INCLUDED), xsd:boolean]
 
   temporalConditions:
     sources:
@@ -88,7 +112,7 @@ mappings:
     s: :/contract/$(NºRECON)/temporalConditions
     po:
       - [a, pproc:ContractTemporalConditions]
-      - [pproc:estimatedDuration, $(PLAZO)]
+      - [pproc:estimatedDuration, $(PLAZO), xsd:float]
 
   contractor:
      sources:
@@ -97,17 +121,12 @@ mappings:
       po:
         - [a, org:Organization]
         - p: pproc:supplier
-          o: 
+          o:
             - mapping: contract
+              condition:
+                function: equal
+                parameters:
+                  - [str1, $(NºRECON)]
+                  - [str2, $(NºRECON)]
         - [schema:name, $(CONTRATISTA)]
         - [org:identifier, $(N.I.F)]
-
-  
-
-
-
-  
-
-  
-
-        
