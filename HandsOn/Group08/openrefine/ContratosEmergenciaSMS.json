@@ -212,5 +212,31 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column ProductURI using expression grel:value.replace(\",\",\"_\")"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "ProductURI",
+    "expression": "join ([coalesce(cells['ProductURI'].value,''),coalesce(cells['OrganizationURI'].value,'')],'_')",
+    "onError": "keep-original",
+    "newColumnName": "OrderItemID",
+    "columnInsertIndex": 2,
+    "description": "Create column OrderItemID at index 2 based on column ProductURI using expression join ([coalesce(cells['ProductURI'].value,''),coalesce(cells['OrganizationURI'].value,'')],'_')"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "ProductURI",
+    "expression": "join ([coalesce(cells['ProductURI'].value,''),coalesce(cells['OrganizationURI'].value,''),coalesce(cells['Fecha'].value,'')],'_')",
+    "onError": "keep-original",
+    "newColumnName": "OrderID",
+    "columnInsertIndex": 2,
+    "description": "Create column OrderID at index 2 based on column ProductURI using expression join ([coalesce(cells['ProductURI'].value,''),coalesce(cells['OrganizationURI'].value,''),coalesce(cells['Fecha'].value,'')],'_')"
   }
 ]
