@@ -1,6 +1,5 @@
 base: http://www.example.com/group09#
 prefixes:
-  : http://www.example.com/group09#
   schema: http://schema.org/
   db: https://es.dbpedia.org/page/
   pproc: http://purl.org/procurement/public-contracts#
@@ -15,8 +14,8 @@ mappings:
     s: :/department/$(SECCION)
     po:
       - [a, org:OrganizationalUnit]
-#      - [org:subOrganizationOf, db:Ayuntamiento_de_Madrid]
       - [schema:name, $(SECCION)]
+#      - [org:subOrganizationOf, db:Ayuntamiento_de_Madrid]
 
   contractingBody:
     sources:
@@ -52,9 +51,19 @@ mappings:
       - p: pproc:contractingBody
         o:
           - mapping: contractingBody
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(NºRECON)]
+                - [str2, $(NºRECON)]
       - p: pproc:managingDepartment
         o:
           - mapping: department
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(NºRECON)]
+                - [str2, $(NºRECON)]
 #      - [pc:contractingAuthority, db:Ayuntamiento_de_Madrid]
 
   contractObject:
