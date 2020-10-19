@@ -1,0 +1,18 @@
+prefixes:
+  vocab: "http://eit-upm-opendata.com/ted#"
+
+mappings:
+  ted:
+    sources:
+      - ['TED_CN_2018-updated.csv~csv']
+    s: vocab:$(CONTRACT_ID)
+    po:
+      - [a, vocab:CAN]
+      - [vocab:hasActivity, $(MAIN_ACTIVITY)]
+      - [vocab:hasISO, $(ISO_COUNTRY_CODE)]
+      - [vocab:hasName, $(CAE_NAME)]
+      - [vocab:hasPostalCode, $(CAE_POSTAL_CODE)]
+      - [vocab:hasTown, $(CAE_TOWN)]
+      - [vocab:hasType, $(CAE_TYPE)]
+      - [vocab:institutionOf, ]
+      - [vocab:isCancelled, $(CANCELLED)]
