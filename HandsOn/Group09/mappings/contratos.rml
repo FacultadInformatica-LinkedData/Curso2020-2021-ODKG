@@ -112,20 +112,56 @@
 :map_contract_000 rr:predicateObjectMap :pom_007.
 :pm_007 a rr:PredicateMap.
 :pom_007 rr:predicateMap :pm_007.
-:pm_007 rr:constant pc:contractObject.
+:pm_007 rr:constant :awardDate.
 :pom_007 rr:objectMap :om_007.
+:om_007 a rr:ObjectMap;
+    rml:reference "FECHA APROBACION";
+    rr:termType rr:Literal.
 :pom_008 a rr:PredicateObjectMap.
 :map_contract_000 rr:predicateObjectMap :pom_008.
 :pm_008 a rr:PredicateMap.
 :pom_008 rr:predicateMap :pm_008.
-:pm_008 rr:constant pc:contractingBody.
+:pm_008 rr:constant :awardNum.
 :pom_008 rr:objectMap :om_008.
+:om_008 a rr:ObjectMap;
+    rml:reference "NºRECON";
+    rr:termType rr:Literal.
 :pom_009 a rr:PredicateObjectMap.
 :map_contract_000 rr:predicateObjectMap :pom_009.
 :pm_009 a rr:PredicateMap.
 :pom_009 rr:predicateMap :pm_009.
-:pm_009 rr:constant pc:managingDepartment.
+:pm_009 rr:constant :recordNum.
 :pom_009 rr:objectMap :om_009.
+:om_009 a rr:ObjectMap;
+    rml:reference "NUMERO EXPEDIENTE";
+    rr:termType rr:Literal.
+:pom_010 a rr:PredicateObjectMap.
+:map_contract_000 rr:predicateObjectMap :pom_010.
+:pm_010 a rr:PredicateMap.
+:pom_010 rr:predicateMap :pm_010.
+:pm_010 rr:constant :registryReportDate.
+:pom_010 rr:objectMap :om_010.
+:om_010 a rr:ObjectMap;
+    rml:reference "FCH.COMUNIC.REG";
+    rr:termType rr:Literal.
+:pom_011 a rr:PredicateObjectMap.
+:map_contract_000 rr:predicateObjectMap :pom_011.
+:pm_011 a rr:PredicateMap.
+:pom_011 rr:predicateMap :pm_011.
+:pm_011 rr:constant pc:contractObject.
+:pom_011 rr:objectMap :om_011.
+:pom_012 a rr:PredicateObjectMap.
+:map_contract_000 rr:predicateObjectMap :pom_012.
+:pm_012 a rr:PredicateMap.
+:pom_012 rr:predicateMap :pm_012.
+:pm_012 rr:constant pc:contractingBody.
+:pom_012 rr:objectMap :om_012.
+:pom_013 a rr:PredicateObjectMap.
+:map_contract_000 rr:predicateObjectMap :pom_013.
+:pm_013 a rr:PredicateMap.
+:pom_013 rr:predicateMap :pm_013.
+:pm_013 rr:constant pc:managingDepartment.
+:pom_013 rr:objectMap :om_013.
 <http://mapping.example.com/rules_000> void:exampleResource :map_contractObject_000.
 :map_contractObject_000 rml:logicalSource :source_003.
 :source_003 a rml:LogicalSource;
@@ -136,34 +172,34 @@
 :s_003 a rr:SubjectMap.
 :map_contractObject_000 rr:subjectMap :s_003.
 :s_003 rr:template "http://www.example.com/group09/contract/{NºRECON}/contractObject".
-:pom_010 a rr:PredicateObjectMap.
-:map_contractObject_000 rr:predicateObjectMap :pom_010.
-:pm_010 a rr:PredicateMap.
-:pom_010 rr:predicateMap :pm_010.
-:pm_010 rr:constant rdf:type.
-:pom_010 rr:objectMap :om_010.
-:om_010 a rr:ObjectMap;
+:pom_014 a rr:PredicateObjectMap.
+:map_contractObject_000 rr:predicateObjectMap :pom_014.
+:pm_014 a rr:PredicateMap.
+:pom_014 rr:predicateMap :pm_014.
+:pm_014 rr:constant rdf:type.
+:pom_014 rr:objectMap :om_014.
+:om_014 a rr:ObjectMap;
     rr:constant "http://purl.org/procurement/public-contracts#ContractObject";
     rr:termType rr:IRI.
-:pom_011 a rr:PredicateObjectMap.
-:map_contractObject_000 rr:predicateObjectMap :pom_011.
-:pm_011 a rr:PredicateMap.
-:pom_011 rr:predicateMap :pm_011.
-:pm_011 rr:constant pc:contractEconomicConditions.
-:pom_011 rr:objectMap :om_011.
-:pom_012 a rr:PredicateObjectMap.
-:map_contractObject_000 rr:predicateObjectMap :pom_012.
-:pm_012 a rr:PredicateMap.
-:pom_012 rr:predicateMap :pm_012.
-:pm_012 rr:constant pc:contractTemporalConditions.
-:pom_012 rr:objectMap :om_012.
-:pom_013 a rr:PredicateObjectMap.
-:map_contractObject_000 rr:predicateObjectMap :pom_013.
-:pm_013 a rr:PredicateMap.
-:pom_013 rr:predicateMap :pm_013.
-:pm_013 rr:constant :objectOfContract.
-:pom_013 rr:objectMap :om_013.
-:om_013 a rr:ObjectMap;
+:pom_015 a rr:PredicateObjectMap.
+:map_contractObject_000 rr:predicateObjectMap :pom_015.
+:pm_015 a rr:PredicateMap.
+:pom_015 rr:predicateMap :pm_015.
+:pm_015 rr:constant pc:contractEconomicConditions.
+:pom_015 rr:objectMap :om_015.
+:pom_016 a rr:PredicateObjectMap.
+:map_contractObject_000 rr:predicateObjectMap :pom_016.
+:pm_016 a rr:PredicateMap.
+:pom_016 rr:predicateMap :pm_016.
+:pm_016 rr:constant pc:contractTemporalConditions.
+:pom_016 rr:objectMap :om_016.
+:pom_017 a rr:PredicateObjectMap.
+:map_contractObject_000 rr:predicateObjectMap :pom_017.
+:pm_017 a rr:PredicateMap.
+:pom_017 rr:predicateMap :pm_017.
+:pm_017 rr:constant :objectOfContract.
+:pom_017 rr:objectMap :om_017.
+:om_017 a rr:ObjectMap;
     rml:reference "OBJETO DEL CONTRATO";
     rr:termType rr:Literal.
 <http://mapping.example.com/rules_000> void:exampleResource :map_economicConditions_000.
@@ -176,21 +212,21 @@
 :s_004 a rr:SubjectMap.
 :map_economicConditions_000 rr:subjectMap :s_004.
 :s_004 rr:template "http://www.example.com/group09/contract/{NºRECON}/economicConditions".
-:pom_014 a rr:PredicateObjectMap.
-:map_economicConditions_000 rr:predicateObjectMap :pom_014.
-:pm_014 a rr:PredicateMap.
-:pom_014 rr:predicateMap :pm_014.
-:pm_014 rr:constant rdf:type.
-:pom_014 rr:objectMap :om_014.
-:om_014 a rr:ObjectMap;
+:pom_018 a rr:PredicateObjectMap.
+:map_economicConditions_000 rr:predicateObjectMap :pom_018.
+:pm_018 a rr:PredicateMap.
+:pom_018 rr:predicateMap :pm_018.
+:pm_018 rr:constant rdf:type.
+:pom_018 rr:objectMap :om_018.
+:om_018 a rr:ObjectMap;
     rr:constant "http://purl.org/procurement/public-contracts#ContractEconomicConditions";
     rr:termType rr:IRI.
-:pom_015 a rr:PredicateObjectMap.
-:map_economicConditions_000 rr:predicateObjectMap :pom_015.
-:pm_015 a rr:PredicateMap.
-:pom_015 rr:predicateMap :pm_015.
-:pm_015 rr:constant pc:budgetPrice.
-:pom_015 rr:objectMap :om_015.
+:pom_019 a rr:PredicateObjectMap.
+:map_economicConditions_000 rr:predicateObjectMap :pom_019.
+:pm_019 a rr:PredicateMap.
+:pom_019 rr:predicateMap :pm_019.
+:pm_019 rr:constant pc:budgetPrice.
+:pom_019 rr:objectMap :om_019.
 <http://mapping.example.com/rules_000> void:exampleResource :map_price_000.
 :map_price_000 rml:logicalSource :source_005.
 :source_005 a rml:LogicalSource;
@@ -201,41 +237,41 @@
 :s_005 a rr:SubjectMap.
 :map_price_000 rr:subjectMap :s_005.
 :s_005 rr:template "http://www.example.com/group09/contract/{NºRECON}/price".
-:pom_016 a rr:PredicateObjectMap.
-:map_price_000 rr:predicateObjectMap :pom_016.
-:pm_016 a rr:PredicateMap.
-:pom_016 rr:predicateMap :pm_016.
-:pm_016 rr:constant rdf:type.
-:pom_016 rr:objectMap :om_016.
-:om_016 a rr:ObjectMap;
+:pom_020 a rr:PredicateObjectMap.
+:map_price_000 rr:predicateObjectMap :pom_020.
+:pm_020 a rr:PredicateMap.
+:pom_020 rr:predicateMap :pm_020.
+:pm_020 rr:constant rdf:type.
+:pom_020 rr:objectMap :om_020.
+:om_020 a rr:ObjectMap;
     rr:constant "http://purl.org/procurement/public-contracts#BundlePriceSpecification";
     rr:termType rr:IRI.
-:pom_017 a rr:PredicateObjectMap.
-:map_price_000 rr:predicateObjectMap :pom_017.
-:pm_017 a rr:PredicateMap.
-:pom_017 rr:predicateMap :pm_017.
-:pm_017 rr:constant gr:hasCurrency.
-:pom_017 rr:objectMap :om_017.
-:om_017 a rr:ObjectMap;
+:pom_021 a rr:PredicateObjectMap.
+:map_price_000 rr:predicateObjectMap :pom_021.
+:pm_021 a rr:PredicateMap.
+:pom_021 rr:predicateMap :pm_021.
+:pm_021 rr:constant gr:hasCurrency.
+:pom_021 rr:objectMap :om_021.
+:om_021 a rr:ObjectMap;
     rml:reference "CURRENCY";
     rr:termType rr:Literal.
-:pom_018 a rr:PredicateObjectMap.
-:map_price_000 rr:predicateObjectMap :pom_018.
-:pm_018 a rr:PredicateMap.
-:pom_018 rr:predicateMap :pm_018.
-:pm_018 rr:constant gr:hasCurrencyValue.
-:pom_018 rr:objectMap :om_018.
-:om_018 a rr:ObjectMap;
+:pom_022 a rr:PredicateObjectMap.
+:map_price_000 rr:predicateObjectMap :pom_022.
+:pm_022 a rr:PredicateMap.
+:pom_022 rr:predicateMap :pm_022.
+:pm_022 rr:constant gr:hasCurrencyValue.
+:pom_022 rr:objectMap :om_022.
+:om_022 a rr:ObjectMap;
     rml:reference "CURRENCY VALUE";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#float>.
-:pom_019 a rr:PredicateObjectMap.
-:map_price_000 rr:predicateObjectMap :pom_019.
-:pm_019 a rr:PredicateMap.
-:pom_019 rr:predicateMap :pm_019.
-:pm_019 rr:constant gr:valueAddedTaxIncluded.
-:pom_019 rr:objectMap :om_019.
-:om_019 a rr:ObjectMap;
+:pom_023 a rr:PredicateObjectMap.
+:map_price_000 rr:predicateObjectMap :pom_023.
+:pm_023 a rr:PredicateMap.
+:pom_023 rr:predicateMap :pm_023.
+:pm_023 rr:constant gr:valueAddedTaxIncluded.
+:pom_023 rr:objectMap :om_023.
+:om_023 a rr:ObjectMap;
     rml:reference "TAX INCLUDED";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#boolean>.
@@ -249,22 +285,22 @@
 :s_006 a rr:SubjectMap.
 :map_temporalConditions_000 rr:subjectMap :s_006.
 :s_006 rr:template "http://www.example.com/group09/contract/{NºRECON}/temporalConditions".
-:pom_020 a rr:PredicateObjectMap.
-:map_temporalConditions_000 rr:predicateObjectMap :pom_020.
-:pm_020 a rr:PredicateMap.
-:pom_020 rr:predicateMap :pm_020.
-:pm_020 rr:constant rdf:type.
-:pom_020 rr:objectMap :om_020.
-:om_020 a rr:ObjectMap;
+:pom_024 a rr:PredicateObjectMap.
+:map_temporalConditions_000 rr:predicateObjectMap :pom_024.
+:pm_024 a rr:PredicateMap.
+:pom_024 rr:predicateMap :pm_024.
+:pm_024 rr:constant rdf:type.
+:pom_024 rr:objectMap :om_024.
+:om_024 a rr:ObjectMap;
     rr:constant "http://purl.org/procurement/public-contracts#ContractTemporalConditions";
     rr:termType rr:IRI.
-:pom_021 a rr:PredicateObjectMap.
-:map_temporalConditions_000 rr:predicateObjectMap :pom_021.
-:pm_021 a rr:PredicateMap.
-:pom_021 rr:predicateMap :pm_021.
-:pm_021 rr:constant pc:estimatedDuration.
-:pom_021 rr:objectMap :om_021.
-:om_021 a rr:ObjectMap;
+:pom_025 a rr:PredicateObjectMap.
+:map_temporalConditions_000 rr:predicateObjectMap :pom_025.
+:pm_025 a rr:PredicateMap.
+:pom_025 rr:predicateMap :pm_025.
+:pm_025 rr:constant pc:estimatedDuration.
+:pom_025 rr:objectMap :om_025.
+:om_025 a rr:ObjectMap;
     rml:reference "PLAZO";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#float>.
@@ -278,37 +314,37 @@
 :s_007 a rr:SubjectMap.
 :map_contractor_000 rr:subjectMap :s_007.
 :s_007 rr:template "http://www.example.com/group09/contractor/{N.I.F}".
-:pom_022 a rr:PredicateObjectMap.
-:map_contractor_000 rr:predicateObjectMap :pom_022.
-:pm_022 a rr:PredicateMap.
-:pom_022 rr:predicateMap :pm_022.
-:pm_022 rr:constant rdf:type.
-:pom_022 rr:objectMap :om_022.
-:om_022 a rr:ObjectMap;
+:pom_026 a rr:PredicateObjectMap.
+:map_contractor_000 rr:predicateObjectMap :pom_026.
+:pm_026 a rr:PredicateMap.
+:pom_026 rr:predicateMap :pm_026.
+:pm_026 rr:constant rdf:type.
+:pom_026 rr:objectMap :om_026.
+:om_026 a rr:ObjectMap;
     rr:constant "http://www.w3.org/ns/org#Organization";
     rr:termType rr:IRI.
-:pom_023 a rr:PredicateObjectMap.
-:map_contractor_000 rr:predicateObjectMap :pom_023.
-:pm_023 a rr:PredicateMap.
-:pom_023 rr:predicateMap :pm_023.
-:pm_023 rr:constant pc:supplier.
-:pom_023 rr:objectMap :om_023.
-:pom_024 a rr:PredicateObjectMap.
-:map_contractor_000 rr:predicateObjectMap :pom_024.
-:pm_024 a rr:PredicateMap.
-:pom_024 rr:predicateMap :pm_024.
-:pm_024 rr:constant schema:name.
-:pom_024 rr:objectMap :om_024.
-:om_024 a rr:ObjectMap;
+:pom_027 a rr:PredicateObjectMap.
+:map_contractor_000 rr:predicateObjectMap :pom_027.
+:pm_027 a rr:PredicateMap.
+:pom_027 rr:predicateMap :pm_027.
+:pm_027 rr:constant pc:supplier.
+:pom_027 rr:objectMap :om_027.
+:pom_028 a rr:PredicateObjectMap.
+:map_contractor_000 rr:predicateObjectMap :pom_028.
+:pm_028 a rr:PredicateMap.
+:pom_028 rr:predicateMap :pm_028.
+:pm_028 rr:constant schema:name.
+:pom_028 rr:objectMap :om_028.
+:om_028 a rr:ObjectMap;
     rml:reference "CONTRATISTA";
     rr:termType rr:Literal.
-:pom_025 a rr:PredicateObjectMap.
-:map_contractor_000 rr:predicateObjectMap :pom_025.
-:pm_025 a rr:PredicateMap.
-:pom_025 rr:predicateMap :pm_025.
-:pm_025 rr:constant org:identifier.
-:pom_025 rr:objectMap :om_025.
-:om_025 a rr:ObjectMap;
+:pom_029 a rr:PredicateObjectMap.
+:map_contractor_000 rr:predicateObjectMap :pom_029.
+:pm_029 a rr:PredicateMap.
+:pom_029 rr:predicateMap :pm_029.
+:pm_029 rr:constant org:identifier.
+:pom_029 rr:objectMap :om_029.
+:om_029 a rr:ObjectMap;
     rml:reference "N.I.F";
     rr:termType rr:Literal.
 :om_005 a rr:ObjectMap;
@@ -316,37 +352,37 @@
     rr:joinCondition :jc_000.
 :jc_000 rr:child "NºRECON";
     rr:parent "NºRECON".
-:om_007 a rr:ObjectMap;
+:om_011 a rr:ObjectMap;
     rr:parentTriplesMap :map_contractObject_000;
     rr:joinCondition :jc_001.
 :jc_001 rr:child "NºRECON";
     rr:parent "NºRECON".
-:om_008 a rr:ObjectMap;
+:om_012 a rr:ObjectMap;
     rr:parentTriplesMap :map_contractingBody_000;
     rr:joinCondition :jc_002.
 :jc_002 rr:child "NºRECON";
     rr:parent "NºRECON".
-:om_009 a rr:ObjectMap;
+:om_013 a rr:ObjectMap;
     rr:parentTriplesMap :map_department_000;
     rr:joinCondition :jc_003.
 :jc_003 rr:child "NºRECON";
     rr:parent "NºRECON".
-:om_011 a rr:ObjectMap;
+:om_015 a rr:ObjectMap;
     rr:parentTriplesMap :map_economicConditions_000;
     rr:joinCondition :jc_004.
 :jc_004 rr:child "NºRECON";
     rr:parent "NºRECON".
-:om_012 a rr:ObjectMap;
+:om_016 a rr:ObjectMap;
     rr:parentTriplesMap :map_temporalConditions_000;
     rr:joinCondition :jc_005.
 :jc_005 rr:child "NºRECON";
     rr:parent "NºRECON".
-:om_015 a rr:ObjectMap;
+:om_019 a rr:ObjectMap;
     rr:parentTriplesMap :map_price_000;
     rr:joinCondition :jc_006.
 :jc_006 rr:child "NºRECON";
     rr:parent "NºRECON".
-:om_023 a rr:ObjectMap;
+:om_027 a rr:ObjectMap;
     rr:parentTriplesMap :map_contract_000;
     rr:joinCondition :jc_007.
 :jc_007 rr:child "NºRECON";

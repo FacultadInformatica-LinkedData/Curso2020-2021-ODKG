@@ -15,3 +15,11 @@ WHERE
 	?x org:identifier "B83579441"
 	?x pc:supllier ?y
 }
+
+# Select the contract object associated with a given recognition number
+SELECT ?object
+WHERE{
+	?x :awardNum "M202000018".
+	?x pproc:contractObject ?y.
+	?y :objectOfcontract ?object
+}
