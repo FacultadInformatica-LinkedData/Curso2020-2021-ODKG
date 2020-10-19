@@ -115,6 +115,10 @@ s:taxID rdf:type owl:DatatypeProperty ;
                rdfs:domain :Covid19Status ;
                rdfs:range xsd:integer .
 
+###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numAC
+:numAC rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Covid19Status ;
+               rdfs:range xsd:integer .
 
 ###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numPositiveOthers
 :numPositiveOthers rdf:type owl:DatatypeProperty ;
@@ -127,6 +131,10 @@ s:taxID rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Covid19Status ;
                 rdfs:range xsd:integer .
 
+###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numPCR
+:numPCR rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Covid19Status ;
+                rdfs:range xsd:integer .
 
 ###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numPositiveUnknown
 :numPositiveUnknown rdf:type owl:DatatypeProperty ;
