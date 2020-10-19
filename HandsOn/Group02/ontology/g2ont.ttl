@@ -31,12 +31,12 @@
              rdfs:range xsd:string.
 			 
 ### Numero Contrato		 
-:hasExpNumber rdf:type owl:DatatypeProperty ;
+:hasContractNumber rdf:type owl:DatatypeProperty ;
              rdfs:domain :Contract ;
              rdfs:range xsd:integer.
 			 
 ### Numero Expediente		 
-:hasContractNumber rdf:type owl:DatatypeProperty ;
+:hasExpNumber rdf:type owl:DatatypeProperty ;
              rdfs:domain :Contract ;
              rdfs:range xsd:integer.
 			 
