@@ -10,7 +10,7 @@ prefixes:
 mappings:
   department:
     sources:
-      - [ContratosMenores2020-update.csv~csv]
+      - [ContratosMenores2020-updated.csv~csv]
     s: :/department/$(SECCION)
     po:
       - [a, org:OrganizationalUnit]
@@ -19,7 +19,7 @@ mappings:
 
   contractingBody:
     sources:
-      - [ContratosMenores2020-update.csv~csv]
+      - [ContratosMenores2020-updated.csv~csv]
     s: :/contractingbody/$(ORG.CONTRATACION)
     po:
       - [a, org:Organization]
@@ -36,7 +36,7 @@ mappings:
 
   contract:
     sources:
-      - [ContratosMenores2020-update.csv~csv]
+      - [ContratosMenores2020-updated.csv~csv]
     s: :/contract/$(NºRECON)
     po:
       - [a, $(CONTRACT_TYPE)]
@@ -68,7 +68,7 @@ mappings:
 
   contractObject:
     sources:
-      - [ContratosMenores2020-update.csv~csv]
+      - [ContratosMenores2020-updated.csv~csv]
     s: :/contract/$(NºRECON)/contractObject
     po:
       - [a, pproc:ContractObject]
@@ -92,7 +92,7 @@ mappings:
 
   economicConditions:
     sources:
-      - [ContratosMenores2020-update.csv~csv]
+      - [ContratosMenores2020-updated.csv~csv]
     s: :/contract/$(NºRECON)/economicConditions
     po:
       - [a, pproc:ContractEconomicConditions]
@@ -107,7 +107,7 @@ mappings:
 
   price:
     sources:
-      - [ContratosMenores2020-update.csv~csv]
+      - [ContratosMenores2020-updated.csv~csv]
     s: :/contract/$(NºRECON)/price
     po:
       - [a, pproc:BundlePriceSpecification]
@@ -117,7 +117,7 @@ mappings:
 
   temporalConditions:
     sources:
-      - [ContratosMenores2020-update.csv~csv]
+      - [ContratosMenores2020-updated.csv~csv]
     s: :/contract/$(NºRECON)/temporalConditions
     po:
       - [a, pproc:ContractTemporalConditions]
@@ -125,7 +125,7 @@ mappings:
 
   contractor:
     sources:
-      - [ContratosMenores2020-update.csv~csv]
+      - [ContratosMenores2020-updated.csv~csv]
     s: :/contractor/$(N.I.F)
     po:
       - [a, org:Organization]

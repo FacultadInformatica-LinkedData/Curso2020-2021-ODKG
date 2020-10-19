@@ -1,3 +1,4 @@
+@base <http://www.example.com/group09#>.
 @prefix rr: <http://www.w3.org/ns/r2rml#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
@@ -21,7 +22,7 @@
     void:exampleResource :map_department_000.
 :map_department_000 rml:logicalSource :source_000.
 :source_000 a rml:LogicalSource;
-    rml:source "ContratosMenores2020-update.csv";
+    rml:source "ContratosMenores2020-updated.csv";
     rml:referenceFormulation ql:CSV.
 :map_department_000 a rr:TriplesMap;
     rdfs:label "department".
@@ -49,7 +50,7 @@
 <http://mapping.example.com/rules_000> void:exampleResource :map_contractingBody_000.
 :map_contractingBody_000 rml:logicalSource :source_001.
 :source_001 a rml:LogicalSource;
-    rml:source "ContratosMenores2020-update.csv";
+    rml:source "ContratosMenores2020-updated.csv";
     rml:referenceFormulation ql:CSV.
 :map_contractingBody_000 a rr:TriplesMap;
     rdfs:label "contractingBody".
@@ -92,7 +93,7 @@
 <http://mapping.example.com/rules_000> void:exampleResource :map_contract_000.
 :map_contract_000 rml:logicalSource :source_002.
 :source_002 a rml:LogicalSource;
-    rml:source "ContratosMenores2020-update.csv";
+    rml:source "ContratosMenores2020-updated.csv";
     rml:referenceFormulation ql:CSV.
 :map_contract_000 a rr:TriplesMap;
     rdfs:label "contract".
@@ -129,7 +130,7 @@
 <http://mapping.example.com/rules_000> void:exampleResource :map_contractObject_000.
 :map_contractObject_000 rml:logicalSource :source_003.
 :source_003 a rml:LogicalSource;
-    rml:source "ContratosMenores2020-update.csv";
+    rml:source "ContratosMenores2020-updated.csv";
     rml:referenceFormulation ql:CSV.
 :map_contractObject_000 a rr:TriplesMap;
     rdfs:label "contractObject".
@@ -169,7 +170,7 @@
 <http://mapping.example.com/rules_000> void:exampleResource :map_economicConditions_000.
 :map_economicConditions_000 rml:logicalSource :source_004.
 :source_004 a rml:LogicalSource;
-    rml:source "ContratosMenores2020-update.csv";
+    rml:source "ContratosMenores2020-updated.csv";
     rml:referenceFormulation ql:CSV.
 :map_economicConditions_000 a rr:TriplesMap;
     rdfs:label "economicConditions".
@@ -194,7 +195,7 @@
 <http://mapping.example.com/rules_000> void:exampleResource :map_price_000.
 :map_price_000 rml:logicalSource :source_005.
 :source_005 a rml:LogicalSource;
-    rml:source "ContratosMenores2020-update.csv";
+    rml:source "ContratosMenores2020-updated.csv";
     rml:referenceFormulation ql:CSV.
 :map_price_000 a rr:TriplesMap;
     rdfs:label "price".
@@ -242,7 +243,7 @@
 <http://mapping.example.com/rules_000> void:exampleResource :map_temporalConditions_000.
 :map_temporalConditions_000 rml:logicalSource :source_006.
 :source_006 a rml:LogicalSource;
-    rml:source "ContratosMenores2020-update.csv";
+    rml:source "ContratosMenores2020-updated.csv";
     rml:referenceFormulation ql:CSV.
 :map_temporalConditions_000 a rr:TriplesMap;
     rdfs:label "temporalConditions".
@@ -271,7 +272,7 @@
 <http://mapping.example.com/rules_000> void:exampleResource :map_contractor_000.
 :map_contractor_000 rml:logicalSource :source_007.
 :source_007 a rml:LogicalSource;
-    rml:source "ContratosMenores2020-update.csv";
+    rml:source "ContratosMenores2020-updated.csv";
     rml:referenceFormulation ql:CSV.
 :map_contractor_000 a rr:TriplesMap;
     rdfs:label "contractor".
