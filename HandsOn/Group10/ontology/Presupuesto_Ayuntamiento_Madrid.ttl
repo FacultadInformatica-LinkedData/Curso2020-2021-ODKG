@@ -15,7 +15,10 @@ default:creditoGastado
 
 default:tieneCapitulo
       a       owl:ObjectProperty ;
-      rdfs:domain default:Centro ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (default:Gastos default:Ingresos)
+              ] ;
       rdfs:range default:Capitulo .
 
 default:creditoDispuesto
@@ -28,7 +31,7 @@ default:Capitulo
 
 default:tienePrograma
       a       owl:ObjectProperty ;
-      rdfs:domain default:Centro ;
+      rdfs:domain default:Gastos ;
       rdfs:range default:Programa .
 
 default:tieneCentro
@@ -61,7 +64,7 @@ default:Programa
 
 default:tieneSeccion
       a       owl:ObjectProperty ;
-      rdfs:domain default:Centro ;
+      rdfs:domain default:Gastos ;
       rdfs:range default:Seccion .
 
 default:Ingresos
@@ -83,6 +86,9 @@ default:descripcion
 
 default:Seccion
       a       owl:Class .
+
+<http://group10.com>
+      a       owl:Ontology .
 
 default:Centro
       a       owl:Class .
