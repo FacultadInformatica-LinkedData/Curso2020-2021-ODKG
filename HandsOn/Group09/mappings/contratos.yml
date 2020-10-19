@@ -1,5 +1,6 @@
-base: http://www.example.com/group09#
+base: http://www.example.com/group09
 prefixes:
+  "": http://www.example.com/group09
   schema: http://schema.org/
   db: https://es.dbpedia.org/page/
   pproc: http://purl.org/procurement/public-contracts#

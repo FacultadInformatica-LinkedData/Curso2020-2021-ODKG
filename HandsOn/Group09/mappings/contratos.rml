@@ -1,4 +1,3 @@
-@base <http://www.example.com/group09#>.
 @prefix rr: <http://www.w3.org/ns/r2rml#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
@@ -10,7 +9,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix rml: <http://semweb.mmlab.be/ns/rml#>.
 @prefix ql: <http://semweb.mmlab.be/ns/ql#>.
-@prefix : <http://www.example.com/group09#>.
+@prefix : <http://www.example.com/group09>.
 @prefix schema: <http://schema.org/>.
 @prefix db: <https://es.dbpedia.org/page/>.
 @prefix pproc: <http://purl.org/procurement/public-contracts#>.
@@ -28,7 +27,7 @@
     rdfs:label "department".
 :s_000 a rr:SubjectMap.
 :map_department_000 rr:subjectMap :s_000.
-:s_000 rr:template ":/department/{SECCION}".
+:s_000 rr:template "http://www.example.com/group09/department/{SECCION}".
 :pom_000 a rr:PredicateObjectMap.
 :map_department_000 rr:predicateObjectMap :pom_000.
 :pm_000 a rr:PredicateMap.
@@ -56,7 +55,7 @@
     rdfs:label "contractingBody".
 :s_001 a rr:SubjectMap.
 :map_contractingBody_000 rr:subjectMap :s_001.
-:s_001 rr:template ":/contractingbody/{ORG.CONTRATACION}".
+:s_001 rr:template "http://www.example.com/group09/contractingbody/{ORG.CONTRATACION}".
 :pom_002 a rr:PredicateObjectMap.
 :map_contractingBody_000 rr:predicateObjectMap :pom_002.
 :pm_002 a rr:PredicateMap.
@@ -99,7 +98,7 @@
     rdfs:label "contract".
 :s_002 a rr:SubjectMap.
 :map_contract_000 rr:subjectMap :s_002.
-:s_002 rr:template ":/contract/{NºRECON}".
+:s_002 rr:template "http://www.example.com/group09/contract/{NºRECON}".
 :pom_006 a rr:PredicateObjectMap.
 :map_contract_000 rr:predicateObjectMap :pom_006.
 :pm_006 a rr:PredicateMap.
@@ -136,7 +135,7 @@
     rdfs:label "contractObject".
 :s_003 a rr:SubjectMap.
 :map_contractObject_000 rr:subjectMap :s_003.
-:s_003 rr:template ":/contract/{NºRECON}/contractObject".
+:s_003 rr:template "http://www.example.com/group09/contract/{NºRECON}/contractObject".
 :pom_010 a rr:PredicateObjectMap.
 :map_contractObject_000 rr:predicateObjectMap :pom_010.
 :pm_010 a rr:PredicateMap.
@@ -176,7 +175,7 @@
     rdfs:label "economicConditions".
 :s_004 a rr:SubjectMap.
 :map_economicConditions_000 rr:subjectMap :s_004.
-:s_004 rr:template ":/contract/{NºRECON}/economicConditions".
+:s_004 rr:template "http://www.example.com/group09/contract/{NºRECON}/economicConditions".
 :pom_014 a rr:PredicateObjectMap.
 :map_economicConditions_000 rr:predicateObjectMap :pom_014.
 :pm_014 a rr:PredicateMap.
@@ -201,7 +200,7 @@
     rdfs:label "price".
 :s_005 a rr:SubjectMap.
 :map_price_000 rr:subjectMap :s_005.
-:s_005 rr:template ":/contract/{NºRECON}/price".
+:s_005 rr:template "http://www.example.com/group09/contract/{NºRECON}/price".
 :pom_016 a rr:PredicateObjectMap.
 :map_price_000 rr:predicateObjectMap :pom_016.
 :pm_016 a rr:PredicateMap.
@@ -249,7 +248,7 @@
     rdfs:label "temporalConditions".
 :s_006 a rr:SubjectMap.
 :map_temporalConditions_000 rr:subjectMap :s_006.
-:s_006 rr:template ":/contract/{NºRECON}/temporalConditions".
+:s_006 rr:template "http://www.example.com/group09/contract/{NºRECON}/temporalConditions".
 :pom_020 a rr:PredicateObjectMap.
 :map_temporalConditions_000 rr:predicateObjectMap :pom_020.
 :pm_020 a rr:PredicateMap.
@@ -278,7 +277,7 @@
     rdfs:label "contractor".
 :s_007 a rr:SubjectMap.
 :map_contractor_000 rr:subjectMap :s_007.
-:s_007 rr:template ":/contractor/{N.I.F}".
+:s_007 rr:template "http://www.example.com/group09/contractor/{N.I.F}".
 :pom_022 a rr:PredicateObjectMap.
 :map_contractor_000 rr:predicateObjectMap :pom_022.
 :pm_022 a rr:PredicateMap.
