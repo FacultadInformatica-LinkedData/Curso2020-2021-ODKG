@@ -1,7 +1,7 @@
 prefixes:
- rr: http://www.w3.org/ns/r2rml#
- ex: http://www.odkggroup3/ontology#
- rml: http://semweb.mmlab.be/ns/rml#
+ rr: http://www.w3.org/ns/r2rml#.
+ ex: http://www.odkggroup3/ontology#.
+ rml: http://semweb.mmlab.be/ns/rml#.
  
 mappings:
    TriplesMap1:
@@ -12,7 +12,7 @@ mappings:
            - [a, ex:Contract]
            - [ex:hasContractValue, $(total-contract-value)]
            - [ex:hasGsin, $(gsin)] 
-           - [ex:hasGsinDescription, $(gsin-description_en)]
+           - [ex:hasGsinDescription, $(gsin-description)]
            - [ex:hasExpireDate, $(expiry-date)]
            - [ex:hasAwardDate, $(award-date)]	
            - p: ex:hasSupplier
