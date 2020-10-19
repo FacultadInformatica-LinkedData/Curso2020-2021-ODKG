@@ -44,10 +44,31 @@ The access to the web page and the use of the information it contains are respon
 
 Resource naming stragety:
 
-First we define the classes of Gastos and Ingresos which correspond to the two datasets selected. Then we identify the classes of the datasets which correspond to some columns (Programa, Centro, Seccion and Capitulo). This four Classes have a property of ID and a property that gives the description .
 
-The Classes of Gastos and Ingresos have some specific properties about all the monetary values (for example "creditoDispuesto"). The domain created is: http://group10.com/  with a slash URI
+First we define the classes of Gastos and Ingresos which correspond to the two datasets selected. The column Centro is related to both classes with the property "descripcionCentro"
 
+The class Gastos has the following properties (the string after the $ is the name of the column):
+      - creditoGastado ,$(OBL_RECONOC) 
+      - tieneCapitulo ,$(Capitulo)
+      - creditoDispuesto ,$(C_DISPUESTO)  
+      - tienePrograma ,$(Programa)     
+      - tieneCentro ,$(Centro)  
+      - tieneSeccion ,$(Seccion) 
+      - descripcionEconomico ,$(Descripcion Economico)
+
+
+The class Gastos has the following properties (the string after the $ is the name of the column):
+      - tieneCapitulo ,$(Capitulo)
+      - tieneCentro ,$(Centro)]
+      - recaudado ,$(RECAUDADO)
+      - previsionIngresos ,$(PREV.DEFINITIV)
+      - descripcionIngresos ,$(Descripcion Economico)
+
+
+The classes Capitulo, Seccion and Programa have a description property, eg "descripcionCapitulo"
+
+
+ The domain created is: http://group10.com/  with a slash URI
 
 
 Given the example URI: http://group10.com/Gastos
