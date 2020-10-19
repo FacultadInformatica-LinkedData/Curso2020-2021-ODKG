@@ -1,0 +1,222 @@
+prefixes:
+    rr: http://www.w3.org/ns/r2rml#
+    foaf: http://xmlns.com/foaf/0.1/
+    xsd: http://www.w3.org/2001/XMLSchema#
+    rdfs: http://www.w3.org/2000/01/rdf-schema#
+    dc: http://purl.org/dc/elements/1.1/
+    rev: http://purl.org/stuff/rev#
+    gtfs: http://vocab.gtfs.org/terms#
+    geo: http://www.w3.org/2003/01/geo/wgs84_pos#
+    schema: http://schema.org/
+    dct: http://purl.org/dc/terms/
+    rml: http://semweb.mmlab.be/ns/rml#
+    ql: http://semweb.mmlab.be/ns/ql#
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+
+    pp: http://exercise.publicprocurement.es/about/ontology/group04pp/
+    
+
+
+mappings:
+  triplesmap1: 
+    sources:
+      - [purchase-order-2014-2015-updated.csv~csv]
+    s: pp:AcquisitionMethod/$(Acquisition Method)
+    po:
+      - [a, pp:AcquisitionMethod]
+      - [pp:hasAcquisitionMethod, $(Acquisition Method)]
+      
+        
+        
+  triplesmap2:
+    sources:
+      - [purchase-order-2014-2015-updated.csv~csv]
+    s: pp:AcquisitionType/$(Acquisition Type)
+    po:
+      - [a, pp:AcquisitionType]
+      - [pp:hasAcquisitionType, $(Acquisition Type)]
+      
+    
+  triplesmap3:
+    sources:
+      - [purchase-order-2014-2015-updated.csv~csv]
+    s: pp:Department/$(Department)
+    po:
+      - [a, pp:Department]
+      - [pp:hasDepartmentName, $(Department),xsd:string]
+
+        
+  triplesmap4:
+    sources:
+        - [purchase-order-2014-2015-updated.csv~csv]
+    s: pp:Family/$(Family)
+    po:
+      - [a, pp:Family]
+      - [pp:hasFamilyTitle, $(Family Title),xsd:string]
+      - p: pp:hasSegment
+        o:
+          - mapping: triplesmap8
+            condition:
+                function: equal
+                parameters:
+                    - [str1, $(Segment)]
+                    - [str2, $(Segment)]
+        
+    
+  triplesmap5:
+    sources:
+      - [purchase-order-2014-2015-updated.csv~csv]
+    s: pp:Item/$(Item Name)
+    po:
+      - [a, pp:Item]
+
+      - [pp:hasCommodityTitle , $(Commodity Title),xsd:string]
+      - [pp:hasDescription, $(Item Description),xsd:string]
+      - [pp:hasItemName, $(Item Name),xsd:string]
+      - [pp:hasUNSPC, $(Normalized UNSPSC),xsd:long]
+      - [pp:hasIdentifier, $(Identifier2),rdf:PlainLiteral]
+      - p: pp:hasItemClass
+        o:
+          - mapping: triplesmap6
+            condition:
+                function: equal
+                parameters:
+                    - [str1, $(Class)]
+                    - [str2, $(Class)]
+        
+    
+  triplesmap6:
+    sources:
+      - [purchase-order-2014-2015-updated.csv~csv]
+    s: pp:ItemClass/$(Class)
+    po:
+      - [a, pp:ItemClass]
+      - [pp:hasItemClassTitle, $(Class Title),xsd:string]
+      - p: pp:hasFamily
+        o:
+          - mapping: triplesmap4
+            condition:
+                function: equal
+                parameters:
+                    - [str1, $(Family)]
+                    - [str2, $(Family)]
+        
+  triplesmap7:
+    sources:
+      - [purchase-order-2014-2015-updated.csv~csv]
+    s: pp:Purchase/$(Purchase Order Number)
+    po:
+      - [a, pp:Purchase]
+      - [pp:hasCalCards, $(CalCard),xsd:boolean]
+      - [pp:hasCreationDate, $(Creation Date),rdf:PlainLiteral]
+      - [pp:hasFiscalYear, $(Fiscal Year),rdf:PlainLiteral]
+      - [pp:hasPurchaseDate, $(Purchase Date),rdf:PlainLiteral]
+      - [pp:hasLPAnumber, $(LPA Number),rdf:PlainLiteral]
+      - [pp:hasOrderNumber, $(Purchase Order Number),xsd:long]
+      - [pp:hasQuantity, $(Quantity),rdf:PlainLiteral]
+      - [pp:hasRecquisitionNumber, $(Requisition Number),rdf:PlainLiteral]
+      - [pp:hasUnitPrice , $(Unit Price),owl:real]
+      - [pp:hasTotalPrice, $(Total Price),owl:real]
+      - p: pp:madeBy
+        o:
+          - mapping: triplesmap3
+            condition:
+                function: equal
+                parameters:
+                    - [str1, $(Department)]
+                    - [str2, $(Department)]
+        
+      - p: pp:hasSupplier
+        o:
+          - mapping: triplesmap9
+            condition:
+                function: equal
+                parameters:
+                    - [str1, $(Supplier Code)]
+                    - [str2, $(Supplier Code)]
+        
+      - p: pp:hasSubAcquisitionType
+        o:
+          - mapping: triplesmap11 
+            condition:
+                function: equal
+                parameters:
+                    - [str1, $(Sub-Acquisition Type)]
+                    - [str2, $(Sub-Acquisition Type)]
+                    
+      - p: pp:hasSubAcquisitionMethod
+        o:
+          - mapping: triplesmap10 
+            condition:
+                function: equal
+                parameters:
+                    - [str1, $(Sub-Acquisition Method)]
+                    - [str2, $(Sub-Acquisition Method)]            
+        
+      - p: pp:hasItem
+        o:
+          - mapping: triplesmap5 
+            condition:
+                function: equal
+                parameters:
+                    - [str1, $(Item Name)]
+                    - [str2, $(Item Name)]            
+        
+                    
+  triplesmap8:
+    sources:
+      - [purchase-order-2014-2015-updated.csv~csv]
+    s: pp:Segment/$(Segment)
+    po:
+      - [a, pp:Segment]
+      - [pp:hasSegmentTitle, $(Segment Title),xsd:string]
+
+  triplesmap9:
+    sources:
+      - [purchase-order-2014-2015-updated.csv~csv]
+    s: pp:Supplier/$(Supplier Code)
+    po:
+      - [a, pp:Supplier]
+      - [pp:hasSupplierName, $(Supplier Name),xsd:string]
+      - [pp:hasLatitude, $(Latitude),rdf:PlainLiteral]
+      - [pp:hasCalCardsLongitude, $(Longitude),rdf:PlainLiteral]
+      - [pp:hasQualifications, $(Supplier Qualifications),rdf:PlainLiteral]
+      - [pp:hasSupplierCode, $(Supplier Code),rdf:PlainLiteral]
+      - [pp:hasZipCode, $(Supplier Zip Code),xsd:string]
+
+    
+  triplesmap10:
+    sources:
+      - [purchase-order-2014-2015-updated.csv~csv]
+    s: pp:subAcquisitionMethod/$(Sub-Acquisition Method)
+    po:
+      - [a, pp:subAcquisitionMethod]
+      - [pp:hasSubAcquisitionMethod, $(Sub-Acquisition Method),xsd:string]
+      - p: pp:hasAquisitionMethod
+        o:
+          - mapping: triplesmap1 
+            condition:
+                function: equal
+                parameters:
+                    - [str1, $(Acquisition Method)]
+                    - [str2, $(Acquisition Method)]            
+        
+    
+  triplesmap11:
+    sources:
+      - [purchase-order-2014-2015-updated.csv~csv]
+    s: pp:subAcquisitionType/$(Sub-Acquisition Type)
+    po:
+      - [a, pp:subAcquisitionType]
+      - [pp:hasSubAcquisitionType, $(Sub-Acquisition Type),xsd:string]
+        
+      - p: pp:hasAcquisitionType 
+        o:
+          - mapping: triplesmap2 
+            condition:
+                function: equal
+                parameters:
+                    - [str1, $(Acquisition Type)]
+                    - [str2, $(Acquisition Type)]            
+        
+    
