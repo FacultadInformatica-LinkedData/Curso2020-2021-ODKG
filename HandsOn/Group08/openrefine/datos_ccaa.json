@@ -89,5 +89,10 @@
     "newColumnName": "CovidStatusID",
     "columnInsertIndex": 1,
     "description": "Create column CovidStatusID at index 1 based on column ccaa_iso using expression join ([coalesce(cells['ccaa_iso'].value,''),coalesce(cells['fecha'].value,'')],'_')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "num_casos_prueba_pcr",
+    "description": "Remove column num_casos_prueba_pcr"
   }
 ]
