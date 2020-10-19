@@ -255,5 +255,88 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column TestAc+ using expression grel:if(value==null,0,value)"
+  },
+  {
+    "op": "core/row-reorder",
+    "mode": "row-based",
+    "sorting": {
+      "criteria": [
+        {
+          "valueType": "string",
+          "column": "CovidStatusID",
+          "blankPosition": 2,
+          "errorPosition": 1,
+          "reverse": false,
+          "caseSensitive": false
+        }
+      ]
+    },
+    "description": "Reorder rows"
+  },
+  {
+    "op": "core/blank-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CCAA",
+    "description": "Blank down cells in column CCAA"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "PCR+",
+    "expression": "grel:forEachIndex(row.record.cells[\"PCR+\"].value, i, v, \nif(i==0, value, v-row.record.cells[\"PCR+\"].value[i-1]))[mod(rowIndex, 91)]",
+    "onError": "set-to-blank",
+    "newColumnName": "numPCR+",
+    "columnInsertIndex": 4,
+    "description": "Create column numPCR+ at index 4 based on column PCR+ using expression grel:forEachIndex(row.record.cells[\"PCR+\"].value, i, v, \nif(i==0, value, v-row.record.cells[\"PCR+\"].value[i-1]))[mod(rowIndex, 91)]"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "TestAc+",
+    "expression": "grel:forEachIndex(row.record.cells[\"TestAc+\"].value, i, v, if(i==0, value, v-row.record.cells[\"TestAc+\"].value[i-1]))[mod(rowIndex, 91)]",
+    "onError": "set-to-blank",
+    "newColumnName": "numTestAc+",
+    "columnInsertIndex": 6,
+    "description": "Create column numTestAc+ at index 6 based on column TestAc+ using expression grel:forEachIndex(row.record.cells[\"TestAc+\"].value, i, v, if(i==0, value, v-row.record.cells[\"TestAc+\"].value[i-1]))[mod(rowIndex, 91)]"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CCAA",
+    "description": "Fill down cells in column CCAA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PCR+",
+    "description": "Remove column PCR+"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "TestAc+",
+    "description": "Remove column TestAc+"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "numPCR+",
+    "newColumnName": "PCR+",
+    "description": "Rename column numPCR+ to PCR+"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "numTestAc+",
+    "newColumnName": "TestAc+",
+    "description": "Rename column numTestAc+ to TestAc+"
   }
 ]
