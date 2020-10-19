@@ -1,0 +1,50 @@
+prefixes:
+ rr: http://www.w3.org/ns/r2rml#
+ ex: http://www.odkggroup3/ontology#
+ rml: http://semweb.mmlab.be/ns/rml#
+ 
+mappings:
+   TriplesMap1:
+       sources:
+           - ['Group3_csv_updated.csv~csv']
+       s: ex:$(contract-number)
+       po:
+           - [a, ex:Contract]
+           - [ex:hasContractValue, $(total-contract-value)]
+           - [ex:hasGsin, $(gsin)] 
+           - [ex:hasGsinDescription, $(gsin-description_en)]
+           - [ex:hasExpireDate, $(expiry-date)]
+           - [ex:hasAwardDate, $(award-date)]	
+           - p: ex:hasSupplier
+             o:
+               mapping: TriplesMap2
+               condition:
+                 function: equal
+                 parameters:
+                   - [str1, $(supplier-legal-name)]
+                   - [str2, $(supplier-legal-name)]
+
+   TriplesMap2:
+       sources:
+           - [Group3_csv_updated.csv~csv]
+       s: ex:$(supplier-legal-name)
+       po:
+           - [a, ex:Supplier]
+           - [ex:hasEmployees, $(organization-employee-count_en)]
+           - [ex:hasCity, $(supplier-address-city)]
+           - [ex:hasCountry, $(supplier-address-country)]
+           - [ex:hasProvince, $(supplier-address-prov-state)]
+           - [ex:hasPostalCode, $(supplier-address-postal-code)]
+           
+   TriplesMap3:
+       Sources:
+           - [Group3_csv_updated.csv~csv] 
+       s: ex:$(end-user-entity_en)
+       po:
+           - [a, ex:EntityEndUser]
+           - [ex:hasOfficeName, $(contracting-entity-office-name_en)]
+           - [ex:hasCity, $(contracting-address-city)]
+           - [ex:hasCountry, $(contracting-address-country)]
+           - [ex:hasProvince, $(contracting-address-prov-state)]
+           - [ex:hasPostalCode, $(contracting-address-postal-code)]
+
