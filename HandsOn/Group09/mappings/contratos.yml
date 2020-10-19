@@ -41,6 +41,10 @@ mappings:
     s: :/contract/$(NºRECON)
     po:
       - [a, $(CONTRACT_TYPE)]
+      - [:awardDate, $(FECHA APROBACION)]
+      - [:awardNum, $(NºRECON)]
+      - [:recordNum, $(NUMERO EXPEDIENTE)]
+      - [:registryReportDate, $(FCH.COMUNIC.REG)]
       - p: pproc:contractObject
         o:
           - mapping: contractObject
