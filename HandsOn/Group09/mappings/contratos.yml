@@ -1,0 +1,146 @@
+base: http://www.example.com/group09
+prefixes:
+  "": http://www.example.com/group09
+  schema: http://schema.org/
+  db: https://es.dbpedia.org/page/
+  pproc: http://contsem.unizar.es/def/sector-publico/pproc#
+  org: http://www.w3.org/ns/org#
+  gr: http://purl.org/goodrelations/v1#
+  pc: http://purl.org/procurement/public-contracts#
+
+mappings:
+  department:
+    sources:
+      - [ContratosMenores2020-updated.csv~csv]
+    s: :/department/$(SECCION)
+    po:
+      - [a, org:OrganizationalUnit]
+      - [schema:name, $(SECCION)]
+#      - [org:subOrganizationOf, db:Ayuntamiento_de_Madrid]
+
+  contractingBody:
+    sources:
+      - [ContratosMenores2020-updated.csv~csv]
+    s: :/contractingbody/$(ORG.CONTRATACION)
+    po:
+      - [a, org:Organization]
+      - [schema:name, $(ORG.CONTRATACION)]
+      - [:area, $(ORG.CONTRATACION AREA)]
+      - p: org:subOrganizationOf
+        o:
+          - mapping : department
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(NºRECON)]
+                - [str2, $(NºRECON)]
+
+  contract:
+    sources:
+      - [ContratosMenores2020-updated.csv~csv]
+    s: :/contract/$(NºRECON)
+    po:
+      - [a, $(CONTRACT_TYPE)]
+      - [:awardDate, $(FECHA APROBACION), xsd:date]
+      - [:awardNum, $(NºRECON)]
+      - [:recordNum, $(NUMERO EXPEDIENTE)]
+      - [:registryReportDate, $(FCH.COMUNIC.REG), xsd:date]
+      - p: pproc:contractObject
+        o:
+          - mapping: contractObject
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(NºRECON)]
+                - [str2, $(NºRECON)]
+      - p: pproc:contractingBody
+        o:
+          - mapping: contractingBody
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(NºRECON)]
+                - [str2, $(NºRECON)]
+      - p: pproc:managingDepartment
+        o:
+          - mapping: department
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(NºRECON)]
+                - [str2, $(NºRECON)]
+#      - [pc:contractingAuthority, db:Ayuntamiento_de_Madrid]
+
+  contractObject:
+    sources:
+      - [ContratosMenores2020-updated.csv~csv]
+    s: :/contract/$(NºRECON)/contractObject
+    po:
+      - [a, pproc:ContractObject]
+      - p: pproc:contractEconomicConditions
+        o:
+          - mapping: economicConditions
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(NºRECON)]
+                - [str2, $(NºRECON)]
+      - p: pproc:contractTemporalConditions
+        o:
+          - mapping: temporalConditions
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(NºRECON)]
+                - [str2, $(NºRECON)]
+      - [:objectOfContract, $(OBJETO DEL CONTRATO)]
+
+  economicConditions:
+    sources:
+      - [ContratosMenores2020-updated.csv~csv]
+    s: :/contract/$(NºRECON)/economicConditions
+    po:
+      - [a, pproc:ContractEconomicConditions]
+      - p: pproc:budgetPrice
+        o:
+          - mapping: price
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(NºRECON)]
+                - [str2, $(NºRECON)]
+
+  price:
+    sources:
+      - [ContratosMenores2020-updated.csv~csv]
+    s: :/contract/$(NºRECON)/price
+    po:
+      - [a, pproc:BundlePriceSpecification]
+      - [gr:hasCurrency, $(CURRENCY)]
+      - [gr:hasCurrencyValue, $(CURRENCY VALUE), xsd:float]
+      - [gr:valueAddedTaxIncluded, $(TAX INCLUDED), xsd:boolean]
+
+  temporalConditions:
+    sources:
+      - [ContratosMenores2020-updated.csv~csv]
+    s: :/contract/$(NºRECON)/temporalConditions
+    po:
+      - [a, pproc:ContractTemporalConditions]
+      - [pproc:estimatedDuration, $(PLAZO), xsd:float]
+
+  contractor:
+    sources:
+      - [ContratosMenores2020-updated.csv~csv]
+    s: :/contractor/$(N.I.F)
+    po:
+      - [a, org:Organization]
+      - p: pproc:supplier
+        o:
+          - mapping: contract
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(NºRECON)]
+                - [str2, $(NºRECON)]
+      - [schema:name, $(CONTRATISTA)]
+      - [org:identifier, $(N.I.F)]

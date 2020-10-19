@@ -201,141 +201,63 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "NºRECON",
-    "expression": "grel:value.replace(',','')",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column NºRECON using expression grel:value.replace(',','')"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "OBJETO DEL CONTRATO",
-    "expression": "grel:value.replace(',','')",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column OBJETO DEL CONTRATO using expression grel:value.replace(',','')"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "ORG.CONTRATACION AREA",
-    "expression": "grel:value.replace(',','')",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column ORG.CONTRATACION AREA using expression grel:value.replace(',','')"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "ORG.CONTRATACION",
-    "expression": "grel:value.replace(',','')",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column ORG.CONTRATACION using expression grel:value.replace(',','')"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "SECCION",
-    "expression": "grel:value.replace(',','')",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column SECCION using expression grel:value.replace(',','')"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "NUMERO EXPEDIENTE",
-    "expression": "grel:value.replace(',','')",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column NUMERO EXPEDIENTE using expression grel:value.replace(',','')"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "CONTRATISTA",
-    "expression": "grel:value.replace(',','')",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column CONTRATISTA using expression grel:value.replace(',','')"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "N.I.F",
-    "expression": "grel:value.replace(',','')",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column N.I.F using expression grel:value.replace(',','')"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "TIPO DE CONTRATO",
-    "expression": "grel:value.replace(',','')",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column TIPO DE CONTRATO using expression grel:value.replace(',','')"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "OBJETO DEL CONTRATO",
-    "expression": "grel:value.replace('\\n','')",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column OBJETO DEL CONTRATO using expression grel:value.replace('\\n','')"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
     "columnName": "CURRENCY",
-    "expression": "grel:value.replace('€','EUR')",
+    "expression": "grel:value.replace('€', 'EUR')",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column CURRENCY using expression grel:value.replace('€','EUR')"
+    "description": "Text transform on cells in column CURRENCY using expression grel:value.replace('€', 'EUR')"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CURRENCY",
+    "expression": "grel:true",
+    "onError": "set-to-blank",
+    "newColumnName": "TAX INCLUDED",
+    "columnInsertIndex": 11,
+    "description": "Create column TAX INCLUDED at index 11 based on column CURRENCY using expression grel:true"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "FECHA APROBACION",
+    "expression": "grel:value.toString('yyyy-MM-dd')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column FECHA APROBACION using expression grel:value.toString('yyyy-MM-dd')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "FCH.COMUNIC.REG",
+    "expression": "grel:value.toDate().toString('yyyy-MM-dd')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column FCH.COMUNIC.REG using expression grel:value.toDate().toString('yyyy-MM-dd')"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "TIPO DE CONTRATO",
+    "expression": "grel:if(value == 'SUMINISTRO', 'http://contsem.unizar.es/def/sector-publico/pproc#SuppliesContract',\n  if(value == 'SERVICIOS', 'http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract',\n  if(value == 'OBRAS', 'http://contsem.unizar.es/def/sector-publico/pproc#WorksContract',\n  if(value == 'OTROS', 'http://contsem.unizar.es/def/sector-publico/pproc#PublicContract',\nnull))))",
+    "onError": "store-error",
+    "newColumnName": "CONTRACT_TYPE",
+    "columnInsertIndex": 7,
+    "description": "Create column CONTRACT_TYPE at index 7 based on column TIPO DE CONTRATO using expression grel:if(value == 'SUMINISTRO', 'http://contsem.unizar.es/def/sector-publico/pproc#SuppliesContract',\n  if(value == 'SERVICIOS', 'http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract',\n  if(value == 'OBRAS', 'http://contsem.unizar.es/def/sector-publico/pproc#WorksContract',\n  if(value == 'OTROS', 'http://contsem.unizar.es/def/sector-publico/pproc#PublicContract',\nnull))))"
   }
 ]
