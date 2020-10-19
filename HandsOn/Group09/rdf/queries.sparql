@@ -1,0 +1,16 @@
+PREFIX : <http://www.example.com/group09#> .
+PREFIX owl: <http://www.w3.org/2002/07/owl#> .
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+PREFIX xml: <http://www.w3.org/XML/1998/namespace> .
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> .
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+PREFIX org: <http://www.w3.org/ns/org#> .
+
+# Select the contract object associated with a given recognition number
+SELECT ?object
+WHERE{
+	?x :awardNum "M202000018".
+	?x pproc:contractObject ?y.
+	?y :objectOfcontract ?object
+}
+
