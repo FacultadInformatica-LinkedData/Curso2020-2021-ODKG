@@ -12,7 +12,7 @@
 @prefix : <http://www.example.com/group09>.
 @prefix schema: <http://schema.org/>.
 @prefix db: <https://es.dbpedia.org/page/>.
-@prefix pproc: <http://purl.org/procurement/public-contracts#>.
+@prefix pproc: <http://contsem.unizar.es/def/sector-publico/pproc#>.
 @prefix org: <http://www.w3.org/ns/org#>.
 @prefix gr: <http://purl.org/goodrelations/v1#>.
 @prefix pc: <http://purl.org/procurement/public-contracts#>.
