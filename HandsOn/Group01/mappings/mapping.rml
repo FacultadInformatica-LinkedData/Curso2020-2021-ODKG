@@ -110,11 +110,11 @@ map:pom_9 a rr:PredicateObjectMap;
     rr:predicateMap map:pm_9;
     rr:objectMap map:om_9.
 map:s_0 a rr:SubjectMap;
-    rr:template "http://group01.org/aragon/ontology/Contract/{Code}".
+    rr:template "http://group01.org/aragon/resource/Contract/{Code}".
 map:s_1 a rr:SubjectMap;
-    rr:template "http://group01.org/aragon/ontology/Company/{Company}".
+    rr:template "http://group01.org/aragon/resource/Company/{Company}".
 map:s_2 a rr:SubjectMap;
-    rr:template "http://group01.org/aragon/ontology/GovernmentBody/{GovernmentRequester}".
+    rr:template "http://group01.org/aragon/resource/GovernmentBody/{GovernmentRequester}".
 map:source_0 a rml:LogicalSource;
     rml:source "contratos_gobierno_aragon_2017-updated.csv";
     rml:referenceFormulation ql:CSV.

@@ -15,7 +15,7 @@ mappings:
   triplesmap1:
     sources:
       - [contratos_gobierno_aragon_2017-updated.csv~csv]
-    s: http://group01.org/aragon/ontology/Contract/$(Code)
+    s: http://group01.org/aragon/resource/Contract/$(Code)
     po:
       - [a, vocab:Contract]
       - [vocab:hasAwardPrice,$(AwardPrice),xsd:double]
@@ -43,13 +43,13 @@ mappings:
   triplesmap2:
     sources:
       - [contratos_gobierno_aragon_2017-updated.csv~csv]
-    s: http://group01.org/aragon/ontology/Company/$(Company)
+    s: http://group01.org/aragon/resource/Company/$(Company)
     po:
       - [a, vocab:Company]
 
   triplesmap3:
     sources:
       - [contratos_gobierno_aragon_2017-updated.csv~csv]
-    s: http://group01.org/aragon/ontology/GovernmentBody/$(GovernmentRequester)
+    s: http://group01.org/aragon/resource/GovernmentBody/$(GovernmentRequester)
     po:
       - [a, vocab:GovernmentBody]
