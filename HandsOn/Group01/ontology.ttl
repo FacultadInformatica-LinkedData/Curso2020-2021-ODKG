@@ -4,9 +4,9 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.group01.org/aragon/ontology/> .
+@base <http://www.group01.org/aragon/ontology> .
 
-<http://www.group01.org/aragon/ontology/> rdf:type owl:Ontology .
+<http://www.group01.org/aragon/ontology> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
@@ -14,14 +14,14 @@
 
 ###  http://www.group01.org/aragon/ontology/awardedTo
 <http://www.group01.org/aragon/ontology/awardedTo> rdf:type owl:ObjectProperty ;
-                                                            rdfs:domain <http://www.group01.org/aragon/ontology/Contract> ;
-                                                            rdfs:range <http://www.group01.org/aragon/ontology/Company> .
+                                                   rdfs:domain <http://www.group01.org/aragon/ontology/Contract> ;
+                                                   rdfs:range <http://www.group01.org/aragon/ontology/Company> .
 
 
 ###  http://www.group01.org/aragon/ontology/hasGovermentRequester
 <http://www.group01.org/aragon/ontology/hasGovermentRequester> rdf:type owl:ObjectProperty ;
-                                                                        rdfs:domain <http://www.group01.org/aragon/ontology/Contract> ;
-                                                                        rdfs:range <http://www.group01.org/aragon/ontology/GovermentBody> .
+                                                               rdfs:domain <http://www.group01.org/aragon/ontology/Contract> ;
+                                                               rdfs:range <http://www.group01.org/aragon/ontology/GovermentBody> .
 
 
 #################################################################
@@ -29,51 +29,33 @@
 #################################################################
 
 ###  http://www.group01.org/aragon/ontology/hasAwardPrice
-:hasAwardPrice rdf:type owl:DatatypeProperty ;
-               rdfs:domain <http://www.group01.org/aragon/ontology/Contract> ;
-               rdfs:range xsd:double .
+<http://www.group01.org/aragon/ontology/hasAwardPrice> rdf:type owl:DatatypeProperty ;
+                                                       rdfs:domain <http://www.group01.org/aragon/ontology/Contract> ;
+                                                       rdfs:range xsd:double .
 
 
 ###  http://www.group01.org/aragon/ontology/hasAwardProcedure
-:hasAwardProcedure rdf:type owl:DatatypeProperty ;
-                   rdfs:domain <http://www.group01.org/aragon/ontology/Contract> ;
-                   rdfs:range rdfs:Literal .
+<http://www.group01.org/aragon/ontology/hasAwardProcedure> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain <http://www.group01.org/aragon/ontology/Contract> ;
+                                                           rdfs:range xsd:string .
 
 
 ###  http://www.group01.org/aragon/ontology/hasBiddingPrice
-:hasBiddingPrice rdf:type owl:DatatypeProperty ;
-                 rdfs:domain <http://www.group01.org/aragon/ontology/Contract> ;
-                 rdfs:range xsd:double .
-
-
-###  http://www.group01.org/aragon/ontology/hasTypeOfContract
-:hasTypeOfContract rdf:type owl:DatatypeProperty ;
-                   rdfs:domain <http://www.group01.org/aragon/ontology/Contract> ;
-                   rdfs:range rdfs:Literal .
-
-
-###  http://www.group01.org/aragon/ontology/hasYear
-:hasYear rdf:type owl:DatatypeProperty ;
-         rdfs:domain <http://www.group01.org/aragon/ontology/Contract> ;
-         rdfs:range xsd:integer .
+<http://www.group01.org/aragon/ontology/hasBiddingPrice> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <http://www.group01.org/aragon/ontology/Contract> ;
+                                                         rdfs:range xsd:double .
 
 
 ###  http://www.group01.org/aragon/ontology/hasDescription
 <http://www.group01.org/aragon/ontology/hasDescription> rdf:type owl:DatatypeProperty ;
-                                                                 rdfs:domain <http://www.group01.org/aragon/ontology/Contract> ;
-                                                                 rdfs:range rdfs:Literal .
-
-
-###  http://www.group01.org/aragon/ontology/hasID
-<http://www.group01.org/aragon/ontology/hasID> rdf:type owl:DatatypeProperty ;
                                                         rdfs:domain <http://www.group01.org/aragon/ontology/Contract> ;
-                                                        rdfs:range rdfs:Literal .
+                                                        rdfs:range xsd:string .
 
 
-###  http://www.group01.org/aragon/ontology/publicationMethod
-<http://www.group01.org/aragon/ontology/publicationMethod> rdf:type owl:DatatypeProperty ;
-                                                                    rdfs:domain <http://www.group01.org/aragon/ontology/Contract> ;
-                                                                    rdfs:range rdfs:Literal .
+###  http://www.group01.org/aragon/ontology/hasTypeOfContract
+<http://www.group01.org/aragon/ontology/hasTypeOfContract> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain <http://www.group01.org/aragon/ontology/Contract> ;
+                                                           rdfs:range xsd:string .
 
 
 #################################################################
