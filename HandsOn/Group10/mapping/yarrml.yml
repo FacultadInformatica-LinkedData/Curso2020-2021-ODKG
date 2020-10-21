@@ -16,12 +16,12 @@ mappings:
   triplesmap1:
     sources:
       - [gastos-updated.csv~csv]
-    s: default:centro {$(Centro)}
+    s: default:centro/$(Descripcion Centro)
     po:
-      - [a, default: Centro]
+      - [a,default:Centro]
 
-      - [default: descripcionCentro ,$(Descripcion Centro)]
-      - [default: tieneGasto ,$(Gastos)]  
+      - [default: descripcionCentro,$(Descripcion Centro),xsd:string]
+      - [default: tieneGasto,$(Gastos)]  
 
      
 
@@ -31,87 +31,87 @@ mappings:
             condition:
               function: equal
               parameters:
-                - [str1, $(Centro)]
-                - [str2, $(Centro)]
+                - [str1,$(Centro)]
+                - [str2,$(Centro)]
             
 
   triplesmap2:
     sources:
       - [ingresos-updated.csv~csv]
-    s: default:centro {$(Centro)}
+    s: default:centro/$(Descripcion Centro)
     po:
-      - [a, default: Centro]
+      - [a,default:Centro]
 
-      - [default: descripcionCentro ,$(Descripcion Centro)]
-      - [default: tieneIngresos ,$(Ingresos)]
+      - [default:descripcionCentro,$(Descripcion Centro),xsd:string]
+      - [default:tieneIngresos,$(Ingresos)]
 
   triplesmap3:  
     sources:
       - [gastos-updated.csv~csv]
-    s: default:gastos 
+    s: default:gastos/$(Gastos)
     po:
-      - [a, default: Gastos]
+      - [a,default:Gastos]
 
-      - [default: creditoGastado ,$(OBL_RECONOC)]  
-      - [default: tieneCapitulo ,$(Capitulo)]
-      - [default: creditoDispuesto ,$(C_DISPUESTO)]   
-      - [default: tienePrograma ,$(Programa)]     
-      - [default: tieneCentro ,$(Centro)]   
-      - [default: tieneSeccion ,$(Seccion)] 
-      - [default: descripcionEconomico ,$(Descripcion Economico)]
+      - [default:creditoGastado,$(OBL_RECONOC),xsd:double]  
+      - [default:tieneCapitulo,$(Capitulo),xsd:integer]
+      - [default:creditoDispuesto,$(C_DISPUESTO),xsd:double]   
+      - [default:tienePrograma,$(Programa),xsd:integer]     
+      - [default:tieneCentro,$(Centro),xsd:integer]   
+      - [default:tieneSeccion,$(Seccion),xsd:integer] 
+      - [default:descripcionEconomico,$(Descripcion Economico),xsd:string]
 
 
   triplesmap4:
     sources:
       - [gastos-updated.csv~csv]
-    s: default:capitulo {$(Capitulo)}
+    s: default:capitulo/$(Descripcion Capitulo)
     po:
-      - [a, default: Capitulo]
+      - [a,default:Capitulo]
 
-      - [default: descripcionCapitulo ,$(Descripcion Capitulo)]  
+      - [default:descripcionCapitulo,$(Descripcion Capitulo),xsd:string]  
 
 
   triplesmap5:
     sources:
       - [gastos-updated.csv~csv]
-    s: default:programa {$(Programa)}  
+    s: default:programa/$(Descripcion Programa) 
     po:
-      - [a, default: Programa]
+      - [a,default:Programa]
 
-      - [default: descripcionPrograma ,$(Descripcion Programa)]  
+      - [default:descripcionPrograma,$(Descripcion Programa),xsd:string]  
      
 
 
   triplesmap6:
     sources:
       - [gastos-updated.csv~csv]
-    s: default:seccion {$(Seccion)} 
+    s: default:seccion/$(Descripcion Seccion) 
     po:
-      - [a, default: Seccion]
+      - [a,default:Seccion]
 
-      - [default: descripcionSeccion ,$(Descripcion Seccion)]
+      - [default:descripcionSeccion,$(Descripcion Seccion),xsd:string]
 
 
 
   triplesmap7:
     sources:
       - [ingresos-updated.csv~csv]
-    s: default:ingresos {$(Ingresos)}
+    s: default:ingresos/$(Ingresos)
     po:
-      - [a, default: Ingresos]
+      - [a,default:Ingresos]
 
-      - [default: tieneCapitulo ,$(Capitulo)]
-      - [default: tieneCentro ,$(Centro)]
-      - [default: recaudado ,$(RECAUDADO)]
-      - [default: previsionIngresos ,$(PREV.DEFINITIV)]
-      - [default: descripcionIngresos ,$(Descripcion Economico)]
+      - [default:tieneCapitulo,$(Capitulo),xsd:integer]
+      - [default:tieneCentro,$(Centro),xsd:integer]
+      - [default:recaudado,$(RECAUDADO),xsd:double]
+      - [default:previsionIngresos,$(PREV.DEFINITIV),xsd:double]
+      - [default:descripcionIngresos,$(Descripcion Economico),xsd:string]
 
   triplesmap8:
     sources:
       - [ingresos-updated.csv~csv]
-    s: default:capitulo 
+    s: default:capitulo/$(Descripcion Capitulo)
     po:
-      - [a, default: Capitulo]
+      - [a,default:Capitulo]
 
-      - [default: descripcionCapitulo ,$(Descripcion Capitulo)]
+      - [default:descripcionCapitulo,$(Descripcion Capitulo),xsd:string]
 
