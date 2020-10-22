@@ -221,7 +221,7 @@
 ###  http://www.example.com/group09#BundlePrice1
 :BundlePrice1 rdf:type owl:NamedIndividual ,
                        <http://contsem.unizar.es/def/sector-publico/pproc#BundlePriceSpecification> ;
-              <http://purl.org/goodrelations/v1#hasCurrency> "EUR" ;
+              <http://purl.org/goodrelations/v1#hasCurrency> "EUR"^^xsd:string ;
               <http://purl.org/goodrelations/v1#hasCurrencyValue> "1197.60"^^xsd:float ;
               <http://purl.org/goodrelations/v1#valueAddedTaxIncluded> "true"^^xsd:boolean .
 
@@ -231,22 +231,22 @@
                          <http://contsem.unizar.es/def/sector-publico/pproc#ContractObject> ;
                 <http://contsem.unizar.es/def/sector-publico/pproc#contractEconomicConditions> :EconomicConditions ;
                 <http://contsem.unizar.es/def/sector-publico/pproc#contractTemporalConditions> :TemporalConditions1 ;
-                :objectOfContract "SUMINISTRO UNA BOMBA NEUMATICA PARA EL TALLER DEL CENTRO DE OPERACIONES DE LA ELIPA." .
+                :objectOfContract "SUMINISTRO UNA BOMBA NEUMATICA PARA EL TALLER DEL CENTRO DE OPERACIONES DE LA ELIPA."^^xsd:string .
 
 
 ###  http://www.example.com/group09#ContractingBody1
 :ContractingBody1 rdf:type owl:NamedIndividual ,
                            <http://www.w3.org/ns/org#Organization> ;
                   <https://www.w3.org/ns/org#subOrganizationOf> :Department1 ;
-                  <http://schema.org/name> "Director" .
+                  <http://schema.org/name> "Director"^^xsd:string .
 
 
 ###  http://www.example.com/group09#Contractor
 :Contractor rdf:type owl:NamedIndividual ,
                      <http://www.w3.org/ns/org#Organization> ;
             <http://purl.org/procurement/public-contracts#supplier> :Contrato1 ;
-            <http://schema.org/name> "GONPERSA TRADE, S.L."@es ;
-            <http://www.w3.org/ns/org#identifier> "B83579441" .
+            <http://schema.org/name> "GONPERSA TRADE, S.L."@es^^xsd:string ;
+            <http://www.w3.org/ns/org#identifier> "B83579441"^^xsd:string .
 
 
 ###  http://www.example.com/group09#Contrato1
@@ -257,8 +257,8 @@
            <http://contsem.unizar.es/def/sector-publico/pproc.html#managingDepartment> :Department1 ;
            <http://purl.org/procurement/public-contracts#contractingAuthority> :AyuntamientoMadrid ;
            :awardDate "17/12/2019"^^xsd:dateTime ;
-           :awardNum "M202000001" ;
-           :recordNum "EMT/2019/10109" ;
+           :awardNum "M202000001"^^xsd:string ;
+           :recordNum "EMT/2019/10109"^^xsd:string ;
            :registryReportDate "02/01/2020"^^xsd:dateTime .
 
 
@@ -266,7 +266,7 @@
 :Department1 rdf:type owl:NamedIndividual ,
                       <http://www.w3.org/ns/org#OrganizationalUnit> ;
              <https://www.w3.org/ns/org#subOrganizationOf> :AyuntamientoMadrid ;
-             <http://schema.org/name> "EMPRESA MUNICIPAL DE TRANSPORTES S.A." .
+             <http://schema.org/name> "EMPRESA MUNICIPAL DE TRANSPORTES S.A."^^xsd:string .
 
 
 ###  http://www.example.com/group09#EconomicConditions

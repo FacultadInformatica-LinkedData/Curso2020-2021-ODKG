@@ -12,7 +12,7 @@ mappings:
   department:
     sources:
       - [ContratosMenores2020-updated.csv~csv]
-    s: :/department/$(Section)
+    s: :/department/$(Section_IRI)
     po:
       - [a, org:OrganizationalUnit]
       - [schema:name, $(Section), xsd:string]
