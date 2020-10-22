@@ -21,11 +21,10 @@ mappings:
   contractingBody:
     sources:
       - [ContratosMenores2020-updated.csv~csv]
-    s: :/contractingbody/$(Contracting_Body)
+    s: :/department/$(Section_IRI)/contracting_body/$(Contracting_Body)
     po:
       - [a, org:Organization]
       - [schema:name, $(Contracting_Body), xsd:string]
-      - [:area, $(Contracting_Body_Area), xsd:string]
       - p: org:subOrganizationOf
         o:
           - mapping : department
@@ -74,7 +73,7 @@ mappings:
   contractObject:
     sources:
       - [ContratosMenores2020-updated.csv~csv]
-    s: :/contract/$(Recognition_Number)/contractObject
+    s: :/contract/$(Recognition_Number)/object
     po:
       - [a, pproc:ContractObject]
       - p: pproc:contractEconomicConditions
