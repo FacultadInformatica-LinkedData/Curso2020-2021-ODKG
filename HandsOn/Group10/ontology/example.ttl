@@ -1,0 +1,152 @@
+@prefix default:  <http://group10.com/> .
+@prefix xsp:     <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix protege:  <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix swrl:    <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb:   <http://www.w3.org/2003/11/swrlb#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+<http://group10.com>
+      a       owl:Ontology .
+
+default:Capitulo
+      a       owl:Class .
+
+default:Gastos
+      a       owl:Class .
+	  
+default:Programa
+      a       owl:Class .
+	  
+default:Centro
+      a       owl:Class .
+	  
+default:Seccion
+      a       owl:Class .
+	  
+default:Ingresos
+      a       owl:Class .
+
+default:creditoGastado
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Gastos ;
+      rdfs:range xsd:float .
+
+default:creditoDispuesto
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Gastos ;
+      rdfs:range xsd:float .
+	  
+default:recaudado
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Ingresos ;
+      rdfs:range xsd:float .
+	  
+default:id
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:string .
+	  
+default:previsionIngresos
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Ingresos ;
+      rdfs:range xsd:float .
+
+default:descripcion
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:string .
+
+default:tieneCapitulo
+      a       owl:ObjectProperty ;
+      rdfs:domain
+              [ owl:unionOf (default:Gastos default:Ingresos) ] ;
+      rdfs:range default:Capitulo .
+
+default:tienePrograma
+      a       owl:ObjectProperty ;
+      rdfs:domain default:Gastos ;
+      rdfs:range default:Programa .
+	  
+default:tieneGasto
+      a       owl:ObjectProperty ;
+      rdfs:domain default:Centro ;
+      rdfs:range default:Gastos .
+	  
+default:tieneCentro
+      a       owl:ObjectProperty ;
+      rdfs:domain
+              [ owl:unionOf (default:Gastos default:Ingresos) ] ;
+      rdfs:range default:Centro .
+
+default:tieneIngresos
+      a       owl:ObjectProperty ;
+      rdfs:domain default:Centro ;
+      rdfs:range default:Ingresos .
+
+default:tieneSeccion
+      a       owl:ObjectProperty ;
+      rdfs:domain default:Gastos ;
+      rdfs:range default:Seccion .
+
+<http://group10.com/Ingresos/IRPF>
+      a       default:Ingresos ;
+      default:descripcion "Impuesto sobre la Renta de las Personas Físicas"@es ;
+      default:id "10000"@es ;
+      default:previsionIngresos
+              "1.30870792E8"^^xsd:float ;
+      default:recaudado "1.54049248E8"^^xsd:float ;
+      default:tieneCapitulo
+              <http://group10.com/Capitulo/ImpuestosDirectos> ;
+      default:tieneCentro <http://group10.com/Centro/AyuntamientoMadrid> .
+
+<http://group10.com/Gastos/Canones>
+      a       default:Gastos ;
+      default:creditoDispuesto
+              "3630.0"^^xsd:float ;
+      default:creditoGastado
+              "3630.0"^^xsd:float ;
+      default:descripcion "Cánones"@es ;
+      default:id "20901"@es ;
+      default:tieneCapitulo
+              <http://group10.com/Capitulo/GastosEnBienesCorrientesYServicios> ;
+      default:tieneCentro <http://group10.com/Centro/AyuntamientoMadrid> ;
+      default:tienePrograma
+              <http://group10.com/Programa/PromocionPlanDerechosHumanos> ;
+      default:tieneSeccion
+              <http://group10.com/Seccion/PresidenciaPleno> .
+
+<http://group10.com/Seccion/PresidenciaPleno>
+      a       default:Seccion ;
+      default:descripcion "Presidencia del Pleno"@es ;
+      default:id "2"@es .
+
+<http://group10.com/Centro/AyuntamientoMadrid>
+      a       default:Centro ;
+      default:descripcion "Ayuntamiento de Madrid"@es ;
+      default:id "1"@es ;
+      default:tieneCapitulo
+              <http://group10.com/Capitulo/GastosEnBienesCorrientesYServicios> , <http://group10.com/Capitulo/ImpuestosDirectos> ;
+      default:tieneGasto <http://group10.com/Gastos/Canones> ;
+      default:tieneIngresos
+              <http://group10.com/Ingresos/IRPF> ;
+      default:tienePrograma
+              <http://group10.com/Programa/PromocionPlanDerechosHumanos> ;
+      default:tieneSeccion
+              <http://group10.com/Seccion/PresidenciaPleno> .
+
+<http://group10.com/Capitulo/GastosEnBienesCorrientesYServicios>
+      a       default:Capitulo ;
+      default:descripcion "Gastos en Bienes Corrientes y Servicios"@es ;
+      default:id "2"@es .
+
+<http://group10.com/Capitulo/ImpuestosDirectos>
+      a       default:Capitulo ;
+      default:descripcion "Impuestos directos"@es ;
+      default:id "10000"@es .
+
+<http://group10.com/Programa/PromocionPlanDerechosHumanos>
+      a       default:Programa ;
+      default:descripcion "Promoción del Plan de Derechos Humanos"@es ;
+      default:id "23270"@es .

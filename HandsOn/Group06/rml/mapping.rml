@@ -1,0 +1,197 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix map: <http://mapping.example.com/>.
+
+map:jc_0 rr:child "Organ de contractacio";
+    rr:parent "Organ de contractacio".
+map:jc_1 rr:child "Empresa adjudicataria";
+    rr:parent "Empresa adjudicataria".
+map:map_Company_0 rml:logicalSource map:source_2;
+    a rr:TriplesMap;
+    rdfs:label "Company";
+    rr:subjectMap map:s_2;
+    rr:predicateObjectMap map:pom_16, map:pom_17.
+map:map_Contract_0 rml:logicalSource map:source_0;
+    a rr:TriplesMap;
+    rdfs:label "Contract";
+    rr:subjectMap map:s_0;
+    rr:predicateObjectMap map:pom_0, map:pom_1, map:pom_2, map:pom_3, map:pom_4, map:pom_5, map:pom_6, map:pom_7, map:pom_8, map:pom_9, map:pom_10, map:pom_11, map:pom_12.
+map:map_PublicOrganization_0 rml:logicalSource map:source_1;
+    a rr:TriplesMap;
+    rdfs:label "PublicOrganization";
+    rr:subjectMap map:s_1;
+    rr:predicateObjectMap map:pom_13, map:pom_14, map:pom_15.
+map:om_0 a rr:ObjectMap;
+    rr:constant "http://publicprocurement.odkg.es/group06/ontology/ppg6#Contract";
+    rr:termType rr:IRI.
+map:om_1 a rr:ObjectMap;
+    rml:reference "Import de adjudicacio";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#double>.
+map:om_10 a rr:ObjectMap;
+    rml:reference "Tipus de contracte";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+map:om_11 a rr:ObjectMap;
+    rr:parentTriplesMap map:map_PublicOrganization_0;
+    rr:joinCondition map:jc_0.
+map:om_12 a rr:ObjectMap;
+    rr:parentTriplesMap map:map_Company_0;
+    rr:joinCondition map:jc_1.
+map:om_13 a rr:ObjectMap;
+    rr:constant "http://publicprocurement.odkg.es/group06/ontology/ppg6#PublicOrganization";
+    rr:termType rr:IRI.
+map:om_14 a rr:ObjectMap;
+    rml:reference "Ambit subjectiu";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+map:om_15 a rr:ObjectMap;
+    rml:reference "Organ de contractacio";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+map:om_16 a rr:ObjectMap;
+    rr:constant "http://publicprocurement.odkg.es/group06/ontology/ppg6#Company";
+    rr:termType rr:IRI.
+map:om_17 a rr:ObjectMap;
+    rml:reference "Empresa adjudicataria";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+map:om_2 a rr:ObjectMap;
+    rml:reference "Data de adjudicacio";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#dateTime>.
+map:om_3 a rr:ObjectMap;
+    rml:reference "Objecte del contracte";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+map:om_4 a rr:ObjectMap;
+    rml:reference "Codi CPV";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+map:om_5 a rr:ObjectMap;
+    rml:reference "Descripcio de la prestacio";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+map:om_6 a rr:ObjectMap;
+    rml:reference "Codi de expedient";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+map:om_7 a rr:ObjectMap;
+    rml:reference "Enllace a la publicacio";
+    rr:termType rr:IRI.
+map:om_8 a rr:ObjectMap;
+    rml:reference "Data de publicacio";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#dateTime>.
+map:om_9 a rr:ObjectMap;
+    rml:reference "Pressupost de licitacio";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#double>.
+map:pm_0 a rr:PredicateMap;
+    rr:constant rdf:type.
+map:pm_1 a rr:PredicateMap;
+    rr:constant <http://publicprocurement.odkg.es/group06/ontology/ppg6#awardAmount>.
+map:pm_10 a rr:PredicateMap;
+    rr:constant <http://publicprocurement.odkg.es/group06/ontology/ppg6#typeOfContract>.
+map:pm_11 a rr:PredicateMap;
+    rr:constant <http://publicprocurement.odkg.es/group06/ontology/ppg6#PublicOrganization>.
+map:pm_12 a rr:PredicateMap;
+    rr:constant <http://publicprocurement.odkg.es/group06/ontology/ppg6#Company>.
+map:pm_13 a rr:PredicateMap;
+    rr:constant rdf:type.
+map:pm_14 a rr:PredicateMap;
+    rr:constant <http://publicprocurement.odkg.es/group06/ontology/ppg6#scope>.
+map:pm_15 a rr:PredicateMap;
+    rr:constant <http://publicprocurement.odkg.es/group06/ontology/ppg6#name>.
+map:pm_16 a rr:PredicateMap;
+    rr:constant rdf:type.
+map:pm_17 a rr:PredicateMap;
+    rr:constant <http://publicprocurement.odkg.es/group06/ontology/ppg6#name>.
+map:pm_2 a rr:PredicateMap;
+    rr:constant <http://publicprocurement.odkg.es/group06/ontology/ppg6#awardDate>.
+map:pm_3 a rr:PredicateMap;
+    rr:constant <http://publicprocurement.odkg.es/group06/ontology/ppg6#contractObject>.
+map:pm_4 a rr:PredicateMap;
+    rr:constant <http://publicprocurement.odkg.es/group06/ontology/ppg6#cpv>.
+map:pm_5 a rr:PredicateMap;
+    rr:constant <http://publicprocurement.odkg.es/group06/ontology/ppg6#description>.
+map:pm_6 a rr:PredicateMap;
+    rr:constant <http://publicprocurement.odkg.es/group06/ontology/ppg6#expedientNumber>.
+map:pm_7 a rr:PredicateMap;
+    rr:constant <http://publicprocurement.odkg.es/group06/ontology/ppg6#linktoPublication>.
+map:pm_8 a rr:PredicateMap;
+    rr:constant <http://publicprocurement.odkg.es/group06/ontology/ppg6#publicationDate>.
+map:pm_9 a rr:PredicateMap;
+    rr:constant <http://publicprocurement.odkg.es/group06/ontology/ppg6#tenderBudget>.
+map:pom_0 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_0;
+    rr:objectMap map:om_0.
+map:pom_1 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_1;
+    rr:objectMap map:om_1.
+map:pom_10 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_10;
+    rr:objectMap map:om_10.
+map:pom_11 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_11;
+    rr:objectMap map:om_11.
+map:pom_12 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_12;
+    rr:objectMap map:om_12.
+map:pom_13 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_13;
+    rr:objectMap map:om_13.
+map:pom_14 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_14;
+    rr:objectMap map:om_14.
+map:pom_15 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_15;
+    rr:objectMap map:om_15.
+map:pom_16 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_16;
+    rr:objectMap map:om_16.
+map:pom_17 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_17;
+    rr:objectMap map:om_17.
+map:pom_2 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_2;
+    rr:objectMap map:om_2.
+map:pom_3 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_3;
+    rr:objectMap map:om_3.
+map:pom_4 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_4;
+    rr:objectMap map:om_4.
+map:pom_5 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_5;
+    rr:objectMap map:om_5.
+map:pom_6 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_6;
+    rr:objectMap map:om_6.
+map:pom_7 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_7;
+    rr:objectMap map:om_7.
+map:pom_8 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_8;
+    rr:objectMap map:om_8.
+map:pom_9 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_9;
+    rr:objectMap map:om_9.
+map:s_0 a rr:SubjectMap;
+    rr:template "http://publicprocurement.odkg.es/group06/resource/Contract/{id}".
+map:s_1 a rr:SubjectMap;
+    rr:template "http://publicprocurement.odkg.es/group06/resource/PublicOrganization/{Organ de contractacio}".
+map:s_2 a rr:SubjectMap;
+    rr:template "http://publicprocurement.odkg.es/group06/resource/Company/{Empresa adjudicataria}".
+map:source_0 a rml:LogicalSource;
+    rml:source "Public_procurement_catalonia_COVID-19-updated-reduced.csv";
+    rml:referenceFormulation ql:CSV.
+map:source_1 a rml:LogicalSource;
+    rml:source "Public_procurement_catalonia_COVID-19-updated-reduced.csv";
+    rml:referenceFormulation ql:CSV.
+map:source_2 a rml:LogicalSource;
+    rml:source "Public_procurement_catalonia_COVID-19-updated-reduced.csv";
+    rml:referenceFormulation ql:CSV.

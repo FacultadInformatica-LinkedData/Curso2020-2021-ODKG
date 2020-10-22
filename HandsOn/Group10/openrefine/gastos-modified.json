@@ -208,6 +208,60 @@
     "op": "core/column-removal",
     "columnName": "C_AUTORIZADO",
     "description": "Remove column C_AUTORIZADO"
+  }
+
+
+
+
+
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Centro",
+    "expression": "grel:\"00\"[0,4-row.index.length()]+row.index",
+    "onError": "set-to-blank",
+    "newColumnName": "Gastos",
+    "columnInsertIndex": 1,
+    "description": "Create column Gastos at index 1 based on column Centro using expression grel:\"0000\"[0,4-row.index.length()]+row.index"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Economico",
+    "description": "Remove column Economico"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "Gastos",
+      "Centro",
+      "Descripcion Centro",
+      "Seccion",
+      "Descripcion Seccion",
+      "Programa",
+      "Descripcion Programa",
+      "Capitulo",
+      "Descripcion Capitulo",
+      "Descripcion Economico",
+      "C_DISPUESTO",
+      "OBL_RECONOC"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Gastos",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Gastos using expression value.toNumber()"
   },
   {
     "op": "core/text-transform",
@@ -267,11 +321,25 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "Economico",
+    "columnName": "C_DISPUESTO",
     "expression": "value.toNumber()",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column Economico using expression value.toNumber()"
+    "description": "Text transform on cells in column C_DISPUESTO using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OBL_RECONOC",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column OBL_RECONOC using expression value.toNumber()"
   }
+
 ]
