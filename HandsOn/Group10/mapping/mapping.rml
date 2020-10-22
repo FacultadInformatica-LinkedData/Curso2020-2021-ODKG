@@ -1,0 +1,363 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#>.
+@prefix fno: <https://w3id.org/function/ontology#>.
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix : <http://mapping.example.com/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rev: <http://purl.org/stuff/rev#>.
+@prefix schema: <http://schema.org/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix vocab: <http://example.org#>.
+@prefix default: <http://group10.com/>.
+
+:rules_000 a void:Dataset;
+    void:exampleResource :map_triplesmap1_000.
+:map_triplesmap1_000 rml:logicalSource :source_000.
+:source_000 a rml:LogicalSource;
+    rml:source "gastos-updated.csv";
+    rml:referenceFormulation ql:CSV.
+:map_triplesmap1_000 a rr:TriplesMap;
+    rdfs:label "triplesmap1".
+:s_000 a rr:SubjectMap.
+:map_triplesmap1_000 rr:subjectMap :s_000.
+:s_000 rr:template "http://group10.com/centro \\{{Centro}\\}".
+:pom_000 a rr:PredicateObjectMap.
+:map_triplesmap1_000 rr:predicateObjectMap :pom_000.
+:pm_000 a rr:PredicateMap.
+:pom_000 rr:predicateMap :pm_000.
+:pm_000 rr:constant rdf:type.
+:pom_000 rr:objectMap :om_000.
+:om_000 a rr:ObjectMap;
+    rr:constant "default: Centro";
+    rr:termType rr:IRI.
+:pom_001 a rr:PredicateObjectMap.
+:map_triplesmap1_000 rr:predicateObjectMap :pom_001.
+:pm_001 a rr:PredicateMap.
+:pom_001 rr:predicateMap :pm_001.
+:pm_001 rr:constant default: descripcionCentro.
+:pom_001 rr:objectMap :om_001.
+:om_001 a rr:ObjectMap;
+    rml:reference "Descripcion Centro";
+    rr:termType rr:Literal.
+:pom_002 a rr:PredicateObjectMap.
+:map_triplesmap1_000 rr:predicateObjectMap :pom_002.
+:pm_002 a rr:PredicateMap.
+:pom_002 rr:predicateMap :pm_002.
+:pm_002 rr:constant default: tieneGasto.
+:pom_002 rr:objectMap :om_002.
+:om_002 a rr:ObjectMap;
+    rml:reference "Gastos";
+    rr:termType rr:Literal.
+:pom_003 a rr:PredicateObjectMap.
+:map_triplesmap1_000 rr:predicateObjectMap :pom_003.
+:pm_003 a rr:PredicateMap.
+:pom_003 rr:predicateMap :pm_003.
+:pm_003 rr:constant default:Centro.
+:pom_003 rr:objectMap :om_003.
+:rules_000 void:exampleResource :map_triplesmap2_000.
+:map_triplesmap2_000 rml:logicalSource :source_001.
+:source_001 a rml:LogicalSource;
+    rml:source "ingresos-updated.csv";
+    rml:referenceFormulation ql:CSV.
+:map_triplesmap2_000 a rr:TriplesMap;
+    rdfs:label "triplesmap2".
+:s_001 a rr:SubjectMap.
+:map_triplesmap2_000 rr:subjectMap :s_001.
+:s_001 rr:template "http://group10.com/centro \\{{Centro}\\}".
+:pom_004 a rr:PredicateObjectMap.
+:map_triplesmap2_000 rr:predicateObjectMap :pom_004.
+:pm_004 a rr:PredicateMap.
+:pom_004 rr:predicateMap :pm_004.
+:pm_004 rr:constant rdf:type.
+:pom_004 rr:objectMap :om_004.
+:om_004 a rr:ObjectMap;
+    rr:constant "default: Centro";
+    rr:termType rr:IRI.
+:pom_005 a rr:PredicateObjectMap.
+:map_triplesmap2_000 rr:predicateObjectMap :pom_005.
+:pm_005 a rr:PredicateMap.
+:pom_005 rr:predicateMap :pm_005.
+:pm_005 rr:constant default: descripcionCentro.
+:pom_005 rr:objectMap :om_005.
+:om_005 a rr:ObjectMap;
+    rml:reference "Descripcion Centro";
+    rr:termType rr:Literal.
+:pom_006 a rr:PredicateObjectMap.
+:map_triplesmap2_000 rr:predicateObjectMap :pom_006.
+:pm_006 a rr:PredicateMap.
+:pom_006 rr:predicateMap :pm_006.
+:pm_006 rr:constant default: tieneIngresos.
+:pom_006 rr:objectMap :om_006.
+:om_006 a rr:ObjectMap;
+    rml:reference "Ingresos";
+    rr:termType rr:Literal.
+:rules_000 void:exampleResource :map_triplesmap3_000.
+:map_triplesmap3_000 rml:logicalSource :source_002.
+:source_002 a rml:LogicalSource;
+    rml:source "gastos-updated.csv";
+    rml:referenceFormulation ql:CSV.
+:map_triplesmap3_000 a rr:TriplesMap;
+    rdfs:label "triplesmap3".
+:s_002 a rr:SubjectMap.
+:map_triplesmap3_000 rr:subjectMap :s_002.
+:s_002 rr:constant "http://group10.com/gastos".
+:pom_007 a rr:PredicateObjectMap.
+:map_triplesmap3_000 rr:predicateObjectMap :pom_007.
+:pm_007 a rr:PredicateMap.
+:pom_007 rr:predicateMap :pm_007.
+:pm_007 rr:constant rdf:type.
+:pom_007 rr:objectMap :om_007.
+:om_007 a rr:ObjectMap;
+    rr:constant "default: Gastos";
+    rr:termType rr:IRI.
+:pom_008 a rr:PredicateObjectMap.
+:map_triplesmap3_000 rr:predicateObjectMap :pom_008.
+:pm_008 a rr:PredicateMap.
+:pom_008 rr:predicateMap :pm_008.
+:pm_008 rr:constant default: creditoGastado.
+:pom_008 rr:objectMap :om_008.
+:om_008 a rr:ObjectMap;
+    rml:reference "OBL_RECONOC";
+    rr:termType rr:Literal.
+:pom_009 a rr:PredicateObjectMap.
+:map_triplesmap3_000 rr:predicateObjectMap :pom_009.
+:pm_009 a rr:PredicateMap.
+:pom_009 rr:predicateMap :pm_009.
+:pm_009 rr:constant default: tieneCapitulo.
+:pom_009 rr:objectMap :om_009.
+:om_009 a rr:ObjectMap;
+    rml:reference "Capitulo";
+    rr:termType rr:Literal.
+:pom_010 a rr:PredicateObjectMap.
+:map_triplesmap3_000 rr:predicateObjectMap :pom_010.
+:pm_010 a rr:PredicateMap.
+:pom_010 rr:predicateMap :pm_010.
+:pm_010 rr:constant default: creditoDispuesto.
+:pom_010 rr:objectMap :om_010.
+:om_010 a rr:ObjectMap;
+    rml:reference "C_DISPUESTO";
+    rr:termType rr:Literal.
+:pom_011 a rr:PredicateObjectMap.
+:map_triplesmap3_000 rr:predicateObjectMap :pom_011.
+:pm_011 a rr:PredicateMap.
+:pom_011 rr:predicateMap :pm_011.
+:pm_011 rr:constant default: tienePrograma.
+:pom_011 rr:objectMap :om_011.
+:om_011 a rr:ObjectMap;
+    rml:reference "Programa";
+    rr:termType rr:Literal.
+:pom_012 a rr:PredicateObjectMap.
+:map_triplesmap3_000 rr:predicateObjectMap :pom_012.
+:pm_012 a rr:PredicateMap.
+:pom_012 rr:predicateMap :pm_012.
+:pm_012 rr:constant default: tieneCentro.
+:pom_012 rr:objectMap :om_012.
+:om_012 a rr:ObjectMap;
+    rml:reference "Centro";
+    rr:termType rr:Literal.
+:pom_013 a rr:PredicateObjectMap.
+:map_triplesmap3_000 rr:predicateObjectMap :pom_013.
+:pm_013 a rr:PredicateMap.
+:pom_013 rr:predicateMap :pm_013.
+:pm_013 rr:constant default: tieneSeccion.
+:pom_013 rr:objectMap :om_013.
+:om_013 a rr:ObjectMap;
+    rml:reference "Seccion";
+    rr:termType rr:Literal.
+:pom_014 a rr:PredicateObjectMap.
+:map_triplesmap3_000 rr:predicateObjectMap :pom_014.
+:pm_014 a rr:PredicateMap.
+:pom_014 rr:predicateMap :pm_014.
+:pm_014 rr:constant default: descripcionEconomico.
+:pom_014 rr:objectMap :om_014.
+:om_014 a rr:ObjectMap;
+    rml:reference "Descripcion Economico";
+    rr:termType rr:Literal.
+:rules_000 void:exampleResource :map_triplesmap4_000.
+:map_triplesmap4_000 rml:logicalSource :source_003.
+:source_003 a rml:LogicalSource;
+    rml:source "gastos-updated.csv";
+    rml:referenceFormulation ql:CSV.
+:map_triplesmap4_000 a rr:TriplesMap;
+    rdfs:label "triplesmap4".
+:s_003 a rr:SubjectMap.
+:map_triplesmap4_000 rr:subjectMap :s_003.
+:s_003 rr:template "http://group10.com/capitulo \\{{Capitulo}\\}".
+:pom_015 a rr:PredicateObjectMap.
+:map_triplesmap4_000 rr:predicateObjectMap :pom_015.
+:pm_015 a rr:PredicateMap.
+:pom_015 rr:predicateMap :pm_015.
+:pm_015 rr:constant rdf:type.
+:pom_015 rr:objectMap :om_015.
+:om_015 a rr:ObjectMap;
+    rr:constant "default: Capitulo";
+    rr:termType rr:IRI.
+:pom_016 a rr:PredicateObjectMap.
+:map_triplesmap4_000 rr:predicateObjectMap :pom_016.
+:pm_016 a rr:PredicateMap.
+:pom_016 rr:predicateMap :pm_016.
+:pm_016 rr:constant default: descripcionCapitulo.
+:pom_016 rr:objectMap :om_016.
+:om_016 a rr:ObjectMap;
+    rml:reference "Descripcion Capitulo";
+    rr:termType rr:Literal.
+:rules_000 void:exampleResource :map_triplesmap5_000.
+:map_triplesmap5_000 rml:logicalSource :source_004.
+:source_004 a rml:LogicalSource;
+    rml:source "gastos-updated.csv";
+    rml:referenceFormulation ql:CSV.
+:map_triplesmap5_000 a rr:TriplesMap;
+    rdfs:label "triplesmap5".
+:s_004 a rr:SubjectMap.
+:map_triplesmap5_000 rr:subjectMap :s_004.
+:s_004 rr:template "http://group10.com/programa \\{{Programa}\\}".
+:pom_017 a rr:PredicateObjectMap.
+:map_triplesmap5_000 rr:predicateObjectMap :pom_017.
+:pm_017 a rr:PredicateMap.
+:pom_017 rr:predicateMap :pm_017.
+:pm_017 rr:constant rdf:type.
+:pom_017 rr:objectMap :om_017.
+:om_017 a rr:ObjectMap;
+    rr:constant "default: Programa";
+    rr:termType rr:IRI.
+:pom_018 a rr:PredicateObjectMap.
+:map_triplesmap5_000 rr:predicateObjectMap :pom_018.
+:pm_018 a rr:PredicateMap.
+:pom_018 rr:predicateMap :pm_018.
+:pm_018 rr:constant default: descripcionPrograma.
+:pom_018 rr:objectMap :om_018.
+:om_018 a rr:ObjectMap;
+    rml:reference "Descripcion Programa";
+    rr:termType rr:Literal.
+:rules_000 void:exampleResource :map_triplesmap6_000.
+:map_triplesmap6_000 rml:logicalSource :source_005.
+:source_005 a rml:LogicalSource;
+    rml:source "gastos-updated.csv";
+    rml:referenceFormulation ql:CSV.
+:map_triplesmap6_000 a rr:TriplesMap;
+    rdfs:label "triplesmap6".
+:s_005 a rr:SubjectMap.
+:map_triplesmap6_000 rr:subjectMap :s_005.
+:s_005 rr:template "http://group10.com/seccion \\{{Seccion}\\}".
+:pom_019 a rr:PredicateObjectMap.
+:map_triplesmap6_000 rr:predicateObjectMap :pom_019.
+:pm_019 a rr:PredicateMap.
+:pom_019 rr:predicateMap :pm_019.
+:pm_019 rr:constant rdf:type.
+:pom_019 rr:objectMap :om_019.
+:om_019 a rr:ObjectMap;
+    rr:constant "default: Seccion";
+    rr:termType rr:IRI.
+:pom_020 a rr:PredicateObjectMap.
+:map_triplesmap6_000 rr:predicateObjectMap :pom_020.
+:pm_020 a rr:PredicateMap.
+:pom_020 rr:predicateMap :pm_020.
+:pm_020 rr:constant default: descripcionSeccion.
+:pom_020 rr:objectMap :om_020.
+:om_020 a rr:ObjectMap;
+    rml:reference "Descripcion Seccion";
+    rr:termType rr:Literal.
+:rules_000 void:exampleResource :map_triplesmap7_000.
+:map_triplesmap7_000 rml:logicalSource :source_006.
+:source_006 a rml:LogicalSource;
+    rml:source "ingresos-updated.csv";
+    rml:referenceFormulation ql:CSV.
+:map_triplesmap7_000 a rr:TriplesMap;
+    rdfs:label "triplesmap7".
+:s_006 a rr:SubjectMap.
+:map_triplesmap7_000 rr:subjectMap :s_006.
+:s_006 rr:template "http://group10.com/ingresos \\{{Ingresos}\\}".
+:pom_021 a rr:PredicateObjectMap.
+:map_triplesmap7_000 rr:predicateObjectMap :pom_021.
+:pm_021 a rr:PredicateMap.
+:pom_021 rr:predicateMap :pm_021.
+:pm_021 rr:constant rdf:type.
+:pom_021 rr:objectMap :om_021.
+:om_021 a rr:ObjectMap;
+    rr:constant "default: Ingresos";
+    rr:termType rr:IRI.
+:pom_022 a rr:PredicateObjectMap.
+:map_triplesmap7_000 rr:predicateObjectMap :pom_022.
+:pm_022 a rr:PredicateMap.
+:pom_022 rr:predicateMap :pm_022.
+:pm_022 rr:constant default: tieneCapitulo.
+:pom_022 rr:objectMap :om_022.
+:om_022 a rr:ObjectMap;
+    rml:reference "Capitulo";
+    rr:termType rr:Literal.
+:pom_023 a rr:PredicateObjectMap.
+:map_triplesmap7_000 rr:predicateObjectMap :pom_023.
+:pm_023 a rr:PredicateMap.
+:pom_023 rr:predicateMap :pm_023.
+:pm_023 rr:constant default: tieneCentro.
+:pom_023 rr:objectMap :om_023.
+:om_023 a rr:ObjectMap;
+    rml:reference "Centro";
+    rr:termType rr:Literal.
+:pom_024 a rr:PredicateObjectMap.
+:map_triplesmap7_000 rr:predicateObjectMap :pom_024.
+:pm_024 a rr:PredicateMap.
+:pom_024 rr:predicateMap :pm_024.
+:pm_024 rr:constant default: recaudado.
+:pom_024 rr:objectMap :om_024.
+:om_024 a rr:ObjectMap;
+    rml:reference "RECAUDADO";
+    rr:termType rr:Literal.
+:pom_025 a rr:PredicateObjectMap.
+:map_triplesmap7_000 rr:predicateObjectMap :pom_025.
+:pm_025 a rr:PredicateMap.
+:pom_025 rr:predicateMap :pm_025.
+:pm_025 rr:constant default: previsionIngresos.
+:pom_025 rr:objectMap :om_025.
+:om_025 a rr:ObjectMap;
+    rml:reference "PREV.DEFINITIV";
+    rr:termType rr:Literal.
+:pom_026 a rr:PredicateObjectMap.
+:map_triplesmap7_000 rr:predicateObjectMap :pom_026.
+:pm_026 a rr:PredicateMap.
+:pom_026 rr:predicateMap :pm_026.
+:pm_026 rr:constant default: descripcionIngresos.
+:pom_026 rr:objectMap :om_026.
+:om_026 a rr:ObjectMap;
+    rml:reference "Descripcion Economico";
+    rr:termType rr:Literal.
+:rules_000 void:exampleResource :map_triplesmap8_000.
+:map_triplesmap8_000 rml:logicalSource :source_007.
+:source_007 a rml:LogicalSource;
+    rml:source "ingresos-updated.csv";
+    rml:referenceFormulation ql:CSV.
+:map_triplesmap8_000 a rr:TriplesMap;
+    rdfs:label "triplesmap8".
+:s_007 a rr:SubjectMap.
+:map_triplesmap8_000 rr:subjectMap :s_007.
+:s_007 rr:constant "http://group10.com/capitulo".
+:pom_027 a rr:PredicateObjectMap.
+:map_triplesmap8_000 rr:predicateObjectMap :pom_027.
+:pm_027 a rr:PredicateMap.
+:pom_027 rr:predicateMap :pm_027.
+:pm_027 rr:constant rdf:type.
+:pom_027 rr:objectMap :om_027.
+:om_027 a rr:ObjectMap;
+    rr:constant "default: Capitulo";
+    rr:termType rr:IRI.
+:pom_028 a rr:PredicateObjectMap.
+:map_triplesmap8_000 rr:predicateObjectMap :pom_028.
+:pm_028 a rr:PredicateMap.
+:pom_028 rr:predicateMap :pm_028.
+:pm_028 rr:constant default: descripcionCapitulo.
+:pom_028 rr:objectMap :om_028.
+:om_028 a rr:ObjectMap;
+    rml:reference "Descripcion Capitulo";
+    rr:termType rr:Literal.
+:om_003 a rr:ObjectMap;
+    rr:parentTriplesMap :map_triplesmap2_000;
+    rr:joinCondition :jc_000.
+:jc_000 rr:child "Centro";
+    rr:parent "Centro".

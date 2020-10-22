@@ -76,5 +76,18 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column fecha using expression value.toDate()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "ccaa_iso",
+    "expression": "join ([coalesce(cells['ccaa_iso'].value,''),coalesce(cells['fecha'].value,'')],'_')",
+    "onError": "keep-original",
+    "newColumnName": "CovidStatusID",
+    "columnInsertIndex": 1,
+    "description": "Create column CovidStatusID at index 1 based on column ccaa_iso using expression join ([coalesce(cells['ccaa_iso'].value,''),coalesce(cells['fecha'].value,'')],'_')"
   }
 ]
