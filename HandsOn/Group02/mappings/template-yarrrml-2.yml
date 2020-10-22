@@ -35,14 +35,14 @@ mappings:
       - [vocab:isDeal,$(Acuerdo Marco),xsd:string]
       - [vocab:isZeroCost,$(Ingreso/Coste Cero),xsd:string]
       - [vocab:hasComments,$(Observaciones),xsd:string]
-      - p: vocab:Organismo
+      - p: vocab:hasOrganismoContratante
         o:
           - mapping: juntasmap
             condition:
               function: equal
               parameters:
                 - [str1, $(Organismo)]
-                - [str2, $(JUNTA)]
+                - [str2, $(NOMBRE)]
 
   organismosmap:
     sources:
@@ -63,10 +63,10 @@ mappings:
   juntasmap:
     sources:
       - [juntas_distrito_ayuto_madrid-updated.csv~csv]
-    s: http://MadridPublicContracts/ontology/$(PK)
+    s: http://MadridPublicContracts/ontology/$(NOMBRE)
     po:
       - [rdf:type, vocab:Publicorg]
-      - [vocab:nombre,$(JUNTA),xsd:string]
+      - [vocab:nombre,$(PK),xsd:string]
       - [vocab:descripcion,$(DESCRIPCION-ENTIDAD),xsd:string]
       - [vocab:horario,$(HORARIO),xsd:string]
       - [vocab:equipamiento,$(EQUIPAMIENTO),xsd:string]
