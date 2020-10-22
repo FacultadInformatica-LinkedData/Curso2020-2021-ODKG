@@ -207,5 +207,57 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column CURRENCY using expression grel:value.replace('€', 'EUR')"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CURRENCY",
+    "expression": "grel:true",
+    "onError": "set-to-blank",
+    "newColumnName": "TAX INCLUDED",
+    "columnInsertIndex": 11,
+    "description": "Create column TAX INCLUDED at index 11 based on column CURRENCY using expression grel:true"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "FECHA APROBACION",
+    "expression": "grel:value.toString('yyyy-MM-dd')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column FECHA APROBACION using expression grel:value.toString('yyyy-MM-dd')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "FCH.COMUNIC.REG",
+    "expression": "grel:value.toDate().toString('yyyy-MM-dd')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column FCH.COMUNIC.REG using expression grel:value.toDate().toString('yyyy-MM-dd')"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "TIPO DE CONTRATO",
+    "expression": "grel:if(value == 'SUMINISTRO', 'http://contsem.unizar.es/def/sector-publico/pproc#SuppliesContract',\n  if(value == 'SERVICIOS', 'http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract',\n  if(value == 'OBRAS', 'http://contsem.unizar.es/def/sector-publico/pproc#WorksContract',\n  if(value == 'OTROS', 'http://contsem.unizar.es/def/sector-publico/pproc#PublicContract',\nnull))))",
+    "onError": "store-error",
+    "newColumnName": "CONTRACT_TYPE",
+    "columnInsertIndex": 7,
+    "description": "Create column CONTRACT_TYPE at index 7 based on column TIPO DE CONTRATO using expression grel:if(value == 'SUMINISTRO', 'http://contsem.unizar.es/def/sector-publico/pproc#SuppliesContract',\n  if(value == 'SERVICIOS', 'http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract',\n  if(value == 'OBRAS', 'http://contsem.unizar.es/def/sector-publico/pproc#WorksContract',\n  if(value == 'OTROS', 'http://contsem.unizar.es/def/sector-publico/pproc#PublicContract',\nnull))))"
   }
 ]
