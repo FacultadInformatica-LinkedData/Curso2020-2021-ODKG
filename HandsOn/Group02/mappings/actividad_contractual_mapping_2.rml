@@ -6,7 +6,7 @@
 @prefix map: <http://mapping.example.com/>.
 
 map:jc_0 rr:child "Organismo";
-    rr:parent "JUNTA".
+    rr:parent "NOMBRE".
 map:map_adjudicatariosmap_0 rml:logicalSource map:source_2;
     a rr:TriplesMap;
     rdfs:label "adjudicatariosmap";
@@ -91,7 +91,7 @@ map:om_23 a rr:ObjectMap;
     rr:constant "http://example.org#Publicorg";
     rr:termType rr:Literal.
 map:om_24 a rr:ObjectMap;
-    rml:reference "JUNTA";
+    rml:reference "PK";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_25 a rr:ObjectMap;
@@ -215,7 +215,7 @@ map:pm_16 a rr:PredicateMap;
 map:pm_17 a rr:PredicateMap;
     rr:constant <http://example.org#hasComments>.
 map:pm_18 a rr:PredicateMap;
-    rr:constant <http://example.org#Organismo>.
+    rr:constant <http://example.org#hasOrganismoContratante>.
 map:pm_19 a rr:PredicateMap;
     rr:constant rdf:type.
 map:pm_2 a rr:PredicateMap;
@@ -416,7 +416,7 @@ map:s_1 a rr:SubjectMap;
 map:s_2 a rr:SubjectMap;
     rr:template "http://MadridPublicContracts/ontology/{Nombre/Razon Social}".
 map:s_3 a rr:SubjectMap;
-    rr:template "http://MadridPublicContracts/ontology/{PK}".
+    rr:template "http://MadridPublicContracts/ontology/{NOMBRE}".
 map:source_0 a rml:LogicalSource;
     rml:source "actividad_contractual_ayto_madrid_2020-updated.csv";
     rml:referenceFormulation ql:CSV.
@@ -429,6 +429,7 @@ map:source_2 a rml:LogicalSource;
 map:source_3 a rml:LogicalSource;
     rml:source "juntas_distrito_ayuto_madrid-updated.csv";
     rml:referenceFormulation ql:CSV.
+
 
 
 
