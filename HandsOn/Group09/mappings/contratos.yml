@@ -21,7 +21,7 @@ mappings:
   contractingBody:
     sources:
       - [ContratosMenores2020-updated.csv~csv]
-    s: :/department/$(Section_IRI)/contracting_body/$(Contracting_Body)
+    s: :/department/$(Section_IRI)/contracting_body/$(Contracting_Body_IRI)
     po:
       - [a, org:Organization]
       - [schema:name, $(Contracting_Body), xsd:string]
