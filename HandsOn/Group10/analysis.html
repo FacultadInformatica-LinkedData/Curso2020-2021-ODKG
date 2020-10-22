@@ -46,20 +46,20 @@ The access to the web page and the use of the information it contains are respon
 <h1>Resource naming strategy</h1>
 <p>First we define the classes of Gastos and Ingresos which correspond to the two datasets selected. We add two columns (one in each csv) Ingresos and Gastos. The column Centro is related to both classes with the property "descripcionCentro" and another property related to the new columns. <br>
 The class Gastos has the following properties (the string after the $ is the name of the column): <br>
-- creditoGastado ,$(OBL_RECONOC) <br>
-- tieneCapitulo ,$(Capitulo) <br>
-- creditoDispuesto ,$(C_DISPUESTO) <br>
-- tienePrograma ,$(Programa) <br>  
-- tieneCentro ,$(Centro) <br>
-- tieneSeccion ,$(Seccion) <br>
-- descripcionEconomico ,$(Descripcion Economico) <br>
+- creditoGastado, $(OBL_RECONOC) <br>
+- tieneCapitulo, $(Capitulo) <br>
+- creditoDispuesto, $(C_DISPUESTO) <br>
+- tienePrograma, $(Programa) <br>  
+- tieneCentro, $(Centro) <br>
+- tieneSeccion, $(Seccion) <br>
+- descripcionEconomico, $(Descripcion Economico) <br>
 <br>
 The class Ingresos has the following properties (the string after the $ is the name of the column): <br>
-- tieneCapitulo ,$(Capitulo) <br>
-- tieneCentro ,$(Centro)] <br>
-- recaudado ,$(RECAUDADO) <br>
-- previsionIngresos ,$(PREV.DEFINITIV) <br>
-- descripcionIngresos ,$(Descripcion Economico) <br>
+- tieneCapitulo, $(Capitulo) <br>
+- tieneCentro, $(Centro)] <br>
+- recaudado, $(RECAUDADO) <br>
+- previsionIngresos, $(PREV.DEFINITIV) <br>
+- descripcionIngresos, $(Descripcion Economico) <br>
 <br>
 The classes Capitulo, Seccion and Programa have a description property which corresponds to a column named "Descripcion ...". Eg "descripcionCapitulo" is the property and the column is "Descripcion Capitulo". The columns that are not used will be dropped. <br>
 <br>
