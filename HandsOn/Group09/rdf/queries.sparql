@@ -1,0 +1,35 @@
+PREFIX : http://www.example.com/group09# .
+PREFIX owl: http://www.w3.org/2002/07/owl# .
+PREFIX rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# .
+PREFIX xml: http://www.w3.org/XML/1998/namespace .
+PREFIX xsd: http://www.w3.org/2001/XMLSchema# .
+PREFIX rdfs: http://www.w3.org/2000/01/rdf-schema# .
+PREFIX org: http://www.w3.org/ns/org# .
+PREFIX pproc: http://contsem.unizar.es/def/sector-publico/pproc# .
+PREFIX pc: http://purl.org/procurement/public-contracts# .
+PREFIX schema: http://schema.org/name .
+
+# Select all contracts from company identifier "A82850611"
+SELECT ?y
+WHERE 
+{
+	?x org:identifier "A82850611" .
+	?x pc:supllier ?y
+}
+
+# Select the contract object associated with a given recognition number
+SELECT ?object
+WHERE{
+	?x :awardNum "M202000018" .
+	?x pproc:contractObject ?y .
+	?y :objectOfcontract ?object
+}
+
+# Select all the contracts whose section is madrid destino
+SELECT ?y
+WHERE 
+{
+	?x a org:organizationalUnit .
+	?x schema:name "MADRID DESTINO, CULTURA, TURISMO Y NEGOCIO, S.A." .
+	?y pproc:managingDepartment ?x
+}

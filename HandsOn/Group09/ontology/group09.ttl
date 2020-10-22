@@ -4,9 +4,9 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.example.com/group09#> .
+@base <http://www.example.com/group09> .
 
-<http://www.example.com/group09#> rdf:type owl:Ontology .
+<http://www.example.com/group09> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
@@ -45,7 +45,7 @@
 ###  http://contsem.unizar.es/def/sector-publico/pproc.html#managingDepartment
 <http://contsem.unizar.es/def/sector-publico/pproc.html#managingDepartment> rdf:type owl:ObjectProperty ;
                                                                             rdfs:domain <http://contsem.unizar.es/def/sector-publico/pproc#Contract> ;
-                                                                            rdfs:range <http://www.w3.org/ns/org#Organization> .
+                                                                            rdfs:range <http://www.w3.org/ns/org#OrganizationalUnit> .
 
 
 ###  http://purl.org/procurement/public-contracts#contractingAuthority
@@ -73,7 +73,8 @@
 ###  http://contsem.unizar.es/def/sector-publico/pproc#estimatedDuration
 <http://contsem.unizar.es/def/sector-publico/pproc#estimatedDuration> rdf:type owl:DatatypeProperty ;
                                                                       rdfs:domain <http://contsem.unizar.es/def/sector-publico/pproc#ContractTemporalConditions> ;
-                                                                      rdfs:range xsd:float .
+                                                                      rdfs:range xsd:float ;
+                                                                      rdfs:comment "Plazo"@es .
 
 
 ###  http://purl.org/goodrelations/v1#hasCurrency
@@ -98,12 +99,6 @@
 <http://schema.org/name> rdf:type owl:DatatypeProperty ;
                          rdfs:domain <http://www.w3.org/ns/org#Organization> ;
                          rdfs:range xsd:string .
-
-
-###  http://www.example.com/group09#area
-:area rdf:type owl:DatatypeProperty ;
-      rdfs:domain <http://www.w3.org/ns/org#Organization> ;
-      rdfs:range xsd:string .
 
 
 ###  http://www.example.com/group09#awardDate
