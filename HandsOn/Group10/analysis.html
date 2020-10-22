@@ -44,7 +44,7 @@ Feature 11 RECAUDADO: This value has a range of -426841.22 to 1420716481</p>
 The access to the web page and the use of the information it contains are responsable of the user. The government of Madrid is not responsible about any damage that could come from this facts.
 </p>
 <h1>Resource naming strategy</h1>
-<p>First we define the classes of Gastos and Ingresos which correspond to the two datasets selected. The column Centro is related to both classes with the property "descripcionCentro" <br>
+<p>First we define the classes of Gastos and Ingresos which correspond to the two datasets selected. We add two columns (one in each csv) Ingresos and Gastos. The column Centro is related to both classes with the property "descripcionCentro" and another property related to the new columns. <br>
 The class Gastos has the following properties (the string after the $ is the name of the column): <br>
 - creditoGastado ,$(OBL_RECONOC) <br>
 - tieneCapitulo ,$(Capitulo) <br>
@@ -61,7 +61,7 @@ The class Ingresos has the following properties (the string after the $ is the n
 - previsionIngresos ,$(PREV.DEFINITIV) <br>
 - descripcionIngresos ,$(Descripcion Economico) <br>
 <br>
-The classes Capitulo, Seccion and Programa have a description property, eg "descripcionCapitulo" <br>
+The classes Capitulo, Seccion and Programa have a description property which corresponds to a column named "Descripcion ...". Eg "descripcionCapitulo" is the property and the column is "Descripcion Capitulo". The columns that are not used will be dropped. <br>
 <br>
 The domain created is: http://group10.com/  with a slash URI <br>
 <br>
@@ -74,6 +74,12 @@ Another example URI: http://group10.com/recaudado <br>
 - http://        -> Is the hypertext transfer protocol <br>
 - group10.com/   -> Is the domain using a slash URI <br>
 - recaudado      -> Is an example of a Property <br>
+<br>
+Another example URI: http://group10.com/Centro/AyuntamientoMadrid <br>
+- http://              -> Is the hypertext transfer protocol <br>
+- group10.com/         -> Is the domain using a slash URI <br>
+- Centro               -> Is an example of a Class<br>
+- AyuntamientoMadrid   -> Is an example of an Individual<br>
 </p>
 </body>
 </html>
