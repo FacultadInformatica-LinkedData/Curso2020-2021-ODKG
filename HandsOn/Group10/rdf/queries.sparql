@@ -1,0 +1,56 @@
+PREFIX default: <http://group10.com/>
+
+
+#See all classes
+
+SELECT DISTINCT ?y
+WHERE
+{
+  ?x rdf:type ?y
+}
+
+
+
+#Count classes
+
+SELECT COUNT(DISTINCT ?z)
+WHERE
+{
+  ?x rdf:type ?z
+}
+
+
+
+#Instances that belong to certain class
+
+SELECT DISTINCT ?x
+WHERE
+{
+  ?x rdf:type <CLASS NAME>
+}
+
+
+
+#Properties and values of a certain class (could add ?x in selection)
+
+SELECT DISTINCT ?prop ?y
+ 
+WHERE {
+ ?x rdf:type <CLASS NAME>. 
+ ?x ?prop ?y
+ } 
+
+
+
+#Example of values
+
+SELECT DISTINCT ?x ?y
+WHERE
+{
+  ?x rdf:type <INGRESOS>.
+  ?x <PREVISIONINGRESOS> ?y
+  FILTER (?y > QUANTITIE)
+
+}
+
+
