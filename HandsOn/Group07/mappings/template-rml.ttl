@@ -14,7 +14,7 @@
   ];
 
   rr:subjectMap [
-    rr:template "http://GovernmentProcurementCard.es/{Transaction}";
+    rr:template "http://GovernmentProcurementCard.es/trans/{Transaction}";
     rr:termType rr:IRI; 
     rr:class vocab:trans;
   ];
@@ -50,7 +50,7 @@
   ];
 
   rr:subjectMap [
-    rr:template "http://GovernmentProcurementCard.es/{MerchantName}";
+    rr:template "http://GovernmentProcurementCard.es/seller/{MerchantName}";
     rr:class vocab:seller
   ];
     

@@ -14,8 +14,8 @@ prefixes:
 mappings:
   triplesmap1:
     sources:
-      - [C:\Users\delfi\Documents\MCD\ODKG\gitODKG\HandsOn\Group07\csv\moj-gpc-transactions-march-2015-updated.csv~csv]
-    s: http://GovernmentProcurementCard.es/$(Transaction)
+      - [moj-gpc-transactions-march-2015-updated.csv~csv]
+    s: http://GovernmentProcurementCard.es/trans/$(Transaction)
     po:
       - [a, vocab:trans]
       - [vocab:hasTransactionDate, $(PostingDate),xsd:dateTime]
@@ -25,7 +25,7 @@ mappings:
   triplesmap2:
     sources:
       - [C:\Users\delfi\Documents\MCD\ODKG\gitODKG\HandsOn\Group07\csv\moj-gpc-transactions-march-2015-updated.csv~csv]
-    s: http://GovernmentProcurementCard.es/$(MerchantName)
+    s: http://GovernmentProcurementCard.es/seller/$(MerchantName)
     po:
       - [a, vocab:seller]
       - p: vocab:makesOffer
