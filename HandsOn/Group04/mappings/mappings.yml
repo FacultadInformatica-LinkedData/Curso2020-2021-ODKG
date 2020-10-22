@@ -12,211 +12,86 @@ prefixes:
     rml: http://semweb.mmlab.be/ns/rml#
     ql: http://semweb.mmlab.be/ns/ql#
     rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
-
-    pp: http://exercise.publicprocurement.es/about/ontology/group04pp/
+    pp: http://exercise.publicprocurement.es/about/ontology/group04pp#
     
-
-
 mappings:
-  triplesmap1: 
+  Department:
     sources:
       - [purchase-order-2014-2015-updated.csv~csv]
-    s: pp:AcquisitionMethod/$(Acquisition Method)
-    po:
-      - [a, pp:AcquisitionMethod]
-      - [pp:hasAcquisitionMethod, $(Acquisition Method)]
-      
-        
-        
-  triplesmap2:
-    sources:
-      - [purchase-order-2014-2015-updated.csv~csv]
-    s: pp:AcquisitionType/$(Acquisition Type)
-    po:
-      - [a, pp:AcquisitionType]
-      - [pp:hasAcquisitionType, $(Acquisition Type)]
-      
-    
-  triplesmap3:
-    sources:
-      - [purchase-order-2014-2015-updated.csv~csv]
-    s: pp:Department/$(Department)
+    s: pp:Department/$(Department Name)
     po:
       - [a, pp:Department]
-      - [pp:hasDepartmentName, $(Department),xsd:string]
-
-        
-  triplesmap4:
-    sources:
-        - [purchase-order-2014-2015-updated.csv~csv]
-    s: pp:Family/$(Family)
-    po:
-      - [a, pp:Family]
-      - [pp:hasFamilyTitle, $(Family Title),xsd:string]
-      - p: pp:hasSegment
-        o:
-          - mapping: triplesmap8
-            condition:
-                function: equal
-                parameters:
-                    - [str1, $(Segment)]
-                    - [str2, $(Segment)]
-        
-    
-  triplesmap5:
+      - [pp:hasDepartmentName, $(Department Name),xsd:string]
+  Item:
     sources:
       - [purchase-order-2014-2015-updated.csv~csv]
     s: pp:Item/$(Item Name)
     po:
       - [a, pp:Item]
-
       - [pp:hasCommodityTitle , $(Commodity Title),xsd:string]
       - [pp:hasDescription, $(Item Description),xsd:string]
       - [pp:hasItemName, $(Item Name),xsd:string]
       - [pp:hasUNSPC, $(Normalized UNSPSC),xsd:long]
-      - [pp:hasIdentifier, $(Identifier2),rdf:PlainLiteral]
-      - p: pp:hasItemClass
-        o:
-          - mapping: triplesmap6
-            condition:
-                function: equal
-                parameters:
-                    - [str1, $(Class)]
-                    - [str2, $(Class)]
-        
-    
-  triplesmap6:
-    sources:
-      - [purchase-order-2014-2015-updated.csv~csv]
-    s: pp:ItemClass/$(Class)
-    po:
-      - [a, pp:ItemClass]
-      - [pp:hasItemClassTitle, $(Class Title),xsd:string]
-      - p: pp:hasFamily
-        o:
-          - mapping: triplesmap4
-            condition:
-                function: equal
-                parameters:
-                    - [str1, $(Family)]
-                    - [str2, $(Family)]
-        
-  triplesmap7:
+      - [pp:hasIdentifier, $(Identifier2),xsd:string]
+      - [pp:hasClassNumber, $(Class),xsd:long]
+      - [pp:hasClassTitle, $(Class Title),xsd:string]
+      - [pp:hasFamilyNumber, $(Family),xsd:long]
+      - [pp:hasFamilyTitle, $(Family Title),xsd:string]
+      - [pp:hasSegmentNumber, $(Segment),xsd:long]
+      - [pp:hasSegmentTitle, $(Segment Title),xsd:string]
+  Purchase:
     sources:
       - [purchase-order-2014-2015-updated.csv~csv]
     s: pp:Purchase/$(Purchase Order Number)
     po:
       - [a, pp:Purchase]
       - [pp:hasCalCards, $(CalCard),xsd:boolean]
-      - [pp:hasCreationDate, $(Creation Date),rdf:PlainLiteral]
-      - [pp:hasFiscalYear, $(Fiscal Year),rdf:PlainLiteral]
-      - [pp:hasPurchaseDate, $(Purchase Date),rdf:PlainLiteral]
-      - [pp:hasLPAnumber, $(LPA Number),rdf:PlainLiteral]
-      - [pp:hasOrderNumber, $(Purchase Order Number),xsd:long]
-      - [pp:hasQuantity, $(Quantity),rdf:PlainLiteral]
-      - [pp:hasRecquisitionNumber, $(Requisition Number),rdf:PlainLiteral]
+      - [pp:hasCreationDate, $(Creation Date),xsd:dataTime]
+      - [pp:hasFiscalYear, $(Fiscal Year),xsd:string]
+      - [pp:hasPurchaseDate, $(Purchase Date),xsd:dataTime]
+      - [pp:hasLPAnumber, $(LPA Number),xsd:string]
+      - [pp:hasOrderNumber, $(Purchase Order Number),xsd:string]
+      - [pp:hasQuantity, $(Quantity),xsd:long]
       - [pp:hasUnitPrice , $(Unit Price),owl:real]
       - [pp:hasTotalPrice, $(Total Price),owl:real]
+      - [pp:hasAcquisitionMethod, $(Acquisition Method),xsd:string]
+      - [pp:hasAcquisitionType, $(Acquisition Type),xsd:string]
+      - [pp:hasSubAcquisitionMethod, $(Sub-Acquisition Method),xsd:string]
+      - [pp:hasSubAcquisitionType, $(Sub-Acquisition Type),xsd:string]
       - p: pp:madeBy
         o:
-          - mapping: triplesmap3
+          - mapping: Department
             condition:
                 function: equal
                 parameters:
-                    - [str1, $(Department)]
-                    - [str2, $(Department)]
-        
+                    - [str1, $(Department Name)]
+                    - [str2, $(Department Name)]
       - p: pp:hasSupplier
         o:
-          - mapping: triplesmap9
+          - mapping: Supplier
             condition:
                 function: equal
                 parameters:
                     - [str1, $(Supplier Code)]
                     - [str2, $(Supplier Code)]
-        
-      - p: pp:hasSubAcquisitionType
-        o:
-          - mapping: triplesmap11 
-            condition:
-                function: equal
-                parameters:
-                    - [str1, $(Sub-Acquisition Type)]
-                    - [str2, $(Sub-Acquisition Type)]
-                    
-      - p: pp:hasSubAcquisitionMethod
-        o:
-          - mapping: triplesmap10 
-            condition:
-                function: equal
-                parameters:
-                    - [str1, $(Sub-Acquisition Method)]
-                    - [str2, $(Sub-Acquisition Method)]            
-        
       - p: pp:hasItem
         o:
-          - mapping: triplesmap5 
+          - mapping: Item
             condition:
                 function: equal
                 parameters:
                     - [str1, $(Item Name)]
-                    - [str2, $(Item Name)]            
-        
-                    
-  triplesmap8:
-    sources:
-      - [purchase-order-2014-2015-updated.csv~csv]
-    s: pp:Segment/$(Segment)
-    po:
-      - [a, pp:Segment]
-      - [pp:hasSegmentTitle, $(Segment Title),xsd:string]
-
-  triplesmap9:
+                    - [str2, $(Item Name)]
+  Supplier:
     sources:
       - [purchase-order-2014-2015-updated.csv~csv]
     s: pp:Supplier/$(Supplier Code)
     po:
       - [a, pp:Supplier]
       - [pp:hasSupplierName, $(Supplier Name),xsd:string]
-      - [pp:hasLatitude, $(Latitude),rdf:PlainLiteral]
-      - [pp:hasCalCardsLongitude, $(Longitude),rdf:PlainLiteral]
-      - [pp:hasQualifications, $(Supplier Qualifications),rdf:PlainLiteral]
-      - [pp:hasSupplierCode, $(Supplier Code),rdf:PlainLiteral]
+      - [pp:hasLatitude, $(Latitude),geo:lat]
+      - [pp:hasLongitude, $(Longitude),geo:long]
+      - [pp:hasQualifications, $(Supplier Qualifications),xsd:string]
+      - [pp:hasSupplierCode, $(Supplier Code),xsd:long]
       - [pp:hasZipCode, $(Supplier Zip Code),xsd:string]
-
-    
-  triplesmap10:
-    sources:
-      - [purchase-order-2014-2015-updated.csv~csv]
-    s: pp:subAcquisitionMethod/$(Sub-Acquisition Method)
-    po:
-      - [a, pp:subAcquisitionMethod]
-      - [pp:hasSubAcquisitionMethod, $(Sub-Acquisition Method),xsd:string]
-      - p: pp:hasAquisitionMethod
-        o:
-          - mapping: triplesmap1 
-            condition:
-                function: equal
-                parameters:
-                    - [str1, $(Acquisition Method)]
-                    - [str2, $(Acquisition Method)]            
-        
-    
-  triplesmap11:
-    sources:
-      - [purchase-order-2014-2015-updated.csv~csv]
-    s: pp:subAcquisitionType/$(Sub-Acquisition Type)
-    po:
-      - [a, pp:subAcquisitionType]
-      - [pp:hasSubAcquisitionType, $(Sub-Acquisition Type),xsd:string]
-        
-      - p: pp:hasAcquisitionType 
-        o:
-          - mapping: triplesmap2 
-            condition:
-                function: equal
-                parameters:
-                    - [str1, $(Acquisition Type)]
-                    - [str2, $(Acquisition Type)]            
-        
-    
+      
