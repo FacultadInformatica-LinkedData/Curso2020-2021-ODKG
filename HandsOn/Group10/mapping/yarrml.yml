@@ -70,6 +70,15 @@ mappings:
 
       - [default:descripcionCapitulo,$(Descripcion Capitulo),xsd:string]  
 
+      - p: default:Centro
+        o:
+          - mapping: triplesmap8
+            condition:
+              function: equal
+              parameters:
+                - [str1,$(Capitulo)]
+                - [str2,$(Capitulo)]
+
 
   triplesmap5:
     sources:
