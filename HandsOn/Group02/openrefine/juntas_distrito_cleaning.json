@@ -562,5 +562,641 @@
       }
     ],
     "description": "Mass edit cells in column DESCRIPCION-ENTIDAD"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "HORARIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias.(Informaci reserva matrimonios civiles: 915 886 355 / 915 886 008. Lunes a viernes, de 9 a 11 horas)."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."
+      }
+    ],
+    "description": "Mass edit cells in column HORARIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "HORARIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "De lunes a viernes de 8,30 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "De lunes a viernes de 8:30 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."
+      }
+    ],
+    "description": "Mass edit cells in column HORARIO"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TRANSPORTE",
+    "expression": "value.replace(\"l_a\",\"línea\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column TRANSPORTE using expression value.replace(\"l_a\",\"línea\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPO-VIA",
+          "expression": "value",
+          "columnName": "TIPO-VIA",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CALLE",
+                "l": "CALLE"
+              }
+            },
+            {
+              "v": {
+                "v": "Calle",
+                "l": "Calle"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO-VIA",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CALLE",
+          "Calle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CALLE"
+      }
+    ],
+    "description": "Mass edit cells in column TIPO-VIA"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EMAIL",
+    "expression": "join ([coalesce(cells['EMAIL'].value,''),coalesce(cells['FAX'].value,'')],'\\\\n')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column EMAIL using expression join ([coalesce(cells['EMAIL'].value,''),coalesce(cells['FAX'].value,'')],'\\\\n')"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EMAIL",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "\\n",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column EMAIL by separator"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LONGITUD",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Consulte la pestaᠦamp;quot;M᳠informacimp;quot;."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "(blank)"
+      }
+    ],
+    "description": "Mass edit cells in column LONGITUD"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LONGITUD",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Consulte la pestaᠧM᳠informaci"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "(blank)"
+      }
+    ],
+    "description": "Mass edit cells in column LONGITUD"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "COORDENADA-X",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column COORDENADA-X using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "COORDENADA-Y",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column COORDENADA-Y using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CÓDIGO POSTAL",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CÓDIGO POSTAL using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NÚMERO",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NÚMERO using expression value.toNumber()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "HORARIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "De 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."
+      }
+    ],
+    "description": "Mass edit cells in column HORARIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TRANSPORTE",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Metro: Iglesia (línea 1).Bus: 3, 40, 147."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Metro: Iglesia (línea 1)\nBus: 3, 40, 147."
+      }
+    ],
+    "description": "Mass edit cells in column TRANSPORTE"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TRANSPORTE",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Metro: Las Musas (línea 7)Bus: 38, 140"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Metro: Las Musas (línea 7)\nBus: 38, 140"
+      }
+    ],
+    "description": "Mass edit cells in column TRANSPORTE"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TRANSPORTE",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Metro: Moncloa (líneas 3, 6)Bus: A, 161, 160, 162, 62, 133, 83, 1, 132, 138, 44, 82, C2, C1Bicimad: Estaci10 (Paseo Moret, 2)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Metro: Moncloa (líneas 3, 6)\nBus: A, 161, 160, 162, 62, 133, 83, 1, 132, 138, 44, 82, C2, C1\nBicimad: Estación 10 (Paseo Moret, 2)"
+      }
+    ],
+    "description": "Mass edit cells in column TRANSPORTE"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TRANSPORTE",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Metro: Pavones (línea 9)Bus: 8, 20, 30, 32, 71, 100, 142, 144, E4"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Metro: Pavones (línea 9)\nBus: 8, 20, 30, 32, 71, 100, 142, 144, E4"
+      }
+    ],
+    "description": "Mass edit cells in column TRANSPORTE"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TRANSPORTE",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Metro: Plaza El_ica  (líneas 6, 11).Bus: 6, 60, 81,78."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Metro: Plaza Elíptica  (líneas 6 y 11)\nBus: 6, 60, 81, 78"
+      }
+    ],
+    "description": "Mass edit cells in column TRANSPORTE"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TRANSPORTE",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Metro: Puente de Vallecas (línea 1), Nueva Numancia (línea 1)Bus: 10, 24, 54, 57, 58, 111, 136, 310"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Metro: Puente de Vallecas (línea 1), Nueva Numancia (línea 1)\nBus: 10, 24, 54, 57, 58, 111, 136, 310"
+      }
+    ],
+    "description": "Mass edit cells in column TRANSPORTE"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TRANSPORTE",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Metro: San Cipriano (línea 9), Vicᬶaro (línea 9)Bus: 4 , E3"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Metro: San Cipriano (línea 9), Vicálvaro (línea 9)\nBus: 4 , E3"
+      }
+    ],
+    "description": "Mass edit cells in column TRANSPORTE"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TRANSPORTE",
+    "expression": "value.replace(\"Ӱera\",\"Ópera\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column TRANSPORTE using expression value.replace(\"Ӱera\",\"Ópera\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION-ENTIDAD",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Los Distritos obedecen a un proyecto de descentralizaciel Ayuntamiento de Madrid que tiene como objetivos acercar la prestacie los servicios municipales a la ciudadan_y promover la participacie la ciudadan_en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles, presentar reclamaciones de consumo, solicitar prestaciones de servicios sociales o realizar tr᭩tes relacionados con el  padrunicipal, licencias urban_icas, v_ y espacios pblicos, entre otros.Ademᳬ los Distritos realizan actividades dirigidas a la promocie la salud, la difusie la cultura, la prᣴica del deporte, apoyo a la educaci en materia de inspeccianitaria y comercial. Se admiten perros-gu_\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Los Distritos obedecen a un proyecto de descentralización del Ayuntamiento de Madrid que tiene como objetivos acercar la prestación de los servicios municipales a la ciudadanía y promover la participación de la ciudadanía en la vida local.\n\nLos ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles, presentar reclamaciones de consumo, solicitar prestaciones de servicios sociales o realizar trámites relacionados con el  padrón municipal, licencias urbanísticas, vías y espacios públicos, entre otros.\n\nAdemás, los Distritos realizan actividades dirigidas a la promoción de la salud, la difusión de la cultura, la práctica del deporte, apoyo a la educación y en materia de inspección sanitaria y comercial.\nSe admiten perros guía."
+      }
+    ],
+    "description": "Mass edit cells in column DESCRIPCION-ENTIDAD"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "HORARIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias.(Informaci reserva matrimonios civiles: 915 886 355 / 915 886 008. Lunes a viernes, de 9 a 11 horas)."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."
+      }
+    ],
+    "description": "Mass edit cells in column HORARIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "HORARIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "De lunes a viernes de 8,30 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "De lunes a viernes de 8:30 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."
+      }
+    ],
+    "description": "Mass edit cells in column HORARIO"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TRANSPORTE",
+    "expression": "value.replace(\"l_a\",\"línea\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column TRANSPORTE using expression value.replace(\"l_a\",\"línea\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPO-VIA",
+          "expression": "value",
+          "columnName": "TIPO-VIA",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CALLE",
+                "l": "CALLE"
+              }
+            },
+            {
+              "v": {
+                "v": "Calle",
+                "l": "Calle"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO-VIA",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CALLE",
+          "Calle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CALLE"
+      }
+    ],
+    "description": "Mass edit cells in column TIPO-VIA"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LONGITUD",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Consulte la pestaᠦamp;quot;M᳠informacimp;quot;."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "(blank)"
+      }
+    ],
+    "description": "Mass edit cells in column LONGITUD"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LONGITUD",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Consulte la pestaᠧM᳠informaci"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "(blank)"
+      }
+    ],
+    "description": "Mass edit cells in column LONGITUD"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "EMAIL 2",
+    "description": "Remove column EMAIL 2"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "EMAIL 1",
+    "newColumnName": "EMAIL",
+    "description": "Rename column EMAIL 1 to EMAIL"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NOMBRE",
+    "newColumnName": "JUNTA",
+    "description": "Rename column NOMBRE to JUNTA"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "JUNTA",
+    "expression": "grel:substring(value, 20)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column JUNTA using expression grel:substring(value, 20)"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "JUNTA",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Distrito de Moncloa - Aravaca"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Distrito de Moncloa-aravaca"
+      }
+    ],
+    "description": "Mass edit cells in column JUNTA"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "JUNTA",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Distrito de San Blas - Canillejas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Distrito de San Blas-canillejas"
+      }
+    ],
+    "description": "Mass edit cells in column JUNTA"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "JUNTA",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column JUNTA using expression value.toTitlecase()"
   }
 ]

@@ -212,5 +212,213 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column ProductURI using expression grel:value.replace(\",\",\"_\")"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "ProductURI",
+    "expression": "join ([coalesce(cells['ProductURI'].value,''),coalesce(cells['OrganizationURI'].value,'')],'_')",
+    "onError": "keep-original",
+    "newColumnName": "OrderItemID",
+    "columnInsertIndex": 2,
+    "description": "Create column OrderItemID at index 2 based on column ProductURI using expression join ([coalesce(cells['ProductURI'].value,''),coalesce(cells['OrganizationURI'].value,'')],'_')"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "ProductURI",
+    "expression": "join ([coalesce(cells['ProductURI'].value,''),coalesce(cells['OrganizationURI'].value,''),coalesce(cells['Fecha'].value,'')],'_')",
+    "onError": "keep-original",
+    "newColumnName": "OrderID",
+    "columnInsertIndex": 2,
+    "description": "Create column OrderID at index 2 based on column ProductURI using expression join ([coalesce(cells['ProductURI'].value,''),coalesce(cells['OrganizationURI'].value,''),coalesce(cells['Fecha'].value,'')],'_')"
+  },
+  {
+    "op": "core/blank-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OrderID",
+    "description": "Blank down cells in column OrderID"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "OrderID",
+    "index": 0,
+    "description": "Move column OrderID to position 0"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Cantidad Pedido",
+    "expression": "grel:row.record.cells[\"Cantidad Pedido\"].value.sum()",
+    "onError": "set-to-blank",
+    "newColumnName": "CantidadPedido",
+    "columnInsertIndex": 10,
+    "description": "Create column CantidadPedido at index 10 based on column Cantidad Pedido using expression grel:row.record.cells[\"Cantidad Pedido\"].value.sum()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Cantidad Recibido",
+    "expression": "grel:row.record.cells[\"Cantidad Recibido\"].value.sum()",
+    "onError": "set-to-blank",
+    "newColumnName": "CantidadRecibido",
+    "columnInsertIndex": 12,
+    "description": "Create column CantidadRecibido at index 12 based on column Cantidad Recibido using expression grel:row.record.cells[\"Cantidad Recibido\"].value.sum()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Cantidad Pendiente",
+    "expression": "grel:row.record.cells[\"Cantidad Pendiente\"].value.sum()",
+    "onError": "set-to-blank",
+    "newColumnName": "CantidadPendiente",
+    "columnInsertIndex": 14,
+    "description": "Create column CantidadPendiente at index 14 based on column Cantidad Pendiente using expression grel:row.record.cells[\"Cantidad Pendiente\"].value.sum()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Importe del Pedido",
+    "expression": "grel:row.record.cells[\"Importe del Pedido\"].value.sum()",
+    "onError": "set-to-blank",
+    "newColumnName": "ImportePedido",
+    "columnInsertIndex": 16,
+    "description": "Create column ImportePedido at index 16 based on column Importe del Pedido using expression grel:row.record.cells[\"Importe del Pedido\"].value.sum()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Importe Pagado",
+    "expression": "grel:row.record.cells[\"Importe Pagado\"].value.sum()",
+    "onError": "set-to-blank",
+    "newColumnName": "ImportePagado",
+    "columnInsertIndex": 18,
+    "description": "Create column ImportePagado at index 18 based on column Importe Pagado using expression grel:row.record.cells[\"Importe Pagado\"].value.sum()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Importe Pendiente",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "ImportePendiente",
+    "columnInsertIndex": 20,
+    "description": "Create column ImportePendiente at index 20 based on column Importe Pendiente using expression grel:value"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Cantidad Pedido",
+    "description": "Remove column Cantidad Pedido"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Cantidad Recibido",
+    "description": "Remove column Cantidad Recibido"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Cantidad Pendiente",
+    "description": "Remove column Cantidad Pendiente"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Importe del Pedido",
+    "description": "Remove column Importe del Pedido"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Importe Pagado",
+    "description": "Remove column Importe Pagado"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Importe Pendiente",
+    "description": "Remove column Importe Pendiente"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "VAT",
+    "expression": "grel:row.record.cells[\"VAT\"].value.uniques().get(row.record.cells[\"VAT\"].value.uniques().length()-1)",
+    "onError": "set-to-blank",
+    "newColumnName": "totalVAT",
+    "columnInsertIndex": 16,
+    "description": "Create column totalVAT at index 16 based on column VAT using expression grel:row.record.cells[\"VAT\"].value.uniques().get(row.record.cells[\"VAT\"].value.uniques().length()-1)"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "VAT",
+    "description": "Remove column VAT"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "OrderID",
+          "expression": "isBlank(value)",
+          "columnName": "OrderID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Tipo",
+    "expression": "grel:if(value==\"SERVICIO\", \"Service\", \"Product\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Tipo using expression grel:if(value==\"SERVICIO\", \"Service\", \"Product\")"
   }
 ]
