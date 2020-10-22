@@ -8,87 +8,83 @@
 @prefix swrlb:   <http://www.w3.org/2003/11/swrlb#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 
+<http://group10.com>
+      a       owl:Ontology .
+
+default:Capitulo
+      a       owl:Class .
+
+default:Gastos
+      a       owl:Class .
+	  
+default:Programa
+      a       owl:Class .
+	  
+default:Centro
+      a       owl:Class .
+	  
+default:Seccion
+      a       owl:Class .
+	  
+default:Ingresos
+      a       owl:Class .
+
 default:creditoGastado
       a       owl:DatatypeProperty ;
       rdfs:domain default:Gastos ;
       rdfs:range xsd:float .
 
-default:tieneCapitulo
-      a       owl:ObjectProperty ;
-      rdfs:domain
-              [ a       owl:Class ;
-                owl:unionOf (default:Gastos default:Ingresos)
-              ] ;
-      rdfs:range default:Capitulo .
-
 default:creditoDispuesto
       a       owl:DatatypeProperty ;
       rdfs:domain default:Gastos ;
       rdfs:range xsd:float .
+	  
+default:recaudado
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Ingresos ;
+      rdfs:range xsd:float .
+	  
+default:id
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:string .
+	  
+default:previsionIngresos
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Ingresos ;
+      rdfs:range xsd:float .
 
-default:Capitulo
-      a       owl:Class .
+default:descripcion
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:string .
+
+default:tieneCapitulo
+      a       owl:ObjectProperty ;
+      rdfs:domain
+              [ owl:unionOf (default:Gastos default:Ingresos)] ;
+      rdfs:range default:Capitulo .
 
 default:tienePrograma
       a       owl:ObjectProperty ;
       rdfs:domain default:Gastos ;
       rdfs:range default:Programa .
-
-default:tieneCentro
-      a       owl:ObjectProperty ;
-      rdfs:domain
-              [ a       owl:Class ;
-                owl:unionOf (default:Gastos default:Ingresos)
-              ] ;
-      rdfs:range default:Centro .
-
-default:recaudado
-      a       owl:DatatypeProperty ;
-      rdfs:domain default:Ingresos ;
-      rdfs:range xsd:float .
-
-default:id
-      a       owl:DatatypeProperty ;
-      rdfs:range xsd:string .
-
-default:Gastos
-      a       owl:Class .
-
+	  
 default:tieneGasto
       a       owl:ObjectProperty ;
       rdfs:domain default:Centro ;
       rdfs:range default:Gastos .
-
-default:Programa
-      a       owl:Class .
-
-default:tieneSeccion
+	  
+default:tieneCentro
       a       owl:ObjectProperty ;
-      rdfs:domain default:Gastos ;
-      rdfs:range default:Seccion .
-
-default:Ingresos
-      a       owl:Class .
-
-default:previsionIngresos
-      a       owl:DatatypeProperty ;
-      rdfs:domain default:Ingresos ;
-      rdfs:range xsd:float .
+      rdfs:domain
+              [ owl:unionOf (default:Gastos default:Ingresos) ] ;
+      rdfs:range default:Centro .
 
 default:tieneIngresos
       a       owl:ObjectProperty ;
       rdfs:domain default:Centro ;
       rdfs:range default:Ingresos .
 
-default:descripcion
-      a       owl:DatatypeProperty ;
-      rdfs:range xsd:string .
-
-default:Seccion
-      a       owl:Class .
-
-<http://group10.com>
-      a       owl:Ontology .
-
-default:Centro
-      a       owl:Class .
+default:tieneSeccion
+      a       owl:ObjectProperty ;
+      rdfs:domain default:Gastos ;
+      rdfs:range default:Seccion .
