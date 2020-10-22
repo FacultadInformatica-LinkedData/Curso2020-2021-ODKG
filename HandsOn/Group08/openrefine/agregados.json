@@ -83,11 +83,6 @@
     "description": "Text transform on cells in column FECHA using expression value.toNumber()"
   },
   {
-    "op": "core/column-removal",
-    "columnName": "TestAc+",
-    "description": "Remove column TestAc+"
-  },
-  {
     "op": "core/row-removal",
     "engineConfig": {
       "facets": [
@@ -122,11 +117,11 @@
       "mode": "row-based"
     },
     "columnName": "FECHA",
-    "expression": "grel:value[5,9]+\"-\"+value[3]+\"-\"+value[0,2]",
+    "expression": "grel:if(value[1]==\"/\", value[4,8]+\"-\"+value[2]+\"-\"+value[0,1],value[5,9]+\"-\"+value[3]+\"-\"+value[0,2])",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column FECHA using expression grel:value[5,9]+\"-\"+value[3]+\"-\"+value[0,2]"
+    "description": "Text transform on cells in column FECHA using expression grel:if(value[1]==\"/\", value[4,8]+\"-\"+value[2]+\"-\"+value[0,1],value[5,9]+\"-\"+value[3]+\"-\"+value[0,2])"
   },
   {
     "op": "core/text-transform",
@@ -140,5 +135,208 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column FECHA using expression value.toDate()"
+  },
+  {
+    "op": "core/row-flag",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "timerange",
+          "name": "FECHA",
+          "expression": "value",
+          "columnName": "FECHA",
+          "from": 1582156800000,
+          "to": 1589932800000,
+          "selectTime": false,
+          "selectNonTime": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "flagged": true,
+    "description": "Flag rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Flagged Rows",
+          "expression": "row.flagged",
+          "columnName": "",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 9",
+    "description": "Remove column Column 9"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Hospitalizados",
+    "expression": "grel:if(value==null, 0, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Hospitalizados using expression grel:if(value==null, 0, value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "UCI",
+    "expression": "grel:if(value==null, 0, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column UCI using expression grel:if(value==null, 0, value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Fallecidos",
+    "expression": "grel:if(value==null, 0, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Fallecidos using expression grel:if(value==null, 0, value)"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CCAA",
+    "expression": "join ([coalesce(cells['CCAA'].value,''),coalesce(cells['FECHA'].value,'')],'_')",
+    "onError": "keep-original",
+    "newColumnName": "CovidStatusID",
+    "columnInsertIndex": 1,
+    "description": "Create column CovidStatusID at index 1 based on column CCAA using expression join ([coalesce(cells['CCAA'].value,''),coalesce(cells['FECHA'].value,'')],'_')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TestAc+",
+    "expression": "grel:if(value==null,0,value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column TestAc+ using expression grel:if(value==null,0,value)"
+  },
+  {
+    "op": "core/row-reorder",
+    "mode": "row-based",
+    "sorting": {
+      "criteria": [
+        {
+          "valueType": "string",
+          "column": "CovidStatusID",
+          "blankPosition": 2,
+          "errorPosition": 1,
+          "reverse": false,
+          "caseSensitive": false
+        }
+      ]
+    },
+    "description": "Reorder rows"
+  },
+  {
+    "op": "core/blank-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CCAA",
+    "description": "Blank down cells in column CCAA"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "PCR+",
+    "expression": "grel:forEachIndex(row.record.cells[\"PCR+\"].value, i, v, \nif(i==0, value, v-row.record.cells[\"PCR+\"].value[i-1]))[mod(rowIndex, 91)]",
+    "onError": "set-to-blank",
+    "newColumnName": "numPCR+",
+    "columnInsertIndex": 4,
+    "description": "Create column numPCR+ at index 4 based on column PCR+ using expression grel:forEachIndex(row.record.cells[\"PCR+\"].value, i, v, \nif(i==0, value, v-row.record.cells[\"PCR+\"].value[i-1]))[mod(rowIndex, 91)]"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "TestAc+",
+    "expression": "grel:forEachIndex(row.record.cells[\"TestAc+\"].value, i, v, if(i==0, value, v-row.record.cells[\"TestAc+\"].value[i-1]))[mod(rowIndex, 91)]",
+    "onError": "set-to-blank",
+    "newColumnName": "numTestAc+",
+    "columnInsertIndex": 6,
+    "description": "Create column numTestAc+ at index 6 based on column TestAc+ using expression grel:forEachIndex(row.record.cells[\"TestAc+\"].value, i, v, if(i==0, value, v-row.record.cells[\"TestAc+\"].value[i-1]))[mod(rowIndex, 91)]"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CCAA",
+    "description": "Fill down cells in column CCAA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PCR+",
+    "description": "Remove column PCR+"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "TestAc+",
+    "description": "Remove column TestAc+"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "numPCR+",
+    "newColumnName": "PCR+",
+    "description": "Rename column numPCR+ to PCR+"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "numTestAc+",
+    "newColumnName": "TestAc+",
+    "description": "Rename column numTestAc+ to TestAc+"
   }
 ]

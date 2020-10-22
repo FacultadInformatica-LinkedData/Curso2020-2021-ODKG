@@ -4,9 +4,17 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.example.com/group09#> .
+@base <http://www.example.com/group09> .
 
-<http://www.example.com/group09#> rdf:type owl:Ontology .
+<http://www.example.com/group09> rdf:type owl:Ontology .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
 
 #################################################################
 #    Object Properties
@@ -45,7 +53,7 @@
 ###  http://contsem.unizar.es/def/sector-publico/pproc.html#managingDepartment
 <http://contsem.unizar.es/def/sector-publico/pproc.html#managingDepartment> rdf:type owl:ObjectProperty ;
                                                                             rdfs:domain <http://contsem.unizar.es/def/sector-publico/pproc#Contract> ;
-                                                                            rdfs:range <http://www.w3.org/ns/org#Organization> .
+                                                                            rdfs:range <http://www.w3.org/ns/org#OrganizationalUnit> .
 
 
 ###  http://purl.org/procurement/public-contracts#contractingAuthority
@@ -73,7 +81,8 @@
 ###  http://contsem.unizar.es/def/sector-publico/pproc#estimatedDuration
 <http://contsem.unizar.es/def/sector-publico/pproc#estimatedDuration> rdf:type owl:DatatypeProperty ;
                                                                       rdfs:domain <http://contsem.unizar.es/def/sector-publico/pproc#ContractTemporalConditions> ;
-                                                                      rdfs:range xsd:float .
+                                                                      rdfs:range xsd:float ;
+                                                                      rdfs:comment "Plazo"@es .
 
 
 ###  http://purl.org/goodrelations/v1#hasCurrency
@@ -207,72 +216,67 @@
 #    Individuals
 #################################################################
 
-###  http://www.example.com/group09#AyuntamientoMadrid
-:AyuntamientoMadrid rdf:type owl:NamedIndividual ,
-                             <http://www.w3.org/ns/org#Organization> .
+###  http://www.example.com/group09/AyuntamientoMadrid
+<http://www.example.com/group09/AyuntamientoMadrid> rdf:type owl:NamedIndividual ,
+                                                             <http://www.w3.org/ns/org#Organization> .
 
 
-###  http://www.example.com/group09#BundlePrice1
-:BundlePrice1 rdf:type owl:NamedIndividual ,
-                       <http://contsem.unizar.es/def/sector-publico/pproc#BundlePriceSpecification> ;
-              <http://purl.org/goodrelations/v1#hasCurrency> "EUR" ;
-              <http://purl.org/goodrelations/v1#hasCurrencyValue> 1197.60 ;
-              <http://purl.org/goodrelations/v1#valueAddedTaxIncluded> "true"^^xsd:boolean .
+###  http://www.example.com/group09/contract/M202000001
+<http://www.example.com/group09/contract/M202000001> rdf:type owl:NamedIndividual ,
+                                                              <http://contsem.unizar.es/def/sector-publico/pproc#SuppliesContract> ;
+                                                     :awardDate "2019-12-17"^^xsd:date ;
+                                                     :awardNum "M202000001"^^xsd:string ;
+                                                     :recordNum "EMT/2019/10109"^^xsd:string ;
+                                                     :registryReportDate "2020-01-02"^^xsd:date .
 
 
-###  http://www.example.com/group09#ContractObject
-:ContractObject rdf:type owl:NamedIndividual ,
-                         <http://contsem.unizar.es/def/sector-publico/pproc#ContractObject> ;
-                <http://contsem.unizar.es/def/sector-publico/pproc#contractEconomicConditions> :EconomicConditions ;
-                <http://contsem.unizar.es/def/sector-publico/pproc#contractTemporalConditions> :TemporalConditions1 ;
-                :objectOfContract "SUMINISTRO UNA BOMBA NEUMATICA PARA EL TALLER DEL CENTRO DE OPERACIONES DE LA ELIPA."@es .
+###  http://www.example.com/group09/contract/M202000001/economicConditions
+<http://www.example.com/group09/contract/M202000001/economicConditions> rdf:type owl:NamedIndividual ,
+                                                                                 <http://contsem.unizar.es/def/sector-publico/pproc#ContractEconomicConditions> ;
+                                                                        <http://contsem.unizar.es/def/sector-publico/pproc#budgetPrice> <http://www.example.com/group09/contract/M202000001/price> .
 
 
-###  http://www.example.com/group09#ContractingBody1
-:ContractingBody1 rdf:type owl:NamedIndividual ,
-                           <http://www.w3.org/ns/org#Organization> ;
-                  <https://www.w3.org/ns/org#subOrganizationOf> :Department1 ;
-                  <http://schema.org/name> "Director" .
+###  http://www.example.com/group09/contract/M202000001/object
+<http://www.example.com/group09/contract/M202000001/object> rdf:type owl:NamedIndividual ,
+                                                                     <http://contsem.unizar.es/def/sector-publico/pproc#ContractObject> ;
+                                                            <http://contsem.unizar.es/def/sector-publico/pproc#contractEconomicConditions> <http://www.example.com/group09/contract/M202000001/economicConditions> ;
+                                                            <http://contsem.unizar.es/def/sector-publico/pproc#contractTemporalConditions> <http://www.example.com/group09/contract/M202000001/temporalConditions> ;
+                                                            :objectOfContract "SUMINISTRO UNA BOMBA NEUMATICA PARA EL TALLER DEL CENTRO DE OPERACIONES DE LA ELIPA."^^xsd:string .
 
 
-###  http://www.example.com/group09#Contractor
-:Contractor rdf:type owl:NamedIndividual ,
-                     <http://www.w3.org/ns/org#Organization> ;
-            <http://purl.org/procurement/public-contracts#supplier> :Contrato1 ;
-            <http://schema.org/name> "GONPERSA TRADE, S.L."@es ;
-            <http://www.w3.org/ns/org#identifier> "B83579441" .
+###  http://www.example.com/group09/contract/M202000001/price
+<http://www.example.com/group09/contract/M202000001/price> rdf:type owl:NamedIndividual ,
+                                                                    <http://contsem.unizar.es/def/sector-publico/pproc#BundlePriceSpecification> ;
+                                                           <http://purl.org/goodrelations/v1#hasCurrency> "EUR"^^xsd:string ;
+                                                           <http://purl.org/goodrelations/v1#hasCurrencyValue> "1197.6"^^xsd:float ;
+                                                           <http://purl.org/goodrelations/v1#valueAddedTaxIncluded> "true"^^xsd:boolean .
 
 
-###  http://www.example.com/group09#Contrato1
-:Contrato1 rdf:type owl:NamedIndividual ,
-                    <http://contsem.unizar.es/def/sector-publico/pproc#SuppliesContract> ;
-           <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> :ContractObject ;
-           <http://contsem.unizar.es/def/sector-publico/pproc.html#contractingBody> :ContractingBody1 ;
-           <http://contsem.unizar.es/def/sector-publico/pproc.html#managingDepartment> :Department1 ;
-           <http://purl.org/procurement/public-contracts#contractingAuthority> :AyuntamientoMadrid ;
-           :awardDate "17/12/2019" ;
-           :awardNum "M202000001" ;
-           :recordNum "EMT/2019/10109" ;
-           :registryReportDate "02/01/2020" .
+###  http://www.example.com/group09/contract/M202000001/temporalConditions
+<http://www.example.com/group09/contract/M202000001/temporalConditions> rdf:type owl:NamedIndividual ,
+                                                                                 <http://contsem.unizar.es/def/sector-publico/pproc#ContractTemporalConditions> ;
+                                                                        <http://contsem.unizar.es/def/sector-publico/pproc#estimatedDuration> "0.5"^^xsd:float .
 
 
-###  http://www.example.com/group09#Department1
-:Department1 rdf:type owl:NamedIndividual ,
-                      <http://www.w3.org/ns/org#OrganizationalUnit> ;
-             <https://www.w3.org/ns/org#subOrganizationOf> :AyuntamientoMadrid ;
-             <http://schema.org/name> "EMPRESA MUNICIPAL DE TRANSPORTES S.A." .
+###  http://www.example.com/group09/contractor/B83579441
+<http://www.example.com/group09/contractor/B83579441> rdf:type owl:NamedIndividual ,
+                                                               <http://www.w3.org/ns/org#Organization> ;
+                                                      <http://purl.org/procurement/public-contracts#supplier> <http://www.example.com/group09/contract/M202000001> ;
+                                                      <http://schema.org/name> "GONPERSA TRADE, S.L."^^xsd:string ;
+                                                      <http://www.w3.org/ns/org#identifier> "B83579441"^^xsd:string .
 
 
-###  http://www.example.com/group09#EconomicConditions
-:EconomicConditions rdf:type owl:NamedIndividual ,
-                             <http://contsem.unizar.es/def/sector-publico/pproc#ContractEconomicConditions> ;
-                    <http://contsem.unizar.es/def/sector-publico/pproc#budgetPrice> :BundlePrice1 .
+###  http://www.example.com/group09/department/EMPRESA_MUNICIPAL_DE_TRANSPORTES_S.A.
+<http://www.example.com/group09/department/EMPRESA_MUNICIPAL_DE_TRANSPORTES_S.A.> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.w3.org/ns/org#OrganizationalUnit> ;
+                                                                                  <http://schema.org/name> "EMPRESA MUNICIPAL DE TRANSPORTES S.A."^^xsd:string .
 
 
-###  http://www.example.com/group09#TemporalConditions1
-:TemporalConditions1 rdf:type owl:NamedIndividual ,
-                              <http://contsem.unizar.es/def/sector-publico/pproc#ContractTemporalConditions> ;
-                     <http://contsem.unizar.es/def/sector-publico/pproc#estimatedDuration> "0,5" .
+###  http://www.example.com/group09/department/EMPRESA_MUNICIPAL_DE_TRANSPORTES_S.A./contracting_body/DIRECTOR
+<http://www.example.com/group09/department/EMPRESA_MUNICIPAL_DE_TRANSPORTES_S.A./contracting_body/DIRECTOR> rdf:type owl:NamedIndividual ,
+                                                                                                                     <http://www.w3.org/ns/org#Organization> ;
+                                                                                                            <https://www.w3.org/ns/org#subOrganizationOf> <http://www.example.com/group09/department/EMPRESA_MUNICIPAL_DE_TRANSPORTES_S.A.> ;
+                                                                                                            <http://schema.org/name> "DIRECTOR"^^xsd:string .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
