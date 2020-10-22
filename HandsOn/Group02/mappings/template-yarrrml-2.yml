@@ -26,7 +26,7 @@ mappings:
       - [vocab:hasContractType,$(Tipo Contrato),xsd:string]
       - [vocab:hasProcedure,$(Procedimiento Adjudicacion),xsd:string]
       - [vocab:hasArticle,$(Articulo),xsd:integer]
-      - [vocab:property9,$(Apartado),xsd:string]
+      - [vocab:hasSection,$(Apartado),xsd:string]
       - [vocab:hasCriteria,$(Criterios Adjudicacion),xsd:string]
       - [vocab:hasBudget,$(Presupuesto Total(IVA Incluido)),xsd:double]
       - [vocab:hasAmount,$(Importe Adjudicacion (IVA Incluido)),xsd:double]
