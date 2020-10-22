@@ -1,13 +1,13 @@
-@prefix : <http://www.publicProcurementMurciaCOVID19.es/resource/> .
+@prefix : <http://www.publicProcurementMurciaCOVID19.es/ontology/ont#> .
 @prefix s: <http://schema.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.publicProcurementMurciaCOVID19.es/resource/> .
+@base <http://www.publicProcurementMurciaCOVID19.es/ontology/ont#> .
 
-<http://www.publicProcurementMurciaCOVID19.es/resource/> rdf:type owl:Ontology .
+<http://www.publicProcurementMurciaCOVID19.es/ontology/ont#> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
@@ -38,12 +38,12 @@ s:seller rdf:type owl:ObjectProperty ;
 ###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#hasCovidStatus
 :hasCovidStatus rdf:type owl:ObjectProperty ;
                 rdfs:domain s:Organization ;
-                rdfs:range :Covid19Status .
+                rdfs:range :CovidStatus .
 
 
 ###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#inDate
 :inDate rdf:type owl:ObjectProperty ;
-        rdfs:domain :Covid19Status ;
+        rdfs:domain :CovidStatus ;
         rdfs:range s:Date .
 
 
@@ -70,7 +70,7 @@ s:taxID rdf:type owl:DatatypeProperty ;
 
 ###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#hasISOCode
 :hasISOCode rdf:type owl:DatatypeProperty ;
-            rdfs:domain :Covid19Status ;
+            rdfs:domain :CovidStatus ;
             rdfs:range xsd:string .
 
 
@@ -110,59 +110,63 @@ s:taxID rdf:type owl:DatatypeProperty ;
                             rdfs:range xsd:integer .
 
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numPositiveAC
-:numPositiveAC rdf:type owl:DatatypeProperty ;
-               rdfs:domain :Covid19Status ;
-               rdfs:range xsd:integer .
-
 ###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numAC
 :numAC rdf:type owl:DatatypeProperty ;
-               rdfs:domain :Covid19Status ;
+       rdfs:domain :CovidStatus ;
+       rdfs:range xsd:integer .
+
+
+###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numPCR
+:numPCR rdf:type owl:DatatypeProperty ;
+        rdfs:domain :CovidStatus ;
+        rdfs:range xsd:integer .
+
+
+###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numPositiveAC
+:numPositiveAC rdf:type owl:DatatypeProperty ;
+               rdfs:domain :CovidStatus ;
                rdfs:range xsd:integer .
+
 
 ###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numPositiveOthers
 :numPositiveOthers rdf:type owl:DatatypeProperty ;
-                   rdfs:domain :Covid19Status ;
+                   rdfs:domain :CovidStatus ;
                    rdfs:range xsd:integer .
 
 
 ###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numPositivePCR
 :numPositivePCR rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Covid19Status ;
+                rdfs:domain :CovidStatus ;
                 rdfs:range xsd:integer .
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numPCR
-:numPCR rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Covid19Status ;
-                rdfs:range xsd:integer .
 
 ###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numPositiveUnknown
 :numPositiveUnknown rdf:type owl:DatatypeProperty ;
-                    rdfs:domain :Covid19Status ;
+                    rdfs:domain :CovidStatus ;
                     rdfs:range xsd:integer .
 
 
 ###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numberDeaths
 :numberDeaths rdf:type owl:DatatypeProperty ;
-              rdfs:domain :Covid19Status ;
+              rdfs:domain :CovidStatus ;
               rdfs:range xsd:integer .
 
 
 ###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numberHospitalizations
 :numberHospitalizations rdf:type owl:DatatypeProperty ;
-                        rdfs:domain :Covid19Status ;
+                        rdfs:domain :CovidStatus ;
                         rdfs:range xsd:integer .
 
 
 ###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numberUCI
 :numberUCI rdf:type owl:DatatypeProperty ;
-           rdfs:domain :Covid19Status ;
+           rdfs:domain :CovidStatus ;
            rdfs:range xsd:integer .
 
 
 ###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#totalCases
 :totalCases rdf:type owl:DatatypeProperty ;
-            rdfs:domain :Covid19Status ;
+            rdfs:domain :CovidStatus ;
             rdfs:range xsd:integer .
 
 
@@ -194,18 +198,18 @@ s:Product rdf:type owl:Class .
 s:Service rdf:type owl:Class .
 
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#Covid19Status
-:Covid19Status rdf:type owl:Class .
+###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#CovidStatus
+:CovidStatus rdf:type owl:Class .
 
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#CovidStatus1
+###  http://www.publicProcurementMurciaCOVID19.es/resource/CovidStatus1
 :CovidStatus1 rdf:type owl:NamedIndividual ,
-                       :Covid19Status ;
-              :inDate <http://www.publicProcurementMurciaCOVID19.es/ontology/ont#2020-04-12> ;
+                       :CovidStatus ;
+              :inDate <http://www.publicProcurementMurciaCOVID19.es/resource/2020-04-12> ;
               :hasISOCode "MC"^^xsd:string ;
               :numPositiveAC 4 ;
               :numPositiveOthers 0 ;
@@ -217,16 +221,16 @@ s:Service rdf:type owl:Class .
               :totalCases 11 .
 
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#Order1
+###  http://www.publicProcurementMurciaCOVID19.es/resource/Order1
 :Order1 rdf:type owl:NamedIndividual ,
                  s:Order ;
         s:customer :Organization1 ;
-        s:orderDate <http://www.publicProcurementMurciaCOVID19.es/ontology/ont#2020-04-12> ;
+        s:orderDate <http://www.publicProcurementMurciaCOVID19.es/resource/2020-04-12> ;
         s:orderedItem :OrderItem1 ;
         s:seller :Organization2 .
 
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#OrderItem1
+###  http://www.publicProcurementMurciaCOVID19.es/resource/OrderItem1
 :OrderItem1 rdf:type owl:NamedIndividual ,
                      s:OrderItem ;
             s:orderedItem :Product1 ;
@@ -239,7 +243,7 @@ s:Service rdf:type owl:Class .
             :hasProductQuantityReceived 0 .
 
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#Organization1
+###  http://www.publicProcurementMurciaCOVID19.es/resource/Organization1
 :Organization1 rdf:type owl:NamedIndividual ,
                         s:Organization ;
                :hasCovidStatus :CovidStatus1 ;
@@ -247,22 +251,22 @@ s:Service rdf:type owl:Class .
                :hasISOCode "MC"^^xsd:string .
 
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#Organization2
+###  http://www.publicProcurementMurciaCOVID19.es/resource/Organization2
 :Organization2 rdf:type owl:NamedIndividual ,
                         s:Organization ;
                s:name "Company1 SL"^^xsd:string ;
                s:taxID "dfgbrb56j5j"^^xsd:string .
 
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#Product1
+###  http://www.publicProcurementMurciaCOVID19.es/resource/Product1
 :Product1 rdf:type owl:NamedIndividual ,
                    s:Product ;
           s:name "Mascarillas"^^xsd:string .
 
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#2020-04-12
-<http://www.publicProcurementMurciaCOVID19.es/ontology/ont#2020-04-12> rdf:type owl:NamedIndividual ,
-                                                                                s:Date .
+###  http://www.publicProcurementMurciaCOVID19.es/resource/2020-04-12
+<http://www.publicProcurementMurciaCOVID19.es/resource/2020-04-12> rdf:type owl:NamedIndividual ,
+                                                                                     s:Date .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
