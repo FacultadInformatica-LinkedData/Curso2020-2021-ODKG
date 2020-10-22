@@ -5,6 +5,8 @@
 @prefix ql: <http://semweb.mmlab.be/ns/ql#>.
 @prefix map: <http://mapping.example.com/>.
 
+map:jc_0 rr:child "CAE_ID";
+    rr:parent "CAE_ID".
 map:map_CAE_0 rml:logicalSource map:source_0;
     a rr:TriplesMap;
     rdfs:label "CAE";
@@ -26,7 +28,8 @@ map:om_10 a rr:ObjectMap;
     rr:termType rr:Literal.
 map:om_11 a rr:ObjectMap;
     rml:reference "DT_DISPATCH";
-    rr:termType rr:Literal.
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#date>.
 map:om_12 a rr:ObjectMap;
     rml:reference "DURATION";
     rr:termType rr:Literal;
@@ -55,7 +58,8 @@ map:om_18 a rr:ObjectMap;
     rr:datatype <http://www.w3.org/2001/XMLSchema#boolean>.
 map:om_19 a rr:ObjectMap;
     rml:reference "B_EU_FUNDS";
-    rr:termType rr:Literal.
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#boolean>.
 map:om_2 a rr:ObjectMap;
     rml:reference "CAE_NAME";
     rr:termType rr:Literal.
@@ -84,8 +88,8 @@ map:om_7 a rr:ObjectMap;
     rr:constant "http://www.w3.org/2002/07/owl#Class";
     rr:termType rr:IRI.
 map:om_8 a rr:ObjectMap;
-    rr:template "http://eit-upm-opendata.com/ted#{CAE_ID}";
-    rr:termType rr:Literal.
+    rr:parentTriplesMap map:map_CAE_0;
+    rr:joinCondition map:jc_0.
 map:om_9 a rr:ObjectMap;
     rml:reference "CPV";
     rr:termType rr:Literal;
