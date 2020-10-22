@@ -9,6 +9,14 @@
 <http://www.example.com/group09> rdf:type owl:Ontology .
 
 #################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
 #    Object Properties
 #################################################################
 
@@ -45,7 +53,7 @@
 ###  http://contsem.unizar.es/def/sector-publico/pproc.html#managingDepartment
 <http://contsem.unizar.es/def/sector-publico/pproc.html#managingDepartment> rdf:type owl:ObjectProperty ;
                                                                             rdfs:domain <http://contsem.unizar.es/def/sector-publico/pproc#Contract> ;
-                                                                            rdfs:range <http://www.w3.org/ns/org#Organization> .
+                                                                            rdfs:range <http://www.w3.org/ns/org#OrganizationalUnit> .
 
 
 ###  http://purl.org/procurement/public-contracts#contractingAuthority
