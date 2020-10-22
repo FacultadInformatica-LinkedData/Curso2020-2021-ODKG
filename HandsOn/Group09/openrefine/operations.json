@@ -411,5 +411,49 @@
     "newColumnName": "Section_IRI",
     "columnInsertIndex": 3,
     "description": "Create column Section_IRI at index 3 based on column Section using expression grel:value.replace(\" \", \"_\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Contracting_Body",
+    "expression": "join ([coalesce(cells['Contracting_Body'].value,''),coalesce(cells['Contracting_Body_Area'].value,'')],' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Contracting_Body using expression join ([coalesce(cells['Contracting_Body'].value,''),coalesce(cells['Contracting_Body_Area'].value,'')],' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Contracting_Body",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Contracting_Body using expression value.trim()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Contracting_Body",
+    "expression": "grel:value.replace(\" \",\"_\")",
+    "onError": "set-to-blank",
+    "newColumnName": "Contracting_Body_IRI",
+    "columnInsertIndex": 5,
+    "description": "Create column Contracting_Body_IRI at index 5 based on column Contracting_Body using expression grel:value.replace(\" \",\"_\")"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Contracting_Body_Area",
+    "description": "Remove column Contracting_Body_Area"
   }
 ]
