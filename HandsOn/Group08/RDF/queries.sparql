@@ -1,0 +1,129 @@
+PREFIX s:<http://schema.org/>
+PREFIX ex:<http://www.publicProcurementMurciaCOVID19.es/ontology/ont#>
+
+
+##### Order Quantity by Product  #####
+SELECT 
+    ?Product (SUM(?Quantity) as ?nCount) 
+WHERE { 
+    ?OrderItem s:orderQuantity ?Quantity. 
+    ?OrderItem s:orderedItem ?Product. 
+    ?Product rdf:type s:Product.  
+     
+}
+GROUP BY ?Product 
+LIMIT 15
+
+##### Order Quantity Received by Product and by Date #####
+SELECT 
+    ?Product ?n ?Date
+WHERE { 
+    ?Product rdf:type s:Product. 
+    ?OrderItem ex:hasProductQuantityPending ?n. 
+    ?OrderItem s:orderedItem ?Product.
+    ?Order rdf:type s:Order.
+    ?Order s:orderDate ?Date.
+    ?Order s:orderedItem ?OrderItem.
+}
+
+LIMIT 15
+
+
+##### Order Quantity by Service  #####
+
+SELECT 
+    ?Service (SUM(?Quantity) as ?nCount) 
+WHERE { 
+     ?OrderItem s:orderQuantity ?Quantity. 
+     ?OrderItem s:orderedItem ?Service. 
+     ?Service rdf:type s:Service.  
+     
+}
+GROUP BY ?Service 
+LIMIT 15
+
+
+##### Order Quantity Received by Product and by Date #####
+
+SELECT 
+     ?Service ?n ?Date
+WHERE { 
+     ?Service rdf:type s:Service. 
+     ?OrderItem ex:hasProductQuantityPending ?n. 
+     ?OrderItem s:orderedItem ?Service.
+     ?Order rdf:type s:Order.
+     ?Order s:orderDate ?Date.
+     ?Order s:orderedItem ?OrderItem.
+}
+LIMIT 15
+
+##### Organizations ordered by number of orders #####
+
+SELECT 
+    ?Organization (COUNT(?Order) as ?nCount)
+ 
+WHERE { 
+    ?Order s:seller ?Organization.
+     
+}
+GROUP BY ?Organization
+ORDER BY DESC(?nCount)
+LIMIT 10
+
+
+
+
+##### Max number of patients in UCI for each Region #####
+SELECT
+  ?isocode (MAX(?nUCI) as ?nMax)
+WHERE {
+  ?Organization rdf:type s:Organization.
+  ?CovidStatus rdf:type ex:CovidStatus.
+  ?Organization ex:hasCovidStatus ?CovidStatus.
+  ?Organization ex:hasISOCode ?isocode.
+  ?CovidStatus ex:numberUCI ?nUCI.
+}
+GROUP BY ?Organization
+ORDER BY DESC(?nMax)
+LIMIT 10
+
+
+##### Suppliers ordered by taxID #####
+SELECT
+ ?t ?n
+WHERE {
+ ?Organization rdf:type s:Organization.
+ ?Organization s:taxID ?t.
+ ?Organization s:name ?n.
+ }
+ORDER BY ASC(?t)
+LIMIT 10
+
+
+##### Total cases of covid for each region #####
+SELECT
+  ?c (SUM(?n) as ?nCount)
+WHERE {
+  ?Organization rdf:type s:Organization.
+  ?Organization ex:hasISOCode ?c.
+  ?CovidStatus rdf:type ex:CovidStatus.
+  ?Organization ex:hasCovidStatus ?CovidStatus.
+  ?CovidStatus ex:totalCases ?n
+}
+GROUP BY ?Organization
+ORDER BY DESC(?nCount)
+LIMIT 10
+
+
+##### Number of orders by region #####
+SELECT
+    ?isocode (COUNT(?Order) as ?orderCount)
+  WHERE {
+    ?Organization rdf:type s:Organization.
+    ?Organization ex:hasISOCode ?isocode.
+    ?Order rdf:type s:Order.
+    ?Order s:customer ?Organization.
+  }
+  GROUP BY ?Organization
+  ORDER BY ASC(?orderCount)
+  LIMIT 10
