@@ -7,7 +7,7 @@
 
 # 1.- Total number of contracts by month
 
-SELECT ?Month (COUNT(?contract) as ?Number_of_contrancts)
+SELECT ?Month (COUNT(?contract) as ?Number_of_contracts)
     WHERE 
     {
       ?contract :property2 ?Month.
@@ -28,7 +28,7 @@ SELECT DISTINCT ?Contract ?description
 
 # 3.- Number of contracts of each state: open, emergency, restricted...
 
-SELECT ?State (COUNT(?Contract) as ?Number_of_contrancts)
+SELECT ?State (COUNT(?Contract) as ?Number_of_contracts)
     WHERE 
     {
       ?Contract :property7 ?State.
