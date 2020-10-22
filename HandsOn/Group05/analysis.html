@@ -66,54 +66,13 @@
     <div class="container">
         <div class="row">
           <section id="naming">
-              <h2> Resource Naming Strategy </h2>
+              <h2> Resource naming strategy </h2>
               <p>The URL of the website from which you can fetch the Data is <span> http://eit-upm-opendata.com/ted</span></p>
 
-              <h6>Notice</h6>
-              <p></p>
-              <ul>
-                <li>get list of ids of Notices : <span>/notices</span></li>
-                <li>get notice with identifier of notice-id : <span>/notice/notice-id</span></li>
-                <li>get contract id of notice-id : <span>/notice/notice-id/#contract</span></li>
-                <li>get CAN id of notice-id : <span>/notice/notice-id/#can</span></li>
-                <li>get type of notice : <span>/notice/notice-id/#type</span></li>
-                <li>get if notice is cancelled or not : <span>/notice/notice-id/#cancelled</span></li>
-                <li>get if notice has mutiple CANs : <span>/notice/notice-id/#multiple-cans</span></li>
-              </ul>
 
 
-              <h6>CAN</h6>
-              <ul>
-                <li>get list of ids of CANS : <span>/cans</span></li>
-                <li>get CAN with identifier of CAN-id : <span>/can/can-id</span></li>
-                <li>get name of CAN : <span>/can/can-id/#name</span></li>
-                <li>get national id of CAN : <span>/can/can-id/#cancelled</span></li>
-                <li>get town of CAN : <span>/can/can-id/#town</span></li>
-                <li>get postal code of CAN : <span>/can/can-id/#postal-code</span></li>
-                <li>get ISO country code of CAN : <span>/can/can-id/#iso-country-code</span></li>
-                <li>get type of CAN : <span>/can/can-id/#type</span></li>
-                <li>get main activity of CAN : <span>/can/can-id/#main-activity</span></li>
-                <li>get EU institution of CAN : <span>/can/can-id/#eu-institution</span></li>
-              </ul>
-
-              <h6>Contract</h6>
-              <p> Contract does not have its own identifier as it uses the identifier of Notice </p>
-              <ul>
-                <li>get list of ids of Contracts : <span>/contracts</span></li>
-                <li>get Contract Id with identifier of notice-id : <span>/contract/notice-id</span></li>
-                <li>get type of Contract : <span>/contract/notice-id/#type</span></li>
-                <li>get CPV of Contract : <span>/contract/notice-id/#cpv</span></li>
-                <li>get GPA of Contract : <span>/contract/notice-id/#gpa</span></li>
-                <li>get Value of Contract : <span>/contract/notice-id/#value</span></li>
-                <li>get if Contract is funded : <span>/contract/notice-id/#is-funded</span></li>
-                <li>get if Contract is renewal : <span>/contract/notice-id/#is-renewal</span></li>
-                <li>get duration of Contract : <span>/contract/notice-id/#duration</span></li>
-                <li>get time stamp of staritng of Contract : <span>/contract/notice-id/#starting</span></li>
-                <li>get time stamp of completion of Contract : <span>/contract/notice-id/#completion</span></li>
-              </ul>
-
-<h2> Data properties of ontology </h2>
-<p>After cleaning the dataset contains 21 columns and 7587 rows.</p>
+<h3> Data properties of ontology </h3>
+<p>After cleaning, the dataset contains 21 columns and 7587 rows.</p>
 <p>There are two classes; CAE and Notice.</p>
 <p>The data contains the following properties; </p>
 <ul>
