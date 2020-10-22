@@ -7,11 +7,11 @@
 
 # 1.- Total number of contracts by month
 
-SELECT ?Month (COUNT(?contract) as ?Number_of_contracts)
+    SELECT ?Month (COUNT(?contract) as ?Number_of_contrancts)
     WHERE 
     {
-      ?contract :property2 ?Month.
-    } 
+      ?contract ns:hasMonth ?Month.
+    }
     GROUP BY ?Month
 
 
@@ -21,7 +21,7 @@ SELECT ?Month (COUNT(?contract) as ?Number_of_contracts)
 SELECT DISTINCT ?Contract ?description
     WHERE 
     {
-      ?Contract :property5 ?description.
+      ?Contract ns:hasDescription ?description.
       FILTER regex(?description, \"distrito de chamartin\")
     }
 
@@ -31,6 +31,6 @@ SELECT DISTINCT ?Contract ?description
 SELECT ?State (COUNT(?Contract) as ?Number_of_contracts)
     WHERE 
     {
-      ?Contract :property7 ?State.
+      ?Contract ns:hasProcedure ?State.
     }
     GROUP BY ?State
