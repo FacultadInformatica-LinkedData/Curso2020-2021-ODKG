@@ -1,0 +1,26 @@
+PREFIX ns: <http://group01.org/aragon/ontology/>
+
+# Get all resources of type contract
+SELECT DISTINCT ?x
+WHERE { 
+	?x a ns:Contract 
+}
+
+# Get all contracts since june 2020
+SELECT DISTINCT ?x ?date
+WHERE { 
+	?x a ns:Contract .
+    ?x ns:awardDate ?date .
+    FILTER (?date > "2020-06-01"^^xsd:dateTime) 
+}
+
+# Get public org name and company name
+SELECT DISTINCT
+    ?publicName ?companyName
+WHERE { 
+    ?contract a ns:Contract .
+    ?contract ns:contractingParty ?publicOrg .
+    ?publicOrg ns:name ?publicName .
+    ?contract ns:contractor ?company .
+    ?company ns:name ?companyName .
+}

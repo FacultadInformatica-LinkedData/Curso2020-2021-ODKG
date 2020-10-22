@@ -29,7 +29,7 @@ mappings:
       - [ns:publicationDate, $(Data de publicacio), xsd:dateTime]
       - [ns:tenderBudget, $(Pressupost de licitacio), xsd:double]
       - [ns:typeOfContract, $(Tipus de contracte), xsd:string]
-      - p: ns:PublicOrganization
+      - p: ns:contractingParty
         o:
           - mapping: PublicOrganization
             condition:
@@ -37,7 +37,7 @@ mappings:
               parameters:
                 - [str1, $(Organ de contractacio)]
                 - [str2, $(Organ de contractacio)]
-      - p: ns:Company
+      - p: ns:contractor
         o:
           - mapping: Company
             condition:

@@ -97,9 +97,9 @@ map:pm_1 a rr:PredicateMap;
 map:pm_10 a rr:PredicateMap;
     rr:constant <http://publicprocurement.odkg.es/group06/ontology/ppg6#typeOfContract>.
 map:pm_11 a rr:PredicateMap;
-    rr:constant <http://publicprocurement.odkg.es/group06/ontology/ppg6#PublicOrganization>.
+    rr:constant <http://publicprocurement.odkg.es/group06/ontology/ppg6#contractingParty>.
 map:pm_12 a rr:PredicateMap;
-    rr:constant <http://publicprocurement.odkg.es/group06/ontology/ppg6#Company>.
+    rr:constant <http://publicprocurement.odkg.es/group06/ontology/ppg6#contractor>.
 map:pm_13 a rr:PredicateMap;
     rr:constant rdf:type.
 map:pm_14 a rr:PredicateMap;
