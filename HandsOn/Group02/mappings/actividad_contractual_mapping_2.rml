@@ -6,7 +6,7 @@
 @prefix map: <http://mapping.example.com/>.
 
 map:jc_0 rr:child "Organismo";
-    rr:parent "DISTRITO".
+    rr:parent "JUNTA".
 map:map_adjudicatariosmap_0 rml:logicalSource map:source_2;
     a rr:TriplesMap;
     rdfs:label "adjudicatariosmap";
@@ -21,7 +21,7 @@ map:map_juntasmap_0 rml:logicalSource map:source_3;
     a rr:TriplesMap;
     rdfs:label "juntasmap";
     rr:subjectMap map:s_3;
-    rr:predicateObjectMap map:pom_23, map:pom_24, map:pom_25, map:pom_26, map:pom_27, map:pom_28, map:pom_29, map:pom_30, map:pom_31, map:pom_32, map:pom_33, map:pom_34, map:pom_35, map:pom_36, map:pom_37, map:pom_38, map:pom_39, map:pom_40, map:pom_41.
+    rr:predicateObjectMap map:pom_23, map:pom_24, map:pom_25, map:pom_26, map:pom_27, map:pom_28, map:pom_29, map:pom_30, map:pom_31, map:pom_32, map:pom_33, map:pom_34, map:pom_35, map:pom_36, map:pom_37, map:pom_38, map:pom_39, map:pom_40, map:pom_41, map:pom_42.
 map:map_organismosmap_0 rml:logicalSource map:source_1;
     a rr:TriplesMap;
     rdfs:label "organismosmap";
@@ -88,70 +88,92 @@ map:om_22 a rr:ObjectMap;
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_23 a rr:ObjectMap;
-    rr:constant "http://example.org#Organismo";
+    rr:constant "http://example.org#Publicorg";
     rr:termType rr:Literal.
 map:om_24 a rr:ObjectMap;
-    rml:reference "DESCRIPCION-ENTIDAD";
-    rr:termType rr:Literal.
+    rml:reference "JUNTA";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_25 a rr:ObjectMap;
-    rml:reference "HORARIO";
-    rr:termType rr:Literal.
+    rml:reference "DESCRIPCION-ENTIDAD";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_26 a rr:ObjectMap;
-    rml:reference "EQUIPAMIENTO";
-    rr:termType rr:Literal.
+    rml:reference "HORARIO";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_27 a rr:ObjectMap;
-    rml:reference "TRANSPORTE";
-    rr:termType rr:Literal.
+    rml:reference "EQUIPAMIENTO";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_28 a rr:ObjectMap;
-    rml:reference "PÁGINA WEB";
-    rr:termType rr:Literal.
+    rml:reference "TRANSPORTE";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_29 a rr:ObjectMap;
-    rml:reference "NOMBRE-VÍA";
-    rr:termType rr:Literal.
+    rml:reference "PÁGINA WEB";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_3 a rr:ObjectMap;
     rml:reference "Numero Contrato";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#integer>.
 map:om_30 a rr:ObjectMap;
-    rml:reference "TIPO-VIA";
-    rr:termType rr:Literal.
+    rml:reference "NOMBRE-VÍA";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_31 a rr:ObjectMap;
-    rml:reference "NÚMERO";
-    rr:termType rr:Literal.
+    rml:reference "TIPO-VIA";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_32 a rr:ObjectMap;
-    rml:reference "LOCALIDAD";
-    rr:termType rr:Literal.
+    rml:reference "NÚMERO";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#integer>.
 map:om_33 a rr:ObjectMap;
-    rml:reference "PROVINCIA";
-    rr:termType rr:Literal.
+    rml:reference "LOCALIDAD";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_34 a rr:ObjectMap;
-    rml:reference "CÓDIGO POSTAL";
-    rr:termType rr:Literal.
+    rml:reference "PROVINCIA";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_35 a rr:ObjectMap;
-    rml:reference "BARRIO";
-    rr:termType rr:Literal.
+    rml:reference "CÓDIGO POSTAL";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#integer>.
 map:om_36 a rr:ObjectMap;
-    rml:reference "DISTRITO";
-    rr:termType rr:Literal.
+    rml:reference "BARRIO";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_37 a rr:ObjectMap;
-    rml:reference "COORDENADA-X";
-    rr:termType rr:Literal.
+    rml:reference "DISTRITO";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_38 a rr:ObjectMap;
-    rml:reference "COORDENADA-Y";
-    rr:termType rr:Literal.
+    rml:reference "COORDENADA-X";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#integer>.
 map:om_39 a rr:ObjectMap;
-    rml:reference "LATITUD";
-    rr:termType rr:Literal.
+    rml:reference "COORDENADA-Y";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#integer>.
 map:om_4 a rr:ObjectMap;
     rml:reference "Numero Expediente";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#integer>.
 map:om_40 a rr:ObjectMap;
-    rml:reference "LONGITUD";
-    rr:termType rr:Literal.
+    rml:reference "LATITUD";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#integer>.
 map:om_41 a rr:ObjectMap;
+    rml:reference "LONGITUD";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#integer>.
+map:om_42 a rr:ObjectMap;
     rml:reference "EMAIL";
-    rr:termType rr:Literal.
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_5 a rr:ObjectMap;
     rml:reference "Descripcion Contrato";
     rr:termType rr:Literal;
@@ -207,44 +229,46 @@ map:pm_22 a rr:PredicateMap;
 map:pm_23 a rr:PredicateMap;
     rr:constant rdf:type.
 map:pm_24 a rr:PredicateMap;
-    rr:constant <http://example.org#descripcion>.
+    rr:constant <http://example.org#nombre>.
 map:pm_25 a rr:PredicateMap;
-    rr:constant <http://example.org#horario>.
+    rr:constant <http://example.org#descripcion>.
 map:pm_26 a rr:PredicateMap;
-    rr:constant <http://example.org#equipamiento>.
+    rr:constant <http://example.org#horario>.
 map:pm_27 a rr:PredicateMap;
-    rr:constant <http://example.org#transporte>.
+    rr:constant <http://example.org#equipamiento>.
 map:pm_28 a rr:PredicateMap;
-    rr:constant <http://example.org#web>.
+    rr:constant <http://example.org#transporte>.
 map:pm_29 a rr:PredicateMap;
-    rr:constant <http://example.org#nombrevia>.
+    rr:constant <http://example.org#web>.
 map:pm_3 a rr:PredicateMap;
     rr:constant <http://example.org#hasContractNumber>.
 map:pm_30 a rr:PredicateMap;
-    rr:constant <http://example.org#tipovia>.
+    rr:constant <http://example.org#nombrevia>.
 map:pm_31 a rr:PredicateMap;
-    rr:constant <http://example.org#numero>.
+    rr:constant <http://example.org#tipovia>.
 map:pm_32 a rr:PredicateMap;
-    rr:constant <http://example.org#localidad>.
+    rr:constant <http://example.org#numero>.
 map:pm_33 a rr:PredicateMap;
-    rr:constant <http://example.org#provincia>.
+    rr:constant <http://example.org#localidad>.
 map:pm_34 a rr:PredicateMap;
-    rr:constant <http://example.org#codigopostal>.
+    rr:constant <http://example.org#provincia>.
 map:pm_35 a rr:PredicateMap;
-    rr:constant <http://example.org#barrio>.
+    rr:constant <http://example.org#codigopostal>.
 map:pm_36 a rr:PredicateMap;
-    rr:constant <http://example.org#distrito>.
+    rr:constant <http://example.org#barrio>.
 map:pm_37 a rr:PredicateMap;
-    rr:constant <http://example.org#coordenadax>.
+    rr:constant <http://example.org#distrito>.
 map:pm_38 a rr:PredicateMap;
-    rr:constant <http://example.org#coordenaday>.
+    rr:constant <http://example.org#coordenadax>.
 map:pm_39 a rr:PredicateMap;
-    rr:constant <http://example.org#latitud>.
+    rr:constant <http://example.org#coordenaday>.
 map:pm_4 a rr:PredicateMap;
     rr:constant <http://example.org#hasExpNumber>.
 map:pm_40 a rr:PredicateMap;
-    rr:constant <http://example.org#longitud>.
+    rr:constant <http://example.org#latitud>.
 map:pm_41 a rr:PredicateMap;
+    rr:constant <http://example.org#longitud>.
+map:pm_42 a rr:PredicateMap;
     rr:constant <http://example.org#email>.
 map:pm_5 a rr:PredicateMap;
     rr:constant <http://example.org#hasDescription>.
@@ -367,6 +391,9 @@ map:pom_40 a rr:PredicateObjectMap;
 map:pom_41 a rr:PredicateObjectMap;
     rr:predicateMap map:pm_41;
     rr:objectMap map:om_41.
+map:pom_42 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_42;
+    rr:objectMap map:om_42.
 map:pom_5 a rr:PredicateObjectMap;
     rr:predicateMap map:pm_5;
     rr:objectMap map:om_5.
@@ -389,7 +416,7 @@ map:s_1 a rr:SubjectMap;
 map:s_2 a rr:SubjectMap;
     rr:template "http://MadridPublicContracts/ontology/{Nombre/Razon Social}".
 map:s_3 a rr:SubjectMap;
-    rr:template "http://MadridPublicContracts/ontology/{NOMBRE}".
+    rr:template "http://MadridPublicContracts/ontology/{PK}".
 map:source_0 a rml:LogicalSource;
     rml:source "actividad_contractual_ayto_madrid_2020-updated.csv";
     rml:referenceFormulation ql:CSV.
@@ -402,5 +429,6 @@ map:source_2 a rml:LogicalSource;
 map:source_3 a rml:LogicalSource;
     rml:source "juntas_distrito_ayuto_madrid-updated.csv";
     rml:referenceFormulation ql:CSV.
+
 
 
