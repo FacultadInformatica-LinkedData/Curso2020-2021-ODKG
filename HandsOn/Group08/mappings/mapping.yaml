@@ -1,0 +1,129 @@
+prefixes:
+  
+    s: "http://schema.org/" 
+    owl: "http://www.w3.org/2002/07/owl#"
+    rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xml: "http://www.w3.org/XML/1998/namespace"
+    xsd: "http://www.w3.org/2001/XMLSchema#"
+    rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+    base: "http://www.publicProcurementMurciaCOVID19.es/ontology/ont#"
+    ind: "http://www.publicProcurementMurciaCOVID19.es/resource/"
+
+  
+mappings:
+  
+  covidstatusmap:
+    sources:
+      - [agregados-updated.csv~csv] 
+    s: http://www.publicProcurementMurciaCOVID19.es/resource/CovidStatus/$(CovidStatusID)
+    po:
+      - [a, base:CovidStatus]
+      - [base:numPositivePCR,$(PCR+) ,xsd:integer]
+      - [base:numPositiveAC,$(TestAc+) ,xsd:integer]
+      - [base:numberDeaths,$(Fallecidos) ,xsd:integer]
+      - [base:numberUCI,$(UCI) ,xsd:integer]
+      - [base:numberHospitalizations,$(Hospitalizados) ,xsd:integer]
+      - p: base:inDate
+        o:
+          - mapping: datemap
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(FECHA)]
+                - [str2, $(fecha)]
+  covidstatusmap2:
+    sources:
+      - [datos_ccaas_updated.csv~csv]
+    s: http://www.publicProcurementMurciaCOVID19.es/resource/CovidStatus/$(CovidStatusID)
+    po:
+      - [base:numPCR,$(num_casos_prueba_pcr) ,xsd:integer]
+      - [base:numAC,$(num_casos_prueba_test_ac) ,xsd:integer]
+      - [base:numPositiveOther,$(num_casos_prueba_otras) ,xsd:integer] 
+      - [base:numPositiveUnknown,$(num_casos_prueba_desconocida) ,xsd:integer]  
+      - [base:totalCases,$(num_casos) ,xsd:integer]
+      
+  ccaamap:
+    sources:
+      - [agregados-updated.csv~csv]
+    s: http://www.publicProcurementMurciaCOVID19.es/resource/CCAA/$(CCAA)
+    po:
+      - [a, s:Organization]
+      - [base:hasISOCode ,$(CCAA),xsd:string]
+      - p: base:hasCovidStatus
+        o:
+          - mapping: covidstatusmap
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(CovidStatusID)]
+                - [str2, $(CovidStatusID)]
+      
+  datemap:
+    sources:
+      - [datos_ccaas_updated.csv~csv]
+    s: http://www.publicProcurementMurciaCOVID19.es/resource/Date/$(fecha)
+    po:
+      - [a, s:Date]
+       
+  ordermap:
+    sources:
+      - [ContratosEmergenciaSMS-updated.csv~csv]
+    s: http://www.publicProcurementMurciaCOVID19.es/resource/Order/$(OrderID)
+    po:
+      - [a, s:Order]
+      - [s:customer, ind:CCAA/MC ]
+      - p: s:orderDate
+        o:
+          - mapping: datemap
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(Fecha)]
+                - [str2, $(fecha)]
+      - p: s:seller
+        o:
+          - mapping: organizationmap
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(OrganizationURI)]
+                - [str2, $(OrganizationURI)] 
+      
+  organizationmap:
+    sources:
+      - [ContratosEmergenciaSMS-updated.csv~csv]
+    s: http://www.publicProcurementMurciaCOVID19.es/resource/Company/$(OrganizationURI)
+    po:
+      - [a, s:Organization]
+      - [s:name, $(Adjudicatario),xsd:string]
+      - [s:taxID, $(NIF),xsd:string]
+      
+  orderitemmap:
+    sources:
+      - [ContratosEmergenciaSMS-updated.csv~csv]
+    s: http://www.publicProcurementMurciaCOVID19.es/resource/OrderItem/$(OrderItemID)
+    po:
+      - [a, s:OrderItem]
+      - [base:hasIVA,$(totalVAT),xsd:integer]
+      - [s:orderQuantity, $(CantidadPedido), xsd:integer ]
+      - [base:hasOrderAmount,$(ImportePedido),xsd:integer]
+      - [base:hasPaidAmount,$(ImportePagado),xsd:integer]
+      - [base:hasPendingAmount,$(ImportePendiente),xsd:integer]
+      - [base:hasProductQuantityPending,$(CantidadPendiente),xsd:integer]
+      - [base:hasProductQuantityReceived,$(CantidadRecibido),xsd:integer]
+      - p: s:orderedItem
+        o:
+          - mapping: product
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(ProductURI)]
+                - [str2, $(ProductURI)] 
+  product:
+    sources:
+      - [ContratosEmergenciaSMS-updated.csv~csv]
+    s: http://www.publicProcurementMurciaCOVID19.es/resource/$(Tipo)/$(ProductURI)
+    po:
+      - [a, s:$(Tipo)]
+      - [s:name, $(Producto),xsd:string]
+      
