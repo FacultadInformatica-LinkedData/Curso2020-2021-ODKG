@@ -18,6 +18,7 @@ mappings:
     s: http://group01.org/aragon/resource/Contract/$(Code)
     po:
       - [a, vocab:Contract]
+      - [rdfs:label, $(Code)]
       - [vocab:hasAwardPrice,$(AwardPrice),xsd:double]
       - [vocab:hasAwardProcedure,$(AwardProcedure),xsd:string]
       - [vocab:hasBiddingPrice,$(BiddingPrice),xsd:double]
@@ -46,6 +47,7 @@ mappings:
     s: http://group01.org/aragon/resource/Company/$(Company)
     po:
       - [a, vocab:Company]
+      - [rdfs:label, $(Company)]
 
   triplesmap3:
     sources:
@@ -53,3 +55,4 @@ mappings:
     s: http://group01.org/aragon/resource/GovernmentBody/$(GovernmentRequester)
     po:
       - [a, vocab:GovernmentBody]
+      - [rdfs:label, $(GovernmentRequester)]
