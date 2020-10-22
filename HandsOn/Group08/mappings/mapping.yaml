@@ -72,6 +72,7 @@ mappings:
     po:
       - [a, s:Order]
       - [s:customer, ind:CCAA/MC ]
+	  - [s:orderedItem, $(OrderItemID)]
       - p: s:orderDate
         o:
           - mapping: datemap
@@ -105,12 +106,12 @@ mappings:
     po:
       - [a, s:OrderItem]
       - [base:hasIVA,$(totalVAT),xsd:integer]
-      - [s:orderQuantity, $(CantidadPedido), xsd:integer ]
-      - [base:hasOrderAmount,$(ImportePedido),xsd:integer]
-      - [base:hasPaidAmount,$(ImportePagado),xsd:integer]
-      - [base:hasPendingAmount,$(ImportePendiente),xsd:integer]
-      - [base:hasProductQuantityPending,$(CantidadPendiente),xsd:integer]
-      - [base:hasProductQuantityReceived,$(CantidadRecibido),xsd:integer]
+      - [s:orderQuantity, $(CantidadPedido), xsd:float]
+      - [base:hasOrderAmount,$(ImportePedido),xsd:float]
+      - [base:hasPaidAmount,$(ImportePagado),xsd:float]
+      - [base:hasPendingAmount,$(ImportePendiente),xsd:float]
+      - [base:hasProductQuantityPending,$(CantidadPendiente),xsd:float]
+      - [base:hasProductQuantityReceived,$(CantidadRecibido),xsd:float]
       - p: s:orderedItem
         o:
           - mapping: product
