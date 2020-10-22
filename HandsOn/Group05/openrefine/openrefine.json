@@ -14908,4 +14908,30 @@
     "repeatCount": 10,
     "description": "Text transform on cells in column CAE_ID using expression join ([coalesce(cells['CAE_ID'].value,''),coalesce(cells['ISO_COUNTRY_CODE'].value,'')],'')"
   }
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DT_DISPATCH",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DT_DISPATCH using expression value.toDate()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DT_DISPATCH",
+    "expression": "grel:value.toString(\"yyyy-MM-dd\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DT_DISPATCH using expression grel:value.toString(\"yyyy-MM-dd\")"
+  }
 ]
