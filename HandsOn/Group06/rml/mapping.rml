@@ -81,8 +81,7 @@ map:om_6 a rr:ObjectMap;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_7 a rr:ObjectMap;
     rml:reference "Enllace a la publicacio";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#anyURI>.
+    rr:termType rr:IRI.
 map:om_8 a rr:ObjectMap;
     rml:reference "Data de publicacio";
     rr:termType rr:Literal;
@@ -188,11 +187,11 @@ map:s_1 a rr:SubjectMap;
 map:s_2 a rr:SubjectMap;
     rr:template "http://publicprocurement.odkg.es/group06/resource/Company/{Empresa adjudicataria}".
 map:source_0 a rml:LogicalSource;
-    rml:source "Public_procurement_catalonia_COVID-19-updated.csv";
+    rml:source "Public_procurement_catalonia_COVID-19-updated-reduced.csv";
     rml:referenceFormulation ql:CSV.
 map:source_1 a rml:LogicalSource;
-    rml:source "Public_procurement_catalonia_COVID-19-updated.csv";
+    rml:source "Public_procurement_catalonia_COVID-19-updated-reduced.csv";
     rml:referenceFormulation ql:CSV.
 map:source_2 a rml:LogicalSource;
-    rml:source "Public_procurement_catalonia_COVID-19-updated.csv";
+    rml:source "Public_procurement_catalonia_COVID-19-updated-reduced.csv";
     rml:referenceFormulation ql:CSV.

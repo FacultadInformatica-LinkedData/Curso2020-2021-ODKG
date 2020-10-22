@@ -15,7 +15,7 @@ prefixes:
 mappings:
   Contract:
     sources:
-      - [Public_procurement_catalonia_COVID-19-updated.csv~csv]
+      - [Public_procurement_catalonia_COVID-19-updated-reduced.csv~csv]
     s: http://publicprocurement.odkg.es/group06/resource/Contract/$(id)
     po:
       - [a, ns:Contract]
@@ -25,7 +25,7 @@ mappings:
       - [ns:cpv, $(Codi CPV), xsd:string]
       - [ns:description, $(Descripcio de la prestacio), xsd:string]
       - [ns:expedientNumber, $(Codi de expedient), xsd:string]
-      - [ns:linktoPublication, $(Enllace a la publicacio), xsd:anyURI]
+      - [ns:linktoPublication, $(Enllace a la publicacio)~iri]
       - [ns:publicationDate, $(Data de publicacio), xsd:dateTime]
       - [ns:tenderBudget, $(Pressupost de licitacio), xsd:double]
       - [ns:typeOfContract, $(Tipus de contracte), xsd:string]
@@ -48,7 +48,7 @@ mappings:
 
   PublicOrganization:
     sources:
-      - [Public_procurement_catalonia_COVID-19-updated.csv~csv]
+      - [Public_procurement_catalonia_COVID-19-updated-reduced.csv~csv]
     s: http://publicprocurement.odkg.es/group06/resource/PublicOrganization/$(Organ de contractacio)
     po:
       - [a, ns:PublicOrganization]
@@ -57,7 +57,7 @@ mappings:
 
   Company:
     sources:
-      - [Public_procurement_catalonia_COVID-19-updated.csv~csv]
+      - [Public_procurement_catalonia_COVID-19-updated-reduced.csv~csv]
     s: http://publicprocurement.odkg.es/group06/resource/Company/$(Empresa adjudicataria)
     po:
       - [a, ns:Company]
