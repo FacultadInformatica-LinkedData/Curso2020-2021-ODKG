@@ -13,6 +13,5 @@ mappings:
       - [vocab:hasName, $(CAE_NAME)]
       - [vocab:hasPostalCode, $(CAE_POSTAL_CODE)]
       - [vocab:hasTown, $(CAE_TOWN)]
-      - [vocab:hasType, $(CAE_TYPE)]
-      - [vocab:institutionOf, ]
-      - [vocab:isCancelled, $(CANCELLED)]
+      - [vocab:hasType, $(CAE_TYPE), xsd:integer]
+      - [vocab:isCancelled, $(CANCELLED), xsd:boolean]

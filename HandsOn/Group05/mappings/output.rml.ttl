@@ -30,10 +30,12 @@ map:om_5 a rr:ObjectMap;
     rr:termType rr:Literal.
 map:om_6 a rr:ObjectMap;
     rml:reference "CAE_TYPE";
-    rr:termType rr:Literal.
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#integer>.
 map:om_7 a rr:ObjectMap;
     rml:reference "CANCELLED";
-    rr:termType rr:Literal.
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#boolean>.
 map:pm_0 a rr:PredicateMap;
     rr:constant rdf:type.
 map:pm_1 a rr:PredicateMap;
@@ -79,3 +81,4 @@ map:s_0 a rr:SubjectMap;
 map:source_0 a rml:LogicalSource;
     rml:source "TED_CN_2018-updated.csv";
     rml:referenceFormulation ql:CSV.
+
