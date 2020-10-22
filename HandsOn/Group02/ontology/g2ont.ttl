@@ -12,15 +12,11 @@
 ### Contrato
 :Contract rdf:type owl:Class .
 
-### Organización
+### Organismo
 :Org rdf:type owl:Class .
 
-### Organización pública
-:Publicorg rdf:type owl:Class ;
-                    rdfs:subClassOf :org .	
-### Junta de distrito
-:Junta rdf:type owl:Class;
-	rdfs:subClassOf :Publicorg
+### Organismo público
+:Publicorg rdf:type owl:Class .
 					
 # Contract properties
 
@@ -139,23 +135,23 @@
 	rdfs:range xsd:string.
 ### Equipamiento
 
-### Transportation
+### Transporte
 :publicTransport rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
 	rdfs:range xsd:string.
-### Web Page
+### Web 
 :hasWeb rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
 	rdfs:range xsd:string.
-### Road Name
+### Nombre via
 :isinRoad rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
 	rdfs:range xsd:string.
-### RoadType
+### Tipo via
 :hasRoadType rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
 	rdfs:range xsd:string.
-### Number
+### Num 
 :isinRoadNumber rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
 	rdfs:range xsd:int.
@@ -163,35 +159,35 @@
 :locality rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
 	rdfs:range xsd:string.
-### Province
+### Provincia
 :province rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
 	rdfs:range xsd:string.
-### Postal code
+### CP
 :pc rdf:type owl:DatatypeProperty ;
 		rdfs:domain :Junta ;
 		rdfs:range xsd:int.
-###Neighborhood
+###NBarrio
 :neighborhood rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
 	rdfs:range xsd:string.
-###District
+###Distrito
 :district rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
 	rdfs:range xsd:string.
-###Coordenate-x
+###Coordenada-x
 :hasCoordenateX rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
 	rdfs:range xsd:int.
-###Coordenate-y
+###Coordenada-y
 :hasCoordenateY rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
 	rdfs:range xsd:int.
-###Latitude
+###Latitud
 :hasLatitude rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
 	rdfs:range xsd:string.
-###Longitude
+###Longitud
 :hasLongitude rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
 	rdfs:range xsd:string.
