@@ -8957,54 +8957,54 @@
 <http://MadridPublicContracts/ontology/202000723> <http://example.org#hasContractDate> "2020-02-28T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://MadridPublicContracts/ontology/202000723> <http://example.org#nameSR> "Screen Projects, S.L"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/180720> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "http://example.org#Publicorg".
-<http://MadridPublicContracts/ontology/180720> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaciÛn del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaciÛn de los servicios municipales a la ciudadanÌa y promover la participaciÛn de la ciudadanÌa en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180720> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaci√≥n del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaci√≥n de los servicios municipales a la ciudadan√≠a y promover la participaci√≥n de la ciudadan√≠a en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/180720> <http://example.org#horario> " presentar reclamaciones de consumo"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180720> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr·mites relacionados con el  padrÛn municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180720> <http://example.org#transporte> " licencias urbanÌsticas"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180720> <http://example.org#web> " vÌas y espacios p˙blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180720> <http://example.org#nombrevia> " entre otros.Adem·s"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180720> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promociÛn de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180720> <http://example.org#numero> " la difusiÛn de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
-<http://MadridPublicContracts/ontology/180720> <http://example.org#localidad> " la pr·ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180720> <http://example.org#provincia> " apoyo a la educaciÛn y en materia de inspecciÛn sanitaria y comercial. Se admiten perros guÌa."^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180720> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr√°mites relacionados con el  padr√≥n municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180720> <http://example.org#transporte> " licencias urban√≠sticas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180720> <http://example.org#web> " v√≠as y espacios p√∫blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180720> <http://example.org#nombrevia> " entre otros.Adem√°s"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180720> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promoci√≥n de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180720> <http://example.org#numero> " la difusi√≥n de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/180720> <http://example.org#localidad> " la pr√°ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180720> <http://example.org#provincia> " apoyo a la educaci√≥n y en materia de inspecci√≥n sanitaria y comercial. Se admiten perros gu√≠a."^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/180720> <http://example.org#codigopostal> "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/180720> <http://example.org#barrio> ""^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180720> <http://example.org#distrito> "Metro: Legazpi (lÌneas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180720> <http://example.org#distrito> "Metro: Legazpi (l√≠neas"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/180720> <http://example.org#coordenadax> " 3"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/180720> <http://example.org#coordenaday> " 6) Bus: 6"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/180720> <http://example.org#latitud> " 18"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/180720> <http://example.org#longitud> " 78"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/180720> <http://example.org#email> " 148"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/179947> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "http://example.org#Publicorg".
-<http://MadridPublicContracts/ontology/179947> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaciÛn del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaciÛn de los servicios municipales a la ciudadanÌa y promover la participaciÛn de la ciudadanÌa en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/179947> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaci√≥n del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaci√≥n de los servicios municipales a la ciudadan√≠a y promover la participaci√≥n de la ciudadan√≠a en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/179947> <http://example.org#horario> " presentar reclamaciones de consumo"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/179947> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr·mites relacionados con el  padrÛn municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/179947> <http://example.org#transporte> " licencias urbanÌsticas"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/179947> <http://example.org#web> " vÌas y espacios p˙blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/179947> <http://example.org#nombrevia> " entre otros.Adem·s"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/179947> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promociÛn de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/179947> <http://example.org#numero> " la difusiÛn de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
-<http://MadridPublicContracts/ontology/179947> <http://example.org#localidad> " la pr·ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/179947> <http://example.org#provincia> " apoyo a la educaciÛn y en materia de inspecciÛn sanitaria y comercial. Se admiten perros guÌa."^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/179947> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr√°mites relacionados con el  padr√≥n municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/179947> <http://example.org#transporte> " licencias urban√≠sticas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/179947> <http://example.org#web> " v√≠as y espacios p√∫blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/179947> <http://example.org#nombrevia> " entre otros.Adem√°s"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/179947> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promoci√≥n de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/179947> <http://example.org#numero> " la difusi√≥n de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/179947> <http://example.org#localidad> " la pr√°ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/179947> <http://example.org#provincia> " apoyo a la educaci√≥n y en materia de inspecci√≥n sanitaria y comercial. Se admiten perros gu√≠a."^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/179947> <http://example.org#codigopostal> "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/179947> <http://example.org#barrio> ""^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/179947> <http://example.org#distrito> "Metro: Barajas (lÌnea 8) Bus: 101"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/179947> <http://example.org#distrito> "Metro: Barajas (l√≠nea 8) Bus: 101"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/179947> <http://example.org#coordenadax> " 105"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/179947> <http://example.org#coordenaday> " 115"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/179947> <http://example.org#latitud> "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=82d05c2cdc41c010VgnVCM2000000c205a0aRCRD"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/179947> <http://example.org#longitud> "MERCURIO"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/179947> <http://example.org#email> "PLAZA"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/184332> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "http://example.org#Publicorg".
-<http://MadridPublicContracts/ontology/184332> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaciÛn del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaciÛn de los servicios municipales a la ciudadanÌa y promover la participaciÛn de la ciudadanÌa en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184332> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaci√≥n del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaci√≥n de los servicios municipales a la ciudadan√≠a y promover la participaci√≥n de la ciudadan√≠a en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/184332> <http://example.org#horario> " presentar reclamaciones de consumo"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184332> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr·mites relacionados con el  padrÛn municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184332> <http://example.org#transporte> " licencias urbanÌsticas"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184332> <http://example.org#web> " vÌas y espacios p˙blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184332> <http://example.org#nombrevia> " entre otros.Adem·s"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184332> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promociÛn de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184332> <http://example.org#numero> " la difusiÛn de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
-<http://MadridPublicContracts/ontology/184332> <http://example.org#localidad> " la pr·ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184332> <http://example.org#provincia> " apoyo a la educaciÛn y en materia de inspecciÛn sanitaria y comercial. Se admiten perros guÌa."^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184332> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr√°mites relacionados con el  padr√≥n municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184332> <http://example.org#transporte> " licencias urban√≠sticas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184332> <http://example.org#web> " v√≠as y espacios p√∫blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184332> <http://example.org#nombrevia> " entre otros.Adem√°s"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184332> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promoci√≥n de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184332> <http://example.org#numero> " la difusi√≥n de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/184332> <http://example.org#localidad> " la pr√°ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184332> <http://example.org#provincia> " apoyo a la educaci√≥n y en materia de inspecci√≥n sanitaria y comercial. Se admiten perros gu√≠a."^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/184332> <http://example.org#codigopostal> "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/184332> <http://example.org#barrio> ""^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/184332> <http://example.org#distrito> "Bus: 34"^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -9014,111 +9014,111 @@
 <http://MadridPublicContracts/ontology/184332> <http://example.org#longitud> "PLAZA"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/184332> <http://example.org#email> "1"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/184108> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "http://example.org#Publicorg".
-<http://MadridPublicContracts/ontology/184108> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaciÛn del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaciÛn de los servicios municipales a la ciudadanÌa y promover la participaciÛn de la ciudadanÌa en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184108> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaci√≥n del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaci√≥n de los servicios municipales a la ciudadan√≠a y promover la participaci√≥n de la ciudadan√≠a en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/184108> <http://example.org#horario> " presentar reclamaciones de consumo"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184108> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr·mites relacionados con el  padrÛn municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184108> <http://example.org#transporte> " licencias urbanÌsticas"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184108> <http://example.org#web> " vÌas y espacios p˙blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184108> <http://example.org#nombrevia> " entre otros.Adem·s"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184108> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promociÛn de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184108> <http://example.org#numero> " la difusiÛn de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
-<http://MadridPublicContracts/ontology/184108> <http://example.org#localidad> " la pr·ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184108> <http://example.org#provincia> " apoyo a la educaciÛn y en materia de inspecciÛn sanitaria y comercial. Se admiten perros guÌa."^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184108> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr√°mites relacionados con el  padr√≥n municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184108> <http://example.org#transporte> " licencias urban√≠sticas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184108> <http://example.org#web> " v√≠as y espacios p√∫blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184108> <http://example.org#nombrevia> " entre otros.Adem√°s"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184108> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promoci√≥n de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184108> <http://example.org#numero> " la difusi√≥n de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/184108> <http://example.org#localidad> " la pr√°ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184108> <http://example.org#provincia> " apoyo a la educaci√≥n y en materia de inspecci√≥n sanitaria y comercial. Se admiten perros gu√≠a."^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/184108> <http://example.org#codigopostal> "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/184108> <http://example.org#barrio> ""^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184108> <http://example.org#distrito> "Metro: Sol (lÌneas 1"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184108> <http://example.org#distrito> "Metro: Sol (l√≠neas 1"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/184108> <http://example.org#coordenadax> " 2"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/184108> <http://example.org#coordenaday> " 3)"^^<http://www.w3.org/2001/XMLSchema#integer>.
-<http://MadridPublicContracts/ontology/184108> <http://example.org#latitud> " ”pera (lÌneas 2"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/184108> <http://example.org#latitud> " √ìpera (l√≠neas 2"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/184108> <http://example.org#longitud> " 5"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/184108> <http://example.org#email> " R) Bus: 3"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/182884> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "http://example.org#Publicorg".
-<http://MadridPublicContracts/ontology/182884> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaciÛn del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaciÛn de los servicios municipales a la ciudadanÌa y promover la participaciÛn de la ciudadanÌa en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182884> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaci√≥n del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaci√≥n de los servicios municipales a la ciudadan√≠a y promover la participaci√≥n de la ciudadan√≠a en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/182884> <http://example.org#horario> " presentar reclamaciones de consumo"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182884> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr·mites relacionados con el  padrÛn municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182884> <http://example.org#transporte> " licencias urbanÌsticas"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182884> <http://example.org#web> " vÌas y espacios p˙blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182884> <http://example.org#nombrevia> " entre otros.Adem·s"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182884> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promociÛn de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182884> <http://example.org#numero> " la difusiÛn de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
-<http://MadridPublicContracts/ontology/182884> <http://example.org#localidad> " la pr·ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182884> <http://example.org#provincia> " apoyo a la educaciÛn y en materia de inspecciÛn sanitaria y comercial. Se admiten perros guÌa."^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182884> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr√°mites relacionados con el  padr√≥n municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182884> <http://example.org#transporte> " licencias urban√≠sticas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182884> <http://example.org#web> " v√≠as y espacios p√∫blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182884> <http://example.org#nombrevia> " entre otros.Adem√°s"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182884> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promoci√≥n de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182884> <http://example.org#numero> " la difusi√≥n de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/182884> <http://example.org#localidad> " la pr√°ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182884> <http://example.org#provincia> " apoyo a la educaci√≥n y en materia de inspecci√≥n sanitaria y comercial. Se admiten perros gu√≠a."^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/182884> <http://example.org#codigopostal> "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/182884> <http://example.org#barrio> ""^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182884> <http://example.org#distrito> "Metro: Cruz del Rayo (lÌnea 9)"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182884> <http://example.org#coordenadax> " Prosperidad (lÌnea 4) Bus: 7"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/182884> <http://example.org#distrito> "Metro: Cruz del Rayo (l√≠nea 9)"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182884> <http://example.org#coordenadax> " Prosperidad (l√≠nea 4) Bus: 7"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/182884> <http://example.org#coordenaday> " 16"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/182884> <http://example.org#latitud> " 19"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/182884> <http://example.org#longitud> " 29"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/182884> <http://example.org#email> " 51"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/183017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "http://example.org#Publicorg".
-<http://MadridPublicContracts/ontology/183017> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaciÛn del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaciÛn de los servicios municipales a la ciudadanÌa y promover la participaciÛn de la ciudadanÌa en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/183017> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaci√≥n del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaci√≥n de los servicios municipales a la ciudadan√≠a y promover la participaci√≥n de la ciudadan√≠a en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/183017> <http://example.org#horario> " presentar reclamaciones de consumo"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/183017> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr·mites relacionados con el  padrÛn municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/183017> <http://example.org#transporte> " licencias urbanÌsticas"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/183017> <http://example.org#web> " vÌas y espacios p˙blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/183017> <http://example.org#nombrevia> " entre otros.Adem·s"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/183017> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promociÛn de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/183017> <http://example.org#numero> " la difusiÛn de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
-<http://MadridPublicContracts/ontology/183017> <http://example.org#localidad> " la pr·ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/183017> <http://example.org#provincia> " apoyo a la educaciÛn y en materia de inspecciÛn sanitaria y comercial. Se admiten perros guÌa."^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/183017> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr√°mites relacionados con el  padr√≥n municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/183017> <http://example.org#transporte> " licencias urban√≠sticas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/183017> <http://example.org#web> " v√≠as y espacios p√∫blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/183017> <http://example.org#nombrevia> " entre otros.Adem√°s"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/183017> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promoci√≥n de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/183017> <http://example.org#numero> " la difusi√≥n de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/183017> <http://example.org#localidad> " la pr√°ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/183017> <http://example.org#provincia> " apoyo a la educaci√≥n y en materia de inspecci√≥n sanitaria y comercial. Se admiten perros gu√≠a."^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/183017> <http://example.org#codigopostal> "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/183017> <http://example.org#barrio> ""^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/183017> <http://example.org#distrito> "Metro: Iglesia (lÌnea 1) Bus: 3"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/183017> <http://example.org#distrito> "Metro: Iglesia (l√≠nea 1) Bus: 3"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/183017> <http://example.org#coordenadax> " 40"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/183017> <http://example.org#coordenaday> " 147."^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/183017> <http://example.org#latitud> "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=3fae0a47f441f010VgnVCM2000000c205a0aRCRD"^^<http://www.w3.org/2001/XMLSchema#integer>.
-<http://MadridPublicContracts/ontology/183017> <http://example.org#longitud> "CHAMBERÕ"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/183017> <http://example.org#longitud> "CHAMBER√ç"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/183017> <http://example.org#email> "PLAZA"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/180085> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "http://example.org#Publicorg".
-<http://MadridPublicContracts/ontology/180085> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaciÛn del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaciÛn de los servicios municipales a la ciudadanÌa y promover la participaciÛn de la ciudadanÌa en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180085> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaci√≥n del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaci√≥n de los servicios municipales a la ciudadan√≠a y promover la participaci√≥n de la ciudadan√≠a en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/180085> <http://example.org#horario> " presentar reclamaciones de consumo"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180085> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr·mites relacionados con el  padrÛn municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180085> <http://example.org#transporte> " licencias urbanÌsticas"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180085> <http://example.org#web> " vÌas y espacios p˙blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180085> <http://example.org#nombrevia> " entre otros.Adem·s"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180085> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promociÛn de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180085> <http://example.org#numero> " la difusiÛn de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
-<http://MadridPublicContracts/ontology/180085> <http://example.org#localidad> " la pr·ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180085> <http://example.org#provincia> " apoyo a la educaciÛn y en materia de inspecciÛn sanitaria y comercial. Se admiten perros guÌa."^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180085> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr√°mites relacionados con el  padr√≥n municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180085> <http://example.org#transporte> " licencias urban√≠sticas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180085> <http://example.org#web> " v√≠as y espacios p√∫blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180085> <http://example.org#nombrevia> " entre otros.Adem√°s"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180085> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promoci√≥n de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180085> <http://example.org#numero> " la difusi√≥n de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/180085> <http://example.org#localidad> " la pr√°ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180085> <http://example.org#provincia> " apoyo a la educaci√≥n y en materia de inspecci√≥n sanitaria y comercial. Se admiten perros gu√≠a."^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/180085> <http://example.org#codigopostal> "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/180085> <http://example.org#barrio> ""^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180085> <http://example.org#distrito> "Metro: Ciudad Lineal (lÌnea 5)"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180085> <http://example.org#coordenadax> " Pueblo Nuevo (lÌneas 5 y 7) Bus: 38"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/180085> <http://example.org#distrito> "Metro: Ciudad Lineal (l√≠nea 5)"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180085> <http://example.org#coordenadax> " Pueblo Nuevo (l√≠neas 5 y 7) Bus: 38"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/180085> <http://example.org#coordenaday> " 48"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/180085> <http://example.org#latitud> " 70"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/180085> <http://example.org#longitud> " 105"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/180085> <http://example.org#email> " 4"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/180292> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "http://example.org#Publicorg".
-<http://MadridPublicContracts/ontology/180292> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaciÛn del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaciÛn de los servicios municipales a la ciudadanÌa y promover la participaciÛn de la ciudadanÌa en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180292> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaci√≥n del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaci√≥n de los servicios municipales a la ciudadan√≠a y promover la participaci√≥n de la ciudadan√≠a en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/180292> <http://example.org#horario> " presentar reclamaciones de consumo"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180292> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr·mites relacionados con el  padrÛn municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180292> <http://example.org#transporte> " licencias urbanÌsticas"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180292> <http://example.org#web> " vÌas y espacios p˙blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180292> <http://example.org#nombrevia> " entre otros.Adem·s"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180292> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promociÛn de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180292> <http://example.org#numero> " la difusiÛn de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
-<http://MadridPublicContracts/ontology/180292> <http://example.org#localidad> " la pr·ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180292> <http://example.org#provincia> " apoyo a la educaciÛn y en materia de inspecciÛn sanitaria y comercial. Se admiten perros guÌa."^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180292> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr√°mites relacionados con el  padr√≥n municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180292> <http://example.org#transporte> " licencias urban√≠sticas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180292> <http://example.org#web> " v√≠as y espacios p√∫blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180292> <http://example.org#nombrevia> " entre otros.Adem√°s"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180292> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promoci√≥n de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180292> <http://example.org#numero> " la difusi√≥n de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/180292> <http://example.org#localidad> " la pr√°ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180292> <http://example.org#provincia> " apoyo a la educaci√≥n y en materia de inspecci√≥n sanitaria y comercial. Se admiten perros gu√≠a."^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/180292> <http://example.org#codigopostal> "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/180292> <http://example.org#barrio> ""^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180292> <http://example.org#distrito> "Metro: Barrio del Pilar (lÌnea 9)"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180292> <http://example.org#coordenadax> " PeÒagrande (lÌnea 7)"^^<http://www.w3.org/2001/XMLSchema#integer>.
-<http://MadridPublicContracts/ontology/180292> <http://example.org#coordenaday> " Avenida de la IlustraciÛn (lÌnea 7) Bus: 42"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/180292> <http://example.org#distrito> "Metro: Barrio del Pilar (l√≠nea 9)"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180292> <http://example.org#coordenadax> " Pe√±agrande (l√≠nea 7)"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/180292> <http://example.org#coordenaday> " Avenida de la Ilustraci√≥n (l√≠nea 7) Bus: 42"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/180292> <http://example.org#latitud> " 49"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/180292> <http://example.org#longitud> " 83"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/180292> <http://example.org#email> " 128"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/182798> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "http://example.org#Publicorg".
-<http://MadridPublicContracts/ontology/182798> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaciÛn del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaciÛn de los servicios municipales a la ciudadanÌa y promover la participaciÛn de la ciudadanÌa en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182798> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaci√≥n del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaci√≥n de los servicios municipales a la ciudadan√≠a y promover la participaci√≥n de la ciudadan√≠a en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/182798> <http://example.org#horario> " presentar reclamaciones de consumo"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182798> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr·mites relacionados con el  padrÛn municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182798> <http://example.org#transporte> " licencias urbanÌsticas"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182798> <http://example.org#web> " vÌas y espacios p˙blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182798> <http://example.org#nombrevia> " entre otros.Adem·s"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182798> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promociÛn de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182798> <http://example.org#numero> " la difusiÛn de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
-<http://MadridPublicContracts/ontology/182798> <http://example.org#localidad> " la pr·ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182798> <http://example.org#provincia> " apoyo a la educaciÛn y en materia de inspecciÛn sanitaria y comercial. Se admiten perros guÌa."^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182798> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr√°mites relacionados con el  padr√≥n municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182798> <http://example.org#transporte> " licencias urban√≠sticas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182798> <http://example.org#web> " v√≠as y espacios p√∫blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182798> <http://example.org#nombrevia> " entre otros.Adem√°s"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182798> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promoci√≥n de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182798> <http://example.org#numero> " la difusi√≥n de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/182798> <http://example.org#localidad> " la pr√°ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182798> <http://example.org#provincia> " apoyo a la educaci√≥n y en materia de inspecci√≥n sanitaria y comercial. Se admiten perros gu√≠a."^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/182798> <http://example.org#codigopostal> "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/182798> <http://example.org#barrio> ""^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/182798> <http://example.org#distrito> "Bus: 9"^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -9128,225 +9128,225 @@
 <http://MadridPublicContracts/ontology/182798> <http://example.org#longitud> " 120"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/182798> <http://example.org#email> " 153"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/181206> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "http://example.org#Publicorg".
-<http://MadridPublicContracts/ontology/181206> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaciÛn del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaciÛn de los servicios municipales a la ciudadanÌa y promover la participaciÛn de la ciudadanÌa en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/181206> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaci√≥n del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaci√≥n de los servicios municipales a la ciudadan√≠a y promover la participaci√≥n de la ciudadan√≠a en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/181206> <http://example.org#horario> " presentar reclamaciones de consumo"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/181206> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr·mites relacionados con el  padrÛn municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/181206> <http://example.org#transporte> " licencias urbanÌsticas"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/181206> <http://example.org#web> " vÌas y espacios p˙blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/181206> <http://example.org#nombrevia> " entre otros.Adem·s"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/181206> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promociÛn de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/181206> <http://example.org#numero> " la difusiÛn de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
-<http://MadridPublicContracts/ontology/181206> <http://example.org#localidad> " la pr·ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/181206> <http://example.org#provincia> " apoyo a la educaciÛn y en materia de inspecciÛn sanitaria y comercial. Se admiten perros guÌa."^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/181206> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr√°mites relacionados con el  padr√≥n municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/181206> <http://example.org#transporte> " licencias urban√≠sticas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/181206> <http://example.org#web> " v√≠as y espacios p√∫blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/181206> <http://example.org#nombrevia> " entre otros.Adem√°s"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/181206> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promoci√≥n de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/181206> <http://example.org#numero> " la difusi√≥n de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/181206> <http://example.org#localidad> " la pr√°ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/181206> <http://example.org#provincia> " apoyo a la educaci√≥n y en materia de inspecci√≥n sanitaria y comercial. Se admiten perros gu√≠a."^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/181206> <http://example.org#codigopostal> "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/181206> <http://example.org#barrio> ""^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/181206> <http://example.org#distrito> "Metro: Aluche (lÌnea 5) Bus: 17"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/181206> <http://example.org#distrito> "Metro: Aluche (l√≠nea 5) Bus: 17"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/181206> <http://example.org#coordenadax> " 31"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/181206> <http://example.org#coordenaday> " 117"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/181206> <http://example.org#latitud> " 121"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/181206> <http://example.org#longitud> " 131"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/181206> <http://example.org#email> " 138"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/184319> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "http://example.org#Publicorg".
-<http://MadridPublicContracts/ontology/184319> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaciÛn del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaciÛn de los servicios municipales a la ciudadanÌa y promover la participaciÛn de la ciudadanÌa en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184319> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaci√≥n del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaci√≥n de los servicios municipales a la ciudadan√≠a y promover la participaci√≥n de la ciudadan√≠a en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/184319> <http://example.org#horario> " presentar reclamaciones de consumo"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184319> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr·mites relacionados con el  padrÛn municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184319> <http://example.org#transporte> " licencias urbanÌsticas"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184319> <http://example.org#web> " vÌas y espacios p˙blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184319> <http://example.org#nombrevia> " entre otros.Adem·s"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184319> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promociÛn de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184319> <http://example.org#numero> " la difusiÛn de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
-<http://MadridPublicContracts/ontology/184319> <http://example.org#localidad> " la pr·ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184319> <http://example.org#provincia> " apoyo a la educaciÛn y en materia de inspecciÛn sanitaria y comercial. Se admiten perros guÌa."^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184319> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr√°mites relacionados con el  padr√≥n municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184319> <http://example.org#transporte> " licencias urban√≠sticas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184319> <http://example.org#web> " v√≠as y espacios p√∫blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184319> <http://example.org#nombrevia> " entre otros.Adem√°s"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184319> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promoci√≥n de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184319> <http://example.org#numero> " la difusi√≥n de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/184319> <http://example.org#localidad> " la pr√°ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184319> <http://example.org#provincia> " apoyo a la educaci√≥n y en materia de inspecci√≥n sanitaria y comercial. Se admiten perros gu√≠a."^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/184319> <http://example.org#codigopostal> "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/184319> <http://example.org#barrio> ""^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184319> <http://example.org#distrito> "Metro: Moncloa (lÌneas 3"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184319> <http://example.org#distrito> "Metro: Moncloa (l√≠neas 3"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/184319> <http://example.org#coordenadax> " 6) Bus: A"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/184319> <http://example.org#coordenaday> " 161"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/184319> <http://example.org#latitud> " 160"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/184319> <http://example.org#longitud> " 162"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/184319> <http://example.org#email> " 62"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/180007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "http://example.org#Publicorg".
-<http://MadridPublicContracts/ontology/180007> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaciÛn del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaciÛn de los servicios municipales a la ciudadanÌa y promover la participaciÛn de la ciudadanÌa en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180007> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaci√≥n del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaci√≥n de los servicios municipales a la ciudadan√≠a y promover la participaci√≥n de la ciudadan√≠a en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/180007> <http://example.org#horario> " presentar reclamaciones de consumo"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180007> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr·mites relacionados con el  padrÛn municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180007> <http://example.org#transporte> " licencias urbanÌsticas"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180007> <http://example.org#web> " vÌas y espacios p˙blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180007> <http://example.org#nombrevia> " entre otros.Adem·s"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180007> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promociÛn de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180007> <http://example.org#numero> " la difusiÛn de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
-<http://MadridPublicContracts/ontology/180007> <http://example.org#localidad> " la pr·ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180007> <http://example.org#provincia> " apoyo a la educaciÛn y en materia de inspecciÛn sanitaria y comercial. Se admiten perros guÌa."^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180007> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr√°mites relacionados con el  padr√≥n municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180007> <http://example.org#transporte> " licencias urban√≠sticas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180007> <http://example.org#web> " v√≠as y espacios p√∫blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180007> <http://example.org#nombrevia> " entre otros.Adem√°s"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180007> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promoci√≥n de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180007> <http://example.org#numero> " la difusi√≥n de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/180007> <http://example.org#localidad> " la pr√°ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180007> <http://example.org#provincia> " apoyo a la educaci√≥n y en materia de inspecci√≥n sanitaria y comercial. Se admiten perros gu√≠a."^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/180007> <http://example.org#codigopostal> "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/180007> <http://example.org#barrio> ""^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180007> <http://example.org#distrito> "Metro: Pavones (lÌnea 9) Bus: 8"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180007> <http://example.org#distrito> "Metro: Pavones (l√≠nea 9) Bus: 8"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/180007> <http://example.org#coordenadax> " 20"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/180007> <http://example.org#coordenaday> " 30"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/180007> <http://example.org#latitud> " 32"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/180007> <http://example.org#longitud> " 71"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/180007> <http://example.org#email> " 100"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/182203> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "http://example.org#Publicorg".
-<http://MadridPublicContracts/ontology/182203> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaciÛn del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaciÛn de los servicios municipales a la ciudadanÌa y promover la participaciÛn de la ciudadanÌa en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182203> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaci√≥n del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaci√≥n de los servicios municipales a la ciudadan√≠a y promover la participaci√≥n de la ciudadan√≠a en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/182203> <http://example.org#horario> " presentar reclamaciones de consumo"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182203> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr·mites relacionados con el  padrÛn municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182203> <http://example.org#transporte> " licencias urbanÌsticas"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182203> <http://example.org#web> " vÌas y espacios p˙blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182203> <http://example.org#nombrevia> " entre otros.Adem·s"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182203> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promociÛn de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182203> <http://example.org#numero> " la difusiÛn de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
-<http://MadridPublicContracts/ontology/182203> <http://example.org#localidad> " la pr·ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182203> <http://example.org#provincia> " apoyo a la educaciÛn y en materia de inspecciÛn sanitaria y comercial. Se admiten perros guÌa."^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182203> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr√°mites relacionados con el  padr√≥n municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182203> <http://example.org#transporte> " licencias urban√≠sticas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182203> <http://example.org#web> " v√≠as y espacios p√∫blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182203> <http://example.org#nombrevia> " entre otros.Adem√°s"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182203> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promoci√≥n de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182203> <http://example.org#numero> " la difusi√≥n de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/182203> <http://example.org#localidad> " la pr√°ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182203> <http://example.org#provincia> " apoyo a la educaci√≥n y en materia de inspecci√≥n sanitaria y comercial. Se admiten perros gu√≠a."^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/182203> <http://example.org#codigopostal> "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/182203> <http://example.org#barrio> ""^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182203> <http://example.org#distrito> "Metro: Puente de Vallecas (lÌnea 1)"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182203> <http://example.org#coordenadax> " Nueva Numancia (lÌnea 1) Bus: 10"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/182203> <http://example.org#distrito> "Metro: Puente de Vallecas (l√≠nea 1)"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182203> <http://example.org#coordenadax> " Nueva Numancia (l√≠nea 1) Bus: 10"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/182203> <http://example.org#coordenaday> " 24"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/182203> <http://example.org#latitud> " 54"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/182203> <http://example.org#longitud> " 57"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/182203> <http://example.org#email> " 58"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/179741> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "http://example.org#Publicorg".
-<http://MadridPublicContracts/ontology/179741> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaciÛn del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaciÛn de los servicios municipales a la ciudadanÌa y promover la participaciÛn de la ciudadanÌa en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/179741> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaci√≥n del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaci√≥n de los servicios municipales a la ciudadan√≠a y promover la participaci√≥n de la ciudadan√≠a en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/179741> <http://example.org#horario> " presentar reclamaciones de consumo"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/179741> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr·mites relacionados con el  padrÛn municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/179741> <http://example.org#transporte> " licencias urbanÌsticas"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/179741> <http://example.org#web> " vÌas y espacios p˙blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/179741> <http://example.org#nombrevia> " entre otros.Adem·s"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/179741> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promociÛn de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/179741> <http://example.org#numero> " la difusiÛn de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
-<http://MadridPublicContracts/ontology/179741> <http://example.org#localidad> " la pr·ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/179741> <http://example.org#provincia> " apoyo a la educaciÛn y en materia de inspecciÛn sanitaria y comercial. Se admiten perros guÌa."^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/179741> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr√°mites relacionados con el  padr√≥n municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/179741> <http://example.org#transporte> " licencias urban√≠sticas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/179741> <http://example.org#web> " v√≠as y espacios p√∫blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/179741> <http://example.org#nombrevia> " entre otros.Adem√°s"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/179741> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promoci√≥n de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/179741> <http://example.org#numero> " la difusi√≥n de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/179741> <http://example.org#localidad> " la pr√°ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/179741> <http://example.org#provincia> " apoyo a la educaci√≥n y en materia de inspecci√≥n sanitaria y comercial. Se admiten perros gu√≠a."^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/179741> <http://example.org#codigopostal> "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/179741> <http://example.org#barrio> ""^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/179741> <http://example.org#distrito> "Metro: PacÌfico (lÌneas 1 y 6) Bus: 24"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/179741> <http://example.org#distrito> "Metro: Pac√≠fico (l√≠neas 1 y 6) Bus: 24"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/179741> <http://example.org#coordenadax> " 37"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/179741> <http://example.org#coordenaday> " 54"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/179741> <http://example.org#latitud> " 57"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/179741> <http://example.org#longitud> " 141"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/179741> <http://example.org#email> "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=27098aa6bd91f010VgnVCM1000000b205a0aRCRD"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/180855> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "http://example.org#Publicorg".
-<http://MadridPublicContracts/ontology/180855> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaciÛn del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaciÛn de los servicios municipales a la ciudadanÌa y promover la participaciÛn de la ciudadanÌa en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180855> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaci√≥n del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaci√≥n de los servicios municipales a la ciudadan√≠a y promover la participaci√≥n de la ciudadan√≠a en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/180855> <http://example.org#horario> " presentar reclamaciones de consumo"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180855> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr·mites relacionados con el  padrÛn municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180855> <http://example.org#transporte> " licencias urbanÌsticas"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180855> <http://example.org#web> " vÌas y espacios p˙blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180855> <http://example.org#nombrevia> " entre otros.Adem·s"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180855> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promociÛn de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180855> <http://example.org#numero> " la difusiÛn de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
-<http://MadridPublicContracts/ontology/180855> <http://example.org#localidad> " la pr·ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180855> <http://example.org#provincia> " apoyo a la educaciÛn y en materia de inspecciÛn sanitaria y comercial. Se admiten perros guÌa."^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180855> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr√°mites relacionados con el  padr√≥n municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180855> <http://example.org#transporte> " licencias urban√≠sticas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180855> <http://example.org#web> " v√≠as y espacios p√∫blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180855> <http://example.org#nombrevia> " entre otros.Adem√°s"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180855> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promoci√≥n de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180855> <http://example.org#numero> " la difusi√≥n de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/180855> <http://example.org#localidad> " la pr√°ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180855> <http://example.org#provincia> " apoyo a la educaci√≥n y en materia de inspecci√≥n sanitaria y comercial. Se admiten perros gu√≠a."^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/180855> <http://example.org#codigopostal> "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/180855> <http://example.org#barrio> ""^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180855> <http://example.org#distrito> "Metro: Vel·zquez (lÌnea 4)"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/180855> <http://example.org#coordenadax> " Serrano (lÌnea 4) Bus: 1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/180855> <http://example.org#distrito> "Metro: Vel√°zquez (l√≠nea 4)"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/180855> <http://example.org#coordenadax> " Serrano (l√≠nea 4) Bus: 1"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/180855> <http://example.org#coordenaday> " 9"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/180855> <http://example.org#latitud> " 19"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/180855> <http://example.org#longitud> " 21"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/180855> <http://example.org#email> " 51"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/183638> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "http://example.org#Publicorg".
-<http://MadridPublicContracts/ontology/183638> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaciÛn del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaciÛn de los servicios municipales a la ciudadanÌa y promover la participaciÛn de la ciudadanÌa en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/183638> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaci√≥n del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaci√≥n de los servicios municipales a la ciudadan√≠a y promover la participaci√≥n de la ciudadan√≠a en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/183638> <http://example.org#horario> " presentar reclamaciones de consumo"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/183638> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr·mites relacionados con el  padrÛn municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/183638> <http://example.org#transporte> " licencias urbanÌsticas"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/183638> <http://example.org#web> " vÌas y espacios p˙blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/183638> <http://example.org#nombrevia> " entre otros.Adem·s"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/183638> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promociÛn de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/183638> <http://example.org#numero> " la difusiÛn de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
-<http://MadridPublicContracts/ontology/183638> <http://example.org#localidad> " la pr·ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/183638> <http://example.org#provincia> " apoyo a la educaciÛn y en materia de inspecciÛn sanitaria y comercial. Se admiten perros guÌa."^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/183638> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr√°mites relacionados con el  padr√≥n municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/183638> <http://example.org#transporte> " licencias urban√≠sticas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/183638> <http://example.org#web> " v√≠as y espacios p√∫blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/183638> <http://example.org#nombrevia> " entre otros.Adem√°s"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/183638> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promoci√≥n de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/183638> <http://example.org#numero> " la difusi√≥n de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/183638> <http://example.org#localidad> " la pr√°ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/183638> <http://example.org#provincia> " apoyo a la educaci√≥n y en materia de inspecci√≥n sanitaria y comercial. Se admiten perros gu√≠a."^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/183638> <http://example.org#codigopostal> "De lunes a viernes de 8:30 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/183638> <http://example.org#barrio> ""^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/183638> <http://example.org#distrito> "Metro: Las Musas (lÌnea 7) Bus: 38"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/183638> <http://example.org#distrito> "Metro: Las Musas (l√≠nea 7) Bus: 38"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/183638> <http://example.org#coordenadax> " 140"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/183638> <http://example.org#coordenaday> "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ba9f0a47f441f010VgnVCM2000000c205a0aRCRD"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/183638> <http://example.org#latitud> "ARCENTALES"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/183638> <http://example.org#longitud> "AVENIDA"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/183638> <http://example.org#email> "28"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/184158> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "http://example.org#Publicorg".
-<http://MadridPublicContracts/ontology/184158> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaciÛn del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaciÛn de los servicios municipales a la ciudadanÌa y promover la participaciÛn de la ciudadanÌa en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184158> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaci√≥n del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaci√≥n de los servicios municipales a la ciudadan√≠a y promover la participaci√≥n de la ciudadan√≠a en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/184158> <http://example.org#horario> " presentar reclamaciones de consumo"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184158> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr·mites relacionados con el  padrÛn municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184158> <http://example.org#transporte> " licencias urbanÌsticas"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184158> <http://example.org#web> " vÌas y espacios p˙blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184158> <http://example.org#nombrevia> " entre otros.Adem·s"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184158> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promociÛn de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184158> <http://example.org#numero> " la difusiÛn de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
-<http://MadridPublicContracts/ontology/184158> <http://example.org#localidad> " la pr·ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184158> <http://example.org#provincia> " apoyo a la educaciÛn y en materia de inspecciÛn sanitaria y comercial. Se admiten perros guÌa."^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184158> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr√°mites relacionados con el  padr√≥n municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184158> <http://example.org#transporte> " licencias urban√≠sticas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184158> <http://example.org#web> " v√≠as y espacios p√∫blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184158> <http://example.org#nombrevia> " entre otros.Adem√°s"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184158> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promoci√≥n de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184158> <http://example.org#numero> " la difusi√≥n de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/184158> <http://example.org#localidad> " la pr√°ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184158> <http://example.org#provincia> " apoyo a la educaci√≥n y en materia de inspecci√≥n sanitaria y comercial. Se admiten perros gu√≠a."^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/184158> <http://example.org#codigopostal> "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."^^<http://www.w3.org/2001/XMLSchema#integer>.
-<http://MadridPublicContracts/ontology/184158> <http://example.org#barrio> "Salas de Exposiciones Juana Franco y Pablo Serrano De lunes a viernes de 9 a 14 y de 16 a 20 horas. S·bados de 10 a 14 horas. Domingo y festivos cerrado."^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184158> <http://example.org#distrito> "Metro: Valdeacederas (lÌnea 1)"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/184158> <http://example.org#coordenadax> " Plaza Castilla (lÌneas 1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/184158> <http://example.org#barrio> "Salas de Exposiciones Juana Franco y Pablo Serrano De lunes a viernes de 9 a 14 y de 16 a 20 horas. S√°bados de 10 a 14 horas. Domingo y festivos cerrado."^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184158> <http://example.org#distrito> "Metro: Valdeacederas (l√≠nea 1)"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/184158> <http://example.org#coordenadax> " Plaza Castilla (l√≠neas 1"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/184158> <http://example.org#coordenaday> " 9 y 10) Bus: 49"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/184158> <http://example.org#latitud> " 66"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/184158> <http://example.org#longitud> " 124"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/184158> <http://example.org#email> "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=71cf0a47f441f010VgnVCM2000000c205a0aRCRD"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/181626> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "http://example.org#Publicorg".
-<http://MadridPublicContracts/ontology/181626> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaciÛn del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaciÛn de los servicios municipales a la ciudadanÌa y promover la participaciÛn de la ciudadanÌa en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/181626> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaci√≥n del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaci√≥n de los servicios municipales a la ciudadan√≠a y promover la participaci√≥n de la ciudadan√≠a en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/181626> <http://example.org#horario> " presentar reclamaciones de consumo"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/181626> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr·mites relacionados con el  padrÛn municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/181626> <http://example.org#transporte> " licencias urbanÌsticas"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/181626> <http://example.org#web> " vÌas y espacios p˙blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/181626> <http://example.org#nombrevia> " entre otros.Adem·s"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/181626> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promociÛn de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/181626> <http://example.org#numero> " la difusiÛn de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
-<http://MadridPublicContracts/ontology/181626> <http://example.org#localidad> " la pr·ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/181626> <http://example.org#provincia> " apoyo a la educaciÛn y en materia de inspecciÛn sanitaria y comercial. Se admiten perros guÌa."^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/181626> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr√°mites relacionados con el  padr√≥n municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/181626> <http://example.org#transporte> " licencias urban√≠sticas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/181626> <http://example.org#web> " v√≠as y espacios p√∫blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/181626> <http://example.org#nombrevia> " entre otros.Adem√°s"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/181626> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promoci√≥n de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/181626> <http://example.org#numero> " la difusi√≥n de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/181626> <http://example.org#localidad> " la pr√°ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/181626> <http://example.org#provincia> " apoyo a la educaci√≥n y en materia de inspecci√≥n sanitaria y comercial. Se admiten perros gu√≠a."^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/181626> <http://example.org#codigopostal> "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/181626> <http://example.org#barrio> ""^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/181626> <http://example.org#distrito> "Metro: Plaza ElÌptica  (lÌneas 6 y 11) Bus: 6"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/181626> <http://example.org#distrito> "Metro: Plaza El√≠ptica  (l√≠neas 6 y 11) Bus: 6"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/181626> <http://example.org#coordenadax> " 60"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/181626> <http://example.org#coordenaday> " 81"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/181626> <http://example.org#latitud> " 78"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/181626> <http://example.org#longitud> "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=38ef0a47f441f010VgnVCM2000000c205a0aRCRD"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/181626> <http://example.org#email> "RAFAELA YBARRA"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/183031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "http://example.org#Publicorg".
-<http://MadridPublicContracts/ontology/183031> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaciÛn del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaciÛn de los servicios municipales a la ciudadanÌa y promover la participaciÛn de la ciudadanÌa en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/183031> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaci√≥n del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaci√≥n de los servicios municipales a la ciudadan√≠a y promover la participaci√≥n de la ciudadan√≠a en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/183031> <http://example.org#horario> " presentar reclamaciones de consumo"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/183031> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr·mites relacionados con el  padrÛn municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/183031> <http://example.org#transporte> " licencias urbanÌsticas"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/183031> <http://example.org#web> " vÌas y espacios p˙blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/183031> <http://example.org#nombrevia> " entre otros.Adem·s"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/183031> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promociÛn de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/183031> <http://example.org#numero> " la difusiÛn de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
-<http://MadridPublicContracts/ontology/183031> <http://example.org#localidad> " la pr·ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/183031> <http://example.org#provincia> " apoyo a la educaciÛn y en materia de inspecciÛn sanitaria y comercial. Se admiten perros guÌa."^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/183031> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr√°mites relacionados con el  padr√≥n municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/183031> <http://example.org#transporte> " licencias urban√≠sticas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/183031> <http://example.org#web> " v√≠as y espacios p√∫blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/183031> <http://example.org#nombrevia> " entre otros.Adem√°s"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/183031> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promoci√≥n de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/183031> <http://example.org#numero> " la difusi√≥n de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/183031> <http://example.org#localidad> " la pr√°ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/183031> <http://example.org#provincia> " apoyo a la educaci√≥n y en materia de inspecci√≥n sanitaria y comercial. Se admiten perros gu√≠a."^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/183031> <http://example.org#codigopostal> "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/183031> <http://example.org#barrio> ""^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/183031> <http://example.org#distrito> "Metro: San Cipriano (lÌnea 9)"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/183031> <http://example.org#coordenadax> " Vic·lvaro (lÌnea 9) Bus: 4 "^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/183031> <http://example.org#distrito> "Metro: San Cipriano (l√≠nea 9)"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/183031> <http://example.org#coordenadax> " Vic√°lvaro (l√≠nea 9) Bus: 4 "^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/183031> <http://example.org#coordenaday> " E3"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/183031> <http://example.org#latitud> "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=fe000a47f441f010VgnVCM2000000c205a0aRCRD"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/183031> <http://example.org#longitud> "DON ANTONIO DE ANDRES"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/183031> <http://example.org#email> "PLAZA"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/182354> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "http://example.org#Publicorg".
-<http://MadridPublicContracts/ontology/182354> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaciÛn del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaciÛn de los servicios municipales a la ciudadanÌa y promover la participaciÛn de la ciudadanÌa en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182354> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaci√≥n del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaci√≥n de los servicios municipales a la ciudadan√≠a y promover la participaci√≥n de la ciudadan√≠a en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/182354> <http://example.org#horario> " presentar reclamaciones de consumo"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182354> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr·mites relacionados con el  padrÛn municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182354> <http://example.org#transporte> " licencias urbanÌsticas"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182354> <http://example.org#web> " vÌas y espacios p˙blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182354> <http://example.org#nombrevia> " entre otros.Adem·s"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182354> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promociÛn de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182354> <http://example.org#numero> " la difusiÛn de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
-<http://MadridPublicContracts/ontology/182354> <http://example.org#localidad> " la pr·ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182354> <http://example.org#provincia> " apoyo a la educaciÛn y en materia de inspecciÛn sanitaria y comercial. Se admiten perros guÌa."^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182354> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr√°mites relacionados con el  padr√≥n municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182354> <http://example.org#transporte> " licencias urban√≠sticas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182354> <http://example.org#web> " v√≠as y espacios p√∫blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182354> <http://example.org#nombrevia> " entre otros.Adem√°s"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182354> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promoci√≥n de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182354> <http://example.org#numero> " la difusi√≥n de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/182354> <http://example.org#localidad> " la pr√°ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182354> <http://example.org#provincia> " apoyo a la educaci√≥n y en materia de inspecci√≥n sanitaria y comercial. Se admiten perros gu√≠a."^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/182354> <http://example.org#codigopostal> "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/182354> <http://example.org#barrio> ""^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/182354> <http://example.org#distrito> "Metro: Villa de Vallecas (lÌnea 1) Bus: 54"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/182354> <http://example.org#distrito> "Metro: Villa de Vallecas (l√≠nea 1) Bus: 54"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/182354> <http://example.org#coordenadax> " 58"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/182354> <http://example.org#coordenaday> " 103"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/182354> <http://example.org#latitud> " 142"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/182354> <http://example.org#longitud> " 143"^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/182354> <http://example.org#email> "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=b5300a47f441f010VgnVCM2000000c205a0aRCRD"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/181739> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "http://example.org#Publicorg".
-<http://MadridPublicContracts/ontology/181739> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaciÛn del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaciÛn de los servicios municipales a la ciudadanÌa y promover la participaciÛn de la ciudadanÌa en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/181739> <http://example.org#descripcion> "Los Distritos obedecen a un proyecto de descentralizaci√≥n del Ayuntamiento de Madrid que tiene como objetivos acercar la prestaci√≥n de los servicios municipales a la ciudadan√≠a y promover la participaci√≥n de la ciudadan√≠a en la vida local.Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/181739> <http://example.org#horario> " presentar reclamaciones de consumo"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/181739> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr·mites relacionados con el  padrÛn municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/181739> <http://example.org#transporte> " licencias urbanÌsticas"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/181739> <http://example.org#web> " vÌas y espacios p˙blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/181739> <http://example.org#nombrevia> " entre otros.Adem·s"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/181739> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promociÛn de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/181739> <http://example.org#numero> " la difusiÛn de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
-<http://MadridPublicContracts/ontology/181739> <http://example.org#localidad> " la pr·ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://MadridPublicContracts/ontology/181739> <http://example.org#provincia> " apoyo a la educaciÛn y en materia de inspecciÛn sanitaria y comercial. Se admiten perros guÌa."^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/181739> <http://example.org#equipamiento> " solicitar prestaciones de servicios sociales o realizar tr√°mites relacionados con el  padr√≥n municipal"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/181739> <http://example.org#transporte> " licencias urban√≠sticas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/181739> <http://example.org#web> " v√≠as y espacios p√∫blicos"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/181739> <http://example.org#nombrevia> " entre otros.Adem√°s"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/181739> <http://example.org#tipovia> " los Distritos realizan actividades dirigidas a la promoci√≥n de la salud"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/181739> <http://example.org#numero> " la difusi√≥n de la cultura"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://MadridPublicContracts/ontology/181739> <http://example.org#localidad> " la pr√°ctica del deporte"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://MadridPublicContracts/ontology/181739> <http://example.org#provincia> " apoyo a la educaci√≥n y en materia de inspecci√≥n sanitaria y comercial. Se admiten perros gu√≠a."^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/181739> <http://example.org#codigopostal> "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."^^<http://www.w3.org/2001/XMLSchema#integer>.
 <http://MadridPublicContracts/ontology/181739> <http://example.org#barrio> ""^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://MadridPublicContracts/ontology/181739> <http://example.org#distrito> "Bus: 22"^^<http://www.w3.org/2001/XMLSchema#string>.
