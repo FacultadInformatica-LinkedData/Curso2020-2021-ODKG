@@ -71,8 +71,15 @@ mappings:
     s: http://www.publicProcurementMurciaCOVID19.es/resource/Order/$(OrderID)
     po:
       - [a, s:Order]
-      - [s:customer, ind:CCAA/MC ]
-	  - [s:orderedItem, $(OrderItemID)]
+      - [s:customer, ind:CCAA/MC~iri]
+      - p: s:orderedItem
+        o:
+          - mapping: orderitemmap
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(OrderItemID)]
+                - [str2, $(OrderItemID)]
       - p: s:orderDate
         o:
           - mapping: datemap
