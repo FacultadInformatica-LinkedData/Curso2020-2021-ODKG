@@ -11,6 +11,5 @@
 - [ ] Update ontology to reflect correct IRIs and also the example
 - [ ] Label for every individual in the RDF file
 - [ ] Specify datatype of every value in RDF file, if it includes xsd:string
-- [ ] Rename CSV columns so that they're all cohesive and in the same language
-- [ ] Add column SECCION_IRI that has no spaces but underscores instead
-- [ ] Check issue with some characters that don't properly format with RMLMapper
+- [x] Rename CSV columns so that they're all cohesive and in the same language
+- [x] Add column SECCION_IRI that has no spaces but underscores instead
