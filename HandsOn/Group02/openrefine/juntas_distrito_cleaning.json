@@ -692,17 +692,6 @@
     "description": "Split column EMAIL by separator"
   },
   {
-    "op": "core/column-removal",
-    "columnName": "EMAIL 1",
-    "description": "Remove column EMAIL 1"
-  },
-  {
-    "op": "core/column-rename",
-    "oldColumnName": "EMAIL 2",
-    "newColumnName": "EMAIL",
-    "description": "Rename column EMAIL 2 to EMAIL"
-  },
-  {
     "op": "core/mass-edit",
     "engineConfig": {
       "facets": [],
@@ -1460,5 +1449,36 @@
     "oldColumnName": "NOMBRE",
     "newColumnName": "Distrito",
     "description": "Rename column NOMBRE to Distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Junta Municipal Del Distrito De Arganzuela"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Distrito De Arganzuela"
+      }
+    ],
+    "description": "Mass edit cells in column Distrito"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "EMAIL 2",
+    "description": "Remove column EMAIL 2"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "EMAIL 1",
+    "newColumnName": "EMAIL",
+    "description": "Rename column EMAIL 1 to EMAIL"
   }
 ]
