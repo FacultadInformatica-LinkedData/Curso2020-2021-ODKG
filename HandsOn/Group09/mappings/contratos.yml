@@ -12,69 +12,69 @@ mappings:
   department:
     sources:
       - [ContratosMenores2020-updated.csv~csv]
-    s: :/department/$(SECCION)
+    s: :/department/$(Section)
     po:
       - [a, org:OrganizationalUnit]
-      - [schema:name, $(SECCION)]
+      - [schema:name, $(Section)]
 #      - [org:subOrganizationOf, db:Ayuntamiento_de_Madrid]
 
   contractingBody:
     sources:
       - [ContratosMenores2020-updated.csv~csv]
-    s: :/contractingbody/$(ORG.CONTRATACION)
+    s: :/contractingbody/$(Contracting_Body)
     po:
       - [a, org:Organization]
-      - [schema:name, $(ORG.CONTRATACION)]
-      - [:area, $(ORG.CONTRATACION AREA)]
+      - [schema:name, $(Contracting_Body)]
+      - [:area, $(Contracting_Body_Area)]
       - p: org:subOrganizationOf
         o:
           - mapping : department
             condition:
               function: equal
               parameters:
-                - [str1, $(NºRECON)]
-                - [str2, $(NºRECON)]
+                - [str1, $(Recognition_Number)]
+                - [str2, $(Recognition_Number)]
 
   contract:
     sources:
       - [ContratosMenores2020-updated.csv~csv]
-    s: :/contract/$(NºRECON)
+    s: :/contract/$(Recognition_Number)
     po:
-      - [a, $(CONTRACT_TYPE)]
-      - [:awardDate, $(FECHA APROBACION), xsd:date]
-      - [:awardNum, $(NºRECON)]
-      - [:recordNum, $(NUMERO EXPEDIENTE)]
-      - [:registryReportDate, $(FCH.COMUNIC.REG), xsd:date]
+      - [a, $(Contract_Type)]
+      - [:awardDate, $(Approval_Date), xsd:date]
+      - [:awardNum, $(Recognition_Number)]
+      - [:recordNum, $(File_Number)]
+      - [:registryReportDate, $(Reg_Comm_Date), xsd:date]
       - p: pproc:contractObject
         o:
           - mapping: contractObject
             condition:
               function: equal
               parameters:
-                - [str1, $(NºRECON)]
-                - [str2, $(NºRECON)]
+                - [str1, $(Recognition_Number)]
+                - [str2, $(Recognition_Number)]
       - p: pproc:contractingBody
         o:
           - mapping: contractingBody
             condition:
               function: equal
               parameters:
-                - [str1, $(NºRECON)]
-                - [str2, $(NºRECON)]
+                - [str1, $(Recognition_Number)]
+                - [str2, $(Recognition_Number)]
       - p: pproc:managingDepartment
         o:
           - mapping: department
             condition:
               function: equal
               parameters:
-                - [str1, $(NºRECON)]
-                - [str2, $(NºRECON)]
+                - [str1, $(Recognition_Number)]
+                - [str2, $(Recognition_Number)]
 #      - [pc:contractingAuthority, db:Ayuntamiento_de_Madrid]
 
   contractObject:
     sources:
       - [ContratosMenores2020-updated.csv~csv]
-    s: :/contract/$(NºRECON)/contractObject
+    s: :/contract/$(Recognition_Number)/contractObject
     po:
       - [a, pproc:ContractObject]
       - p: pproc:contractEconomicConditions
@@ -83,22 +83,22 @@ mappings:
             condition:
               function: equal
               parameters:
-                - [str1, $(NºRECON)]
-                - [str2, $(NºRECON)]
+                - [str1, $(Recognition_Number)]
+                - [str2, $(Recognition_Number)]
       - p: pproc:contractTemporalConditions
         o:
           - mapping: temporalConditions
             condition:
               function: equal
               parameters:
-                - [str1, $(NºRECON)]
-                - [str2, $(NºRECON)]
-      - [:objectOfContract, $(OBJETO DEL CONTRATO)]
+                - [str1, $(Recognition_Number)]
+                - [str2, $(Recognition_Number)]
+      - [:objectOfContract, $(Object_Of_Contract)]
 
   economicConditions:
     sources:
       - [ContratosMenores2020-updated.csv~csv]
-    s: :/contract/$(NºRECON)/economicConditions
+    s: :/contract/$(Recognition_Number)/economicConditions
     po:
       - [a, pproc:ContractEconomicConditions]
       - p: pproc:budgetPrice
@@ -107,26 +107,26 @@ mappings:
             condition:
               function: equal
               parameters:
-                - [str1, $(NºRECON)]
-                - [str2, $(NºRECON)]
+                - [str1, $(Recognition_Number)]
+                - [str2, $(Recognition_Number)]
 
   price:
     sources:
       - [ContratosMenores2020-updated.csv~csv]
-    s: :/contract/$(NºRECON)/price
+    s: :/contract/$(Recognition_Number)/price
     po:
       - [a, pproc:BundlePriceSpecification]
-      - [gr:hasCurrency, $(CURRENCY)]
-      - [gr:hasCurrencyValue, $(CURRENCY VALUE), xsd:float]
-      - [gr:valueAddedTaxIncluded, $(TAX INCLUDED), xsd:boolean]
+      - [gr:hasCurrency, $(Currency)]
+      - [gr:hasCurrencyValue, $(Currency_Value), xsd:float]
+      - [gr:valueAddedTaxIncluded, $(Tax_Included), xsd:boolean]
 
   temporalConditions:
     sources:
       - [ContratosMenores2020-updated.csv~csv]
-    s: :/contract/$(NºRECON)/temporalConditions
+    s: :/contract/$(Recognition_Number)/temporalConditions
     po:
       - [a, pproc:ContractTemporalConditions]
-      - [pproc:estimatedDuration, $(PLAZO), xsd:float]
+      - [pproc:estimatedDuration, $(Term), xsd:float]
 
   contractor:
     sources:
@@ -140,7 +140,7 @@ mappings:
             condition:
               function: equal
               parameters:
-                - [str1, $(NºRECON)]
-                - [str2, $(NºRECON)]
-      - [schema:name, $(CONTRATISTA)]
+                - [str1, $(Recognition_Number)]
+                - [str2, $(Recognition_Number)]
+      - [schema:name, $(Contractor)]
       - [org:identifier, $(N.I.F)]
