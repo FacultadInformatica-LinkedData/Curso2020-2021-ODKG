@@ -1,0 +1,59 @@
+prefixes:
+ rr: http://www.w3.org/ns/r2rml#.
+ ex: http://www.odkggroup3/ontology#.
+ rml: http://semweb.mmlab.be/ns/rml#.
+ xsd: http://www.w3.org/2001/XMLSchema#
+ 
+mappings:
+   TriplesMap1:
+       sources:
+           - ['Group3_csv_updated.csv~csv']
+       s: ex:$(contract-number)
+       po:
+           - [a, ex:Contract]
+           - [ex:hasContractValue, $(total-contract-value), xsd:double]
+           - [ex:hasGsin, $(gsin), xsd:string] 
+           - [ex:hasGsinDescription, $(gsin-description_en), xsd:string]
+           - [ex:hasExpireDate, $(expiry-date), xsd:dateTime]
+           - [ex:hasAwardDate, $(award-date), xsd:dateTime]	
+           - p: ex:hasSupplier
+             o:
+               mapping: TriplesMap2
+               condition:
+                 function: equal
+                 parameters:
+                   - [str1, $(supplier-legal-name)]
+                   - [str2, $(supplier-legal-name)]
+                   
+           - p: ex:belongsTo
+             o:
+               mapping: TriplesMap2
+               condition:
+                 function: equal
+                 parameters:
+                   - [str1, $(end-user-entity_en)]
+                   - [str2, $(end-user-entity_en)]
+   TriplesMap2:
+       sources:
+           - [Group3_csv_updated.csv~csv]
+       s: ex:$(supplier-legal-name)
+       po:
+           - [a, ex:Supplier]
+           - [ex:hasEmployees, $(organization-employee-count_en), xsd:string]
+           - [ex:hasCity, $(supplier-address-city), xsd:string]
+           - [ex:hasCountry, $(supplier-address-country), xsd:string]
+           - [ex:hasProvState, $(supplier-address-prov-state), xsd:string]
+           - [ex:hasPostalCode, $(supplier-address-postal-code), xsd:string]
+           
+   TriplesMap3:
+       sources:
+           - [Group3_csv_updated.csv~csv] 
+       s: ex:$(end-user-entity_en)
+       po:
+           - [a, ex:EntityEndUser]
+           - [ex:hasEndUserEntity, $(contracting-entity-office-name_en), xsd:string]
+           - [ex:hasCity, $(contracting-address-city), xsd:string]
+           - [ex:hasCountry, $(contracting-address-country), xsd:string]
+           - [ex:hasProvState, $(contracting-address-prov-state), xsd:string]
+           - [ex:hasPostalCode, $(contracting-address-postal-code), xsd:string]
+

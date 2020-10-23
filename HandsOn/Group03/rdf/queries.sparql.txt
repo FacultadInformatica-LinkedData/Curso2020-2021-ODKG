@@ -1,0 +1,82 @@
+Using RDFlib:
+
+
+github_storage = "https://raw.githubusercontent.com/Maropro3/Curso2020-2021-ODKG/master/HandsOn/Group03"
+
+from rdflib import Graph, Namespace, Literal
+from rdflib.namespace import RDF, RDFS
+g = Graph()
+g.parse(github_storage+"/rdf/output.nt", format="nt")
+
+from rdflib.plugins.sparql import prepareQuery
+
+
+1. Get all classes
+
+ns = Namespace("http://www.odkggroup3/ontology#")
+
+q1 = prepareQuery('''
+  SELECT DISTINCT
+    ?Subject 
+    WHERE { 
+    ?x a ?Subject.
+  } 
+  
+  '''
+)
+
+
+2. Get all the properties, except rdf:type, that can be applied to instances of the Contract class.
+
+
+ns = Namespace("http://www.odkggroup3/ontology#")
+
+q2 = prepareQuery('''
+  SELECT DISTINCT
+    ?Prop 
+    WHERE { 
+    ?x a ns:Contract.
+    ?x ?Prop ?y.
+    FILTER (?Prop != rdf:type).
+  } 
+  
+  ''',
+  initNs = { "ns": ns}
+)
+
+3. Get all the properties, except rdf:type, that can be applied to instances of the Supplier class.
+
+
+ns = Namespace("http://www.odkggroup3/ontology#")
+
+q3 = prepareQuery('''
+  SELECT DISTINCT
+    ?Prop 
+    WHERE { 
+    ?x a ns:Supplier.
+    ?x ?Prop ?y.
+    FILTER (?Prop != rdf:type).
+  } 
+  
+  ''',
+  initNs = { "ns": ns}
+)
+
+
+4. Get all the properties, except rdf:type, that can be applied to instances of the EntityEndUser class.
+
+
+ns = Namespace("http://www.odkggroup3/ontology#")
+
+q4 = prepareQuery('''
+  SELECT DISTINCT
+    ?Prop 
+    WHERE { 
+    ?x a ns:EntityEndUser.
+    ?x ?Prop ?y.
+    FILTER (?Prop != rdf:type).
+  } 
+  
+  ''',
+  initNs = { "ns": ns}
+)
