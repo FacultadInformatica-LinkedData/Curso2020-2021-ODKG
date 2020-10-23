@@ -1,0 +1,44 @@
+prefixes:
+  vocab: "http://eit-upm-opendata.com/ted#"
+
+mappings:
+  CAE:
+    sources:
+      - ['TED_CN_2018-updated.csv~csv']
+    s: vocab:$(CAE_ID)
+    po:
+      - [a, owl:Class]
+      - [vocab:hasCountryCode, $(ISO_COUNTRY_CODE)]
+      - [vocab:hasName, $(CAE_NAME)]
+      - [vocab:hasNationalID, $(CAE_NATIONALID)]
+      - [vocab:hasPostalCode, $(CAE_POSTAL_CODE)]
+      - [vocab:hasTown, $(CAE_TOWN)]
+      - [vocab:hasType, $(CAE_TYPE), xsd:integer]
+
+  Notice:
+    sources:
+      - ['TED_CN_2018-updated.csv~csv']
+    s: vocab:$(NOTICE_ID)
+    po:
+      - [a, owl:Class]
+      - p: vocab:hasCAE
+        o:
+            mapping: CAE
+            condition:
+                function: equal
+                parameters:
+                    - [str1, $(CAE_ID), s]
+                    - [str2, $(CAE_ID), o]
+      - [vocab:hasCPV, $(CPV), xsd:double]
+      - [vocab:hasContractType, $(TYPE_OF_CONTRACT)]
+      - [vocab:hasDate, $(DT_DISPATCH), xsd:date]
+      - [vocab:hasDuration, $(DURATION), xsd:double]
+      - [vocab:hasIDType, $(ID_TYPE),xsd:integer]
+      - [vocab:hasMainActivity, $(MAIN_ACTIVITY)]
+      - [vocab:hasMultipleCAE, $(B_MULTIPLE_CAE),xsd:boolean]
+      - [vocab:hasTOP, $(TOP_TYPE)]
+      - [vocab:hasValue, $(VALUE_EURO_FIN_2),xsd:double]
+      - [vocab:isCancelled, $(CANCELLED), xsd:boolean]
+      - [vocab:isEUFunded, $(B_EU_FUNDS), xsd:boolean]
+      - [vocab:isElectronic, $(B_ELECTRONIC_AUCTION),xsd:boolean]
+      - [vocab:isGPA, $(B_GPA),xsd:boolean]

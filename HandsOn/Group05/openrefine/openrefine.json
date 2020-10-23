@@ -13150,3 +13150,1788 @@
     "description": "Rename column ID_NOTICE_CN to CONTRACT_ID"
   }
 ]
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DURATION",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DURATION using expression value.toNumber()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "B_MULTIPLE_CAE",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "false"
+      }
+    ],
+    "description": "Mass edit cells in column B_MULTIPLE_CAE"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "B_MULTIPLE_CAE",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Y"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "true"
+      }
+    ],
+    "description": "Mass edit cells in column B_MULTIPLE_CAE"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CAE_NATIONALID",
+          "expression": "value",
+          "columnName": "CAE_NATIONALID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------591103701",
+                "l": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------591103701"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_NATIONALID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------591103701"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "591103701"
+      }
+    ],
+    "description": "Mass edit cells in column CAE_NATIONALID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CAE_NATIONALID",
+          "expression": "value",
+          "columnName": "CAE_NATIONALID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "---------------21950313300015",
+                "l": "---------------21950313300015"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_NATIONALID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "---------------21950313300015"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "21950313300015"
+      }
+    ],
+    "description": "Mass edit cells in column CAE_NATIONALID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CAE_NATIONALID",
+          "expression": "value",
+          "columnName": "CAE_NATIONALID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "---------------BE0455932266",
+                "l": "---------------BE0455932266"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_NATIONALID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "---------------BE0455932266"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BE0455932266"
+      }
+    ],
+    "description": "Mass edit cells in column CAE_NATIONALID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CAE_NATIONALID",
+          "expression": "value",
+          "columnName": "CAE_NATIONALID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "------------261 700 025 003 39",
+                "l": "------------261 700 025 003 39"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_NATIONALID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "------------261 700 025 003 39"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "261 700 025 003 39"
+      }
+    ],
+    "description": "Mass edit cells in column CAE_NATIONALID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CAE_NATIONALID",
+          "expression": "value",
+          "columnName": "CAE_NATIONALID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "------------26380030200014",
+                "l": "------------26380030200014"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_NATIONALID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "------------26380030200014"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "26380030200014"
+      }
+    ],
+    "description": "Mass edit cells in column CAE_NATIONALID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CAE_NATIONALID",
+          "expression": "value",
+          "columnName": "CAE_NATIONALID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "---------444 619 258",
+                "l": "---------444 619 258"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_NATIONALID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "---------444 619 258"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "444 619 258"
+      }
+    ],
+    "description": "Mass edit cells in column CAE_NATIONALID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CAE_NATIONALID",
+          "expression": "value",
+          "columnName": "CAE_NATIONALID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "---------82458162300017",
+                "l": "---------82458162300017"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_NATIONALID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "---------82458162300017"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "82458162300017"
+      }
+    ],
+    "description": "Mass edit cells in column CAE_NATIONALID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CAE_NATIONALID",
+          "expression": "value",
+          "columnName": "CAE_NATIONALID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "---------n/a",
+                "l": "---------n/a"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_NATIONALID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "---------n/a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "n/a"
+      }
+    ],
+    "description": "Mass edit cells in column CAE_NATIONALID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CAE_NATIONALID",
+          "expression": "value",
+          "columnName": "CAE_NATIONALID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "------0155668-4",
+                "l": "------0155668-4"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_NATIONALID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "------0155668-4"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "0155668-4"
+      }
+    ],
+    "description": "Mass edit cells in column CAE_NATIONALID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CAE_NATIONALID",
+          "expression": "value",
+          "columnName": "CAE_NATIONALID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "------0214958-9",
+                "l": "------0214958-9"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_NATIONALID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "------0214958-9"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "0214958-9"
+      }
+    ],
+    "description": "Mass edit cells in column CAE_NATIONALID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CAE_NATIONALID",
+          "expression": "value",
+          "columnName": "CAE_NATIONALID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "------26200009400017",
+                "l": "------26200009400017"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_NATIONALID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "------26200009400017"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "26200009400017"
+      }
+    ],
+    "description": "Mass edit cells in column CAE_NATIONALID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CAE_NATIONALID",
+          "expression": "value",
+          "columnName": "CAE_NATIONALID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "------62761113",
+                "l": "------62761113"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_NATIONALID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "------62761113"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "62761113"
+      }
+    ],
+    "description": "Mass edit cells in column CAE_NATIONALID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CAE_NATIONALID",
+          "expression": "value",
+          "columnName": "CAE_NATIONALID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "------879118522",
+                "l": "------879118522"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_NATIONALID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "------879118522"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "879118522"
+      }
+    ],
+    "description": "Mass edit cells in column CAE_NATIONALID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CAE_NATIONALID",
+          "expression": "value",
+          "columnName": "CAE_NATIONALID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "---00349050286",
+                "l": "---00349050286"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_NATIONALID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "---00349050286"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "00349050286"
+      }
+    ],
+    "description": "Mass edit cells in column CAE_NATIONALID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CAE_NATIONALID",
+          "expression": "value",
+          "columnName": "CAE_NATIONALID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "---991776524",
+                "l": "---991776524"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_NATIONALID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "---991776524"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "991776524"
+      }
+    ],
+    "description": "Mass edit cells in column CAE_NATIONALID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CAE_NATIONALID",
+          "expression": "value",
+          "columnName": "CAE_NATIONALID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "---984 024 924",
+                "l": "---984 024 924"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_NATIONALID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "---984 024 924"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "984 024 924"
+      }
+    ],
+    "description": "Mass edit cells in column CAE_NATIONALID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CAE_NATIONALID",
+          "expression": "value",
+          "columnName": "CAE_NATIONALID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "---58200010500137",
+                "l": "---58200010500137"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_NATIONALID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "---58200010500137"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "58200010500137"
+      }
+    ],
+    "description": "Mass edit cells in column CAE_NATIONALID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CAE_NATIONALID",
+          "expression": "value",
+          "columnName": "CAE_NATIONALID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "---0248.015.142_20859",
+                "l": "---0248.015.142_20859"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_NATIONALID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "---0248.015.142_20859"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "0248.015.142_20859"
+      }
+    ],
+    "description": "Mass edit cells in column CAE_NATIONALID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CAE_NATIONALID",
+          "expression": "value",
+          "columnName": "CAE_NATIONALID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "---0316.381.138_513935",
+                "l": "---0316.381.138_513935"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_NATIONALID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "---0316.381.138_513935"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "0316.381.138_513935"
+      }
+    ],
+    "description": "Mass edit cells in column CAE_NATIONALID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CAE_NATIONALID",
+          "expression": "value",
+          "columnName": "CAE_NATIONALID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "---54685354---08218146",
+                "l": "---54685354---08218146"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_NATIONALID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "---54685354---08218146"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "5468535408218146"
+      }
+    ],
+    "description": "Mass edit cells in column CAE_NATIONALID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CAE_NATIONALID",
+          "expression": "value",
+          "columnName": "CAE_NATIONALID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "---0207.343.933_511694",
+                "l": "---0207.343.933_511694"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_NATIONALID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "---0207.343.933_511694"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "0207.343.933_511694"
+      }
+    ],
+    "description": "Mass edit cells in column CAE_NATIONALID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CAE_NATIONALID",
+          "expression": "value",
+          "columnName": "CAE_NATIONALID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "---0316.381.138_513921",
+                "l": "---0316.381.138_513921"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_NATIONALID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "---0316.381.138_513921"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "0316.381.138_513921"
+      }
+    ],
+    "description": "Mass edit cells in column CAE_NATIONALID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CAE_NATIONALID",
+          "expression": "value",
+          "columnName": "CAE_NATIONALID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "---09212826",
+                "l": "---09212826"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_NATIONALID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "---09212826"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "09212826"
+      }
+    ],
+    "description": "Mass edit cells in column CAE_NATIONALID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CAE_NATIONALID",
+          "expression": "value",
+          "columnName": "CAE_NATIONALID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "---265 613 430 00130",
+                "l": "---265 613 430 00130"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_NATIONALID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "---265 613 430 00130"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "265 613 430 00130"
+      }
+    ],
+    "description": "Mass edit cells in column CAE_NATIONALID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CAE_NATIONALID",
+          "expression": "value",
+          "columnName": "CAE_NATIONALID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "---2722581-6---2722581-6",
+                "l": "---2722581-6---2722581-6"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_NATIONALID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "---2722581-6---2722581-6"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2722581-6"
+      }
+    ],
+    "description": "Mass edit cells in column CAE_NATIONALID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CAE_NATIONALID",
+          "expression": "value",
+          "columnName": "CAE_NATIONALID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "---29189803",
+                "l": "---29189803"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_NATIONALID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "---29189803"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "29189803"
+      }
+    ],
+    "description": "Mass edit cells in column CAE_NATIONALID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CAE_NATIONALID",
+          "expression": "value",
+          "columnName": "CAE_NATIONALID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "---505120151",
+                "l": "---505120151"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_NATIONALID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "---505120151"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "505120151"
+      }
+    ],
+    "description": "Mass edit cells in column CAE_NATIONALID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "B_MULTIPLE_COUNTRY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "false"
+      }
+    ],
+    "description": "Mass edit cells in column B_MULTIPLE_COUNTRY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "B_MULTIPLE_COUNTRY",
+          "expression": "value",
+          "columnName": "B_MULTIPLE_COUNTRY",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Y",
+                "l": "Y"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "B_MULTIPLE_COUNTRY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Y"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "true"
+      }
+    ],
+    "description": "Mass edit cells in column B_MULTIPLE_COUNTRY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "B_ON_BEHALF",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Y"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "true"
+      }
+    ],
+    "description": "Mass edit cells in column B_ON_BEHALF"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "B_ON_BEHALF",
+          "expression": "value",
+          "columnName": "B_ON_BEHALF",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "N",
+                "l": "N"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "B_ON_BEHALF",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "false"
+      }
+    ],
+    "description": "Mass edit cells in column B_ON_BEHALF"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "B_INVOLVES_JOINT_PROCUREMENT",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Y"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "true"
+      }
+    ],
+    "description": "Mass edit cells in column B_INVOLVES_JOINT_PROCUREMENT"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "B_INVOLVES_JOINT_PROCUREMENT",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "false"
+      }
+    ],
+    "description": "Mass edit cells in column B_INVOLVES_JOINT_PROCUREMENT"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "B_AWARDED_BY_CENTRAL_BODY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "false"
+      }
+    ],
+    "description": "Mass edit cells in column B_AWARDED_BY_CENTRAL_BODY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "B_AWARDED_BY_CENTRAL_BODY",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Y"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "true"
+      }
+    ],
+    "description": "Mass edit cells in column B_AWARDED_BY_CENTRAL_BODY"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "B_GPA",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "false"
+      }
+    ],
+    "description": "Mass edit cells in column B_GPA"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "B_GPA",
+          "expression": "value",
+          "columnName": "B_GPA",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Y",
+                "l": "Y"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "B_GPA",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Y"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "true"
+      }
+    ],
+    "description": "Mass edit cells in column B_GPA"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "B_EU_FUNDS",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Y"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "true"
+      }
+    ],
+    "description": "Mass edit cells in column B_EU_FUNDS"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "B_EU_FUNDS",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "false"
+      }
+    ],
+    "description": "Mass edit cells in column B_EU_FUNDS"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "B_RENEWALS",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Y"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "true"
+      }
+    ],
+    "description": "Mass edit cells in column B_RENEWALS"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "B_RENEWALS",
+          "expression": "value",
+          "columnName": "B_RENEWALS",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "N",
+                "l": "N"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "B_RENEWALS",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "false"
+      }
+    ],
+    "description": "Mass edit cells in column B_RENEWALS"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "B_ELECTRONIC_AUCTION",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "false"
+      }
+    ],
+    "description": "Mass edit cells in column B_ELECTRONIC_AUCTION"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "B_ELECTRONIC_AUCTION",
+          "expression": "value",
+          "columnName": "B_ELECTRONIC_AUCTION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Y",
+                "l": "Y"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "B_ELECTRONIC_AUCTION",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Y"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "true"
+      }
+    ],
+    "description": "Mass edit cells in column B_ELECTRONIC_AUCTION"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "B_RECURRENT_PROCUREMENT",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "false"
+      }
+    ],
+    "description": "Mass edit cells in column B_RECURRENT_PROCUREMENT"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "B_RECURRENT_PROCUREMENT",
+          "expression": "value",
+          "columnName": "B_RECURRENT_PROCUREMENT",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Y",
+                "l": "Y"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "B_RECURRENT_PROCUREMENT",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Y"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "true"
+      }
+    ],
+    "description": "Mass edit cells in column B_RECURRENT_PROCUREMENT"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "DURATION",
+          "expression": "value",
+          "columnName": "DURATION",
+          "from": 0,
+          "to": 990,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CONTRACT_ID",
+    "newColumnName": "CAE_ID",
+    "description": "Rename column CONTRACT_ID to CAE_ID"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOTICE_ID",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NOTICE_ID using expression value.toNumber()"
+  },
+  {
+    "op": "core/row-reorder",
+    "mode": "row-based",
+    "sorting": {
+      "criteria": [
+        {
+          "valueType": "number",
+          "column": "NOTICE_ID",
+          "blankPosition": 2,
+          "errorPosition": 1,
+          "reverse": false
+        }
+      ]
+    },
+    "description": "Reorder rows"
+  },
+  {
+    "op": "core/blank-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOTICE_ID",
+    "description": "Blank down cells in column NOTICE_ID"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "NOTICE_ID",
+          "expression": "value",
+          "columnName": "NOTICE_ID",
+          "from": 0,
+          "to": 210000000,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "VALUE_EURO_FIN_2",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column VALUE_EURO_FIN_2 using expression value.toNumber()"
+  }
+]
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "B_MULTIPLE_COUNTRY",
+    "description": "Remove column B_MULTIPLE_COUNTRY"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "B_ON_BEHALF",
+    "description": "Remove column B_ON_BEHALF"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "B_INVOLVES_JOINT_PROCUREMENT",
+    "description": "Remove column B_INVOLVES_JOINT_PROCUREMENT"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "B_AWARDED_BY_CENTRAL_BODY",
+    "description": "Remove column B_AWARDED_BY_CENTRAL_BODY"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "B_RENEWALS",
+    "description": "Remove column B_RENEWALS"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "B_RECURRENT_PROCUREMENT",
+    "description": "Remove column B_RECURRENT_PROCUREMENT"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_ID",
+    "expression": "join ([coalesce(cells['CAE_ID'].value,''),coalesce(cells['ISO_COUNTRY_CODE'].value,'')],'')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CAE_ID using expression join ([coalesce(cells['CAE_ID'].value,''),coalesce(cells['ISO_COUNTRY_CODE'].value,'')],'')"
+  }
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DT_DISPATCH",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DT_DISPATCH using expression value.toDate()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DT_DISPATCH",
+    "expression": "grel:value.toString(\"yyyy-MM-dd\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DT_DISPATCH using expression grel:value.toString(\"yyyy-MM-dd\")"
+  }
+]

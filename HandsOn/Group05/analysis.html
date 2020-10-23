@@ -66,53 +66,37 @@
     <div class="container">
         <div class="row">
           <section id="naming">
-              <h2> Resource Naming Strategy </h2>
-              <p>The URL of the website from which you can fetch the Data is <span> http://eit-upm-opendata.com</span></p>
-
-              <h6>Notice</h6>
-              <p></p>
-              <ul>
-                <li>get list of ids of Notices : <span>/notices</span></li>
-                <li>get notice with identifier of notice-id : <span>/notice/notice-id</span></li>
-                <li>get contract id of notice-id : <span>/notice/notice-id/#contract</span></li>
-                <li>get CAN id of notice-id : <span>/notice/notice-id/#can</span></li>
-                <li>get type of notice : <span>/notice/notice-id/#type</span></li>
-                <li>get if notice is cancelled or not : <span>/notice/notice-id/#cancelled</span></li>
-                <li>get if notice has mutiple CANs : <span>/notice/notice-id/#multiple-cans</span></li>
-              </ul>
+              <h2> Resource naming strategy </h2>
+              <p>The URL of the website from which you can fetch the Data is <span> http://eit-upm-opendata.com/ted</span></p>
 
 
-              <h6>CAN</h6>
-              <ul>
-                <li>get list of ids of CANS : <span>/cans</span></li>
-                <li>get CAN with identifier of CAN-id : <span>/can/can-id</span></li>
-                <li>get name of CAN : <span>/can/can-id/#name</span></li>
-                <li>get national id of CAN : <span>/can/can-id/#cancelled</span></li>
-                <li>get town of CAN : <span>/can/can-id/#town</span></li>
-                <li>get postal code of CAN : <span>/can/can-id/#postal-code</span></li>
-                <li>get ISO country code of CAN : <span>/can/can-id/#iso-country-code</span></li>
-                <li>get type of CAN : <span>/can/can-id/#type</span></li>
-                <li>get main activity of CAN : <span>/can/can-id/#main-activity</span></li>
-                <li>get EU institution of CAN : <span>/can/can-id/#eu-institution</span></li>
-              </ul>
 
-              <h6>Contract</h6>
-              <p> Contract does not have its own identifier as it uses the identifier of Notice </p>
-              <ul>
-                <li>get list of ids of Contracts : <span>/contracts</span></li>
-                <li>get Contract Id with identifier of notice-id : <span>/contract/notice-id</span></li>
-                <li>get type of Contract : <span>/contract/notice-id/#type</span></li>
-                <li>get CPV of Contract : <span>/contract/notice-id/#cpv</span></li>
-                <li>get GPA of Contract : <span>/contract/notice-id/#gpa</span></li>
-                <li>get Value of Contract : <span>/contract/notice-id/#value</span></li>
-                <li>get if Contract is funded : <span>/contract/notice-id/#is-funded</span></li>
-                <li>get if Contract is renewal : <span>/contract/notice-id/#is-renewal</span></li>
-                <li>get duration of Contract : <span>/contract/notice-id/#duration</span></li>
-                <li>get time stamp of staritng of Contract : <span>/contract/notice-id/#starting</span></li>
-                <li>get time stamp of completion of Contract : <span>/contract/notice-id/#completion</span></li>
-              </ul>
+<h3> Data properties of ontology </h3>
+<p>After cleaning, the dataset contains 21 columns and 7587 rows.</p>
+<p>There are two classes; CAE and Notice.</p>
+<p>The data contains the following properties; </p>
+<ul>
+<li>CPV - which is the main Common Procurement Vocabularycode of the main object of  the contract and is of type double and belongs to column CPV.</li>
+<li>Contract Type - which is the type of contract with the values: W &quot;Works&quot;, U &quot;Supplies&quot;, S &quot;Services&quot; of type string and belongs to column TYPE_OF_CONTRACT</li>
+<li>Country Code - which is  the code of the &quot;Country&quot; for the first listed authority and is of type string and belongs to column ISO_COUNTRY_CODE</li>
+<li>Date  - which is the date of the contract notice and is of type DateTime and belongs to column DT_DISPATCH</li>
+<li>Duration - which is the duration of the contract and is of type double and belongs to column DURATION</li>
+<li>ID Type - which is the Standard form number and can be used to select which directive the notices fall under and is of type integer and belongs to column ID_TYPE</li>
+<li>Main Activity - which is the category of the contract (e.g. economics, health, etc.) and is if type string and belongs to column MAIN_ACTIVITY</li>
+<li>Multiple CAE - which shows if there is more then one contracting authority or entity and is of type boolean and belongs to column B_MULTIPLE_CAE</li>
+<li>CAE Name - which is the &quot;offical name&quot; of the CAE and is of type string and belongs to column CAE_NAME</li>
+<li>National ID - which is &quot;National registration number&quot; e.g. VAT number for utilities and is of type string and belongs to column CAE_NATIONALID</li>
+<li>Postal code - which is the &quot;postal code&quot; of the CAE and is of type string and belongs to column CAE_POSTAL_CODE</li>
+<li>TOP - which is Type of procedure: AWP “award without prior publication of a contract notice”,  COD “competitive dialogue”, NEC/NEG “negotiated with a call for competition”, OPE “open&quot;, RES “restricted” and is of type string and belongs to column TOP_TYPE</li>
+<li>Town - which is the &quot;town&quot; of CAE and is of type string and belongs to column CAE_TOWN</li>
+<li>CAE Type - which is the type of contracting authority: 1 “Ministry or any other national or federal authority, including their regional of local subdivisions”, 3 “Regional or local authority”, 4 “Water, energy, transport and telecommunications sectors”, 5 &quot;European Union institution/agency&quot;, 5A &quot;other international organisation&quot;, 6 &quot;Body governed by public law&quot;, 8 &quot;Other&quot;  N &quot;National or federal Agency / Office&quot;,  R &quot;Regional or local Agency / Office&quot;, Z “Not specified&quot; and is of type string and belongs to column CAE_TYPE</li>
+<li>Value - which is the CFC value, in EUR, without VAT, if the value variable is missing, the framework value is used instead (overwritten by humanmade estimates of values for large value contracts which seemed to be incorrect and is of type double and belongs to column VALUE_EURO_FIN_2</li>
+<li>Cancelled - which shows if the contract is cancelled or not and is of type boolean and belongs to column CANCELLED</li>
+<li>EU Funded - which shows wether or not the contract is funded by the EU and is of type boolean and belongs to column B_EU_FUNDS</li>
+<li>Electronic - which shows if an electronic auction has been used or not and is of type boolean and belongs to column B_ELECTRONIC_AUCTION</li>
+<li>GPA - which shows if the contract is covered by the Government Procurement Agreement or not and is of type boolean and belongs to column B_GPA.</li>
 
-
+</ul>
           </section>
         </div>
     </div>
