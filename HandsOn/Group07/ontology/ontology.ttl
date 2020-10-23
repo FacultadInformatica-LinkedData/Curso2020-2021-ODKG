@@ -30,7 +30,7 @@ owl:Transaction rdf:type owl:ObjectProperty ;
 
  rdfs:subClassOf [ rdf:type owl:seller ; 
                             owl:onProperty :makesOffer; rdfs:domain :trans;
-                            owl:someValuesFrom xsd:dateTime]
+                            owl:someValuesFrom xsd:string]
 
 
 :trans rdf:type owl:Class; 
