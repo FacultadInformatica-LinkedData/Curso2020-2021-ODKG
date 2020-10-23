@@ -23,3 +23,5 @@
 
 ## Comments on the self-assessment
 _(If required)_
+Added column id starting from value 1.
+We tried to join several columns to form an unique identifier but there were rows with equal column values (each row with equal values represent parts of the same contract, it has the same link to plublication)
