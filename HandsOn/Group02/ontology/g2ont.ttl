@@ -12,12 +12,11 @@
 ### Contrato
 :Contract rdf:type owl:Class .
 
-### Organización
+### Organismo
 :Org rdf:type owl:Class .
 
-### Organización pública
-:Publicorg rdf:type owl:Class ;
-                    rdfs:subClassOf :org .				
+### Organismo público
+:Publicorg rdf:type owl:Class .
 					
 # Contract properties
 
@@ -124,3 +123,75 @@
 :orgType rdf:type owl:DatatypeProperty ;
              rdfs:domain :PublicOrg ;
              rdfs:range xsd:string.				  
+
+
+# Public organization properties (juntas)
+
+### Descripcion
+
+### Horario
+:hasSchedule rdf:type owl:DatatypeProperty ;
+	rdfs:domain :Junta ;
+	rdfs:range xsd:string.
+### Equipamiento
+
+### Transporte
+:publicTransport rdf:type owl:DatatypeProperty ;
+	rdfs:domain :Junta ;
+	rdfs:range xsd:string.
+### Web 
+:hasWeb rdf:type owl:DatatypeProperty ;
+	rdfs:domain :Junta ;
+	rdfs:range xsd:string.
+### Nombre via
+:isinRoad rdf:type owl:DatatypeProperty ;
+	rdfs:domain :Junta ;
+	rdfs:range xsd:string.
+### Tipo via
+:hasRoadType rdf:type owl:DatatypeProperty ;
+	rdfs:domain :Junta ;
+	rdfs:range xsd:string.
+### Num 
+:isinRoadNumber rdf:type owl:DatatypeProperty ;
+	rdfs:domain :Junta ;
+	rdfs:range xsd:int.
+### Localidad
+:locality rdf:type owl:DatatypeProperty ;
+	rdfs:domain :Junta ;
+	rdfs:range xsd:string.
+### Provincia
+:province rdf:type owl:DatatypeProperty ;
+	rdfs:domain :Junta ;
+	rdfs:range xsd:string.
+### CP
+:pc rdf:type owl:DatatypeProperty ;
+		rdfs:domain :Junta ;
+		rdfs:range xsd:int.
+###NBarrio
+:neighborhood rdf:type owl:DatatypeProperty ;
+	rdfs:domain :Junta ;
+	rdfs:range xsd:string.
+###Distrito
+:district rdf:type owl:DatatypeProperty ;
+	rdfs:domain :Junta ;
+	rdfs:range xsd:string.
+###Coordenada-x
+:hasCoordenateX rdf:type owl:DatatypeProperty ;
+	rdfs:domain :Junta ;
+	rdfs:range xsd:int.
+###Coordenada-y
+:hasCoordenateY rdf:type owl:DatatypeProperty ;
+	rdfs:domain :Junta ;
+	rdfs:range xsd:int.
+###Latitud
+:hasLatitude rdf:type owl:DatatypeProperty ;
+	rdfs:domain :Junta ;
+	rdfs:range xsd:string.
+###Longitud
+:hasLongitude rdf:type owl:DatatypeProperty ;
+	rdfs:domain :Junta ;
+	rdfs:range xsd:string.
+###EMAIL
+:hasEmail rdf:type owl:DatatypeProperty ;
+	rdfs:domain :Junta ;
+	rdfs:range xsd:string.

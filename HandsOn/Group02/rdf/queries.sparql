@@ -1,0 +1,37 @@
+@prefix : <http://MadridPublicContracts/ontology> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns: <http://example.org#>.
+
+# 1.- Total number of contracts by month
+
+    SELECT ?Month (COUNT(?contract) as ?Number_of_contrancts)
+    WHERE 
+    {
+      ?contract ns:hasMonth ?Month.
+    }
+    GROUP BY ?Month
+
+
+
+# 2.- Number of contracts in Distrito de Chamartin
+
+SELECT DISTINCT ?Contract ?description
+    WHERE 
+    {
+      ?Contract ns:hasDescription ?description.
+      FILTER regex(?description, \"distrito de chamartin\")
+    }
+
+
+# 3.- Number of contracts of each state: open, emergency, restricted...
+
+SELECT ?State (COUNT(?Contract) as ?Number_of_contracts)
+    WHERE 
+    {
+      ?Contract ns:hasProcedure ?State.
+    }
+    GROUP BY ?State

@@ -12,7 +12,7 @@ prefixes:
   vocab: http://example.org#
   
 mappings:
-  triplesmap1:
+  contractsmap:
     sources:
       - [actividad_contractual_ayto_madrid_2020-updated.csv~csv]
     s: http://MadridPublicContracts/ontology/$(Numero Contrato)
@@ -26,7 +26,7 @@ mappings:
       - [vocab:hasContractType,$(Tipo Contrato),xsd:string]
       - [vocab:hasProcedure,$(Procedimiento Adjudicacion),xsd:string]
       - [vocab:hasArticle,$(Articulo),xsd:integer]
-      - [vocab:property9,$(Apartado),xsd:string]
+      - [vocab:hasSection,$(Apartado),xsd:string]
       - [vocab:hasCriteria,$(Criterios Adjudicacion),xsd:string]
       - [vocab:hasBudget,$(Presupuesto Total(IVA Incluido)),xsd:double]
       - [vocab:hasAmount,$(Importe Adjudicacion (IVA Incluido)),xsd:double]
@@ -35,16 +35,16 @@ mappings:
       - [vocab:isDeal,$(Acuerdo Marco),xsd:string]
       - [vocab:isZeroCost,$(Ingreso/Coste Cero),xsd:string]
       - [vocab:hasComments,$(Observaciones),xsd:string]
-      - p: vocab:Organismo
+      - p: vocab:hasOrganismoContratante
         o:
-          - mapping: triplesmap2
+          - mapping: juntasmap
             condition:
               function: equal
               parameters:
                 - [str1, $(Organismo)]
                 - [str2, $(NOMBRE)]
 
-  triplesmap2:
+  organismosmap:
     sources:
       - [actividad_contractual_ayto_madrid_2020-updated.csv~csv]
     s: http://MadridPublicContracts/ontology/$(Organismo)
@@ -52,7 +52,7 @@ mappings:
       - [rdf:type, vocab:Publicorg]
       - [vocab:orgtype,$(Descripcion Centro),xsd:string]
 
-  triplesmap3:
+  adjudicatariosmap:
     sources:
       - [actividad_contractual_ayto_madrid_2020-updated.csv~csv]
     s: http://MadridPublicContracts/ontology/$(Nombre/Razon Social)
@@ -60,27 +60,28 @@ mappings:
       - [rdf:type, vocab:Org]
       - [vocab:orgtype,$(NIF/CIF Adjudicatario),xsd:string]
 
-  triplesmap4:
+  juntasmap:
     sources:
       - [juntas_distrito_ayuto_madrid-updated.csv~csv]
-    s: http://MadridPublicContracts/ontology/(NOMBRE)
+    s: http://MadridPublicContracts/ontology/$(NOMBRE)
     po:
-      - [rdf:type, vocab:Organismo]
-      - [vocab:descripcion,$(DESCRIPCION-ENTIDAD)]
-      - [vocab:horario,$(HORARIO)]
-      - [vocab:equipamiento,$(EQUIPAMIENTO)]
-      - [vocab:transporte,$(TRANSPORTE)]
-      - [vocab:web,$(PÁGINA WEB)]
-      - [vocab:nombrevia,$(NOMBRE-VÍA)]
-      - [vocab:tipovia,$(TIPO-VIA)]
-      - [vocab:numero,$(NÚMERO)]
-      - [vocab:localidad,$(LOCALIDAD)]
-      - [vocab:provincia,$(PROVINCIA)]
-      - [vocab:codigopostal,$(CÓDIGO POSTAL)]
-      - [vocab:barrio,$(BARRIO)]
-      - [vocab:distrito,$(DISTRITO)]
-      - [vocab:coordenadax,$(COORDENADA-X)]
-      - [vocab:coordenaday,$(COORDENADA-Y)]
-      - [vocab:latitud,$(LATITUD)]
-      - [vocab:longitud,$(LONGITUD)]
-      - [vocab:email,$(EMAIL)]
+      - [rdf:type, vocab:Publicorg]
+      - [vocab:nombre,$(PK),xsd:string]
+      - [vocab:descripcion,$(DESCRIPCION-ENTIDAD),xsd:string]
+      - [vocab:horario,$(HORARIO),xsd:string]
+      - [vocab:equipamiento,$(EQUIPAMIENTO),xsd:string]
+      - [vocab:transporte,$(TRANSPORTE),xsd:string]
+      - [vocab:web,$(PÁGINA WEB),xsd:string]
+      - [vocab:nombrevia,$(NOMBRE-VÍA),xsd:string]
+      - [vocab:tipovia,$(TIPO-VIA),xsd:string]
+      - [vocab:numero,$(NÚMERO),xsd:integer]
+      - [vocab:localidad,$(LOCALIDAD),xsd:string]
+      - [vocab:provincia,$(PROVINCIA),xsd:string]
+      - [vocab:codigopostal,$(CÓDIGO POSTAL),xsd:integer]
+      - [vocab:barrio,$(BARRIO),xsd:string]
+      - [vocab:distrito,$(DISTRITO),xsd:string]
+      - [vocab:coordenadax,$(COORDENADA-X),xsd:integer]
+      - [vocab:coordenaday,$(COORDENADA-Y),xsd:integer]
+      - [vocab:latitud,$(LATITUD),xsd:integer]
+      - [vocab:longitud,$(LONGITUD),xsd:integer]
+      - [vocab:email,$(EMAIL),xsd:string]
