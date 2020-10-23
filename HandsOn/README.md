@@ -33,3 +33,9 @@ This is the directory where students have to upload their materials related to t
 * /mappings/*.yml - A YML file with the mapping rules (optional).
 * /rdf/*.nt - An RDF file in the NTriples syntax with the data transformed into RDF.
 * /selfAssessmentHandsOn4.md - A Markdown document with the hands-on 4 self-assessment.
+* /openrefine/*-with-links.json - A JSON file with the operations performed over the data for linking them.
+* /csv/*-with-links.csv - A CSV file with the updated versions of the datasets.
+* /mappings/*-with-links.rml - An RML file with the updated versions of the mappings.
+* /rdf/*-with-links.ttl - An RDF file in the NTriples syntax with the data linked and transformed into RDF.
+* /rdf/queries-with-links.sparql - A SPARQL file with queries to verify your links.
+* /selfAssessmentHandsOn5.md - A Markdown document with the hands-on 5 self-assessment.
