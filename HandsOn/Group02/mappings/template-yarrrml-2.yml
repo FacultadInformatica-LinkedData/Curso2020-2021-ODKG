@@ -51,6 +51,7 @@ mappings:
     po:
       - [rdf:type, vocab:Publicorg]
       - [vocab:orgtype,$(Descripcion Centro),xsd:string]
+      - [owl:sameAs, $(wikidataOrgainismo)~iri]
 
   adjudicatariosmap:
     sources:
@@ -59,7 +60,7 @@ mappings:
     po:
       - [rdf:type, vocab:Org]
       - [vocab:orgtype,$(NIF/CIF Adjudicatario),xsd:string]
-
+  
   juntasmap:
     sources:
       - [juntas_distrito_ayuto_madrid-updated.csv~csv]
@@ -85,3 +86,36 @@ mappings:
       - [vocab:latitud,$(LATITUD),xsd:integer]
       - [vocab:longitud,$(LONGITUD),xsd:integer]
       - [vocab:email,$(EMAIL),xsd:string]
+      - [owl:sameAs, $(wikiJUNTA)~iri]
+    
+barriosmap:
+  sources:
+    - [juntas_distrito_ayuto_madrid-updated.csv~csv]
+  s: http://MadridPublicContracts/ontology/$(BARRIO)
+  po:
+    - [rdf:type, vocab:Barrio]
+    - [owl:sameAs, $(wikiBARRIOS)~iri]
+ 
+distritosmap:
+  sources:
+    - [juntas_distrito_ayuto_madrid-updated.csv~csv]
+  s: http://MadridPublicContracts/ontology/$(DISTRITO)
+  po:
+    - [rdf:type, vocab:Distrito]
+    - [owl:sameAs, $(wikiDISTRITO)~iri]
+    
+procinciamap:
+  sources:
+    - [juntas_distrito_ayuto_madrid-updated.csv~csv]
+  s: http://MadridPublicContracts/ontology/$(PROVINCIA)
+  po:
+    - [rdf:type, vocab:Provincia]
+    - [owl:sameAs, $(wikiPROVINCIA)~iri]
+
+localidadmap:
+  sources:
+    - [juntas_distrito_ayuto_madrid-updated.csv~csv]
+  s: http://MadridPublicContracts/ontology/$(LOCALIDAD)
+  po:
+    - [rdf:type, vocab:Localidad]
+    - [owl:sameAs, $(wikiLOCALIDAD)~iri]
