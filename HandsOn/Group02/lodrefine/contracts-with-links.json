@@ -1342,3 +1342,18 @@
     "description": "Reconcile cells in column Organismo to type Q31728"
   }
 ]
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Organismo",
+    "expression": "grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikiOrganismo",
+    "columnInsertIndex": 4,
+    "description": "Create column wikiOrganismo at index 4 based on column Organismo using expression grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id"
+  }
+]
