@@ -1,67 +1,122 @@
 1.Get all the classes
-
+ 
 SELECT DISTINCT ?class
-WHERE
-{
-{?x a ?class} 
-UNION
-{?class rdf:type rdfs:Class}
-}
 
-2. Get all the subclasses of the class Transaction (=trans)
+ WHERE
 
-PREFIX ex: <http://GovernmentProcurementCard.es#>
+ {​​​​
 
+ {​​​​?x a ?class}​​​​ 
+
+ UNION
+
+ {​​​​?class rdf:type rdfs:Class}​​​​
+
+ }​​​​
+ 
+2. Get all the subclasses of the class organization
+ 
+PREFIX ex: <http://ProjectsHorizon2020.es#>
+ 
 SELECT DISTINCT ?x
-WHERE
-{
-?x rdfs:subClassOf/rdfs:subClassOf* ex:trans
-}
 
-3.Get the amount of the transaction 20150320_ALEXANDER_BROWN_AND_CO_166919 
+ WHERE
 
-PREFIX ex: <http://GovernmentProcurementCard.es#>
+ {​​​​
 
-SELECT DISTINCT ?amount
-WHERE {
-ex:20150320_ALEXANDER_BROWN_AND_CO_166919 ex:hasTransactionAmount ?amount.
-}
+ ?x rdfs:subClassOf/rdfs:subClassOf* ex:organization
 
-4. Get all amounts, ordered by transaction date (ascending)
+ }​​​​
+ 
+3.Get the amount of the ecContribution of projectID  705217
+ 
+PREFIX ex: <http://ProjectsHorizon2020.es#>
+ 
+SELECT DISTINCT ?X
 
-PREFIX ex: <http://GovernmentProcurementCard.es#>
+ WHERE {​​​​
 
-SELECT DISTINCT ?x ?amount
-WHERE {
+ ex:705217 ex:contribution ?x
 
-?x ex:hasTransactionDate ?amount .
+ }​​​​
+ 
+4. Get all projectID, together with the coordinator country,ordered by projectID (ascending)
+ 
+PREFIX ex: <http://ProjectsHorizon2020.es#>
+ 
+SELECT DISTINCT ?x ?projectID
 
-?amount ex:hasTransactionAmount ?date.
+ WHERE {​​​​
+ 
+?x ex:country ?projectID.
+ 
+?x rdfs:label ?projectID.
+ 
+}​​​​
 
-}
-order by asc(str(?date))
+ order by asc(asc(?projectID))
+ 
 
 
-5.Get all transactions with more than 1.000 £
+ 5.Get all ecContribution with more than 100000
+ 
+PREFIX ex: <http://ProjectsHorizon2020.es#>
+ 
+SELECT DISTINCT ?x amonut
 
-PREFIX ex: <http://GovernmentProcurementCard.es#>
+ WHERE
 
-SELECT DISTINCT ?x ?amount
-WHERE
-{​​​​​
-?x rdf:type/rdfs:subClassOf* ex:trans .​
-?x ex:hasTransactionAmount ?amount.
+ {​​​​​​​​​
 
-}​​​​​
-FILTER ((?amount)^xsd:double > 1000)
-}​​​​​
+ ?x rdf:type/rdfs:subClassOf* ex:Contribution .​
 
+ ?x ex:Contribution ?amount.
+ 
+}​​​​​​​​​
+
+ FILTER ((?amount)^xsd:double > 100000)
+
+ }​​​​​​​​​
+ 
 LIMIT 100
+ 
+6. Describe the resource with  rdfs:label "STANFORD”
+ 
+PREFIX ex: <http://ProjectsHorizon2020.es#>
 
-6. Describe seller named "ALEXANDER_BROWN_AND_CO"
+ DESCRIBE ?x 
+ 
+WHERE{​​​​?x rdfs:label "STANFORD" .
 
-PREFIX ex: <http://GovernmentProcurementCard.es#>
-DESCRIBE ?x 
+ }​​​​
 
-WHERE{?x rdfs:label "ALEXANDER_BROWN_AND_CO" .
+7. Get all instance of class Organization
+
+PREFIX ex: <http://ProjectsHorizon2020.es#>
+ 
+SELECT DISTINCT ?x
+
+ WHERE
+
+ {
+
+ ?x a/rdfs:subClassOf* ex:organization.
+
+ } LIMIT 100
+ 
+8. Check whether there is any instance of Participants Country
+PREFIX ex: <http://ProjectsHorizon2020.es#>
+
+ASK {?x rdf:type ex:country}
+
+9. Get all resouces of status "closed"
+
+PREFIX ex: <http://ProjectsHorizon2020.es#>
+ SELECT DISTINCT ?x ?status
+ WHERE
+{
+	?x ex:status ?status .
+	FILTER regex(?status, "^CLOSED")
 }
+
+ LIMIT 100

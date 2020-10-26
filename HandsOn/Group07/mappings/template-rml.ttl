@@ -4,61 +4,370 @@
 @prefix transit: <http://vocab.org/transit/terms/>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
-@prefix vocab: <http://GovernmentProcurementCard.es#> .
-@base <http://GovernmentProcurementCard.es/ns#>.
+@prefix vocab: <http://www.example.com/group07#> .
+@base <http://www.example.com/group07/ns#>.
 
 <#TriplesMap1> a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "C:\Users\delfi\Documents\MCD\ODKG\moj-gpc-transactions-march-2015-updated.csv" ;
+    rml:source "csv\cordis-h2020organizations-updated-snippet.csv" ;
     rml:referenceFormulation ql:CSV 
   ];
 
   rr:subjectMap [
-    rr:template "http://GovernmentProcurementCard.es/trans/{Transaction}";
+    rr:template "http://www.example.com/group07/organizaton/{id}";
     rr:termType rr:IRI; 
-    rr:class vocab:trans;
+    rr:class vocab:organization;
   ];
 
   rr:predicateObjectMap [
-    rr:predicate vocab:hasTransactionDate;
+    rr:predicate vocab:name;
     rr:objectMap [
-      rml:reference "PostingDate";
-      rr:datatype xsd:dateTime
+      rml:reference "name";
+      rr:datatype xsd:string
       ]
   ];
 
   rr:predicateObjectMap [
-    rr:predicate vocab:hasTransactionAmount;
+    rr:predicate vocab:shortName;
     rr:objectMap [
-      rml:reference "TransactionAmount";
-      rr:datatype xsd:double
+      rml:reference "shortName";
+      rr:datatype xsd:string
       ]
   ];
 
   rr:predicateObjectMap [
-    rr:predicate vocab:hasExplanation;
+    rr:predicate vocab:ActivityType;
     rr:objectMap [
-      rml:reference "ExplanationCategory";
+      rml:reference "activityType";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:preddicateObjectMap [
+    rr:predicate vocab:country;
+    rr:objectMap [
+      rml:reference "country";
+      rr:datatype xsd:string
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:Street;
+    rr:objectMap [
+      rml:reference "street";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:locality;
+    rr:objectMap [
+      rml:reference "city";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasPostalCode;
+    rr:objectMap [
+      rml:reference "postCode";
       rr:datatype xsd:string
     ]
   ].
 
   <#TriplesMap2> a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "C:\Users\delfi\Documents\MCD\ODKG\moj-gpc-transactions-march-2015-updated.csv" ;
+    rml:source "csv\cordis-h2020projects-updated-snippet.csv" ;
     rml:referenceFormulation ql:CSV 
   ];
 
   rr:subjectMap [
-    rr:template "http://GovernmentProcurementCard.es/seller/{MerchantName}";
-    rr:class vocab:seller
+    rr:template "http://www.example.com/group07/project/{id}";
+    rr:class vocab:project
   ];
-    
+
   rr:predicateObjectMap [
-    rr:predicate vocab:makesOffer;
+    rr:predicate vocab:record;
+    rr:objectMap [
+      rml:reference "rcn";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:acronym;
+    rr:objectMap [
+      rml:reference "acronym";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasProgramme;
+    rr:objectMap [
+      rml:reference "programme";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:topic;
+    rr:objectMap [
+      rml:reference "topics";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:title;
+    rr:objectMap [
+      rml:reference "title";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:startDate;
+    rr:objectMap [
+      rml:reference "startDate";
+      rr:datatype xsd:dateTime
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:endDate;
+    rr:objectMap [
+      rml:reference "endDate";
+      rr:datatype xsd:dateTime
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:url;
+    rr:objectMap [
+      rml:reference "projectUrl";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:objective;
+    rr:objectMap [
+      rml:reference "objective";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:cost;
+    rr:objectMap [
+      rml:reference "totalCost";
+      rr:datatype xsd:double
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:Contribution;
+    rr:objectMap [
+      rml:reference "ecMaxContribution";
+      rr:datatype xsd:double
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:projectCoordinator;
     rr:objectMap [
       rr:parentTriplesMap <#TriplesMap1>;
       rr:joinCondition [
-        rr:child "Transaction"; rr:parent "Transaction";];
+        rr:child "coordinator"; rr:parent "name";];
+      ]
+    ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:participant;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap1>;
+      rr:joinCondition [
+        rr:child "participants"; rr:parent "shortName";];
+      ]
+    ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:coordinatorCountry;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap1>;
+      rr:joinCondition [
+        rr:child "participantCountries"; rr:parent "country";];
+      ]
+    ];
+    
+  rr:predicateObjectMap [
+    rr:predicate vocab:participantCountry;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap1>;
+      rr:joinCondition [
+        rr:child "coordinatorCountry"; rr:parent "country";];
+      ]
+    ].
+
+<#TriplesMap3> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "csv\cordis-h2020organizations-updated-snippet.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+
+  rr:subjectMap [
+    rr:template "http://www.example.com/group07/participant/{id}";
+    rr:termType rr:IRI; 
+    rr:class vocab:Participant;
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:End;
+    rr:objectMap [
+      rml:reference "endOfParticipation";
+      rr:datatype xsd:boolean
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:Contribution;
+    rr:objectMap [
+      rml:reference "ecContribution";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:role;
+    rr:objectMap [
+      rml:reference "role";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:projectID;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap2>;
+      rr:joinCondition [
+        rr:child "projectID"; rr:parent "id";];
+      ]
+    ];
+    
+  rr:predicateObjectMap [
+    rr:predicate vocab:projectRecord;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap2>;
+      rr:joinCondition [
+        rr:child "projectRcn"; rr:parent "rcn";];
+      ]
+    ];
+    
+  rr:predicateObjectMap [
+    rr:predicate vocab:acronym;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap2>;
+      rr:joinCondition [
+        rr:child "projectAcronym"; rr:parent "acronym";];
+      ]
+    ];
+    
+  rr:predicateObjectMap [
+    rr:predicate vocab:organizationID;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap1>;
+      rr:joinCondition [
+        rr:child "id"; rr:parent "id";];
+      ]
+    ];
+    
+  rr:predicateObjectMap [
+    rr:predicate vocab:name;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap1>;
+      rr:joinCondition [
+        rr:child "name"; rr:parent "name";];
+      ]
+    ];
+    
+  rr:predicateObjectMap [
+    rr:predicate vocab:shortName;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap1>;
+      rr:joinCondition [
+        rr:child "shortName"; rr:parent "shortName";];
+      ]
+    ];
+    
+  rr:predicateObjectMap [
+    rr:predicate vocab:country;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap1>;
+      rr:joinCondition [
+        rr:child "country"; rr:parent "country";];
+      ]
+    ].  
+
+<#TriplesMap4> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "csv\cordis-h2020-msca-fellows-updated-snippet.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+
+  rr:subjectMap [
+    rr:template "http://www.example.com/group07/researcher/{fullName}";
+    rr:termType rr:IRI; 
+    rr:class vocab:Researcher;
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:title;
+    rr:objectMap [
+      rml:reference "title";
+      rr:datatype xsd:string
+    ]
+  ]; 
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:givenName;
+    rr:objectMap [
+      rml:reference "firstName";
+      rr:datatype xsd:string
+    ]
+  ]; 
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:lastName;
+    rr:objectMap [
+      rml:reference "lastName";
+      rr:datatype xsd:string
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:organizationId;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap1>;
+      rr:joinCondition [
+        rr:child "organizationId"; rr:parent "id";];
+      ]
+    ];
+    
+  rr:predicateObjectMap [
+    rr:predicate vocab:projectId;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap2>;
+      rr:joinCondition [
+        rr:child "projectId"; rr:parent "id";];
+      ]
+    ];
+    
+  rr:predicateObjectMap [
+    rr:predicate vocab:projectAcronym;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap2>;
+      rr:joinCondition [
+        rr:child "projectAcronym"; rr:parent "acronym";];
       ]
     ].

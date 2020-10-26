@@ -1,0 +1,184 @@
+
+1: Get all the properties that can be applied to instance of the Project Class
+ PREFIX ex: <http://ProjectsHorizon2020.es#>
+ SELECT DISTINCT ?properties
+
+WHERE
+{
+?x a <http://www.wikidata.org/entity/Project>. 
+?x ?properties ?y
+} 
+LIMIT 100
+
+2: Get all the properties, except rdf:type, that can be applied to instances of the Organization class
+
+SELECT DISTINCT ?properties
+
+WHERE
+{
+?x a <http://www.wikidata.org/entity/Organization>. 
+?x ?properties ?y
+FILTER(?properties != rdf:type)
+} 
+LIMIT 100
+
+3: Which different values exist for the properties, except for rdf:type, applicable to the instances of Politician?
+SELECT DISTINCT ?value
+
+WHERE
+{
+?x a <http://www.wikidata.org/entity/Project>. 
+?x ?properties ?value
+FILTER(?properties != rdf:type) 
+} 
+LIMIT 100
+
+4: In class organization or each of these applicable properties, except for rdf:type, which different values do they take globally for all those instances?
+SELECT DISTINCT ?properties ?value
+
+WHERE 
+{
+?x a <http://www.wikidata.org/entity/Organization>.
+?x ?properties ?value
+filter(?properties != rdf:type)
+}
+LIMIT 100
+
+5.Get all full name of researchers, together with the wikidata link of researchers,ordered by name(ascending)
+ 
+PREFIX ex: <http://ProjectsHorizon2020.es#>
+ 
+SELECT DISTINCT ?x ?name
+
+ WHERE {​​​​
+ 
+?x ex:wikidataFullName ?name.
+ 
+?x rdfs:label ?name.
+ 
+}​​​​
+
+6.Get all countries, together with the wikidata link of countries,ordered by name of country(ascending)
+ 
+PREFIX ex: <http://ProjectsHorizon2020.es#>
+ 
+SELECT DISTINCT ?x ?country
+
+ WHERE {​​​​
+ 
+?x ex:wikidataCountry ?country.
+ 
+?x rdfs:label ?country.
+}​​​​
+
+7.Get all the classes
+ 
+SELECT DISTINCT ?class
+
+ WHERE
+
+ {​​​​
+
+ {​​​​?x a ?class}​​​​ 
+
+ UNION
+
+ {​​​​?class rdf:type rdfs:Class}​​​​
+
+ }​​​​
+ 
+8. Get all the subclasses of the class organization
+ 
+PREFIX ex: <http://ProjectsHorizon2020.es#>
+ 
+SELECT DISTINCT ?x
+
+ WHERE
+
+ {​​​​
+
+ ?x rdfs:subClassOf/rdfs:subClassOf* ex:organization
+
+ }​​​​
+ 
+9.Get the amount of the ecContribution of projectID  705217
+ 
+PREFIX ex: <http://ProjectsHorizon2020.es#>
+ 
+SELECT DISTINCT ?X
+
+ WHERE {​​​​
+
+ ex:705217 ex:contribution ?x
+
+ }​​​​
+ 
+10. Get all projectID, together with the coordinator country,ordered by projectID (ascending)
+ 
+PREFIX ex: <http://ProjectsHorizon2020.es#>
+ 
+SELECT DISTINCT ?x ?projectID
+
+ WHERE {​​​​
+ 
+?x ex:country ?projectID.
+ 
+?x rdfs:label ?projectID.
+ 
+}​​​​
+
+ order by asc(asc(?projectID))
+ 
+
+
+ 11.Get all ecContribution with more than 100000
+ 
+PREFIX ex: <http://ProjectsHorizon2020.es#>
+ 
+SELECT DISTINCT ?x amonut
+
+ WHERE
+
+ {​​​​​​​​​
+
+ ?x rdf:type/rdfs:subClassOf* ex:Contribution .​
+
+ ?x ex:Contribution ?amount.
+ 
+}​​​​​​​​​
+
+ FILTER ((?amount)^xsd:double > 100000)
+
+ }​​​​​​​​​
+ 
+LIMIT 100
+ 
+6. Describe the resource with  rdfs:label "STANFORD”
+ 
+PREFIX ex: <http://ProjectsHorizon2020.es#>
+
+ DESCRIBE ?x 
+ 
+WHERE{​​​​?x rdfs:label "STANFORD" .
+
+ }​​​​
+
+7. Get all instance of class Organization
+
+PREFIX ex: <http://ProjectsHorizon2020.es#>
+ 
+SELECT DISTINCT ?x
+
+ WHERE
+
+ {
+
+ ?x a/rdfs:subClassOf* ex:organization.
+
+ } LIMIT 100
+ 
+8. Check whether there is any instance of Participants Country
+PREFIX ex: <http://ProjectsHorizon2020.es#>
+
+ASK {?x rdf:type ex:country}
+
