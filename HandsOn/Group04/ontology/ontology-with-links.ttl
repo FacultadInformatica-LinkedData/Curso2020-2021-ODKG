@@ -1,0 +1,260 @@
+@prefix : <http://exercise.publicprocurement.es/about/ontology/group04pp#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://exercise.publicprocurement.es/about/ontology/group04ppp> .
+
+<http://exercise.publicprocurement.es/about/ontology/group04ppp> rdf:type owl:Ontology .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2002/07/owl#sameAs
+owl:sameAs rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#lat
+geo:lat rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#long
+geo:long rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasItem
+:hasItem rdf:type owl:ObjectProperty ;
+         rdfs:domain :Purchase ;
+         rdfs:range :Item .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasSupplier
+:hasSupplier rdf:type owl:ObjectProperty ;
+             rdfs:domain :Purchase ;
+             rdfs:range :Supplier .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#madeBy
+:madeBy rdf:type owl:ObjectProperty ;
+        rdfs:domain :Purchase ;
+        rdfs:range :Department .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasAcquisitionMethod
+:hasAcquisitionMethod rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Purchase ;
+                      rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasAcquisitionType
+:hasAcquisitionType rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Purchase ;
+                    rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasCalCards
+:hasCalCards rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Purchase ;
+             rdfs:range xsd:boolean .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasClassNumber
+:hasClassNumber rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Item ;
+                rdfs:range xsd:long .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasClassTitle
+:hasClassTitle rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Item ;
+               rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasCommodityTitle
+:hasCommodityTitle rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Item ;
+                   rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasCreationDate
+:hasCreationDate rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Purchase ;
+                 rdfs:range xsd:dateTime .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasDepartmentName
+:hasDepartmentName rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Department ;
+                   rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasDescription
+:hasDescription rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Item ;
+                rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasFamilyNumber
+:hasFamilyNumber rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Item ;
+                 rdfs:range xsd:long .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasFamilyTitle
+:hasFamilyTitle rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Item ;
+                rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasFiscalYear
+:hasFiscalYear rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Purchase ;
+               rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasIdentifier
+:hasIdentifier rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Item ;
+               rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasItemName
+:hasItemName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Item ;
+             rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasLPAnumber
+:hasLPAnumber rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Purchase ;
+              rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasLatitude
+:hasLatitude rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Supplier ;
+             rdfs:range geo:lat .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasLongitude
+:hasLongitude rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Supplier ;
+              rdfs:range geo:long .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasOrderNumber
+:hasOrderNumber rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Purchase ;
+                rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasPurchaseDate
+:hasPurchaseDate rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Purchase ;
+                 rdfs:range xsd:dateTime .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasQualifications
+:hasQualifications rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Supplier ;
+                   rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasQuantity
+:hasQuantity rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Purchase ;
+             rdfs:range xsd:long .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasSegmentNumber
+:hasSegmentNumber rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Item ;
+                  rdfs:range xsd:long .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasSegmentTitle
+:hasSegmentTitle rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Item ;
+                 rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasSubAcquisitionMethod
+:hasSubAcquisitionMethod rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :Purchase ;
+                         rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasSubAcquisitionType
+:hasSubAcquisitionType rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Purchase ;
+                       rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasSupplierCode
+:hasSupplierCode rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Supplier ;
+                 rdfs:range xsd:long .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasTotalPrice
+:hasTotalPrice rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Purchase ;
+               rdfs:range owl:real .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasUNSPC
+:hasUNSPC rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Item ;
+          rdfs:range xsd:long .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasUnitPrice
+:hasUnitPrice rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Purchase ;
+              rdfs:range owl:real .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasZipCode
+:hasZipCode rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Supplier ;
+            rdfs:range xsd:string .
+
+
+###  http://www.w3.org/2002/07/owl#sameAs
+owl:sameAs rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Department ;
+           rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#Department
+:Department rdf:type owl:Class .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#Item
+:Item rdf:type owl:Class .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#Purchase
+:Purchase rdf:type owl:Class .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#Supplier
+:Supplier rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
