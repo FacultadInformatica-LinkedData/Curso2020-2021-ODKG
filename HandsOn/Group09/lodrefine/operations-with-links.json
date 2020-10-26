@@ -5321,5 +5321,59 @@
     "similarValue": "DIRECTOR/A ATENCION PRIMARIA, INTERVENCION COMUNITARIA Y EMERGENCIA SOCIAL",
     "judgment": "new",
     "shareNewTopics": true
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column wikiSection at index 3 based on column Section using expression grel:\"http://wikidata.org/entity/\"+cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "wikiSection",
+    "columnInsertIndex": 3,
+    "baseColumnName": "Section",
+    "expression": "grel:\"http://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Section_IRI",
+    "columnName": "Section_IRI"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Contracting_Body_IRI",
+    "columnName": "Contracting_Body_IRI"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column wikiContractingBody at index 5 based on column Contracting_Body using expression grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "wikiContractingBody",
+    "columnInsertIndex": 5,
+    "baseColumnName": "Contracting_Body",
+    "expression": "grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column wikiSection",
+    "columnName": "wikiSection"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column wikiSection at index 3 based on column Section using expression grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "wikiSection",
+    "columnInsertIndex": 3,
+    "baseColumnName": "Section",
+    "expression": "grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank"
   }
 ]
