@@ -5,6 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ns: <http://example.org#>.
+@prefix wikidata: <http://www.wikidata.org/entity/>.
 
 # 1.- Localities with the same name
 
@@ -25,7 +26,29 @@ SELECT DISTINCT ?Junta ?District
     WHERE 
     {
       ?Junta ns:distrito ?District.
-      FILTER regex(?district, \"http://MadridPublicContracts/ontology/Chamber\")
+      FILTER regex(?district, \"http://MadridPublicContracts/ontology/Chamartín\")
     }
+
+
+
+# 3.- Contracts for distrito de Vallecas and their state
+
+ SELECT DISTINCT ?Contract ?Org ?State
+    WHERE {
+      ?Contract ns:hasOrganismoContratante ?Org.
+      ?Org owl:sameAs wikidata:Q56191848.
+      ?Contract ns:hasProcedure ?State.
+    }
+
+
+
+# 4.- Contracts made by district of Retiro, gropued by month
+
+SELECT ?Month ?Org (COUNT(?Contract) as ?Number_of_contrancts)
+    WHERE {
+      ?Contract ns:hasOrganismoContratante ?Org.
+      ?Org owl:sameAs wikidata:Q56191993.
+      ?Contract ns:hasMonth ?Month.
+    }GROUP BY ?Month
 
 
