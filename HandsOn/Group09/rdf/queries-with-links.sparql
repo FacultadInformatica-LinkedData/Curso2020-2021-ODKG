@@ -1,0 +1,30 @@
+PREFIX : http://www.example.com/group09# .
+PREFIX owl: http://www.w3.org/2002/07/owl# .
+PREFIX rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# .
+PREFIX xml: http://www.w3.org/XML/1998/namespace .
+PREFIX xsd: http://www.w3.org/2001/XMLSchema# .
+PREFIX rdfs: http://www.w3.org/2000/01/rdf-schema# .
+PREFIX org: http://www.w3.org/ns/org# .
+PREFIX pproc: http://contsem.unizar.es/def/sector-publico/pproc# .
+PREFIX pc: http://purl.org/procurement/public-contracts# .
+PREFIX schema: http://schema.org/name .
+
+# Select the section name and the section link associated with a given recognition number
+SELECT ?section_link ?section_name
+WHERE{
+	?x :awardNum "M202000018" .
+	?x pproc:managingDepartment ?y .
+	?y schema:name ?section_name .
+	?y owl:sameAs ?section_link 
+}
+
+#select contracting body and wikidata link where section is "Empresa Municipal de Transportes de Madrid"
+SELECT ?contracting_body ?contracting_body_link
+WHERE
+{
+  ?section a pproc:OrganizationalUnit .
+  ?section schema:name "Empresa Municipal de Transportes de Madrid" .
+  ?contract pproc:managingDepartment ?section .
+  ?contract pproc:contractingBody ?contracting_body .
+  ?contracting_body owl:sameAs ?contracting_body_link
+} 
