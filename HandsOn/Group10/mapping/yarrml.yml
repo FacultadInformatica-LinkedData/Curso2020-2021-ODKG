@@ -21,7 +21,9 @@ mappings:
       - [a,default:Centro]
 
       - [default: descripcionCentro,$(Descripcion Centro),xsd:string]
-      - [default: tieneGasto,$(Gastos)]  
+      - [default: tieneGasto,$(Gastos)]
+      - [owl:sameAs,$(wikicentro)~iri]
+
 
      
 
@@ -44,6 +46,7 @@ mappings:
 
       - [default:descripcionCentro,$(Descripcion Centro),xsd:string]
       - [default:tieneIngresos,$(Ingresos)]
+      - [owl:sameAs,$(wikicentro)~iri]
 
   triplesmap3:  
     sources:
