@@ -179,7 +179,7 @@ map:om_300 a rr:ObjectMap;
 map:om_4 a rr:ObjectMap;
     rml:reference "Numero Expediente";
     rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#integer>.
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_40 a rr:ObjectMap;
     rml:reference "LATITUD";
     rr:termType rr:Literal;

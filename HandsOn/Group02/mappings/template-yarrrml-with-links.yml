@@ -22,7 +22,7 @@ mappings:
       - [vocab:hasYear,$(Año),xsd:gYear]
       - [vocab:hasMonth,$(Mes),xsd:string]
       - [vocab:hasContractNumber,$(Numero Contrato),xsd:integer]
-      - [vocab:hasExpNumber,$(Numero Expediente),xsd:integer]
+      - [vocab:hasExpNumber,$(Numero Expediente),xsd:string]
       - [vocab:hasDescription,$(Descripcion Contrato),xsd:string]
       - [vocab:hasContractType,$(Tipo Contrato),xsd:string]
       - [vocab:hasProcedure,$(Procedimiento Adjudicacion),xsd:string]
