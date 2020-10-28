@@ -63,7 +63,7 @@ map:om_12 a rr:ObjectMap;
 map:om_13 a rr:ObjectMap;
     rml:reference "Fecha Adjudicacion";
     rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#date>.
+    rr:datatype <http://www.w3.org/2001/XMLSchema#dateTime>.
 map:om_14 a rr:ObjectMap;
     rml:reference "Nombre/Razon Social";
     rr:termType rr:Literal;
@@ -71,11 +71,11 @@ map:om_14 a rr:ObjectMap;
 map:om_15 a rr:ObjectMap;
     rml:reference "Tiene acuerdo Marco";
     rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+    rr:datatype <http://www.w3.org/2001/XMLSchema#boolean>.
 map:om_16 a rr:ObjectMap;
     rml:reference "Tiene ingreso/coste cero";
     rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+    rr:datatype <http://www.w3.org/2001/XMLSchema#boolean>.
 map:om_17 a rr:ObjectMap;
     rml:reference "Observaciones";
     rr:termType rr:Literal;
@@ -183,11 +183,11 @@ map:om_4 a rr:ObjectMap;
 map:om_40 a rr:ObjectMap;
     rml:reference "LATITUD";
     rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#integer>.
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_41 a rr:ObjectMap;
     rml:reference "LONGITUD";
     rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#integer>.
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_42 a rr:ObjectMap;
     rml:reference "EMAIL";
     rr:termType rr:Literal;
