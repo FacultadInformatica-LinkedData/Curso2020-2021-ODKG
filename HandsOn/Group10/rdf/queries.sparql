@@ -1,0 +1,98 @@
+PREFIX default: <http://group10.com/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX ns: <http://group10.com/>
+
+# Show all the elements of the ontology, including the class to each one belongs to:
+
+SELECT DISTINCT ?x ?y
+WHERE
+{
+  ?x rdf:type ?y
+}
+
+
+# See all the classes of the ontology:
+
+SELECT DISTINCT ?x
+WHERE
+{
+  ?x a owl:Class
+}
+
+
+# Count all the classes of the ontology:
+
+SELECT COUNT(DISTINCT ?x)
+WHERE
+{
+  ?x rdf:type owl:Class
+}
+
+
+# See all the properties of the ontology, divided by the type of the property:
+
+# Datatype properties
+SELECT DISTINCT ?data
+WHERE
+{
+  ?data rdf:type owl:DatatypeProperty
+}
+
+# Object properties
+SELECT DISTINCT ?obj
+WHERE
+{
+  ?obj rdf:type owl:ObjectProperty
+}
+
+
+# All the classes with the property "tieneCentro":
+
+SELECT DISTINCT ?x ?y ?clase
+WHERE
+{
+  ?x ns:tieneCentro ?y
+  ?x a ?clase.
+}
+
+
+# See all the instances of the example:
+
+SELECT DISTINCT ?x
+WHERE
+{
+  ?x a ?y
+  ?x a owl:Class.
+}
+
+
+# Show the instances that belong to the class "Centro":
+
+SELECT DISTINCT ?x
+WHERE
+{
+  ?x rdf:type ns:Centro
+}
+
+
+# Show all the properties and their values of the instance of the class "Gastos":
+
+SELECT DISTINCT ?prop ?y
+WHERE
+{
+  ?x a ?class
+  ?x ?prop ?y.
+}
+
+
+
+# Let's see if there is any "Ingreso" of more than 1000000 euros:
+
+SELECT DISTINCT ?x ?y
+WHERE
+{
+  ?x a ?class.
+  ?x ?ingresos ?y
+  FILTER (?y > 1000000)
+
+}

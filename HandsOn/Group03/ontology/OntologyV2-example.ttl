@@ -1,0 +1,166 @@
+#################################################################
+###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7)  http://visualdataweb.de/webvowl/   ###
+#################################################################
+
+@prefix : 		<http://www.odkggroup3/ontology> .
+@prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: 		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd: 		<http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: 		<http://purl.org/dc/elements/1.1/> .
+@prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
+@prefix wot: 		<http://xmlns.com/wot/0.1/> .
+@prefix vs: 		<http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix foaf: 		<http://xmlns.com/foaf/0.1/> .
+@prefix : 		<http://www.odkggroup3/ontology#> .
+@base 			<http://www.odkggroup3/ontology> .
+
+<http://www.odkggroup3/ontology> rdf:type owl:Ontology ;
+                                 dc:title "undefined"@en; 
+                                 dc:description "undefined"@en . 
+#################################################################
+
+###  Property Definitions (Number of Property) 7 ###
+#  --------------------------- Property 0------------------------- 
+owl:topObjectProperty rdf:type owl:ObjectProperty ;
+                      rdfs:label "topObjectProperty"@IRI-based; 
+                      rdfs:label "topObjectProperty"@iri-based . 
+#  --------------------------- Property 1------------------------- 
+:entityProperties rdf:type owl:DatatypeProperty ;
+                  rdfs:label "entityProperties"@IRI-based; 
+                  rdfs:label "entityProperties"@iri-based; 
+                  rdfs:range rdfs:Literal . 
+#  --------------------------- Property 2------------------------- 
+:contractProperties rdf:type owl:DatatypeProperty ;
+                    rdfs:label "contractProperties"@IRI-based; 
+                    rdfs:label "contractProperties"@iri-based; 
+                    rdfs:range rdfs:Literal . 
+#  --------------------------- Property 3------------------------- 
+:hasAdressStreet rdf:type owl:DatatypeProperty ;
+                 rdfs:label "hasAdressStreet"@IRI-based; 
+                 rdfs:label "hasAdressStreet"@iri-based; 
+                 rdfs:range rdfs:Literal . 
+#  --------------------------- Property 4------------------------- 
+:hasPCValue rdf:type owl:DatatypeProperty ;
+            rdfs:label "hasPCValue"@IRI-based; 
+            rdfs:label "hasPCValue"@iri-based; 
+            rdfs:range rdfs:Literal . 
+#  --------------------------- Property 5------------------------- 
+owl:topDataProperty rdf:type owl:DatatypeProperty ;
+                    rdfs:label "topDataProperty"@IRI-based; 
+                    rdfs:label "topDataProperty"@iri-based; 
+                    rdfs:range rdfs:Literal . 
+#  --------------------------- Property 6------------------------- 
+:supplierProperties rdf:type owl:DatatypeProperty ;
+                    rdfs:label "supplierProperties"@IRI-based; 
+                    rdfs:label "supplierProperties"@iri-based; 
+                    rdfs:range rdfs:Literal . 
+###  Class Definitions (Number of Classes) 3 ###
+#  --------------------------- Class  0------------------------- 
+:Contract rdf:type owl:Class; 
+          rdfs:subClassOf [ rdf:type owl:Restriction ; 
+                            owl:onProperty :hasGsin;
+                            owl:someValuesFrom xsd:string
+                          ];
+          rdfs:subClassOf [ rdf:type owl:Restriction ; 
+                            owl:onProperty :hasContractValue;
+                            owl:someValuesFrom xsd:double
+                          ];
+          rdfs:subClassOf [ rdf:type owl:Restriction ; 
+                            owl:onProperty :hasAwardDate;
+                            owl:someValuesFrom xsd:dateTime
+                          ];
+          rdfs:subClassOf [ rdf:type owl:Restriction ; 
+                            owl:onProperty :belongsTo;
+                            owl:someValuesFrom :EntityEndUser
+                          ];
+          rdfs:subClassOf [ rdf:type owl:Restriction ; 
+                            owl:onProperty :hasExpireDate;
+                            owl:someValuesFrom xsd:dateTime
+                          ];
+          rdfs:subClassOf [ rdf:type owl:Restriction ; 
+                            owl:onProperty :hasSupplier;
+                            owl:someValuesFrom :Supplier
+                          ];
+          rdfs:subClassOf [ rdf:type owl:Restriction ; 
+                            owl:onProperty :hasGsinDescription;
+                            owl:someValuesFrom xsd:string
+                          ];
+          rdfs:label "Contract"@IRI-based; 
+          rdfs:label "Contract"@iri-based . 
+#  --------------------------- Class  1------------------------- 
+:Supplier rdf:type owl:Class; 
+          rdfs:subClassOf [ rdf:type owl:Restriction ; 
+                            owl:onProperty :hasEmployees;
+                            owl:someValuesFrom xsd:string
+                          ];
+          rdfs:subClassOf [ rdf:type owl:Restriction ; 
+                            owl:onProperty :hasProvState;
+                            owl:someValuesFrom xsd:string
+                          ];
+          rdfs:subClassOf [ rdf:type owl:Restriction ; 
+                            owl:onProperty :hasCountry;
+                            owl:someValuesFrom xsd:string
+                          ];
+          rdfs:subClassOf [ rdf:type owl:Restriction ; 
+                            owl:onProperty :hasPostalCode;
+                            owl:someValuesFrom xsd:string
+                          ];
+          rdfs:subClassOf [ rdf:type owl:Restriction ; 
+                            owl:onProperty :hasCity;
+                            owl:someValuesFrom xsd:string
+                          ];
+          rdfs:label "Supplier"@IRI-based; 
+          rdfs:label "Supplier"@iri-based . 
+#  --------------------------- Class  2------------------------- 
+:EntityEndUser rdf:type owl:Class; 
+               rdfs:subClassOf [ rdf:type owl:Restriction ; 
+                                 owl:onProperty :hasPostalCode;
+                                 owl:someValuesFrom xsd:string
+                               ];
+               rdfs:subClassOf [ rdf:type owl:Restriction ; 
+                                 owl:onProperty :hasEndUserEntity;
+                                 owl:someValuesFrom xsd:string
+                               ];
+               rdfs:subClassOf [ rdf:type owl:Restriction ; 
+                                 owl:onProperty :hasCountry;
+                                 owl:someValuesFrom xsd:string
+                               ];
+               rdfs:subClassOf [ rdf:type owl:Restriction ; 
+                                 owl:onProperty :hasCity;
+                                 owl:someValuesFrom xsd:string
+                               ];
+               rdfs:subClassOf [ rdf:type owl:Restriction ; 
+                                 owl:onProperty :hasProvState;
+                                 owl:someValuesFrom xsd:string
+                               ];
+               rdfs:label "EntityEndUser"@IRI-based; 
+               rdfs:label "EntityEndUser"@iri-based . 
+
+
+
+:OCLC%20Online%20Computer%20Library%20Center%20Inc rdf:type :Supplier; 
+:hasEmployees "1000 to 1499 employees"^^xsd:string;
+:hasProvState "Quebec"^^xsd:string;
+:hasCountry "Canada"^^xsd:string;
+:hasPostalCode "J4Z3V5"^^xsd:string;
+:hasCity "Brossard"^^xsd:string
+.
+
+:Agriculture%20and%20Agri-Food%20Canada rdf:type :EntityEndUser; 
+:hasPostalCode "K1A0C5"^^xsd:string;
+:hasEndUserEntity "CSB ASSET MGNT&CAPTL PLANNING"^^xsd:string;
+:hasCountry "Canada"^^xsd:string;
+:hasCity "Ottawa"^^xsd:string;
+:hasProvState "Ontario"^^xsd:string
+.
+
+:01044-150366-001-XL rdf:type :Contract;
+:hasGsin "N7030"^^xsd:string;
+:hasContractValue "168431.0"^^xsd:double;
+:hasAwardDate "2020-01-30T00:00:00Z"^^xsd:dateTime;
+:belongsTo :Agriculture%20and%20Agri-Food%20Canada;
+:hasExpireDate "2021-03-31T00:00:00Z"^^xsd:date;
+:hasSupplier :OCLC%20Online%20Computer%20Library%20Center%20Inc;
+:hasGsinDescription "ADP Software"^^xsd:string;
+.

@@ -907,5 +907,63 @@
     "op": "core/column-removal",
     "columnName": "filter",
     "description": "Remove column filter"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Ejercicio",
+    "description": "Remove column Ejercicio"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "M",
+    "description": "Remove column M"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Código Expediente",
+    "newColumnName": "Code",
+    "description": "Rename column Código Expediente to Code"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Obj",
+    "newColumnName": "Description",
+    "description": "Rename column Obj to Description"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Organo",
+    "newColumnName": "GovernmentRequester",
+    "description": "Rename column Organo to GovernmentRequester"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Procedimiento de adjudicación",
+    "newColumnName": "AwardProcedure",
+    "description": "Rename column Procedimiento de adjudicación to AwardProcedure"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Tipo de contrato",
+    "newColumnName": "TypeOfContract",
+    "description": "Rename column Tipo de contrato to TypeOfContract"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Importe de licitación",
+    "newColumnName": "BiddingPrice",
+    "description": "Rename column Importe de licitación to BiddingPrice"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Importe de adjudicación",
+    "newColumnName": "AwardPrice",
+    "description": "Rename column Importe de adjudicación to AwardPrice"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Identidad del adjudicatario",
+    "newColumnName": "Company",
+    "description": "Rename column Identidad del adjudicatario to Company"
   }
 ]

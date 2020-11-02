@@ -493,12 +493,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "contracting-address-country",
+    "columnName": "gsin",
     "expression": "value.trim()",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column contracting-address-country using expression value.trim()"
+    "description": "Text transform on cells in column gsin using expression value.trim()"
   },
   {
     "op": "core/text-transform",
@@ -506,181 +506,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "contracting-address-postal-code",
+    "columnName": "gsin-description_en",
     "expression": "value.trim()",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column contracting-address-postal-code using expression value.trim()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "contracting-address-city",
-    "expression": "value.trim()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column contracting-address-city using expression value.trim()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "contracting-address-street-2",
-    "expression": "value.trim()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column contracting-address-street-2 using expression value.trim()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "contracting-address-street-2",
-    "expression": "value.trim()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column contracting-address-street-2 using expression value.trim()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "contracting-address-street-1",
-    "expression": "value.trim()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column contracting-address-street-1 using expression value.trim()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "contracting-entity-office-name_en",
-    "expression": "value.trim()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column contracting-entity-office-name_en using expression value.trim()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "end-user-entity_en",
-    "expression": "value.trim()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column end-user-entity_en using expression value.trim()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "total-contract-value",
-    "expression": "value.trim()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column total-contract-value using expression value.trim()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "organization-employee-count_en",
-    "expression": "value.trim()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column organization-employee-count_en using expression value.trim()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "supplier-address-country",
-    "expression": "value.trim()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column supplier-address-country using expression value.trim()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "supplier-address-country",
-    "expression": "value.trim()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column supplier-address-country using expression value.trim()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "supplier-address-postal-code",
-    "expression": "value.trim()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column supplier-address-postal-code using expression value.trim()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "supplier-address-prov-state",
-    "expression": "value.trim()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column supplier-address-prov-state using expression value.trim()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "supplier-address-city",
-    "expression": "value.trim()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column supplier-address-city using expression value.trim()"
+    "description": "Text transform on cells in column gsin-description_en using expression value.trim()"
   },
   {
     "op": "core/text-transform",
@@ -701,13 +532,2626 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "gsin-description_en",
+    "columnName": "supplier-address-city",
     "expression": "value.trim()",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column gsin-description_en using expression value.trim()"
-  }
-]
+    "description": "Text transform on cells in column supplier-address-city using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-address-prov-state",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column supplier-address-prov-state using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-address-postal-code",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column supplier-address-postal-code using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-address-country",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column supplier-address-country using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "organization-employee-count_en",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column organization-employee-count_en using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "total-contract-value",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column total-contract-value using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "end-user-entity_en",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column end-user-entity_en using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "contracting-entity-office-name_en",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column contracting-entity-office-name_en using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "contracting-address-street-1",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column contracting-address-street-1 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "contracting-address-street-2",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column contracting-address-street-2 using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "contracting-address-city",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column contracting-address-city using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "contracting-address-prov-state",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column contracting-address-prov-state using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "contracting-address-postal-code",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column contracting-address-postal-code using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "contracting-address-country",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column contracting-address-country using expression value.trim()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "contracting-address-street-1",
+    "description": "Remove column contracting-address-street-1"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "contracting-address-street-2",
+    "description": "Remove column contracting-address-street-2"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "gsin-description_en",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column gsin-description_en using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "﻿contract-number",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ﻿contract-number using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "award-date",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column award-date using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "expiry-date",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column expiry-date using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "gsin",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column gsin using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "gsin-description_en",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column gsin-description_en using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-legal-name",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column supplier-legal-name using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-address-city",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column supplier-address-city using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-address-prov-state",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column supplier-address-prov-state using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-address-prov-state",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column supplier-address-prov-state using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-address-postal-code",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column supplier-address-postal-code using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-address-country",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column supplier-address-country using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "organization-employee-count_en",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column organization-employee-count_en using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "total-contract-value",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column total-contract-value using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "award-date",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column award-date using expression value.toDate()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "expiry-date",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column expiry-date using expression value.toDate()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "total-contract-value",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column total-contract-value using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "end-user-entity_en",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column end-user-entity_en using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "contracting-entity-office-name_en",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column contracting-entity-office-name_en using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "contracting-address-city",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column contracting-address-city using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "contracting-address-prov-state",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column contracting-address-prov-state using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "contracting-address-postal-code",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column contracting-address-postal-code using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "contracting-address-country",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column contracting-address-country using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Blank values per column",
+          "expression": "filter(row.columnNames,cn,isBlank(cells[cn].value))",
+          "columnName": "",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "supplier-address-city",
+                "l": "supplier-address-city"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Blank values per column",
+          "expression": "filter(row.columnNames,cn,isBlank(cells[cn].value))",
+          "columnName": "",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "supplier-address-postal-code",
+                "l": "supplier-address-postal-code"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Blank values per column",
+          "expression": "filter(row.columnNames,cn,isBlank(cells[cn].value))",
+          "columnName": "",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "supplier-address-prov-state",
+                "l": "supplier-address-prov-state"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "supplier-legal-name",
+          "expression": "value.split(' ')",
+          "columnName": "supplier-legal-name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "-",
+                "l": "-"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-legal-name",
+    "expression": "grel:value.replace(/[^\\u0020-\\u007F]/,\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column supplier-legal-name using expression grel:value.replace(/[^\\u0020-\\u007F]/,\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-legal-name",
+    "expression": "grel:value.replace(/[^\\u0020-\\u007F]/,\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column supplier-legal-name using expression grel:value.replace(/[^\\u0020-\\u007F]/,\"\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-address-city",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "St. John's",
+          "St Johns",
+          "ST. JOHN'S",
+          "St John's",
+          "St. john's",
+          "St. JOhn's",
+          "St. John's,",
+          "St. Johns"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "St. John's"
+      },
+      {
+        "from": [
+          "Montreal",
+          "Montréal",
+          "MONTREAL",
+          "Montreal,",
+          "MONTRÉAL",
+          "MONTREal",
+          "montreal"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Montreal"
+      },
+      {
+        "from": [
+          "Québec",
+          "Quebec",
+          "QUÉBEC",
+          "QUEBEC",
+          "quebec",
+          "québec"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Quebec"
+      },
+      {
+        "from": [
+          "Toronto",
+          "TORONTO",
+          "Toronto,",
+          "TORONTO,",
+          "toronto"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Toronto"
+      },
+      {
+        "from": [
+          "Surrey",
+          "SURREY",
+          "SURREY,",
+          "Surrey,",
+          "surrey"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Surrey"
+      },
+      {
+        "from": [
+          "St-Laurent",
+          "ST-LAURENT",
+          "St.Laurent",
+          "St-laurent",
+          "st-laurent"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "St-Laurent"
+      },
+      {
+        "from": [
+          "Calgary",
+          "CALGARY",
+          "Calgary,",
+          "CALGARY,",
+          "calgary"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calgary"
+      },
+      {
+        "from": [
+          "Mississauga",
+          "MISSISSAUGA",
+          "Mississauga,",
+          "MISSISSAUGA,",
+          "MIssissauga"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mississauga"
+      },
+      {
+        "from": [
+          "BLAINVILLE",
+          "Blainville",
+          "BLainville",
+          "Blainville,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Blainville"
+      },
+      {
+        "from": [
+          "Trois-Rivières",
+          "TROIS-RIVIERES",
+          "Trois-Rivieres",
+          "Trois-rivieres"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Trois-Rivieres"
+      },
+      {
+        "from": [
+          "St-Léonard",
+          "ST-Léonard",
+          "St-Leonard",
+          "St-leonard"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "St-Leonard"
+      },
+      {
+        "from": [
+          "OROMOCTO",
+          "Oromocto",
+          "oromocto"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Oromocto"
+      },
+      {
+        "from": [
+          "Lévis",
+          "Levis",
+          "LEVIS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Levis"
+      },
+      {
+        "from": [
+          "Jonquière",
+          "Jonquiere"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jonquiere"
+      },
+      {
+        "from": [
+          "VAL-D'OR",
+          "Val-d'Or"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Val d'Or"
+      },
+      {
+        "from": [
+          "UPPER NAPPAN",
+          "Upper Nappan"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Upper Nappan"
+      }
+    ],
+    "description": "Mass edit cells in column supplier-address-city"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-address-city",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "St.John's",
+          "ST.JOHN'S,",
+          "St-John's",
+          "St.Johns"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "St.John's"
+      },
+      {
+        "from": [
+          "Medicine Hat",
+          "MEDICINE HAT",
+          "MEDICINE HAT,",
+          "medicine hat"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Medicine Hat"
+      },
+      {
+        "from": [
+          "Winnipeg",
+          "WINNIPEG",
+          "winnipeg",
+          "WInnipeg"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Winnipeg"
+      },
+      {
+        "from": [
+          "Victoria",
+          "VICTORIA",
+          "VICTORIA,",
+          "Victoria,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Victoria"
+      },
+      {
+        "from": [
+          "Oakville",
+          "OAKVILLE",
+          "oakville",
+          "OAKVILLE,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Oakville"
+      },
+      {
+        "from": [
+          "Ottawa",
+          "OTTAWA",
+          "ottawa",
+          "Ottawa,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ottawa"
+      },
+      {
+        "from": [
+          "Burlington",
+          "BURLINGTON",
+          "Burlington,",
+          "burlington"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Burlington"
+      },
+      {
+        "from": [
+          "Saskatoon",
+          "SASKATOON",
+          "SASKATOON,",
+          "saskatoon"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Saskatoon"
+      },
+      {
+        "from": [
+          "Richmond Hill",
+          "RICHMOND HILL",
+          "Richmond HIll"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Richmond Hill"
+      },
+      {
+        "from": [
+          "St. Catharines",
+          "ST. CATHARINES",
+          "St Catharines"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "St. Catharines"
+      },
+      {
+        "from": [
+          "Vancouver",
+          "VANCOUVER",
+          "vancouver"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Vancouver"
+      },
+      {
+        "from": [
+          "Kitchener",
+          "KITCHENER",
+          "kitchener"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kitchener"
+      },
+      {
+        "from": [
+          "Dorval",
+          "DORVAL",
+          "dorval"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dorval"
+      },
+      {
+        "from": [
+          "LaSalle",
+          "Lasalle",
+          "LASALLE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LaSalle"
+      },
+      {
+        "from": [
+          "Ville St-Laurent",
+          "VILLE ST-LAURENT",
+          "Ville St-laurent"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ville St-Laurent"
+      },
+      {
+        "from": [
+          "Penticton",
+          "Penticton,",
+          "PENTICTON"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Penticton"
+      },
+      {
+        "from": [
+          "Sydney",
+          "sydney",
+          "SYDNEY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sydney"
+      },
+      {
+        "from": [
+          "Quebec City",
+          "Quebec city",
+          "QUEBEC CITY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Quebec City"
+      },
+      {
+        "from": [
+          "Petawawa",
+          "PETAWAWA",
+          "petawawa"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Petawawa"
+      },
+      {
+        "from": [
+          "Mount Pearl",
+          "Mount Pearl,",
+          "mount pearl"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mount Pearl"
+      },
+      {
+        "from": [
+          "Cambridge",
+          "CAMBRIDGE",
+          "cambridge"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cambridge"
+      },
+      {
+        "from": [
+          "Alma",
+          "ALMA",
+          "Alma,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Alma"
+      },
+      {
+        "from": [
+          "Brossard",
+          "BROSSARD",
+          "BROSSARD,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Brossard"
+      },
+      {
+        "from": [
+          "Sault Ste. Marie",
+          "sault ste marie",
+          "sault ste. marie"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sault Ste. Marie"
+      },
+      {
+        "from": [
+          "Kirkland",
+          "kirkland",
+          "KIRKLAND,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kirkland"
+      },
+      {
+        "from": [
+          "Barrie",
+          "BARRIE",
+          "Barrie,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Barrie"
+      },
+      {
+        "from": [
+          "Dartmouth",
+          "DARTMOUTH",
+          "dartmouth"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dartmouth"
+      },
+      {
+        "from": [
+          "Orleans",
+          "ORLEANS",
+          "Orléans"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Orleans"
+      },
+      {
+        "from": [
+          "St.-Jean-sur-Richelieu",
+          "St-Jean-sur-Richelieu",
+          "St-Jean-Sur-Richelieu"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "St.-Jean-sur-Richelieu"
+      },
+      {
+        "from": [
+          "Nanaimo",
+          "NANAIMO",
+          "Nanaimo,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nanaimo"
+      },
+      {
+        "from": [
+          "Edmonton",
+          "edmonton",
+          "EDMONTON"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Edmonton"
+      },
+      {
+        "from": [
+          "Markham",
+          "MARKHAM,",
+          "MARKHAM"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Markham"
+      },
+      {
+        "from": [
+          "STE-FOY",
+          "Ste-Foy",
+          "Ste-foy"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "STE-FOY"
+      },
+      {
+        "from": [
+          "BAIE D'URFÉ",
+          "Baie D'Urfe",
+          "Baie D'Urfé"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Baie D Urfe"
+      },
+      {
+        "from": [
+          "Kingston",
+          "KINGSTON",
+          "Kingston,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kingston"
+      },
+      {
+        "from": [
+          "Laval",
+          "LAVAL",
+          "Laval,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Laval"
+      },
+      {
+        "from": [
+          "Abbotsford",
+          "Abbotsford,",
+          "ABBOTSFORD"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Abbotsford"
+      },
+      {
+        "from": [
+          "Port Hardy",
+          "PORT HARDY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Port Hardy"
+      },
+      {
+        "from": [
+          "Sidney",
+          "SIDNEY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sidney"
+      },
+      {
+        "from": [
+          "Bay Roberts",
+          "BAY ROBERTS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bay Roberts"
+      },
+      {
+        "from": [
+          "Kelowna",
+          "kelowna"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kelowna"
+      },
+      {
+        "from": [
+          "Outremont",
+          "OUTREMONT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Outremont"
+      },
+      {
+        "from": [
+          "Saint-Laurent",
+          "SAINT-LAURENT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Saint-Laurent"
+      },
+      {
+        "from": [
+          "Concord",
+          "CONCORD"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Concord"
+      },
+      {
+        "from": [
+          "Ronkonkoma",
+          "RONKONKOMA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ronkonkoma"
+      },
+      {
+        "from": [
+          "SENNEVILLE",
+          "Senneville"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Senneville"
+      },
+      {
+        "from": [
+          "Truro",
+          "TRURO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Truro"
+      },
+      {
+        "from": [
+          "Vaughan",
+          "VAUGHAN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Vaughan"
+      },
+      {
+        "from": [
+          "Windsor",
+          "WINDSOR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Windsor"
+      },
+      {
+        "from": [
+          "Iqaluit",
+          "IQALUIT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Iqaluit"
+      },
+      {
+        "from": [
+          "St. Laurent",
+          "ST. LAURENT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "St. Laurent"
+      },
+      {
+        "from": [
+          "Anjou",
+          "ANJOU"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Anjou"
+      },
+      {
+        "from": [
+          "Fall River",
+          "fall river"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fall River"
+      },
+      {
+        "from": [
+          "Bromont",
+          "BROMONT,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bromont"
+      },
+      {
+        "from": [
+          "Hamilton",
+          "hamilton"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hamilton"
+      },
+      {
+        "from": [
+          "Kanata",
+          "KANATA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kanata"
+      },
+      {
+        "from": [
+          "ST-FELICIEN",
+          "St-Félicien"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "St-Felicien"
+      },
+      {
+        "from": [
+          "Hanwell",
+          "HANWELL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hanwell"
+      },
+      {
+        "from": [
+          "Beaver Creek",
+          "Beaver creek"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Beaver Creek"
+      },
+      {
+        "from": [
+          "FRANKLIN",
+          "Franklin"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FRANKLIN"
+      },
+      {
+        "from": [
+          "St-Hyacinthe",
+          "ST-HYACINTHE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "St-Hyacinthe"
+      },
+      {
+        "from": [
+          "Courtenay",
+          "COURTENAY,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Courtenay"
+      },
+      {
+        "from": [
+          "St George",
+          "St. George"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "St George"
+      },
+      {
+        "from": [
+          "Goose Bay, Labrador",
+          "GOOSE BAY, LABRADOR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Goose Bay, Labrador"
+      },
+      {
+        "from": [
+          "Metcalfe",
+          "Metcalfe,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Metcalfe"
+      },
+      {
+        "from": [
+          "Perth",
+          "Perth,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Perth"
+      },
+      {
+        "from": [
+          "ARICHAT",
+          "Arichat"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Arichat"
+      },
+      {
+        "from": [
+          "Newmarket",
+          "NEWMARKET"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Newmarket"
+      },
+      {
+        "from": [
+          "Ajax",
+          "ajax"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ajax"
+      },
+      {
+        "from": [
+          "Longueuil",
+          "LONGUEUIL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Longueuil"
+      },
+      {
+        "from": [
+          "Glace Bay",
+          "GLACE BAY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Glace Bay"
+      },
+      {
+        "from": [
+          "Waterloo",
+          "WATERLOO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Waterloo"
+      },
+      {
+        "from": [
+          "Montréal-est",
+          "Montréal-Est"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Montreal-est"
+      },
+      {
+        "from": [
+          "Nepean",
+          "NEPEAN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nepean"
+      },
+      {
+        "from": [
+          "ENGLEWOOD",
+          "Englewood"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Englewood"
+      },
+      {
+        "from": [
+          "Lachute",
+          "LACHUTE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lachute"
+      },
+      {
+        "from": [
+          "Drummondville",
+          "DRUMMONDVILLE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Drummondville"
+      },
+      {
+        "from": [
+          "Ville de Québec",
+          "ville de Québec"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ville de Quebec"
+      },
+      {
+        "from": [
+          "Bedford",
+          "BEDFORD"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bedford"
+      },
+      {
+        "from": [
+          "Thunder Bay",
+          "THUNDER BAY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Thunder Bay"
+      },
+      {
+        "from": [
+          "Belleville",
+          "BELLEVILLE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Belleville"
+      },
+      {
+        "from": [
+          "Coquitlam",
+          "coquitlam"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Coquitlam"
+      },
+      {
+        "from": [
+          "Moncton",
+          "MONCTON"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Moncton"
+      },
+      {
+        "from": [
+          "Stamford",
+          "Stamford,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Stamford"
+      },
+      {
+        "from": [
+          "Rexton",
+          "rexton"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Rexton"
+      },
+      {
+        "from": [
+          "LOURDES DE BLANC SABLON",
+          "Lourdes de Blanc Sablon"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lourdes de Blanc Sablon"
+      },
+      {
+        "from": [
+          "Port Coquitlam",
+          "port coquitlam"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Port Coquitlam"
+      },
+      {
+        "from": [
+          "Chester",
+          "Chester,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chester"
+      },
+      {
+        "from": [
+          "Carp",
+          "CARP"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Carp"
+      },
+      {
+        "from": [
+          "Gimli",
+          "Gimli,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gimli"
+      },
+      {
+        "from": [
+          "North Vancouver",
+          "north vancouver"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "North Vancouver"
+      },
+      {
+        "from": [
+          "Rosemère",
+          "rosemere"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Rosemere"
+      },
+      {
+        "from": [
+          "ST-ROMUALD",
+          "St-Romuald"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "St-Romuald"
+      },
+      {
+        "from": [
+          "Charlottetown",
+          "CHARLOTTETOWN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Charlottetown"
+      },
+      {
+        "from": [
+          "GANANOQUE,",
+          "Gananoque"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gananoque"
+      },
+      {
+        "from": [
+          "THORNDALE",
+          "Thorndale"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Thorndale"
+      },
+      {
+        "from": [
+          "Lethbridge",
+          "LETHBRIDGE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lethbridge"
+      },
+      {
+        "from": [
+          "PHILADELPHIA",
+          "Philadelphia"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Philadelphia"
+      },
+      {
+        "from": [
+          "ST-LAZARE",
+          "St-Lazare"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "St-Lazare"
+      },
+      {
+        "from": [
+          "SAINT-PASCAL",
+          "Saint-Pascal"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Saint-Pascal"
+      },
+      {
+        "from": [
+          "London",
+          "LONDON"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "NATICK",
+          "Natick"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Natick"
+      },
+      {
+        "from": [
+          "Banff",
+          "banff"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Banff"
+      },
+      {
+        "from": [
+          "GLENWOOD",
+          "Glenwood"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Glenwood"
+      },
+      {
+        "from": [
+          "Sooke",
+          "SOOKE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sooke"
+      },
+      {
+        "from": [
+          "Mt. Pearl",
+          "MT. PEARL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mt. Pearl"
+      },
+      {
+        "from": [
+          "St-Jerome",
+          "St-Jérome"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "St Jerome"
+      },
+      {
+        "from": [
+          "Houston",
+          "HOUSTON"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Houston"
+      },
+      {
+        "from": [
+          "Madison",
+          "MADISON"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Madison"
+      },
+      {
+        "from": [
+          "Baie-Comeau",
+          "BAIE-COMEAU"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Baie Comeau"
+      },
+      {
+        "from": [
+          "Shawinigan",
+          "SHAWINIGAN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Shawinigan"
+      },
+      {
+        "from": [
+          "Normandin",
+          "normandin"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Normandin"
+      },
+      {
+        "from": [
+          "Brantford",
+          "Brantford,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Brantford"
+      },
+      {
+        "from": [
+          "ST-AUGUSTIN-DE-DESMAURES",
+          "St-Augustin-de-Desmaures"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "St-Augustin-de-Desmaures"
+      },
+      {
+        "from": [
+          "Boucherville",
+          "BOUCHERVILLE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Boucherville"
+      },
+      {
+        "from": [
+          "Lachine",
+          "LACHINE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lachine"
+      },
+      {
+        "from": [
+          "North York",
+          "NORTH YORK"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "North York"
+      },
+      {
+        "from": [
+          "Pembroke",
+          "PEMBROKE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pembroke"
+      },
+      {
+        "from": [
+          "Alliston",
+          "alliston"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Alliston"
+      },
+      {
+        "from": [
+          "Manotick",
+          "MANOTICK"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Manotick"
+      },
+      {
+        "from": [
+          "Corner Brook",
+          "corner brook"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Corner Brook"
+      },
+      {
+        "from": [
+          "Fort Nelson",
+          "FORT NELSON"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fort Nelson"
+      },
+      {
+        "from": [
+          "Washington, DC",
+          "Washington DC"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Washington, DC"
+      },
+      {
+        "from": [
+          "Dieppe",
+          "DIEPPE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dieppe"
+      },
+      {
+        "from": [
+          "Langley",
+          "LANGLEY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Langley"
+      },
+      {
+        "from": [
+          "Squamish",
+          "Squamish,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Squamish"
+      },
+      {
+        "from": [
+          "Sherwood Park",
+          "Sherwood park"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sherwood Park"
+      },
+      {
+        "from": [
+          "Enfield",
+          "ENFIELD"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Enfield"
+      },
+      {
+        "from": [
+          "Bracebridge",
+          "BRACEBRIDGE,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bracebridge"
+      },
+      {
+        "from": [
+          "Wainwright",
+          "WAINWRIGHT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wainwright"
+      },
+      {
+        "from": [
+          "Salt Lake City",
+          "SALT LAKE CITY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Salt Lake City"
+      },
+      {
+        "from": [
+          "Lakeside",
+          "LAKESIDE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lakeside"
+      },
+      {
+        "from": [
+          "Irvine",
+          "Irvine,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Irvine"
+      },
+      {
+        "from": [
+          "Rivière-du-Loup",
+          "rivière-du-loup"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Riviere-du-Loup"
+      },
+      {
+        "from": [
+          "Delta",
+          "DELTA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Delta"
+      },
+      {
+        "from": [
+          "Chicoutimi",
+          "chicoutimi"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chicoutimi"
+      },
+      {
+        "from": [
+          "Richmond",
+          "RICHMOND,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Richmond"
+      },
+      {
+        "from": [
+          "Stittsville",
+          "STITTSVILLE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Stittsville"
+      },
+      {
+        "from": [
+          "Mont-Royal",
+          "MONT-ROYAL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mont-Royal"
+      },
+      {
+        "from": [
+          "Arnprior",
+          "ARNPRIOR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Arnprior"
+      },
+      {
+        "from": [
+          "Woodbridge",
+          "woodbridge"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Woodbridge"
+      },
+      {
+        "from": [
+          "San Jose",
+          "SAN JOSE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "San Jose"
+      },
+      {
+        "from": [
+          "L'Ancienne-Lorette",
+          "L'ANCIENNE-LORETTE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "L'Ancienne-Lorette"
+      },
+      {
+        "from": [
+          "Regina",
+          "REGINA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Regina"
+      },
+      {
+        "from": [
+          "Acheson",
+          "Acheson,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Acheson"
+      },
+      {
+        "from": [
+          "SAINTE-ANNE-DE-BELLEVUE",
+          "Sainte-Anne-de-Bellevue"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sainte-Anne-de-Bellevue"
+      },
+      {
+        "from": [
+          "Hay River",
+          "HAY RIVER"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hay River"
+      },
+      {
+        "from": [
+          "NICOLET",
+          "Nicolet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nicolet"
+      },
+      {
+        "from": [
+          "Granby",
+          "GRANBY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Granby"
+      },
+      {
+        "from": [
+          "PICTON",
+          "Picton"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Picton"
+      },
+      {
+        "from": [
+          "Fredericton",
+          "FREDERICTON"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fredericton"
+      },
+      {
+        "from": [
+          "BETHESDA",
+          "Bethesda"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bethesda"
+      },
+      {
+        "from": [
+          "Fort Smith",
+          "FORT SMITH"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fort Smith"
+      },
+      {
+        "from": [
+          "Casselman",
+          "CASSELMAN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Casselman"
+      },
+      {
+        "from": [
+          "TULSA",
+          "Tulsa"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tulsa"
+      },
+      {
+        "from": [
+          "Chateau-Richer",
+          "Château-Richer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chateau-Richer"
+      },
+      {
+        "from": [
+          "Sherbrooke",
+          "SHERBROOKE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sherbrooke"
+      },
+      {
+        "from": [
+          "Rimouski",
+          "RIMOUSKI"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Rimouski"
+      },
+      {
+        "from": [
+          "KETTLE POINT",
+          "Kettle point"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kettle point"
+      },
+      {
+        "from": [
+          "Etobicoke",
+          "etobicoke"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Etobicoke"
+      },
+      {
+        "from": [
+          "Red Deer",
+          "RED DEER"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Red Deer"
+      },
+      {
+        "from": [
+          "Ann Arbor,",
+          "Ann Arbor"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ann Arbor"
+      },
+      {
+        "from": [
+          "Sept-Iles",
+          "Sept-Îles"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sept-Iles"
+      },
+      {
+        "from": [
+          "Alexandria",
+          "ALEXANDRIA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Alexandria"
+      },
+      {
+        "from": [
+          "GASPE",
+          "Gaspé"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gaspe"
+      },
+      {
+        "from": [
+          "Yellowknife",
+          "yellowknife"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Yellowknife"
+      },
+      {
+        "from": [
+          "Niagara-on-the-Lake",
+          "Niagara-On-The-Lake"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Niagara-on-the-Lake"
+      },
+      {
+        "from": [
+          "ST. LAZARE",
+          "St Lazare"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "St Lazare"
+      },
+      {
+        "from": [
+          "West Vancouver",
+          "WEST VANCOUVER"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "West Vancouver"
+      },
+      {
+        "from": [
+          "Portage la Prairie",
+          "Portage La Prairie"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Portage la Prairie"
+      },
+      {
+        "from": [
+          "Gloucester",
+          "GLOUCESTER"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gloucester"
+      },
+      {
+        "from": [
+          "Peterborough",
+          "Peterborough,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Peterborough"
+      },
+      {
+        "from": [
+          "Fremont",
+          "FREMONT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fremont"
+      },
+      {
+        "from": [
+          "Beaconsfield",
+          "beaconsfield"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Beaconsfield"
+      },
+      {
+        "from": [
+          "Palo Alto",
+          "PALO ALTO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Palo Alto"
+      },
+      {
+        "from": [
+          "Haut-Lameque",
+          "Haut-Lamèque"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Haut-Lameque"
+      },
+      {
+        "from": [
+          "Gatineau",
+          "GATINEAU"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gatineau"
+      },
+      {
+        "from": [
+          "Hawkesbury",
+          "hawkesbury"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hawkesbury"
+      },
+      {
+        "from": [
+          "Sudbury",
+          "SUDBURY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sudbury"
+      },
+      {
+        "from": [
+          "St. Albert",
+          "St Albert"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "St. Albert"
+      },
+      {
+        "from": [
+          "Matane",
+          "MATANE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Matane"
+      },
+      {
+        "from": [
+          "LEDUC",
+          "Leduc"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LEDUC"
+      }
+    ],
+    "description": "Mass edit cells in column supplier-address-city"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-address-city",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column supplier-address-city using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-address-city",
+    "expression": "grel:value.replace(\"é\",\"e\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column supplier-address-city using expression grel:value.replace(\"é\",\"e\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "supplier-address-city",
+    "expression": "grel:value.replace(/[^\\u0020-\\u007F]/,\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column supplier-address-city using expression grel:value.replace(/[^\\u0020-\\u007F]/,\"\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "contracting-address-city",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "EDMONTON",
+          "Edmonton"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Edmonton"
+      },
+      {
+        "from": [
+          "OTTAWA",
+          "Ottawa"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ottawa"
+      },
+      {
+        "from": [
+          "ST JOHNS",
+          "ST. JOHN'S"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ST JOHNS"
+      },
+      {
+        "from": [
+          "MONTREAL",
+          "MONTRÉAL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MONTREAL"
+      },
+      {
+        "from": [
+          "GATINEAU",
+          "Gatineau"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gatineau"
+      },
+      {
+        "from": [
+          "CALGARY",
+          "Calgary"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calgary"
+      }
+    ],
+    "description": "Mass edit cells in column contracting-address-city"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "contracting-address-city",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column contracting-address-city using expression value.toTitlecase()"
   }
 ]

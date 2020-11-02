@@ -1,0 +1,1027 @@
+<http://group01.org/aragon/resource/Contract/CONAD20177500000046> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20177500000046> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20177500000046".
+<http://group01.org/aragon/resource/Contract/CONAD20177500000046> <http://group01.org/aragon/ontology/hasAwardPrice> "7160.69"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20177500000046> <http://group01.org/aragon/ontology/hasAwardProcedure> "Por administración"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20177500000046> <http://group01.org/aragon/ontology/hasBiddingPrice> "7160.69"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20177500000046> <http://group01.org/aragon/ontology/hasDescription> "obras adecuación oficinas inaga zaragoza"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20177500000046> <http://group01.org/aragon/ontology/hasTypeOfContract> "Obras"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20177500000046> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/EXPO%20ZARAGOZA%20EMPRESARIAL%20S.A.>.
+<http://group01.org/aragon/resource/Contract/CONAD20177500000046> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20GESTI%C3%93N%20AMBIENTAL>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000239> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000239> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171800000239".
+<http://group01.org/aragon/resource/Contract/CONAD20171800000239> <http://group01.org/aragon/ontology/hasAwardPrice> "75411.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000239> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000239> <http://group01.org/aragon/ontology/hasBiddingPrice> "77077.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000239> <http://group01.org/aragon/ontology/hasDescription> "seguridad sede departamento educación, cultura y deporte en expo"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000239> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000239> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/ILUNION%20SEGURIDAD%20S.A.>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000239> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/EDUCACI%C3%93N%2C%20CULTURA%20Y%20DEPORTE>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000298> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000298> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171800000298".
+<http://group01.org/aragon/resource/Contract/CONAD20171800000298> <http://group01.org/aragon/ontology/hasAwardPrice> "216.55"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000298> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000298> <http://group01.org/aragon/ontology/hasBiddingPrice> "216.55"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000298> <http://group01.org/aragon/ontology/hasDescription> "compra prendas trabajo guardería infantil santa maria del pilar"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000298> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000298> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/ANATOMICOS%20MADRID%20S.L.>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000298> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/EDUCACI%C3%93N%2C%20CULTURA%20Y%20DEPORTE>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000006> <http://www.w3.org/2000/01/rdf-schema#label> "CONLT20171600000006".
+<http://group01.org/aragon/resource/Contract/CONLT20171600000006> <http://group01.org/aragon/ontology/hasAwardPrice> "42361.34"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000006> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000006> <http://group01.org/aragon/ontology/hasBiddingPrice> "36964.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000006> <http://group01.org/aragon/ontology/hasDescription> "materiales para cromatografía líquidos y generalidades"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000006> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000006> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/SUMINISTROS%20MATERIAL%20Y%20APARATOS%20DE>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000006> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/SANIDAD>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000007> <http://www.w3.org/2000/01/rdf-schema#label> "CONLT20171600000007".
+<http://group01.org/aragon/resource/Contract/CONLT20171600000007> <http://group01.org/aragon/ontology/hasAwardPrice> "17736.6"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000007> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000007> <http://group01.org/aragon/ontology/hasBiddingPrice> "17015.8"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000007> <http://group01.org/aragon/ontology/hasDescription> "materiales para cromatografía gases e icp-ms"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000007> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000007> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/ALFAQUIMIA%20SL>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000007> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/SANIDAD>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000008> <http://www.w3.org/2000/01/rdf-schema#label> "CONLT20171600000008".
+<http://group01.org/aragon/resource/Contract/CONLT20171600000008> <http://group01.org/aragon/ontology/hasAwardPrice> "15644.3"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000008> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000008> <http://group01.org/aragon/ontology/hasBiddingPrice> "15762.66"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000008> <http://group01.org/aragon/ontology/hasDescription> "materiales para cromatografía iónica"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000008> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000008> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/JAVIER%20SOLANAS%20LABOARAGON%20SL>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000008> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/SANIDAD>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000009> <http://www.w3.org/2000/01/rdf-schema#label> "CONLT20171600000009".
+<http://group01.org/aragon/resource/Contract/CONLT20171600000009> <http://group01.org/aragon/ontology/hasAwardPrice> "28678.35"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000009> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000009> <http://group01.org/aragon/ontology/hasBiddingPrice> "36103.07"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000009> <http://group01.org/aragon/ontology/hasDescription> "material general laboratorio"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000009> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000009> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/VIDRA%20FOC%20S.A.>.
+<http://group01.org/aragon/resource/Contract/CONLT20171600000009> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/SANIDAD>.
+<http://group01.org/aragon/resource/Contract/CONAD20175500000022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20175500000022> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20175500000022".
+<http://group01.org/aragon/resource/Contract/CONAD20175500000022> <http://group01.org/aragon/ontology/hasAwardPrice> "55920.78"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20175500000022> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175500000022> <http://group01.org/aragon/ontology/hasBiddingPrice> "55920.78"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20175500000022> <http://group01.org/aragon/ontology/hasDescription> "vigilancia y seguridad residencias juveniles iaj 2017"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175500000022> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175500000022> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/GARDA%20SERVICIOS%20DE%20SEGURIDAD%20S.A.>.
+<http://group01.org/aragon/resource/Contract/CONAD20175500000022> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20LA%20JUVENTUD>.
+<http://group01.org/aragon/resource/Contract/CONMY20177500000054> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONMY20177500000054> <http://www.w3.org/2000/01/rdf-schema#label> "CONMY20177500000054".
+<http://group01.org/aragon/resource/Contract/CONMY20177500000054> <http://group01.org/aragon/ontology/hasAwardPrice> "23832.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20177500000054> <http://group01.org/aragon/ontology/hasAwardProcedure> "Negociado"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20177500000054> <http://group01.org/aragon/ontology/hasBiddingPrice> "23850.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20177500000054> <http://group01.org/aragon/ontology/hasDescription> "i-170018 mantenimiento aplicaciones cartograficas inf. georreferenciada"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20177500000054> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20177500000054> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/SOFTWARE%20GRUPO%20V%20SL>.
+<http://group01.org/aragon/resource/Contract/CONMY20177500000054> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20GESTI%C3%93N%20AMBIENTAL>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000307> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000307> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171800000307".
+<http://group01.org/aragon/resource/Contract/CONAD20171800000307> <http://group01.org/aragon/ontology/hasAwardPrice> "881.38"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000307> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000307> <http://group01.org/aragon/ontology/hasBiddingPrice> "881.38"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000307> <http://group01.org/aragon/ontology/hasDescription> "compra prendas trabajo santo angel custodio"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000307> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000307> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/EL%20CORTE%20INGLES%20S.A.>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000307> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/EDUCACI%C3%93N%2C%20CULTURA%20Y%20DEPORTE>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000308> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000308> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171800000308".
+<http://group01.org/aragon/resource/Contract/CONAD20171800000308> <http://group01.org/aragon/ontology/hasAwardPrice> "286.45"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000308> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000308> <http://group01.org/aragon/ontology/hasBiddingPrice> "286.45"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000308> <http://group01.org/aragon/ontology/hasDescription> "compra prendas trabajo santo angel custodio"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000308> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000308> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/ANATOMICOS%20MADRID%20S.L.>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000308> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/EDUCACI%C3%93N%2C%20CULTURA%20Y%20DEPORTE>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000121> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20175100000121".
+<http://group01.org/aragon/resource/Contract/CONAD20175100000121> <http://group01.org/aragon/ontology/hasAwardPrice> "29.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000121> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000121> <http://group01.org/aragon/ontology/hasBiddingPrice> "57.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000121> <http://group01.org/aragon/ontology/hasDescription> "suministro pesacartas para espacio empresas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000121> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000121> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/SOLITIUM%20S.L.>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000121> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20EMPLEO>.
+<http://group01.org/aragon/resource/Contract/CONMY20171100000012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONMY20171100000012> <http://www.w3.org/2000/01/rdf-schema#label> "CONMY20171100000012".
+<http://group01.org/aragon/resource/Contract/CONMY20171100000012> <http://group01.org/aragon/ontology/hasAwardPrice> "23604.49"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20171100000012> <http://group01.org/aragon/ontology/hasAwardProcedure> "Negociado"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171100000012> <http://group01.org/aragon/ontology/hasBiddingPrice> "33084.3"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20171100000012> <http://group01.org/aragon/ontology/hasDescription> "arrendamiento vehículo representación departamento ciudadanía"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171100000012> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171100000012> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/BANCO%20SANTANDER%20S.A.>.
+<http://group01.org/aragon/resource/Contract/CONMY20171100000012> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/CIUDADAN%C3%8DA%20Y%20DERECHOS%20SOCIALES>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000030> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000030> <http://www.w3.org/2000/01/rdf-schema#label> "CONLT20175300000030".
+<http://group01.org/aragon/resource/Contract/CONLT20175300000030> <http://group01.org/aragon/ontology/hasAwardPrice> "10120.42"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000030> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000030> <http://group01.org/aragon/ontology/hasBiddingPrice> "15731.36"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000030> <http://group01.org/aragon/ontology/hasDescription> "material limpieza"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000030> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000030> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/LIDERA%20HIGIENE%20SL>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000030> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20SERVICIOS%20SOCIALES>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000031> <http://www.w3.org/2000/01/rdf-schema#label> "CONLT20175300000031".
+<http://group01.org/aragon/resource/Contract/CONLT20175300000031> <http://group01.org/aragon/ontology/hasAwardPrice> "1111.06"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000031> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000031> <http://group01.org/aragon/ontology/hasBiddingPrice> "1622.02"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000031> <http://group01.org/aragon/ontology/hasDescription> "productos de limpieza"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000031> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000031> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/CELQUISA%20S.L.LABORAL>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000031> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20SERVICIOS%20SOCIALES>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000032> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000032> <http://www.w3.org/2000/01/rdf-schema#label> "CONLT20175300000032".
+<http://group01.org/aragon/resource/Contract/CONLT20175300000032> <http://group01.org/aragon/ontology/hasAwardPrice> "713.8"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000032> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000032> <http://group01.org/aragon/ontology/hasBiddingPrice> "1531.13"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000032> <http://group01.org/aragon/ontology/hasDescription> "productos de aseo personal"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000032> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000032> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/CELQUISA%20S.L.LABORAL>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000032> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20SERVICIOS%20SOCIALES>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000033> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000033> <http://www.w3.org/2000/01/rdf-schema#label> "CONLT20175300000033".
+<http://group01.org/aragon/resource/Contract/CONLT20175300000033> <http://group01.org/aragon/ontology/hasAwardPrice> "2259.68"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000033> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000033> <http://group01.org/aragon/ontology/hasBiddingPrice> "3656.2"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000033> <http://group01.org/aragon/ontology/hasDescription> "productos tren lavado"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000033> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000033> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/DISTRIBUCIONES%20NAVARRO-MIR%20S.L.>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000033> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20SERVICIOS%20SOCIALES>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000034> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000034> <http://www.w3.org/2000/01/rdf-schema#label> "CONLT20175300000034".
+<http://group01.org/aragon/resource/Contract/CONLT20175300000034> <http://group01.org/aragon/ontology/hasAwardPrice> "14842.73"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000034> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000034> <http://group01.org/aragon/ontology/hasBiddingPrice> "23667.16"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000034> <http://group01.org/aragon/ontology/hasDescription> "productos desechables"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000034> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000034> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/CELQUISA%20S.L.LABORAL>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000034> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20SERVICIOS%20SOCIALES>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000043> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000043> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171400000043".
+<http://group01.org/aragon/resource/Contract/CONAD20171400000043> <http://group01.org/aragon/ontology/hasAwardPrice> "89434.47"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000043> <http://group01.org/aragon/ontology/hasAwardProcedure> "Por administración"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000043> <http://group01.org/aragon/ontology/hasBiddingPrice> "89434.47"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000043> <http://group01.org/aragon/ontology/hasDescription> "145 tb73470 mto y control visit teruel"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000043> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000043> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/SDAD%20ARAGONESA%20DE%20GESTION>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000043> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD>.
+<http://group01.org/aragon/resource/Contract/CONAD20171000000071> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171000000071> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171000000071".
+<http://group01.org/aragon/resource/Contract/CONAD20171000000071> <http://group01.org/aragon/ontology/hasAwardPrice> "2044840.96"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171000000071> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171000000071> <http://group01.org/aragon/ontology/hasBiddingPrice> "2057562.26"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171000000071> <http://group01.org/aragon/ontology/hasDescription> "seguridad en edificios institucionales gobierno de aragón"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171000000071> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171000000071> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/CIA%20VIGILANCIA%20ARAGONESA%20S.L.>.
+<http://group01.org/aragon/resource/Contract/CONAD20171000000071> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/PRESIDENCIA>.
+<http://group01.org/aragon/resource/Contract/CONAD20171600000142> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171600000142> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171600000142".
+<http://group01.org/aragon/resource/Contract/CONAD20171600000142> <http://group01.org/aragon/ontology/hasAwardPrice> "9765.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171600000142> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171600000142> <http://group01.org/aragon/ontology/hasBiddingPrice> "17075.55"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171600000142> <http://group01.org/aragon/ontology/hasDescription> "equipos multifuncion 03-17"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171600000142> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171600000142> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/SOLITIUM%20S.L.>.
+<http://group01.org/aragon/resource/Contract/CONAD20171600000142> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/SANIDAD>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000758> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000758> <http://www.w3.org/2000/01/rdf-schema#label> "CONEX20175200000758".
+<http://group01.org/aragon/resource/Contract/CONEX20175200000758> <http://group01.org/aragon/ontology/hasAwardPrice> "36115.7"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000758> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000758> <http://group01.org/aragon/ontology/hasBiddingPrice> "38016.52"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000758> <http://group01.org/aragon/ontology/hasDescription> "mantenimiento preventivo, correctivo y técnico legal del tac"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000758> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000758> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/SIEMENS%20HEALTHCARE%2C%20S.L.>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000758> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000791> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000791> <http://www.w3.org/2000/01/rdf-schema#label> "CONEX20175200000791".
+<http://group01.org/aragon/resource/Contract/CONEX20175200000791> <http://group01.org/aragon/ontology/hasAwardPrice> "99613.5"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000791> <http://group01.org/aragon/ontology/hasAwardProcedure> "Contratación centralizada"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000791> <http://group01.org/aragon/ontology/hasBiddingPrice> "100036.26"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000791> <http://group01.org/aragon/ontology/hasDescription> "servicio de vigilancia y seguridad en el hospital de alcañiz"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000791> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000791> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/EULEN%20SEGURIDAD%20S.A.>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000791> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000792> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000792> <http://www.w3.org/2000/01/rdf-schema#label> "CONEX20175200000792".
+<http://group01.org/aragon/resource/Contract/CONEX20175200000792> <http://group01.org/aragon/ontology/hasAwardPrice> "105295.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000792> <http://group01.org/aragon/ontology/hasAwardProcedure> "Contratación centralizada"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000792> <http://group01.org/aragon/ontology/hasBiddingPrice> "118687.55"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000792> <http://group01.org/aragon/ontology/hasDescription> "p.c. 1ha/2017 realización de tacs en instalaciones móviles"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000792> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000792> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/QDIAGNOSTICA>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000792> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000800> <http://www.w3.org/2000/01/rdf-schema#label> "CONEX20175200000800".
+<http://group01.org/aragon/resource/Contract/CONEX20175200000800> <http://group01.org/aragon/ontology/hasAwardPrice> "2440.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000800> <http://group01.org/aragon/ontology/hasAwardProcedure> "Contratación centralizada"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000800> <http://group01.org/aragon/ontology/hasBiddingPrice> "2440.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000800> <http://group01.org/aragon/ontology/hasDescription> "resonancias magnéticas en instalaciones fijas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000800> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000800> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/CLINICA%20MONTPELLIER%20GRUPO%20HLA%2C%20SAU>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000800> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000801> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000801> <http://www.w3.org/2000/01/rdf-schema#label> "CONEX20175200000801".
+<http://group01.org/aragon/resource/Contract/CONEX20175200000801> <http://group01.org/aragon/ontology/hasAwardPrice> "1170.52"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000801> <http://group01.org/aragon/ontology/hasAwardProcedure> "Contratación centralizada"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000801> <http://group01.org/aragon/ontology/hasBiddingPrice> "1170.52"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000801> <http://group01.org/aragon/ontology/hasDescription> "resonancias magnéticas en instalaciones fijas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000801> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000801> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/DRA%20ROCA%20DIAGNOSTICO%20MEDICO%20S.L.>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000801> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000802> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000802> <http://www.w3.org/2000/01/rdf-schema#label> "CONEX20175200000802".
+<http://group01.org/aragon/resource/Contract/CONEX20175200000802> <http://group01.org/aragon/ontology/hasAwardPrice> "1110.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000802> <http://group01.org/aragon/ontology/hasAwardProcedure> "Contratación centralizada"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000802> <http://group01.org/aragon/ontology/hasBiddingPrice> "1110.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000802> <http://group01.org/aragon/ontology/hasDescription> "resonancias magnéticas en instalaciones fijas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000802> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000802> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/PARACELSO%20DIAGNOSTICO%20MEDICO%20S.L.>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000802> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000803> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000803> <http://www.w3.org/2000/01/rdf-schema#label> "CONEX20175200000803".
+<http://group01.org/aragon/resource/Contract/CONEX20175200000803> <http://group01.org/aragon/ontology/hasAwardPrice> "3924.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000803> <http://group01.org/aragon/ontology/hasAwardProcedure> "Contratación centralizada"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000803> <http://group01.org/aragon/ontology/hasBiddingPrice> "3924.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000803> <http://group01.org/aragon/ontology/hasDescription> "procedimientos diagnósticos de neurofisiología"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000803> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000803> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/NFC%20Y%20SUE%C3%91O%2C%20SL>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000803> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000804> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000804> <http://www.w3.org/2000/01/rdf-schema#label> "CONEX20175200000804".
+<http://group01.org/aragon/resource/Contract/CONEX20175200000804> <http://group01.org/aragon/ontology/hasAwardPrice> "1200.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000804> <http://group01.org/aragon/ontology/hasAwardProcedure> "Contratación centralizada"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000804> <http://group01.org/aragon/ontology/hasBiddingPrice> "1200.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000804> <http://group01.org/aragon/ontology/hasDescription> "resonancias magnéticas en instalaciones fijas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000804> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000804> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/CLINICA%20MONTPELLIER%20GRUPO%20HLA%2C%20SAU>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000804> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000805> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000805> <http://www.w3.org/2000/01/rdf-schema#label> "CONEX20175200000805".
+<http://group01.org/aragon/resource/Contract/CONEX20175200000805> <http://group01.org/aragon/ontology/hasAwardPrice> "738.5"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000805> <http://group01.org/aragon/ontology/hasAwardProcedure> "Contratación centralizada"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000805> <http://group01.org/aragon/ontology/hasBiddingPrice> "738.5"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000805> <http://group01.org/aragon/ontology/hasDescription> "resonancias magnéticas en instalaciones fijas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000805> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000805> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/DRA%20ROCA%20DIAGNOSTICO%20MEDICO%20S.L.>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000805> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000937> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000937> <http://www.w3.org/2000/01/rdf-schema#label> "CONEX20175200000937".
+<http://group01.org/aragon/resource/Contract/CONEX20175200000937> <http://group01.org/aragon/ontology/hasAwardPrice> "873.44"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000937> <http://group01.org/aragon/ontology/hasAwardProcedure> "Contratación centralizada"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000937> <http://group01.org/aragon/ontology/hasBiddingPrice> "873.44"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000937> <http://group01.org/aragon/ontology/hasDescription> "gasoleo calefaccion"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000937> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000937> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/REPSOL%20COMERCIAL%20DE%20PRODUCTOS>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000937> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000938> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000938> <http://www.w3.org/2000/01/rdf-schema#label> "CONEX20175200000938".
+<http://group01.org/aragon/resource/Contract/CONEX20175200000938> <http://group01.org/aragon/ontology/hasAwardPrice> "474.57"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000938> <http://group01.org/aragon/ontology/hasAwardProcedure> "Contratación centralizada"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000938> <http://group01.org/aragon/ontology/hasBiddingPrice> "474.57"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000938> <http://group01.org/aragon/ontology/hasDescription> "gasoleo calefaccion"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000938> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000938> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/REPSOL%20COMERCIAL%20DE%20PRODUCTOS>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000938> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000806> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000806> <http://www.w3.org/2000/01/rdf-schema#label> "CONEX20175200000806".
+<http://group01.org/aragon/resource/Contract/CONEX20175200000806> <http://group01.org/aragon/ontology/hasAwardPrice> "3411.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000806> <http://group01.org/aragon/ontology/hasAwardProcedure> "Contratación centralizada"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000806> <http://group01.org/aragon/ontology/hasBiddingPrice> "3411.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000806> <http://group01.org/aragon/ontology/hasDescription> "procedimientos diagnósticos de neurofisiología"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000806> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000806> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/NFC%20Y%20SUE%C3%91O%2C%20SL>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000806> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000812> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000812> <http://www.w3.org/2000/01/rdf-schema#label> "CONEX20175200000812".
+<http://group01.org/aragon/resource/Contract/CONEX20175200000812> <http://group01.org/aragon/ontology/hasAwardPrice> "168139.52"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000812> <http://group01.org/aragon/ontology/hasAwardProcedure> "Negociado"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000812> <http://group01.org/aragon/ontology/hasBiddingPrice> "172079.4"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000812> <http://group01.org/aragon/ontology/hasDescription> "material de neuroestimulacion de raices sacras para urologia"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000812> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000812> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/MEDTRONIC%20IBERICA%20S.A.>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000812> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD>.
+<http://group01.org/aragon/resource/Contract/CONMY20175400000081> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONMY20175400000081> <http://www.w3.org/2000/01/rdf-schema#label> "CONMY20175400000081".
+<http://group01.org/aragon/resource/Contract/CONMY20175400000081> <http://group01.org/aragon/ontology/hasAwardPrice> "32600.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20175400000081> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20175400000081> <http://group01.org/aragon/ontology/hasBiddingPrice> "48750.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20175400000081> <http://group01.org/aragon/ontology/hasDescription> "1704 atencion psicologica teruel a mujeres en especial situacion de necesid"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20175400000081> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20175400000081> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/FUNDACION%20ADCARA>.
+<http://group01.org/aragon/resource/Contract/CONMY20175400000081> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20LA%20MUJER>.
+<http://group01.org/aragon/resource/Contract/CONMY20177200000028> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONMY20177200000028> <http://www.w3.org/2000/01/rdf-schema#label> "CONMY20177200000028".
+<http://group01.org/aragon/resource/Contract/CONMY20177200000028> <http://group01.org/aragon/ontology/hasAwardPrice> "1594545.24"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20177200000028> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20177200000028> <http://group01.org/aragon/ontology/hasBiddingPrice> "2053671.38"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20177200000028> <http://group01.org/aragon/ontology/hasDescription> "c19/2016 edar's de plaza, la muela y epila. mantenimiento"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20177200000028> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20177200000028> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/SA%20AGRICULTORES%20VEGA%20DE%20VALENCIA->.
+<http://group01.org/aragon/resource/Contract/CONMY20177200000028> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DEL%20AGUA>.
+<http://group01.org/aragon/resource/Contract/CONMY20175200001041> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONMY20175200001041> <http://www.w3.org/2000/01/rdf-schema#label> "CONMY20175200001041".
+<http://group01.org/aragon/resource/Contract/CONMY20175200001041> <http://group01.org/aragon/ontology/hasAwardPrice> "91153.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20175200001041> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20175200001041> <http://group01.org/aragon/ontology/hasBiddingPrice> "173316.91"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20175200001041> <http://group01.org/aragon/ontology/hasDescription> "obras actuaciones previas acondicionamiento parcela hosp. alcañiz"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20175200001041> <http://group01.org/aragon/ontology/hasTypeOfContract> "Obras"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20175200001041> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/ARAGONESA%20OBRAS%20CIVILES%20SL>.
+<http://group01.org/aragon/resource/Contract/CONMY20175200001041> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD>.
+<http://group01.org/aragon/resource/Contract/CONMY20171200000135> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONMY20171200000135> <http://www.w3.org/2000/01/rdf-schema#label> "CONMY20171200000135".
+<http://group01.org/aragon/resource/Contract/CONMY20171200000135> <http://group01.org/aragon/ontology/hasAwardPrice> "168000.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20171200000135> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171200000135> <http://group01.org/aragon/ontology/hasBiddingPrice> "170000.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20171200000135> <http://group01.org/aragon/ontology/hasDescription> "servicios colaboración con interv.general cert.feaga-feader 2018-2019"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171200000135> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171200000135> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/GRANT%20THORNTON%20SL%20PROFESIONAL>.
+<http://group01.org/aragon/resource/Contract/CONMY20171200000135> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/HACIENDA%20Y%20ADMINISTRACI%C3%93N%20P%C3%9ABLICA>.
+<http://group01.org/aragon/resource/Contract/CONAD20175300000645> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20175300000645> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20175300000645".
+<http://group01.org/aragon/resource/Contract/CONAD20175300000645> <http://group01.org/aragon/ontology/hasAwardPrice> "1661261.93"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20175300000645> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175300000645> <http://group01.org/aragon/ontology/hasBiddingPrice> "2232463.38"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20175300000645> <http://group01.org/aragon/ontology/hasDescription> "servicio de vigilancia residencia cesaraugusta y centro juslibol"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175300000645> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175300000645> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/UTE-CIS%20COMPA%C3%91IA%20INTEGRAL%20DE>.
+<http://group01.org/aragon/resource/Contract/CONAD20175300000645> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20SERVICIOS%20SOCIALES>.
+<http://group01.org/aragon/resource/Contract/CONMY20171400000452> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONMY20171400000452> <http://www.w3.org/2000/01/rdf-schema#label> "CONMY20171400000452".
+<http://group01.org/aragon/resource/Contract/CONMY20171400000452> <http://group01.org/aragon/ontology/hasAwardPrice> "64134.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20171400000452> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171400000452> <http://group01.org/aragon/ontology/hasBiddingPrice> "71145.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20171400000452> <http://group01.org/aragon/ontology/hasDescription> "2017-tratamientos aereos contra langosta"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171400000452> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171400000452> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/TRATAMIENTOS%20AGRICOLAS%20AEREOS>.
+<http://group01.org/aragon/resource/Contract/CONMY20171400000452> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD>.
+<http://group01.org/aragon/resource/Contract/CONMY20171300000159> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONMY20171300000159> <http://www.w3.org/2000/01/rdf-schema#label> "CONMY20171300000159".
+<http://group01.org/aragon/resource/Contract/CONMY20171300000159> <http://group01.org/aragon/ontology/hasAwardPrice> "274300.41"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20171300000159> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171300000159> <http://group01.org/aragon/ontology/hasBiddingPrice> "314049.59"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20171300000159> <http://group01.org/aragon/ontology/hasDescription> "serv. arrend. de maq. y prov. de mater. en crtra. a-1702.-ejulve-organos de"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171300000159> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171300000159> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/EZAGUE%20S.L.>.
+<http://group01.org/aragon/resource/Contract/CONMY20171300000159> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/VERTEBRACI%C3%93N%20DEL%20TERRITORIO%2C%20MOVILIDAD%20Y%20VIVIENDA>.
+<http://group01.org/aragon/resource/Contract/CONMY20171400000550> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONMY20171400000550> <http://www.w3.org/2000/01/rdf-schema#label> "CONMY20171400000550".
+<http://group01.org/aragon/resource/Contract/CONMY20171400000550> <http://group01.org/aragon/ontology/hasAwardPrice> "63525.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20171400000550> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171400000550> <http://group01.org/aragon/ontology/hasBiddingPrice> "71000.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20171400000550> <http://group01.org/aragon/ontology/hasDescription> "plan de evaluacio de indicadores pdr 2014-2020 a160005"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171400000550> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171400000550> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/REGIO%20PLUS%20CONSULTING%20SL>.
+<http://group01.org/aragon/resource/Contract/CONMY20171400000550> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD>.
+<http://group01.org/aragon/resource/Contract/CONMY20175300000722> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONMY20175300000722> <http://www.w3.org/2000/01/rdf-schema#label> "CONMY20175300000722".
+<http://group01.org/aragon/resource/Contract/CONMY20175300000722> <http://group01.org/aragon/ontology/hasAwardPrice> "290000.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20175300000722> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20175300000722> <http://group01.org/aragon/ontology/hasBiddingPrice> "402200.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20175300000722> <http://group01.org/aragon/ontology/hasDescription> "sistema información dependencia"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20175300000722> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20175300000722> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/UTE-VIRTUAL-ANEUM>.
+<http://group01.org/aragon/resource/Contract/CONMY20175300000722> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20SERVICIOS%20SOCIALES>.
+<http://group01.org/aragon/resource/Contract/CONLT20171800000628> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONLT20171800000628> <http://www.w3.org/2000/01/rdf-schema#label> "CONLT20171800000628".
+<http://group01.org/aragon/resource/Contract/CONLT20171800000628> <http://group01.org/aragon/ontology/hasAwardPrice> "138384.33"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONLT20171800000628> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20171800000628> <http://group01.org/aragon/ontology/hasBiddingPrice> "147526.4"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONLT20171800000628> <http://group01.org/aragon/ontology/hasDescription> "ruta 101/epes/h/2013"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20171800000628> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20171800000628> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/ALOSA%20AUTOCARES%20Y%20AUTOBUSES%20S.L.>.
+<http://group01.org/aragon/resource/Contract/CONLT20171800000628> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/EDUCACI%C3%93N%2C%20CULTURA%20Y%20DEPORTE>.
+<http://group01.org/aragon/resource/Contract/CONMY20171700000074> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONMY20171700000074> <http://www.w3.org/2000/01/rdf-schema#label> "CONMY20171700000074".
+<http://group01.org/aragon/resource/Contract/CONMY20171700000074> <http://group01.org/aragon/ontology/hasAwardPrice> "1730684.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20171700000074> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171700000074> <http://group01.org/aragon/ontology/hasBiddingPrice> "2216335.49"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20171700000074> <http://group01.org/aragon/ontology/hasDescription> "conmy 22/2016: tant tdt - transporte zonas remotas (pliego neutro)"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171700000074> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171700000074> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/RETEVISION%20I%20S.A.>.
+<http://group01.org/aragon/resource/Contract/CONMY20171700000074> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/INNOVACI%C3%93N%2C%20INVESTIGACI%C3%93N%20Y%20UNIVERSIDAD>.
+<http://group01.org/aragon/resource/Contract/CONMY20171300000163> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONMY20171300000163> <http://www.w3.org/2000/01/rdf-schema#label> "CONMY20171300000163".
+<http://group01.org/aragon/resource/Contract/CONMY20171300000163> <http://group01.org/aragon/ontology/hasAwardPrice> "696945.15"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20171300000163> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171300000163> <http://group01.org/aragon/ontology/hasBiddingPrice> "1339506.34"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20171300000163> <http://group01.org/aragon/ontology/hasDescription> "construcc. refuerzo y regular. a-1503 tramo:i llueca-cruce cv-698"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171300000163> <http://group01.org/aragon/ontology/hasTypeOfContract> "Obras"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171300000163> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/UTE%20ILLUECA%20-%20CONST.M.LOPEZ%20NAVARRO>.
+<http://group01.org/aragon/resource/Contract/CONMY20171300000163> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/VERTEBRACI%C3%93N%20DEL%20TERRITORIO%2C%20MOVILIDAD%20Y%20VIVIENDA>.
+<http://group01.org/aragon/resource/Contract/CONMY20175400000083> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONMY20175400000083> <http://www.w3.org/2000/01/rdf-schema#label> "CONMY20175400000083".
+<http://group01.org/aragon/resource/Contract/CONMY20175400000083> <http://group01.org/aragon/ontology/hasAwardPrice> "90000.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20175400000083> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20175400000083> <http://group01.org/aragon/ontology/hasBiddingPrice> "130200.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20175400000083> <http://group01.org/aragon/ontology/hasDescription> "iam1705 asesoram.lab. perspect. genero pª favorecer inserc.mujers mundo lab"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20175400000083> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20175400000083> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/INTELECTO%20CONSULTORIA%20DE%20PROYECTOS>.
+<http://group01.org/aragon/resource/Contract/CONMY20175400000083> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20LA%20MUJER>.
+<http://group01.org/aragon/resource/Contract/CONMY20175400000080> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONMY20175400000080> <http://www.w3.org/2000/01/rdf-schema#label> "CONMY20175400000080".
+<http://group01.org/aragon/resource/Contract/CONMY20175400000080> <http://group01.org/aragon/ontology/hasAwardPrice> "37200.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20175400000080> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20175400000080> <http://group01.org/aragon/ontology/hasBiddingPrice> "48750.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20175400000080> <http://group01.org/aragon/ontology/hasDescription> "1703 atencion psicologica huesca a mujeres especial situacion necesidad"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20175400000080> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20175400000080> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/FUNDACION%20ADCARA>.
+<http://group01.org/aragon/resource/Contract/CONMY20175400000080> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20LA%20MUJER>.
+<http://group01.org/aragon/resource/Contract/CONAD20175300000583> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20175300000583> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20175300000583".
+<http://group01.org/aragon/resource/Contract/CONAD20175300000583> <http://group01.org/aragon/ontology/hasAwardPrice> "23215.82"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20175300000583> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175300000583> <http://group01.org/aragon/ontology/hasBiddingPrice> "23215.82"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20175300000583> <http://group01.org/aragon/ontology/hasDescription> "seguridad dir provincial iass huesca 2017"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175300000583> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175300000583> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/ILUNION%20SEGURIDAD%20S.A.>.
+<http://group01.org/aragon/resource/Contract/CONAD20175300000583> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20SERVICIOS%20SOCIALES>.
+<http://group01.org/aragon/resource/Contract/CONMY20171200000110> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONMY20171200000110> <http://www.w3.org/2000/01/rdf-schema#label> "CONMY20171200000110".
+<http://group01.org/aragon/resource/Contract/CONMY20171200000110> <http://group01.org/aragon/ontology/hasAwardPrice> "277424.36"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20171200000110> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171200000110> <http://group01.org/aragon/ontology/hasBiddingPrice> "341889.69"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20171200000110> <http://group01.org/aragon/ontology/hasDescription> "mantenimiento conducción-gestión y asistencia edificios interdep. zaragoza"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171200000110> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171200000110> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/VEOLIA%20SERVICIOS%20NORTE%20S.A.U.>.
+<http://group01.org/aragon/resource/Contract/CONMY20171200000110> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/HACIENDA%20Y%20ADMINISTRACI%C3%93N%20P%C3%9ABLICA>.
+<http://group01.org/aragon/resource/Contract/CONMY20171700000052> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONMY20171700000052> <http://www.w3.org/2000/01/rdf-schema#label> "CONMY20171700000052".
+<http://group01.org/aragon/resource/Contract/CONMY20171700000052> <http://group01.org/aragon/ontology/hasAwardPrice> "67000.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20171700000052> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171700000052> <http://group01.org/aragon/ontology/hasBiddingPrice> "102403.16"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20171700000052> <http://group01.org/aragon/ontology/hasDescription> "conmy 11/2016: desarrollo e implementación aplicación archivo"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171700000052> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171700000052> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/DELOITTE%20CONSULTING%20S.L.>.
+<http://group01.org/aragon/resource/Contract/CONMY20171700000052> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/INNOVACI%C3%93N%2C%20INVESTIGACI%C3%93N%20Y%20UNIVERSIDAD>.
+<http://group01.org/aragon/resource/Contract/CONMY20171200000109> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONMY20171200000109> <http://www.w3.org/2000/01/rdf-schema#label> "CONMY20171200000109".
+<http://group01.org/aragon/resource/Contract/CONMY20171200000109> <http://group01.org/aragon/ontology/hasAwardPrice> "86278.12"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20171200000109> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171200000109> <http://group01.org/aragon/ontology/hasBiddingPrice> "97037.56"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20171200000109> <http://group01.org/aragon/ontology/hasDescription> "mantenimiento-conducción de gestión y asistencia de teruel y calamocha"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171200000109> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171200000109> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/VEOLIA%20SERVICIOS%20NORTE%20S.A.U.>.
+<http://group01.org/aragon/resource/Contract/CONMY20171200000109> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/HACIENDA%20Y%20ADMINISTRACI%C3%93N%20P%C3%9ABLICA>.
+<http://group01.org/aragon/resource/Contract/CONMY20171700000056> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONMY20171700000056> <http://www.w3.org/2000/01/rdf-schema#label> "CONMY20171700000056".
+<http://group01.org/aragon/resource/Contract/CONMY20171700000056> <http://group01.org/aragon/ontology/hasAwardPrice> "108835.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20171700000056> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171700000056> <http://group01.org/aragon/ontology/hasBiddingPrice> "164985.34"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20171700000056> <http://group01.org/aragon/ontology/hasDescription> "conmy 13/2016: firma electrónica y validación datos"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171700000056> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171700000056> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/IA%20SOFT%20ARAGON%20SL>.
+<http://group01.org/aragon/resource/Contract/CONMY20171700000056> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/INNOVACI%C3%93N%2C%20INVESTIGACI%C3%93N%20Y%20UNIVERSIDAD>.
+<http://group01.org/aragon/resource/Contract/CONMY20171000000020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONMY20171000000020> <http://www.w3.org/2000/01/rdf-schema#label> "CONMY20171000000020".
+<http://group01.org/aragon/resource/Contract/CONMY20171000000020> <http://group01.org/aragon/ontology/hasAwardPrice> "759181.36"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20171000000020> <http://group01.org/aragon/ontology/hasAwardProcedure> "Negociado"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171000000020> <http://group01.org/aragon/ontology/hasBiddingPrice> "759181.36"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20171000000020> <http://group01.org/aragon/ontology/hasDescription> "transporte sanitario y de emergencias mediante helicóptero"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171000000020> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171000000020> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/BABCOCK%20MISSION%20CRITICAL%20SERVICES>.
+<http://group01.org/aragon/resource/Contract/CONMY20171000000020> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/PRESIDENCIA>.
+<http://group01.org/aragon/resource/Contract/CONAD20175300000066> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20175300000066> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20175300000066".
+<http://group01.org/aragon/resource/Contract/CONAD20175300000066> <http://group01.org/aragon/ontology/hasAwardPrice> "54059.04"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20175300000066> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175300000066> <http://group01.org/aragon/ontology/hasBiddingPrice> "54614.56"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20175300000066> <http://group01.org/aragon/ontology/hasDescription> "servicio de seguridad sección de protección del menor"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175300000066> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175300000066> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/GARDA%20SERVICIOS%20DE%20SEGURIDAD%20S.A.>.
+<http://group01.org/aragon/resource/Contract/CONAD20175300000066> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20SERVICIOS%20SOCIALES>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000799> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000799> <http://www.w3.org/2000/01/rdf-schema#label> "CONLT20175300000799".
+<http://group01.org/aragon/resource/Contract/CONLT20175300000799> <http://group01.org/aragon/ontology/hasAwardPrice> "11030.08"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000799> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000799> <http://group01.org/aragon/ontology/hasBiddingPrice> "14143.74"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000799> <http://group01.org/aragon/ontology/hasDescription> "productos limpieza 2017"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000799> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000799> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/DISTRIBUCIONES%20NAVARRO-MIR%20S.L.>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000799> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20SERVICIOS%20SOCIALES>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000800> <http://www.w3.org/2000/01/rdf-schema#label> "CONLT20175300000800".
+<http://group01.org/aragon/resource/Contract/CONLT20175300000800> <http://group01.org/aragon/ontology/hasAwardPrice> "5692.75"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000800> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000800> <http://group01.org/aragon/ontology/hasBiddingPrice> "8658.71"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000800> <http://group01.org/aragon/ontology/hasDescription> "productos lavanderia y lavavajillas 2017"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000800> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000800> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/DISTRIBUCIONES%20NAVARRO-MIR%20S.L.>.
+<http://group01.org/aragon/resource/Contract/CONLT20175300000800> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20SERVICIOS%20SOCIALES>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000163> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000163> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171400000163".
+<http://group01.org/aragon/resource/Contract/CONAD20171400000163> <http://group01.org/aragon/ontology/hasAwardPrice> "726239.42"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000163> <http://group01.org/aragon/ontology/hasAwardProcedure> "Por administración"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000163> <http://group01.org/aragon/ontology/hasBiddingPrice> "726239.42"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000163> <http://group01.org/aragon/ontology/hasDescription> "146 zb71600 at.veterin.y conservacion centro recup.fauna silvestre alfranca"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000163> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000163> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/SDAD%20ARAGONESA%20DE%20GESTION>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000163> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000240> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000240> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171800000240".
+<http://group01.org/aragon/resource/Contract/CONAD20171800000240> <http://group01.org/aragon/ontology/hasAwardPrice> "42724.08"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000240> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000240> <http://group01.org/aragon/ontology/hasBiddingPrice> "43163.12"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000240> <http://group01.org/aragon/ontology/hasDescription> "seguridad en el edificio rosa arjó"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000240> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000240> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/GARDA%20SERVICIOS%20DE%20SEGURIDAD%20S.A.>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000240> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/EDUCACI%C3%93N%2C%20CULTURA%20Y%20DEPORTE>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000309> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000309> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171800000309".
+<http://group01.org/aragon/resource/Contract/CONAD20171800000309> <http://group01.org/aragon/ontology/hasAwardPrice> "39.39"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000309> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000309> <http://group01.org/aragon/ontology/hasBiddingPrice> "39.39"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000309> <http://group01.org/aragon/ontology/hasDescription> "compra prendas trabajo gi santo angel custodio"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000309> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000309> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/INSERCION%20Y%20TRABAJO%20SL>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000309> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/EDUCACI%C3%93N%2C%20CULTURA%20Y%20DEPORTE>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000042> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000042> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171400000042".
+<http://group01.org/aragon/resource/Contract/CONAD20171400000042> <http://group01.org/aragon/ontology/hasAwardPrice> "342796.72"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000042> <http://group01.org/aragon/ontology/hasAwardProcedure> "Por administración"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000042> <http://group01.org/aragon/ontology/hasBiddingPrice> "342796.72"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000042> <http://group01.org/aragon/ontology/hasDescription> "145 hb72008.conservación valles occ y sj peña"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000042> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000042> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/SDAD%20ARAGONESA%20DE%20GESTION>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000042> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000237> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000237> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171400000237".
+<http://group01.org/aragon/resource/Contract/CONAD20171400000237> <http://group01.org/aragon/ontology/hasAwardPrice> "7435.39"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000237> <http://group01.org/aragon/ontology/hasAwardProcedure> "Por administración"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000237> <http://group01.org/aragon/ontology/hasBiddingPrice> "7435.39"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000237> <http://group01.org/aragon/ontology/hasDescription> "145 zb71614 caracteriz vegetación arbórea rnd galachos ebro"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000237> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000237> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/CENTRO%20INVESTIGACION%20Y%20TECNOLOGIA>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000237> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000115> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000115> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20175100000115".
+<http://group01.org/aragon/resource/Contract/CONAD20175100000115> <http://group01.org/aragon/ontology/hasAwardPrice> "2558.49"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000115> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000115> <http://group01.org/aragon/ontology/hasBiddingPrice> "4027.66"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000115> <http://group01.org/aragon/ontology/hasDescription> "suministro mobiliario diverso de oficina"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000115> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000115> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/OFITECNICA%20OFICINA%20TECNICA%20S.L.>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000115> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20EMPLEO>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000116> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000116> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20175100000116".
+<http://group01.org/aragon/resource/Contract/CONAD20175100000116> <http://group01.org/aragon/ontology/hasAwardPrice> "1311.2"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000116> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000116> <http://group01.org/aragon/ontology/hasBiddingPrice> "2280.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000116> <http://group01.org/aragon/ontology/hasDescription> "suministro de 8 sillas oficina de empleo de binéfar"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000116> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000116> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/BALLAROL%20OFICINAS%20S.L.L.>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000116> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20EMPLEO>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000117> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000117> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20175100000117".
+<http://group01.org/aragon/resource/Contract/CONAD20175100000117> <http://group01.org/aragon/ontology/hasAwardPrice> "1281.4"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000117> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000117> <http://group01.org/aragon/ontology/hasBiddingPrice> "2074.04"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000117> <http://group01.org/aragon/ontology/hasDescription> "suministro de mobiliario oficina de empleo de monzón"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000117> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000117> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/OFITECNICA%20OFICINA%20TECNICA%20S.L.>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000117> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20EMPLEO>.
+<http://group01.org/aragon/resource/Contract/CONAD20171200000080> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171200000080> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171200000080".
+<http://group01.org/aragon/resource/Contract/CONAD20171200000080> <http://group01.org/aragon/ontology/hasAwardPrice> "3195.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171200000080> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171200000080> <http://group01.org/aragon/ontology/hasBiddingPrice> "3953.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171200000080> <http://group01.org/aragon/ontology/hasDescription> "adquisición fotocopiadora para gabinete (anexo 680/2017)"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171200000080> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171200000080> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/SOLITIUM%20S.L.>.
+<http://group01.org/aragon/resource/Contract/CONAD20171200000080> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/HACIENDA%20Y%20ADMINISTRACI%C3%93N%20P%C3%9ABLICA>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000392> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000392> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171800000392".
+<http://group01.org/aragon/resource/Contract/CONAD20171800000392> <http://group01.org/aragon/ontology/hasAwardPrice> "31.85"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000392> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000392> <http://group01.org/aragon/ontology/hasBiddingPrice> "31.85"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000392> <http://group01.org/aragon/ontology/hasDescription> "compra prendas de trabajo gi san lorenzo"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000392> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000392> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/CONFECCIONES%20OROEL%20S.A.>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000392> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/EDUCACI%C3%93N%2C%20CULTURA%20Y%20DEPORTE>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000397> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000397> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171800000397".
+<http://group01.org/aragon/resource/Contract/CONAD20171800000397> <http://group01.org/aragon/ontology/hasAwardPrice> "933.32"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000397> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000397> <http://group01.org/aragon/ontology/hasBiddingPrice> "933.32"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000397> <http://group01.org/aragon/ontology/hasDescription> "compra prendas de trabajo virgen de la oliva"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000397> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000397> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/EL%20CORTE%20INGLES%20S.A.>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000397> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/EDUCACI%C3%93N%2C%20CULTURA%20Y%20DEPORTE>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000172> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000172> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171400000172".
+<http://group01.org/aragon/resource/Contract/CONAD20171400000172> <http://group01.org/aragon/ontology/hasAwardPrice> "19867.18"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000172> <http://group01.org/aragon/ontology/hasAwardProcedure> "Por administración"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000172> <http://group01.org/aragon/ontology/hasBiddingPrice> "19867.18"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000172> <http://group01.org/aragon/ontology/hasDescription> "145 rb74042 mejora aplicaciones s información pn ordesa"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000172> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000172> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/TECNOLOGIAS%20Y%20SERVICIOS%20AGRARIOS%20SA>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000172> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000391> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000391> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171800000391".
+<http://group01.org/aragon/resource/Contract/CONAD20171800000391> <http://group01.org/aragon/ontology/hasAwardPrice> "501.81"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000391> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000391> <http://group01.org/aragon/ontology/hasBiddingPrice> "501.81"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000391> <http://group01.org/aragon/ontology/hasDescription> "compra prendas de trabajo gi san lorenzo"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000391> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000391> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/EL%20CORTE%20INGLES%20S.A.>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000391> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/EDUCACI%C3%93N%2C%20CULTURA%20Y%20DEPORTE>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000393> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000393> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171800000393".
+<http://group01.org/aragon/resource/Contract/CONAD20171800000393> <http://group01.org/aragon/ontology/hasAwardPrice> "296.1"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000393> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000393> <http://group01.org/aragon/ontology/hasBiddingPrice> "296.1"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000393> <http://group01.org/aragon/ontology/hasDescription> "compra de prendas de trabajo gi san lorenzo"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000393> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000393> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/ANATOMICOS%20MADRID%20S.L.>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000393> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/EDUCACI%C3%93N%2C%20CULTURA%20Y%20DEPORTE>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000399> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000399> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171800000399".
+<http://group01.org/aragon/resource/Contract/CONAD20171800000399> <http://group01.org/aragon/ontology/hasAwardPrice> "144.32"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000399> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000399> <http://group01.org/aragon/ontology/hasBiddingPrice> "144.32"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000399> <http://group01.org/aragon/ontology/hasDescription> "compra prendas de trabajo virgen de la oliva"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000399> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000399> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/INSERCION%20Y%20TRABAJO%20SL>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000399> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/EDUCACI%C3%93N%2C%20CULTURA%20Y%20DEPORTE>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000296> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000296> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171800000296".
+<http://group01.org/aragon/resource/Contract/CONAD20171800000296> <http://group01.org/aragon/ontology/hasAwardPrice> "594.01"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000296> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000296> <http://group01.org/aragon/ontology/hasBiddingPrice> "594.01"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000296> <http://group01.org/aragon/ontology/hasDescription> "compra prendas trabajo guardería infantil santa maria del pilar"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000296> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000296> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/EL%20CORTE%20INGLES%20S.A.>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000296> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/EDUCACI%C3%93N%2C%20CULTURA%20Y%20DEPORTE>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000297> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000297> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171800000297".
+<http://group01.org/aragon/resource/Contract/CONAD20171800000297> <http://group01.org/aragon/ontology/hasAwardPrice> "1.72"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000297> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000297> <http://group01.org/aragon/ontology/hasBiddingPrice> "1.72"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000297> <http://group01.org/aragon/ontology/hasDescription> "compra prendas trabajo guardería infantil santa maria del pilar"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000297> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000297> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/CONFECCIONES%20OROEL%20S.A.>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000297> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/EDUCACI%C3%93N%2C%20CULTURA%20Y%20DEPORTE>.
+<http://group01.org/aragon/resource/Contract/CONAD20171600000173> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171600000173> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171600000173".
+<http://group01.org/aragon/resource/Contract/CONAD20171600000173> <http://group01.org/aragon/ontology/hasAwardPrice> "127.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171600000173> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171600000173> <http://group01.org/aragon/ontology/hasBiddingPrice> "127.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171600000173> <http://group01.org/aragon/ontology/hasDescription> "reposición ropa trabajo personal sanitario ryc, 68-05/17"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171600000173> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171600000173> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/EL%20CORTE%20INGLES%20S.A.>.
+<http://group01.org/aragon/resource/Contract/CONAD20171600000173> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/SANIDAD>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000261> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000261> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171800000261".
+<http://group01.org/aragon/resource/Contract/CONAD20171800000261> <http://group01.org/aragon/ontology/hasAwardPrice> "22.16"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000261> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000261> <http://group01.org/aragon/ontology/hasBiddingPrice> "22.16"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000261> <http://group01.org/aragon/ontology/hasDescription> "prendas de trabajo guardería infantil inmaculada concepción"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000261> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000261> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/CONFECCIONES%20OROEL%20S.A.>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000261> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/EDUCACI%C3%93N%2C%20CULTURA%20Y%20DEPORTE>.
+<http://group01.org/aragon/resource/Contract/CONAD20171000000147> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171000000147> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171000000147".
+<http://group01.org/aragon/resource/Contract/CONAD20171000000147> <http://group01.org/aragon/ontology/hasAwardPrice> "24922.8"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171000000147> <http://group01.org/aragon/ontology/hasAwardProcedure> "Por administración"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171000000147> <http://group01.org/aragon/ontology/hasBiddingPrice> "24922.8"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171000000147> <http://group01.org/aragon/ontology/hasDescription> "desarrollo de una aplicación móvil para el portal aragonhoy"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171000000147> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171000000147> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/ARAGONESA%20DE%20SERVICIOS%20TELEMATICOS>.
+<http://group01.org/aragon/resource/Contract/CONAD20171000000147> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/PRESIDENCIA>.
+<http://group01.org/aragon/resource/Contract/CONMY20171000000054> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONMY20171000000054> <http://www.w3.org/2000/01/rdf-schema#label> "CONMY20171000000054".
+<http://group01.org/aragon/resource/Contract/CONMY20171000000054> <http://group01.org/aragon/ontology/hasAwardPrice> "25200.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20171000000054> <http://group01.org/aragon/ontology/hasAwardProcedure> "Negociado"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171000000054> <http://group01.org/aragon/ontology/hasBiddingPrice> "29000.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONMY20171000000054> <http://group01.org/aragon/ontology/hasDescription> "soporte, mant. y desarrollo aplic. iboa"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171000000054> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONMY20171000000054> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/EUROHELP%20CONSULTING%20S.L.>.
+<http://group01.org/aragon/resource/Contract/CONMY20171000000054> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/PRESIDENCIA>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000025> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171400000025".
+<http://group01.org/aragon/resource/Contract/CONAD20171400000025> <http://group01.org/aragon/ontology/hasAwardPrice> "36730.52"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000025> <http://group01.org/aragon/ontology/hasAwardProcedure> "Por administración"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000025> <http://group01.org/aragon/ontology/hasBiddingPrice> "36730.52"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000025> <http://group01.org/aragon/ontology/hasDescription> "hf 72006 cartografía mups y vias pecuarias huesca"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000025> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000025> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/SDAD%20ARAGONESA%20DE%20GESTION>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000025> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000060> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000060> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171400000060".
+<http://group01.org/aragon/resource/Contract/CONAD20171400000060> <http://group01.org/aragon/ontology/hasAwardPrice> "142461.95"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000060> <http://group01.org/aragon/ontology/hasAwardProcedure> "Por administración"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000060> <http://group01.org/aragon/ontology/hasBiddingPrice> "142461.95"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000060> <http://group01.org/aragon/ontology/hasDescription> "vigilancia ambiental planes coordinados 2017 a170001"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000060> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000060> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/SDAD%20ARAGONESA%20DE%20GESTION>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000060> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD>.
+<http://group01.org/aragon/resource/Contract/CONLT20171200000118> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONLT20171200000118> <http://www.w3.org/2000/01/rdf-schema#label> "CONLT20171200000118".
+<http://group01.org/aragon/resource/Contract/CONLT20171200000118> <http://group01.org/aragon/ontology/hasAwardPrice> "30287.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONLT20171200000118> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20171200000118> <http://group01.org/aragon/ontology/hasBiddingPrice> "30287.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONLT20171200000118> <http://group01.org/aragon/ontology/hasDescription> "suministro artículos higiénicos de papel"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20171200000118> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20171200000118> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/CELQUISA%20S.L.LABORAL>.
+<http://group01.org/aragon/resource/Contract/CONLT20171200000118> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/HACIENDA%20Y%20ADMINISTRACI%C3%93N%20P%C3%9ABLICA>.
+<http://group01.org/aragon/resource/Contract/CONLT20171200000119> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONLT20171200000119> <http://www.w3.org/2000/01/rdf-schema#label> "CONLT20171200000119".
+<http://group01.org/aragon/resource/Contract/CONLT20171200000119> <http://group01.org/aragon/ontology/hasAwardPrice> "26512.6"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONLT20171200000119> <http://group01.org/aragon/ontology/hasAwardProcedure> "Abierto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20171200000119> <http://group01.org/aragon/ontology/hasBiddingPrice> "26512.6"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONLT20171200000119> <http://group01.org/aragon/ontology/hasDescription> "suministro productos y útiles de limpieza"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20171200000119> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONLT20171200000119> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/CELQUISA%20S.L.LABORAL>.
+<http://group01.org/aragon/resource/Contract/CONLT20171200000119> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/HACIENDA%20Y%20ADMINISTRACI%C3%93N%20P%C3%9ABLICA>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000266> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000266> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171800000266".
+<http://group01.org/aragon/resource/Contract/CONAD20171800000266> <http://group01.org/aragon/ontology/hasAwardPrice> "1189.23"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000266> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000266> <http://group01.org/aragon/ontology/hasBiddingPrice> "1189.23"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000266> <http://group01.org/aragon/ontology/hasDescription> "prendas de trabajo guardería infantil n.s carmen"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000266> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000266> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/EL%20CORTE%20INGLES%20S.A.>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000266> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/EDUCACI%C3%93N%2C%20CULTURA%20Y%20DEPORTE>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000267> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000267> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171800000267".
+<http://group01.org/aragon/resource/Contract/CONAD20171800000267> <http://group01.org/aragon/ontology/hasAwardPrice> "11.36"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000267> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000267> <http://group01.org/aragon/ontology/hasBiddingPrice> "11.36"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000267> <http://group01.org/aragon/ontology/hasDescription> "prendas de trabajo guardería infantil n.s. carmen"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000267> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000267> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/CONFECCIONES%20OROEL%20S.A.>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000267> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/EDUCACI%C3%93N%2C%20CULTURA%20Y%20DEPORTE>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000291> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000291> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171800000291".
+<http://group01.org/aragon/resource/Contract/CONAD20171800000291> <http://group01.org/aragon/ontology/hasAwardPrice> "129.2"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000291> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000291> <http://group01.org/aragon/ontology/hasBiddingPrice> "129.2"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000291> <http://group01.org/aragon/ontology/hasDescription> "compra prendas de trabajo guardería infantil la paz"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000291> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000291> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/INSERCION%20Y%20TRABAJO%20SL>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000291> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/EDUCACI%C3%93N%2C%20CULTURA%20Y%20DEPORTE>.
+<http://group01.org/aragon/resource/Contract/CONAD20171500000013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171500000013> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171500000013".
+<http://group01.org/aragon/resource/Contract/CONAD20171500000013> <http://group01.org/aragon/ontology/hasAwardPrice> "12319.01"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171500000013> <http://group01.org/aragon/ontology/hasAwardProcedure> "Por administración"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171500000013> <http://group01.org/aragon/ontology/hasBiddingPrice> "12319.01"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171500000013> <http://group01.org/aragon/ontology/hasDescription> "bolsa de horas proyecto data warehouse para i.a.estadística"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171500000013> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171500000013> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/ARAGONESA%20DE%20SERVICIOS%20TELEMATICOS>.
+<http://group01.org/aragon/resource/Contract/CONAD20171500000013> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/ECONOM%C3%8DA%2C%20INDUSTRIA%20Y%20EMPLEO>.
+<http://group01.org/aragon/resource/Contract/CONAD20171000000091> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171000000091> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171000000091".
+<http://group01.org/aragon/resource/Contract/CONAD20171000000091> <http://group01.org/aragon/ontology/hasAwardPrice> "2483761.36"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171000000091> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171000000091> <http://group01.org/aragon/ontology/hasBiddingPrice> "2501860.64"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171000000091> <http://group01.org/aragon/ontology/hasDescription> "servicio de vigilancia y seguridad órganos judiciales de aragón"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171000000091> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171000000091> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/CIA%20VIGILANCIA%20ARAGONESA%20S.L.>.
+<http://group01.org/aragon/resource/Contract/CONAD20171000000091> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/PRESIDENCIA>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000292> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000292> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171800000292".
+<http://group01.org/aragon/resource/Contract/CONAD20171800000292> <http://group01.org/aragon/ontology/hasAwardPrice> "370.9"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000292> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000292> <http://group01.org/aragon/ontology/hasBiddingPrice> "370.9"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000292> <http://group01.org/aragon/ontology/hasDescription> "compra prendas de trabajo guardería infantil la paz"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000292> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000292> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/ANATOMICOS%20MADRID%20S.L.>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000292> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/EDUCACI%C3%93N%2C%20CULTURA%20Y%20DEPORTE>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000053> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000053> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171400000053".
+<http://group01.org/aragon/resource/Contract/CONAD20171400000053> <http://group01.org/aragon/ontology/hasAwardPrice> "14991.48"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000053> <http://group01.org/aragon/ontology/hasAwardProcedure> "Por administración"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000053> <http://group01.org/aragon/ontology/hasBiddingPrice> "14991.48"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000053> <http://group01.org/aragon/ontology/hasDescription> "d.o. proy. obras c.p. torres de barbues h170001"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000053> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000053> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/SDAD%20ARAGONESA%20DE%20GESTION>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000053> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000096> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000096> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171800000096".
+<http://group01.org/aragon/resource/Contract/CONAD20171800000096> <http://group01.org/aragon/ontology/hasAwardPrice> "15091.04"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000096> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000096> <http://group01.org/aragon/ontology/hasBiddingPrice> "15091.04"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000096> <http://group01.org/aragon/ontology/hasDescription> "seguridad archivo hº provincial huesca 2017 (2)"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000096> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000096> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/CIA%20VIGILANCIA%20ARAGONESA%20S.L.>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000096> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/EDUCACI%C3%93N%2C%20CULTURA%20Y%20DEPORTE>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000097> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000097> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171800000097".
+<http://group01.org/aragon/resource/Contract/CONAD20171800000097> <http://group01.org/aragon/ontology/hasAwardPrice> "22630.96"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000097> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000097> <http://group01.org/aragon/ontology/hasBiddingPrice> "22630.96"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000097> <http://group01.org/aragon/ontology/hasDescription> "seguridad museo huesca 2017 (2)"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000097> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000097> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/CIA%20VIGILANCIA%20ARAGONESA%20S.L.>.
+<http://group01.org/aragon/resource/Contract/CONAD20171800000097> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/EDUCACI%C3%93N%2C%20CULTURA%20Y%20DEPORTE>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000021> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171400000021".
+<http://group01.org/aragon/resource/Contract/CONAD20171400000021> <http://group01.org/aragon/ontology/hasAwardPrice> "41897.32"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000021> <http://group01.org/aragon/ontology/hasAwardProcedure> "Por administración"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000021> <http://group01.org/aragon/ontology/hasBiddingPrice> "41897.32"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000021> <http://group01.org/aragon/ontology/hasDescription> "tf 73369 sanidad forestal en teruel"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000021> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000021> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/SDAD%20ARAGONESA%20DE%20GESTION>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000021> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000058> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000058> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171400000058".
+<http://group01.org/aragon/resource/Contract/CONAD20171400000058> <http://group01.org/aragon/ontology/hasAwardPrice> "62720.89"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000058> <http://group01.org/aragon/ontology/hasAwardProcedure> "Por administración"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000058> <http://group01.org/aragon/ontology/hasBiddingPrice> "62720.89"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000058> <http://group01.org/aragon/ontology/hasDescription> "encargo seguridad y salud obras 2017 a170003"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000058> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000058> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/SDAD%20ARAGONESA%20DE%20GESTION>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000058> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000067> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000067> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171400000067".
+<http://group01.org/aragon/resource/Contract/CONAD20171400000067> <http://group01.org/aragon/ontology/hasAwardPrice> "293974.06"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000067> <http://group01.org/aragon/ontology/hasAwardProcedure> "Por administración"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000067> <http://group01.org/aragon/ontology/hasBiddingPrice> "293974.06"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000067> <http://group01.org/aragon/ontology/hasDescription> "146 rb74011 catálogo especies amenazadas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000067> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000067> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/SDAD%20ARAGONESA%20DE%20GESTION>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000067> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000061> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000061> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20175100000061".
+<http://group01.org/aragon/resource/Contract/CONAD20175100000061> <http://group01.org/aragon/ontology/hasAwardPrice> "300.0"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000061> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000061> <http://group01.org/aragon/ontology/hasBiddingPrice> "452.1"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000061> <http://group01.org/aragon/ontology/hasDescription> "suministro silla de trabajo o.e. huesca"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000061> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000061> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/EL%20CORTE%20INGLES%20S.A.>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000061> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20EMPLEO>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000033> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000033> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171400000033".
+<http://group01.org/aragon/resource/Contract/CONAD20171400000033> <http://group01.org/aragon/ontology/hasAwardPrice> "569635.16"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000033> <http://group01.org/aragon/ontology/hasAwardProcedure> "Por administración"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000033> <http://group01.org/aragon/ontology/hasBiddingPrice> "569635.16"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000033> <http://group01.org/aragon/ontology/hasDescription> "145 rb74019. educ ambiental en c interpretación naturaleza aragón"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000033> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000033> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/SDAD%20ARAGONESA%20DE%20GESTION>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000033> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000034> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000034> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20171400000034".
+<http://group01.org/aragon/resource/Contract/CONAD20171400000034> <http://group01.org/aragon/ontology/hasAwardPrice> "259822.35"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000034> <http://group01.org/aragon/ontology/hasAwardProcedure> "Por administración"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000034> <http://group01.org/aragon/ontology/hasBiddingPrice> "259822.35"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000034> <http://group01.org/aragon/ontology/hasDescription> "145 rb74006. planes de gestión enp aragón"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000034> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000034> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/SDAD%20ARAGONESA%20DE%20GESTION>.
+<http://group01.org/aragon/resource/Contract/CONAD20171400000034> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000135> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000135> <http://www.w3.org/2000/01/rdf-schema#label> "CONAD20175100000135".
+<http://group01.org/aragon/resource/Contract/CONAD20175100000135> <http://group01.org/aragon/ontology/hasAwardPrice> "49.32"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000135> <http://group01.org/aragon/ontology/hasAwardProcedure> "Derivado de acuerdo marco"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000135> <http://group01.org/aragon/ontology/hasBiddingPrice> "230.2"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000135> <http://group01.org/aragon/ontology/hasDescription> "suministro tablón anuncios corcho para cpfip movera"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000135> <http://group01.org/aragon/ontology/hasTypeOfContract> "Suministros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000135> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/TORRES%20EQUIPAMIENTOS%20DE%20OFICINAS>.
+<http://group01.org/aragon/resource/Contract/CONAD20175100000135> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20EMPLEO>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000949> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Contract>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000949> <http://www.w3.org/2000/01/rdf-schema#label> "CONEX20175200000949".
+<http://group01.org/aragon/resource/Contract/CONEX20175200000949> <http://group01.org/aragon/ontology/hasAwardPrice> "95879.2"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000949> <http://group01.org/aragon/ontology/hasAwardProcedure> "Contratación centralizada"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000949> <http://group01.org/aragon/ontology/hasBiddingPrice> "97528.52"^^<http://www.w3.org/2001/XMLSchema#double>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000949> <http://group01.org/aragon/ontology/hasDescription> "s.a.;2017;conex20175200000906;\"\nservicio vigilancia hospital \"obispo polanco\""^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000949> <http://group01.org/aragon/ontology/hasTypeOfContract> "Servicios"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000949> <http://group01.org/aragon/ontology/awardedTo> <http://group01.org/aragon/resource/Company/ILUNION%20SEGURIDAD%20S.A.>.
+<http://group01.org/aragon/resource/Contract/CONEX20175200000949> <http://group01.org/aragon/ontology/hasGovernmentRequester> <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD>.
+<http://group01.org/aragon/resource/Company/EXPO%20ZARAGOZA%20EMPRESARIAL%20S.A.> <http://www.w3.org/2000/01/rdf-schema#label> "EXPO ZARAGOZA EMPRESARIAL S.A.".
+<http://group01.org/aragon/resource/Company/EXPO%20ZARAGOZA%20EMPRESARIAL%20S.A.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/ILUNION%20SEGURIDAD%20S.A.> <http://www.w3.org/2000/01/rdf-schema#label> "ILUNION SEGURIDAD S.A.".
+<http://group01.org/aragon/resource/Company/ILUNION%20SEGURIDAD%20S.A.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/ANATOMICOS%20MADRID%20S.L.> <http://www.w3.org/2000/01/rdf-schema#label> "ANATOMICOS MADRID S.L.".
+<http://group01.org/aragon/resource/Company/ANATOMICOS%20MADRID%20S.L.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/SUMINISTROS%20MATERIAL%20Y%20APARATOS%20DE> <http://www.w3.org/2000/01/rdf-schema#label> "SUMINISTROS MATERIAL Y APARATOS DE".
+<http://group01.org/aragon/resource/Company/SUMINISTROS%20MATERIAL%20Y%20APARATOS%20DE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/ALFAQUIMIA%20SL> <http://www.w3.org/2000/01/rdf-schema#label> "ALFAQUIMIA SL".
+<http://group01.org/aragon/resource/Company/ALFAQUIMIA%20SL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/JAVIER%20SOLANAS%20LABOARAGON%20SL> <http://www.w3.org/2000/01/rdf-schema#label> "JAVIER SOLANAS LABOARAGON SL".
+<http://group01.org/aragon/resource/Company/JAVIER%20SOLANAS%20LABOARAGON%20SL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/VIDRA%20FOC%20S.A.> <http://www.w3.org/2000/01/rdf-schema#label> "VIDRA FOC S.A.".
+<http://group01.org/aragon/resource/Company/VIDRA%20FOC%20S.A.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/GARDA%20SERVICIOS%20DE%20SEGURIDAD%20S.A.> <http://www.w3.org/2000/01/rdf-schema#label> "GARDA SERVICIOS DE SEGURIDAD S.A.".
+<http://group01.org/aragon/resource/Company/GARDA%20SERVICIOS%20DE%20SEGURIDAD%20S.A.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/SOFTWARE%20GRUPO%20V%20SL> <http://www.w3.org/2000/01/rdf-schema#label> "SOFTWARE GRUPO V SL".
+<http://group01.org/aragon/resource/Company/SOFTWARE%20GRUPO%20V%20SL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/EL%20CORTE%20INGLES%20S.A.> <http://www.w3.org/2000/01/rdf-schema#label> "EL CORTE INGLES S.A.".
+<http://group01.org/aragon/resource/Company/EL%20CORTE%20INGLES%20S.A.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/SOLITIUM%20S.L.> <http://www.w3.org/2000/01/rdf-schema#label> "SOLITIUM S.L.".
+<http://group01.org/aragon/resource/Company/SOLITIUM%20S.L.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/BANCO%20SANTANDER%20S.A.> <http://www.w3.org/2000/01/rdf-schema#label> "BANCO SANTANDER S.A.".
+<http://group01.org/aragon/resource/Company/BANCO%20SANTANDER%20S.A.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/LIDERA%20HIGIENE%20SL> <http://www.w3.org/2000/01/rdf-schema#label> "LIDERA HIGIENE SL".
+<http://group01.org/aragon/resource/Company/LIDERA%20HIGIENE%20SL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/CELQUISA%20S.L.LABORAL> <http://www.w3.org/2000/01/rdf-schema#label> "CELQUISA S.L.LABORAL".
+<http://group01.org/aragon/resource/Company/CELQUISA%20S.L.LABORAL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/DISTRIBUCIONES%20NAVARRO-MIR%20S.L.> <http://www.w3.org/2000/01/rdf-schema#label> "DISTRIBUCIONES NAVARRO-MIR S.L.".
+<http://group01.org/aragon/resource/Company/DISTRIBUCIONES%20NAVARRO-MIR%20S.L.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/SDAD%20ARAGONESA%20DE%20GESTION> <http://www.w3.org/2000/01/rdf-schema#label> "SDAD ARAGONESA DE GESTION".
+<http://group01.org/aragon/resource/Company/SDAD%20ARAGONESA%20DE%20GESTION> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/CIA%20VIGILANCIA%20ARAGONESA%20S.L.> <http://www.w3.org/2000/01/rdf-schema#label> "CIA VIGILANCIA ARAGONESA S.L.".
+<http://group01.org/aragon/resource/Company/CIA%20VIGILANCIA%20ARAGONESA%20S.L.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/SIEMENS%20HEALTHCARE%2C%20S.L.> <http://www.w3.org/2000/01/rdf-schema#label> "SIEMENS HEALTHCARE, S.L.".
+<http://group01.org/aragon/resource/Company/SIEMENS%20HEALTHCARE%2C%20S.L.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/EULEN%20SEGURIDAD%20S.A.> <http://www.w3.org/2000/01/rdf-schema#label> "EULEN SEGURIDAD S.A.".
+<http://group01.org/aragon/resource/Company/EULEN%20SEGURIDAD%20S.A.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/QDIAGNOSTICA> <http://www.w3.org/2000/01/rdf-schema#label> "QDIAGNOSTICA".
+<http://group01.org/aragon/resource/Company/QDIAGNOSTICA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/CLINICA%20MONTPELLIER%20GRUPO%20HLA%2C%20SAU> <http://www.w3.org/2000/01/rdf-schema#label> "CLINICA MONTPELLIER GRUPO HLA, SAU".
+<http://group01.org/aragon/resource/Company/CLINICA%20MONTPELLIER%20GRUPO%20HLA%2C%20SAU> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/DRA%20ROCA%20DIAGNOSTICO%20MEDICO%20S.L.> <http://www.w3.org/2000/01/rdf-schema#label> "DRA ROCA DIAGNOSTICO MEDICO S.L.".
+<http://group01.org/aragon/resource/Company/DRA%20ROCA%20DIAGNOSTICO%20MEDICO%20S.L.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/PARACELSO%20DIAGNOSTICO%20MEDICO%20S.L.> <http://www.w3.org/2000/01/rdf-schema#label> "PARACELSO DIAGNOSTICO MEDICO S.L.".
+<http://group01.org/aragon/resource/Company/PARACELSO%20DIAGNOSTICO%20MEDICO%20S.L.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/NFC%20Y%20SUE%C3%91O%2C%20SL> <http://www.w3.org/2000/01/rdf-schema#label> "NFC Y SUEÑO, SL".
+<http://group01.org/aragon/resource/Company/NFC%20Y%20SUE%C3%91O%2C%20SL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/REPSOL%20COMERCIAL%20DE%20PRODUCTOS> <http://www.w3.org/2000/01/rdf-schema#label> "REPSOL COMERCIAL DE PRODUCTOS".
+<http://group01.org/aragon/resource/Company/REPSOL%20COMERCIAL%20DE%20PRODUCTOS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/MEDTRONIC%20IBERICA%20S.A.> <http://www.w3.org/2000/01/rdf-schema#label> "MEDTRONIC IBERICA S.A.".
+<http://group01.org/aragon/resource/Company/MEDTRONIC%20IBERICA%20S.A.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/FUNDACION%20ADCARA> <http://www.w3.org/2000/01/rdf-schema#label> "FUNDACION ADCARA".
+<http://group01.org/aragon/resource/Company/FUNDACION%20ADCARA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/SA%20AGRICULTORES%20VEGA%20DE%20VALENCIA-> <http://www.w3.org/2000/01/rdf-schema#label> "SA AGRICULTORES VEGA DE VALENCIA-".
+<http://group01.org/aragon/resource/Company/SA%20AGRICULTORES%20VEGA%20DE%20VALENCIA-> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/ARAGONESA%20OBRAS%20CIVILES%20SL> <http://www.w3.org/2000/01/rdf-schema#label> "ARAGONESA OBRAS CIVILES SL".
+<http://group01.org/aragon/resource/Company/ARAGONESA%20OBRAS%20CIVILES%20SL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/GRANT%20THORNTON%20SL%20PROFESIONAL> <http://www.w3.org/2000/01/rdf-schema#label> "GRANT THORNTON SL PROFESIONAL".
+<http://group01.org/aragon/resource/Company/GRANT%20THORNTON%20SL%20PROFESIONAL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/UTE-CIS%20COMPA%C3%91IA%20INTEGRAL%20DE> <http://www.w3.org/2000/01/rdf-schema#label> "UTE-CIS COMPAÑIA INTEGRAL DE".
+<http://group01.org/aragon/resource/Company/UTE-CIS%20COMPA%C3%91IA%20INTEGRAL%20DE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/TRATAMIENTOS%20AGRICOLAS%20AEREOS> <http://www.w3.org/2000/01/rdf-schema#label> "TRATAMIENTOS AGRICOLAS AEREOS".
+<http://group01.org/aragon/resource/Company/TRATAMIENTOS%20AGRICOLAS%20AEREOS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/EZAGUE%20S.L.> <http://www.w3.org/2000/01/rdf-schema#label> "EZAGUE S.L.".
+<http://group01.org/aragon/resource/Company/EZAGUE%20S.L.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/REGIO%20PLUS%20CONSULTING%20SL> <http://www.w3.org/2000/01/rdf-schema#label> "REGIO PLUS CONSULTING SL".
+<http://group01.org/aragon/resource/Company/REGIO%20PLUS%20CONSULTING%20SL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/UTE-VIRTUAL-ANEUM> <http://www.w3.org/2000/01/rdf-schema#label> "UTE-VIRTUAL-ANEUM".
+<http://group01.org/aragon/resource/Company/UTE-VIRTUAL-ANEUM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/ALOSA%20AUTOCARES%20Y%20AUTOBUSES%20S.L.> <http://www.w3.org/2000/01/rdf-schema#label> "ALOSA AUTOCARES Y AUTOBUSES S.L.".
+<http://group01.org/aragon/resource/Company/ALOSA%20AUTOCARES%20Y%20AUTOBUSES%20S.L.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/RETEVISION%20I%20S.A.> <http://www.w3.org/2000/01/rdf-schema#label> "RETEVISION I S.A.".
+<http://group01.org/aragon/resource/Company/RETEVISION%20I%20S.A.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/UTE%20ILLUECA%20-%20CONST.M.LOPEZ%20NAVARRO> <http://www.w3.org/2000/01/rdf-schema#label> "UTE ILLUECA - CONST.M.LOPEZ NAVARRO".
+<http://group01.org/aragon/resource/Company/UTE%20ILLUECA%20-%20CONST.M.LOPEZ%20NAVARRO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/INTELECTO%20CONSULTORIA%20DE%20PROYECTOS> <http://www.w3.org/2000/01/rdf-schema#label> "INTELECTO CONSULTORIA DE PROYECTOS".
+<http://group01.org/aragon/resource/Company/INTELECTO%20CONSULTORIA%20DE%20PROYECTOS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/VEOLIA%20SERVICIOS%20NORTE%20S.A.U.> <http://www.w3.org/2000/01/rdf-schema#label> "VEOLIA SERVICIOS NORTE S.A.U.".
+<http://group01.org/aragon/resource/Company/VEOLIA%20SERVICIOS%20NORTE%20S.A.U.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/DELOITTE%20CONSULTING%20S.L.> <http://www.w3.org/2000/01/rdf-schema#label> "DELOITTE CONSULTING S.L.".
+<http://group01.org/aragon/resource/Company/DELOITTE%20CONSULTING%20S.L.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/IA%20SOFT%20ARAGON%20SL> <http://www.w3.org/2000/01/rdf-schema#label> "IA SOFT ARAGON SL".
+<http://group01.org/aragon/resource/Company/IA%20SOFT%20ARAGON%20SL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/BABCOCK%20MISSION%20CRITICAL%20SERVICES> <http://www.w3.org/2000/01/rdf-schema#label> "BABCOCK MISSION CRITICAL SERVICES".
+<http://group01.org/aragon/resource/Company/BABCOCK%20MISSION%20CRITICAL%20SERVICES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/INSERCION%20Y%20TRABAJO%20SL> <http://www.w3.org/2000/01/rdf-schema#label> "INSERCION Y TRABAJO SL".
+<http://group01.org/aragon/resource/Company/INSERCION%20Y%20TRABAJO%20SL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/CENTRO%20INVESTIGACION%20Y%20TECNOLOGIA> <http://www.w3.org/2000/01/rdf-schema#label> "CENTRO INVESTIGACION Y TECNOLOGIA".
+<http://group01.org/aragon/resource/Company/CENTRO%20INVESTIGACION%20Y%20TECNOLOGIA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/OFITECNICA%20OFICINA%20TECNICA%20S.L.> <http://www.w3.org/2000/01/rdf-schema#label> "OFITECNICA OFICINA TECNICA S.L.".
+<http://group01.org/aragon/resource/Company/OFITECNICA%20OFICINA%20TECNICA%20S.L.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/BALLAROL%20OFICINAS%20S.L.L.> <http://www.w3.org/2000/01/rdf-schema#label> "BALLAROL OFICINAS S.L.L.".
+<http://group01.org/aragon/resource/Company/BALLAROL%20OFICINAS%20S.L.L.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/CONFECCIONES%20OROEL%20S.A.> <http://www.w3.org/2000/01/rdf-schema#label> "CONFECCIONES OROEL S.A.".
+<http://group01.org/aragon/resource/Company/CONFECCIONES%20OROEL%20S.A.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/TECNOLOGIAS%20Y%20SERVICIOS%20AGRARIOS%20SA> <http://www.w3.org/2000/01/rdf-schema#label> "TECNOLOGIAS Y SERVICIOS AGRARIOS SA".
+<http://group01.org/aragon/resource/Company/TECNOLOGIAS%20Y%20SERVICIOS%20AGRARIOS%20SA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/ARAGONESA%20DE%20SERVICIOS%20TELEMATICOS> <http://www.w3.org/2000/01/rdf-schema#label> "ARAGONESA DE SERVICIOS TELEMATICOS".
+<http://group01.org/aragon/resource/Company/ARAGONESA%20DE%20SERVICIOS%20TELEMATICOS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/EUROHELP%20CONSULTING%20S.L.> <http://www.w3.org/2000/01/rdf-schema#label> "EUROHELP CONSULTING S.L.".
+<http://group01.org/aragon/resource/Company/EUROHELP%20CONSULTING%20S.L.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/Company/TORRES%20EQUIPAMIENTOS%20DE%20OFICINAS> <http://www.w3.org/2000/01/rdf-schema#label> "TORRES EQUIPAMIENTOS DE OFICINAS".
+<http://group01.org/aragon/resource/Company/TORRES%20EQUIPAMIENTOS%20DE%20OFICINAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/Company>.
+<http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20GESTI%C3%93N%20AMBIENTAL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/GovernmentBody>.
+<http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20GESTI%C3%93N%20AMBIENTAL> <http://www.w3.org/2000/01/rdf-schema#label> "INSTITUTO ARAGONÉS DE GESTIÓN AMBIENTAL".
+<http://group01.org/aragon/resource/GovernmentBody/EDUCACI%C3%93N%2C%20CULTURA%20Y%20DEPORTE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/GovernmentBody>.
+<http://group01.org/aragon/resource/GovernmentBody/EDUCACI%C3%93N%2C%20CULTURA%20Y%20DEPORTE> <http://www.w3.org/2000/01/rdf-schema#label> "EDUCACIÓN, CULTURA Y DEPORTE".
+<http://group01.org/aragon/resource/GovernmentBody/SANIDAD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/GovernmentBody>.
+<http://group01.org/aragon/resource/GovernmentBody/SANIDAD> <http://www.w3.org/2000/01/rdf-schema#label> "SANIDAD".
+<http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20LA%20JUVENTUD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/GovernmentBody>.
+<http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20LA%20JUVENTUD> <http://www.w3.org/2000/01/rdf-schema#label> "INSTITUTO ARAGONÉS DE LA JUVENTUD".
+<http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20EMPLEO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/GovernmentBody>.
+<http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20EMPLEO> <http://www.w3.org/2000/01/rdf-schema#label> "INSTITUTO ARAGONÉS DE EMPLEO".
+<http://group01.org/aragon/resource/GovernmentBody/CIUDADAN%C3%8DA%20Y%20DERECHOS%20SOCIALES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/GovernmentBody>.
+<http://group01.org/aragon/resource/GovernmentBody/CIUDADAN%C3%8DA%20Y%20DERECHOS%20SOCIALES> <http://www.w3.org/2000/01/rdf-schema#label> "CIUDADANÍA Y DERECHOS SOCIALES".
+<http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20SERVICIOS%20SOCIALES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/GovernmentBody>.
+<http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20SERVICIOS%20SOCIALES> <http://www.w3.org/2000/01/rdf-schema#label> "INSTITUTO ARAGONÉS DE SERVICIOS SOCIALES".
+<http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/GovernmentBody>.
+<http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD> <http://www.w3.org/2000/01/rdf-schema#label> "DESARROLLO RURAL Y SOSTENIBILIDAD".
+<http://group01.org/aragon/resource/GovernmentBody/PRESIDENCIA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/GovernmentBody>.
+<http://group01.org/aragon/resource/GovernmentBody/PRESIDENCIA> <http://www.w3.org/2000/01/rdf-schema#label> "PRESIDENCIA".
+<http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/GovernmentBody>.
+<http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD> <http://www.w3.org/2000/01/rdf-schema#label> "SERVICIO ARAGONÉS DE SALUD".
+<http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20LA%20MUJER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/GovernmentBody>.
+<http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20LA%20MUJER> <http://www.w3.org/2000/01/rdf-schema#label> "INSTITUTO ARAGONÉS DE LA MUJER".
+<http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DEL%20AGUA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/GovernmentBody>.
+<http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DEL%20AGUA> <http://www.w3.org/2000/01/rdf-schema#label> "INSTITUTO ARAGONÉS DEL AGUA".
+<http://group01.org/aragon/resource/GovernmentBody/HACIENDA%20Y%20ADMINISTRACI%C3%93N%20P%C3%9ABLICA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/GovernmentBody>.
+<http://group01.org/aragon/resource/GovernmentBody/HACIENDA%20Y%20ADMINISTRACI%C3%93N%20P%C3%9ABLICA> <http://www.w3.org/2000/01/rdf-schema#label> "HACIENDA Y ADMINISTRACIÓN PÚBLICA".
+<http://group01.org/aragon/resource/GovernmentBody/VERTEBRACI%C3%93N%20DEL%20TERRITORIO%2C%20MOVILIDAD%20Y%20VIVIENDA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/GovernmentBody>.
+<http://group01.org/aragon/resource/GovernmentBody/VERTEBRACI%C3%93N%20DEL%20TERRITORIO%2C%20MOVILIDAD%20Y%20VIVIENDA> <http://www.w3.org/2000/01/rdf-schema#label> "VERTEBRACIÓN DEL TERRITORIO, MOVILIDAD Y VIVIENDA".
+<http://group01.org/aragon/resource/GovernmentBody/INNOVACI%C3%93N%2C%20INVESTIGACI%C3%93N%20Y%20UNIVERSIDAD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/GovernmentBody>.
+<http://group01.org/aragon/resource/GovernmentBody/INNOVACI%C3%93N%2C%20INVESTIGACI%C3%93N%20Y%20UNIVERSIDAD> <http://www.w3.org/2000/01/rdf-schema#label> "INNOVACIÓN, INVESTIGACIÓN Y UNIVERSIDAD".
+<http://group01.org/aragon/resource/GovernmentBody/ECONOM%C3%8DA%2C%20INDUSTRIA%20Y%20EMPLEO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group01.org/aragon/ontology/GovernmentBody>.
+<http://group01.org/aragon/resource/GovernmentBody/ECONOM%C3%8DA%2C%20INDUSTRIA%20Y%20EMPLEO> <http://www.w3.org/2000/01/rdf-schema#label> "ECONOMÍA, INDUSTRIA Y EMPLEO".

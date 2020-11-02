@@ -1,0 +1,67 @@
+1.Get all the classes
+
+SELECT DISTINCT ?class
+WHERE
+{
+{?x a ?class} 
+UNION
+{?class rdf:type rdfs:Class}
+}
+
+2. Get all the subclasses of the class Transaction (=trans)
+
+PREFIX ex: <http://GovernmentProcurementCard.es#>
+
+SELECT DISTINCT ?x
+WHERE
+{
+?x rdfs:subClassOf/rdfs:subClassOf* ex:trans
+}
+
+3.Get the amount of the transaction 20150320_ALEXANDER_BROWN_AND_CO_166919 
+
+PREFIX ex: <http://GovernmentProcurementCard.es#>
+
+SELECT DISTINCT ?amount
+WHERE {
+ex:20150320_ALEXANDER_BROWN_AND_CO_166919 ex:hasTransactionAmount ?amount.
+}
+
+4. Get all amounts, ordered by transaction date (ascending)
+
+PREFIX ex: <http://GovernmentProcurementCard.es#>
+
+SELECT DISTINCT ?x ?amount
+WHERE {
+
+?x ex:hasTransactionDate ?amount .
+
+?amount ex:hasTransactionAmount ?date.
+
+}
+order by asc(str(?date))
+
+
+5.Get all transactions with more than 1.000 £
+
+PREFIX ex: <http://GovernmentProcurementCard.es#>
+
+SELECT DISTINCT ?x ?amount
+WHERE
+{​​​​​
+?x rdf:type/rdfs:subClassOf* ex:trans .​
+?x ex:hasTransactionAmount ?amount.
+
+}​​​​​
+FILTER ((?amount)^xsd:double > 1000)
+}​​​​​
+
+LIMIT 100
+
+6. Describe seller named "ALEXANDER_BROWN_AND_CO"
+
+PREFIX ex: <http://GovernmentProcurementCard.es#>
+DESCRIBE ?x 
+
+WHERE{?x rdfs:label "ALEXANDER_BROWN_AND_CO" .
+}
