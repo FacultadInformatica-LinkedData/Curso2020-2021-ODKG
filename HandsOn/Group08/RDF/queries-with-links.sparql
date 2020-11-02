@@ -1,12 +1,12 @@
 PREFIX s:<http://schema.org/>
-PREFIX ex:<http://www.publicProcurementMurciaCOVID19.es/ontology/ont#>
+PREFIX ex:<http://www.publicProcurementMurciaCOVID19.es/ontology#>
 PREFIX owl:<http://www.w3.org/2002/07/owl#>
 
 ##### Organizations ordered by number of orders #####
 SELECT
     ?name ?link (COUNT(?Order) as ?nCount)
 
-  WHERE { 
+  WHERE {
       ?Order s:seller ?Organization.
       ?Organization s:name ?name.
       ?Organization owl:sameAs ?link.
