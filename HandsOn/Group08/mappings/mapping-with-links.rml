@@ -58,7 +58,7 @@ map:map_product_0 rml:logicalSource map:source_7;
     rr:subjectMap map:s_7;
     rr:predicateObjectMap map:pom_36, map:pom_37.
 map:om_0 a rr:ObjectMap;
-    rr:constant "http://www.publicProcurementMurciaCOVID19.es/ontology/ont#CovidStatus";
+    rr:constant "http://www.publicProcurementMurciaCOVID19.es/ontology#CovidStatus";
     rr:termType rr:IRI.
 map:om_1 a rr:ObjectMap;
     rml:reference "PCR+";
@@ -196,21 +196,21 @@ map:om_9 a rr:ObjectMap;
 map:pm_0 a rr:PredicateMap;
     rr:constant rdf:type.
 map:pm_1 a rr:PredicateMap;
-    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numPositivePCR>.
+    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#numPositivePCR>.
 map:pm_10 a rr:PredicateMap;
-    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numPositiveUnknown>.
+    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#numPositiveUnknown>.
 map:pm_11 a rr:PredicateMap;
-    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology/ont#totalCases>.
+    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#totalCases>.
 map:pm_12 a rr:PredicateMap;
     rr:constant rdf:type.
 map:pm_13 a rr:PredicateMap;
     rr:constant <http://schema.org/name>.
 map:pm_14 a rr:PredicateMap;
-    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology/ont#hasISOCode>.
+    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#hasISOCode>.
 map:pm_15 a rr:PredicateMap;
     rr:constant <http://www.w3.org/2002/07/owl#sameAs>.
 map:pm_16 a rr:PredicateMap;
-    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology/ont#hasCovidStatus>.
+    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#hasCovidStatus>.
 map:pm_17 a rr:PredicateMap;
     rr:constant rdf:type.
 map:pm_18 a rr:PredicateMap;
@@ -218,7 +218,7 @@ map:pm_18 a rr:PredicateMap;
 map:pm_19 a rr:PredicateMap;
     rr:constant <http://schema.org/customer>.
 map:pm_2 a rr:PredicateMap;
-    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numPositiveAC>.
+    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#numPositiveAC>.
 map:pm_20 a rr:PredicateMap;
     rr:constant <http://schema.org/orderedItem>.
 map:pm_21 a rr:PredicateMap;
@@ -236,21 +236,21 @@ map:pm_26 a rr:PredicateMap;
 map:pm_27 a rr:PredicateMap;
     rr:constant rdf:type.
 map:pm_28 a rr:PredicateMap;
-    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology/ont#hasIVA>.
+    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#hasVAT>.
 map:pm_29 a rr:PredicateMap;
     rr:constant <http://schema.org/orderQuantity>.
 map:pm_3 a rr:PredicateMap;
-    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numberDeaths>.
+    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#numberDeaths>.
 map:pm_30 a rr:PredicateMap;
-    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology/ont#hasOrderAmount>.
+    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#hasOrderAmount>.
 map:pm_31 a rr:PredicateMap;
-    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology/ont#hasPaidAmount>.
+    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#hasPaidAmount>.
 map:pm_32 a rr:PredicateMap;
-    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology/ont#hasPendingAmount>.
+    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#hasPendingAmount>.
 map:pm_33 a rr:PredicateMap;
-    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology/ont#hasProductQuantityPending>.
+    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#hasProductQuantityPending>.
 map:pm_34 a rr:PredicateMap;
-    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology/ont#hasProductQuantityReceived>.
+    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#hasProductQuantityReceived>.
 map:pm_35 a rr:PredicateMap;
     rr:constant <http://schema.org/orderedItem>.
 map:pm_36 a rr:PredicateMap;
@@ -258,17 +258,17 @@ map:pm_36 a rr:PredicateMap;
 map:pm_37 a rr:PredicateMap;
     rr:constant <http://schema.org/name>.
 map:pm_4 a rr:PredicateMap;
-    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numberUCI>.
+    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#numberUCI>.
 map:pm_5 a rr:PredicateMap;
-    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numberHospitalizations>.
+    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#numberHospitalizations>.
 map:pm_6 a rr:PredicateMap;
-    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology/ont#inDate>.
+    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#inDate>.
 map:pm_7 a rr:PredicateMap;
-    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numPCR>.
+    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#numPCR>.
 map:pm_8 a rr:PredicateMap;
-    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numAC>.
+    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#numAC>.
 map:pm_9 a rr:PredicateMap;
-    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numPositiveOther>.
+    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#numPositiveOther>.
 map:pom_0 a rr:PredicateObjectMap;
     rr:predicateMap map:pm_0;
     rr:objectMap map:om_0.

@@ -1,5 +1,5 @@
 PREFIX s:<http://schema.org/>
-PREFIX ex:<http://www.publicProcurementMurciaCOVID19.es/ontology/ont#>
+PREFIX ex:<http://www.publicProcurementMurciaCOVID19.es/ontology#>
 
 
 ##### Max number of patients in UCI for each Region #####
