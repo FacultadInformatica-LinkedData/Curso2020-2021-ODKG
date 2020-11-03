@@ -9,13 +9,14 @@ prefixes:
   rml: http://semweb.mmlab.be/ns/rml#
   ql: http://semweb.mmlab.be/ns/ql#
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  owl: http://www.w3.org/2002/07/owl#
   vocab: http://example.org#
   ns: http://publicprocurement.odkg.es/group06/ontology/ppg6#
 
 mappings:
   Contract:
     sources:
-      - [Public_procurement_catalonia_COVID-19-updated-reduced.csv~csv]
+      - [Public_procurement_catalonia_COVID-19-updated-csv-with-links.csv~csv]
     s: http://publicprocurement.odkg.es/group06/resource/Contract/$(id)
     po:
       - [a, ns:Contract]
@@ -48,16 +49,17 @@ mappings:
 
   PublicOrganization:
     sources:
-      - [Public_procurement_catalonia_COVID-19-updated-reduced.csv~csv]
+      - [Public_procurement_catalonia_COVID-19-updated-csv-with-links.csv~csv]
     s: http://publicprocurement.odkg.es/group06/resource/PublicOrganization/$(Organ de contractacio)
     po:
       - [a, ns:PublicOrganization]
       - [ns:scope, $(Ambit subjectiu), xsd:string]
       - [ns:name, $(Organ de contractacio), xsd:string] 
+      - [owl:sameAs, $(Organ de contractacio wikidata link)~iri] 
 
   Company:
     sources:
-      - [Public_procurement_catalonia_COVID-19-updated-reduced.csv~csv]
+      - [Public_procurement_catalonia_COVID-19-updated-csv-with-links.csv~csv]
     s: http://publicprocurement.odkg.es/group06/resource/Company/$(Empresa adjudicataria)
     po:
       - [a, ns:Company]

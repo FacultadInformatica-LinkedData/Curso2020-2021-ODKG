@@ -1,0 +1,2496 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Organ de contractacio",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "Organ de contractacio 2",
+    "columnInsertIndex": 2,
+    "description": "Create column Organ de contractacio 2 at index 2 based on column Organ de contractacio using expression grel:value"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q327333",
+        "name": "government agency"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Organ de contractacio 2 to type Q327333"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Institut Català de la Salut (ICS)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q11926710",
+      "name": "Institut Català de la Salut",
+      "types": [
+        "Q327333",
+        "Q1774587",
+        "Q891723"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Match item Institut Català de la Salut (Q11926710) for cells containing \"Institut Català de la Salut (ICS)\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Institut d'Assistència Sanitària (IAS)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q30285209",
+      "name": "Institut d'Assistència Sanitària",
+      "types": [
+        "Q4287745",
+        "Q327333"
+      ],
+      "score": 94
+    },
+    "shareNewTopics": false,
+    "description": "Match item Institut d'Assistència Sanitària (Q30285209) for cells containing \"Institut d'Assistència Sanitària (IAS)\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Agència Catalana de l'Aigua (ACA)",
+                "l": "Agència Catalana de l'Aigua (ACA)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Agència Catalana de l'Aigua (ACA)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q8191323",
+      "name": "Catalan Water Agency",
+      "types": [
+        "Q327333"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Match item Catalan Water Agency (Q8191323) for cells containing \"Agència Catalana de l'Aigua (ACA)\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centre d'Iniciatives per a la Reinserció (CIRE)",
+                "l": "Centre d'Iniciatives per a la Reinserció (CIRE)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Centre d'Iniciatives per a la Reinserció (CIRE)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q54851088",
+      "name": "Centre d'Iniciatives per a la Reinserció",
+      "types": [
+        "Q327333"
+      ],
+      "score": 94
+    },
+    "shareNewTopics": false,
+    "description": "Match item Centre d'Iniciatives per a la Reinserció (Q54851088) for cells containing \"Centre d'Iniciatives per a la Reinserció (CIRE)\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Universitat Rovira i Virgili",
+                "l": "Universitat Rovira i Virgili"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Universitat Rovira i Virgili",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3133193",
+      "name": "Rovira i Virgili University",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Rovira i Virgili University (Q3133193) for cells containing \"Universitat Rovira i Virgili\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Universitat Politècnica de Catalunya",
+                "l": "Universitat Politècnica de Catalunya"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Universitat Politècnica de Catalunya",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1640731",
+      "name": "Polytechnic University of Catalonia",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Polytechnic University of Catalonia (Q1640731) for cells containing \"Universitat Politècnica de Catalunya\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Sistema d'Emergències Mèdiques SA (SEMSA)",
+                "l": "Sistema d'Emergències Mèdiques SA (SEMSA)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Sistema d'Emergències Mèdiques SA (SEMSA)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6129738",
+      "name": "Emergency Medical System",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Emergency Medical System (Q6129738) for cells containing \"Sistema d'Emergències Mèdiques SA (SEMSA)\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Servei d'Ocupació de Catalunya (SOC)",
+                "l": "Servei d'Ocupació de Catalunya (SOC)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Servei d'Ocupació de Catalunya (SOC)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20103779",
+      "name": "Servei d'Ocupació de Catalunya",
+      "types": [
+        "Q327333"
+      ],
+      "score": 94
+    },
+    "shareNewTopics": false,
+    "description": "Match item Servei d'Ocupació de Catalunya (Q20103779) for cells containing \"Servei d'Ocupació de Catalunya (SOC)\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Servei Català de la Salut (CatSalut)",
+                "l": "Servei Català de la Salut (CatSalut)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Servei Català de la Salut (CatSalut)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q8342755",
+      "name": "CatSalut",
+      "types": [
+        "Q327333"
+      ],
+      "score": 85
+    },
+    "shareNewTopics": false,
+    "description": "Match item CatSalut (Q8342755) for cells containing \"Servei Català de la Salut (CatSalut)\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Secretaria d'Universitats i Recerca",
+                "l": "Secretaria d'Universitats i Recerca"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Secretaria d'Universitats i Recerca",
+    "judgment": "matched",
+    "match": {
+      "id": "Q54844023",
+      "name": "Secretariat of State for Universities, Research, Development and Innovation of Spain",
+      "types": [
+        "Q41062250"
+      ],
+      "score": 67
+    },
+    "shareNewTopics": false,
+    "description": "Match item Secretariat of State for Universities, Research, Development and Innovation of Spain (Q54844023) for cells containing \"Secretaria d'Universitats i Recerca\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Ports de la Generalitat",
+                "l": "Ports de la Generalitat"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Ports de la Generalitat",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20104526",
+      "name": "Ports de la Generalitat de Catalunya",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Ports de la Generalitat de Catalunya (Q20104526) for cells containing \"Ports de la Generalitat\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Institut de Seguretat Pública de Catalunya",
+                "l": "Institut de Seguretat Pública de Catalunya"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Institut de Seguretat Pública de Catalunya",
+    "judgment": "matched",
+    "match": {
+      "id": "Q11926745",
+      "name": "Institute of Public Safety of Catalonia",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Institute of Public Safety of Catalonia (Q11926745) for cells containing \"Institut de Seguretat Pública de Catalunya\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Institut de Recerca i Tecnologia Agroalimentàries (IRTA)",
+                "l": "Institut de Recerca i Tecnologia Agroalimentàries (IRTA)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Institut de Recerca i Tecnologia Agroalimentàries (IRTA)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q9006472",
+      "name": "Institute for Research and Technology in Food and Agriculture",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Institute for Research and Technology in Food and Agriculture (Q9006472) for cells containing \"Institut de Recerca i Tecnologia Agroalimentàries (IRTA)\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Institut d'Investigacions Biomèdiques August Pi i Sunyer",
+                "l": "Institut d'Investigacions Biomèdiques August Pi i Sunyer"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Institut d'Investigacions Biomèdiques August Pi i Sunyer",
+    "judgment": "matched",
+    "match": {
+      "id": "Q25422555",
+      "name": "Institut d'Investigacions Biomèdiques August Pi i Sunyer",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Institut d'Investigacions Biomèdiques August Pi i Sunyer (Q25422555) for cells containing \"Institut d'Investigacions Biomèdiques August Pi i Sunyer\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Institut d'Investigació Biomèdica de Girona (IDIBGI)",
+                "l": "Institut d'Investigació Biomèdica de Girona (IDIBGI)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Institut d'Investigació Biomèdica de Girona (IDIBGI)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q30287735",
+      "name": "Girona Biomedical Research Institute",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Girona Biomedical Research Institute (Q30287735) for cells containing \"Institut d'Investigació Biomèdica de Girona (IDIBGI)\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Institut d'Investigació Biomèdica de Bellvitge (IDIBELL)",
+                "l": "Institut d'Investigació Biomèdica de Bellvitge (IDIBELL)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Institut d'Investigació Biomèdica de Bellvitge (IDIBELL)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5906781",
+      "name": "Bellvitge Biomedical Research Institute",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Bellvitge Biomedical Research Institute (Q5906781) for cells containing \"Institut d'Investigació Biomèdica de Bellvitge (IDIBELL)\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Institut d'Estadística de Catalunya (IDESCAT)",
+                "l": "Institut d'Estadística de Catalunya (IDESCAT)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Institut d'Estadística de Catalunya (IDESCAT)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1636785",
+      "name": "Institut d'Estadística de Catalunya",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Institut d'Estadística de Catalunya (Q1636785) for cells containing \"Institut d'Estadística de Catalunya (IDESCAT)\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Institut Català de Finances (ICF)",
+                "l": "Institut Català de Finances (ICF)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Institut Català de Finances (ICF)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q11926703",
+      "name": "Catalan Institute of Finance",
+      "types": [
+        "Q327333"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Match item Catalan Institute of Finance (Q11926703) for cells containing \"Institut Català de Finances (ICF)\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Agència Catalana de Turisme",
+                "l": "Agència Catalana de Turisme"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Agència Catalana de Turisme",
+    "judgment": "matched",
+    "match": {
+      "id": "Q18008724",
+      "name": "Turisme de Barcelona",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Turisme de Barcelona (Q18008724) for cells containing \"Agència Catalana de Turisme\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Agència de Residus de Catalunya",
+                "l": "Agència de Residus de Catalunya"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Agència de Residus de Catalunya",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20102528",
+      "name": "Agència de Residus de Catalunya",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Agència de Residus de Catalunya (Q20102528) for cells containing \"Agència de Residus de Catalunya\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centre de Telecomunicacions i Tecnologies de la Informació de la Generalitat de Catalunya",
+                "l": "Centre de Telecomunicacions i Tecnologies de la Informació de la Generalitat de Catalunya"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Centre de Telecomunicacions i Tecnologies de la Informació de la Generalitat de Catalunya",
+    "judgment": "matched",
+    "match": {
+      "id": "Q38188558",
+      "name": "Centre de Telecomunicacions i Tecnologies de la Informació de la Generalitat de Catalunya",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Centre de Telecomunicacions i Tecnologies de la Informació de la Generalitat de Catalunya (Q38188558) for cells containing \"Centre de Telecomunicacions i Tecnologies de la Informació de la Generalitat de Catalunya\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Banc de Sang i Teixits (BST)",
+                "l": "Banc de Sang i Teixits (BST)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Banc de Sang i Teixits (BST)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q24810128",
+      "name": "Banc de Sang i Teixits",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Banc de Sang i Teixits (Q24810128) for cells containing \"Banc de Sang i Teixits (BST)\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Centre d'Atenció i Gestió de Trucades d'Urgències 112 Catalunya",
+                "l": "Centre d'Atenció i Gestió de Trucades d'Urgències 112 Catalunya"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Centre d'Atenció i Gestió de Trucades d'Urgències 112 Catalunya",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20103205",
+      "name": "Centre d'Atenció i Gestió de Trucades d'Urgència 112 Catalunya",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Centre d'Atenció i Gestió de Trucades d'Urgència 112 Catalunya (Q20103205) for cells containing \"Centre d'Atenció i Gestió de Trucades d'Urgències 112 Catalunya\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
+                "l": "Consorci Corporació Sanitària Parc Taulí de Sabadell"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
+    "judgment": "matched",
+    "match": {
+      "id": "Q30286995",
+      "name": "Consorci Corporació Sanitària Parc Taulí",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Consorci Corporació Sanitària Parc Taulí (Q30286995) for cells containing \"Consorci Corporació Sanitària Parc Taulí de Sabadell\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Consorci Hospital Clínic de Barcelona (HCB)",
+                "l": "Consorci Hospital Clínic de Barcelona (HCB)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Consorci Hospital Clínic de Barcelona (HCB)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2371388",
+      "name": "Hospital Clinic of Barcelona",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Hospital Clinic of Barcelona (Q2371388) for cells containing \"Consorci Hospital Clínic de Barcelona (HCB)\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Consorci Hospitalari de Vic",
+                "l": "Consorci Hospitalari de Vic"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Consorci Hospitalari de Vic",
+    "judgment": "matched",
+    "match": {
+      "id": "Q87771328",
+      "name": "Consorci Hospitalari de Vic",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Consorci Hospitalari de Vic (Q87771328) for cells containing \"Consorci Hospitalari de Vic\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Consorci Mar Parc de Salut de Barcelona",
+                "l": "Consorci Mar Parc de Salut de Barcelona"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Consorci Mar Parc de Salut de Barcelona",
+    "judgment": "matched",
+    "match": {
+      "id": "Q87775501",
+      "name": "Consorci Mar Parc de Salut de Barcelona",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Consorci Mar Parc de Salut de Barcelona (Q87775501) for cells containing \"Consorci Mar Parc de Salut de Barcelona\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Consorci Sanitari de l'Alt Penedès i Garraf",
+                "l": "Consorci Sanitari de l'Alt Penedès i Garraf"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Consorci Sanitari de l'Alt Penedès i Garraf",
+    "judgment": "matched",
+    "match": {
+      "id": "Q87902215",
+      "name": "Consorci Sanitari de l'Alt Penedès",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Consorci Sanitari de l'Alt Penedès (Q87902215) for cells containing \"Consorci Sanitari de l'Alt Penedès i Garraf\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Consorci Sanitari de l'Anoia",
+                "l": "Consorci Sanitari de l'Anoia"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Consorci Sanitari de l'Anoia",
+    "judgment": "matched",
+    "match": {
+      "id": "Q87651931",
+      "name": "Consorci Sanitari de l’Anoia",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Consorci Sanitari de l’Anoia (Q87651931) for cells containing \"Consorci Sanitari de l'Anoia\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Consorci Sanitari de Terrassa",
+                "l": "Consorci Sanitari de Terrassa"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Consorci Sanitari de Terrassa",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20105388",
+      "name": "Consorci Sanitari de Terrassa",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Consorci Sanitari de Terrassa (Q20105388) for cells containing \"Consorci Sanitari de Terrassa\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Consorci Sanitari del Maresme",
+                "l": "Consorci Sanitari del Maresme"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Consorci Sanitari del Maresme",
+    "judgment": "matched",
+    "match": {
+      "id": "Q30263759",
+      "name": "Maresme Health Consortium",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Maresme Health Consortium (Q30263759) for cells containing \"Consorci Sanitari del Maresme\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Consorci Sanitari Integral",
+                "l": "Consorci Sanitari Integral"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Consorci Sanitari Integral",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5784281",
+      "name": "Consorci Sanitari Integral",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Consorci Sanitari Integral (Q5784281) for cells containing \"Consorci Sanitari Integral\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Corporació Catalana de Mitjans Audiovisuals, SA (CCMA, SA)",
+                "l": "Corporació Catalana de Mitjans Audiovisuals, SA (CCMA, SA)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Corporació Catalana de Mitjans Audiovisuals, SA (CCMA, SA)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3323383",
+      "name": "Corporació Catalana de Mitjans Audiovisuals",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Corporació Catalana de Mitjans Audiovisuals (Q3323383) for cells containing \"Corporació Catalana de Mitjans Audiovisuals, SA (CCMA, SA)\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Corporació de Salut del Maresme i la Selva",
+                "l": "Corporació de Salut del Maresme i la Selva"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Corporació de Salut del Maresme i la Selva",
+    "judgment": "matched",
+    "match": {
+      "id": "Q30263759",
+      "name": "Maresme Health Consortium",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Maresme Health Consortium (Q30263759) for cells containing \"Corporació de Salut del Maresme i la Selva\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Departament d'Educació",
+                "l": "Departament d'Educació"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Departament d'Educació",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6590378",
+      "name": "Ministry of Education of Catalonia",
+      "types": [
+        "Q22961938",
+        "Q2269756"
+      ],
+      "score": 96
+    },
+    "shareNewTopics": false,
+    "description": "Match item Ministry of Education of Catalonia (Q6590378) for cells containing \"Departament d'Educació\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Departament d'Empresa i Coneixement",
+                "l": "Departament d'Empresa i Coneixement"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Departament d'Empresa i Coneixement",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6590385",
+      "name": "Ministry of Business and Knowledge of Catalonia",
+      "types": [
+        "Q22961938",
+        "Q1243341"
+      ],
+      "score": 69
+    },
+    "shareNewTopics": false,
+    "description": "Match item Ministry of Business and Knowledge of Catalonia (Q6590385) for cells containing \"Departament d'Empresa i Coneixement\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Departament d'Interior",
+                "l": "Departament d'Interior"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Departament d'Interior",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6590396",
+      "name": "Ministry of Home Affairs of Catalonia",
+      "types": [
+        "Q22961938",
+        "Q6589202"
+      ],
+      "score": 60
+    },
+    "shareNewTopics": false,
+    "description": "Match item Ministry of Home Affairs of Catalonia (Q6590396) for cells containing \"Departament d'Interior\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Departament de Justícia",
+                "l": "Departament de Justícia"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Departament de Justícia",
+    "judgment": "matched",
+    "match": {
+      "id": "Q4889561",
+      "name": "Ministry of Justice of Catalonia",
+      "types": [
+        "Q22961938",
+        "Q1413677"
+      ],
+      "score": 60
+    },
+    "shareNewTopics": false,
+    "description": "Match item Ministry of Justice of Catalonia (Q4889561) for cells containing \"Departament de Justícia\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Departament de la Presidència",
+                "l": "Departament de la Presidència"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Departament de la Presidència",
+    "judgment": "matched",
+    "match": {
+      "id": "Q11916922",
+      "name": "Ministry of the Presidency of the Government of Catalonia",
+      "types": [
+        "Q22961938"
+      ],
+      "score": 67
+    },
+    "shareNewTopics": false,
+    "description": "Match item Ministry of the Presidency of the Government of Catalonia (Q11916922) for cells containing \"Departament de la Presidència\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Departament de la Vicepresidència i d'Economia i Hisenda",
+                "l": "Departament de la Vicepresidència i d'Economia i Hisenda"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Departament de la Vicepresidència i d'Economia i Hisenda",
+    "judgment": "matched",
+    "match": {
+      "id": "Q33121871",
+      "name": "Ministry of the Vice-presidency and of the Economy and Finance",
+      "types": [
+        "Q22961938"
+      ],
+      "score": 88
+    },
+    "shareNewTopics": false,
+    "description": "Match item Ministry of the Vice-presidency and of the Economy and Finance (Q33121871) for cells containing \"Departament de la Vicepresidència i d'Economia i Hisenda\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Departament de Salut",
+                "l": "Departament de Salut"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Departament de Salut",
+    "judgment": "matched",
+    "match": {
+      "id": "Q22680987",
+      "name": "Ministry of Health of the Government of Catalonia",
+      "types": [
+        "Q1519799",
+        "Q22961938"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Ministry of Health of the Government of Catalonia (Q22680987) for cells containing \"Departament de Salut\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Departament de Treball, Afers Socials i Famílies",
+                "l": "Departament de Treball, Afers Socials i Famílies"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Departament de Treball, Afers Socials i Famílies",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20106015",
+      "name": "Departament de Treball, Afers Socials i Famílies de la Generalitat de Catalunya",
+      "types": [
+        "Q22961938"
+      ],
+      "score": 75
+    },
+    "shareNewTopics": false,
+    "description": "Match item Departament de Treball, Afers Socials i Famílies de la Generalitat de Catalunya (Q20106015) for cells containing \"Departament de Treball, Afers Socials i Famílies\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Fundació Centre de Regulació Genòmica",
+                "l": "Fundació Centre de Regulació Genòmica"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Fundació Centre de Regulació Genòmica",
+    "judgment": "matched",
+    "match": {
+      "id": "Q11913498",
+      "name": "Centre for Genomic Regulation",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Centre for Genomic Regulation (Q11913498) for cells containing \"Fundació Centre de Regulació Genòmica\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Fundació Clínic per a la Recerca Biomèdica",
+                "l": "Fundació Clínic per a la Recerca Biomèdica"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Fundació Clínic per a la Recerca Biomèdica",
+    "judgment": "matched",
+    "match": {
+      "id": "Q30287378",
+      "name": "Fundació Clínic per a la Recerca Biomèdica",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Fundació Clínic per a la Recerca Biomèdica (Q30287378) for cells containing \"Fundació Clínic per a la Recerca Biomèdica\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Fundació de Gestió Sanitària de l'Hospital de la Santa Creu i Sant Pau",
+                "l": "Fundació de Gestió Sanitària de l'Hospital de la Santa Creu i Sant Pau"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Fundació de Gestió Sanitària de l'Hospital de la Santa Creu i Sant Pau",
+    "judgment": "matched",
+    "match": {
+      "id": "Q507282",
+      "name": "Hospital de Sant Pau",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Hospital de Sant Pau (Q507282) for cells containing \"Fundació de Gestió Sanitària de l'Hospital de la Santa Creu i Sant Pau\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Fundació Hospital Universitari Vall d'Hebron - Institut de Recerca",
+                "l": "Fundació Hospital Universitari Vall d'Hebron - Institut de Recerca"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Fundació Hospital Universitari Vall d'Hebron - Institut de Recerca",
+    "judgment": "matched",
+    "match": {
+      "id": "Q21086309",
+      "name": "Vall d'Hebron Research Institute",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Vall d'Hebron Research Institute (Q21086309) for cells containing \"Fundació Hospital Universitari Vall d'Hebron - Institut de Recerca\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Fundació Institut d'Investigació en Ciències de la Salut Germans Trias i Pujol",
+                "l": "Fundació Institut d'Investigació en Ciències de la Salut Germans Trias i Pujol"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Fundació Institut d'Investigació en Ciències de la Salut Germans Trias i Pujol",
+    "judgment": "matched",
+    "match": {
+      "id": "Q30287739",
+      "name": "Germans Trias i Pujol Research Institute",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Germans Trias i Pujol Research Institute (Q30287739) for cells containing \"Fundació Institut d'Investigació en Ciències de la Salut Germans Trias i Pujol\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Fundació Institut d'Investigació Sanitària Pere Virgili",
+                "l": "Fundació Institut d'Investigació Sanitària Pere Virgili"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Fundació Institut d'Investigació Sanitària Pere Virgili",
+    "judgment": "matched",
+    "match": {
+      "id": "Q30282449",
+      "name": "Pere Virgili Institute",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Pere Virgili Institute (Q30282449) for cells containing \"Fundació Institut d'Investigació Sanitària Pere Virgili\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Fundació Institut Hospital del Mar d'Investigacions Mèdiques",
+                "l": "Fundació Institut Hospital del Mar d'Investigacions Mèdiques"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Fundació Institut Hospital del Mar d'Investigacions Mèdiques",
+    "judgment": "matched",
+    "match": {
+      "id": "Q24486637",
+      "name": "Hospital del Mar Medical Research Institute",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Hospital del Mar Medical Research Institute (Q24486637) for cells containing \"Fundació Institut Hospital del Mar d'Investigacions Mèdiques\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Fundació Privada I2CAT, Internet i Innovació Digital a Catalunya",
+                "l": "Fundació Privada I2CAT, Internet i Innovació Digital a Catalunya"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Fundació Privada I2CAT, Internet i Innovació Digital a Catalunya",
+    "judgment": "matched",
+    "match": {
+      "id": "Q30254591",
+      "name": "i2CAT Foundation",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item i2CAT Foundation (Q30254591) for cells containing \"Fundació Privada I2CAT, Internet i Innovació Digital a Catalunya\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Fundació Privada Institut Català de Paleoecologia Humana i Evolució Social (IPHES)",
+                "l": "Fundació Privada Institut Català de Paleoecologia Humana i Evolució Social (IPHES)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Fundació Privada Institut Català de Paleoecologia Humana i Evolució Social (IPHES)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q30296181",
+      "name": "Catalan Institute of Human Paleoecology and Social Evolution",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Catalan Institute of Human Paleoecology and Social Evolution (Q30296181) for cells containing \"Fundació Privada Institut Català de Paleoecologia Humana i Evolució Social (IPHES)\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Gestió de Serveis Sanitaris (GSS)",
+                "l": "Gestió de Serveis Sanitaris (GSS)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Gestió de Serveis Sanitaris (GSS)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q97038298",
+      "name": "Gestió de Serveis Sanitaris",
+      "types": [
+        "Q327333"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Match item Gestió de Serveis Sanitaris (Q97038298) for cells containing \"Gestió de Serveis Sanitaris (GSS)\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ICFO - Institut de Ciències Fotòniques",
+                "l": "ICFO - Institut de Ciències Fotòniques"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "ICFO - Institut de Ciències Fotòniques",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3775506",
+      "name": "ICFO",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item ICFO (Q3775506) for cells containing \"ICFO - Institut de Ciències Fotòniques\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Infraestructures de la Generalitat de Catalunya, SAU",
+                "l": "Infraestructures de la Generalitat de Catalunya, SAU"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Infraestructures de la Generalitat de Catalunya, SAU",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20105071",
+      "name": "Infraestructures de la Generalitat de Catalunya",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Infraestructures de la Generalitat de Catalunya (Q20105071) for cells containing \"Infraestructures de la Generalitat de Catalunya, SAU\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Institut Català d'Oncologia (ICO)",
+                "l": "Institut Català d'Oncologia (ICO)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Institut Català d'Oncologia (ICO)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q87761801",
+      "name": "Institut Català d'Oncologia Girona - ICO Girona",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Institut Català d'Oncologia Girona - ICO Girona (Q87761801) for cells containing \"Institut Català d'Oncologia (ICO)\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Agència Catalana del Consum",
+    "judgment": "matched",
+    "match": {
+      "id": "Q87140603",
+      "name": "Q87140603",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Q87140603 (Q87140603) for cells containing \"Agència Catalana del Consum\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Consorci de l'Autoritat del Transport Metropolità (ATM)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1845633",
+      "name": "Autoritat del Transport Metropolità",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Autoritat del Transport Metropolità (Q1845633) for cells containing \"Consorci de l'Autoritat del Transport Metropolità (ATM)\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Consorci Museu Nacional d'Art de Catalunya",
+    "judgment": "matched",
+    "match": {
+      "id": "Q861252",
+      "name": "Museu Nacional d'Art de Catalunya",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Museu Nacional d'Art de Catalunya (Q861252) for cells containing \"Consorci Museu Nacional d'Art de Catalunya\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Comissió Central de Subministraments",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6865970",
+      "name": "Minister for Supplies",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Minister for Supplies (Q6865970) for cells containing \"Comissió Central de Subministraments\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Consorci per a la Normalització Lingüística (CPNL)",
+                "l": "Consorci per a la Normalització Lingüística (CPNL)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Consorci per a la Normalització Lingüística (CPNL)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20105386",
+      "name": "Consorci per a la Normalització Lingüística",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Consorci per a la Normalització Lingüística (Q20105386) for cells containing \"Consorci per a la Normalització Lingüística (CPNL)\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Organ de contractacio 2",
+          "expression": "value",
+          "columnName": "Organ de contractacio 2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Consorci Sant Gregori, de Girona",
+                "l": "Consorci Sant Gregori, de Girona"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Organ de contractacio 2",
+    "similarValue": "Consorci Sant Gregori, de Girona",
+    "judgment": "matched",
+    "match": {
+      "id": "Q72627881",
+      "name": "[What is the Sant Gregori Consortium and how does it operate?]",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item [What is the Sant Gregori Consortium and how does it operate?] (Q72627881) for cells containing \"Consorci Sant Gregori, de Girona\" in column Organ de contractacio 2"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Organ de contractacio 2",
+    "expression": "grel:\"https://www.wikidata.org/entity/\" + cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "Organ de contractacio wikidata link",
+    "columnInsertIndex": 3,
+    "description": "Create column Organ de contractacio wikidata link at index 3 based on column Organ de contractacio 2 using expression grel:\"https://www.wikidata.org/entity/\" + cell.recon.match.id"
+  }
+]
