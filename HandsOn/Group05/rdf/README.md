@@ -1,0 +1,1 @@
+To easily run the SPARQL queries on the NTriples, you can click [here](https://colab.research.google.com/drive/1_pFdek35y1WFMgn-eEP1eOL1g-6GtnOj?usp=sharing). It will open up Google Colab in which everything is already set to run the queries. The only requirement is a Google account.
