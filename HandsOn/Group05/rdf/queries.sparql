@@ -1,0 +1,16 @@
+PREFIX vocab: <http://eit-upm-opendata.com/ted#> .
+
+# CAE in Budapest, check if all end with "HU"
+SELECT ?CAE
+    WHERE { 
+    ?CAE vocab:hasTown "Budapest" . 
+  }
+LIMIT 15
+
+# Contractors per country
+SELECT ?country (COUNT(?CAE) as ?count)
+WHERE { 
+?CAE vocab:hasCountryCode ?country
+}
+GROUP BY ?country
+ORDER BY desc(?count)
