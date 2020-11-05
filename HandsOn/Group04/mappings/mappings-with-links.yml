@@ -1,0 +1,99 @@
+prefixes:
+    rr: http://www.w3.org/ns/r2rml#
+    foaf: http://xmlns.com/foaf/0.1/
+    xsd: http://www.w3.org/2001/XMLSchema#
+    rdfs: http://www.w3.org/2000/01/rdf-schema#
+    dc: http://purl.org/dc/elements/1.1/
+    rev: http://purl.org/stuff/rev#
+    gtfs: http://vocab.gtfs.org/terms#
+    geo: http://www.w3.org/2003/01/geo/wgs84_pos#
+    owl: http://www.w3.org/2002/07/owl#
+    schema: http://schema.org/
+    dct: http://purl.org/dc/terms/
+    rml: http://semweb.mmlab.be/ns/rml#
+    ql: http://semweb.mmlab.be/ns/ql#
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    pp: http://exercise.publicprocurement.es/about/ontology/group04pp#
+    
+mappings:
+  Department:
+    sources:
+      - [purchase-order-2014-2015-updated-with-links.csv~csv]
+    s: pp:Department/$(Department Name)
+    po:
+      - [a, pp:Department]
+      - [pp:hasDepartmentName, $(Department Name),xsd:string]
+      - [owl:sameAs, $(wikidataDepartment)~iri]
+  Item:
+    sources:
+      - [purchase-order-2014-2015-updated-with-links.csv~csv]
+    s: pp:Item/$(Item Name)
+    po:
+      - [a, pp:Item]
+      - [pp:hasCommodityTitle , $(Commodity Title),xsd:string]
+      - [pp:hasDescription, $(Item Description),xsd:string]
+      - [pp:hasItemName, $(Item Name),xsd:string]
+      - [pp:hasUNSPC, $(Normalized UNSPSC),xsd:long]
+      - [pp:hasIdentifier, $(Identifier2),xsd:string]
+      - [pp:hasClassNumber, $(Class),xsd:long]
+      - [pp:hasClassTitle, $(Class Title),xsd:string]
+      - [pp:hasFamilyNumber, $(Family),xsd:long]
+      - [pp:hasFamilyTitle, $(Family Title),xsd:string]
+      - [pp:hasSegmentNumber, $(Segment),xsd:long]
+      - [pp:hasSegmentTitle, $(Segment Title),xsd:string]
+  Purchase:
+    sources:
+      - [purchase-order-2014-2015-updated-with-links.csv~csv]
+    s: pp:Purchase/$(Purchase Order Number)
+    po:
+      - [a, pp:Purchase]
+      - [pp:hasCalCards, $(CalCard),xsd:boolean]
+      - [pp:hasCreationDate, $(Creation Date),xsd:dataTime]
+      - [pp:hasFiscalYear, $(Fiscal Year),xsd:string]
+      - [pp:hasPurchaseDate, $(Purchase Date),xsd:dataTime]
+      - [pp:hasLPAnumber, $(LPA Number),xsd:string]
+      - [pp:hasOrderNumber, $(Purchase Order Number),xsd:string]
+      - [pp:hasQuantity, $(Quantity),xsd:long]
+      - [pp:hasUnitPrice , $(Unit Price),owl:real]
+      - [pp:hasTotalPrice, $(Total Price),owl:real]
+      - [pp:hasAcquisitionMethod, $(Acquisition Method),xsd:string]
+      - [pp:hasAcquisitionType, $(Acquisition Type),xsd:string]
+      - [pp:hasSubAcquisitionMethod, $(Sub-Acquisition Method),xsd:string]
+      - [pp:hasSubAcquisitionType, $(Sub-Acquisition Type),xsd:string]
+      - p: pp:madeBy
+        o:
+          - mapping: Department
+            condition:
+                function: equal
+                parameters:
+                    - [str1, $(Department Name)]
+                    - [str2, $(Department Name)]
+      - p: pp:hasSupplier
+        o:
+          - mapping: Supplier
+            condition:
+                function: equal
+                parameters:
+                    - [str1, $(Supplier Code)]
+                    - [str2, $(Supplier Code)]
+      - p: pp:hasItem
+        o:
+          - mapping: Item
+            condition:
+                function: equal
+                parameters:
+                    - [str1, $(Item Name)]
+                    - [str2, $(Item Name)]
+  Supplier:
+    sources:
+      - [purchase-order-2014-2015-updated-with-links.csv~csv]
+    s: pp:Supplier/$(Supplier Code)
+    po:
+      - [a, pp:Supplier]
+      - [pp:hasSupplierName, $(Supplier Name),xsd:string]
+      - [pp:hasLatitude, $(Latitude),geo:lat]
+      - [pp:hasLongitude, $(Longitude),geo:long]
+      - [pp:hasQualifications, $(Supplier Qualifications),xsd:string]
+      - [pp:hasSupplierCode, $(Supplier Code),xsd:long]
+      - [pp:hasZipCode, $(Supplier Zip Code),xsd:string]
+      
