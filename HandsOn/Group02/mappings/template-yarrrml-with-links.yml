@@ -15,7 +15,7 @@ prefixes:
 mappings:
   contractsmap:
     sources:
-      - [actividad_contractual_ayto_madrid-with-links.csv~csv]
+      - [actividad_contractual_ayto_madrid_2020-with-links.csv~csv]
     s: http://MadridPublicContracts/ontology/$(Numero Contrato)
     po:
       - [a, vocab:Contrato]
@@ -31,7 +31,14 @@ mappings:
       - [vocab:hasBudget,$(Presupuesto Total(IVA Incluido)),xsd:double]
       - [vocab:hasAmount,$(Importe Adjudicacion (IVA Incluido)),xsd:double]
       - [vocab:hasContractDate,$(Fecha Adjudicacion),xsd:dateTime]
-      - [vocab:hasContractee,$(NIF/CIF Adjudicatario)]
+      - p: vocab:hasContractee
+        o:
+          - mapping: contracteemap
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(NIF/CIF Adjudicatario)]
+                - [str2, $(NIF/CIF Adjudicatario)]
       - [vocab:isDeal,$(Tiene acuerdo Marco),xsd:boolean]
       - [vocab:isZeroCost,$(Tiene Ingreso/Coste Cero),xsd:boolean]
       - [vocab:unitaryAdjudication,$(Adjudicado por precios unitarios),xsd:boolean]
@@ -46,7 +53,7 @@ mappings:
 
   contractormap:
     sources:
-      - [actividad_contractual_ayto_madrid-with-links.csv~csv]
+      - [actividad_contractual_ayto_madrid_2020-with-links.csv~csv]
     s: http://MadridPublicContracts/ontology/$(Organismo)
     po:
       - [rdf:type, vocab:Contractor]
@@ -55,7 +62,7 @@ mappings:
 
   contracteemap:
     sources:
-      - [actividad_contractual_ayto_madrid-with-links.csv~csv]
+      - [actividad_contractual_ayto_madrid_2020-with-links.csv~csv]
     s: http://MadridPublicContracts/ontology/$(NIF/CIF Adjudicatario)
     po:
       - [rdf:type, vocab:Contractee]
