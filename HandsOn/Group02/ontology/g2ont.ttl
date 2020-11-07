@@ -13,8 +13,7 @@
 :Contract rdf:type owl:Class .
 
 ### Tipo de contrato
-:ContractType rdf:type owl:Class . 
-	      rdfs:subClassOf :Contract .
+:ContractType rdfs:subClassOf :Contract .
 ### Contratado
 :Contractee rdf:type owl:Class .
 
