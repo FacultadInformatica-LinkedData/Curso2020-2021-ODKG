@@ -1,13 +1,24 @@
-@prefix : <http://MadridPublicContracts/ontology> .
+@prefix : <http://MadridPublicContracts/ontology/> .
 @prefix owl: <http://www.w3.org/2002/07/owl/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns/> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema/> .
-
+@prefix vocab: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/>.
 
 
 # Classes
+### Distrito
+:District rdf:type vocab:District
+
+### Barrio
+:Neighborhood rdf:type vocab:Neighborhood
+
+### Provincia
+:Province rdf:type vocab:Province.
+
+### Localidad 
+:Locality rdf:type vocab:Locality
 
 ### Contrato
 :Contract rdf:type owl:Class .
@@ -23,7 +34,8 @@
 
 ###Junta
 :Junta rdfs:subClassOf :Contractor .
-					
+
+
 # Contract properties
 
 ### Año 
@@ -34,11 +46,6 @@
 :hasMonth rdf:type owl:DatatypeProperty ;
              rdfs:domain :Contract ;
              rdfs:range xsd:gMonth.
-			 
-### Numero Contrato		 
-:hasContractNumber rdf:type owl:DatatypeProperty ;
-             rdfs:domain :Contract ;
-             rdfs:range xsd:string.
 			 
 ### Numero Expediente		 
 :hasExpNumber rdf:type owl:DatatypeProperty ;
@@ -90,11 +97,6 @@
              rdfs:domain :Contract ;
              rdfs:range xsd:dateTime.
 			 
-### Nombre/Razon Social		 
-:nameSR rdf:type owl:DatatypeProperty ;
-             rdfs:domain :Contract ;
-             rdfs:range xsd:string.
-			 
 ### Acuerdo Marco			 
 :isDeal rdf:type owl:DatatypeProperty ;
              rdfs:domain :Contract ;
@@ -109,17 +111,17 @@
 :unitaryAdjudication rdf:type owl:DatatypeProperty ;
              	     rdfs:domain :Contract ;
                      rdfs:range xsd:bool.
-			 
+
 ### Organismo contratado 
 :hasContractee rdf:type owl:ObjectProperty ;
                   rdfs:domain :Contract ;
                   rdfs:range :Contractee .
-				  
-### NIF/CIF Adjudicatario		  
-:hasNID rdf:type owl:ObjectProperty ;
-                  rdfs:domain :Org ;
-                  rdfs:range xsd:string .
 
+### Nombre/Razon Social		 
+:nameSR rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Contractee ;
+             rdfs:range xsd:string.
+				  
 ###Organismo contratante			  
 :hasContractor rdf:type owl:ObjectProperty ;
                   rdfs:domain :Contract ;
@@ -166,23 +168,23 @@
 ### Localidad
 :locality rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
-	rdfs:range xsd:string.
+	rdfs:range :Locality.
 ### Provincia
 :province rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
-	rdfs:range xsd:string.
+	rdfs:range Province.
 ### CP
 :pc rdf:type owl:DatatypeProperty ;
 		rdfs:domain :Junta ;
 		rdfs:range xsd:integer.
-###NBarrio
+### Barrio
 :neighborhood rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
-	rdfs:range xsd:string.
+	rdfs:range :Neighborhood.
 ###Distrito
 :district rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
-	rdfs:range xsd:string.
+	rdfs:range :District.
 ###Coordenada-x
 :hasCoordenateX rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
