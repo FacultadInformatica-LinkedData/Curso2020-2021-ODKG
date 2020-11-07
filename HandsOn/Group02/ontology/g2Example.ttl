@@ -27,6 +27,7 @@
 
 :Junta Municipal del Distrito de Arganzuela a :Junta;
 	:hasSchedule "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."^^xsd:string;
+	:hasDescription "Los Distritos obedecen a un proyecto de descentralización del Ayuntamiento de Madrid que tiene como objetivos acercar la prestación de los servicios municipales a la ciudadanía y promover la participación de la ciudadanía en la vida local. Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles, presentar reclamaciones de consumo, solicitar prestaciones de servicios sociales o realizar trámites relacionados con el  padrón municipal, licencias urbanísticas, vías y espacios públicos, entre otros. Además, los Distritos realizan actividades dirigidas a la promoción de la salud, la difusión de la cultura, la práctica del deporte, apoyo a la educación y en materia de inspección sanitaria y comercial. Se admiten perros guía."^^xsd:string;
 	:publicTransport "Metro: Legazpi (líneas, 3, 6) Bus: 6, 18, 78, 148, 62 Bicimad: Estación 65 (Paseo de la Chopera, 14)"^^xsd:string;
 	:hasWeb "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=3ca05c2cdc41c010VgnVCM2000000c205a0aRCRD"^^xsd:string;
 	:isinRoad "CHOPERA"^^xsd:string;
