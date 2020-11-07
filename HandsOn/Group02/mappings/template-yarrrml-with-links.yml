@@ -10,11 +10,12 @@ prefixes:
   ql: http://semweb.mmlab.be/ns/ql#
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
   vocab: http://example.org#
+  owl: http://www.w3.org/2002/07/owl#
   
 mappings:
   contractsmap:
     sources:
-      - [actividad_contractual_ayto_madrid_2020-updated.csv~csv]
+      - [actividad_contractual_ayto_madrid-with-links.csv~csv]
     s: http://MadridPublicContracts/ontology/$(Numero Contrato)
     po:
       - [a, vocab:Contrato]
@@ -46,16 +47,16 @@ mappings:
 
   organismosmap:
     sources:
-      - [actividad_contractual_ayto_madrid_2020-updated.csv~csv]
+      - [actividad_contractual_ayto_madrid-with-links.csv~csv]
     s: http://MadridPublicContracts/ontology/$(Organismo)
     po:
       - [rdf:type, vocab:Publicorg]
       - [vocab:orgtype,$(Descripcion Centro),xsd:string]
-      - [owl:sameAs, $(wikidataOrgainismo)~iri]
+      - [owl:sameAs, $(wikidataOrganismo)~iri]
 
   adjudicatariosmap:
     sources:
-      - [actividad_contractual_ayto_madrid_2020-updated.csv~csv]
+      - [actividad_contractual_ayto_madrid-with-links.csv~csv]
     s: http://MadridPublicContracts/ontology/$(Nombre/Razon Social)
     po:
       - [rdf:type, vocab:Org]
@@ -63,7 +64,7 @@ mappings:
   
   juntasmap:
     sources:
-      - [juntas_distrito_ayuto_madrid-updated.csv~csv]
+      - [juntas_distrito_ayuto_madrid-with-links.csv~csv]
     s: http://MadridPublicContracts/ontology/$(NOMBRE)
     po:
       - [rdf:type, vocab:Publicorg]
@@ -90,7 +91,7 @@ mappings:
     
 barriosmap:
   sources:
-    - [juntas_distrito_ayuto_madrid-updated.csv~csv]
+    - [juntas_distrito_ayuto_madrid-with-links.csv~csv]
   s: http://MadridPublicContracts/ontology/$(BARRIO)
   po:
     - [rdf:type, vocab:Barrio]
@@ -98,7 +99,7 @@ barriosmap:
  
 distritosmap:
   sources:
-    - [juntas_distrito_ayuto_madrid-updated.csv~csv]
+    - [juntas_distrito_ayuto_madrid-with-links.csv~csv]
   s: http://MadridPublicContracts/ontology/$(DISTRITO)
   po:
     - [rdf:type, vocab:Distrito]
@@ -106,7 +107,7 @@ distritosmap:
     
 procinciamap:
   sources:
-    - [juntas_distrito_ayuto_madrid-updated.csv~csv]
+    - [juntas_distrito_ayuto_madrid-with-links.csv~csv]
   s: http://MadridPublicContracts/ontology/$(PROVINCIA)
   po:
     - [rdf:type, vocab:Provincia]
@@ -114,7 +115,7 @@ procinciamap:
 
 localidadmap:
   sources:
-    - [juntas_distrito_ayuto_madrid-updated.csv~csv]
+    - [juntas_distrito_ayuto_madrid-with-links.csv~csv]
   s: http://MadridPublicContracts/ontology/$(LOCALIDAD)
   po:
     - [rdf:type, vocab:Localidad]
