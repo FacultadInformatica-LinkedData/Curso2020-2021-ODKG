@@ -32,8 +32,9 @@ mappings:
       - [vocab:hasAmount,$(Importe Adjudicacion (IVA Incluido)),xsd:double]
       - [vocab:hasContractDate,$(Fecha Adjudicacion),xsd:dateTime]
       - [vocab:hasContractee,$(NIF/CIF Adjudicatario)]
-      - [vocab:isDeal,$(Acuerdo Marco),xsd:boolean]
-      - [vocab:isZeroCost,$(Ingreso/Coste Cero),xsd:boolean]
+      - [vocab:isDeal,$(Tiene acuerdo Marco),xsd:boolean]
+      - [vocab:isZeroCost,$(Tiene Ingreso/Coste Cero),xsd:boolean]
+      - [vocab:unitaryAdjudication,$(Adjudicado por precios unitarios),xsd:boolean]
       - p: vocab:hasContractor
         o:
           - mapping: juntasmap
