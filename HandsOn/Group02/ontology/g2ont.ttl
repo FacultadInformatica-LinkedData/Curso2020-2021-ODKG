@@ -107,7 +107,7 @@
              	     rdfs:domain :Contract ;
                      rdfs:range xsd:bool.
 			 
-### Nombre/Razon Social
+### Organismo contratado 
 :hasContractee rdf:type owl:ObjectProperty ;
                   rdfs:domain :Contract ;
                   rdfs:range :Contractee .
@@ -117,12 +117,12 @@
                   rdfs:domain :Org ;
                   rdfs:range xsd:string .
 
-				  
+###Organismo contratante			  
 :hasContractor rdf:type owl:ObjectProperty ;
                   rdfs:domain :Contract ;
                   rdfs:range :Contractor .	
 				  
-### Descripcion Centro 			 
+### Descripcion Centro (empresa, ayuntamiento de Madrid)		 
 :orgType rdf:type owl:DatatypeProperty ;
              rdfs:domain :Contractor ;
              rdfs:range xsd:string.				  
@@ -131,12 +131,14 @@
 # Public organization properties (juntas)
 
 ### Descripcion
+:hasDescription rdf:type owl:DatatypeProperty ;
+	rdfs:domain :Junta ;
+	rdfs:range xsd:string.
 
 ### Horario
 :hasSchedule rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
 	rdfs:range xsd:string.
-### Equipamiento
 
 ### Transporte
 :publicTransport rdf:type owl:DatatypeProperty ;
@@ -157,7 +159,7 @@
 ### Num 
 :isinRoadNumber rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
-	rdfs:range xsd:int.
+	rdfs:range xsd:integer.
 ### Localidad
 :locality rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
@@ -169,7 +171,7 @@
 ### CP
 :pc rdf:type owl:DatatypeProperty ;
 		rdfs:domain :Junta ;
-		rdfs:range xsd:int.
+		rdfs:range xsd:integer.
 ###NBarrio
 :neighborhood rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
@@ -181,19 +183,11 @@
 ###Coordenada-x
 :hasCoordenateX rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
-	rdfs:range xsd:int.
+	rdfs:range xsd:integer.
 ###Coordenada-y
 :hasCoordenateY rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
-	rdfs:range xsd:int.
-###Latitud
-:hasLatitude rdf:type owl:DatatypeProperty ;
-	rdfs:domain :Junta ;
-	rdfs:range xsd:string.
-###Longitud
-:hasLongitude rdf:type owl:DatatypeProperty ;
-	rdfs:domain :Junta ;
-	rdfs:range xsd:string.
+	rdfs:range xsd:integer.
 ###EMAIL
 :hasEmail rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
