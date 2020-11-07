@@ -9,7 +9,7 @@ prefixes:
   rml: http://semweb.mmlab.be/ns/rml/
   ql: http://semweb.mmlab.be/ns/ql/
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns/
-  vocab: http://example.org/
+  vocab: http://MadridPublicContracts/ontology/
   owl: http://www.w3.org/2002/07/owl/
   
 mappings:
@@ -20,8 +20,7 @@ mappings:
     po:
       - [a, vocab:Contrato]
       - [vocab:hasYear,$(Año),xsd:gYear]
-      - [vocab:hasMonth,$(Mes),xsd:string]
-      - [vocab:hasContractNumber,$(Numero Contrato),xsd:integer]
+      - [vocab:hasMonth,$(Mes),xsd:gMonth]
       - [vocab:hasExpNumber,$(Numero Expediente),xsd:string]
       - [vocab:hasDescription,$(Descripcion Contrato),xsd:string]
       - [vocab:hasContractType,$(Tipo Contrato),xsd:string]
@@ -32,11 +31,10 @@ mappings:
       - [vocab:hasBudget,$(Presupuesto Total(IVA Incluido)),xsd:double]
       - [vocab:hasAmount,$(Importe Adjudicacion (IVA Incluido)),xsd:double]
       - [vocab:hasContractDate,$(Fecha Adjudicacion),xsd:dateTime]
-      - [vocab:nameSR,$(Nombre/Razon Social),xsd:string]
+      - [vocab:hasContractee,$(NIF/CIF Adjudicatario)]
       - [vocab:isDeal,$(Acuerdo Marco),xsd:boolean]
       - [vocab:isZeroCost,$(Ingreso/Coste Cero),xsd:boolean]
-      - [vocab:hasComments,$(Observaciones),xsd:string]
-      - p: vocab:hasOrganismoContratante
+      - p: vocab:hasContractor
         o:
           - mapping: juntasmap
             condition:
@@ -45,51 +43,47 @@ mappings:
                 - [str1, $(Organismo)]
                 - [str2, $(NOMBRE)]
 
-  organismosmap:
+  contractormap:
     sources:
       - [actividad_contractual_ayto_madrid-with-links.csv~csv]
     s: http://MadridPublicContracts/ontology/$(Organismo)
     po:
-      - [rdf:type, vocab:Publicorg]
-      - [vocab:orgtype,$(Descripcion Centro),xsd:string]
+      - [rdf:type, vocab:Contractor]
+      - [vocab:orgtype, $(Descripcion Centro),xsd:string]
       - [owl:sameAs, $(wikidataOrganismo)~iri]
 
-  adjudicatariosmap:
+  contracteemap:
     sources:
       - [actividad_contractual_ayto_madrid-with-links.csv~csv]
-    s: http://MadridPublicContracts/ontology/$(Nombre/Razon Social)
+    s: http://MadridPublicContracts/ontology/$(NIF/CIF Adjudicatario)
     po:
-      - [rdf:type, vocab:Org]
-      - [vocab:orgtype,$(NIF/CIF Adjudicatario),xsd:string]
+      - [rdf:type, vocab:Contractee]
+      - [vocab:orgtype,$(Nombre/Razon Social),xsd:string]
   
   juntasmap:
     sources:
       - [juntas_distrito_ayuto_madrid-with-links.csv~csv]
     s: http://MadridPublicContracts/ontology/$(NOMBRE)
     po:
-      - [rdf:type, vocab:Publicorg]
-      - [vocab:nombre,$(PK),xsd:string]
-      - [vocab:descripcion,$(DESCRIPCION-ENTIDAD),xsd:string]
-      - [vocab:horario,$(HORARIO),xsd:string]
-      - [vocab:equipamiento,$(EQUIPAMIENTO),xsd:string]
-      - [vocab:transporte,$(TRANSPORTE),xsd:string]
-      - [vocab:web,$(PÁGINA WEB),xsd:string]
-      - [vocab:nombrevia,$(NOMBRE-VÍA),xsd:string]
-      - [vocab:tipovia,$(TIPO-VIA),xsd:string]
-      - [vocab:numero,$(NÚMERO),xsd:integer]
-      - [vocab:localidad,$(LOCALIDAD),xsd:string]
-      - [vocab:provincia,$(PROVINCIA),xsd:string]
-      - [vocab:codigopostal,$(CÓDIGO POSTAL),xsd:integer]
-      - [vocab:barrio,$(BARRIO),xsd:string]
-      - [vocab:distrito,$(DISTRITO),xsd:string]
-      - [vocab:coordenadax,$(COORDENADA-X),xsd:integer]
-      - [vocab:coordenaday,$(COORDENADA-Y),xsd:integer]
-      - [vocab:latitud,$(LATITUD),xsd:string]
-      - [vocab:longitud,$(LONGITUD),xsd:string]
-      - [vocab:email,$(EMAIL),xsd:string]
+      - [rdf:type, vocab:Junta]
+      - [vocab:hasSchedule,$(HORARIO),xsd:string]
+      - [vocab:hasDescription,$(DESCRIPCION-ENTIDAD),xsd:string]
+      - [vocab:publicTransport,$(TRANSPORTE),xsd:string]
+      - [vocab:hasWeb,$(PÁGINA WEB),xsd:string]
+      - [vocab:isinRoad,$(NOMBRE-VÍA),xsd:string]
+      - [vocab:hasRoadType,$(TIPO-VIA),xsd:string]
+      - [vocab:isinRoadNumber,$(NÚMERO),xsd:integer]
+      - [vocab:locality,$(LOCALIDAD),xsd:string]
+      - [vocab:province,$(PROVINCIA),xsd:string]
+      - [vocab:pc,$(CÓDIGO POSTAL),xsd:integer]
+      - [vocab:neighborhood,$(BARRIO),xsd:string]
+      - [vocab:district,$(DISTRITO),xsd:string]
+      - [vocab:hasCoordenateX,$(COORDENADA-X),xsd:integer]
+      - [vocab:hasCoordenateY,$(COORDENADA-Y),xsd:integer]
+      - [vocab:hasEmail,$(EMAIL),xsd:string]
       - [owl:sameAs, $(wikiJUNTA)~iri]
     
-barriosmap:
+neighborhoodmap:
   sources:
     - [juntas_distrito_ayuto_madrid-with-links.csv~csv]
   s: http://MadridPublicContracts/ontology/$(BARRIO)
@@ -97,7 +91,7 @@ barriosmap:
     - [rdf:type, vocab:Barrio]
     - [owl:sameAs, $(wikiBARRIOS)~iri]
  
-distritosmap:
+districtsmap:
   sources:
     - [juntas_distrito_ayuto_madrid-with-links.csv~csv]
   s: http://MadridPublicContracts/ontology/$(DISTRITO)
@@ -105,7 +99,7 @@ distritosmap:
     - [rdf:type, vocab:Distrito]
     - [owl:sameAs, $(wikiDISTRITO)~iri]
     
-procinciamap:
+provincemap:
   sources:
     - [juntas_distrito_ayuto_madrid-with-links.csv~csv]
   s: http://MadridPublicContracts/ontology/$(PROVINCIA)
@@ -113,7 +107,7 @@ procinciamap:
     - [rdf:type, vocab:Provincia]
     - [owl:sameAs, $(wikiPROVINCIA)~iri]
 
-localidadmap:
+localitymap:
   sources:
     - [juntas_distrito_ayuto_madrid-with-links.csv~csv]
   s: http://MadridPublicContracts/ontology/$(LOCALIDAD)
