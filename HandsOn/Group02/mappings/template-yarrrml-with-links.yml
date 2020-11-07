@@ -31,10 +31,10 @@ mappings:
       - [vocab:hasCriteria,$(Criterios Adjudicacion),xsd:string]
       - [vocab:hasBudget,$(Presupuesto Total(IVA Incluido)),xsd:double]
       - [vocab:hasAmount,$(Importe Adjudicacion (IVA Incluido)),xsd:double]
-      - [vocab:hasContractDate,$(Fecha Adjudicacion),xsd:date]
+      - [vocab:hasContractDate,$(Fecha Adjudicacion),xsd:dateTime]
       - [vocab:nameSR,$(Nombre/Razon Social),xsd:string]
-      - [vocab:isDeal,$(Acuerdo Marco),xsd:string]
-      - [vocab:isZeroCost,$(Ingreso/Coste Cero),xsd:string]
+      - [vocab:isDeal,$(Acuerdo Marco),xsd:boolean]
+      - [vocab:isZeroCost,$(Ingreso/Coste Cero),xsd:boolean]
       - [vocab:hasComments,$(Observaciones),xsd:string]
       - p: vocab:hasOrganismoContratante
         o:
@@ -84,8 +84,8 @@ mappings:
       - [vocab:distrito,$(DISTRITO),xsd:string]
       - [vocab:coordenadax,$(COORDENADA-X),xsd:integer]
       - [vocab:coordenaday,$(COORDENADA-Y),xsd:integer]
-      - [vocab:latitud,$(LATITUD),xsd:integer]
-      - [vocab:longitud,$(LONGITUD),xsd:integer]
+      - [vocab:latitud,$(LATITUD),xsd:string]
+      - [vocab:longitud,$(LONGITUD),xsd:string]
       - [vocab:email,$(EMAIL),xsd:string]
       - [owl:sameAs, $(wikiJUNTA)~iri]
     
