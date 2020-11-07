@@ -1,25 +1,25 @@
 PREFIX s:<http://schema.org/>
-PREFIX ex:<http://www.publicProcurementMurciaCOVID19.es/ontology/ont#>
+PREFIX ex:<http://www.publicProcurementMurciaCOVID19.es/ontology#>
 
 
 ##### Order Quantity by Product  #####
-SELECT 
-    ?Product (SUM(?Quantity) as ?nCount) 
-WHERE { 
-    ?OrderItem s:orderQuantity ?Quantity. 
-    ?OrderItem s:orderedItem ?Product. 
-    ?Product rdf:type s:Product.  
-     
+SELECT
+    ?Product (SUM(?Quantity) as ?nCount)
+WHERE {
+    ?OrderItem s:orderQuantity ?Quantity.
+    ?OrderItem s:orderedItem ?Product.
+    ?Product rdf:type s:Product.
+
 }
-GROUP BY ?Product 
+GROUP BY ?Product
 LIMIT 15
 
 ##### Order Quantity Received by Product and by Date #####
-SELECT 
+SELECT
     ?Product ?n ?Date
-WHERE { 
-    ?Product rdf:type s:Product. 
-    ?OrderItem ex:hasProductQuantityPending ?n. 
+WHERE {
+    ?Product rdf:type s:Product.
+    ?OrderItem ex:hasProductQuantityPending ?n.
     ?OrderItem s:orderedItem ?Product.
     ?Order rdf:type s:Order.
     ?Order s:orderDate ?Date.
@@ -31,25 +31,25 @@ LIMIT 15
 
 ##### Order Quantity by Service  #####
 
-SELECT 
-    ?Service (SUM(?Quantity) as ?nCount) 
-WHERE { 
-     ?OrderItem s:orderQuantity ?Quantity. 
-     ?OrderItem s:orderedItem ?Service. 
-     ?Service rdf:type s:Service.  
-     
+SELECT
+    ?Service (SUM(?Quantity) as ?nCount)
+WHERE {
+     ?OrderItem s:orderQuantity ?Quantity.
+     ?OrderItem s:orderedItem ?Service.
+     ?Service rdf:type s:Service.
+
 }
-GROUP BY ?Service 
+GROUP BY ?Service
 LIMIT 15
 
 
 ##### Order Quantity Received by Product and by Date #####
 
-SELECT 
+SELECT
      ?Service ?n ?Date
-WHERE { 
-     ?Service rdf:type s:Service. 
-     ?OrderItem ex:hasProductQuantityPending ?n. 
+WHERE {
+     ?Service rdf:type s:Service.
+     ?OrderItem ex:hasProductQuantityPending ?n.
      ?OrderItem s:orderedItem ?Service.
      ?Order rdf:type s:Order.
      ?Order s:orderDate ?Date.
@@ -59,12 +59,12 @@ LIMIT 15
 
 ##### Organizations ordered by number of orders #####
 
-SELECT 
+SELECT
     ?Organization (COUNT(?Order) as ?nCount)
- 
-WHERE { 
+
+WHERE {
     ?Order s:seller ?Organization.
-     
+
 }
 GROUP BY ?Organization
 ORDER BY DESC(?nCount)

@@ -1,0 +1,58 @@
+PREFIX s:<http://schema.org/>
+PREFIX ex:<http://www.publicProcurementMurciaCOVID19.es/ontology#>
+
+
+##### Max number of patients in UCI for each Region #####
+SELECT
+  ?isocode (MAX(?nUCI) as ?nMax)
+WHERE {
+  ?Organization rdf:type s:Organization.
+  ?CovidStatus rdf:type ex:CovidStatus.
+  ?Organization ex:hasCovidStatus ?CovidStatus.
+  ?Organization ex:hasISOCode ?isocode.
+  ?CovidStatus ex:numberUCI ?nUCI.
+}
+GROUP BY ?Organization
+ORDER BY DESC(?nMax)
+LIMIT 10
+
+
+##### Suppliers ordered by taxID #####
+SELECT
+ ?t ?n
+WHERE {
+ ?Organization rdf:type s:Organization.
+ ?Organization s:taxID ?t.
+ ?Organization s:name ?n.
+ }
+ORDER BY ASC(?t)
+LIMIT 10
+
+
+##### Total cases of covid for each region #####
+SELECT
+  ?c (SUM(?n) as ?nCount)
+WHERE {
+  ?Organization rdf:type s:Organization.
+  ?Organization ex:hasISOCode ?c.
+  ?CovidStatus rdf:type ex:CovidStatus.
+  ?Organization ex:hasCovidStatus ?CovidStatus.
+  ?CovidStatus ex:totalCases ?n
+}
+GROUP BY ?Organization
+ORDER BY DESC(?nCount)
+LIMIT 10
+
+
+##### Number of orders by region #####
+SELECT
+    ?isocode (COUNT(?Order) as ?orderCount)
+  WHERE {
+    ?Organization rdf:type s:Organization.
+    ?Organization ex:hasISOCode ?isocode.
+    ?Order rdf:type s:Order.
+    ?Order s:customer ?Organization.
+  }
+  GROUP BY ?Organization
+  ORDER BY ASC(?orderCount)
+  LIMIT 10
