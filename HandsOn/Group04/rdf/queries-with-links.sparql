@@ -1,0 +1,50 @@
+PREFIX pp: http://exercise.publicprocurement.es/about/ontology/group04pp/
+       owl: http://www.w3.org/2002/07/owl# 
+
+1.Get all the classes
+SELECT DISTINCT ?class
+WHERE
+{
+{?x a ?class} 
+UNION
+{?class rdf:type rdfs:Class}
+}
+
+
+2. Get all the subclasses of Purchase 
+SELECT DISTINCT ?x
+WHERE
+{
+?x rdfs:subClassOf/rdfs:subClassOf* pp:Purchase
+}
+
+3.Get all transactions with more than 1000$
+SELECT DISTINCT ?x ?y
+WHERE
+{​​​​​
+?x rdf:type/rdfs:subClassOf* pp:Purchase .​
+?x pp:hasTotalPrice ?y.
+FILTER ((?y)^xsd:double > 1000)
+}​​​​​
+
+4. Describe Supplier named "ALBRIGHT SEED COMPANY"
+DESCRIBE ?x 
+
+WHERE{?x rdfs:label "ALBRIGHT SEED COMPANY" .
+}
+-----------------New for the links-----------------
+5.Get all links of all departments
+SELECT DISTINCT ?x ?y
+WHERE
+{​​​​​
+?x rdf:type/rdfs:subClassOf* pp:Department.​
+?x owl:sameAs ?y.
+}​​​​​
+
+6.Get the link of “California Department of Transportation”
+SELECT DISTINCT ?x ?y
+WHERE
+{​​​​​
+?x rdfs:label "California Department of Transportation".
+?x owl:sameAs ?y.
+}​​​​​

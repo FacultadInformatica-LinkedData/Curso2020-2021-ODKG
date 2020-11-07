@@ -1,0 +1,11 @@
+# 1. Get all the links
+SELECT DISTINCT ?x ?link
+WHERE {
+    ?x owl:sameAs ?link }
+
+# 2. Get all contracts from El Corte Ingles (http://www.wikidata.org/entity/Q623133)
+PREFIX vocab: <http://group01.org/aragon/ontology/>
+SELECT DISTINCT ?contract
+WHERE {
+    ?contract vocab:awardedTo ?company .
+    ?company owl:sameAs <http://www.wikidata.org/entity/Q623133> }
