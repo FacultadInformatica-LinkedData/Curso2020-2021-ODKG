@@ -1,3 +1,10 @@
+@prefix : <http://MadridPublicContracts/ontology> .
+@prefix owl: <http://www.w3.org/2002/07/owl/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema/> .
+
 :comp1 a :Contractor;
 	rdfs:label "MADRID DESTINO, CULTURA, TURISMO Y NEGOCIO, S.A." ;
 	:orgType "EMPRESAS".
@@ -12,7 +19,7 @@
 	:hasContractee :comp2;
 	:hasYear "2020"^^xsd:gYear;
 	:hasMonth "Enero"^^xsd:gMonth;
-	:hasContractNumber "202000001"^^xsd:integer;
+	:hasContractNumber :202000001;
 	:hasExpNumber "MDC/2019/00177"^^xsd:string;
 	:hasDescription "ESPECTACULO TEATRAL QUIEN ES EL SR SCHMITT EN LA SALA PRINCIPAL DEL TEATRO DEL 16 DE OCTUBRE AL 10 DE NOVIEMBRE (T.ESPAÑOL)"^^xsd:string;
 	:hasContractType "Servicios";
