@@ -14,11 +14,15 @@
 
 ### Tipo de contrato
 :ContractType rdfs:subClassOf :Contract .
+
 ### Contratado
 :Contractee rdf:type owl:Class .
 
 ### Contratante
 :Contractor rdf:type owl:Class .
+
+###Junta
+:Junta rdfs:subClassOf :Contractor .
 					
 # Contract properties
 
@@ -34,7 +38,7 @@
 ### Numero Contrato		 
 :hasContractNumber rdf:type owl:DatatypeProperty ;
              rdfs:domain :Contract ;
-             rdfs:range xsd:integer.
+             rdfs:range xsd:string.
 			 
 ### Numero Expediente		 
 :hasExpNumber rdf:type owl:DatatypeProperty ;
