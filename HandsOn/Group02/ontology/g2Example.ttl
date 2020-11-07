@@ -4,6 +4,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema/> .
+@prefix vocab: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/>.
 
 :MADRID DESTINO, CULTURA, TURISMO Y NEGOCIO, S.A.a :Contractor;
 	:orgType "EMPRESAS".
@@ -40,11 +41,17 @@
 	:isinRoad "CHOPERA"^^xsd:string;
 	:hasRoadType "PASEO"^^xsd:string;
 	:isinRoadNumber 10^^xsd:integer;
-	:locality "Madrid"^^xsd:string;
-	:province "Province of Madrid"^^xsd:string;
+	:locality :Madrid;
+	:province :Province of Madrid;
 	:pc 28045^^xsd:integer;
-	:neighborhood "La Chopera"^^xsd:string;
-	:district "Arganzuela"^^xsd:string;
+	:neighborhood :La Chopera;
+	:district :Arganzuela;
 	:hasCoordenateX 440714^^xsd:integer;
 	:hasCoordenateY 4471656^^xsd:integer;
 	:hasEmail "jmarganzuela@madrid.es"^^xsd:string;
+
+:Madrid a vocab:Locality;
+:La Chopera a vocab:Neighborhood;
+:Arganzuela a vocab:District;
+:Province of Madrid a vocab:Province;
+

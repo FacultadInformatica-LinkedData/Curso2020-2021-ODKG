@@ -14,8 +14,9 @@
 @prefix rev: <http://purl.org/stuff/rev/>.
 @prefix schema: <http://schema.org/>.
 @prefix dct: <http://purl.org/dc/terms/>.
-@prefix vocab: <http://MadridPublicContracts/ontology/>.
+@prefix g2: <http://MadridPublicContracts/ontology/>.
 @prefix owl: <http://www.w3.org/2002/07/owl/>.
+@prefix vocab: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/>.
 
 :rules_000 a void:Dataset;
     void:exampleResource :map_contractsmap_000.
@@ -27,7 +28,7 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "contractsmap".
 :s_000 a <http://www.w3.org/ns/r2rml#SubjectMap>.
 :map_contractsmap_000 <http://www.w3.org/ns/r2rml#subjectMap> :s_000.
-:s_000 <http://www.w3.org/ns/r2rml#template> "http://MadridPublicContracts/ontology/{Numero Contrato}".
+:s_000 <http://www.w3.org/ns/r2rml#template> "http://MadridPublicContracts/resources/contract/{Numero Contrato}".
 :pom_000 a <http://www.w3.org/ns/r2rml#PredicateObjectMap>.
 :map_contractsmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_000.
 :pm_000 a <http://www.w3.org/ns/r2rml#PredicateMap>.
@@ -41,7 +42,7 @@
 :map_contractsmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_001.
 :pm_001 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_001 <http://www.w3.org/ns/r2rml#predicateMap> :pm_001.
-:pm_001 <http://www.w3.org/ns/r2rml#constant> vocab:hasYear.
+:pm_001 <http://www.w3.org/ns/r2rml#constant> g2:hasYear.
 :pom_001 <http://www.w3.org/ns/r2rml#objectMap> :om_001.
 :om_001 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://semweb.mmlab.be/ns/rml#reference> "Año";
@@ -51,7 +52,7 @@
 :map_contractsmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_002.
 :pm_002 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_002 <http://www.w3.org/ns/r2rml#predicateMap> :pm_002.
-:pm_002 <http://www.w3.org/ns/r2rml#constant> vocab:hasMonth.
+:pm_002 <http://www.w3.org/ns/r2rml#constant> g2:hasMonth.
 :pom_002 <http://www.w3.org/ns/r2rml#objectMap> :om_002.
 :om_002 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://semweb.mmlab.be/ns/rml#reference> "Mes";
@@ -61,7 +62,7 @@
 :map_contractsmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_003.
 :pm_003 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_003 <http://www.w3.org/ns/r2rml#predicateMap> :pm_003.
-:pm_003 <http://www.w3.org/ns/r2rml#constant> vocab:hasExpNumber.
+:pm_003 <http://www.w3.org/ns/r2rml#constant> g2:hasExpNumber.
 :pom_003 <http://www.w3.org/ns/r2rml#objectMap> :om_003.
 :om_003 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://semweb.mmlab.be/ns/rml#reference> "Numero Expediente";
@@ -71,7 +72,7 @@
 :map_contractsmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_004.
 :pm_004 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_004 <http://www.w3.org/ns/r2rml#predicateMap> :pm_004.
-:pm_004 <http://www.w3.org/ns/r2rml#constant> vocab:hasDescription.
+:pm_004 <http://www.w3.org/ns/r2rml#constant> g2:hasDescription.
 :pom_004 <http://www.w3.org/ns/r2rml#objectMap> :om_004.
 :om_004 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://semweb.mmlab.be/ns/rml#reference> "Descripcion Contrato";
@@ -81,7 +82,7 @@
 :map_contractsmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_005.
 :pm_005 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_005 <http://www.w3.org/ns/r2rml#predicateMap> :pm_005.
-:pm_005 <http://www.w3.org/ns/r2rml#constant> vocab:hasContractType.
+:pm_005 <http://www.w3.org/ns/r2rml#constant> g2:hasContractType.
 :pom_005 <http://www.w3.org/ns/r2rml#objectMap> :om_005.
 :om_005 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://semweb.mmlab.be/ns/rml#reference> "Tipo Contrato";
@@ -91,7 +92,7 @@
 :map_contractsmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_006.
 :pm_006 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_006 <http://www.w3.org/ns/r2rml#predicateMap> :pm_006.
-:pm_006 <http://www.w3.org/ns/r2rml#constant> vocab:hasProcedure.
+:pm_006 <http://www.w3.org/ns/r2rml#constant> g2:hasProcedure.
 :pom_006 <http://www.w3.org/ns/r2rml#objectMap> :om_006.
 :om_006 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://semweb.mmlab.be/ns/rml#reference> "Procedimiento Adjudicacion";
@@ -101,7 +102,7 @@
 :map_contractsmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_007.
 :pm_007 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_007 <http://www.w3.org/ns/r2rml#predicateMap> :pm_007.
-:pm_007 <http://www.w3.org/ns/r2rml#constant> vocab:hasArticle.
+:pm_007 <http://www.w3.org/ns/r2rml#constant> g2:hasArticle.
 :pom_007 <http://www.w3.org/ns/r2rml#objectMap> :om_007.
 :om_007 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://semweb.mmlab.be/ns/rml#reference> "Articulo";
@@ -111,7 +112,7 @@
 :map_contractsmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_008.
 :pm_008 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_008 <http://www.w3.org/ns/r2rml#predicateMap> :pm_008.
-:pm_008 <http://www.w3.org/ns/r2rml#constant> vocab:hasSection.
+:pm_008 <http://www.w3.org/ns/r2rml#constant> g2:hasSection.
 :pom_008 <http://www.w3.org/ns/r2rml#objectMap> :om_008.
 :om_008 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://semweb.mmlab.be/ns/rml#reference> "Apartado";
@@ -121,7 +122,7 @@
 :map_contractsmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_009.
 :pm_009 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_009 <http://www.w3.org/ns/r2rml#predicateMap> :pm_009.
-:pm_009 <http://www.w3.org/ns/r2rml#constant> vocab:hasCriteria.
+:pm_009 <http://www.w3.org/ns/r2rml#constant> g2:hasCriteria.
 :pom_009 <http://www.w3.org/ns/r2rml#objectMap> :om_009.
 :om_009 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://semweb.mmlab.be/ns/rml#reference> "Criterios Adjudicacion";
@@ -131,7 +132,7 @@
 :map_contractsmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_010.
 :pm_010 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_010 <http://www.w3.org/ns/r2rml#predicateMap> :pm_010.
-:pm_010 <http://www.w3.org/ns/r2rml#constant> vocab:hasBudget.
+:pm_010 <http://www.w3.org/ns/r2rml#constant> g2:hasBudget.
 :pom_010 <http://www.w3.org/ns/r2rml#objectMap> :om_010.
 :om_010 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://www.w3.org/ns/r2rml#template> "{Presupuesto Total(IVA Incluido})";
@@ -141,7 +142,7 @@
 :map_contractsmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_011.
 :pm_011 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_011 <http://www.w3.org/ns/r2rml#predicateMap> :pm_011.
-:pm_011 <http://www.w3.org/ns/r2rml#constant> vocab:hasAmount.
+:pm_011 <http://www.w3.org/ns/r2rml#constant> g2:hasAmount.
 :pom_011 <http://www.w3.org/ns/r2rml#objectMap> :om_011.
 :om_011 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://www.w3.org/ns/r2rml#template> "{Importe Adjudicacion (IVA Incluido})";
@@ -151,7 +152,7 @@
 :map_contractsmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_012.
 :pm_012 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_012 <http://www.w3.org/ns/r2rml#predicateMap> :pm_012.
-:pm_012 <http://www.w3.org/ns/r2rml#constant> vocab:hasContractDate.
+:pm_012 <http://www.w3.org/ns/r2rml#constant> g2:hasContractDate.
 :pom_012 <http://www.w3.org/ns/r2rml#objectMap> :om_012.
 :om_012 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://semweb.mmlab.be/ns/rml#reference> "Fecha Adjudicacion";
@@ -161,13 +162,13 @@
 :map_contractsmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_013.
 :pm_013 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_013 <http://www.w3.org/ns/r2rml#predicateMap> :pm_013.
-:pm_013 <http://www.w3.org/ns/r2rml#constant> vocab:hasContractee.
+:pm_013 <http://www.w3.org/ns/r2rml#constant> g2:hasContractee.
 :pom_013 <http://www.w3.org/ns/r2rml#objectMap> :om_013.
 :pom_014 a <http://www.w3.org/ns/r2rml#PredicateObjectMap>.
 :map_contractsmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_014.
 :pm_014 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_014 <http://www.w3.org/ns/r2rml#predicateMap> :pm_014.
-:pm_014 <http://www.w3.org/ns/r2rml#constant> vocab:isDeal.
+:pm_014 <http://www.w3.org/ns/r2rml#constant> g2:isDeal.
 :pom_014 <http://www.w3.org/ns/r2rml#objectMap> :om_014.
 :om_014 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://semweb.mmlab.be/ns/rml#reference> "Tiene acuerdo Marco";
@@ -177,7 +178,7 @@
 :map_contractsmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_015.
 :pm_015 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_015 <http://www.w3.org/ns/r2rml#predicateMap> :pm_015.
-:pm_015 <http://www.w3.org/ns/r2rml#constant> vocab:isZeroCost.
+:pm_015 <http://www.w3.org/ns/r2rml#constant> g2:isZeroCost.
 :pom_015 <http://www.w3.org/ns/r2rml#objectMap> :om_015.
 :om_015 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://semweb.mmlab.be/ns/rml#reference> "Tiene Ingreso/Coste Cero";
@@ -187,7 +188,7 @@
 :map_contractsmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_016.
 :pm_016 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_016 <http://www.w3.org/ns/r2rml#predicateMap> :pm_016.
-:pm_016 <http://www.w3.org/ns/r2rml#constant> vocab:unitaryAdjudication.
+:pm_016 <http://www.w3.org/ns/r2rml#constant> g2:unitaryAdjudication.
 :pom_016 <http://www.w3.org/ns/r2rml#objectMap> :om_016.
 :om_016 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://semweb.mmlab.be/ns/rml#reference> "Adjudicado por precios unitarios";
@@ -197,7 +198,7 @@
 :map_contractsmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_017.
 :pm_017 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_017 <http://www.w3.org/ns/r2rml#predicateMap> :pm_017.
-:pm_017 <http://www.w3.org/ns/r2rml#constant> vocab:hasContractor.
+:pm_017 <http://www.w3.org/ns/r2rml#constant> g2:hasContractor.
 :pom_017 <http://www.w3.org/ns/r2rml#objectMap> :om_017.
 :rules_000 void:exampleResource :map_contractormap_000.
 :map_contractormap_000 <http://semweb.mmlab.be/ns/rml#logicalSource> :source_001.
@@ -208,7 +209,7 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "contractormap".
 :s_001 a <http://www.w3.org/ns/r2rml#SubjectMap>.
 :map_contractormap_000 <http://www.w3.org/ns/r2rml#subjectMap> :s_001.
-:s_001 <http://www.w3.org/ns/r2rml#template> "http://MadridPublicContracts/ontology/{Organismo}".
+:s_001 <http://www.w3.org/ns/r2rml#template> "http://MadridPublicContracts/resources/contractor/{Organismo}".
 :pom_018 a <http://www.w3.org/ns/r2rml#PredicateObjectMap>.
 :map_contractormap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_018.
 :pm_018 a <http://www.w3.org/ns/r2rml#PredicateMap>.
@@ -222,7 +223,7 @@
 :map_contractormap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_019.
 :pm_019 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_019 <http://www.w3.org/ns/r2rml#predicateMap> :pm_019.
-:pm_019 <http://www.w3.org/ns/r2rml#constant> vocab:orgtype.
+:pm_019 <http://www.w3.org/ns/r2rml#constant> g2:orgtype.
 :pom_019 <http://www.w3.org/ns/r2rml#objectMap> :om_019.
 :om_019 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://semweb.mmlab.be/ns/rml#reference> "Descripcion Centro";
@@ -246,7 +247,7 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "contracteemap".
 :s_002 a <http://www.w3.org/ns/r2rml#SubjectMap>.
 :map_contracteemap_000 <http://www.w3.org/ns/r2rml#subjectMap> :s_002.
-:s_002 <http://www.w3.org/ns/r2rml#template> "http://MadridPublicContracts/ontology/{NIF/CIF Adjudicatario}".
+:s_002 <http://www.w3.org/ns/r2rml#template> "http://MadridPublicContracts/resources/contractee/{NIF/CIF Adjudicatario}".
 :pom_021 a <http://www.w3.org/ns/r2rml#PredicateObjectMap>.
 :map_contracteemap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_021.
 :pm_021 a <http://www.w3.org/ns/r2rml#PredicateMap>.
@@ -260,7 +261,7 @@
 :map_contracteemap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_022.
 :pm_022 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_022 <http://www.w3.org/ns/r2rml#predicateMap> :pm_022.
-:pm_022 <http://www.w3.org/ns/r2rml#constant> vocab:orgtype.
+:pm_022 <http://www.w3.org/ns/r2rml#constant> g2:orgtype.
 :pom_022 <http://www.w3.org/ns/r2rml#objectMap> :om_022.
 :om_022 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://semweb.mmlab.be/ns/rml#reference> "Nombre/Razon Social";
@@ -275,7 +276,7 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "juntasmap".
 :s_003 a <http://www.w3.org/ns/r2rml#SubjectMap>.
 :map_juntasmap_000 <http://www.w3.org/ns/r2rml#subjectMap> :s_003.
-:s_003 <http://www.w3.org/ns/r2rml#template> "http://MadridPublicContracts/ontology/{NOMBRE}".
+:s_003 <http://www.w3.org/ns/r2rml#template> "http://MadridPublicContracts/resources/junta/{NOMBRE}".
 :pom_023 a <http://www.w3.org/ns/r2rml#PredicateObjectMap>.
 :map_juntasmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_023.
 :pm_023 a <http://www.w3.org/ns/r2rml#PredicateMap>.
@@ -289,7 +290,7 @@
 :map_juntasmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_024.
 :pm_024 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_024 <http://www.w3.org/ns/r2rml#predicateMap> :pm_024.
-:pm_024 <http://www.w3.org/ns/r2rml#constant> vocab:hasSchedule.
+:pm_024 <http://www.w3.org/ns/r2rml#constant> g2:hasSchedule.
 :pom_024 <http://www.w3.org/ns/r2rml#objectMap> :om_024.
 :om_024 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://semweb.mmlab.be/ns/rml#reference> "HORARIO";
@@ -299,7 +300,7 @@
 :map_juntasmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_025.
 :pm_025 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_025 <http://www.w3.org/ns/r2rml#predicateMap> :pm_025.
-:pm_025 <http://www.w3.org/ns/r2rml#constant> vocab:hasDescription.
+:pm_025 <http://www.w3.org/ns/r2rml#constant> g2:hasDescription.
 :pom_025 <http://www.w3.org/ns/r2rml#objectMap> :om_025.
 :om_025 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://semweb.mmlab.be/ns/rml#reference> "DESCRIPCION-ENTIDAD";
@@ -309,7 +310,7 @@
 :map_juntasmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_026.
 :pm_026 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_026 <http://www.w3.org/ns/r2rml#predicateMap> :pm_026.
-:pm_026 <http://www.w3.org/ns/r2rml#constant> vocab:publicTransport.
+:pm_026 <http://www.w3.org/ns/r2rml#constant> g2:publicTransport.
 :pom_026 <http://www.w3.org/ns/r2rml#objectMap> :om_026.
 :om_026 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://semweb.mmlab.be/ns/rml#reference> "TRANSPORTE";
@@ -319,7 +320,7 @@
 :map_juntasmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_027.
 :pm_027 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_027 <http://www.w3.org/ns/r2rml#predicateMap> :pm_027.
-:pm_027 <http://www.w3.org/ns/r2rml#constant> vocab:hasWeb.
+:pm_027 <http://www.w3.org/ns/r2rml#constant> g2:hasWeb.
 :pom_027 <http://www.w3.org/ns/r2rml#objectMap> :om_027.
 :om_027 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://semweb.mmlab.be/ns/rml#reference> "PAGINA WEB";
@@ -329,7 +330,7 @@
 :map_juntasmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_028.
 :pm_028 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_028 <http://www.w3.org/ns/r2rml#predicateMap> :pm_028.
-:pm_028 <http://www.w3.org/ns/r2rml#constant> vocab:isinRoad.
+:pm_028 <http://www.w3.org/ns/r2rml#constant> g2:isinRoad.
 :pom_028 <http://www.w3.org/ns/r2rml#objectMap> :om_028.
 :om_028 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://semweb.mmlab.be/ns/rml#reference> "NOMBRE-VIA";
@@ -339,7 +340,7 @@
 :map_juntasmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_029.
 :pm_029 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_029 <http://www.w3.org/ns/r2rml#predicateMap> :pm_029.
-:pm_029 <http://www.w3.org/ns/r2rml#constant> vocab:hasRoadType.
+:pm_029 <http://www.w3.org/ns/r2rml#constant> g2:hasRoadType.
 :pom_029 <http://www.w3.org/ns/r2rml#objectMap> :om_029.
 :om_029 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://semweb.mmlab.be/ns/rml#reference> "TIPO-VIA";
@@ -349,7 +350,7 @@
 :map_juntasmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_030.
 :pm_030 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_030 <http://www.w3.org/ns/r2rml#predicateMap> :pm_030.
-:pm_030 <http://www.w3.org/ns/r2rml#constant> vocab:isinRoadNumber.
+:pm_030 <http://www.w3.org/ns/r2rml#constant> g2:isinRoadNumber.
 :pom_030 <http://www.w3.org/ns/r2rml#objectMap> :om_030.
 :om_030 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://semweb.mmlab.be/ns/rml#reference> "NUMERO";
@@ -359,27 +360,25 @@
 :map_juntasmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_031.
 :pm_031 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_031 <http://www.w3.org/ns/r2rml#predicateMap> :pm_031.
-:pm_031 <http://www.w3.org/ns/r2rml#constant> vocab:locality.
+:pm_031 <http://www.w3.org/ns/r2rml#constant> g2:locality.
 :pom_031 <http://www.w3.org/ns/r2rml#objectMap> :om_031.
 :om_031 a <http://www.w3.org/ns/r2rml#ObjectMap>;
-    <http://semweb.mmlab.be/ns/rml#reference> "LOCALIDAD";
-    <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#Literal>;
-    <http://www.w3.org/ns/r2rml#datatype> xsd:string.
+    <http://www.w3.org/ns/r2rml#template> "http://MadridPublicContracts/resources/locality/{LOCALIDAD}";
+    <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#IRI>.
 :pom_032 a <http://www.w3.org/ns/r2rml#PredicateObjectMap>.
 :map_juntasmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_032.
 :pm_032 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_032 <http://www.w3.org/ns/r2rml#predicateMap> :pm_032.
-:pm_032 <http://www.w3.org/ns/r2rml#constant> vocab:province.
+:pm_032 <http://www.w3.org/ns/r2rml#constant> g2:province.
 :pom_032 <http://www.w3.org/ns/r2rml#objectMap> :om_032.
 :om_032 a <http://www.w3.org/ns/r2rml#ObjectMap>;
-    <http://semweb.mmlab.be/ns/rml#reference> "PROVINCIA";
-    <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#Literal>;
-    <http://www.w3.org/ns/r2rml#datatype> xsd:string.
+    <http://www.w3.org/ns/r2rml#template> "http://MadridPublicContracts/resources/province/{PROVINCIA}";
+    <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#IRI>.
 :pom_033 a <http://www.w3.org/ns/r2rml#PredicateObjectMap>.
 :map_juntasmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_033.
 :pm_033 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_033 <http://www.w3.org/ns/r2rml#predicateMap> :pm_033.
-:pm_033 <http://www.w3.org/ns/r2rml#constant> vocab:pc.
+:pm_033 <http://www.w3.org/ns/r2rml#constant> g2:pc.
 :pom_033 <http://www.w3.org/ns/r2rml#objectMap> :om_033.
 :om_033 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://semweb.mmlab.be/ns/rml#reference> "CODIGO POSTAL";
@@ -389,27 +388,25 @@
 :map_juntasmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_034.
 :pm_034 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_034 <http://www.w3.org/ns/r2rml#predicateMap> :pm_034.
-:pm_034 <http://www.w3.org/ns/r2rml#constant> vocab:neighborhood.
+:pm_034 <http://www.w3.org/ns/r2rml#constant> g2:neighborhood.
 :pom_034 <http://www.w3.org/ns/r2rml#objectMap> :om_034.
 :om_034 a <http://www.w3.org/ns/r2rml#ObjectMap>;
-    <http://semweb.mmlab.be/ns/rml#reference> "BARRIO";
-    <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#Literal>;
-    <http://www.w3.org/ns/r2rml#datatype> xsd:string.
+    <http://www.w3.org/ns/r2rml#template> "http://MadridPublicContracts/resources/neighborhood/{BARRIO}";
+    <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#IRI>.
 :pom_035 a <http://www.w3.org/ns/r2rml#PredicateObjectMap>.
 :map_juntasmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_035.
 :pm_035 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_035 <http://www.w3.org/ns/r2rml#predicateMap> :pm_035.
-:pm_035 <http://www.w3.org/ns/r2rml#constant> vocab:district.
+:pm_035 <http://www.w3.org/ns/r2rml#constant> g2:district.
 :pom_035 <http://www.w3.org/ns/r2rml#objectMap> :om_035.
 :om_035 a <http://www.w3.org/ns/r2rml#ObjectMap>;
-    <http://semweb.mmlab.be/ns/rml#reference> "DISTRITO";
-    <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#Literal>;
-    <http://www.w3.org/ns/r2rml#datatype> xsd:string.
+    <http://www.w3.org/ns/r2rml#template> "http://MadridPublicContracts/resources/district/{DISTRITO}";
+    <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#IRI>.
 :pom_036 a <http://www.w3.org/ns/r2rml#PredicateObjectMap>.
 :map_juntasmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_036.
 :pm_036 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_036 <http://www.w3.org/ns/r2rml#predicateMap> :pm_036.
-:pm_036 <http://www.w3.org/ns/r2rml#constant> vocab:hasCoordenateX.
+:pm_036 <http://www.w3.org/ns/r2rml#constant> g2:hasCoordenateX.
 :pom_036 <http://www.w3.org/ns/r2rml#objectMap> :om_036.
 :om_036 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://semweb.mmlab.be/ns/rml#reference> "COORDENADA-X";
@@ -419,7 +416,7 @@
 :map_juntasmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_037.
 :pm_037 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_037 <http://www.w3.org/ns/r2rml#predicateMap> :pm_037.
-:pm_037 <http://www.w3.org/ns/r2rml#constant> vocab:hasCoordenateY.
+:pm_037 <http://www.w3.org/ns/r2rml#constant> g2:hasCoordenateY.
 :pom_037 <http://www.w3.org/ns/r2rml#objectMap> :om_037.
 :om_037 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://semweb.mmlab.be/ns/rml#reference> "COORDENADA-Y";
@@ -429,7 +426,7 @@
 :map_juntasmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_038.
 :pm_038 a <http://www.w3.org/ns/r2rml#PredicateMap>.
 :pom_038 <http://www.w3.org/ns/r2rml#predicateMap> :pm_038.
-:pm_038 <http://www.w3.org/ns/r2rml#constant> vocab:hasEmail.
+:pm_038 <http://www.w3.org/ns/r2rml#constant> g2:hasEmail.
 :pom_038 <http://www.w3.org/ns/r2rml#objectMap> :om_038.
 :om_038 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://semweb.mmlab.be/ns/rml#reference> "EMAIL";
@@ -443,6 +440,118 @@
 :pom_039 <http://www.w3.org/ns/r2rml#objectMap> :om_039.
 :om_039 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://semweb.mmlab.be/ns/rml#reference> "wikiJUNTA";
+    <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#IRI>.
+:rules_000 void:exampleResource :map_neighborhoodmap_000.
+:map_neighborhoodmap_000 <http://semweb.mmlab.be/ns/rml#logicalSource> :source_004.
+:source_004 a <http://semweb.mmlab.be/ns/rml#LogicalSource>;
+    <http://semweb.mmlab.be/ns/rml#source> "juntas_distrito_ayuto_madrid-with-links.csv";
+    <http://semweb.mmlab.be/ns/rml#referenceFormulation> <http://semweb.mmlab.be/ns/ql#CSV>.
+:map_neighborhoodmap_000 a <http://www.w3.org/ns/r2rml#TriplesMap>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "neighborhoodmap".
+:s_004 a <http://www.w3.org/ns/r2rml#SubjectMap>.
+:map_neighborhoodmap_000 <http://www.w3.org/ns/r2rml#subjectMap> :s_004.
+:s_004 <http://www.w3.org/ns/r2rml#template> "http://MadridPublicContracts/resources/neighborhood/{BARRIO}".
+:pom_040 a <http://www.w3.org/ns/r2rml#PredicateObjectMap>.
+:map_neighborhoodmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_040.
+:pm_040 a <http://www.w3.org/ns/r2rml#PredicateMap>.
+:pom_040 <http://www.w3.org/ns/r2rml#predicateMap> :pm_040.
+:pm_040 <http://www.w3.org/ns/r2rml#constant> rdf:type.
+:pom_040 <http://www.w3.org/ns/r2rml#objectMap> :om_040.
+:om_040 a <http://www.w3.org/ns/r2rml#ObjectMap>;
+    <http://www.w3.org/ns/r2rml#constant> "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/Neighborhood";
+    <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#Literal>.
+:pom_041 a <http://www.w3.org/ns/r2rml#PredicateObjectMap>.
+:map_neighborhoodmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_041.
+:pm_041 a <http://www.w3.org/ns/r2rml#PredicateMap>.
+:pom_041 <http://www.w3.org/ns/r2rml#predicateMap> :pm_041.
+:pm_041 <http://www.w3.org/ns/r2rml#constant> owl:sameAs.
+:pom_041 <http://www.w3.org/ns/r2rml#objectMap> :om_041.
+:om_041 a <http://www.w3.org/ns/r2rml#ObjectMap>;
+    <http://semweb.mmlab.be/ns/rml#reference> "wikiBARRIOS";
+    <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#IRI>.
+:rules_000 void:exampleResource :map_districtsmap_000.
+:map_districtsmap_000 <http://semweb.mmlab.be/ns/rml#logicalSource> :source_005.
+:source_005 a <http://semweb.mmlab.be/ns/rml#LogicalSource>;
+    <http://semweb.mmlab.be/ns/rml#source> "juntas_distrito_ayuto_madrid-with-links.csv";
+    <http://semweb.mmlab.be/ns/rml#referenceFormulation> <http://semweb.mmlab.be/ns/ql#CSV>.
+:map_districtsmap_000 a <http://www.w3.org/ns/r2rml#TriplesMap>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "districtsmap".
+:s_005 a <http://www.w3.org/ns/r2rml#SubjectMap>.
+:map_districtsmap_000 <http://www.w3.org/ns/r2rml#subjectMap> :s_005.
+:s_005 <http://www.w3.org/ns/r2rml#template> "http://MadridPublicContracts/resources/district/{DISTRITO}".
+:pom_042 a <http://www.w3.org/ns/r2rml#PredicateObjectMap>.
+:map_districtsmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_042.
+:pm_042 a <http://www.w3.org/ns/r2rml#PredicateMap>.
+:pom_042 <http://www.w3.org/ns/r2rml#predicateMap> :pm_042.
+:pm_042 <http://www.w3.org/ns/r2rml#constant> rdf:type.
+:pom_042 <http://www.w3.org/ns/r2rml#objectMap> :om_042.
+:om_042 a <http://www.w3.org/ns/r2rml#ObjectMap>;
+    <http://www.w3.org/ns/r2rml#constant> "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/District";
+    <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#Literal>.
+:pom_043 a <http://www.w3.org/ns/r2rml#PredicateObjectMap>.
+:map_districtsmap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_043.
+:pm_043 a <http://www.w3.org/ns/r2rml#PredicateMap>.
+:pom_043 <http://www.w3.org/ns/r2rml#predicateMap> :pm_043.
+:pm_043 <http://www.w3.org/ns/r2rml#constant> owl:sameAs.
+:pom_043 <http://www.w3.org/ns/r2rml#objectMap> :om_043.
+:om_043 a <http://www.w3.org/ns/r2rml#ObjectMap>;
+    <http://semweb.mmlab.be/ns/rml#reference> "wikiDISTRITO";
+    <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#IRI>.
+:rules_000 void:exampleResource :map_provincemap_000.
+:map_provincemap_000 <http://semweb.mmlab.be/ns/rml#logicalSource> :source_006.
+:source_006 a <http://semweb.mmlab.be/ns/rml#LogicalSource>;
+    <http://semweb.mmlab.be/ns/rml#source> "juntas_distrito_ayuto_madrid-with-links.csv";
+    <http://semweb.mmlab.be/ns/rml#referenceFormulation> <http://semweb.mmlab.be/ns/ql#CSV>.
+:map_provincemap_000 a <http://www.w3.org/ns/r2rml#TriplesMap>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "provincemap".
+:s_006 a <http://www.w3.org/ns/r2rml#SubjectMap>.
+:map_provincemap_000 <http://www.w3.org/ns/r2rml#subjectMap> :s_006.
+:s_006 <http://www.w3.org/ns/r2rml#template> "http://MadridPublicContracts/resources/province/{PROVINCIA}".
+:pom_044 a <http://www.w3.org/ns/r2rml#PredicateObjectMap>.
+:map_provincemap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_044.
+:pm_044 a <http://www.w3.org/ns/r2rml#PredicateMap>.
+:pom_044 <http://www.w3.org/ns/r2rml#predicateMap> :pm_044.
+:pm_044 <http://www.w3.org/ns/r2rml#constant> rdf:type.
+:pom_044 <http://www.w3.org/ns/r2rml#objectMap> :om_044.
+:om_044 a <http://www.w3.org/ns/r2rml#ObjectMap>;
+    <http://www.w3.org/ns/r2rml#constant> "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/Province";
+    <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#Literal>.
+:pom_045 a <http://www.w3.org/ns/r2rml#PredicateObjectMap>.
+:map_provincemap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_045.
+:pm_045 a <http://www.w3.org/ns/r2rml#PredicateMap>.
+:pom_045 <http://www.w3.org/ns/r2rml#predicateMap> :pm_045.
+:pm_045 <http://www.w3.org/ns/r2rml#constant> owl:sameAs.
+:pom_045 <http://www.w3.org/ns/r2rml#objectMap> :om_045.
+:om_045 a <http://www.w3.org/ns/r2rml#ObjectMap>;
+    <http://semweb.mmlab.be/ns/rml#reference> "wikiPROVINCIA";
+    <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#IRI>.
+:rules_000 void:exampleResource :map_localitymap_000.
+:map_localitymap_000 <http://semweb.mmlab.be/ns/rml#logicalSource> :source_007.
+:source_007 a <http://semweb.mmlab.be/ns/rml#LogicalSource>;
+    <http://semweb.mmlab.be/ns/rml#source> "juntas_distrito_ayuto_madrid-with-links.csv";
+    <http://semweb.mmlab.be/ns/rml#referenceFormulation> <http://semweb.mmlab.be/ns/ql#CSV>.
+:map_localitymap_000 a <http://www.w3.org/ns/r2rml#TriplesMap>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "localitymap".
+:s_007 a <http://www.w3.org/ns/r2rml#SubjectMap>.
+:map_localitymap_000 <http://www.w3.org/ns/r2rml#subjectMap> :s_007.
+:s_007 <http://www.w3.org/ns/r2rml#template> "http://MadridPublicContracts/resources/locality/{LOCALIDAD}".
+:pom_046 a <http://www.w3.org/ns/r2rml#PredicateObjectMap>.
+:map_localitymap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_046.
+:pm_046 a <http://www.w3.org/ns/r2rml#PredicateMap>.
+:pom_046 <http://www.w3.org/ns/r2rml#predicateMap> :pm_046.
+:pm_046 <http://www.w3.org/ns/r2rml#constant> rdf:type.
+:pom_046 <http://www.w3.org/ns/r2rml#objectMap> :om_046.
+:om_046 a <http://www.w3.org/ns/r2rml#ObjectMap>;
+    <http://www.w3.org/ns/r2rml#constant> "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/Locality";
+    <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#Literal>.
+:pom_047 a <http://www.w3.org/ns/r2rml#PredicateObjectMap>.
+:map_localitymap_000 <http://www.w3.org/ns/r2rml#predicateObjectMap> :pom_047.
+:pm_047 a <http://www.w3.org/ns/r2rml#PredicateMap>.
+:pom_047 <http://www.w3.org/ns/r2rml#predicateMap> :pm_047.
+:pm_047 <http://www.w3.org/ns/r2rml#constant> owl:sameAs.
+:pom_047 <http://www.w3.org/ns/r2rml#objectMap> :om_047.
+:om_047 a <http://www.w3.org/ns/r2rml#ObjectMap>;
+    <http://semweb.mmlab.be/ns/rml#reference> "wikiLOCALIDAD";
     <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#IRI>.
 :om_013 a <http://www.w3.org/ns/r2rml#ObjectMap>;
     <http://www.w3.org/ns/r2rml#parentTriplesMap> :map_contracteemap_000;

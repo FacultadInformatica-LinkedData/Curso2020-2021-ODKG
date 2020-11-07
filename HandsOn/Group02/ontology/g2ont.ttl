@@ -4,10 +4,21 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema/> .
-
+@prefix vocab: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/>.
 
 
 # Classes
+### Distrito
+:District rdf:type vocab:District
+
+### Barrio
+:Neighborhood rdf:type vocab:Neighborhood
+
+### Provincia
+:Province rdf:type vocab:Province.
+
+### Localidad 
+:Locality rdf:type vocab:Locality
 
 ### Contrato
 :Contract rdf:type owl:Class .
@@ -23,7 +34,8 @@
 
 ###Junta
 :Junta rdfs:subClassOf :Contractor .
-					
+
+
 # Contract properties
 
 ### Año 
@@ -156,23 +168,23 @@
 ### Localidad
 :locality rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
-	rdfs:range xsd:string.
+	rdfs:range :Locality.
 ### Provincia
 :province rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
-	rdfs:range xsd:string.
+	rdfs:range Province.
 ### CP
 :pc rdf:type owl:DatatypeProperty ;
 		rdfs:domain :Junta ;
 		rdfs:range xsd:integer.
-###NBarrio
+### Barrio
 :neighborhood rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
-	rdfs:range xsd:string.
+	rdfs:range :Neighborhood.
 ###Distrito
 :district rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
-	rdfs:range xsd:string.
+	rdfs:range :District.
 ###Coordenada-x
 :hasCoordenateX rdf:type owl:DatatypeProperty ;
 	rdfs:domain :Junta ;
