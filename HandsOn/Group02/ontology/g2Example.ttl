@@ -1,11 +1,18 @@
-:MADRID DESTINO, CULTURA, TURISMO Y NEGOCIO, S.A. a :Contractor;
+@prefix : <http://MadridPublicContracts/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema/> .
+
+:MADRID DESTINO, CULTURA, TURISMO Y NEGOCIO, S.A.a :Contractor;
 	:orgType "EMPRESAS".
 	
 :B82917063 a :Contractee;
 	:nameSR "EL ANGEL DE PEKIN" .
 	
 	
-:20200000 a :Contract;
+:202000001 a :Contract;
 	:hasContractor :MADRID DESTINO, CULTURA, TURISMO Y NEGOCIO, S.A. ;
 	:hasContractee :B82917063 ;
 	:hasYear "2020"^^xsd:gYear;
