@@ -1,18 +1,15 @@
-:comp1 a :Contractor;
-	rdfs:label "MADRID DESTINO, CULTURA, TURISMO Y NEGOCIO, S.A." ;
+:MADRID DESTINO, CULTURA, TURISMO Y NEGOCIO, S.A. a :Contractor;
 	:orgType "EMPRESAS".
 	
-:comp2 a :Contractee;
-	rdfs:label "EL ANGEL DE PEKIN" ;
-	:hasNID "B82917063".
+:B82917063 a :Contractee;
+	:nameSR "EL ANGEL DE PEKIN" .
 	
 	
-:contract1 a :Contract;
-	:hasContractor :comp1;
-	:hasContractee :comp2;
+:20200000 a :Contract;
+	:hasContractor :MADRID DESTINO, CULTURA, TURISMO Y NEGOCIO, S.A. ;
+	:hasContractee :B82917063 ;
 	:hasYear "2020"^^xsd:gYear;
 	:hasMonth "Enero"^^xsd:gMonth;
-	:hasContractNumber "202000001"^^xsd:integer;
 	:hasExpNumber "MDC/2019/00177"^^xsd:string;
 	:hasDescription "ESPECTACULO TEATRAL QUIEN ES EL SR SCHMITT EN LA SALA PRINCIPAL DEL TEATRO DEL 16 DE OCTUBRE AL 10 DE NOVIEMBRE (T.ESPAÑOL)"^^xsd:string;
 	:hasContractType "Servicios";
@@ -22,15 +19,13 @@
 	:hasCriteria ""^^xsd:string;
 	:hasBudget "362802.00"^^xsd:double;
 	:hasAmount "185975.62"^^xsd:double;
-	:hasContractDate "13/09/2019"^^xsd:dateTime;
-	:nameSR ""^^xsd:string;
+	:hasContractDate "2019-09-13T00:00:00Z"^^xsd:dateTime;
 	:isDeal ""^^xsd:bool;
 	:isZeroCost ""^^xsd:bool;
 	:unitaryAdjudication ""^^xsd:bool;
 
 
-:junta1 a :Junta;
-	:hasDescription "Junta Municipal del Distrito de Arganzuela"^^xsd:string;
+:Junta Municipal del Distrito de Arganzuela a :Junta;
 	:hasSchedule "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."^^xsd:string;
 	:publicTransport "Metro: Legazpi (líneas, 3, 6) Bus: 6, 18, 78, 148, 62 Bicimad: Estación 65 (Paseo de la Chopera, 14)"^^xsd:string;
 	:hasWeb "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=3ca05c2cdc41c010VgnVCM2000000c205a0aRCRD"^^xsd:string;
@@ -44,4 +39,4 @@
 	:district "Arganzuela"^^xsd:string;
 	:hasCoordenateX 440714^^xsd:integer;
 	:hasCoordenateY 4471656^^xsd:integer;
-	:hasEmail j"marganzuela@madrid.es"^^xsd:string;
+	:hasEmail "jmarganzuela@madrid.es"^^xsd:string;
