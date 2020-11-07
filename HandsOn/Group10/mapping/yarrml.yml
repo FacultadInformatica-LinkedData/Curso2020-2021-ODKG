@@ -20,8 +20,8 @@ mappings:
     po:
       - [a,default:Centro]
 
-      - [default: descripcionCentro,$(Descripcion Centro),xsd:string]
-      - [default: tieneGasto,$(Gastos)]
+      - [default:descripcionCentro,$(Descripcion Centro),xsd:string]
+      - [default:tieneGasto,$(Gastos)]
       - [owl:sameAs,$(wikicentro)~iri]
 
 
