@@ -7,7 +7,7 @@
 @prefix vocab: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/>.
 @prefix pc: <http://purl.org/procurement/public-contracts#> .
 @prefix t: <http://purl.org/terms/> .
-@prefix gr:	<http://purl.org/goodrelations/v1#>
+@prefix gr:	<http://purl.org/goodrelations/v1#> .
 @prefix pproc: <http://contsem.unizar.es/def/sector-publico/pproc#> .
 
 # Classes
@@ -118,21 +118,21 @@ gr:UnitPriceSpecifications rdf:type owl:DatatypeProperty ;
 ### Organismo contratado 
 :hasContractee rdf:type owl:ObjectProperty ;
                   rdfs:domain pc:Contract ;
-                  rdfs:range pc:Contractee .
+                  rdfs:range pc:Tender .
 
 ### Nombre/Razon Social		 
 :nameSR rdf:type owl:DatatypeProperty ;
-             rdfs:domain pc:Contractee ;
+             rdfs:domain pc:Tender ;
              rdfs:range xsd:string.
 				  
 ###Organismo contratante			  
 :hasContractor rdf:type owl:ObjectProperty ;
                   rdfs:domain pc:Contract ;
-                  rdfs:range pc:Contractor .	
+                  rdfs:range pc:ContractingAuthority .	
 				  
 ### Descripcion Centro (empresa, ayuntamiento de Madrid)		 
 :orgType rdf:type owl:DatatypeProperty ;
-             rdfs:domain pc:Contractor ;
+             rdfs:domain pc:ContractingAuthority ;
              rdfs:range xsd:string.				  
 
 
