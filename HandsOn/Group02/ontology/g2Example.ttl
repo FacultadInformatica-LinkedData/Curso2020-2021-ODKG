@@ -27,3 +27,21 @@
 	:isDeal ""^^xsd:bool;
 	:isZeroCost ""^^xsd:bool;
 	:unitaryAdjudication ""^^xsd:bool;
+
+
+:junta1 a :Junta;
+	:hasDescription "Junta Municipal del Distrito de Arganzuela"^^xsd:string;
+	:hasSchedule "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."^^xsd:string;
+	:publicTransport "Metro: Legazpi (líneas, 3, 6) Bus: 6, 18, 78, 148, 62 Bicimad: Estación 65 (Paseo de la Chopera, 14)"^^xsd:string;
+	:hasWeb "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=3ca05c2cdc41c010VgnVCM2000000c205a0aRCRD"^^xsd:string;
+	:isinRoad "CHOPERA"^^xsd:string;
+	:hasRoadType "PASEO"^^xsd:string;
+	:isinRoadNumber 10^^xsd:integer;
+	:locality "Madrid"^^xsd:string;
+	:province "Province of Madrid"^^xsd:string;
+	:pc 28045^^xsd:integer;
+	:neighborhood "La Chopera"^^xsd:string;
+	:district "Arganzuela"^^xsd:string;
+	:hasCoordenateX 440714^^xsd:integer;
+	:hasCoordenateY 4471656^^xsd:integer;
+	:hasEmail j"marganzuela@madrid.es"^^xsd:string;
