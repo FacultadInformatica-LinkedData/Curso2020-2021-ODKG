@@ -90,11 +90,6 @@
              rdfs:domain :Contract ;
              rdfs:range xsd:dateTime.
 			 
-### Nombre/Razon Social		 
-:nameSR rdf:type owl:DatatypeProperty ;
-             rdfs:domain :Contract ;
-             rdfs:range xsd:string.
-			 
 ### Acuerdo Marco			 
 :isDeal rdf:type owl:DatatypeProperty ;
              rdfs:domain :Contract ;
@@ -109,15 +104,20 @@
 :unitaryAdjudication rdf:type owl:DatatypeProperty ;
              	     rdfs:domain :Contract ;
                      rdfs:range xsd:bool.
-			 
+
 ### Organismo contratado 
 :hasContractee rdf:type owl:ObjectProperty ;
                   rdfs:domain :Contract ;
                   rdfs:range :Contractee .
+
+### Nombre/Razon Social		 
+:nameSR rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Contractee ;
+             rdfs:range xsd:string.
 				  
 ### NIF/CIF Adjudicatario		  
-:hasNID rdf:type owl:ObjectProperty ;
-                  rdfs:domain :Org ;
+:hasNIF rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Contractee ;
                   rdfs:range xsd:string .
 
 ###Organismo contratante			  
