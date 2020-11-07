@@ -11,7 +11,7 @@
 	
 :comp2 a :Contractee;
 	rdfs:label "EL ANGEL DE PEKIN" ;
-	:hasNID "B82917063".
+	:hasNID :B82917063.
 	
 	
 :contract1 a :Contract;
