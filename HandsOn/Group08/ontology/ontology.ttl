@@ -176,10 +176,6 @@ s:taxID rdf:type owl:DatatypeProperty ;
 #    Classes
 #################################################################
 
-###  http://schema.org/Date
-s:Date rdf:type owl:Class .
-
-
 ###  http://schema.org/Order
 s:Order rdf:type owl:Class .
 
