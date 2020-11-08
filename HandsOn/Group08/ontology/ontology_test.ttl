@@ -27,6 +27,8 @@ s:orderDate rdf:type owl:ObjectProperty ;
 
 ###  http://schema.org/orderedItem
 s:orderedItem rdf:type owl:ObjectProperty .
+            rdfs:domain s:Intangible ;
+            rdfs:range s:Thing .
 
 
 ###  http://schema.org/seller
