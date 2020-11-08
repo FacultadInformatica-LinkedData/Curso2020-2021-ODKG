@@ -23,14 +23,8 @@ mappings:
       - [base:numberDeaths,$(Fallecidos) ,xsd:integer]
       - [base:numberUCI,$(UCI) ,xsd:integer]
       - [base:numberHospitalizations,$(Hospitalizados) ,xsd:integer]
-      - p: base:inDate
-        o:
-          - mapping: datemap
-            condition:
-              function: equal
-              parameters:
-                - [str1, $(FECHA)]
-                - [str2, $(fecha)]
+      - [base:inDate,$(FECHA) ,s:Date]
+
   covidstatusmap2:
     sources:
       - [datos_ccaas_updated.csv~csv]
@@ -57,14 +51,7 @@ mappings:
               parameters:
                 - [str1, $(CovidStatusID)]
                 - [str2, $(CovidStatusID)]
-      
-  datemap:
-    sources:
-      - [datos_ccaas_updated.csv~csv]
-    s: http://www.publicProcurementMurciaCOVID19.es/resource/Date/$(fecha)
-    po:
-      - [a, s:Date]
-       
+            
   ordermap:
     sources:
       - [ContratosEmergenciaSMS-updated.csv~csv]
@@ -80,14 +67,7 @@ mappings:
               parameters:
                 - [str1, $(OrderItemID)]
                 - [str2, $(OrderItemID)]
-      - p: s:orderDate
-        o:
-          - mapping: datemap
-            condition:
-              function: equal
-              parameters:
-                - [str1, $(Fecha)]
-                - [str2, $(fecha)]
+      - [s:orderDate,$(Fecha) ,s:Date]
       - p: s:seller
         o:
           - mapping: organizationmap
