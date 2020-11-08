@@ -1,0 +1,9 @@
+PREFIX vocab: <http://eit-upm-opendata.com/ted#> .
+prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# Check if entity link is to Prudnik on wikidata
+SELECT ?prudnik_link
+WHERE {
+    vocab:Prudnik owl:sameAs ?prudnik_link .
+}
+LIMIT 15

@@ -1,0 +1,246 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_TOWN",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q515",
+        "name": "city"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column CAE_TOWN to type Q515"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ISO_COUNTRY_CODE",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q6256",
+        "name": "country"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column ISO_COUNTRY_CODE to type Q6256"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_TOWN",
+    "similarValue": "Albi",
+    "judgment": "matched",
+    "match": {
+      "id": "Q34804",
+      "name": "Albuquerque",
+      "types": [
+        "Q1093829",
+        "Q1549591"
+      ],
+      "score": 67
+    },
+    "shareNewTopics": false,
+    "description": "Match item Albuquerque (Q34804) for cells containing \"Albi\" in column CAE_TOWN"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_TOWN",
+    "similarValue": "Albi",
+    "judgment": "matched",
+    "match": {
+      "id": "Q338581",
+      "name": "Albia",
+      "types": [
+        "Q1093829"
+      ],
+      "score": 89
+    },
+    "shareNewTopics": false,
+    "description": "Match item Albia (Q338581) for cells containing \"Albi\" in column CAE_TOWN"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_TOWN",
+    "similarValue": "Albi",
+    "judgment": "matched",
+    "match": {
+      "id": "Q34804",
+      "name": "Albuquerque",
+      "types": [
+        "Q1093829",
+        "Q1549591"
+      ],
+      "score": 67
+    },
+    "shareNewTopics": false,
+    "description": "Match item Albuquerque (Q34804) for cells containing \"Albi\" in column CAE_TOWN"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CAE_TOWN",
+    "similarValue": "Albi",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"Albi\" in column CAE_TOWN"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ISO_COUNTRY_CODE",
+    "similarValue": "PL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q36",
+      "name": "Poland",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Poland (Q36) for cells containing \"PL\" in column ISO_COUNTRY_CODE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ISO_COUNTRY_CODE",
+    "similarValue": "ES",
+    "judgment": "matched",
+    "match": {
+      "id": "Q29",
+      "name": "Spain",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Spain (Q29) for cells containing \"ES\" in column ISO_COUNTRY_CODE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ISO_COUNTRY_CODE",
+    "similarValue": "AT",
+    "judgment": "matched",
+    "match": {
+      "id": "Q40",
+      "name": "Austria",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Austria (Q40) for cells containing \"AT\" in column ISO_COUNTRY_CODE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ISO_COUNTRY_CODE",
+    "similarValue": "UK",
+    "judgment": "matched",
+    "match": {
+      "id": "Q145",
+      "name": "United Kingdom",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item United Kingdom (Q145) for cells containing \"UK\" in column ISO_COUNTRY_CODE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ISO_COUNTRY_CODE",
+    "similarValue": "SI",
+    "judgment": "matched",
+    "match": {
+      "id": "Q215",
+      "name": "Slovenia",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Slovenia (Q215) for cells containing \"SI\" in column ISO_COUNTRY_CODE"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "ISO_COUNTRY_CODE",
+    "expression": "grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "CAE_COUNTY_LINK",
+    "columnInsertIndex": 11,
+    "description": "Create column CAE_COUNTY_LINK at index 11 based on column ISO_COUNTRY_CODE using expression grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CAE_TOWN",
+    "expression": "grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "CAE_TOWN_LINK",
+    "columnInsertIndex": 9,
+    "description": "Create column CAE_TOWN_LINK at index 9 based on column CAE_TOWN using expression grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id"
+  }
+]

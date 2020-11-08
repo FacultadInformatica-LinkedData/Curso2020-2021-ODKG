@@ -1,0 +1,77 @@
+PREFIX s:<http://schema.org/>
+PREFIX ex:<http://www.publicProcurementMurciaCOVID19.es/ontology#>
+PREFIX owl:<http://www.w3.org/2002/07/owl#>
+
+##### Organizations ordered by number of orders #####
+SELECT
+    ?name ?link (COUNT(?Order) as ?nCount)
+
+  WHERE {
+      ?Order s:seller ?Organization.
+      ?Organization s:name ?name.
+      ?Organization owl:sameAs ?link.
+  }
+  GROUP BY ?Organization
+  ORDER BY DESC(?nCount)
+  LIMIT 10
+
+
+##### Max number of patients in UCI for each Region #####
+SELECT
+    ?isocode ?link (MAX(?nUCI) as ?nMax)
+  WHERE {
+    ?Organization rdf:type s:Organization.
+    ?CovidStatus rdf:type ex:CovidStatus.
+    ?Organization ex:hasCovidStatus ?CovidStatus.
+    ?Organization ex:hasISOCode ?isocode.
+    ?CovidStatus ex:numberUCI ?nUCI.
+    ?Organization owl:sameAs ?link.
+  }
+  GROUP BY ?Organization
+  ORDER BY DESC(?nMax)
+  LIMIT 10
+
+
+##### Suppliers ordered by taxID #####
+SELECT
+    ?t ?n ?link
+  WHERE {
+    ?Organization rdf:type s:Organization.
+    ?Organization s:taxID ?t.
+    ?Organization s:name ?n.
+    ?Organization owl:sameAs ?link.
+    }
+  ORDER BY ASC(?t)
+  LIMIT 50
+
+
+##### Total cases of covid for each region #####
+SELECT
+    ?c (SUM(?n) as ?nCount) ?name ?link
+  WHERE {
+    ?Organization rdf:type s:Organization.
+    ?Organization ex:hasISOCode ?c.
+    ?Organization s:name ?name.
+    ?Organization owl:sameAs ?link.
+    ?CovidStatus rdf:type ex:CovidStatus.
+    ?Organization ex:hasCovidStatus ?CovidStatus.
+    ?CovidStatus ex:totalCases ?n
+  }
+  GROUP BY ?Organization
+  ORDER BY DESC(?nCount)
+  LIMIT 10
+
+
+##### Number of orders by region #####
+SELECT
+    ?isocode ?link (COUNT(?Order) as ?orderCount)
+  WHERE {
+    ?Organization rdf:type s:Organization.
+    ?Organization ex:hasISOCode ?isocode.
+    ?Order rdf:type s:Order.
+    ?Order s:customer ?Organization.
+    ?Organization owl:sameAs ?link.
+  }
+  GROUP BY ?Organization
+  ORDER BY ASC(?orderCount)
+  LIMIT 10
