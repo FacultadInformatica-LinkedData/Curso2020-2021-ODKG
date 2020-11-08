@@ -85,7 +85,7 @@ map:om_22 a rr:ObjectMap;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_23 a rr:ObjectMap;
     rml:reference "wikiEndUserEntity";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 map:om_3 a rr:ObjectMap;
     rml:reference "gsin";
     rr:termType rr:Literal;

@@ -1,0 +1,16 @@
+PREFIX ns: <http://group01.org/aragon/ontology/>
+
+# Get all wikidata links of public organisations
+SELECT DISTINCT
+    ?publicOrg ?wikidataLink 
+WHERE { 
+    ?publicOrg owl:sameAs ?wikidataLink 
+}
+
+# Get all the contracts from the entity Q20105071
+SELECT DISTINCT
+    ?contract
+WHERE { 
+    ?contract ns:contractingParty ?publicOrg .
+    ?publicOrg owl:sameAs <https://www.wikidata.org/entity/Q20105071>
+}
