@@ -1,4 +1,4 @@
-@prefix : <http://www.publicProcurementMurciaCOVID19.es/ontology/ont#> .
+@prefix : <http://www.publicProcurementMurciaCOVID19.es/ontology#> .
 @prefix res: <http://www.publicProcurementMurciaCOVID19.es/resource/> .
 @prefix s: <http://schema.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -6,9 +6,9 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.publicProcurementMurciaCOVID19.es/ontology/ont#> .
+@base <http://www.publicProcurementMurciaCOVID19.es/ontology#> .
 
-<http://www.publicProcurementMurciaCOVID19.es/ontology/ont#> rdf:type owl:Ontology .
+<http://www.publicProcurementMurciaCOVID19.es/ontology#> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
@@ -36,13 +36,13 @@ s:seller rdf:type owl:ObjectProperty ;
          rdfs:range s:Organization .
 
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#hasCovidStatus
+###  http://www.publicProcurementMurciaCOVID19.es/ontology#hasCovidStatus
 :hasCovidStatus rdf:type owl:ObjectProperty ;
                 rdfs:domain s:Organization ;
                 rdfs:range :CovidStatus .
 
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#inDate
+###  http://www.publicProcurementMurciaCOVID19.es/ontology#inDate
 :inDate rdf:type owl:ObjectProperty ;
         rdfs:domain :CovidStatus ;
         rdfs:range s:Date .
@@ -69,103 +69,103 @@ s:taxID rdf:type owl:DatatypeProperty ;
         rdfs:range xsd:string .
 
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#hasISOCode
+###  http://www.publicProcurementMurciaCOVID19.es/ontology#hasISOCode
 :hasISOCode rdf:type owl:DatatypeProperty ;
             rdfs:domain s:Organization ;
             rdfs:range xsd:string .
 
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#hasIVA
-:hasIVA rdf:type owl:DatatypeProperty ;
+###  http://www.publicProcurementMurciaCOVID19.es/ontology#hasVAT
+:hasVAT rdf:type owl:DatatypeProperty ;
         rdfs:domain s:OrderItem ;
         rdfs:range xsd:integer .
 
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#hasOrderAmount
+###  http://www.publicProcurementMurciaCOVID19.es/ontology#hasOrderAmount
 :hasOrderAmount rdf:type owl:DatatypeProperty ;
                 rdfs:domain s:OrderItem ;
                 rdfs:range xsd:float .
 
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#hasPaidAmount
+###  http://www.publicProcurementMurciaCOVID19.es/ontology#hasPaidAmount
 :hasPaidAmount rdf:type owl:DatatypeProperty ;
                rdfs:domain s:OrderItem ;
                rdfs:range xsd:float .
 
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#hasPendingAmount
+###  http://www.publicProcurementMurciaCOVID19.es/ontology#hasPendingAmount
 :hasPendingAmount rdf:type owl:DatatypeProperty ;
                   rdfs:domain s:OrderItem ;
                   rdfs:range xsd:float .
 
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#hasProductQuantityPending
+###  http://www.publicProcurementMurciaCOVID19.es/ontology#hasProductQuantityPending
 :hasProductQuantityPending rdf:type owl:DatatypeProperty ;
                            rdfs:domain s:OrderItem ;
                            rdfs:range xsd:float .
 
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#hasProductQuantityReceived
+###  http://www.publicProcurementMurciaCOVID19.es/ontology#hasProductQuantityReceived
 :hasProductQuantityReceived rdf:type owl:DatatypeProperty ;
                             rdfs:domain s:OrderItem ;
                             rdfs:range xsd:float .
 
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numAC
+###  http://www.publicProcurementMurciaCOVID19.es/ontology#numAC
 :numAC rdf:type owl:DatatypeProperty ;
        rdfs:domain :CovidStatus ;
        rdfs:range xsd:integer .
 
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numPCR
+###  http://www.publicProcurementMurciaCOVID19.es/ontology#numPCR
 :numPCR rdf:type owl:DatatypeProperty ;
         rdfs:domain :CovidStatus ;
         rdfs:range xsd:integer .
 
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numPositiveAC
+###  http://www.publicProcurementMurciaCOVID19.es/ontology#numPositiveAC
 :numPositiveAC rdf:type owl:DatatypeProperty ;
                rdfs:domain :CovidStatus ;
                rdfs:range xsd:integer .
 
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numPositiveOthers
+###  http://www.publicProcurementMurciaCOVID19.es/ontology#numPositiveOthers
 :numPositiveOthers rdf:type owl:DatatypeProperty ;
                    rdfs:domain :CovidStatus ;
                    rdfs:range xsd:integer .
 
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numPositivePCR
+###  http://www.publicProcurementMurciaCOVID19.es/ontology#numPositivePCR
 :numPositivePCR rdf:type owl:DatatypeProperty ;
                 rdfs:domain :CovidStatus ;
                 rdfs:range xsd:integer .
 
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numPositiveUnknown
+###  http://www.publicProcurementMurciaCOVID19.es/ontology#numPositiveUnknown
 :numPositiveUnknown rdf:type owl:DatatypeProperty ;
                     rdfs:domain :CovidStatus ;
                     rdfs:range xsd:integer .
 
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numberDeaths
+###  http://www.publicProcurementMurciaCOVID19.es/ontology#numberDeaths
 :numberDeaths rdf:type owl:DatatypeProperty ;
               rdfs:domain :CovidStatus ;
               rdfs:range xsd:integer .
 
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numberHospitalizations
+###  http://www.publicProcurementMurciaCOVID19.es/ontology#numberHospitalizations
 :numberHospitalizations rdf:type owl:DatatypeProperty ;
                         rdfs:domain :CovidStatus ;
                         rdfs:range xsd:integer .
 
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#numberUCI
+###  http://www.publicProcurementMurciaCOVID19.es/ontology#numberUCI
 :numberUCI rdf:type owl:DatatypeProperty ;
            rdfs:domain :CovidStatus ;
            rdfs:range xsd:integer .
 
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#totalCases
+###  http://www.publicProcurementMurciaCOVID19.es/ontology#totalCases
 :totalCases rdf:type owl:DatatypeProperty ;
             rdfs:domain :CovidStatus ;
             rdfs:range xsd:integer .
@@ -199,7 +199,7 @@ s:Product rdf:type owl:Class .
 s:Service rdf:type owl:Class .
 
 
-###  http://www.publicProcurementMurciaCOVID19.es/ontology/ont#CovidStatus
+###  http://www.publicProcurementMurciaCOVID19.es/ontology#CovidStatus
 :CovidStatus rdf:type owl:Class .
 
 
@@ -237,7 +237,7 @@ res/OrderItem:GAFAS_DE_PROTECCION_MANUEL_PEREZ_TALAVERA rdf:type owl:NamedIndivi
                                                                  s:OrderItem ;
                                                         s:orderedItem res/Product:GAFAS_DE_PROTECCION ;
                                                         s:orderQuantity 30.0 ;
-                                                        :hasIVA 21 ;
+                                                        :hasVAT 21 ;
                                                         :hasOrderAmount 500.0 ;
                                                         :hasPaidAmount 500.0 ;
                                                         :hasPendingAmount 0.0 ;

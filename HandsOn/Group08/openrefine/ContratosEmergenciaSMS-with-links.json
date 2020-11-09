@@ -1,0 +1,1136 @@
+[
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Adjudicatario",
+    "newColumnName": "Company",
+    "description": "Rename column Adjudicatario to Company"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Company",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "Adjudicatario",
+    "columnInsertIndex": 7,
+    "description": "Create column Adjudicatario at index 7 based on column Company using expression grel:value"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/es/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q6881511",
+        "name": "empresa"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Adjudicatario to type Q6881511"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "similarValue": "EL CORTE INGLES, S.A.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q623133",
+      "name": "El Corte Inglés",
+      "types": [
+        "Q6881511"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item El Corte Inglés (Q623133) for cells containing \"EL CORTE INGLES, S.A.\" in column Adjudicatario"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "similarValue": "MEDTRONIC IBERICA, S.A.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q642189",
+      "name": "Medtronic plc",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Medtronic plc (Q642189) for cells containing \"MEDTRONIC IBERICA, S.A.\" in column Adjudicatario"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Adjudicatario: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Adjudicatario",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "similarValue": "GRIFOLS MOVACO, S.A.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q901262",
+      "name": "Grifols",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Grifols (Q901262) for cells containing \"GRIFOLS MOVACO, S.A.\" in column Adjudicatario"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Adjudicatario: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Adjudicatario",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "similarValue": "BIO-RAD LABORATORIES, S.A.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2904022",
+      "name": "Bio-Rad Laboratories",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Bio-Rad Laboratories (Q2904022) for cells containing \"BIO-RAD LABORATORIES, S.A.\" in column Adjudicatario"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Adjudicatario: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Adjudicatario",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "similarValue": "MOLNLYCKE HEALTH CARE S.L.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3333974",
+      "name": "Mölnlycke Health Care",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Mölnlycke Health Care (Q3333974) for cells containing \"MOLNLYCKE HEALTH CARE S.L.\" in column Adjudicatario"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Adjudicatario: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Adjudicatario",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "similarValue": "MASIMO EUROPE LTD SUCURSAL EN ESPAÑ",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6783278",
+      "name": "Masimo",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Masimo (Q6783278) for cells containing \"MASIMO EUROPE LTD SUCURSAL EN ESPAÑ\" in column Adjudicatario"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Adjudicatario: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Adjudicatario",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "similarValue": "TELEFLEX MEDICAL, S.A.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q7696143",
+      "name": "Teleflex",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Teleflex (Q7696143) for cells containing \"TELEFLEX MEDICAL, S.A.\" in column Adjudicatario"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Adjudicatario: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Adjudicatario",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "similarValue": "PHILIPS IBERICA, S.A.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q170416",
+      "name": "Philips",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Philips (Q170416) for cells containing \"PHILIPS IBERICA, S.A.\" in column Adjudicatario"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Adjudicatario: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Adjudicatario",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "similarValue": "THE NONWOVENS PROJECT, S.L.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q30290911",
+      "name": "Nonwovens Innovation & Research Institute",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Nonwovens Innovation & Research Institute (Q30290911) for cells containing \"THE NONWOVENS PROJECT, S.L.\" in column Adjudicatario"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Adjudicatario: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Adjudicatario",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "similarValue": "FRESENIUS KABI ESPAÑA, S.A.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1455670",
+      "name": "Fresenius Kabi",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Fresenius Kabi (Q1455670) for cells containing \"FRESENIUS KABI ESPAÑA, S.A.\" in column Adjudicatario"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Adjudicatario: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Adjudicatario",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "similarValue": "SIEMENS HEALTHCARE,  S.L.U.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q472451",
+      "name": "Siemens Healthcare GmbH",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Siemens Healthcare GmbH (Q472451) for cells containing \"SIEMENS HEALTHCARE,  S.L.U.\" in column Adjudicatario"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Adjudicatario: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Adjudicatario",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "similarValue": "ALFASIGMA ESPAÑA, S.L.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q30268742",
+      "name": "Alfasigma",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Alfasigma (Q30268742) for cells containing \"ALFASIGMA ESPAÑA, S.L.\" in column Adjudicatario"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Adjudicatario: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Adjudicatario",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "similarValue": "CARDINAL HEALTH SPAIN 511, S.L.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q902397",
+      "name": "Cardinal Health",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Cardinal Health (Q902397) for cells containing \"CARDINAL HEALTH SPAIN 511, S.L.\" in column Adjudicatario"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Adjudicatario: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Adjudicatario",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "similarValue": "SMITHS MEDICAL ESPAÑA, S.R.L.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q54979738",
+      "name": "SMITHS MEDICAL CZECH REPUBLIC A.S",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item SMITHS MEDICAL CZECH REPUBLIC A.S (Q54979738) for cells containing \"SMITHS MEDICAL ESPAÑA, S.R.L.\" in column Adjudicatario"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Adjudicatario: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Adjudicatario",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "similarValue": "VYGON, S.A.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q17032242",
+      "name": "Vygon",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Vygon (Q17032242) for cells containing \"VYGON, S.A.\" in column Adjudicatario"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Adjudicatario: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Adjudicatario",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "similarValue": "MEDICAL CAÑADA, S.L.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q43894983",
+      "name": "Medical Cañada (Spain)",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Medical Cañada (Spain) (Q43894983) for cells containing \"MEDICAL CAÑADA, S.L.\" in column Adjudicatario"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Adjudicatario: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Adjudicatario",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "similarValue": "MEDLINE INTERNATIONAL IBERIA S.L.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q11343776",
+      "name": "Medline",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Medline (Q11343776) for cells containing \"MEDLINE INTERNATIONAL IBERIA S.L.\" in column Adjudicatario"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Adjudicatario: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Adjudicatario",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "similarValue": "GETINGE GROUP SPAIN, S.L.U.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1337240",
+      "name": "Getinge AB",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Getinge AB (Q1337240) for cells containing \"GETINGE GROUP SPAIN, S.L.U.\" in column Adjudicatario"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Adjudicatario: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Adjudicatario",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "similarValue": "FUJIFILM EUROPE GMBH, SUCURSAL EN",
+    "judgment": "matched",
+    "match": {
+      "id": "Q164740",
+      "name": "Fujifilm",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Fujifilm (Q164740) for cells containing \"FUJIFILM EUROPE GMBH, SUCURSAL EN\" in column Adjudicatario"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Adjudicatario: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Adjudicatario",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "similarValue": "AIR LIQUIDE HEALTHCARE ESPAÑA, S.L.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q407448",
+      "name": "Air Liquide",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Air Liquide (Q407448) for cells containing \"AIR LIQUIDE HEALTHCARE ESPAÑA, S.L.\" in column Adjudicatario"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Adjudicatario: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Adjudicatario",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "similarValue": "VWR INTERNATIONAL EUROLAB, SL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q7907666",
+      "name": "VWR International",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item VWR International (Q7907666) for cells containing \"VWR INTERNATIONAL EUROLAB, SL\" in column Adjudicatario"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Adjudicatario: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Adjudicatario",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "similarValue": "EIFFAGE ENERGIA S.L.U.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20724498",
+      "name": "Eiffage Énergie",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Eiffage Énergie (Q20724498) for cells containing \"EIFFAGE ENERGIA S.L.U.\" in column Adjudicatario"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Adjudicatario: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Adjudicatario",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "similarValue": "WERFEN ESPAÑA, S.A.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2560196",
+      "name": "Werfen",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Werfen (Q2560196) for cells containing \"WERFEN ESPAÑA, S.A.\" in column Adjudicatario"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Adjudicatario: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Adjudicatario",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "similarValue": "HILL-ROM IBERIA, SL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5761967",
+      "name": "Hill-Rom",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Hill-Rom (Q5761967) for cells containing \"HILL-ROM IBERIA, SL\" in column Adjudicatario"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Adjudicatario: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Adjudicatario",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "similarValue": "AMAZON EU SUCURSAL EN ESPAÑA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q73136791",
+      "name": "Amazon Europe Core",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Amazon Europe Core (Q73136791) for cells containing \"AMAZON EU SUCURSAL EN ESPAÑA\" in column Adjudicatario"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Adjudicatario: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Adjudicatario",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "similarValue": "DRAGER MEDICAL HISPANIA, S.A.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q54969824",
+      "name": "Dräger Medica",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Dräger Medica (Q54969824) for cells containing \"DRAGER MEDICAL HISPANIA, S.A.\" in column Adjudicatario"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Adjudicatario: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Adjudicatario",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "similarValue": "INTERSURGICAL ESPAÑA, S.L.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q17322459",
+      "name": "Intersurgical",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Intersurgical (Q17322459) for cells containing \"INTERSURGICAL ESPAÑA, S.L.\" in column Adjudicatario"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Adjudicatario: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Adjudicatario",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Adjudicatario",
+    "similarValue": "FIRMA AMBU, S.L.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q459957",
+      "name": "Ambu",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Ambu (Q459957) for cells containing \"FIRMA AMBU, S.L.\" in column Adjudicatario"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Adjudicatario",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "matchedOrganizations",
+    "columnInsertIndex": 7,
+    "description": "Create column matchedOrganizations at index 7 based on column Adjudicatario using expression grel:cell.recon.match.id"
+  }
+]

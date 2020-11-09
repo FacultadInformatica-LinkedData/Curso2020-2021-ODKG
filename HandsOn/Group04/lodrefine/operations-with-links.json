@@ -1,0 +1,1364 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q327333",
+        "name": "government agency"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Department Name to type Q327333"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Corrections and Rehabilitation, Department of",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5020415",
+      "name": "California Department of Corrections and Rehabilitation",
+      "types": [
+        "Q5260216"
+      ],
+      "score": 89
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Department of Corrections and Rehabilitation (Q5020415) for cells containing \"Corrections and Rehabilitation, Department of\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Parks & Recreation, Department of",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2933976",
+      "name": "California Department of Parks and Recreation",
+      "types": [
+        "Q327333",
+        "Q20857085"
+      ],
+      "score": 80
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Department of Parks and Recreation (Q2933976) for cells containing \"Parks & Recreation, Department of\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Transportation, Department of",
+    "judgment": "matched",
+    "match": {
+      "id": "Q127743",
+      "name": "California Department of Transportation",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Department of Transportation (Q127743) for cells containing \"Transportation, Department of\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "General Services, Department of",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5020423",
+      "name": "California Department of General Services",
+      "types": [
+        "Q327333",
+        "Q20857085"
+      ],
+      "score": 85
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Department of General Services (Q5020423) for cells containing \"General Services, Department of\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Water Resources, Department of",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5020440",
+      "name": "California Department of Water Resources",
+      "types": [
+        "Q327333"
+      ],
+      "score": 84
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Department of Water Resources (Q5020440) for cells containing \"Water Resources, Department of\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Developmental Services, Department of",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5020413",
+      "name": "California Department of Developmental Services",
+      "types": [
+        "Q327333"
+      ],
+      "score": 87
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Department of Developmental Services (Q5020413) for cells containing \"Developmental Services, Department of\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Social Services, Department of",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5020438",
+      "name": "California Department of Social Services",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Department of Social Services (Q5020438) for cells containing \"Social Services, Department of\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Franchise Tax Board",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5020495",
+      "name": "California Franchise Tax Board",
+      "types": [
+        "Q327333"
+      ],
+      "score": 78
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Franchise Tax Board (Q5020495) for cells containing \"Franchise Tax Board\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Food and Agriculture, Department of",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5020425",
+      "name": "California Department of Food and Agriculture",
+      "types": [
+        "Q1364302"
+      ],
+      "score": 86
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Department of Food and Agriculture (Q5020425) for cells containing \"Food and Agriculture, Department of\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Agricultural Labor Relations Board",
+    "judgment": "matched",
+    "match": {
+      "id": "Q17513625",
+      "name": "California Agricultural Labor Relations Board",
+      "types": [
+        "Q327333"
+      ],
+      "score": 86
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Agricultural Labor Relations Board (Q17513625) for cells containing \"Agricultural Labor Relations Board\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Department Name",
+          "expression": "value",
+          "columnName": "Department Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Rehabilitation, Department of",
+                "l": "Rehabilitation, Department of"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Rehabilitation, Department of",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5020436",
+      "name": "California Department of Rehabilitation",
+      "types": [
+        "Q327333"
+      ],
+      "score": 84
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Department of Rehabilitation (Q5020436) for cells containing \"Rehabilitation, Department of\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Department Name",
+          "expression": "value",
+          "columnName": "Department Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Justice, Department of",
+                "l": "Justice, Department of"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Justice, Department of",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5020429",
+      "name": "California Department of Justice",
+      "types": [
+        "Q1413677"
+      ],
+      "score": 79
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Department of Justice (Q5020429) for cells containing \"Justice, Department of\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Department Name",
+          "expression": "value",
+          "columnName": "Department Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Health Care Services, Department of",
+                "l": "Health Care Services, Department of"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Health Care Services, Department of",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5020424",
+      "name": "California Department of Health Care Services",
+      "types": [
+        "Q327333"
+      ],
+      "score": 89
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Department of Health Care Services (Q5020424) for cells containing \"Health Care Services, Department of\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Department Name",
+          "expression": "value",
+          "columnName": "Department Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Industrial Relations, Department of",
+                "l": "Industrial Relations, Department of"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Industrial Relations, Department of",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5020427",
+      "name": "California Department of Industrial Relations",
+      "types": [
+        "Q327333"
+      ],
+      "score": 86
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Department of Industrial Relations (Q5020427) for cells containing \"Industrial Relations, Department of\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Department Name",
+          "expression": "value",
+          "columnName": "Department Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Pesticide Regulation, Department of",
+                "l": "Pesticide Regulation, Department of"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Pesticide Regulation, Department of",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5020434",
+      "name": "California Department of Pesticide Regulation",
+      "types": [
+        "Q327333"
+      ],
+      "score": 86
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Department of Pesticide Regulation (Q5020434) for cells containing \"Pesticide Regulation, Department of\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Department Name",
+          "expression": "value",
+          "columnName": "Department Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Managed Health Care, Department of",
+                "l": "Managed Health Care, Department of"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Managed Health Care, Department of",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5020432",
+      "name": "California Department of Managed Health Care",
+      "types": [
+        "Q20857085",
+        "Q1639780"
+      ],
+      "score": 86
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Department of Managed Health Care (Q5020432) for cells containing \"Managed Health Care, Department of\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Department Name",
+          "expression": "value",
+          "columnName": "Department Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Public Health, Department of",
+                "l": "Public Health, Department of"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Public Health, Department of",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5020439",
+      "name": "California Department of Public Health",
+      "types": [
+        "Q327333"
+      ],
+      "score": 83
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Department of Public Health (Q5020439) for cells containing \"Public Health, Department of\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Department Name",
+          "expression": "value",
+          "columnName": "Department Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Student Aid Commission",
+                "l": "Student Aid Commission"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Student Aid Commission",
+    "judgment": "matched",
+    "match": {
+      "id": "Q98690925",
+      "name": "California Student Aid Commission",
+      "types": [
+        "Q20857085"
+      ],
+      "score": 80
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Student Aid Commission (Q98690925) for cells containing \"Student Aid Commission\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Department Name",
+          "expression": "value",
+          "columnName": "Department Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Insurance, Department of",
+                "l": "Insurance, Department of"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Insurance, Department of",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5020430",
+      "name": "California Department of Insurance",
+      "types": [
+        "Q327333"
+      ],
+      "score": 81
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Department of Insurance (Q5020430) for cells containing \"Insurance, Department of\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Department Name",
+          "expression": "value",
+          "columnName": "Department Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Water Resources Control Board, State",
+                "l": "Water Resources Control Board, State"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Water Resources Control Board, State",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5021111",
+      "name": "California State Water Resources Control Board",
+      "types": [
+        ""
+      ],
+      "score": 43
+    },
+    "shareNewTopics": false,
+    "description": "Match item California State Water Resources Control Board (Q5021111) for cells containing \"Water Resources Control Board, State\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Department Name",
+          "expression": "value",
+          "columnName": "Department Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Education, Department of",
+                "l": "Education, Department of"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Education, Department of",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5020417",
+      "name": "California Department of Education",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Department of Education (Q5020417) for cells containing \"Education, Department of\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Department Name",
+          "expression": "value",
+          "columnName": "Department Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Fair Employment and Housing, Department of",
+                "l": "Fair Employment and Housing, Department of"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Fair Employment and Housing, Department of",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5020416",
+      "name": "California Department of Fair Employment and Housing",
+      "types": [
+        "Q327333"
+      ],
+      "score": 88
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Department of Fair Employment and Housing (Q5020416) for cells containing \"Fair Employment and Housing, Department of\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Department Name",
+          "expression": "value",
+          "columnName": "Department Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Toxic Substances Control, Department of",
+                "l": "Toxic Substances Control, Department of"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Toxic Substances Control, Department of",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5020442",
+      "name": "California Department of Toxic Substances Control",
+      "types": [
+        "Q327333"
+      ],
+      "score": 87
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Department of Toxic Substances Control (Q5020442) for cells containing \"Toxic Substances Control, Department of\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Department Name",
+          "expression": "value",
+          "columnName": "Department Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Motor Vehicles, Department of",
+                "l": "Motor Vehicles, Department of"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Motor Vehicles, Department of",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5020431",
+      "name": "California Department of Motor Vehicles",
+      "types": [
+        "Q74330265"
+      ],
+      "score": 84
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Department of Motor Vehicles (Q5020431) for cells containing \"Motor Vehicles, Department of\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Department Name",
+          "expression": "value",
+          "columnName": "Department Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Air Resources Board",
+                "l": "Air Resources Board"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Air Resources Board",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1026794",
+      "name": "California Air Resources Board",
+      "types": [
+        "Q327333",
+        "Q20857085"
+      ],
+      "score": 78
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Air Resources Board (Q1026794) for cells containing \"Air Resources Board\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Department Name",
+          "expression": "value",
+          "columnName": "Department Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Health & Human Services Agency",
+                "l": "Health & Human Services Agency"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Health & Human Services Agency",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5020533",
+      "name": "California Health and Human Services Agency",
+      "types": [
+        "Q1519799"
+      ],
+      "score": 79
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Health and Human Services Agency (Q5020533) for cells containing \"Health & Human Services Agency\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Department Name",
+          "expression": "value",
+          "columnName": "Department Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Business Oversight",
+                "l": "Business Oversight"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Business Oversight",
+    "judgment": "matched",
+    "match": {
+      "id": "Q16850544",
+      "name": "California Department of Business Oversight",
+      "types": [
+        "Q327333"
+      ],
+      "score": 59
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Department of Business Oversight (Q16850544) for cells containing \"Business Oversight\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Department Name",
+          "expression": "value",
+          "columnName": "Department Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Conservation, Department of",
+                "l": "Conservation, Department of"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Conservation, Department of",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5020409",
+      "name": "California Department of Conservation",
+      "types": [
+        "Q327333"
+      ],
+      "score": 83
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Department of Conservation (Q5020409) for cells containing \"Conservation, Department of\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Department Name",
+          "expression": "value",
+          "columnName": "Department Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Delta Stewardship Council",
+                "l": "Delta Stewardship Council"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Delta Stewardship Council",
+    "judgment": "matched",
+    "match": {
+      "id": "Q54958687",
+      "name": "Delta Stewardship Council",
+      "types": [
+        "Q327333"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Delta Stewardship Council (Q54958687) for cells containing \"Delta Stewardship Council\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Department Name",
+          "expression": "value",
+          "columnName": "Department Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Fair Political Practices Commission",
+                "l": "Fair Political Practices Commission"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Fair Political Practices Commission",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5020484",
+      "name": "California Fair Political Practices Commission",
+      "types": [
+        "Q2659904",
+        "Q935741"
+      ],
+      "score": 86
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Fair Political Practices Commission (Q5020484) for cells containing \"Fair Political Practices Commission\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Department Name",
+          "expression": "value",
+          "columnName": "Department Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Fish and Wildlife, Department of",
+                "l": "Fish and Wildlife, Department of"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Fish and Wildlife, Department of",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5020421",
+      "name": "California Department of Fish and Wildlife",
+      "types": [
+        "Q327333"
+      ],
+      "score": 85
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Department of Fish and Wildlife (Q5020421) for cells containing \"Fish and Wildlife, Department of\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Department Name",
+          "expression": "value",
+          "columnName": "Department Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Employment Development Department",
+                "l": "Employment Development Department"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Employment Development Department",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5374334",
+      "name": "Employment Development Department",
+      "types": [
+        "Q327333",
+        "Q5020655"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Employment Development Department (Q5374334) for cells containing \"Employment Development Department\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Department Name",
+          "expression": "value",
+          "columnName": "Department Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Secretary of State",
+                "l": "Secretary of State"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Secretary of State",
+    "judgment": "matched",
+    "match": {
+      "id": "Q7024182",
+      "name": "Secretary of State of California",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Secretary of State of California (Q7024182) for cells containing \"Secretary of State\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Department Name",
+          "expression": "value",
+          "columnName": "Department Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Controller, State",
+                "l": "Controller, State"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Controller, State",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5021015",
+      "name": "California State Controller",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item California State Controller (Q5021015) for cells containing \"Controller, State\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Department Name",
+          "expression": "value",
+          "columnName": "Department Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Public Utilities Commission",
+                "l": "Public Utilities Commission"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Public Utilities Commission",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5020892",
+      "name": "California Public Utilities Commission",
+      "types": [
+        "Q327333",
+        "Q1125930"
+      ],
+      "score": 83
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Public Utilities Commission (Q5020892) for cells containing \"Public Utilities Commission\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Department Name",
+          "expression": "value",
+          "columnName": "Department Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Financial Institutions, Department of",
+                "l": "Financial Institutions, Department of"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Financial Institutions, Department of",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5020420",
+      "name": "California Department of Financial Institutions",
+      "types": [
+        "Q327333"
+      ],
+      "score": 87
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Department of Financial Institutions (Q5020420) for cells containing \"Financial Institutions, Department of\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Department Name",
+          "expression": "value",
+          "columnName": "Department Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Housing and Community Development, Department of",
+                "l": "Housing and Community Development, Department of"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Housing and Community Development, Department of",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5020426",
+      "name": "California Department of Housing and Community Development",
+      "types": [
+        "Q327333"
+      ],
+      "score": 90
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Department of Housing and Community Development (Q5020426) for cells containing \"Housing and Community Development, Department of\" in column Department Name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Department Name",
+          "expression": "value",
+          "columnName": "Department Name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Military Department",
+                "l": "Military Department"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Department Name",
+    "similarValue": "Military Department",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5020692",
+      "name": "California Military Department",
+      "types": [
+        "Q327333"
+      ],
+      "score": 78
+    },
+    "shareNewTopics": false,
+    "description": "Match item California Military Department (Q5020692) for cells containing \"Military Department\" in column Department Name"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Department Name",
+    "expression": "grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikidataDepartment",
+    "columnInsertIndex": 11,
+    "description": "Create column wikidataDepartment at index 11 based on column Department Name using expression grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id"
+  }
+]
