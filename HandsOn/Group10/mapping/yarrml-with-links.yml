@@ -110,7 +110,7 @@ mappings:
   triplesmap7:
     sources:
       - [ingresos-with-links.csv~csv]
-    s: default:Ingresos/$(Ingresos)
+    s: default:Ingresos/$(ingresos)
     po:
       - [a,vocab:Ingresos]
 
