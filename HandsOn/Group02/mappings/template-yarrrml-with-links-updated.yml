@@ -32,7 +32,7 @@ mappings:
       - [g2:hasProcedure,$(Procedimiento Adjudicacion),xsd:string]
       - [g2:hasArticle,$(Articulo),xsd:integer]
       - [g2:hasSection,$(Apartado),xsd:string]
-      - [pc:AwardCriterion,$(Criterios Adjudicacion),xsd:string]
+      - [g2:hasCriteria,pc:AwardCriterion/$(Criterios Adjudicacion)~iri]
       - [pproc:budgetPrice,$(Presupuesto Total(IVA Incluido)),xsd:double]
       - [pc:actualPrice,$(Importe Adjudicacion (IVA Incluido)),xsd:double]
       - [pproc:awardDate,$(Fecha Adjudicacion),xsd:dateTime]

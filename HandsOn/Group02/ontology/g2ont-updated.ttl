@@ -81,9 +81,9 @@ t:description rdf:type owl:DatatypeProperty ;
              rdfs:range xsd:string.
 			 
 ### Criterios Adjudicacion			 
-pc:AwardCriterion rdf:type owl:DatatypeProperty ;
+:hasCriteria rdf:type owl:DatatypeProperty ;
              rdfs:domain pc:Contract ;
-             rdfs:range xsd:string.
+             rdfs:range pc:AwardCriterion.
 			 
 ### Presupuesto Total(IVA Incluido)			 
 pproc:budgetPrice rdf:type owl:DatatypeProperty ;
