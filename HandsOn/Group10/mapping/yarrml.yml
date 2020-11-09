@@ -23,7 +23,7 @@ mappings:
 
       - [vocab:descripcionCentro,$(Descripcion Centro),xsd:string]
       - [vocab:tieneGasto,$(Gastos)]
-      - [owl:sameAs,$(wikicentro)~iri]
+      
 
 
      
@@ -109,7 +109,7 @@ mappings:
   triplesmap7:
     sources:
       - [ingresos-updated.csv~csv]
-    s: default:Ingresos/$(Ingresos)
+    s: default:Ingresos/$(ingresos)
     po:
       - [a,vocab:Ingresos]
 
