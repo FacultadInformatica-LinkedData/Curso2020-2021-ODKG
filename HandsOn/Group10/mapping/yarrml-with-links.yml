@@ -47,7 +47,7 @@ mappings:
 
       - [vocab:descripcionCentro,$(Descripcion Centro),xsd:string]
       - [vocab:tieneIngresos,$(ingresos)]
-    
+      - [owl:sameAs,$(wikicentro)~iri]
 
   triplesmap3:  
     sources:
@@ -103,6 +103,7 @@ mappings:
       - [a,vocab:Seccion]
 
       - [vocab:descripcionSeccion,$(Descripcion Seccion),xsd:string]
+      - [owl:sameAs,$(wikiseccion)~iri]
 
 
 
