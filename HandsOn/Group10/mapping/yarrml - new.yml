@@ -17,23 +17,29 @@ mappings:
   triplesmap1:
     sources:
       - [gastos-updated.csv~csv]
-    s: default:Economico/$(Descripcion Centro)
+    s: default:Economico/)
     po:
       - [a,vocab:Economico]
 
       - [vocab:tieneCentro,$(Centro),xsd:integer]
       - [vocab:tieneCapitulo,$(Capitulo),xsd:integer]
+
+      - [owl:inverseOf, tieneCentro] #mal
      
+#no se si hay que hacer otro triple economico para  Ingresos csv
+#
 
 
   triplesmap2:
     sources:
       - [gastos-updated.csv~csv]
-    s: default:Centro/$(Centro)
+    s: default:Centro/$(Descripcion Centro)
     po:
       - [a,vocab:Centro]
 
-      - [vocab:tieneEconomico,      ]
+      - [vocab:descripcion,$(Descripcion Centro),xsd:DatatypeProperty]
+      - [vocab:id,$(Centro),xsd:DatatypeProperty]
+
     
 
 
@@ -53,7 +59,9 @@ mappings:
     po:
       - [a,vocab:Centro]
 
-      - [vocab:tieneEconomico,      ]
+      - [owl:inverseOf, tieneEconomico]
+      - [vocab:descripcion,$(Descripcion Centro),xsd:DatatypeProperty]
+      - [vocab:id,$(Centro),xsd:DatatypeProperty]
 
 
   triplesmap4:
@@ -65,15 +73,27 @@ mappings:
 
       - [rdfs:subClassOf,Economico]
       - [vocab:tieneSeccion,$(Descripcion Seccion),xsd:string]
+      - [vocab:id,$(Seccion),xsd:DatatypeProperty] #DOUBT
+      - [vocab:descripcion,$(Descripcion Seccion),xsd:DatatypeProperty] #DOUBT
+
       - [vocab:tienePrograma,$(Descripcion Programa),xsd:string]
+      - [vocab:id,$(Programa),xsd:DatatypeProperty] #DOUBT
+      - [vocab:descripcion,$(Descripcion Programa),xsd:DatatypeProperty] #DOUBT
+
+      - [vocab:tieneCentro,$(Centro),xsd:integer]
+      - [vocab:id,$(Centro),xsd:DatatypeProperty] #DOUBT
+      - [vocab:descripcion,$(Descripcion Centro),xsd:DatatypeProperty] #DOUBT
+
+      - [vocab:tieneCapitulo,$(Capitulo),xsd:integer]
+      - [vocab:id,$(Capitulo),xsd:DatatypeProperty] #DOUBT
+      - [vocab:descripcion,$(Descripcion Capitulo),xsd:DatatypeProperty] #DOUBT
+
       - [vocab:creditoGastado,$(OBL_RECONOC),xsd:double]
       - [vocab:creditoDispuesto,$(C_DISPUESTO),xsd:double]
 
 
-    
 
-
-  triplesmap5:
+    triplesmap5:
     sources:
       - [ingresos-updated.csv~csv]
     s: default:Ingresos/$(ingresos)
@@ -81,8 +101,16 @@ mappings:
       - [a,vocab:Ingresos]
 
       - [rdfs:subClassOf,Economico]
+      - [vocab:tieneCentro,$(Centro),xsd:integer]
+      - [vocab:id,$(Centro),xsd:DatatypeProperty] #DOUBT
+      - [vocab:descripcion,$(Descripcion Centro),xsd:DatatypeProperty] #DOUBT
+
+      - [vocab:tieneCapitulo,$(Capitulo),xsd:integer]
+      - [vocab:id,$(Capitulo),xsd:DatatypeProperty]  #DOUBT
+      - [vocab:descripcion,$(Descripcion Capitulo),xsd:DatatypeProperty] #DOUBT
+
       - [vocab:previsionIngresos,$(PREV.DEFINITIV),xsd:double]
-      - [vocab:recaudado,$(RECAUDADO),xsd:double]       
+      - [vocab:recaudado,$(RECAUDADO),xsd:double]   
 
 
 
