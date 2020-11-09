@@ -1,4 +1,4 @@
-@prefix default:  <http://group10.com#> .
+@prefix default:  <http://group10.com/> .
 @prefix xsp:     <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
