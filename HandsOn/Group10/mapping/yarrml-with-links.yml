@@ -16,7 +16,7 @@ prefixes:
 mappings:
   triplesmap1:
     sources:
-      - [gastos-updated.csv~csv]
+      - [gastos-with-links.csv~csv]
     s: default:Centro/$(Descripcion Centro)
     po:
       - [a,vocab:Centro]
@@ -40,7 +40,7 @@ mappings:
 
   triplesmap2:
     sources:
-      - [ingresos-updated.csv~csv]
+      - [ingresos-with-links.csv~csv]
     s: default:Centro/$(Descripcion Centro)
     po:
       - [a,vocab:Centro]
@@ -51,7 +51,7 @@ mappings:
 
   triplesmap3:  
     sources:
-      - [gastos-updated.csv~csv]
+      - [gastos-with-links.csv~csv]
     s: default:Gastos/$(Gastos)
     po:
       - [a,default:Gastos]
@@ -67,7 +67,7 @@ mappings:
 
   triplesmap4:
     sources:
-      - [gastos-updated.csv~csv]
+      - [gastos-with-links.csv~csv]
     s: default:Capitulo/$(Descripcion Capitulo)
     po:
       - [a,vocab:Capitulo]
@@ -86,7 +86,7 @@ mappings:
 
   triplesmap5:
     sources:
-      - [gastos-updated.csv~csv]
+      - [gastos-with-links.csv~csv]
     s: default:Programa/$(Descripcion Programa) 
     po:
       - [a,vocab:Programa]
@@ -97,7 +97,7 @@ mappings:
 
   triplesmap6:
     sources:
-      - [gastos-updated.csv~csv]
+      - [gastos-with-links.csv~csv]
     s: default:Seccion/$(Descripcion Seccion) 
     po:
       - [a,vocab:Seccion]
@@ -109,7 +109,7 @@ mappings:
 
   triplesmap7:
     sources:
-      - [ingresos-updated.csv~csv]
+      - [ingresos-with-links.csv~csv]
     s: default:Ingresos/$(Ingresos)
     po:
       - [a,vocab:Ingresos]
@@ -122,7 +122,7 @@ mappings:
 
   triplesmap8:
     sources:
-      - [ingresos-updated.csv~csv]
+      - [ingresos-with-links.csv~csv]
     s: default:Capitulo/$(Descripcion Capitulo)
     po:
       - [a,vocab:Capitulo]
