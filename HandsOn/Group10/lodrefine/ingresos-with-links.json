@@ -453,3 +453,25 @@
       "description": "Create column wikicentro at index 3 based on column Descripcion Centro using expression grel:\"https://www.wikidata.org/wiki/\"+cell.recon.match.id"
     }
   ]
+
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "ingresos",
+    "expression": "grel:\"0000\"[0,4-row.index.length()]+row.index",
+    "onError": "set-to-blank",
+    "newColumnName": "Economico",
+    "columnInsertIndex": 1,
+    "description": "Create column Economico at index 1 based on column ingresos using expression grel:\"0000\"[0,4-row.index.length()]+row.index"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "Economico",
+    "index": 0,
+    "description": "Move column Economico to position 0"
+  }
+]

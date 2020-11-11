@@ -17,7 +17,7 @@ mappings:
   triplesmap1:
     sources:
       - [gastos-with-links.csv~csv]
-    s: default:Economico/)     #DOUBT: CREATE UNIQUE COLUMN??
+    s: default:Economico/$(Economico)     #DOUBT: CREATE UNIQUE COLUMN??
     po:
       - [a,vocab:Economico]
 
@@ -28,11 +28,10 @@ mappings:
   triplesmap2:
     sources:
       - [ingresos-with-links.csv~csv]
-    s: default:Economico/)     #DOUBT: CREATE UNIQUE COLUMN??
+    s: default:Economico/$(Economico)     #DOUBT: CREATE UNIQUE COLUMN??
     po:
       - [a,vocab:Economico]
-      - [owl:inverseOf,vocab:tieneCentro] 
-
+    
       - [vocab:tieneCentro,$(Centro),xsd:integer]
       - [vocab:tieneCapitulo,$(Capitulo),xsd:integer]
 
@@ -41,7 +40,7 @@ mappings:
   triplesmap3:
     sources:
       - [gastos-with-links.csv~csv]
-    s: default:Economico/Gastos/Centro/$(Descripcion Centro)
+    s: default:Centro/$(Descripcion Centro)
     po:
       - [a,vocab:Centro]
       - [rdfs:label,vocab:id]
@@ -49,7 +48,7 @@ mappings:
 
       - [vocab:descripcion,$(Descripcion Centro),xsd:string]
       - [vocab:id,$(Centro),xsd:string]
-      - [owl:sameAs,$(wikicentro)~iri]
+      - [owl:sameAs,$(wikiseccion)~iri]
 
     
       - p: vocab:Centro
@@ -65,30 +64,28 @@ mappings:
   triplesmap4:
     sources:
       - [ingresos-with-links.csv~csv]
-    s: default:Economico/Ingresos/Centro/$(Descripcion Centro)
+    s: default:Centro/$(Descripcion Centro)
     po:
       - [a,vocab:Centro]
       - [rdfs:label,vocab:id]
       - [rdfs:comment,vocab:descripcion]
-      - [owl:inverseOf,vocab:tieneEconomico]
+      
 
       - [vocab:descripcion,$(Descripcion Centro),xsd:string]
       - [vocab:id,$(Centro),xsd:string]
-      - [vocab:tieneEconomico,vocab:tieneCentro]  #DOUBT ABOUT SYNTAX
-      - [owl:sameAs,$(wikicentro)~iri]
+    
+      - [owl:sameAs,$(wikiseccion)~iri] 
 
 
   triplesmap5:
     sources:
       - [gastos-with-links.csv~csv]
-    s: default:Economico/Gastos/$(Gastos)
+    s: default:Gastos/$(Gastos)
     po:
       - [a,vocab:Gastos]
       - [rdfs:subClassOf,Economico]
       - [rdfs:label,vocab:id]
       - [rdfs:comment,vocab:descripcion]
-      - [owl:inverseOf,vocab:tieneEconomico]
-      - [vocab:tieneEconomico,vocab:tieneCentro]  #DOUBT ABOUT SYNTAX
 
       - [vocab:tieneSeccion,$(Descripcion Seccion),xsd:string]
       - [vocab:id,$(Seccion),xsd:string] 
@@ -109,14 +106,14 @@ mappings:
       - [vocab:creditoGastado,$(OBL_RECONOC),xsd:double]
       - [vocab:creditoDispuesto,$(C_DISPUESTO),xsd:double]
 
-      - [owl:sameAs,$(wikiseccion)~iri] #DOUBT ABOUT PLACEMENT, BEFORE SECCION WAS A CLASS
+      - [owl:sameAs,$(wikiseccion)~iri] 
 
 
 
     triplesmap6:
     sources:
       - [ingresos-with-links.csv~csv]
-    s: default:Economico/Ingresos/$(ingresos)
+    s: default:Ingresos/$(ingresos)
     po:
       - [a,vocab:Ingresos]
       - [rdfs:subClassOf,Economico]
