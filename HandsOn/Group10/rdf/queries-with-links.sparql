@@ -1,6 +1,4 @@
-PREFIX default: <http://group10.com/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX ns: <http://group10.com/>
 
 # Show all the elements of the ontology, including the class to each one belongs to:
 
@@ -10,30 +8,10 @@ WHERE
   ?x rdf:type ?y
 }
 
+# See all IRIs:
 
-# See all the classes of the ontology:
-
-SELECT DISTINCT ?x
+SELECT DISTINCT ?x ?y
 WHERE
 {
-  ?x a owl:Class
-}
-
-
-# See all the instances of the example:
-
-SELECT DISTINCT ?x
-WHERE
-{
-  ?x a ?y
-  ?x a owl:Class.
-}
-
-
-# See all IRIs
-
-SELECT DISTINCT ?x
-WHERE
-{
-  ?x a owl:sameAs
+  ?x owl:sameAs ?y
 }
