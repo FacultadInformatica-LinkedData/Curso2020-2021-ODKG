@@ -1,0 +1,10 @@
+TODO LIST:
+
+- Add latitude and longitude of districts in class Seccion through reconcilliation
+- Update the ontology, yarml, rml and rdf with the latitude and longitude
+- Query to select from each seccion that has a longitude and latitude (the districts), the seccion description, latitude and longitude
+- Query to select the sum of all of the gastos for each seccion that has a longitude and latitude (the districts)
+- Query to select the sum of all the gastos for each seccion that does not have a longitude or latitude and sum them (so one sum of all)
+- Query to select the sum of all of the gastos for each Centro
+- Query to select the sum of all the ingresos for each centro
+- Implement in application (Rutger)
