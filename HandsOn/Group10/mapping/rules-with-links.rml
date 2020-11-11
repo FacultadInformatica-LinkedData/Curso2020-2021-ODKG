@@ -17,9 +17,9 @@ map:map_triplesmap2_0 rml:logicalSource map:source_1;
     rdfs:label "triplesmap2";
     rr:subjectMap map:s_1;
     rr:predicateObjectMap map:pom_7, map:pom_8, map:pom_9, map:pom_10, map:pom_11, map:pom_12.
-map:map_triplesmap5_0 rml:logicalSource map:source_2;
+map:map_triplesmap3_0 rml:logicalSource map:source_2;
     a rr:TriplesMap;
-    rdfs:label "triplesmap5";
+    rdfs:label "triplesmap3";
     rr:subjectMap map:s_2;
     rr:predicateObjectMap map:pom_13, map:pom_14, map:pom_15, map:pom_16, map:pom_17, map:pom_18, map:pom_19, map:pom_20, map:pom_21, map:pom_22, map:pom_23, map:pom_24, map:pom_25, map:pom_26, map:pom_27, map:pom_28, map:pom_29, map:pom_30, map:pom_31.
 map:om_0 a rr:ObjectMap;
