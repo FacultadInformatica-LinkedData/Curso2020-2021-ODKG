@@ -1,0 +1,39 @@
+Using RDFlib:
+
+
+github_storage = "https://raw.githubusercontent.com/Maropro3/Curso2020-2021-ODKG/master/HandsOn/Group03"
+
+from rdflib import Graph, Namespace, Literal
+from rdflib.namespace import RDF, RDFS
+g = Graph()
+g.parse(github_storage+"/rdf/output-with-links.nt", format="nt")
+
+from rdflib.plugins.sparql import prepareQuery
+
+
+1. Get all instances with its wikidata links.
+
+q1 = prepareQuery('''
+  SELECT DISTINCT
+    ?Subject ?Link 
+    WHERE { 
+    ?Subject <http://www.w3.org/2002/07/owl#sameAs> ?Link.
+  } 
+  
+  '''
+)
+
+
+2. Get the wikidata link of the instance Public Services and Procurement Canada.
+
+
+q2 = prepareQuery('''
+  SELECT DISTINCT
+    ?Link
+    WHERE { 
+    <http://www.odkggroup3/ontology#.Public%20Services%20and%20Procurement%20Canada> 
+    <http://www.w3.org/2002/07/owl#sameAs> ?Link
+  } 
+  
+  '''
+)
