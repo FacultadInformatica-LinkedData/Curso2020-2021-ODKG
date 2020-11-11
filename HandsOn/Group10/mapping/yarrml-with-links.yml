@@ -54,7 +54,7 @@ mappings:
       - [owl:sameAs,$(wikicentro)~iri] 
 
 
-  triplesmap5:
+  triplesmap3:
     sources:
       - [gastos-with-links.csv~csv]
     s: default:Gastos/$(Gastos)
@@ -87,7 +87,7 @@ mappings:
 
 
 
-    triplesmap6:
+    triplesmap4:
     sources:
       - [ingresos-with-links.csv~csv]
     s: default:Ingresos/$(ingresos)
