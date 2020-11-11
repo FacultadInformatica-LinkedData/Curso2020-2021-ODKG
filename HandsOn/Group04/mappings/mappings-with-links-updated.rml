@@ -150,7 +150,7 @@ map:om_36 a rr:ObjectMap;
 map:om_37 a rr:ObjectMap;
     rml:reference "Supplier Code";
     rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#long>.
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_38 a rr:ObjectMap;
     rml:reference "Supplier Zip Code";
     rr:termType rr:Literal;
@@ -182,7 +182,7 @@ map:om_9 a rr:ObjectMap;
 map:pm_0 a rr:PredicateMap;
     rr:constant rdf:type.
 map:pm_1 a rr:PredicateMap;
-    rr:constant <http://exercise.publicprocurement.es/about/ontology/group04pp/hasDepartmentName>.
+    rr:constant <http://xmlns.com/foaf/0.1/name>.
 map:pm_10 a rr:PredicateMap;
     rr:constant <http://exercise.publicprocurement.es/about/ontology/group04pp/hasClassTitle>.
 map:pm_11 a rr:PredicateMap;
@@ -234,7 +234,7 @@ map:pm_31 a rr:PredicateMap;
 map:pm_32 a rr:PredicateMap;
     rr:constant rdf:type.
 map:pm_33 a rr:PredicateMap;
-    rr:constant <http://exercise.publicprocurement.es/about/ontology/group04pp/hasSupplierName>.
+    rr:constant <http://xmlns.com/foaf/0.1/name>.
 map:pm_34 a rr:PredicateMap;
     rr:constant <http://www.w3.org/2003/01/geo/wgs84_pos#lat>.
 map:pm_35 a rr:PredicateMap;
@@ -250,7 +250,7 @@ map:pm_4 a rr:PredicateMap;
 map:pm_5 a rr:PredicateMap;
     rr:constant rdfs:comment.
 map:pm_6 a rr:PredicateMap;
-    rr:constant <http://exercise.publicprocurement.es/about/ontology/group04pp/hasItemName>.
+    rr:constant <http://xmlns.com/foaf/0.1/name>.
 map:pm_7 a rr:PredicateMap;
     rr:constant <https://www.wikidata.org/wiki/Property:P2167>.
 map:pm_8 a rr:PredicateMap;
@@ -377,7 +377,7 @@ map:pom_9 a rr:PredicateObjectMap;
 map:s_0 a rr:SubjectMap;
     rr:template "http://dbpedia.org/ontology/Department#{Department Name}".
 map:s_1 a rr:SubjectMap;
-    rr:template "http://contsem.unizar.es/def/sector-publico/pproc#{Item Name}".
+    rr:template "http://contsem.unizar.es/def/sector-publico/pproc#{Normalized UNSPSC}".
 map:s_2 a rr:SubjectMap;
     rr:template "http://contsem.unizar.es/def/sector-publico/pproc#{Purchase Order Number}".
 map:s_3 a rr:SubjectMap;

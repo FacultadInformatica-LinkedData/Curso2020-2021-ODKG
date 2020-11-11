@@ -7,6 +7,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix pproc: <http://contsem.unizar.es/def/sector-publico/pproc#> .
 @prefix org: <https://www.w3.org/ns/org#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @base <http://exercise.publicprocurement.es/about/ontology/group04ppp> .
 
 <http://exercise.publicprocurement.es/about/ontology/group04ppp> rdf:type owl:Ontology .
@@ -81,8 +82,8 @@ pproc:contractingBody rdf:type owl:ObjectProperty ;
                  rdfs:range xsd:date .
 
 
-###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasDepartmentName
-:hasDepartmentName rdf:type owl:DatatypeProperty ;
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:DatatypeProperty ;
                    rdfs:domain <http://dbpedia.org/ontology/Department> ;
                    rdfs:range xsd:string .
 
@@ -117,11 +118,15 @@ rdfs:comment rdf:type owl:DatatypeProperty ;
                rdfs:range xsd:string .
 
 
-###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasItemName
-:hasItemName rdf:type owl:DatatypeProperty ;
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:DatatypeProperty ;
              rdfs:domain pproc:ContractObject ;
              rdfs:range xsd:string .
 
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:DatatypeProperty ;
+             rdfs:domain pproc:Organization ;
+             rdfs:range xsd:string .
 
 ###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasLPAnumber
 :hasLPAnumber rdf:type owl:DatatypeProperty ;
@@ -192,7 +197,7 @@ geo:long rdf:type owl:DatatypeProperty ;
 ###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasSupplierCode
 :hasSupplierCode rdf:type owl:DatatypeProperty ;
                  rdfs:domain org:Organization ;
-                 rdfs:range xsd:long .
+                 rdfs:range xsd:string .
 
 
 ###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasTotalPrice
