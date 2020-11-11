@@ -7,216 +7,184 @@
 
 map:jc_0 rr:child "Centro";
     rr:parent "Centro".
-map:jc_1 rr:child "Capitulo";
-    rr:parent "Capitulo".
 map:map_triplesmap1_0 rml:logicalSource map:source_0;
     a rr:TriplesMap;
     rdfs:label "triplesmap1";
     rr:subjectMap map:s_0;
-    rr:predicateObjectMap map:pom_0, map:pom_1, map:pom_2, map:pom_3.
+    rr:predicateObjectMap map:pom_0, map:pom_1, map:pom_2, map:pom_3, map:pom_4, map:pom_5.
 map:map_triplesmap2_0 rml:logicalSource map:source_1;
     a rr:TriplesMap;
     rdfs:label "triplesmap2";
     rr:subjectMap map:s_1;
-    rr:predicateObjectMap map:pom_4, map:pom_5, map:pom_6.
+    rr:predicateObjectMap map:pom_6, map:pom_7, map:pom_8, map:pom_9, map:pom_10.
 map:map_triplesmap3_0 rml:logicalSource map:source_2;
     a rr:TriplesMap;
     rdfs:label "triplesmap3";
     rr:subjectMap map:s_2;
-    rr:predicateObjectMap map:pom_7, map:pom_8, map:pom_9, map:pom_10, map:pom_11, map:pom_12, map:pom_13, map:pom_14.
-map:map_triplesmap4_0 rml:logicalSource map:source_3;
-    a rr:TriplesMap;
-    rdfs:label "triplesmap4";
-    rr:subjectMap map:s_3;
-    rr:predicateObjectMap map:pom_15, map:pom_16, map:pom_17.
-map:map_triplesmap5_0 rml:logicalSource map:source_4;
-    a rr:TriplesMap;
-    rdfs:label "triplesmap5";
-    rr:subjectMap map:s_4;
-    rr:predicateObjectMap map:pom_18, map:pom_19.
-map:map_triplesmap6_0 rml:logicalSource map:source_5;
-    a rr:TriplesMap;
-    rdfs:label "triplesmap6";
-    rr:subjectMap map:s_5;
-    rr:predicateObjectMap map:pom_20, map:pom_21.
-map:map_triplesmap7_0 rml:logicalSource map:source_6;
-    a rr:TriplesMap;
-    rdfs:label "triplesmap7";
-    rr:subjectMap map:s_6;
-    rr:predicateObjectMap map:pom_22, map:pom_23, map:pom_24, map:pom_25, map:pom_26, map:pom_27.
-map:map_triplesmap8_0 rml:logicalSource map:source_7;
-    a rr:TriplesMap;
-    rdfs:label "triplesmap8";
-    rr:subjectMap map:s_7;
-    rr:predicateObjectMap map:pom_28, map:pom_29.
+    rr:predicateObjectMap map:pom_11, map:pom_12, map:pom_13, map:pom_14, map:pom_15, map:pom_16, map:pom_17, map:pom_18, map:pom_19, map:pom_20, map:pom_21, map:pom_22, map:pom_23, map:pom_24, map:pom_25, map:pom_26, map:pom_27, map:pom_28.
 map:om_0 a rr:ObjectMap;
-    rr:constant "http://example.org#Centro";
+    rr:constant "http://group10.com/ontology/Centro";
     rr:termType rr:IRI.
 map:om_1 a rr:ObjectMap;
-    rml:reference "Descripcion Centro";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+    rr:constant "http://group10.com/ontology/id";
+    rr:termType rr:Literal.
 map:om_10 a rr:ObjectMap;
-    rml:reference "C_DISPUESTO";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#double>.
-map:om_11 a rr:ObjectMap;
-    rml:reference "Programa";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#integer>.
-map:om_12 a rr:ObjectMap;
     rml:reference "Centro";
     rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#integer>.
-map:om_13 a rr:ObjectMap;
-    rml:reference "Seccion";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#integer>.
-map:om_14 a rr:ObjectMap;
-    rml:reference "Descripcion Economico";
-    rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-map:om_15 a rr:ObjectMap;
-    rr:constant "http://example.org#Capitulo";
+map:om_11 a rr:ObjectMap;
+    rr:constant "http://group10.com/ontology/Gastos";
     rr:termType rr:IRI.
-map:om_16 a rr:ObjectMap;
-    rml:reference "Descripcion Capitulo";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-map:om_17 a rr:ObjectMap;
-    rr:parentTriplesMap map:map_triplesmap8_0;
-    rr:joinCondition map:jc_1.
-map:om_18 a rr:ObjectMap;
-    rr:constant "http://example.org#Programa";
-    rr:termType rr:IRI.
-map:om_19 a rr:ObjectMap;
-    rml:reference "Descripcion Programa";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-map:om_2 a rr:ObjectMap;
-    rml:reference "Gastos";
+map:om_12 a rr:ObjectMap;
+    rr:constant "Economico";
     rr:termType rr:Literal.
-map:om_20 a rr:ObjectMap;
-    rr:constant "http://example.org#Seccion";
-    rr:termType rr:IRI.
-map:om_21 a rr:ObjectMap;
+map:om_13 a rr:ObjectMap;
+    rr:constant "http://group10.com/ontology/id";
+    rr:termType rr:Literal.
+map:om_14 a rr:ObjectMap;
+    rr:constant "http://group10.com/ontology/descripcion";
+    rr:termType rr:Literal.
+map:om_15 a rr:ObjectMap;
     rml:reference "Descripcion Seccion";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-map:om_22 a rr:ObjectMap;
-    rr:constant "http://example.org#Ingresos";
-    rr:termType rr:IRI.
-map:om_23 a rr:ObjectMap;
-    rml:reference "Capitulo";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#integer>.
-map:om_24 a rr:ObjectMap;
-    rml:reference "Centro";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#integer>.
-map:om_25 a rr:ObjectMap;
-    rml:reference "RECAUDADO";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#double>.
-map:om_26 a rr:ObjectMap;
-    rml:reference "PREV.DEFINITIV";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#double>.
-map:om_27 a rr:ObjectMap;
-    rml:reference "Descripcion Economico";
+map:om_16 a rr:ObjectMap;
+    rml:reference "Seccion";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-map:om_28 a rr:ObjectMap;
-    rr:constant "http://example.org#Capitulo";
-    rr:termType rr:IRI.
-map:om_29 a rr:ObjectMap;
-    rml:reference "Descripcion Capitulo";
+map:om_17 a rr:ObjectMap;
+    rml:reference "Descripcion Seccion";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-map:om_3 a rr:ObjectMap;
-    rr:parentTriplesMap map:map_triplesmap2_0;
-    rr:joinCondition map:jc_0.
-map:om_4 a rr:ObjectMap;
-    rr:constant "http://example.org#Centro";
-    rr:termType rr:IRI.
-map:om_5 a rr:ObjectMap;
+map:om_18 a rr:ObjectMap;
+    rml:reference "Descripcion Programa";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+map:om_19 a rr:ObjectMap;
+    rml:reference "Programa";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+map:om_2 a rr:ObjectMap;
+    rr:constant "http://group10.com/ontology/descripcion";
+    rr:termType rr:Literal.
+map:om_20 a rr:ObjectMap;
+    rml:reference "Descripcion Programa";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+map:om_21 a rr:ObjectMap;
     rml:reference "Descripcion Centro";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-map:om_6 a rr:ObjectMap;
-    rml:reference "ingresos";
-    rr:termType rr:Literal.
-map:om_7 a rr:ObjectMap;
-    rr:constant "http://group10.com/resource/Gastos";
-    rr:termType rr:IRI.
-map:om_8 a rr:ObjectMap;
+map:om_22 a rr:ObjectMap;
+    rml:reference "Centro";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+map:om_23 a rr:ObjectMap;
+    rml:reference "Descripcion Centro";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+map:om_24 a rr:ObjectMap;
+    rml:reference "Descripcion Capitulo";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+map:om_25 a rr:ObjectMap;
+    rml:reference "Capitulo";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+map:om_26 a rr:ObjectMap;
+    rml:reference "Descripcion Capitulo";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+map:om_27 a rr:ObjectMap;
     rml:reference "OBL_RECONOC";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#double>.
-map:om_9 a rr:ObjectMap;
-    rml:reference "Capitulo";
+map:om_28 a rr:ObjectMap;
+    rml:reference "C_DISPUESTO";
     rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#integer>.
+    rr:datatype <http://www.w3.org/2001/XMLSchema#double>.
+map:om_3 a rr:ObjectMap;
+    rml:reference "Descripcion Centro";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+map:om_4 a rr:ObjectMap;
+    rml:reference "Centro";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+map:om_5 a rr:ObjectMap;
+    rr:parentTriplesMap map:map_triplesmap2_0;
+    rr:joinCondition map:jc_0.
+map:om_6 a rr:ObjectMap;
+    rr:constant "http://group10.com/ontology/Centro";
+    rr:termType rr:IRI.
+map:om_7 a rr:ObjectMap;
+    rr:constant "http://group10.com/ontology/id";
+    rr:termType rr:Literal.
+map:om_8 a rr:ObjectMap;
+    rr:constant "http://group10.com/ontology/descripcion";
+    rr:termType rr:Literal.
+map:om_9 a rr:ObjectMap;
+    rml:reference "Descripcion Centro";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:pm_0 a rr:PredicateMap;
     rr:constant rdf:type.
 map:pm_1 a rr:PredicateMap;
-    rr:constant <http://example.org#descripcionCentro>.
+    rr:constant rdfs:label.
 map:pm_10 a rr:PredicateMap;
-    rr:constant <http://example.org#creditoDispuesto>.
+    rr:constant <http://group10.com/ontology/id>.
 map:pm_11 a rr:PredicateMap;
-    rr:constant <http://example.org#tienePrograma>.
+    rr:constant rdf:type.
 map:pm_12 a rr:PredicateMap;
-    rr:constant <http://example.org#tieneCentro>.
+    rr:constant rdfs:subClassOf.
 map:pm_13 a rr:PredicateMap;
-    rr:constant <http://example.org#tieneSeccion>.
+    rr:constant rdfs:label.
 map:pm_14 a rr:PredicateMap;
-    rr:constant <http://example.org#descripcionEconomico>.
+    rr:constant rdfs:comment.
 map:pm_15 a rr:PredicateMap;
-    rr:constant rdf:type.
+    rr:constant <http://group10.com/ontology/tieneSeccion>.
 map:pm_16 a rr:PredicateMap;
-    rr:constant <http://example.org#descripcionCapitulo>.
+    rr:constant <http://group10.com/ontology/id>.
 map:pm_17 a rr:PredicateMap;
-    rr:constant <http://example.org#Centro>.
+    rr:constant <http://group10.com/ontology/descripcion>.
 map:pm_18 a rr:PredicateMap;
-    rr:constant rdf:type.
+    rr:constant <http://group10.com/ontology/tienePrograma>.
 map:pm_19 a rr:PredicateMap;
-    rr:constant <http://example.org#descripcionPrograma>.
+    rr:constant <http://group10.com/ontology/id>.
 map:pm_2 a rr:PredicateMap;
-    rr:constant <http://example.org#tieneGasto>.
+    rr:constant rdfs:comment.
 map:pm_20 a rr:PredicateMap;
-    rr:constant rdf:type.
+    rr:constant <http://group10.com/ontology/descripcion>.
 map:pm_21 a rr:PredicateMap;
-    rr:constant <http://example.org#descripcionSeccion>.
+    rr:constant <http://group10.com/ontology/tieneCentro>.
 map:pm_22 a rr:PredicateMap;
-    rr:constant rdf:type.
+    rr:constant <http://group10.com/ontology/id>.
 map:pm_23 a rr:PredicateMap;
-    rr:constant <http://example.org#tieneCapitulo>.
+    rr:constant <http://group10.com/ontology/descripcion>.
 map:pm_24 a rr:PredicateMap;
-    rr:constant <http://example.org#tieneCentro>.
+    rr:constant <http://group10.com/ontology/tieneCapitulo>.
 map:pm_25 a rr:PredicateMap;
-    rr:constant <http://example.org#recaudado>.
+    rr:constant <http://group10.com/ontology/id>.
 map:pm_26 a rr:PredicateMap;
-    rr:constant <http://example.org#previsionIngresos>.
+    rr:constant <http://group10.com/ontology/descripcion>.
 map:pm_27 a rr:PredicateMap;
-    rr:constant <http://example.org#descripcionIngresos>.
+    rr:constant <http://group10.com/ontology/creditoGastado>.
 map:pm_28 a rr:PredicateMap;
-    rr:constant rdf:type.
-map:pm_29 a rr:PredicateMap;
-    rr:constant <http://example.org#descripcionCapitulo>.
+    rr:constant <http://group10.com/ontology/creditoDispuesto>.
 map:pm_3 a rr:PredicateMap;
-    rr:constant <http://example.org#Centro>.
+    rr:constant <http://group10.com/ontology/descripcion>.
 map:pm_4 a rr:PredicateMap;
-    rr:constant rdf:type.
+    rr:constant <http://group10.com/ontology/id>.
 map:pm_5 a rr:PredicateMap;
-    rr:constant <http://example.org#descripcionCentro>.
+    rr:constant <http://group10.com/ontology/Centro>.
 map:pm_6 a rr:PredicateMap;
-    rr:constant <http://example.org#tieneIngresos>.
-map:pm_7 a rr:PredicateMap;
     rr:constant rdf:type.
+map:pm_7 a rr:PredicateMap;
+    rr:constant rdfs:label.
 map:pm_8 a rr:PredicateMap;
-    rr:constant <http://example.org#creditoGastado>.
+    rr:constant rdfs:comment.
 map:pm_9 a rr:PredicateMap;
-    rr:constant <http://example.org#tieneCapitulo>.
+    rr:constant <http://group10.com/ontology/descripcion>.
 map:pom_0 a rr:PredicateObjectMap;
     rr:predicateMap map:pm_0;
     rr:objectMap map:om_0.
@@ -283,9 +251,6 @@ map:pom_27 a rr:PredicateObjectMap;
 map:pom_28 a rr:PredicateObjectMap;
     rr:predicateMap map:pm_28;
     rr:objectMap map:om_28.
-map:pom_29 a rr:PredicateObjectMap;
-    rr:predicateMap map:pm_29;
-    rr:objectMap map:om_29.
 map:pom_3 a rr:PredicateObjectMap;
     rr:predicateMap map:pm_3;
     rr:objectMap map:om_3.
@@ -313,37 +278,12 @@ map:s_1 a rr:SubjectMap;
     rr:template "http://group10.com/resource/Centro/{Descripcion Centro}".
 map:s_2 a rr:SubjectMap;
     rr:template "http://group10.com/resource/Gastos/{Gastos}".
-map:s_3 a rr:SubjectMap;
-    rr:template "http://group10.com/resource/Capitulo/{Descripcion Capitulo}".
-map:s_4 a rr:SubjectMap;
-    rr:template "http://group10.com/resource/Programa/{Descripcion Programa}".
-map:s_5 a rr:SubjectMap;
-    rr:template "http://group10.com/resource/Seccion/{Descripcion Seccion}".
-map:s_6 a rr:SubjectMap;
-    rr:template "http://group10.com/resource/Ingresos/{ingresos}".
-map:s_7 a rr:SubjectMap;
-    rr:template "http://group10.com/resource/Capitulo/{Descripcion Capitulo}".
 map:source_0 a rml:LogicalSource;
-    rml:source "gastos-updated.csv";
+    rml:source "gastos-with-links.csv";
     rml:referenceFormulation ql:CSV.
 map:source_1 a rml:LogicalSource;
-    rml:source "ingresos-updated.csv";
+    rml:source "ingresos-with-links.csv";
     rml:referenceFormulation ql:CSV.
 map:source_2 a rml:LogicalSource;
-    rml:source "gastos-updated.csv";
-    rml:referenceFormulation ql:CSV.
-map:source_3 a rml:LogicalSource;
-    rml:source "gastos-updated.csv";
-    rml:referenceFormulation ql:CSV.
-map:source_4 a rml:LogicalSource;
-    rml:source "gastos-updated.csv";
-    rml:referenceFormulation ql:CSV.
-map:source_5 a rml:LogicalSource;
-    rml:source "gastos-updated.csv";
-    rml:referenceFormulation ql:CSV.
-map:source_6 a rml:LogicalSource;
-    rml:source "ingresos-updated.csv";
-    rml:referenceFormulation ql:CSV.
-map:source_7 a rml:LogicalSource;
-    rml:source "ingresos-updated.csv";
+    rml:source "gastos-with-links.csv";
     rml:referenceFormulation ql:CSV.
