@@ -12,7 +12,7 @@ prefixes:
   vocab: http://example.org#
   default: http://group10.com/resource/
   vocab: http://group10.com/ontology/
-
+  
   economico: http://purl.org/cerif/frapo/
   id: http://schema.mobivoc.org/#
   descripcion: https://dublincore.org/specifications/dublin-core/dcmi-terms/#
