@@ -1,0 +1,274 @@
+@prefix : <http://www.example.org/group07/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.example.org/group07/ontology> .
+
+<http://www.example.org/group07/ontology> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://linkedscience.org/lsc/ns#participatesIn
+<http://linkedscience.org/lsc/ns#participatesIn> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <http://schema.org/Researcher> ;
+                                                 rdfs:range <http://schema.org/Project> .
+
+
+###  http://schema.org/addressCountry
+<http://schema.org/addressCountry> rdf:type owl:ObjectProperty ;
+                                   rdfs:domain <http://www.w3.org/2006/vcard/ns#Organization> ;
+                                   rdfs:range <http://schema.org/Country> .
+
+
+###  http://schema.org/memberOf
+<http://schema.org/memberOf> rdf:type owl:ObjectProperty ;
+                             rdfs:domain <http://schema.org/Researcher> ;
+                             rdfs:range <http://www.w3.org/2006/vcard/ns#Organization> .
+
+
+###  http://www.example.org/group07/ontology/organization
+<http://www.example.org/group07/ontology/organization> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain <http://www.example.org/group07/ontology/Participation> ;
+                                                       rdfs:range <http://www.w3.org/2006/vcard/ns#Organization> .
+
+
+###  http://www.example.org/group07/ontology/project
+<http://www.example.org/group07/ontology/project> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain <http://www.example.org/group07/ontology/Participation> ;
+                                                  rdfs:range <http://schema.org/Project> .
+
+
+###  http://www.w3.org/2006/vcard/ns#hasLocality
+<http://www.w3.org/2006/vcard/ns#hasLocality> rdf:type owl:ObjectProperty ;
+                                              rdfs:domain <http://www.w3.org/2006/vcard/ns#Organization> ;
+                                              rdfs:range <http://schema.org/City> .
+
+
+###  http://www.w3.org/2006/vcard/ns#hasStreetAddress
+<http://www.w3.org/2006/vcard/ns#hasStreetAddress> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain <http://www.w3.org/2006/vcard/ns#Organization> ;
+                                                   rdfs:range <http://dbpedia.org/ontology/Street> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://dbpedia.org/ontology/abbreviation
+<http://dbpedia.org/ontology/abbreviation> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <http://www.w3.org/2006/vcard/ns#Organization> ;
+                                           rdfs:range xsd:string .
+
+
+###  http://dbpedia.org/ontology/cost
+<http://dbpedia.org/ontology/cost> rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain <http://schema.org/Project> ;
+                                   rdfs:range xsd:double .
+
+
+###  http://dbpedia.org/ontology/projectCoordinator
+<http://dbpedia.org/ontology/projectCoordinator> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain <http://schema.org/Project> ;
+                                                 rdfs:range xsd:string .
+
+
+###  http://dbpedia.org/ontology/projectParticipant
+<http://dbpedia.org/ontology/projectParticipant> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain <http://schema.org/Project> ;
+                                                 rdfs:range xsd:string .
+
+
+###  http://dbpedia.org/ontology/role
+<http://dbpedia.org/ontology/role> rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain <http://www.example.org/group07/ontology/Participation> ;
+                                   rdfs:range xsd:string .
+
+
+###  http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <http://schema.org/Project> ,
+                                                  <http://www.example.org/group07/ontology/Participation> ,
+                                                  <http://www.w3.org/2006/vcard/ns#Organization> ;
+                                      rdfs:range xsd:string .
+
+
+###  http://purl.org/dc/terms/subject
+<http://purl.org/dc/terms/subject> rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain <http://schema.org/Project> ;
+                                   rdfs:range xsd:string .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:DatatypeProperty ;
+                                 rdfs:domain <http://schema.org/Project> ;
+                                 rdfs:range xsd:string .
+
+
+###  http://schema.org/endDate
+<http://schema.org/endDate> rdf:type owl:DatatypeProperty ;
+                            rdfs:domain <http://schema.org/Project> ;
+                            rdfs:range xsd:dateTime .
+
+
+###  http://schema.org/startDate
+<http://schema.org/startDate> rdf:type owl:DatatypeProperty ;
+                              rdfs:domain <http://schema.org/Project> ;
+                              rdfs:range xsd:dateTime .
+
+
+###  http://www.eurocris.org/ontologies/cerif/1.3#acronym
+<http://www.eurocris.org/ontologies/cerif/1.3#acronym> rdf:type owl:DatatypeProperty ;
+                                                       rdfs:domain <http://schema.org/Project> ;
+                                                       rdfs:range xsd:string .
+
+
+###  http://www.example.org/group07/ontology/contribution
+<http://www.example.org/group07/ontology/contribution> rdf:type owl:DatatypeProperty ;
+                                                       rdfs:domain <http://schema.org/Project> ,
+                                                                   <http://www.example.org/group07/ontology/Participation> ;
+                                                       rdfs:range xsd:double .
+
+
+###  http://www.example.org/group07/ontology/hasEnded
+<http://www.example.org/group07/ontology/hasEnded> rdf:type owl:DatatypeProperty ;
+                                                   rdfs:domain <http://www.example.org/group07/ontology/Participation> ;
+                                                   rdfs:range xsd:boolean .
+
+
+###  http://www.example.org/group07/ontology/participantCountries
+<http://www.example.org/group07/ontology/participantCountries> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:domain <http://schema.org/Project> ;
+                                                               rdfs:range xsd:string .
+
+
+###  http://www.example.org/group07/ontology/programme
+<http://www.example.org/group07/ontology/programme> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <http://schema.org/Project> ;
+                                                    rdfs:range xsd:string .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> rdf:type rdf:type owl:DatatypeProperty ;
+                                                  rdfs:domain <http://www.w3.org/2006/vcard/ns#Organization> ;
+                                                  rdfs:range xsd:string .
+
+
+###  http://www.w3.org/2006/vcard/ns#organization-name
+<http://www.w3.org/2006/vcard/ns#organization-name> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <http://www.w3.org/2006/vcard/ns#Organization> ;
+                                                    rdfs:range xsd:string .
+
+
+###  http://www.w3.org/2006/vcard/ns#postal-code
+<http://www.w3.org/2006/vcard/ns#postal-code> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <http://www.w3.org/2006/vcard/ns#Organization> ;
+                                              rdfs:range xsd:string .
+
+
+###  http://www.w3.org/2006/vcard/ns#url
+<http://www.w3.org/2006/vcard/ns#url> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <http://schema.org/Project> ;
+                                      rdfs:range xsd:string .
+
+
+###  http://www.w3.org/ns/dcat#record
+<http://www.w3.org/ns/dcat#record> rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain <http://schema.org/Project> ;
+                                   rdfs:range xsd:string .
+
+
+###  http://xmlns.com/foaf/0.1/familyName
+<http://xmlns.com/foaf/0.1/familyName> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <http://schema.org/Researcher> ;
+                                       rdfs:range xsd:string .
+
+
+###  http://xmlns.com/foaf/0.1/givenName
+<http://xmlns.com/foaf/0.1/givenName> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <http://schema.org/Researcher> ;
+                                      rdfs:range xsd:string .
+
+
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:DatatypeProperty ;
+                                 rdfs:domain <http://schema.org/Researcher> ;
+                                 rdfs:range xsd:string .
+
+
+###  http://xmlns.com/foaf/0.1/title
+<http://xmlns.com/foaf/0.1/title> rdf:type owl:DatatypeProperty ;
+                                  rdfs:subPropertyOf owl:topDataProperty ;
+                                  rdfs:domain <http://schema.org/Researcher> ;
+                                  rdfs:range xsd:string .
+
+
+###  https://w3id.org/dingo#objective
+<https://w3id.org/dingo#objective> rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain <http://schema.org/Project> ;
+                                   rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dbpedia.org/ontology/Street
+<http://dbpedia.org/ontology/Street> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://schema.org/PopulatedPlace> .
+
+
+###  http://schema.org/AdministrativeArea
+<http://schema.org/AdministrativeArea> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://schema.org/Place> .
+
+
+###  http://schema.org/Agent
+<http://schema.org/Agent> rdf:type owl:Class .
+
+
+###  http://schema.org/City
+<http://schema.org/City> rdf:type owl:Class ;
+                         rdfs:subClassOf <http://schema.org/AdministrativeArea> .
+
+
+###  http://schema.org/Country
+<http://schema.org/Country> rdf:type owl:Class ;
+                            rdfs:subClassOf <http://schema.org/PopulatedPlace> .
+
+
+###  http://schema.org/Person
+<http://schema.org/Person> rdf:type owl:Class .
+
+
+###  http://schema.org/Place
+<http://schema.org/Place> rdf:type owl:Class .
+
+
+###  http://schema.org/PopulatedPlace
+<http://schema.org/PopulatedPlace> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://schema.org/Place> .
+
+
+###  http://schema.org/Project
+<http://schema.org/Project> rdf:type owl:Class .
+
+
+###  http://schema.org/Researcher
+<http://schema.org/Researcher> rdf:type owl:Class ;
+                               rdfs:subClassOf <http://schema.org/Person> .
+
+
+###  http://www.example.org/group07/ontology/Participation
+<http://www.example.org/group07/ontology/Participation> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/vcard/ns#Organization
+<http://www.w3.org/2006/vcard/ns#Organization> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://schema.org/Agent> .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

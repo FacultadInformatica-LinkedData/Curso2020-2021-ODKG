@@ -1,0 +1,451 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix transit: <http://vocab.org/transit/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+@prefix vocab: <http://www.example.com/group07/> .
+@prefix cerif: <http://www.eurocris.org/ontologies/cerif/1.3#>.
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dg: <https://w3id.org/dingo#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix lsc: <http://linkedscience.org/lsc/ns#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@base <http://www.example.com/group07/ns#>.
+
+<#TriplesMap1> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "csv\cordis-h2020organizations-with-links-snippet.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+
+  rr:subjectMap [
+    rr:template "http://www.example.com/group07/organization/{id}";
+    rr:termType rr:IRI; 
+    rr:class vcard:Organization;
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "id"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vcard:organization-name;
+    rr:objectMap [
+      rml:reference "name";
+      rr:datatype xsd:string
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate dbpedia-owl:abbreviation;
+    rr:objectMap [
+      rml:reference "shortName";
+      rr:datatype xsd:string
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [
+      rml:reference "activityType";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:preddicateObjectMap [
+    rr:predicate schema:addressCountry;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap9>;
+      rr:joinCondition [
+        rr:child "country"; rr:parent "country";];
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vcard:hasStreetAddress;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap11>;
+      rr:joinCondition [
+        rr:child "street"; rr:parent "street";];
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vcard:hasLocality;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap13>;
+      rr:joinCondition [
+        rr:child "city"; rr:parent "city";];
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vcard:postal-code;
+    rr:objectMap [
+      rml:reference "postCode";
+      rr:datatype xsd:string
+    ]
+  ].
+
+  <#TriplesMap2> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "csv\cordis-h2020organizations-with-links-snippet.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+
+  rr:subjectMap [
+    rr:template "http://www.example.com/group07/organization/{name}";
+    rr:termType rr:IRI; 
+    rr:class vcard:Organization;
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "name"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant owl:sameAs; rr:termType rr:IRI];
+    rr:objectMap [
+      rml:reference "WikiOrganization";
+      rr:termType rr:IRI ]
+    ].
+
+  <#TriplesMap3> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "csv\cordis-h2020projects-with-links-snippet.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+
+  rr:subjectMap [
+    rr:template "http://www.example.com/group07/project/{id}";
+    rr:class schema:Project
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "id"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate dcat:record;
+    rr:objectMap [
+      rml:reference "rcn";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate cerif:acronym;
+    rr:objectMap [
+      rml:reference "acronym";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:programme;
+    rr:objectMap [
+      rml:reference "programme";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate dct:subject;
+    rr:objectMap [
+      rml:reference "topics";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate dct:title;
+    rr:objectMap [
+      rml:reference "title";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate schema:startDate;
+    rr:objectMap [
+      rml:reference "startDate";
+      rr:datatype xsd:dateTime
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate schema:endDate;
+    rr:objectMap [
+      rml:reference "endDate";
+      rr:datatype xsd:dateTime
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vcard:url;
+    rr:objectMap [
+      rml:reference "projectUrl";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate dg:objective;
+    rr:objectMap [
+      rml:reference "objective";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate dbpedia-owl:cost;
+    rr:objectMap [
+      rml:reference "totalCost";
+      rr:datatype xsd:double
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:contribution;
+    rr:objectMap [
+      rml:reference "ecMaxContribution";
+      rr:datatype xsd:double
+    ]
+  ].
+
+  <#TriplesMap4> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "csv\cordis-h2020projects-with-links-snippet.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+
+  rr:subjectMap [
+    rr:template "http://www.example.com/group07/project/{id}/coordinator/{Coordinator}";
+    rr:termType rr:IRI; 
+    rr:class vocab:Coordinator;
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant owl:sameAs; rr:termType rr:IRI ];
+    rr:objectMap [
+      rml:reference "WikiCoordinator";
+      rr:termType rr:IRI ]
+    ].
+
+<#TriplesMap5> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "csv\cordis-h2020projects-with-links-snippet.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+
+  rr:subjectMap [
+    rr:template "http://www.example.com/group07/project/{id}/coordinator/{Coordinator}/country/{coordinatorCountry}";
+    rr:termType rr:IRI; 
+    rr:class schema:Country;
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant owl:sameAs; rr:termType rr:IRI ];
+    rr:objectMap [
+      rml:reference "WikiCountry";
+      rr:termType rr:IRI ]
+    ].
+
+<#TriplesMap6> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "csv\cordis-h2020organizations-with-links-snippet.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+
+  rr:subjectMap [
+    rr:template "http://www.example.com/group07/participation/{participationId}";
+    rr:termType rr:IRI; 
+    rr:class vocab:Participation;
+  ];
+
+   rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "participationId"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasEnded;
+    rr:objectMap [
+      rml:reference "endOfParticipation";
+      rr:datatype xsd:boolean
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:contribution;
+    rr:objectMap [
+      rml:reference "ecContribution";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate dbpedia-owl:role;
+    rr:objectMap [
+      rml:reference "role";
+      rr:datatype xsd:string
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:project;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap3>;
+      rr:joinCondition [
+        rr:child "projectID"; rr:parent "id";];
+      ]
+    ];
+    
+  rr:predicateObjectMap [
+    rr:predicate vocab:organization;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap1>;
+      rr:joinCondition [
+        rr:child "id"; rr:parent "id";];
+      ]
+    ].
+
+<#TriplesMap7> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "csv\cordis-h2020-msca-fellows-with-links-snippet.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+
+  rr:subjectMap [
+    rr:template "http://www.example.com/group07/researcher/{fullName}";
+    rr:termType rr:IRI; 
+    rr:class lsc:Researcher;
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "fullName"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate foaf:title;
+    rr:objectMap [
+      rml:reference "title";
+      rr:datatype xsd:string
+    ]
+  ]; 
+
+  rr:predicateObjectMap [
+    rr:predicate foaf:givenName;
+    rr:objectMap [
+      rml:reference "firstName";
+      rr:datatype xsd:string
+    ]
+  ]; 
+
+  rr:predicateObjectMap [
+    rr:predicate foaf:familyName;
+    rr:objectMap [
+      rml:reference "lastName";
+      rr:datatype xsd:string
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate schema:memberOf;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap1>;
+      rr:joinCondition [
+        rr:child "organizationId"; rr:parent "id";];
+      ]
+    ];
+    
+  rr:predicateObjectMap [
+    rr:predicate lsc:participatesIn;
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap3>;
+      rr:joinCondition [
+        rr:child "projectId"; rr:parent "id";];
+      ]
+    ];
+
+  rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant owl:sameAs; rr:termType rr:IRI];
+    rr:objectMap [
+      rml:reference "wikiFullName";
+      rr:termType rr:IRI ]
+    ].
+
+  <#TriplesMap9> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "csv\cordis-h2020organizations-with-links-snippet.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+
+  rr:subjectMap [
+    rr:template "http://www.example.com/group07/Country/{country}";
+    rr:termType rr:IRI; 
+    rr:class schema:Country;
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant owl:sameAs; rr:termType rr:IRI];
+    rr:objectMap [
+      rml:reference "WikiCountry";
+      rr:termType rr:IRI ]
+    ].
+
+  <#TriplesMap13> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "csv\cordis-h2020organizations-with-links-snippet.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+
+  rr:subjectMap [
+    rr:template "http://www.example.com/group07/City/{city}";
+    rr:termType rr:IRI; 
+    rr:class schema:City;
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant owl:sameAs; rr:termType rr:IRI];
+    rr:objectMap [
+      rml:reference "WikiCity";
+      rr:termType rr:IRI ]
+    ].
+
+  <#TriplesMap11> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "csv\cordis-h2020organizations-with-links-snippet.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+
+  rr:subjectMap [
+    rr:template "http://www.example.com/group07/Street/{street}";
+    rr:termType rr:IRI; 
+    rr:class dbpedia-owl:Street;
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant owl:sameAs; rr:termType rr:IRI];
+    rr:objectMap [
+      rml:reference "WikiStreet";
+      rr:termType rr:IRI ]
+    ].
