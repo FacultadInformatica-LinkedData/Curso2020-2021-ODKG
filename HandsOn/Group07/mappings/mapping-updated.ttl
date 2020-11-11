@@ -14,6 +14,8 @@
 @prefix lsc: <http://linkedscience.org/lsc/ns#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix schema: <http://schema.org/> .
 @base <http://www.example.com/group07/ns#>.
 
 <#TriplesMap1> a rr:TriplesMap;

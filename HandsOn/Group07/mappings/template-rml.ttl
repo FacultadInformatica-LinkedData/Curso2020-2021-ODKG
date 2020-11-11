@@ -197,7 +197,7 @@
     rr:objectMap [
       rr:parentTriplesMap <#TriplesMap1>;
       rr:joinCondition [
-        rr:child "participantCountries"; rr:parent "country";];
+        rr:child "coordinatorCountries"; rr:parent "country";];
       ]
     ];
     
@@ -206,7 +206,7 @@
     rr:objectMap [
       rr:parentTriplesMap <#TriplesMap1>;
       rr:joinCondition [
-        rr:child "coordinatorCountry"; rr:parent "country";];
+        rr:child "participantCountries"; rr:parent "country";];
       ]
     ].
 
