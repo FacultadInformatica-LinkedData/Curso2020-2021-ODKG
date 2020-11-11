@@ -1,4 +1,4 @@
-@prefix default:  <http://group10.com/> .
+@prefix default:  <http://group10.com/ontology/> .
 @prefix xsp:     <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -80,14 +80,14 @@ default:creditoDispuesto
       rdfs:domain default:Gastos ;
       rdfs:range xsd:float .
 	  
-default:AyuntamientoMadrid
+<http://group10.com/resource/Centro/AyuntamientoMadrid>
       a       default:Centro ;
       default:descripcion "Ayuntamiento de Madrid"@es ;
       default:id "1"@es ;
       default:tieneEconomico
-              default:Canones , default:IRPF .
+              <http://group10.com/resource/Gastos/Canones> , <http://group10.com/resource/Ingresos/IRPF> .
 	  
-default:IRPF
+<http://group10.com/resource/Ingresos/IRPF>
       a       default:Ingresos ;
       default:descripcion "Impuesto sobre la Renta de las Personas Físicas"@es ;
       default:id "10000"@es ;
@@ -96,9 +96,9 @@ default:IRPF
       default:recaudado "1.54049248E8"^^xsd:float ;
       default:tieneCapitulo
               "Impuestos directos"@es ;
-      default:tieneCentro default:AyuntamientoMadrid .
+      default:tieneCentro <http://group10.com/resource/Centro/AyuntamientoMadrid> .
 
-default:Canones
+<http://group10.com/resource/Gastos/Canones>
       a       default:Gastos ;
       default:creditoDispuesto
               "3630.0"^^xsd:float ;
@@ -108,7 +108,7 @@ default:Canones
       default:id "20901"@es ;
       default:tieneCapitulo
               "Gastos en Bienes Corrientes y Servicios"@es ;
-      default:tieneCentro default:AyuntamientoMadrid ;
+      default:tieneCentro <http://group10.com/resource/Centro/AyuntamientoMadrid> ;
       default:tienePrograma
               "Promoción del Plan de Derechos Humanos"@es ;
       default:tieneSeccion
