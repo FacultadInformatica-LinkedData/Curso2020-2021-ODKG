@@ -4,58 +4,52 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
-@prefix ocds:<http://purl.org/onto-ocds/ocds#>.
-@prefix  gtfs:<http://vocab.gtfs.org/terms#>.
-@prefix  cerif:<http://www.eurocris.org/ontologies/cerif/1.3#>.
-@prefix xapi:<http://purl.org/xapi/ontology#>.
-@prefix bf:<http://id.loc.gov/ontologies/bibframe/Contribution>.
-@prefix  dbpedia-owl:<http://dbpedia.org/ontology/>.
-@prefix  swc:<http://data.semanticweb.org/ns/swc/ontology#>.
-@prefix prov:    <http://www.w3.org/ns/prov#> .
-@prefix  dg:<https://w3id.org/dingo#>.
-@prefix  dcat:<http://www.w3.org/ns/dcat#>.
+@prefix orga:<http://www.example.com/group07/organizaton/>.
+@prefix partip:<http://www.example.com/group07/participant/>.
+@prefix reserch:<http://www.example.com/group07/researcher/>.
 
-OrganizationId:999466467     a      vcard:organization;
-         dcat:record        " 201304"^^xsd:integer;
-        ocds:projectID      "705217"^^xsd:integer;
-        cerif:acronym         "UPR"^^xsd:string;
-        foaf:Name   "BOARD OF TRUSTEES OF THE LELAND STANFORD JUNIOR UNIVERSITY"^^xsd:string;
-        gtfs:shortName    "STANFORD"^^xsd:string;
-        xapi:ActivityType  "HES"^^xsd:string;
+orga:999466467     a      vocab:organization;
+         vocab:record        " 201304"^^xsd:integer;
+        vocab:projectID      "705217"^^xsd:integer;
+        vocab:acronym         "UPR"^^xsd:string;
+        vocab:Name   "BOARD OF TRUSTEES OF THE LELAND STANFORD JUNIOR UNIVERSITY"^^xsd:string;
+        vocab:shortName    "STANFORD"^^xsd:string;
+        vocab:ActivityType  "HES"^^xsd:string;
         prov:End            "false"^^xsd:string;
-        bf:Contribution     "162864,6"^^xsd:float;
-        dbpedia-owl:country   "US"^^xsd:string; 
-         vcard:street-address  "SERRA MALL 450"^^xsd:string;
-         vcard:locality     "STANFORD"xsd:string;
-         vcard:hasPostalCode "94305 2004"xsd:string;
-        vcard:url    "https://ec.europa.eu/research/participants/api/contact/indexcontactproject.html?pic=999466467&projectId=705217&programId=31045243"xsd:string.
+        vocab:Contribution     "162864,6"^^xsd:float;
+        vocab:country   "US"^^xsd:string; 
+         vocab:street-address  "SERRA MALL 450"^^xsd:string;
+         vocab:locality     "STANFORD"xsd:string;
+         vocab:hasPostalCode "94305 2004"xsd:string;
+        vocab:url    "https://ec.europa.eu/research/participants/api/contact/indexcontactproject.html?pic=999466467&projectId=705217&programId=31045243"xsd:string.
   
 
-ProjectId:705217         a          foaf:Project;
-                dcat:record        "201304"^^xsd:integer;
-                ocds:id     "705217"^^xsd:integer;
-                cerif:acronym      "UPR"^^xsd:string;
-                dbpedia-owl:status"SIGNED"^^xsd:string; 
-               swc:hasProgramme   "H2020-EU.1.3.2."^^xsd:string; 
-              foaf:Title "Unconditional parental regard: Its nature and its consequences"^^xsd:string;
-            dbpedia-owl:startDate  "01/06/2016"^^xsd:date;
-              dbpedia-owl:endDate   "31/05/2018"^^xsd:date;
-               VCARD:URL           "https://eddiebrummelman.com/"^^xsd:string;
-           dg:objective        "Unconditional parental regard refers to parents accepting children for who they are, even when they disapprove of childrenâ€™s achievements (e.g., school grades)."^^xsd:string; 
-          dbpedia-owl:cost  "162864,6"^^xsd:float;
-           bf:Contribution  "162864,6"^^xsd:float;
-           dbpedia-owl:projectCoordinator  "UNIVERSITEIT VAN AMSTERDAM"^^:xds:string;
-           dbpedia-owl:country  "NL"^^:xds:string;
-           dbpedia-owl:participant   "KOBENHAVNS UNIVERSITET;UNIVERSITA CA' FOSCARI VENEZIA;UNIVERSITE PARIS I PANTHEON-SORBONNE;UNIVERSIDAD AUTONOMA DE BARCELONA;UNIVERSITA CATTOLICA DEL SACRO CUORE;UNIVERSITEIT VAN AMSTERDAM" ^^:xds:string; 
-           dbpedia-owl:country "DK;IT;FR;ES;NL"^^:xds:string.
+vocab:705217         a          vocab:Project;
+                vocab:record        "201304"^^xsd:integer;
+                vocab:id     "705217"^^xsd:integer;
+                vocab:acronym      "UPR"^^xsd:string;
+                vocab:status"SIGNED"^^xsd:string; 
+               vocab:hasProgramme   "H2020-EU.1.3.2."^^xsd:string; 
+              vocab:Title "Unconditional parental regard: Its nature and its consequences"^^xsd:string;
+            vocab:startDate  "01/06/2016"^^xsd:date;
+              vocab:endDate   "31/05/2018"^^xsd:date;
+               vocab:URL           "https://eddiebrummelman.com/"^^xsd:string;
+           vocab:objective        "Unconditional parental regard refers to parents accepting children for who they are, even when they disapprove of childrenâ€™s achievements (e.g., school grades)."^^xsd:string; 
+          vocab:cost  "162864,6"^^xsd:float;
+           vocab:Contribution  "162864,6"^^xsd:float;
+           vocab:projectCoordinator  "UNIVERSITEIT VAN AMSTERDAM"^^:xds:string;
+           vocab:country  "NL"^^:xds:string;
+           vocab:participant   "KOBENHAVNS UNIVERSITET;UNIVERSITA CA' FOSCARI VENEZIA;UNIVERSITE PARIS I PANTHEON-SORBONNE;UNIVERSIDAD AUTONOMA DE BARCELONA;UNIVERSITA CATTOLICA DEL SACRO CUORE;UNIVERSITEIT VAN AMSTERDAM" ^^:xds:string; 
+           vocab:country "DK;IT;FR;ES;NL"^^:xds:string.
 
 
-particpantId:705217999466467        a  br:Participant;
-            dcat:record        "201304"^^xsd:integer;
-            ocds:id     "705217"^^xsd:integer;
-            cerif:acronym      "UPR"^^xsd:string;
-            prov:End            "false"^^xsd:string;
-            vcard:url    "https://ec.europa.eu/research/participants/api/contact/indexcontactproject.html?pic=999466467&projectId=705217&programId=31045243"xsd:string;
-            ocds:projectID      "705217"^^xsd:integer;
-            bf:Contribution  "162864,6"^^xsd:float;
-            dcat:Role    "partner"xsd:string.
+partip:705217999466467        a  vocab:Participant;
+            vocab:record        "201304"^^xsd:integer;
+            vocab:id     "705217"^^xsd:integer;
+            vocab:acronym      "UPR"^^xsd:string;
+            vocab:End            "false"^^xsd:string;
+            vocab:url    "https://ec.europa.eu/research/participants/api/contact/indexcontactproject.html?pic=999466467&projectId=705217&programId=31045243"xsd:string;
+            vocab:projectID      "705217"^^xsd:integer;
+            vocab:Contribution  "162864,6"^^xsd:float;
+            vocab:Role    "partner"xsd:string.
+        

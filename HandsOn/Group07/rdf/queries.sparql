@@ -1,66 +1,70 @@
 1.Get all the classes
  
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?class
-
- WHERE
-
- {​​​​
-
- {​​​​?x a ?class}​​​​ 
-
+WHERE
+{
+ {?x a ?class} 
  UNION
+ {?class rdf:type rdfs:Class}
+}
+ 
 
- {​​​​?class rdf:type rdfs:Class}​​​​
+2. Get all the subclasses of the class Place
+ 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex:<http://www.example.org/group07/ontology/>
 
- }​​​​
- 
-2. Get all the subclasses of the class organization
- 
-PREFIX ex: <http://ProjectsHorizon2020.es#>
- 
-SELECT DISTINCT ?x
+SELECT DISTINCT ?x ?z
 
  WHERE
 
- {​​​​
-
- ?x rdfs:subClassOf/rdfs:subClassOf* ex:organization
-
+{
+ ?x rdfs:subClassOf ex:Place
+}
+ 
+ 
+3.List class hierarchy
+ 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+ 
+SELECT DISTINCT ?subject ?label ?supertype
+WHERE {
+    { ?subject a owl:Class . } UNION { ?individual a ?subject . } .
+    OPTIONAL { ?subject rdfs:subClassOf ?supertype } .
+    OPTIONAL { ?subject rdfs:label ?label }
+} ORDER BY ?subject
  }​​​​
  
-3.Get the amount of the ecContribution of projectID  705217
+4. Get all project record numbers, together with the coordinator country,ordered by rcn (ascending)
  
-PREFIX ex: <http://ProjectsHorizon2020.es#>
- 
-SELECT DISTINCT ?X
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex:<http://www.example.org/group07/ontology/>
 
- WHERE {​​​​
-
- ex:705217 ex:contribution ?x
-
- }​​​​
  
-4. Get all projectID, together with the coordinator country,ordered by projectID (ascending)
- 
-PREFIX ex: <http://ProjectsHorizon2020.es#>
- 
-SELECT DISTINCT ?x ?projectID
+SELECT DISTINCT ?x ?rcn
 
  WHERE {​​​​
  
-?x ex:country ?projectID.
+?x ex:country ?rcn.
  
-?x rdfs:label ?projectID.
+?x rdfs:label ?rcn.
  
 }​​​​
 
- order by asc(asc(?projectID))
+ order by asc(asc(?rcn))
  
 
 
  5.Get all ecContribution with more than 100000
  
-PREFIX ex: <http://ProjectsHorizon2020.es#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex:<http://www.example.org/group07/ontology/>
+
  
 SELECT DISTINCT ?x amonut
 
@@ -80,19 +84,25 @@ SELECT DISTINCT ?x amonut
  
 LIMIT 100
  
-6. Describe the resource with  rdfs:label "STANFORD”
+6. Describe the resource with  rdfs:label "Jan Gieseler”
  
-PREFIX ex: <http://ProjectsHorizon2020.es#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex:<http://www.example.org/group07/ontology/>
+
 
  DESCRIBE ?x 
  
-WHERE{​​​​?x rdfs:label "STANFORD" .
+WHERE{​​​​?x rdfs:label "Jan Gieseler" .
 
  }​​​​
 
 7. Get all instance of class Organization
 
-PREFIX ex: <http://ProjectsHorizon2020.es#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex:<http://www.example.org/group07/ontology/>
+
  
 SELECT DISTINCT ?x
 
@@ -104,14 +114,12 @@ SELECT DISTINCT ?x
 
  } LIMIT 100
  
-8. Check whether there is any instance of Participants Country
-PREFIX ex: <http://ProjectsHorizon2020.es#>
+8. Get all resouces of status "closed"
 
-ASK {?x rdf:type ex:country}
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex:<http://www.example.org/group07/ontology/>
 
-9. Get all resouces of status "closed"
-
-PREFIX ex: <http://ProjectsHorizon2020.es#>
  SELECT DISTINCT ?x ?status
  WHERE
 {
