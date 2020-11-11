@@ -1,4 +1,4 @@
-PREFIX default: <http://group10.com/>
+PREFIX default: <http://group10.com/ontology/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
 # Show all the elements of the ontology, including the class to each one belongs to:
