@@ -16,7 +16,7 @@ prefixes:
 mappings:
   triplesmap1:
     sources:
-      - [gastos-updated.csv~csv]
+      - [gastos-with-links.csv~csv]
     s: default:Economico/)     #DOUBT: CREATE UNIQUE COLUMN??
     po:
       - [a,vocab:Economico]
@@ -27,7 +27,7 @@ mappings:
   
   triplesmap2:
     sources:
-      - [ingresos-updated.csv~csv]
+      - [ingresos-with-links.csv~csv]
     s: default:Economico/)     #DOUBT: CREATE UNIQUE COLUMN??
     po:
       - [a,vocab:Economico]
@@ -40,7 +40,7 @@ mappings:
      
   triplesmap3:
     sources:
-      - [gastos-updated.csv~csv]
+      - [gastos-with-links.csv~csv]
     s: default:Economico/Gastos/Centro/$(Descripcion Centro)
     po:
       - [a,vocab:Centro]
@@ -49,6 +49,7 @@ mappings:
 
       - [vocab:descripcion,$(Descripcion Centro),xsd:string]
       - [vocab:id,$(Centro),xsd:string]
+      - [owl:sameAs,$(wikicentro)~iri]
 
     
       - p: vocab:Centro
@@ -63,7 +64,7 @@ mappings:
 
   triplesmap4:
     sources:
-      - [ingresos-updated.csv~csv]
+      - [ingresos-with-links.csv~csv]
     s: default:Economico/Ingresos/Centro/$(Descripcion Centro)
     po:
       - [a,vocab:Centro]
@@ -74,11 +75,12 @@ mappings:
       - [vocab:descripcion,$(Descripcion Centro),xsd:string]
       - [vocab:id,$(Centro),xsd:string]
       - [vocab:tieneEconomico,vocab:tieneCentro]  #DOUBT ABOUT SYNTAX
+      - [owl:sameAs,$(wikicentro)~iri]
 
 
   triplesmap5:
     sources:
-      - [gastos-updated.csv~csv]
+      - [gastos-with-links.csv~csv]
     s: default:Economico/Gastos/$(Gastos)
     po:
       - [a,vocab:Gastos]
@@ -107,11 +109,13 @@ mappings:
       - [vocab:creditoGastado,$(OBL_RECONOC),xsd:double]
       - [vocab:creditoDispuesto,$(C_DISPUESTO),xsd:double]
 
+      - [owl:sameAs,$(wikiseccion)~iri] #DOUBT ABOUT PLACEMENT, BEFORE SECCION WAS A CLASS
+
 
 
     triplesmap6:
     sources:
-      - [ingresos-updated.csv~csv]
+      - [ingresos-with-links.csv~csv]
     s: default:Economico/Ingresos/$(ingresos)
     po:
       - [a,vocab:Ingresos]
