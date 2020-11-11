@@ -1751,3 +1751,25 @@
       "description": "Create column wikiseccion at index 6 based on column Descripcion Seccion using expression grel:\"https://www.wikidata.org/wiki/\"+cell.recon.match.id"
     }
   ]
+
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Gastos",
+    "expression": "grel:\"00\"[0,4-row.index.length()]+row.index",
+    "onError": "set-to-blank",
+    "newColumnName": "Economico",
+    "columnInsertIndex": 1,
+    "description": "Create column Economico at index 1 based on column Gastos using expression grel:\"00\"[0,4-row.index.length()]+row.index"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "Economico",
+    "index": 0,
+    "description": "Move column Economico to position 0"
+  }
+]

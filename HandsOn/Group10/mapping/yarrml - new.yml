@@ -16,8 +16,8 @@ prefixes:
 mappings:
   triplesmap1:
     sources:
-      - [gastos-updated.csv~csv]
-    s: default:Economico/)     #DOUBT: CREATE UNIQUE COLUMN??
+      - [gastos-with-links.csv~csv]
+    s: default:Economico/$(Economico)     #DOUBT: CREATE UNIQUE COLUMN??
     po:
       - [a,vocab:Economico]
 
@@ -27,12 +27,11 @@ mappings:
   
   triplesmap2:
     sources:
-      - [ingresos-updated.csv~csv]
-    s: default:Economico/)     #DOUBT: CREATE UNIQUE COLUMN??
+      - [ingresos-with-links.csv~csv]
+    s: default:Economico/$(Economico)     #DOUBT: CREATE UNIQUE COLUMN??
     po:
       - [a,vocab:Economico]
-      - [owl:inverseOf,vocab:tieneCentro] 
-
+    
       - [vocab:tieneCentro,$(Centro),xsd:integer]
       - [vocab:tieneCapitulo,$(Capitulo),xsd:integer]
 
@@ -40,8 +39,8 @@ mappings:
      
   triplesmap3:
     sources:
-      - [gastos-updated.csv~csv]
-    s: default:Economico/Gastos/Centro/$(Descripcion Centro)
+      - [gastos-with-links.csv~csv]
+    s: default:Centro/$(Descripcion Centro)
     po:
       - [a,vocab:Centro]
       - [rdfs:label,vocab:id]
@@ -63,30 +62,26 @@ mappings:
 
   triplesmap4:
     sources:
-      - [ingresos-updated.csv~csv]
-    s: default:Economico/Ingresos/Centro/$(Descripcion Centro)
+      - [ingresos-with-links.csv~csv]
+    s: default:Centro/$(Descripcion Centro)
     po:
       - [a,vocab:Centro]
       - [rdfs:label,vocab:id]
       - [rdfs:comment,vocab:descripcion]
-      - [owl:inverseOf,vocab:tieneEconomico]
-
+      
       - [vocab:descripcion,$(Descripcion Centro),xsd:string]
       - [vocab:id,$(Centro),xsd:string]
-      - [vocab:tieneEconomico,vocab:tieneCentro]  #DOUBT ABOUT SYNTAX
-
+    
 
   triplesmap5:
     sources:
-      - [gastos-updated.csv~csv]
-    s: default:Economico/Gastos/$(Gastos)
+      - [gastos-with-links.csv~csv]
+    s: default:Gastos/$(Gastos)
     po:
       - [a,vocab:Gastos]
       - [rdfs:subClassOf,Economico]
       - [rdfs:label,vocab:id]
       - [rdfs:comment,vocab:descripcion]
-      - [owl:inverseOf,vocab:tieneEconomico]
-      - [vocab:tieneEconomico,vocab:tieneCentro]  #DOUBT ABOUT SYNTAX
 
       - [vocab:tieneSeccion,$(Descripcion Seccion),xsd:string]
       - [vocab:id,$(Seccion),xsd:string] 
@@ -111,8 +106,8 @@ mappings:
 
     triplesmap6:
     sources:
-      - [ingresos-updated.csv~csv]
-    s: default:Economico/Ingresos/$(ingresos)
+      - [ingresos-with-links.csv~csv]
+    s: default:Ingresos/$(ingresos)
     po:
       - [a,vocab:Ingresos]
       - [rdfs:subClassOf,Economico]

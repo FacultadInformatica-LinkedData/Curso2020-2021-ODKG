@@ -7,22 +7,25 @@
 @prefix swrl:    <http://www.w3.org/2003/11/swrl#> .
 @prefix swrlb:   <http://www.w3.org/2003/11/swrlb#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix economico: <http://purl.org/cerif/frapo/> .
+@prefix id:      <http://schema.mobivoc.org/#> .
+@prefix descripcion:      <https://dublincore.org/specifications/dublin-core/dcmi-terms/#> .
 
 <http://group10.com>
       a       owl:Ontology .
-	  
+      
 default:Centro
       a       owl:Class .
-
-default:Economico
+      
+ default:Economico
       a       owl:Class .
-
-default:Gastos
-      a       owl:Class ;
+      
+ default:Gastos
+      a       economico:Income ;
       rdfs:subClassOf default:Economico .
-
+	  
 default:Ingresos
-      a       owl:Class ;
+      a       economico:Payment ;
       rdfs:subClassOf default:Economico .
 	  
 default:tieneCentro
@@ -38,12 +41,10 @@ default:tieneEconomico
       owl:inverseOf default:tieneCentro .
 
 default:id
-      a       owl:DatatypeProperty ;
-      rdfs:range xsd:string .
+      a       id:id .
 
 default:descripcion
-      a       owl:DatatypeProperty ;
-      rdfs:range xsd:string .
+      a       descripcion:descripcion .
 
 default:tieneCapitulo
       a       owl:DatatypeProperty ;
