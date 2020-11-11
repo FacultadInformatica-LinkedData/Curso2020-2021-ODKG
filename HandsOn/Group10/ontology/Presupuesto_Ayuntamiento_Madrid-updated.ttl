@@ -1,0 +1,82 @@
+@prefix default:  <http://group10.com/> .
+@prefix xsp:     <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix protege:  <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix swrl:    <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb:   <http://www.w3.org/2003/11/swrlb#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix economico: <http://purl.org/cerif/frapo/> .
+@prefix id:      <http://schema.mobivoc.org/#> .
+@prefix descripcion:      <https://dublincore.org/specifications/dublin-core/dcmi-terms/#> .
+
+<http://group10.com>
+      a       owl:Ontology .
+      
+default:Centro
+      a       owl:Class .
+      
+ default:Economico
+      a       owl:Class .
+      
+ default:Gastos
+      a       economico:Income ;
+      rdfs:subClassOf default:Economico .
+	  
+default:Ingresos
+      a       economico:Payment ;
+      rdfs:subClassOf default:Economico .
+	  
+default:tieneCentro
+      a       owl:InverseFunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:Economico ;
+      rdfs:range default:Centro ;
+      owl:inverseOf default:tieneEconomico .
+
+default:tieneEconomico
+      a       owl:InverseFunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:Centro ;
+      rdfs:range default:Economico ;
+      owl:inverseOf default:tieneCentro .
+
+default:id
+      a       id:id .
+
+default:descripcion
+      a       descripcion:descripcion .
+
+default:tieneCapitulo
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Economico ;
+      rdfs:range xsd:string .
+	  
+default:tieneSeccion
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Gastos ;
+      rdfs:range xsd:string .
+
+default:tienePrograma
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Gastos ;
+      rdfs:range xsd:string .
+	  
+default:previsionIngresos
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Ingresos ;
+      rdfs:range xsd:float .
+
+default:creditoGastado
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Gastos ;
+      rdfs:range xsd:float .
+
+default:recaudado
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Ingresos ;
+      rdfs:range xsd:float .
+
+default:creditoDispuesto
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Gastos ;
+      rdfs:range xsd:float .
