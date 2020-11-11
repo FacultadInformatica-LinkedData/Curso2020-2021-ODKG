@@ -1,0 +1,244 @@
+@prefix : <http://exercise.publicprocurement.es/about/ontology/group04pp#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pproc: <http://contsem.unizar.es/def/sector-publico/pproc#> .
+@prefix org: <https://www.w3.org/ns/org#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@base <http://exercise.publicprocurement.es/about/ontology/group04ppp> .
+
+<http://exercise.publicprocurement.es/about/ontology/group04ppp> rdf:type owl:Ontology .
+
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasItem
+:hasItem rdf:type owl:ObjectProperty ;
+         rdfs:domain pproc:Contract ;
+         rdfs:range pproc:ContractObject .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasSupplier
+:hasSupplier rdf:type owl:ObjectProperty ;
+             rdfs:domain pproc:Contract ;
+             rdfs:range org:Organization .
+
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#contractingBody
+pproc:contractingBody rdf:type owl:ObjectProperty ;
+        rdfs:domain pproc:Contract ;
+        rdfs:range <http://dbpedia.org/ontology/Department> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasAcquisitionMethod
+:hasAcquisitionMethod rdf:type owl:DatatypeProperty ;
+                      rdfs:domain pproc:Contract ;
+                      rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasAcquisitionType
+:hasAcquisitionType rdf:type owl:DatatypeProperty ;
+                    rdfs:domain pproc:Contract ;
+                    rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasCalCards
+:hasCalCards rdf:type owl:DatatypeProperty ;
+             rdfs:domain pproc:Contract ;
+             rdfs:range xsd:boolean .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasClassNumber
+:hasClassNumber rdf:type owl:DatatypeProperty ;
+                rdfs:domain pproc:ContractObject ;
+                rdfs:range xsd:long .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasClassTitle
+:hasClassTitle rdf:type owl:DatatypeProperty ;
+               rdfs:domain pproc:ContractObject ;
+               rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasCommodityTitle
+:hasCommodityTitle rdf:type owl:DatatypeProperty ;
+                   rdfs:domain pproc:ContractObject ;
+                   rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasCreationDate
+:hasCreationDate rdf:type owl:DatatypeProperty ;
+                 rdfs:domain pproc:Contract ;
+                 rdfs:range xsd:date .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:DatatypeProperty ;
+                   rdfs:domain <http://dbpedia.org/ontology/Department> ;
+                   rdfs:range xsd:string .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:DatatypeProperty ;
+                rdfs:domain pproc:ContractObject ;
+                rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasFamilyNumber
+:hasFamilyNumber rdf:type owl:DatatypeProperty ;
+                 rdfs:domain pproc:ContractObject ;
+                 rdfs:range xsd:long .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasFamilyTitle
+:hasFamilyTitle rdf:type owl:DatatypeProperty ;
+                rdfs:domain pproc:ContractObject ;
+                rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasFiscalYear
+:hasFiscalYear rdf:type owl:DatatypeProperty ;
+               rdfs:domain pproc:Contract ;
+               rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasIdentifier
+:hasIdentifier rdf:type owl:DatatypeProperty ;
+               rdfs:domain pproc:ContractObject ;
+               rdfs:range xsd:string .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:DatatypeProperty ;
+             rdfs:domain pproc:ContractObject ;
+             rdfs:range xsd:string .
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:DatatypeProperty ;
+             rdfs:domain pproc:Organization ;
+             rdfs:range xsd:string .
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasLPAnumber
+:hasLPAnumber rdf:type owl:DatatypeProperty ;
+              rdfs:domain pproc:Contract ;
+              rdfs:range xsd:string .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#lat
+geo:lat rdf:type owl:DatatypeProperty ;
+             rdfs:domain org:Organization ;
+             rdfs:range xsd:float .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#long
+geo:long rdf:type owl:DatatypeProperty ;
+              rdfs:domain org:Organization ;
+              rdfs:range xsd:float .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasOrderNumber
+:hasOrderNumber rdf:type owl:DatatypeProperty ;
+                rdfs:domain pproc:Contract ;
+                rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasPurchaseDate
+:hasPurchaseDate rdf:type owl:DatatypeProperty ;
+                 rdfs:domain pproc:Contract ;
+                 rdfs:range xsd:date .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasQualifications
+:hasQualifications rdf:type owl:DatatypeProperty ;
+                   rdfs:domain org:Organization ;
+                   rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasQuantity
+:hasQuantity rdf:type owl:DatatypeProperty ;
+             rdfs:domain pproc:Contract ;
+             rdfs:range xsd:long .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasSegmentNumber
+:hasSegmentNumber rdf:type owl:DatatypeProperty ;
+                  rdfs:domain pproc:ContractObject ;
+                  rdfs:range xsd:long .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasSegmentTitle
+:hasSegmentTitle rdf:type owl:DatatypeProperty ;
+                 rdfs:domain pproc:ContractObject ;
+                 rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasSubAcquisitionMethod
+:hasSubAcquisitionMethod rdf:type owl:DatatypeProperty ;
+                         rdfs:domain pproc:Contract ;
+                         rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasSubAcquisitionType
+:hasSubAcquisitionType rdf:type owl:DatatypeProperty ;
+                       rdfs:domain pproc:Contract ;
+                       rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasSupplierCode
+:hasSupplierCode rdf:type owl:DatatypeProperty ;
+                 rdfs:domain org:Organization ;
+                 rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasTotalPrice
+:hasTotalPrice rdf:type owl:DatatypeProperty ;
+               rdfs:domain pproc:Contract ;
+               rdfs:range xsd:float .
+
+
+###  https://www.wikidata.org/wiki/Property:P2167
+<https://www.wikidata.org/wiki/Property:P2167> rdf:type owl:DatatypeProperty ;
+               rdfs:domain pproc:ContractObject ;
+               rdfs:range xsd:string .
+
+
+###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasUnitPrice
+:hasUnitPrice rdf:type owl:DatatypeProperty ;
+              rdfs:domain pproc:Contract ;
+              rdfs:range xsd:float .
+
+
+###  http://dbpedia.org/ontology/zipCode
+<http://dbpedia.org/ontology/zipCode> rdf:type owl:DatatypeProperty ;
+            rdfs:domain org:Organization ;
+            rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dbpedia.org/ontology/Department
+<http://dbpedia.org/ontology/Department> rdf:type owl:Class .
+
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#ContractObject
+pproc:ContractObject rdf:type owl:Class .
+
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#Contract
+pproc:Contract rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/org#Organization
+org:Organization rdf:type owl:Class .
