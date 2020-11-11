@@ -23,7 +23,7 @@ map:map_triplesmap3_0 rml:logicalSource map:source_2;
     rr:subjectMap map:s_2;
     rr:predicateObjectMap map:pom_13, map:pom_14, map:pom_15, map:pom_16, map:pom_17, map:pom_18, map:pom_19, map:pom_20, map:pom_21, map:pom_22, map:pom_23, map:pom_24, map:pom_25, map:pom_26, map:pom_27, map:pom_28, map:pom_29, map:pom_30, map:pom_31.
 map:om_0 a rr:ObjectMap;
-    rr:constant "http://example.org#Centro";
+    rr:constant "http://group10.com/ontology/Centro";
     rr:termType rr:IRI.
 map:om_1 a rr:ObjectMap;
     rr:constant "http://schema.mobivoc.org/#id";
@@ -40,7 +40,7 @@ map:om_12 a rr:ObjectMap;
     rml:reference "wikicentro";
     rr:termType rr:IRI.
 map:om_13 a rr:ObjectMap;
-    rr:constant "http://example.org#Gastos";
+    rr:constant "http://group10.com/ontology/Gastos";
     rr:termType rr:IRI.
 map:om_14 a rr:ObjectMap;
     rr:constant "Economico";
@@ -128,7 +128,7 @@ map:om_6 a rr:ObjectMap;
     rr:parentTriplesMap map:map_triplesmap2_0;
     rr:joinCondition map:jc_0.
 map:om_7 a rr:ObjectMap;
-    rr:constant "http://example.org#Centro";
+    rr:constant "http://group10.com/ontology/Centro";
     rr:termType rr:IRI.
 map:om_8 a rr:ObjectMap;
     rr:constant "http://schema.mobivoc.org/#id";
@@ -155,7 +155,7 @@ map:pm_15 a rr:PredicateMap;
 map:pm_16 a rr:PredicateMap;
     rr:constant rdfs:comment.
 map:pm_17 a rr:PredicateMap;
-    rr:constant <http://example.org#tieneSeccion>.
+    rr:constant <http://group10.com/ontology/tieneSeccion>.
 map:pm_18 a rr:PredicateMap;
     rr:constant <http://schema.mobivoc.org/#id>.
 map:pm_19 a rr:PredicateMap;
@@ -163,19 +163,19 @@ map:pm_19 a rr:PredicateMap;
 map:pm_2 a rr:PredicateMap;
     rr:constant rdfs:comment.
 map:pm_20 a rr:PredicateMap;
-    rr:constant <http://example.org#tienePrograma>.
+    rr:constant <http://group10.com/ontology/tienePrograma>.
 map:pm_21 a rr:PredicateMap;
     rr:constant <http://schema.mobivoc.org/#id>.
 map:pm_22 a rr:PredicateMap;
     rr:constant <https://dublincore.org/specifications/dublin-core/dcmi-terms/#description>.
 map:pm_23 a rr:PredicateMap;
-    rr:constant <http://example.org#tieneCentro>.
+    rr:constant <http://group10.com/ontology/tieneCentro>.
 map:pm_24 a rr:PredicateMap;
     rr:constant <http://schema.mobivoc.org/#id>.
 map:pm_25 a rr:PredicateMap;
     rr:constant <https://dublincore.org/specifications/dublin-core/dcmi-terms/#description>.
 map:pm_26 a rr:PredicateMap;
-    rr:constant <http://example.org#tieneCapitulo>.
+    rr:constant <http://group10.com/ontology/tieneCapitulo>.
 map:pm_27 a rr:PredicateMap;
     rr:constant <http://schema.mobivoc.org/#id>.
 map:pm_28 a rr:PredicateMap;
@@ -185,7 +185,7 @@ map:pm_29 a rr:PredicateMap;
 map:pm_3 a rr:PredicateMap;
     rr:constant <https://dublincore.org/specifications/dublin-core/dcmi-terms/#description>.
 map:pm_30 a rr:PredicateMap;
-    rr:constant <http://example.org#creditoDispuesto>.
+    rr:constant <http://group10.com/ontology/creditoDispuesto>.
 map:pm_31 a rr:PredicateMap;
     rr:constant <http://www.w3.org/2002/07/owl#sameAs>.
 map:pm_4 a rr:PredicateMap;
@@ -193,7 +193,7 @@ map:pm_4 a rr:PredicateMap;
 map:pm_5 a rr:PredicateMap;
     rr:constant <http://www.w3.org/2002/07/owl#sameAs>.
 map:pm_6 a rr:PredicateMap;
-    rr:constant <http://example.org#Centro>.
+    rr:constant <http://group10.com/ontology/Centro>.
 map:pm_7 a rr:PredicateMap;
     rr:constant rdf:type.
 map:pm_8 a rr:PredicateMap;

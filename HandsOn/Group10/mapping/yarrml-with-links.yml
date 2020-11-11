@@ -9,35 +9,12 @@ prefixes:
   rml: http://semweb.mmlab.be/ns/rml#
   ql: http://semweb.mmlab.be/ns/ql#
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
-  vocab: http://example.org#
   default: http://group10.com/resource/
   vocab: http://group10.com/ontology/
   
 mappings:
-  triplesmap1:
-    sources:
-      - [gastos-with-links.csv~csv]
-    s: default:Economico/$(Economico)     #DOUBT: CREATE UNIQUE COLUMN??
-    po:
-      - [a,vocab:Economico]
-
-      - [vocab:tieneCentro,$(Descripcion Centro),xsd:string]
-      - [vocab:tieneCapitulo,$(Descripcion Capitulo),xsd:string]
-
-  
-  triplesmap2:
-    sources:
-      - [ingresos-with-links.csv~csv]
-    s: default:Economico/$(Economico)     #DOUBT: CREATE UNIQUE COLUMN??
-    po:
-      - [a,vocab:Economico]
-    
-      - [vocab:tieneCentro,$(Centro),xsd:integer]
-      - [vocab:tieneCapitulo,$(Capitulo),xsd:integer]
-
- 
      
-  triplesmap3:
+  triplesmap1:
     sources:
       - [gastos-with-links.csv~csv]
     s: default:Centro/$(Descripcion Centro)
@@ -48,12 +25,12 @@ mappings:
 
       - [vocab:descripcion,$(Descripcion Centro),xsd:string]
       - [vocab:id,$(Centro),xsd:string]
-      - [owl:sameAs,$(wikiseccion)~iri]
+      - [owl:sameAs,$(wikicentro)~iri]
 
     
       - p: vocab:Centro
         o:
-          - mapping: triplesmap4
+          - mapping: triplesmap2
             condition:
               function: equal
               parameters:
@@ -61,7 +38,7 @@ mappings:
                 - [str2,$(Centro)]
 
 
-  triplesmap4:
+  triplesmap2:
     sources:
       - [ingresos-with-links.csv~csv]
     s: default:Centro/$(Descripcion Centro)
@@ -74,10 +51,10 @@ mappings:
       - [vocab:descripcion,$(Descripcion Centro),xsd:string]
       - [vocab:id,$(Centro),xsd:string]
     
-      - [owl:sameAs,$(wikiseccion)~iri] 
+      - [owl:sameAs,$(wikicentro)~iri] 
 
 
-  triplesmap5:
+  triplesmap3:
     sources:
       - [gastos-with-links.csv~csv]
     s: default:Gastos/$(Gastos)
@@ -110,7 +87,7 @@ mappings:
 
 
 
-    triplesmap6:
+    triplesmap4:
     sources:
       - [ingresos-with-links.csv~csv]
     s: default:Ingresos/$(ingresos)
