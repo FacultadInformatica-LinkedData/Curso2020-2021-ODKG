@@ -26,4 +26,4 @@
 - [X] Uses the correct datatype (e.g., values of 0-1 may be booleans and not integers, not every string made of numbers is a number)
 
 ## Comments on the self-assessment
-No comments
+The csv files were reduced in order to be able to create the rdf file, since the mapping took much time and the resulting file was too big to upload it to git. The new csv are called csv-with-links-snippet.csv.
