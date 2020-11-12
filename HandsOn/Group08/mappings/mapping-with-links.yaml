@@ -62,14 +62,21 @@ mappings:
     po:
       - [a, s:Order]
       - [s:customer, ind:CCAA/MC~iri]
+      - [base:hasVAT,$(totalVAT),xsd:integer]
+      - [base:hasProductQuantity, $(CantidadPedido), xsd:float]
+      - [base:hasOrderAmount,$(ImportePedido),xsd:float]
+      - [base:hasPaidAmount,$(ImportePagado),xsd:float]
+      - [base:hasPendingAmount,$(ImportePendiente),xsd:float]
+      - [base:hasProductQuantityPending,$(CantidadPendiente),xsd:float]
+      - [base:hasProductQuantityReceived,$(CantidadRecibido),xsd:float]
       - p: s:orderedItem
         o:
-          - mapping: orderitemmap
+          - mapping: product
             condition:
               function: equal
               parameters:
-                - [str1, $(OrderItemID)]
-                - [str2, $(OrderItemID)]
+                - [str1, $(ProductURI)]
+                - [str2, $(ProductURI)]
       - [s:orderDate,$(Fecha) ,s:Date]
       - p: s:seller
         o:
@@ -90,27 +97,6 @@ mappings:
       - [s:taxID, $(NIF),xsd:string]
       - [owl:sameAs, wiki:$(matchedOrganizations)~iri]
       
-  orderitemmap:
-    sources:
-      - [ContratosEmergenciaSMS-updated-with-links.csv~csv]
-    s: http://www.publicProcurementMurciaCOVID19.es/resource/OrderItem/$(OrderItemID)
-    po:
-      - [a, s:OrderItem]
-      - [base:hasVAT,$(totalVAT),xsd:integer]
-      - [s:orderQuantity, $(CantidadPedido), xsd:float]
-      - [base:hasOrderAmount,$(ImportePedido),xsd:float]
-      - [base:hasPaidAmount,$(ImportePagado),xsd:float]
-      - [base:hasPendingAmount,$(ImportePendiente),xsd:float]
-      - [base:hasProductQuantityPending,$(CantidadPendiente),xsd:float]
-      - [base:hasProductQuantityReceived,$(CantidadRecibido),xsd:float]
-      - p: s:orderedItem
-        o:
-          - mapping: product
-            condition:
-              function: equal
-              parameters:
-                - [str1, $(ProductURI)]
-                - [str2, $(ProductURI)] 
   product:
     sources:
       - [ContratosEmergenciaSMS-updated-with-links.csv~csv]
