@@ -20,7 +20,7 @@ mappings:
     s: http://group01.org/aragon/resource/Contract/$(Code)
     po:
       - [a, pproc:$(TypeOfContract)]
-      - [rdf:ID, $(Code)]
+      - [dct:identifier, $(Code)]
       - [vocab:hasAwardPrice,$(AwardPrice),xsd:double]
       - [vocab:hasAwardProcedure,$(AwardProcedure),xsd:string]
       - [vocab:hasBiddingPrice,$(BiddingPrice),xsd:double]
