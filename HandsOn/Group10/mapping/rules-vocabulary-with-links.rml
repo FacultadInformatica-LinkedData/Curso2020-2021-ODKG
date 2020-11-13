@@ -21,7 +21,7 @@ map:map_triplesmap3_0 rml:logicalSource map:source_2;
     a rr:TriplesMap;
     rdfs:label "triplesmap3";
     rr:subjectMap map:s_2;
-    rr:predicateObjectMap map:pom_13, map:pom_14, map:pom_15, map:pom_16, map:pom_17, map:pom_18, map:pom_19, map:pom_20, map:pom_21, map:pom_22, map:pom_23, map:pom_24, map:pom_25, map:pom_26, map:pom_27, map:pom_28, map:pom_29, map:pom_30, map:pom_31.
+    rr:predicateObjectMap map:pom_13, map:pom_14, map:pom_15, map:pom_16, map:pom_17, map:pom_18, map:pom_19, map:pom_20, map:pom_21, map:pom_22, map:pom_23, map:pom_24, map:pom_25, map:pom_26, map:pom_27, map:pom_28, map:pom_29, map:pom_30, map:pom_31, map:pom_32, map:pom_33, map:pom_34.
 map:om_0 a rr:ObjectMap;
     rr:constant "http://group10.com/ontology/Centro";
     rr:termType rr:IRI.
@@ -117,6 +117,15 @@ map:om_30 a rr:ObjectMap;
 map:om_31 a rr:ObjectMap;
     rml:reference "wikiseccion";
     rr:termType rr:IRI.
+map:om_32 a rr:ObjectMap;
+    rml:reference "wikicoordenadas";
+    rr:termType rr:IRI.
+map:om_33 a rr:ObjectMap;
+    rml:reference "wikipoblacion";
+    rr:termType rr:IRI.
+map:om_34 a rr:ObjectMap;
+    rml:reference "wikisuperficie";
+    rr:termType rr:IRI.
 map:om_4 a rr:ObjectMap;
     rml:reference "Centro";
     rr:termType rr:Literal;
@@ -187,6 +196,12 @@ map:pm_3 a rr:PredicateMap;
 map:pm_30 a rr:PredicateMap;
     rr:constant <http://group10.com/ontology/creditoDispuesto>.
 map:pm_31 a rr:PredicateMap;
+    rr:constant <http://www.w3.org/2002/07/owl#sameAs>.
+map:pm_32 a rr:PredicateMap;
+    rr:constant <http://www.w3.org/2002/07/owl#sameAs>.
+map:pm_33 a rr:PredicateMap;
+    rr:constant <http://www.w3.org/2002/07/owl#sameAs>.
+map:pm_34 a rr:PredicateMap;
     rr:constant <http://www.w3.org/2002/07/owl#sameAs>.
 map:pm_4 a rr:PredicateMap;
     rr:constant <http://schema.mobivoc.org/#id>.
@@ -278,6 +293,15 @@ map:pom_30 a rr:PredicateObjectMap;
 map:pom_31 a rr:PredicateObjectMap;
     rr:predicateMap map:pm_31;
     rr:objectMap map:om_31.
+map:pom_32 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_32;
+    rr:objectMap map:om_32.
+map:pom_33 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_33;
+    rr:objectMap map:om_33.
+map:pom_34 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_34;
+    rr:objectMap map:om_34.
 map:pom_4 a rr:PredicateObjectMap;
     rr:predicateMap map:pm_4;
     rr:objectMap map:om_4.

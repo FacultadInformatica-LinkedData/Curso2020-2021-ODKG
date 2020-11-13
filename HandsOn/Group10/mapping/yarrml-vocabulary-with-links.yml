@@ -16,6 +16,7 @@ prefixes:
   id: http://schema.mobivoc.org/#
   descripcion: https://dublincore.org/specifications/dublin-core/dcmi-terms/#
   
+  
 
 mappings:
      
@@ -72,6 +73,7 @@ mappings:
       - [rdfs:label,id:id]
       - [rdfs:comment,descripcion:description]
 
+
       - [vocab:tieneSeccion,$(Descripcion Seccion),xsd:string]
       - [id:id,$(Seccion),xsd:string] 
       - [descripcion:description,$(Descripcion Seccion),xsd:string] 
@@ -91,7 +93,11 @@ mappings:
       - [economico:hasCost,$(OBL_RECONOC),xsd:double]
       - [vocab:creditoDispuesto,$(C_DISPUESTO),xsd:double]
 
-      - [owl:sameAs,$(wikiseccion)~iri] 
+      - [owl:sameAs,$(wikiseccion)~iri]
+      - [owl:sameAs,$(wikicoordenadas)~iri]
+      - [owl:sameAs,$(wikipoblacion)~iri]
+      - [owl:sameAs,$(wikisuperficie)~iri]
+
 
   
 
@@ -115,6 +121,7 @@ mappings:
 
       - [vocab:previsionIngresos,$(PREV.DEFINITIV),xsd:double]
       - [economico:hasMonetaryValue,$(RECAUDADO),xsd:double]
+
 
 
 
