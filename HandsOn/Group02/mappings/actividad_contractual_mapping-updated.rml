@@ -15,12 +15,8 @@
 @prefix schema: <http://schema.org/>.
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix g2: <http://MadridPublicContracts/ontology/>.
-@prefix owl: <http://www.w3.org/2002/07/owl/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix vocab: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/>.
-@prefix pc: <http://purl.org/procurement/public-contracts#>.
-@prefix t: <http://purl.org/terms/>.
-@prefix gr: <http://purl.org/goodrelations/v1#>.
-@prefix pproc: <http://contsem.unizar.es/def/sector-publico/pproc#>.
 
 :rules_000 a void:Dataset;
     void:exampleResource :map_contractsmap_000.
@@ -40,7 +36,7 @@
 :pm_000 rr:constant <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>.
 :pom_000 rr:objectMap :om_000.
 :om_000 a rr:ObjectMap;
-    rr:constant "http://purl.org/procurement/public-contracts#Contract";
+    rr:constant "http://MadridPublicContracts/ontology/Contrato";
     rr:termType rr:IRI.
 :pom_001 a rr:PredicateObjectMap.
 :map_contractsmap_000 rr:predicateObjectMap :pom_001.
@@ -76,7 +72,7 @@
 :map_contractsmap_000 rr:predicateObjectMap :pom_004.
 :pm_004 a rr:PredicateMap.
 :pom_004 rr:predicateMap :pm_004.
-:pm_004 rr:constant t:description.
+:pm_004 rr:constant g2:hasDescription.
 :pom_004 rr:objectMap :om_004.
 :om_004 a rr:ObjectMap;
     <http://semweb.mmlab.be/ns/rml#reference> "Descripcion Contrato";
@@ -129,13 +125,14 @@
 :pm_009 rr:constant g2:hasCriteria.
 :pom_009 rr:objectMap :om_009.
 :om_009 a rr:ObjectMap;
-    rr:template "http://purl.org/procurement/public-contracts#AwardCriterion/{Criterios Adjudicacion}";
-    rr:termType rr:IRI.
+    <http://semweb.mmlab.be/ns/rml#reference> "Criterios Adjudicacion";
+    rr:termType rr:Literal;
+    rr:datatype xsd:string.
 :pom_010 a rr:PredicateObjectMap.
 :map_contractsmap_000 rr:predicateObjectMap :pom_010.
 :pm_010 a rr:PredicateMap.
 :pom_010 rr:predicateMap :pm_010.
-:pm_010 rr:constant pproc:budgetPrice.
+:pm_010 rr:constant g2:hasBudget.
 :pom_010 rr:objectMap :om_010.
 :om_010 a rr:ObjectMap;
     rr:template "{Presupuesto Total(IVA Incluido})";
@@ -145,7 +142,7 @@
 :map_contractsmap_000 rr:predicateObjectMap :pom_011.
 :pm_011 a rr:PredicateMap.
 :pom_011 rr:predicateMap :pm_011.
-:pm_011 rr:constant pc:actualPrice.
+:pm_011 rr:constant g2:hasAmount.
 :pom_011 rr:objectMap :om_011.
 :om_011 a rr:ObjectMap;
     rr:template "{Importe Adjudicacion (IVA Incluido})";
@@ -155,7 +152,7 @@
 :map_contractsmap_000 rr:predicateObjectMap :pom_012.
 :pm_012 a rr:PredicateMap.
 :pom_012 rr:predicateMap :pm_012.
-:pm_012 rr:constant pproc:awardDate.
+:pm_012 rr:constant g2:hasContractDate.
 :pom_012 rr:objectMap :om_012.
 :om_012 a rr:ObjectMap;
     <http://semweb.mmlab.be/ns/rml#reference> "Fecha Adjudicacion";
@@ -191,7 +188,7 @@
 :map_contractsmap_000 rr:predicateObjectMap :pom_016.
 :pm_016 a rr:PredicateMap.
 :pom_016 rr:predicateMap :pm_016.
-:pm_016 rr:constant gr:UnitPriceSpecifications.
+:pm_016 rr:constant g2:unitaryAdjudication.
 :pom_016 rr:objectMap :om_016.
 :om_016 a rr:ObjectMap;
     <http://semweb.mmlab.be/ns/rml#reference> "Adjudicado por precios unitarios";
@@ -220,8 +217,8 @@
 :pm_018 rr:constant rdf:type.
 :pom_018 rr:objectMap :om_018.
 :om_018 a rr:ObjectMap;
-    rr:constant "http://purl.org/procurement/public-contracts#ContractingAuthority";
-    rr:termType rr:Literal.
+    rr:constant "http://MadridPublicContracts/ontology/Contractor";
+    rr:termType rr:IRI.
 :pom_019 a rr:PredicateObjectMap.
 :map_contractormap_000 rr:predicateObjectMap :pom_019.
 :pm_019 a rr:PredicateMap.
@@ -258,8 +255,8 @@
 :pm_021 rr:constant rdf:type.
 :pom_021 rr:objectMap :om_021.
 :om_021 a rr:ObjectMap;
-    rr:constant "http://purl.org/procurement/public-contracts#Tender";
-    rr:termType rr:Literal.
+    rr:constant "http://MadridPublicContracts/ontology/Contractee";
+    rr:termType rr:IRI.
 :pom_022 a rr:PredicateObjectMap.
 :map_contracteemap_000 rr:predicateObjectMap :pom_022.
 :pm_022 a rr:PredicateMap.
@@ -288,7 +285,7 @@
 :pom_023 rr:objectMap :om_023.
 :om_023 a rr:ObjectMap;
     rr:constant "http://MadridPublicContracts/ontology/Junta";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :pom_024 a rr:PredicateObjectMap.
 :map_juntasmap_000 rr:predicateObjectMap :pom_024.
 :pm_024 a rr:PredicateMap.
@@ -462,7 +459,7 @@
 :pom_040 rr:objectMap :om_040.
 :om_040 a rr:ObjectMap;
     rr:constant "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/Neighborhood";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :pom_041 a rr:PredicateObjectMap.
 :map_neighborhoodmap_000 rr:predicateObjectMap :pom_041.
 :pm_041 a rr:PredicateMap.
@@ -490,7 +487,7 @@
 :pom_042 rr:objectMap :om_042.
 :om_042 a rr:ObjectMap;
     rr:constant "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/District";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :pom_043 a rr:PredicateObjectMap.
 :map_districtsmap_000 rr:predicateObjectMap :pom_043.
 :pm_043 a rr:PredicateMap.
@@ -518,7 +515,7 @@
 :pom_044 rr:objectMap :om_044.
 :om_044 a rr:ObjectMap;
     rr:constant "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/Province";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :pom_045 a rr:PredicateObjectMap.
 :map_provincemap_000 rr:predicateObjectMap :pom_045.
 :pm_045 a rr:PredicateMap.
@@ -546,7 +543,7 @@
 :pom_046 rr:objectMap :om_046.
 :om_046 a rr:ObjectMap;
     rr:constant "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/Locality";
-    rr:termType rr:Literal.
+    rr:termType rr:IRI.
 :pom_047 a rr:PredicateObjectMap.
 :map_localitymap_000 rr:predicateObjectMap :pom_047.
 :pm_047 a rr:PredicateMap.
