@@ -25,7 +25,7 @@ PREFIX foaf; <http://xmlns.com/foaf/0.1/>
 SELECT DISTINCT ?Junta ?District
     WHERE 
     {
-      ?Junta :distrito ?District.
+      ?Junta :district ?District.
       FILTER regex(?district, "http://MadridPublicContracts/resources/district/Chamartín")
     }
 
@@ -35,7 +35,7 @@ SELECT DISTINCT ?Junta ?District
 
  SELECT DISTINCT ?Contract ?Org ?State
     WHERE {
-      ?Contract :hasOrganismoContratante ?Org.
+      ?Contract :hasContractor ?Org.
       ?Org owl:sameAs wikidata:Q56191848.
       ?Contract :hasProcedure ?State.
     }
@@ -46,7 +46,7 @@ SELECT DISTINCT ?Junta ?District
 
 SELECT ?Month ?Org (COUNT(?Contract) as ?Number_of_contrancts)
     WHERE {
-      ?Contract :hasOrganismoContratante ?Org.
+      ?Contract :hasContractor ?Org.
       ?Org owl:sameAs wikidata:Q56191993.
       ?Contract :hasMonth ?Month.
     }GROUP BY ?Month
