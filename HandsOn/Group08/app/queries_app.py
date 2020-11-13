@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from rdflib import Graph, Namespace, Literal, XSD
-
+import pandas as pd
 g = Graph()
 g.parse("output-with-links.nt", format="nt")
 
@@ -279,122 +279,149 @@ for r in g.query(q06_1):
 
 print()
 print()
-print("INICIO QUERY 07: Incidencia covid por comunidades")
+print("INICIO QUERY 07: Incidencia covid por comunidades, numero positivos AC, positivos PCR, Hospitalizados, UCI")
 print()
-q2 = prepareQuery('''
-  SELECT
-    ?iso ?fecha ?na ?np ?nh ?nu
-  WHERE {
+def getQ07():
+    q07 = prepareQuery('''
+      SELECT
+        ?iso ?link ?fecha ?na ?np ?nh ?nu
+      WHERE {
+    
+        ?CCAA ex:hasCovidStatus  ?CS.
+        ?CCAA ex:hasISOCode ?iso.
+        ?CCAA o:sameAs ?link.
+        ?CS ex:numPositiveAC ?na.
+        ?CS ex:numPositivePCR ?np.
+        ?CS ex:numberHospitalizations ?nh.
+        ?CS ex:numberUCI ?nu.
+        ?CS ex:inDate ?fecha .
+    
+      }
+    
+      ORDER BY ASC(?fecha)
+     
+      ''',
+                      initNs={"s": s, "ex": ex,"o":o}
+                      )
 
-    ?CCAA ex:hasCovidStatus  ?CS.
-    ?CCAA ex:hasISOCode ?iso.
-    ?CS ex:numPositiveAC ?na.
-    ?CS ex:numPositivePCR ?np.
-    ?CS ex:numberHospitalizations ?nh.
-    ?CS ex:numberUCI ?nu.
-    ?CS ex:inDate ?fecha .
+    df=pd.DataFrame(g.query(q07),columns=['CCAA','Link','Date','AC','PCR','Hospitalizations','UCI'])
+    df["Date"] =df["Date"].astype(str)
+    df['Date'] = pd.to_datetime(df['Date'])
+    return df
+print(getQ07()['Date'])
 
-  }
+print()
+print()
+print("INICIO QUERY 07_1: Incidencia covid por comunidades en una fecha dada")
+print()
+def getQ07_01(date):
+    # Incidencia covid por comunidades en una fecha dada
+    q07_1 = prepareQuery('''
+      SELECT
+        ?iso ?link ?na ?np ?nh ?nu
+      WHERE {
+    
+    
+        ?CCAA ex:hasCovidStatus  ?CS.
+        ?CCAA ex:hasISOCode ?iso.
+        ?CCAA o:sameAs ?link.
+        ?CS ex:inDate '2020-04-06T00:00:00Z'^^s:Date.
+        ?CS ex:numPositiveAC ?na.
+        ?CS ex:numPositivePCR ?np.
+        ?CS ex:numberHospitalizations ?nh.
+        ?CS ex:numberUCI ?nu.
+        ?CS ex:inDate ?fecha .
+    
+      }
+      ''',
+         initNs={"s": s, "ex": ex,"o":o}
+      )
+    r= g.query(q07_1, initBindings={'?date': Literal(date, datatype=s + "Date")})
+    df=pd.DataFrame(r,columns=['CCAA','Link' ,'AC','PCR','Hospitalizations','UCI'])
+    return df
 
-  ORDER BY ASC(?fecha)
-  LIMIT 30
-  ''',
-                  initNs={"s": s, "ex": ex}
-                  )
+print()
+print()
+print("INICIO QUERY 08: Valores Test AC y PCR acumulados covid por comunidades")
+print()
+def getQ08():
+    # Incidencia acumulada hasta el final de las fechas por comunidades
+    q08 = prepareQuery('''
+      SELECT
+          ?iso ?link (SUM(?na) as ?nCount) (SUM(?np) as ?npCount) 
+      WHERE {       
+        ?CCAA ex:hasISOCode ?iso.
+        ?CCAA o:sameAs ?link.
+        ?CCAA ex:hasCovidStatus ?CS.  
+        ?CS ex:numPositiveAC ?na.
+        ?CS ex:numPositiveAC ?na.  
+        ?CS ex:numPositivePCR ?np.
+        ?CS ex:numberHospitalizations ?nh.
+        ?CS ex:numberUCI ?nu. 
+    
+      }
+      GROUP BY ?CCAA
+    
+      ''',
+          initNs={"s": s, "ex": ex, "o": o}
+      )
+    df=pd.DataFrame(g.query(q08),columns=['CAA','Link','AC','PCR'])
+    return df
 
-for r in g.query(q2):
-  print(r.iso, r.fecha, r.na, r.np, r.nh, r.nu)
-
-# Incidencia covid por comunidades en una fecha dada
-q21 = prepareQuery('''
-  SELECT
-    ?iso ?na ?np ?nh ?nu
-  WHERE {
 
 
-    ?CCAA ex:hasCovidStatus  ?CS.
-    ?CCAA ex:hasISOCode ?iso.
-    ?CS ex:inDate '2020-04-06T00:00:00Z'^^s:Date.
-    ?CS ex:numPositiveAC ?na.
-    ?CS ex:numPositivePCR ?np.
-    ?CS ex:numberHospitalizations ?nh.
-    ?CS ex:numberUCI ?nu.
-    ?CS ex:inDate ?fecha .
-
-  }
-  ''',
-     initNs={"s": s, "ex": ex}
-  )
-
-print("\n Incidencia covid por comunidades en una fecha dada ")
-for r in g.query(q21):
-  print(r.iso, r.na, r.np, r.nh, r.nu)
-
-# Incidencia acumulada hasta el final de las fechas por comunidades
-q3 = prepareQuery('''
-  SELECT
-      ?iso ?link (SUM(?na) as ?nCount) (SUM(?np) as ?npCount) (SUM(?nh) as ?nhCount) (SUM(?nu) as ?nuCount)
-  WHERE {       
-    ?CCAA ex:hasISOCode ?iso.
-    ?CCAA o:sameAs ?link.
-    ?CCAA ex:hasCovidStatus ?CS.  
-    ?CS ex:numPositiveAC ?na.
-    ?CS ex:numPositiveAC ?na.  
-    ?CS ex:numPositivePCR ?np.
-    ?CS ex:numberHospitalizations ?nh.
-    ?CS ex:numberUCI ?nu. 
-
-  }
-  GROUP BY ?CCAA
-
-  ''',
-                  initNs={"s": s, "ex": ex, "o": o}
-                  )
-
-print("\n Incidencia covid  acumulada por comunidades hasta el final ")
-for r in g.query(q3):
-  print(r.iso, r.link, r.nCount, r.npCount, r.nhCount, r.nuCount)
-
+print()
+print()
+print("INICIO QUERY 09: Numero de contratos por organizacion en el total de las fechas registradas y dinero total de esos contratos")
+print()
 # numero de contratos por organizacion en el  total de las fechas
-q4 = prepareQuery('''
-  SELECT
-    ?name ?link (COUNT(?Order) as ?orderCount) (SUM(?coste) as ?ncoste)
-  WHERE {
-    ?company s:name ?name.
-    ?Order s:seller ?company.
-    ?Order ex:hasOrderAmount ?coste.
-    OPTIONAL { ?company o:sameAs  ?link. }
-  }
-  GROUP BY ?company
-  ORDER BY DESC(?orderCount)
-  LIMIT 10
-  ''',
-                  initNs={"s": s, "ex": ex, "o": o}
-                  )
-print("\n numero de contratos por organizacion en el  total de las fechas ")
-for r in g.query(q4):
-  print(r.name, r.link, r.orderCount, r.ncoste)
+def getQ09():
+    q09 = prepareQuery('''
+      SELECT
+        ?name ?link (COUNT(?Order) as ?orderCount) (SUM(?coste) as ?ncoste)
+      WHERE {
+        ?company s:name ?name.
+        ?Order s:seller ?company.
+        ?Order ex:hasOrderAmount ?coste.
+        OPTIONAL { ?company o:sameAs  ?link. }
+      }
+      GROUP BY ?company
+      ORDER BY DESC(?orderCount)
+      LIMIT 10
+      ''',
+                      initNs={"s": s, "ex": ex, "o": o}
+                      )
+    r=g.query(q09)
+    df=pd.DataFrame(r,columns=['Company','Link','Orders','Benefits'])
+    return df
 
-# numero de contratos por organizacion en una fecha
-q41 = prepareQuery('''
-  SELECT
-    ?name ?link (COUNT(?Order) as ?orderCount) (SUM(?coste) as ?ncoste)
-  WHERE {
-    ?Order s:orderDate '2020-04-07T00:00:00Z'^^s:Date.
-    ?Order ex:hasOrderAmount ?coste.
-    ?Order s:seller ?company.
-    ?company s:name ?name.
-    OPTIONAL { ?company o:sameAs  ?link. }
-  }
-  GROUP BY ?company
-  ORDER BY DESC(?orderCount)
-  LIMIT 10
-  ''',
-                   initNs={"s": s, "ex": ex, "o": o}
-                   )
 
-print("\n #numero de contratos por organizacion en una fecha ")
-for r in g.query(q41):
-  print(r.name, r.link, r.orderCount, r.ncoste)
+print()
+print()
+print("INICIO QUERY 09_1: Numero de contratos por organizacion en una fecha y dinero total de esos contratos")
+print()
+def getQ09_1(date):
+    # numero de contratos por organizacion en una fecha
+    q09_1 = prepareQuery('''
+      SELECT
+        ?name ?link (COUNT(?Order) as ?orderCount) (SUM(?coste) as ?ncoste)
+      WHERE {
+        ?Order s:orderDate '2020-04-07T00:00:00Z'^^s:Date.
+        ?Order ex:hasOrderAmount ?coste.
+        ?Order s:seller ?company.
+        ?company s:name ?name.
+        OPTIONAL { ?company o:sameAs  ?link. }
+      }
+      GROUP BY ?company
+      ORDER BY DESC(?orderCount)
+      LIMIT 10
+      ''',
+                       initNs={"s": s, "ex": ex, "o": o}
+                       )
+    df=pd.DataFrame(g.query(q09_1,initBindings={'?date': Literal(date, datatype=s + "Date")}),columns=['Company','Link','Orders','Benefits'])
+    return df
+
+
+print(getQ09())
 
 exit(0)
