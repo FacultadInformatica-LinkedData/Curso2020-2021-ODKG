@@ -1,0 +1,43 @@
+# 1. Get all properties of contracts, except rdf:type
+
+PREFIX vocab: <http://contsem.unizar.es/def/sector-publico/pproc#>
+SELECT DISTINCT ?prop
+WHERE {
+    ?contract a/rdfs:subClassOf* vocab:Contract .
+    ?contract ?prop ?x .
+    FILTER (?prop != rdf:type) }
+
+# 2. Get all classes
+
+SELECT DISTINCT ?class
+WHERE {
+    {?x a ?class} 
+    UNION
+    {?class a rdfs:Class}
+}
+
+# 3. Get the number of triples
+
+SELECT COUNT(?x)
+WHERE {
+    ?x ?y ?z }
+
+# 4. Get the contracts with an award price greater than 10000
+
+PREFIX vocab: <http://group01.org/aragon/ontology/>
+SELECT DISTINCT ?contract
+WHERE {
+    ?contract vocab:hasAwardPrice ?price .
+    FILTER (?price > 10000) }
+
+# 5. Get all the links
+SELECT DISTINCT ?x ?link
+WHERE {
+    ?x owl:sameAs ?link }
+
+# 6. Get all contracts from El Corte Ingles (http://www.wikidata.org/entity/Q623133)
+PREFIX vocab: <http://group01.org/aragon/ontology/>
+SELECT DISTINCT ?contract
+WHERE {
+    ?contract vocab:awardedTo ?company .
+    ?company owl:sameAs <http://www.wikidata.org/entity/Q623133> }
