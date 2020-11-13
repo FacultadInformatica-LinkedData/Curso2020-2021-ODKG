@@ -34,7 +34,6 @@ def getQ01():
       }
       GROUP BY ?pr
       ORDER BY DESC(?totalQuantity) ?prod
-      LIMIT 100
     
       ''',
       initNs={"s": s, "ex": ex}
@@ -60,7 +59,6 @@ def getQ02():
       }
       GROUP BY ?service
       ORDER BY DESC(?totalNumber) ?service
-      LIMIT 100
     
       ''',
       initNs={"s": s, "ex": ex}
@@ -93,7 +91,6 @@ def getQ03(nameProduct):
     }
     GROUP BY ?date
     ORDER BY ?date
-    LIMIT 100
     ''',
         initNs={"s": s, "ex": ex}
     )
@@ -110,6 +107,7 @@ print()
 print(getQ03("GUANTES DE NITRILO, CON Y SIN POLVO"))
 
 
+#TODO: Ver como seleccionar los 10 productos por dia
 print()
 print()
 print("INICIO QUERY 04: Top 10: Lista de los productos mas pedidos por dia")
@@ -129,7 +127,6 @@ def getQ04():
       }
       GROUP BY ?date ?pr
       ORDER BY ?date DESC(?nq)
-      LIMIT 100
     
       ''',
       initNs={"s": s, "ex": ex}
@@ -176,6 +173,8 @@ def getQ04_1(date):
 print(getQ04_1("2020-04-06T00:00:00Z"))
 print()
 
+
+#TODO: Ver como coger los 10 servicios mas pedidos por cada dia
 print()
 print()
 print("INICIO QUERY 05: Top 10: Lista de los servicios mas pedidos por dia")
@@ -235,7 +234,7 @@ def getQ05_1(date):
     return df
 
 
-getQ05_1("2020-04-22T00:00:00Z")
+print(getQ05_1("2020-04-22T00:00:00Z"))
 print()
 
 
@@ -264,7 +263,6 @@ def getQ06():
       }
       GROUP BY ?date ?pr
       ORDER BY ?date DESC(?nq)
-      LIMIT 100
     
       ''',
       initNs={"s": s, "ex": ex}
@@ -296,7 +294,6 @@ def getQ06_1():
       }
       GROUP BY ?date ?pr
       ORDER BY ?date DESC(?nq)
-      LIMIT 100
     
       ''',
       initNs={"s": s, "ex": ex}
@@ -309,6 +306,12 @@ def getQ06_1():
     return df
 
 
+print(getQ06_1())
+
+print()
+print()
+print("INICIO QUERY 07: Incidencia por comunidades, Test AC, PCR, Hospitalizados y UCI")
+print()
 
 def getQ07():
     q07 = prepareQuery('''
@@ -339,13 +342,12 @@ def getQ07():
     return df
 
 
-print(getQ07()['Date'])
+print(getQ07())
 
 print()
 print()
 print("INICIO QUERY 07_1: Incidencia covid por comunidades en una fecha dada")
 print()
-
 
 def getQ07_01(date):
     # Incidencia covid por comunidades en una fecha dada
@@ -358,7 +360,7 @@ def getQ07_01(date):
         ?CCAA ex:hasCovidStatus  ?CS.
         ?CCAA ex:hasISOCode ?iso.
         ?CCAA o:sameAs ?link.
-        ?CS ex:inDate '2020-04-06T00:00:00Z'^^s:Date.
+        ?CS ex:inDate ?date.
         ?CS ex:numPositiveAC ?na.
         ?CS ex:numPositivePCR ?np.
         ?CS ex:numberHospitalizations ?nh.
@@ -372,7 +374,7 @@ def getQ07_01(date):
     r = g.query(q07_1, initBindings={'?date': Literal(date, datatype=s + "Date")})
     df = pd.DataFrame(r, columns=['CCAA', 'Link', 'AC', 'PCR', 'Hospitalizations', 'UCI'])
     return df
-
+print(getQ07_01('2020-04-07T00:00:00Z'))
 
 print()
 print()
@@ -401,9 +403,10 @@ def getQ08():
       ''',
                        initNs={"s": s, "ex": ex, "o": o}
                        )
-    df = pd.DataFrame(g.query(q08), columns=['CAA', 'Link', 'AC', 'PCR'])
+    df = pd.DataFrame(g.query(q08), columns=['CCAA', 'Link', 'AC', 'PCR'])
     return df
 
+print(getQ08())
 
 print()
 print()
@@ -431,7 +434,7 @@ def getQ09():
     r = g.query(q09)
     df = pd.DataFrame(r, columns=['Company', 'Link', 'Orders', 'Benefits'])
     return df
-
+print(getQ09())
 
 print()
 print()
@@ -443,10 +446,10 @@ def getQ09_1(date):
     # numero de contratos por organizacion en una fecha
     q09_1 = prepareQuery('''
       SELECT
-        ?name ?link (COUNT(?Order) as ?orderCount) (SUM(?coste) as ?ncoste)
+        ?name ?link (COUNT(?Order) as ?orderCount) (SUM(?cost) as ?ncoste)
       WHERE {
-        ?Order s:orderDate '2020-04-07T00:00:00Z'^^s:Date.
-        ?Order ex:hasOrderAmount ?coste.
+        ?Order s:orderDate ?date.
+        ?Order ex:hasOrderAmount ?cost.
         ?Order s:seller ?company.
         ?company s:name ?name.
         OPTIONAL { ?company o:sameAs  ?link. }
@@ -462,7 +465,7 @@ def getQ09_1(date):
     return df
 
 
-print(getQ09())
+print(getQ09_1('2020-04-07T00:00:00Z'))
 
 
 
@@ -483,7 +486,6 @@ def getQ10():
       }
       GROUP BY ?company
       ORDER BY DESC(?orderCount)
-      LIMIT 30
       ''',
          initNs={"s": s, "ex": ex, "o": o}
       )
@@ -495,30 +497,33 @@ def getQ10():
     #notFinisehd
     q10_1 = prepareQuery('''
       SELECT
-        ?name ?link (COUNT(?order) as ?orderCount)
+        ?name (COUNT(?order) as ?orderCount)
       WHERE {
         ?company s:name ?name.
         ?order s:seller ?company.
-        OPTIONAL { ?company o:sameAs  ?link. }
         ?order ex:hasProductQuantityPending ?quantity.
         FILTER(?quantity > 0).
       }
       GROUP BY ?company
       ORDER BY DESC(?orderCount)
-      LIMIT 30
       ''',
          initNs={"s": s, "ex": ex, "o": o}
       )
 
     output2 = g.query(q10_1)
-    df2 = pd.DataFrame(output2, columns=["Organization", "Link", "Number of contracts not finished"])
+    df2 = pd.DataFrame(output2, columns=["Organization", "Number of contracts not finished"])
     df_final = pd.merge(left=df, right=df2, on="Organization")
+
     return df_final
 
 print(getQ10())
 
 
 
+print()
+print()
+print("QUERY 11: Dada una organizacion, cantidad de producto y cantidad pendiente por dia ")
+print()
 def getQ11(organization):
     q11 = prepareQuery('''
     SELECT
@@ -527,23 +532,22 @@ def getQ11(organization):
         ?order s:orderDate ?date.
         ?order s:seller ?company.
         ?company s:name ?name.
-        ?order s:orderedItem ?pr
-        ?pr s:name ?product
+        ?order s:orderedItem ?pr.
+        ?pr s:name ?product.
         ?order ex:hasProductQuantityPending ?pending.
         ?order ex:hasProductQuantity ?quantity.
     }
     GROUP BY ?date ?pr
     ORDER BY ?date ?product
-    LIMIT 30
     ''',
        initNs={"s": s, "ex": ex, "o": o}
     )
 
-    output = g.query(q11, initBindings={'?name': Literal(organization, datatype=s + "Date")})
+    output = g.query(q11, initBindings={'?name': Literal(organization, datatype=XSD.string)})
     df = pd.DataFrame(output, columns=["Date", "Product", "Quantity", "Quantity Pending"])
     df["Date"] = df["Date"].astype(str)
     df['Date'] = pd.to_datetime(df['Date'])
     return df
 
-print(getQ11("MARCOM MEDICA SL"))
+print(getQ11("MARCOM MEDICA, S.L."))
 
