@@ -41,6 +41,8 @@ def getQ01():
     output = g.query(q01)
     df = pd.DataFrame(output, columns=["Produc", "Quantity"])
     return df
+print(getQ01())
+
 
 print()
 print()
@@ -70,7 +72,7 @@ def getQ02():
     # df["Date"] = df["Date"].astype(str)
     # df['Date'] = pd.to_datetime(df['Date'])
     return df
-
+print(getQ02())
 
 print()
 print()
@@ -105,6 +107,39 @@ def getQ03(nameProduct):
 print(getQ03("GUANTE VINILO"))
 print()
 print(getQ03("GUANTES DE NITRILO, CON Y SIN POLVO"))
+
+
+
+print()
+print()
+print("INICIO QUERY 03_1: Dado un servicio (NAME), ver evoluacion temporal del coste del pedido (acumulativo) y lo que falta por pagar por ese servicio")
+print()
+#uriProduct type String
+def getQ03_1(nameService):
+  q03_1 = prepareQuery('''
+    SELECT
+      ?date (SUM(?quantity) as ?nQuantity) (SUM(?pending) as ?nPending)
+    WHERE {
+       ?ser rdf:type s:Service.
+       ?ser s:name ?service.
+       ?order s:orderedItem ?ser.
+       ?order s:orderDate ?date.
+       ?order ex:hasOrderAmount ?quantity.
+       ?order ex:hasPendingAmount ?pending.
+    }
+    GROUP BY ?date
+    ORDER BY ?date
+    ''',
+        initNs={"s": s, "ex": ex}
+    )
+
+  output = g.query(q03_1, initBindings={'?service': Literal(nameService, datatype=XSD.string)})
+  df = pd.DataFrame(output, columns=["Date", "Order Amount", "Pending Amount"])
+  df["Date"] = df["Date"].astype(str)
+  df['Date'] = pd.to_datetime(df['Date'])
+  return df
+
+print(getQ03_1('MANTENIMIENTO CENTROS SANITARIOS'))
 
 
 #TODO: Ver como seleccionar los 10 productos por dia
