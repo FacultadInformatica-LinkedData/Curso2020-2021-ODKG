@@ -47,31 +47,27 @@ def getQ01():
 #print("INICIO QUERY 02: Servicios mas pedidos y el numero de veces pedidos")
 
 
-
 def getQ02():
-  q02 = prepareQuery('''
+    q02 = prepareQuery('''
       SELECT
-         ?service (COUNT(?service) as ?totalNumber)
+         ?service (COUNT(?service) as ?totalNumber) (SUM(?amount) as ?totalAmount) (SUM(?pending) as ?totalPending)
       WHERE {
 
          ?order s:orderedItem ?serv.
          ?serv rdf:type s:Service.
          ?serv s:name ?service.
-
+		 ?order ex:hasOrderAmount ?amount.
+         ?order ex:hasPendingAmount ?pending.
       }
       GROUP BY ?service
       ORDER BY DESC(?totalNumber) ?service
-      LIMIT 10
+
       ''',
-                     initNs={"s": s, "ex": ex}
-                     )
-  # for r in g.query(q02):
-  #  #print(r.service, r.totalNumber)
-  output = g.query(q02)
-  df = pd.DataFrame(output, columns=["Service", "Requested times"])
-  # df["Date"] = df["Date"].astype(str)
-  # df['Date'] = pd.to_datetime(df['Date'])
-  return df
+                       initNs={"s": s, "ex": ex}
+                       )
+    output = g.query(q02)
+    df = pd.DataFrame(output, columns=["Service", "Requested times", "Total amount", "Pending amount"])
+    return df
 
 
 
@@ -498,27 +494,27 @@ def getQ09_1(date):
 
 
 def getQ10():
-  q10 = prepareQuery('''
+    q10 = prepareQuery('''
       SELECT
-        ?name ?link (COUNT(?order) as ?orderCount)
+        ?name ?link (SUM(?amount) as ?totalAmount) (COUNT(?order) as ?orderCount)
       WHERE {
         ?company s:name ?name.
         ?order s:seller ?company.
         OPTIONAL { ?company o:sameAs  ?link. }
+		?order ex:hasOrderAmount ?amount.
       }
       GROUP BY ?company
       ORDER BY DESC(?orderCount)
-      LIMIT 10
       ''',
-                     initNs={"s": s, "ex": ex, "o": o}
-                     )
+         initNs={"s": s, "ex": ex, "o": o}
+      )
 
-  output = g.query(q10)
-  df = pd.DataFrame(output, columns=["Organization", "Link", "Number of contracts"])
+    output = g.query(q10)
+    df = pd.DataFrame(output, columns=["Organization", "Link", "Total Amount", "Number of contracts"])
 
-
-  # notFinisehd
-  q10_1 = prepareQuery('''
+    print()
+    #notFinisehd
+    q10_1 = prepareQuery('''
       SELECT
         ?name (COUNT(?order) as ?orderCount)
       WHERE {
@@ -530,17 +526,15 @@ def getQ10():
       GROUP BY ?company
       ORDER BY DESC(?orderCount)
       ''',
-                       initNs={"s": s, "ex": ex, "o": o}
-                       )
+         initNs={"s": s, "ex": ex, "o": o}
+      )
 
-  output2 = g.query(q10_1)
-  df2 = pd.DataFrame(output2, columns=["Organization", "Number of contracts not finished"])
-  df_final = pd.merge(left=df, right=df2, on="Organization")
+    output2 = g.query(q10_1)
+    df2 = pd.DataFrame(output2, columns=["Organization", "Number of contracts not finished"])
+    df_final = pd.merge(left=df, right=df2, on="Organization")
 
-  return df_final
+    return df_final
 
-
-#print(getQ10())
 
 
 
@@ -576,29 +570,25 @@ def getQ11(organization):
   return df
 
 def getQ12(organization):
-  q12 = prepareQuery('''
+    q12 = prepareQuery('''
     SELECT
-        ?date (SUM(?quantity) as ?nq) (SUM(?pending) as ?np)
+        ?date (COUNT(?order) as ?nContracts)
     WHERE {
         ?order s:orderDate ?date.
         ?order s:seller ?company.
         ?company s:name ?name.
-        ?order s:orderedItem ?pr.
-        ?pr s:name ?product.
-        ?order ex:hasProductQuantityPending ?pending.
-        ?order ex:hasProductQuantity ?quantity.
     }
-    GROUP BY ?date ?pr
-    ORDER BY ?date
+    GROUP BY ?date 
+    ORDER BY ?date 
     ''',
-                     initNs={"s": s, "ex": ex, "o": o}
-                     )
+       initNs={"s": s, "ex": ex, "o": o}
+    )
 
-  output = g.query(q12, initBindings={'?name': Literal(organization, datatype=XSD.string)})
-  df = pd.DataFrame(output, columns=["Date", "Quantity", "Quantity Pending"])
-  df["Date"] = df["Date"].astype(str)
-  df['Date'] = pd.to_datetime(df['Date'])
-  return df
+    output = g.query(q12, initBindings={'?name': Literal(organization, datatype=XSD.string)})
+    df = pd.DataFrame(output, columns=["Date", "Number of contracts"])
+    df["Date"] = df["Date"].astype(str)
+    df['Date'] = pd.to_datetime(df['Date'])
+    return df
 
 def getQuantityTopProducts():
     df = pd.DataFrame(columns=["Product","Date", "Quantity", "Quantity Pending"])
@@ -609,48 +599,76 @@ def getQuantityTopProducts():
     return df
 
 def getQuantityTopServices():
-    df = pd.DataFrame(columns=["Service","Date", "Quantity", "Quantity Pending"])
+    df = pd.DataFrame(columns=["Service","Date", "Order Amount", "Pending Amount"])
     for i in getQ02()["Service"]:
-        dfi=getQ03(i)
+        dfi=getQ03_1(i)
         dfi["Service"]=i
         df=pd.concat([df, dfi])
     return df
 
 def getQuantityTopOrganizations():
-    df = pd.DataFrame(columns=["Organization", "Date", "Quantity", "Quantity Pending"])
+    df = pd.DataFrame(columns=["Organization", "Date", "Number of contracts"])
     for i in getQ10()["Organization"]:
-        dfi=getQ11(i)
+        dfi=getQ12(i)
         dfi["Organization"]=i
         df=pd.concat([df, dfi])
     return df
 
-def getQuantityTopOrganizationsProducts():
-    df = pd.DataFrame(columns=["Organization", "Date", "Product", "Quantity", "Quantity Pending"])
+def getQuantityTopOrganizationsProjects():
+    df = pd.DataFrame(columns=["Date", "Contracts satisfied"])
     for i in getQ10()["Organization"]:
-        dfi=getQ11(i)
-        dfi["Organization"]=i
+        dfi=getQ11_1(i)
         df=pd.concat([df, dfi])
+    df = df.groupby(by=["Date"]).mean()
+    df.reset_index(inplace=True)
     return df
 
 def getQ03_1(nameService):
   q03_1 = prepareQuery('''
     SELECT
-      ?date (SUM(?quantity) as ?nQuantity) (SUM(?pending) as ?nPending)
+      ?date (COUNT(?ser) as ?nSer)
     WHERE {
        ?ser rdf:type s:Service.
        ?ser s:name ?service.
        ?order s:orderedItem ?ser.
        ?order s:orderDate ?date.
-       ?order ex:hasOrderAmount ?quantity.
-       ?order ex:hasPendingAmount ?pending.
     }
     GROUP BY ?date
     ORDER BY ?date
     ''',
         initNs={"s": s, "ex": ex}
     )
+
   output = g.query(q03_1, initBindings={'?service': Literal(nameService, datatype=XSD.string)})
-  df = pd.DataFrame(output, columns=["Date", "Order Amount", "Pending Amount"])
+  df = pd.DataFrame(output, columns=["Date", "Requested times"])
   df["Date"] = df["Date"].astype(str)
   df['Date'] = pd.to_datetime(df['Date'])
   return df
+
+def getQ11_1(organization):
+    q11_1 = prepareQuery('''
+        SELECT
+            ?date (SUM(?quantity) as ?nq) (SUM(?pending) as ?np)
+        WHERE {
+            ?order s:orderDate ?date.
+            ?order s:seller ?company.
+            ?company s:name ?name.
+            ?order ex:hasProductQuantityPending ?pending.
+            ?order ex:hasProductQuantity ?quantity.
+        }
+        GROUP BY ?date
+        ORDER BY ?date
+    ''',
+       initNs={"s": s, "ex": ex, "o": o}
+        )
+
+    output = g.query(q11_1, initBindings={'?name': Literal(organization, datatype=XSD.string)})
+    df = pd.DataFrame(output, columns=["Date", "Quantity", "Quantity Pending"])
+    df['Quantity']=pd.to_numeric(df['Quantity'])
+    df['Quantity Pending']=pd.to_numeric(df['Quantity Pending'])
+    df["Contracts satisfied"] = (100-(df["Quantity Pending"]/df["Quantity"])*100)
+    df.pop("Quantity")
+    df.pop("Quantity Pending")
+    df["Date"] = df["Date"].astype(str)
+    df['Date'] = pd.to_datetime(df['Date'])
+    return df

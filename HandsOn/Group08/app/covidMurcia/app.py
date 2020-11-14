@@ -8,6 +8,7 @@ from dash.dependencies import Output, Input, State
 import pandas as pd
 import plotly.express as px
 import queries
+import plotly.tools as tls
 import plotly.graph_objects as go
 from datetime import datetime
 
@@ -128,7 +129,7 @@ TOP_PRODUCTS_PLOT = [
                         id='dropdown-products',
                         options=optionsProducts,
                         multi=False,
-                        value="CALZAS",
+                        value="GUANTES DE NITRILO, CON Y SIN POLVO",
                         placeholder="Select the Product to see data below",
                         style={
                             'width': '1000px',
@@ -144,7 +145,7 @@ TOP_PRODUCTS_PLOT = [
 ]
 
 TOP_SERVICES_PLOT = [
-    dbc.CardHeader(html.H5("Top 10 services ordered and its quantity")),
+    dbc.CardHeader(html.H5("Services ordered")),
     dbc.CardBody(
         [
             dcc.Loading(
@@ -171,13 +172,12 @@ TOP_SERVICES_PLOT = [
                         max= max(dfQuantityTopServices['Date']).week,
                         value=[min(dfQuantityTopServices['Date']).week, max(dfQuantityTopServices['Date']).week]
                     ),
-                    dcc.Graph(id='graph-all-services'),
                     dcc.Dropdown(
                         id='dropdown-services',
                         options=optionsServices,
                         multi=False,
                         value="ALQUILER DE VEHICULOS",
-                        placeholder="Select the Product to see data below",
+                        placeholder="Select the service to see data below",
                         style={
                             'width': '1000px',
                             },
@@ -220,6 +220,7 @@ TOP_ORGANIZATIONS = [
                         value=[min(dfQuantityTopOrganizations['Date']).week, max(dfQuantityTopOrganizations['Date']).week]
                     ),
                     dcc.Graph(id='graph-all-organizations'),
+                    dcc.Graph(id='graph-all-organizations-2'),
                     dcc.Dropdown(
                         id='dropdown-organizations',
                         options=optionsOrganizations,
@@ -306,7 +307,9 @@ app.layout = html.Div([NAVBAR,
     [Input('date-slider-products', 'value')])
 def update_figure(dates):
     dfTemp = dfQuantityTopProducts[(dfQuantityTopProducts['Date'].dt.isocalendar().week>=dates[0]) & (dfQuantityTopProducts['Date'].dt.isocalendar().week<=dates[1])]
-    fig = px.line(
+    dfTemp2 = dfCovid[
+        (dfCovid['Date'].dt.isocalendar().week >= dates[0]) & (dfCovid['Date'].dt.isocalendar().week <= dates[1])]
+    fig = px.bar(
         dfTemp,
         title="Evolution of products ordered",
         x="Date",
@@ -327,8 +330,9 @@ def update_figure2(product, dates):
     dfTemp = df1[
         (df1['Date'].dt.isocalendar().week >= dates[0]) & (df1['Date'].dt.isocalendar().week <= dates[1])]
     fig = px.line(dfTemp, x="Date", y="Quantity", template="plotly_white", title="Evolution of "+product+" and pending quantity")
-    fig.update_traces(line_color='#FF0000')
+    fig.update_traces(line_color='#304281')
     fig2 = px.bar(dfTemp, x="Date", y="Quantity Pending")
+    fig2.update_traces(marker_color='red')
     fig.add_trace(fig2.data[0])
     fig.data[0].update(mode='markers+lines')
     fig.update_layout(transition_duration=500)
@@ -339,12 +343,29 @@ def update_figure2(product, dates):
     [Input('date-slider-organizations', 'value')])
 def update_figure3(dates):
     dfTemp = dfQuantityTopOrganizations[(dfQuantityTopOrganizations['Date'].dt.isocalendar().week>=dates[0]) & (dfQuantityTopOrganizations['Date'].dt.isocalendar().week<=dates[1])]
-    fig = px.line(
+    fig = px.bar(
         dfTemp,
         title="Evolution of ordered products by Organization",
         x="Date",
-        y="Quantity",
+        y="Number of contracts",
         color="Organization",
+        template="plotly_white",
+    )
+    fig.update_layout(transition_duration=500)
+
+    return fig
+
+@app.callback(
+    Output('graph-all-organizations-2', 'figure'),
+    [Input('date-slider-organizations', 'value')])
+def update_figure31(dates):
+    dfTemp = queries.getQuantityTopOrganizationsProjects()
+    dfTemp = dfTemp[(dfTemp['Date'].dt.isocalendar().week>=dates[0]) & (dfTemp['Date'].dt.isocalendar().week<=dates[1])]
+    fig = px.line(
+        dfTemp,
+        title="Evolution of contracts satisfied",
+        x="Date",
+        y="Contracts satisfied",
         template="plotly_white",
     )
     fig.update_layout(transition_duration=500)
@@ -356,34 +377,19 @@ def update_figure3(dates):
     [Input('dropdown-organizations', 'value'),
      Input('date-slider-organizations', 'value')])
 def update_figure4(organization, dates):
-    df1 = queries.getQ11(organization)
-    dfTemp = df1[
-        (df1['Date'].dt.isocalendar().week >= dates[0]) & (df1['Date'].dt.isocalendar().week <= dates[1])]
-    dfTemp["size"]=dfTemp["Quantity"]/100
-    fig = px.scatter(dfTemp,
-                    title="Evolution of products ordered to "+organization,
-                    x="Date",
-                    y="Quantity",
-                    size="size",
-                    color="Product",
-                    size_max=40,
-                    )
+    dfTemp= queries.getQ11_1(organization)
+    dfTemp = dfTemp[(dfTemp['Date'].dt.isocalendar().week >= dates[0]) & (
+                dfTemp['Date'].dt.isocalendar().week <= dates[1])]
+    fig = px.line(
+        dfTemp,
+        title="Evolution of contracts satisfied by "+organization,
+        x="Date",
+        y="Contracts satisfied",
+        template="plotly_white",
+    )
     fig.update_layout(transition_duration=500)
+
     return fig
-# def update_figure4(organization, dates):
-#     df1 = queries.getQ11(organization)
-#     dfTemp = df1[
-#         (df1['Date'].dt.isocalendar().week >= dates[0]) & (df1['Date'].dt.isocalendar().week <= dates[1])]
-#     fig = px.line(
-#         dfTemp,
-#         title="Evolution of products ordered to "+organization,
-#         x="Date",
-#         y="Quantity",
-#         color="Product",
-#         template="plotly_white",
-#     )
-#     fig.update_layout(transition_duration=500)
-#     return fig
 
 @app.callback(
     Output('graph-all-services', 'figure'),
@@ -394,7 +400,7 @@ def update_figure5(dates):
         dfTemp,
         title="Evolution of services ordered",
         x="Date",
-        y="Quantity",
+        y="Order Amount",
         color="Service",
         template="plotly_white",
     )
@@ -410,9 +416,9 @@ def update_figure6(product, dates):
     df1 = queries.getQ03_1(product)
     dfTemp = df1[
         (df1['Date'].dt.isocalendar().week >= dates[0]) & (df1['Date'].dt.isocalendar().week <= dates[1])]
-    fig = px.bar(dfTemp, x="Date", y="Order Amount", template="plotly_white", title="Evolution of services and pending quantity")
-    fig2 = px.line(dfTemp, x="Date", y="Pending Amount")
-    fig.add_trace(fig2.data[0])
+    fig = px.bar(dfTemp, x="Date", y="Requested times", template="plotly_white", title="Evolution of "+product+" requested")
+    # fig2 = px.line(dfTemp, x="Date", y="Pending Amount")
+    # fig.add_trace(fig2.data[0])
     fig.update_layout(transition_duration=500)
     return fig
 
