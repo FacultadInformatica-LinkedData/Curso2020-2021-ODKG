@@ -555,36 +555,38 @@ print(getQ10())
 
 print()
 print()
-print("QUERY 11_1: Dada una organizacion, cantidad de producto y cantidad pendiente por dia SIN ESPECIFICAR PRODUCTO")
+print("QUERY 11_1: Dada una organizacion, evolucion temporal de proyectos satisfechos")
 #La idea es que de aqui se calcule el porcentaje por dia de projectos satisfecho
 print()
 def getQ11_1(organization):
     q11_1 = prepareQuery('''
-    SELECT
-        ?date (SUM(?quantity) as ?nq) (SUM(?pending) as ?np)
-    WHERE {
-        ?order s:orderDate ?date.
-        ?order s:seller ?company.
-        ?company s:name ?name.
-        ?order ex:hasProductQuantityPending ?pending.
-        ?order ex:hasProductQuantity ?quantity.
-    }
-    GROUP BY ?date
-    ORDER BY ?date
+        SELECT
+            ?date (SUM(?quantity) as ?nq) (SUM(?pending) as ?np)
+        WHERE {
+            ?order s:orderDate ?date.
+            ?order s:seller ?company.
+            ?company s:name ?name.
+            ?order ex:hasProductQuantityPending ?pending.
+            ?order ex:hasProductQuantity ?quantity.
+        }
+        GROUP BY ?date
+        ORDER BY ?date
     ''',
        initNs={"s": s, "ex": ex, "o": o}
-    )
+        )
 
     output = g.query(q11_1, initBindings={'?name': Literal(organization, datatype=XSD.string)})
-    df = pd.DataFrame(output, columns=["Date", "Product", "Quantity", "Quantity Pending"])
+    df = pd.DataFrame(output, columns=["Date", "Quantity", "Quantity Pending"])
+    df['Quantity']=pd.to_numeric(df['Quantity'])
+    df['Quantity Pending']=pd.to_numeric(df['Quantity Pending'])
+    df["Contracts satisfied"] = (100-(df["Quantity Pending"]/df["Quantity"])*100)
+    df.pop("Quantity")
+    df.pop("Quantity Pending")
     df["Date"] = df["Date"].astype(str)
     df['Date'] = pd.to_datetime(df['Date'])
-	df["Contracts satisfied"] = (df["Quantity Pending"]/df["Quantity"])*100
-	df.pop("Quantity")
-	df.pop("Quantity Pending")
     return df
 
-print(getQ11("MARCOM MEDICA, S.L."))
+print(getQ11_1("MARCOM MEDICA, S.L.").values)
 
 
 
