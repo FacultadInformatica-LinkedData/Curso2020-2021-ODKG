@@ -93,13 +93,7 @@ mappings:
       - [economico:hasCost,$(OBL_RECONOC),xsd:double]
       - [vocab:creditoDispuesto,$(C_DISPUESTO),xsd:double]
 
-      - [owl:sameAs,$(wikiseccion)~iri]
-      - [owl:sameAs,$(wikicoordenadas)~iri]
-      - [owl:sameAs,$(wikipoblacion)~iri]
-      - [owl:sameAs,$(wikisuperficie)~iri]
-
-
-  
+        
 
     triplesmap4:
     sources:
@@ -123,6 +117,30 @@ mappings:
       - [economico:hasMonetaryValue,$(RECAUDADO),xsd:double]
 
 
+    #triplesmap5:
+    #sources:
+    #  - [gastos-with-links.csv~csv]
+    #s: default:Gastos/$(Descripcion Seccion)
+    #po:
+    #  - [rdfs:isDefinedBy,vocab:Gastos]
+
+#      - [vocab:tienePoblacion,$(wikipoblacion),xsd:integer]
+ #     - [vocab:tieneCoordenadas,$(wikicoordenadas),xsd:string]
+  #    - [vocab:tieneSuperficie,$(wikisuperficie),xsd:double]
+   #   - [owl:sameAs,$(wikiseccion)~iri]
+
+
+    triplesmap5:
+    sources:
+      - [gastos-with-links.csv~csv]
+    s: default:Seccion/$(Descripcion Seccion)
+    po:
+      - [a,vocab:Seccion]
+
+      - [vocab:tienePoblacion,$(wikipoblacion),xsd:integer]
+      - [vocab:tieneCoordenadas,$(wikicoordenadas),xsd:string]
+      - [vocab:tieneSuperficie,$(wikisuperficie),xsd:double]
+      - [owl:sameAs,$(wikiseccion)~iri]
 
 
 
