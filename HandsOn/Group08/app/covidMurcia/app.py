@@ -20,6 +20,7 @@ dfQuantityTopOrganizations = queries.getQuantityTopOrganizations()
 optionsProducts = [{'label': i, 'value': i} for i in dfProducts["Product"]]
 optionsServices = [{'label': i, 'value': i} for i in dfServices["Service"]]
 optionsOrganizations = [{'label': i, 'value': i} for i in dfOrganizations["Organization"]]
+dfCovid=queries.getQ06()
 
 
 PLOTLY_LOGO = "https://images.plot.ly/logo/new-branding/plotly-logomark.png"
@@ -160,6 +161,9 @@ TOP_SERVICES_PLOT = [
                         columns=[{"name": i, "id": i} for i in dfServices.columns],
                         data=dfServices.to_dict('records'),
                     ),
+                    dbc.Col(
+                        html.H5("Choose week range")
+                    ),
                     dcc.RangeSlider(
                         id='date-slider-services',
                         marks={i: '{}'.format(i) for i in range(min(dfQuantityTopServices['Date']).week, max(dfQuantityTopServices['Date']).week)},
@@ -167,18 +171,18 @@ TOP_SERVICES_PLOT = [
                         max= max(dfQuantityTopServices['Date']).week,
                         value=[min(dfQuantityTopServices['Date']).week, max(dfQuantityTopServices['Date']).week]
                     ),
-                    dcc.Graph(id='graph-all-products'),
+                    dcc.Graph(id='graph-all-services'),
                     dcc.Dropdown(
-                        id='dropdown-products',
-                        options=optionsProducts,
+                        id='dropdown-services',
+                        options=optionsServices,
                         multi=False,
-                        value="CALZAS",
+                        value="ALQUILER DE VEHICULOS",
                         placeholder="Select the Product to see data below",
                         style={
                             'width': '1000px',
                             },
                     ),
-                    dcc.Graph(id='graph-some-products'),
+                    dcc.Graph(id='graph-some-services'),
                 ],
                 type="default",
             )
@@ -186,7 +190,6 @@ TOP_SERVICES_PLOT = [
         style={"marginTop": 0, "marginBottom": 0},
     ),
 ]
-
 
 TOP_ORGANIZATIONS = [
     dbc.CardHeader(html.H5("Top Organizations")),
@@ -205,6 +208,9 @@ TOP_ORGANIZATIONS = [
                         id='table-organizations',
                         columns=[{"name": i, "id": i} for i in dfOrganizations.columns],
                         data=dfOrganizations.to_dict('records'),
+                    ),
+                    dbc.Col(
+                        html.H5("Choose week range")
                     ),
                     dcc.RangeSlider(
                         id='date-slider-organizations',
@@ -232,6 +238,37 @@ TOP_ORGANIZATIONS = [
     ),
 ]
 
+PENDING_COVID = [
+    dbc.CardHeader(html.H5("Covid Compare")),
+    dbc.CardBody(
+        [
+            dcc.Loading(
+                id="loading-bigrams-scatter",
+                children=[
+                    dbc.Alert(
+                        "Something's gone wrong! Give us a moment, but try loading this page again if problem persists.",
+                        id="no-data-alert-bigrams",
+                        color="warning",
+                        style={"display": "none"},
+                    ),
+                    dbc.Col(
+                        html.H5("Choose week range")
+                    ),
+                    dcc.RangeSlider(
+                        id='date-slider-covid',
+                        marks={i: '{}'.format(i) for i in range(min(dfCovid['Date']).week, max(dfCovid['Date']).week)},
+                        min= min(dfCovid['Date']).week,
+                        max= max(dfCovid['Date']).week,
+                        value=[min(dfCovid['Date']).week, max(dfCovid['Date']).week]
+                    ),
+                    dcc.Graph(id='graph-pending-covid'),
+                ],
+                type="default",
+            )
+        ],
+        style={"marginTop": 0, "marginBottom": 0},
+    ),
+]
 
 BODY_COVID = dbc.Container(
     [
@@ -243,7 +280,10 @@ BODY_COVID = dbc.Container(
 BODY_MURCIA = dbc.Container(
     [
         dbc.Row([dbc.Col(dbc.Card(TOP_PRODUCTS_PLOT)),], style={"marginTop": 30}),
+        dbc.Row([dbc.Col(dbc.Card(TOP_SERVICES_PLOT)), ], style={"marginTop": 30}),
         dbc.Row([dbc.Col(dbc.Card(TOP_ORGANIZATIONS)),], style={"marginTop": 30}),
+        dbc.Row([dbc.Col(dbc.Card(PENDING_COVID)), ], style={"marginTop": 30}),
+
     ],
     className="mt-12",
 )
@@ -301,7 +341,7 @@ def update_figure3(dates):
     dfTemp = dfQuantityTopOrganizations[(dfQuantityTopOrganizations['Date'].dt.isocalendar().week>=dates[0]) & (dfQuantityTopOrganizations['Date'].dt.isocalendar().week<=dates[1])]
     fig = px.line(
         dfTemp,
-        title="Evolution of ordered products to Organization",
+        title="Evolution of ordered products by Organization",
         x="Date",
         y="Quantity",
         color="Organization",
@@ -316,21 +356,34 @@ def update_figure3(dates):
     [Input('dropdown-organizations', 'value'),
      Input('date-slider-organizations', 'value')])
 def update_figure4(organization, dates):
-    print(organization, dates)
     df1 = queries.getQ11(organization)
-    print(df1)
     dfTemp = df1[
         (df1['Date'].dt.isocalendar().week >= dates[0]) & (df1['Date'].dt.isocalendar().week <= dates[1])]
-    fig = px.line(
-        dfTemp,
-        title="Evolution of products ordered to "+organization,
-        x="Date",
-        y="Quantity",
-        color="Product",
-        template="plotly_white",
-    )
+    dfTemp["size"]=dfTemp["Quantity"]/100
+    fig = px.scatter(dfTemp,
+                    title="Evolution of products ordered to "+organization,
+                    x="Date",
+                    y="Quantity",
+                    size="size",
+                    color="Product",
+                    size_max=40,
+                    )
     fig.update_layout(transition_duration=500)
     return fig
+# def update_figure4(organization, dates):
+#     df1 = queries.getQ11(organization)
+#     dfTemp = df1[
+#         (df1['Date'].dt.isocalendar().week >= dates[0]) & (df1['Date'].dt.isocalendar().week <= dates[1])]
+#     fig = px.line(
+#         dfTemp,
+#         title="Evolution of products ordered to "+organization,
+#         x="Date",
+#         y="Quantity",
+#         color="Product",
+#         template="plotly_white",
+#     )
+#     fig.update_layout(transition_duration=500)
+#     return fig
 
 @app.callback(
     Output('graph-all-services', 'figure'),
@@ -354,15 +407,28 @@ def update_figure5(dates):
     [Input('dropdown-services', 'value'),
      Input('date-slider-services', 'value')])
 def update_figure6(product, dates):
-    print(product)
-    df1 = queries.getQ03(product)
+    df1 = queries.getQ03_1(product)
     dfTemp = df1[
         (df1['Date'].dt.isocalendar().week >= dates[0]) & (df1['Date'].dt.isocalendar().week <= dates[1])]
-    fig = px.line(dfTemp, x="Date", y="Quantity", template="plotly_white", title="Evolution of services and pending quantity")
-    fig.update_traces(line_color='#FF0000')
-    fig2 = px.bar(dfTemp, x="Date", y="Quantity Pending")
+    fig = px.bar(dfTemp, x="Date", y="Order Amount", template="plotly_white", title="Evolution of services and pending quantity")
+    fig2 = px.line(dfTemp, x="Date", y="Pending Amount")
     fig.add_trace(fig2.data[0])
     fig.update_layout(transition_duration=500)
+    return fig
+
+@app.callback(
+    Output('graph-pending-covid', 'figure'),
+    [Input('date-slider-covid', 'value')])
+def update_figure7(dates):
+    dfTemp = dfCovid[(dfCovid['Date'].dt.isocalendar().week>=dates[0]) & (dfCovid['Date'].dt.isocalendar().week<=dates[1])]
+    dfTemp["size"]=dfTemp["Quantity pending"]/1000
+    fig = px.line(dfTemp,
+                     title="Evolution of covid compared with pending orders",
+                     x="Date",
+                     y="Number Hospitalizations",
+                     )
+    fig.update_layout(transition_duration=500)
+
     return fig
 
 @app.callback(Output('tabs-content', 'children'),

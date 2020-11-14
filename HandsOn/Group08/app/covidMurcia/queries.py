@@ -61,7 +61,7 @@ def getQ02():
       }
       GROUP BY ?service
       ORDER BY DESC(?totalNumber) ?service
-
+      LIMIT 10
       ''',
                      initNs={"s": s, "ex": ex}
                      )
@@ -281,6 +281,10 @@ def getQ06():
   df = pd.DataFrame(output, columns=["Date", "Number Hospitalizations", "Product", "Quantity pending"])
   df["Date"] = df["Date"].astype(str)
   df['Date'] = pd.to_datetime(df['Date'])
+  df["Quantity pending"] = df["Quantity pending"].astype(str)
+  df['Quantity pending'] = pd.to_numeric(df['Quantity pending'])
+  df = df.groupby(by=["Date", "Number Hospitalizations"]).sum()
+  df.reset_index(inplace=True)
   return df
 
 
@@ -567,6 +571,8 @@ def getQ11(organization):
   df = pd.DataFrame(output, columns=["Date", "Product", "Quantity", "Quantity Pending"])
   df["Date"] = df["Date"].astype(str)
   df['Date'] = pd.to_datetime(df['Date'])
+  df["Quantity"] = df["Quantity"].astype(str)
+  df['Quantity'] = pd.to_numeric(df['Quantity'])
   return df
 
 def getQ12(organization):
@@ -625,3 +631,26 @@ def getQuantityTopOrganizationsProducts():
         dfi["Organization"]=i
         df=pd.concat([df, dfi])
     return df
+
+def getQ03_1(nameService):
+  q03_1 = prepareQuery('''
+    SELECT
+      ?date (SUM(?quantity) as ?nQuantity) (SUM(?pending) as ?nPending)
+    WHERE {
+       ?ser rdf:type s:Service.
+       ?ser s:name ?service.
+       ?order s:orderedItem ?ser.
+       ?order s:orderDate ?date.
+       ?order ex:hasOrderAmount ?quantity.
+       ?order ex:hasPendingAmount ?pending.
+    }
+    GROUP BY ?date
+    ORDER BY ?date
+    ''',
+        initNs={"s": s, "ex": ex}
+    )
+  output = g.query(q03_1, initBindings={'?service': Literal(nameService, datatype=XSD.string)})
+  df = pd.DataFrame(output, columns=["Date", "Order Amount", "Pending Amount"])
+  df["Date"] = df["Date"].astype(str)
+  df['Date'] = pd.to_datetime(df['Date'])
+  return df
