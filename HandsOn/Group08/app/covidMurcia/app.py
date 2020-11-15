@@ -20,7 +20,7 @@ dfQuantityTopServices = queries.getQuantityTopServices()
 dfQuantityTopOrganizations = queries.getQuantityTopOrganizations()
 optionsProducts = [{'label': i, 'value': i} for i in dfProducts["Product"]]
 optionsServices = [{'label': i, 'value': i} for i in dfServices["Service"]]
-optionsOrganizations = [{'label': i, 'value': i} for i in dfOrganizations["Organization"]]
+optionsOrganizations = [{'label': i, 'value': i} for i in dfOrganizations["Company"]]
 dfCovid = queries.getQ07()
 dfCovidacumulado=queries.getQ08()
 optionsCCAA =[{'label':i,'value':i} for i in dfCovid["CCAA"]]
@@ -49,7 +49,7 @@ NAVBAR = dbc.Navbar(
 )
 
 TOP_PRODUCTS_PLOT = [
-    dbc.CardHeader(html.H5("Top 10 products ordered and its quantity")),
+    dbc.CardHeader(html.H5("Top 10 products by quantity ordered and pending quantity")),
     dbc.CardBody(
         [
             dcc.Loading(
@@ -121,7 +121,7 @@ TOP_PRODUCTS_PLOT_ANALYSIS = [
 ]
 
 TOP_SERVICES_PLOT = [
-    dbc.CardHeader(html.H5("Services data")),
+    dbc.CardHeader(html.H5("Services requested and their price")),
     dbc.CardBody(
         [
             dcc.Loading(
@@ -192,7 +192,7 @@ TOP_SERVICES_PLOT_ANALYSIS = [
 ]
 
 TOP_ORGANIZATIONS = [
-    dbc.CardHeader(html.H5("Top Organizations")),
+    dbc.CardHeader(html.H5("Information about the companies")),
     dbc.CardBody(
         [
             dcc.Loading(
@@ -221,7 +221,7 @@ TOP_ORGANIZATIONS = [
 ]
 
 TOP_ORGANIZATIONS_ANALYSIS = [
-    dbc.CardHeader(html.H5("Organizations Analysis")),
+    dbc.CardHeader(html.H5("Companies Analysis")),
     dbc.CardBody(
         [
             dcc.Loading(
@@ -264,7 +264,7 @@ TOP_ORGANIZATIONS_ANALYSIS = [
 ]
 
 TOTALCOVID_CCAA = [
-    dbc.CardHeader(html.H5("Total accumulated positives by CCAA")),
+    dbc.CardHeader(html.H5("Total accumulated positives tests by region")),
     dbc.CardBody(
         [
             dcc.Loading(
@@ -285,9 +285,9 @@ TOTALCOVID_CCAA = [
                     ),
                     dcc.Graph(figure=px.bar(
                         dfCovidacumulado,
-                        title="Total accumulated positives by CCAA",
-                        x='CCAA',
-                        y='PCR',
+                        title="Total accumulated positives tests by region",
+                        x='ISO code',
+                        y='PCR+',
                         hover_data=['Link'],
                         template="plotly_white",
                     )
@@ -301,7 +301,7 @@ TOTALCOVID_CCAA = [
 ]
 
 DATACOVID_CCAA = [
-    dbc.CardHeader(html.H5("PCR, hospitalizations and UCI by date and CCAA")),
+    dbc.CardHeader(html.H5("Evolution of number of hospitalizations, deaths and ICU by region")),
     dbc.CardBody(
         [
             dcc.Loading(
@@ -326,7 +326,8 @@ DATACOVID_CCAA = [
                     dcc.Graph(id='graph-PCR-CCAA'),
                     dcc.Graph(id='graph-AC-CCAA'),
                     dcc.Graph(id='graph-UCI-CCAA'),
-                    dcc.Graph(id='graph-HOS-CCAA')
+                    dcc.Graph(id='graph-HOS-CCAA'),
+                    dcc.Graph(id='graph-DEATH-CCAA')
                 ],
                 type="default",
             )
@@ -336,7 +337,7 @@ DATACOVID_CCAA = [
 ]
 
 DATACOVID_BY_CCAA = [
-    dbc.CardHeader(html.H5("PCR, hospitalizations and UCI by date and CCAA")),
+    dbc.CardHeader(html.H5("Number of PCR+, hospitalizations and ICU by date and region")),
     dbc.CardBody(
         [
             dcc.Loading(
@@ -356,7 +357,7 @@ DATACOVID_BY_CCAA = [
                         options=optionsCCAA,
                         multi=False,
                         value="MD",
-                        placeholder="Select the CCAA to see data below",
+                        placeholder="Select the region to see data below",
                         style={
                             'width': '1000px',
                         },
@@ -433,7 +434,7 @@ def update_figure2(product, dates):
     df1 = queries.getQ03(product)
     dfTemp = df1[
         (df1['Date'].dt.isocalendar().week >= dates[0]) & (df1['Date'].dt.isocalendar().week <= dates[1])]
-    fig = px.line(dfTemp, x="Date", y="Quantity", template="plotly_white", title="Evolution of "+product+" and pending quantity")
+    fig = px.line(dfTemp, x="Date", y="Quantity", template="plotly_white", title="Evolution of the product selected and pending quantity")
     fig.update_traces(line_color='#304281')
     fig2 = px.bar(dfTemp, x="Date", y="Quantity Pending")
     fig2.update_traces(marker_color='red')
@@ -452,7 +453,7 @@ def update_figure3(dates):
         title="Evolution of ordered products by Organization",
         x="Date",
         y="Number of contracts",
-        color="Organization",
+        color="Company",
         template="plotly_white",
     )
     fig.update_layout(transition_duration=500)
@@ -467,7 +468,7 @@ def update_figure31(dates):
     dfTemp = dfTemp[(dfTemp['Date'].dt.isocalendar().week>=dates[0]) & (dfTemp['Date'].dt.isocalendar().week<=dates[1])]
     fig = px.line(
         dfTemp,
-        title="Evolution of contracts satisfied",
+        title="Evolution of contract satisfied percentage",
         x="Date",
         y="Contracts satisfied",
         template="plotly_white",
@@ -486,7 +487,7 @@ def update_figure4(organization, dates):
                 dfTemp['Date'].dt.isocalendar().week <= dates[1])]
     fig = px.line(
         dfTemp,
-        title="Evolution of contracts satisfied by "+organization,
+        title="Evolution of the company selected by its contract satisfied percentage",
         x="Date",
         y="Contracts satisfied",
         template="plotly_white",
@@ -520,7 +521,7 @@ def update_figure6(product, dates):
     df1 = queries.getQ03_1(product)
     dfTemp = df1[
         (df1['Date'].dt.isocalendar().week >= dates[0]) & (df1['Date'].dt.isocalendar().week <= dates[1])]
-    fig = px.bar(dfTemp, x="Date", y="Requested times", template="plotly_white", title="Evolution of "+product+" requested")
+    fig = px.bar(dfTemp, x="Date", y="Requested times", template="plotly_white", title="Evolution of the service selected and requested times")
     # fig2 = px.line(dfTemp, x="Date", y="Pending Amount")
     # fig.add_trace(fig2.data[0])
     fig.update_layout(transition_duration=500)
@@ -534,9 +535,9 @@ def update_figure9(dates):
     dfTemp = dfCovid[(dfCovid['Date'].dt.isocalendar().week>=dates[0]) & (dfCovid['Date'].dt.isocalendar().week<=dates[1])]
     fig = px.line(
         dfTemp,
-        title="Evolution of PCR tests by CCAA",
+        title="Evolution of PCR+ tests by region",
         x="Date",
-        y="PCR",
+        y="PCR+",
         color="CCAA",
         template="plotly_white",
     )
@@ -551,9 +552,9 @@ def update_figure9_1(dates):
     dfTemp = dfCovid[(dfCovid['Date'].dt.isocalendar().week>=dates[0]) & (dfCovid['Date'].dt.isocalendar().week<=dates[1])]
     fig = px.line(
         dfTemp,
-        title="Evolution of AC tests by CCAA",
+        title="Evolution of AC+ tests by region",
         x="Date",
-        y="AC",
+        y="AC+",
         color="CCAA",
         template="plotly_white",
     )
@@ -568,7 +569,7 @@ def update_figure10(dates):
     dfTemp = dfCovid[(dfCovid['Date'].dt.isocalendar().week>=dates[0]) & (dfCovid['Date'].dt.isocalendar().week<=dates[1])]
     fig = px.line(
         dfTemp,
-        title="Evolution of Hospitalizations by CCAA ",
+        title="Evolution of Hospitalizations by region ",
         x="Date",
         y="Hospitalizations",
         color="CCAA",
@@ -585,9 +586,9 @@ def update_figure11(dates):
     dfTemp = dfCovid[(dfCovid['Date'].dt.isocalendar().week>=dates[0]) & (dfCovid['Date'].dt.isocalendar().week<=dates[1])]
     fig = px.line(
         dfTemp,
-        title="Evolution of UCI by CCAA ",
+        title="Evolution of ICU by region ",
         x="Date",
-        y="UCI",
+        y="ICU",
         color="CCAA",
         template="plotly_white",
     )
@@ -596,23 +597,37 @@ def update_figure11(dates):
     return fig
 
 @app.callback(
+    Output('graph-DEATH-CCAA', 'figure'),
+    [Input('date-slider-ccaa', 'value')])
+def update_figure10_1(dates):
+    dfTemp = dfCovid[(dfCovid['Date'].dt.isocalendar().week>=dates[0]) & (dfCovid['Date'].dt.isocalendar().week<=dates[1])]
+    fig = px.line(
+        dfTemp,
+        title="Evolution of deaths by region ",
+        x="Date",
+        y="Deaths",
+        color="CCAA",
+        template="plotly_white",
+    )
+    fig.update_layout(transition_duration=500)
+    return fig
+
+
+@app.callback(
     Output('graph-by-ccaa', 'figure'),
     [Input('dropdown-ccaa', 'value')])
 def update_figure11(ccaa):
     df = queries.getDataCovidByCcaa(ccaa)
     fig = go.Figure()
-    fig.add_trace(go.Scatter(x=df["Date"], y=df["PCR"],
-                             mode='lines',
-                             name='PCR'))
     fig.add_trace(go.Scatter(x=df["Date"], y=df["Hospitalizations"],
                              mode='lines',
                              name='Hospitalizations'))
-    fig.add_trace(go.Scatter(x=df["Date"], y=df["UCI"],
+    fig.add_trace(go.Scatter(x=df["Date"], y=df["ICU"],
                              mode='lines',
-                             name='UCI'))
-    fig.add_trace(go.Scatter(x=df["Date"], y=df["AC"],
+                             name='ICU'))
+    fig.add_trace(go.Scatter(x=df["Date"], y=df["Deaths"],
                              mode='lines',
-                             name='AC'))
+                             name='Deaths'))
     fig.update_layout(transition_duration=500)
 
     return fig

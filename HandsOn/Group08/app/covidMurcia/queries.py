@@ -25,13 +25,13 @@ o= Namespace("http://www.w3.org/2002/07/owl#")
 def getQ01():
   q01 = prepareQuery('''
       SELECT
-         ?prod (SUM(?quantity) as ?totalQuantity)
+         ?prod (SUM(?quantity) as ?totalQuantity) (SUM(?pending) as ?pending)
       WHERE {
-
          ?order s:orderedItem ?pr.
          ?pr rdf:type s:Product.
          ?pr s:name ?prod.
          ?order ex:hasProductQuantity ?quantity.
+         ?order ex:hasProductQuantityPending ?pending.
       }
       GROUP BY ?pr
       ORDER BY DESC(?totalQuantity) ?prod
@@ -40,7 +40,7 @@ def getQ01():
                      initNs={"s": s, "ex": ex}
                      )
   output = g.query(q01)
-  df = pd.DataFrame(output, columns=["Product", "Quantity"])
+  df = pd.DataFrame(output, columns=["Product", "Quantity", "Quantity pending"])
   return df
 
 
@@ -329,7 +329,7 @@ def getQ06_1():
 def getQ07():
   q07 = prepareQuery('''
       SELECT
-        ?iso ?link ?fecha ?na ?np ?nh ?nu
+        ?iso ?link ?fecha ?na ?np ?nh ?nu ?nd
       WHERE {
 
         ?CCAA ex:hasCovidStatus  ?CS.
@@ -339,6 +339,7 @@ def getQ07():
         ?CS ex:numPositivePCR ?np.
         ?CS ex:numberHospitalizations ?nh.
         ?CS ex:numberUCI ?nu.
+        ?CS ex:numberDeaths ?nd.
         ?CS ex:inDate ?fecha .
 
       }
@@ -349,7 +350,7 @@ def getQ07():
                      initNs={"s": s, "ex": ex, "o": o}
                      )
 
-  df = pd.DataFrame(g.query(q07), columns=['CCAA', 'Link', 'Date', 'AC', 'PCR', 'Hospitalizations', 'UCI'])
+  df = pd.DataFrame(g.query(q07), columns=['CCAA', 'Link', 'Date', 'AC+', 'PCR+', 'Hospitalizations', 'ICU','Deaths'])
   df["Date"] = df["Date"].astype(str)
   df['Date'] = pd.to_datetime(df['Date'])
   return df
@@ -386,7 +387,7 @@ def getQ07_01(date):
                        initNs={"s": s, "ex": ex, "o": o}
                        )
   r = g.query(q07_1, initBindings={'?date': Literal(date, datatype=s + "Date")})
-  df = pd.DataFrame(r, columns=['CCAA', 'Link', 'AC', 'PCR', 'Hospitalizations', 'UCI'])
+  df = pd.DataFrame(r, columns=['CCAA', 'Link', 'AC+', 'PCR+', 'Hospitalizations', 'ICU'])
   return df
 
 
@@ -402,9 +403,10 @@ def getQ08():
   # Incidencia acumulada hasta el final de las fechas por comunidades
   q08 = prepareQuery('''
       SELECT
-          ?iso ?link (SUM(?na) as ?nCount) (SUM(?np) as ?npCount) 
+          ?name ?iso ?link (SUM(?na) as ?nCount) (SUM(?np) as ?npCount) 
       WHERE {       
         ?CCAA ex:hasISOCode ?iso.
+        ?CCAA s:name ?name.
         ?CCAA o:sameAs ?link.
         ?CCAA ex:hasCovidStatus ?CS.  
         ?CS ex:numPositiveAC ?na.
@@ -412,14 +414,13 @@ def getQ08():
         ?CS ex:numPositivePCR ?np.
         ?CS ex:numberHospitalizations ?nh.
         ?CS ex:numberUCI ?nu. 
-
       }
       GROUP BY ?CCAA
       ORDER BY DESC(?npCount)
       ''',
-                     initNs={"s": s, "ex": ex, "o": o}
-                     )
-  df = pd.DataFrame(g.query(q08), columns=['CCAA', 'Link', 'AC', 'PCR'])
+         initNs={"s": s, "ex": ex, "o": o}
+      )
+  df = pd.DataFrame(g.query(q08), columns=['Region', 'ISO code', 'Link', 'AC+', 'PCR+'])
   return df
 
 
@@ -510,7 +511,7 @@ def getQ10():
       )
 
     output = g.query(q10)
-    df = pd.DataFrame(output, columns=["Organization", "Link", "Total Amount", "Number of contracts"])
+    df = pd.DataFrame(output, columns=["Company", "Link", "Total Amount", "Number of contracts"])
 
     print()
     #notFinisehd
@@ -530,8 +531,8 @@ def getQ10():
       )
 
     output2 = g.query(q10_1)
-    df2 = pd.DataFrame(output2, columns=["Organization", "Number of contracts pending"])
-    df_final = pd.merge(left=df, right=df2, on="Organization")
+    df2 = pd.DataFrame(output2, columns=["Company", "Number of contracts pending"])
+    df_final = pd.merge(left=df, right=df2, on="Company")
 
     return df_final
 
@@ -607,16 +608,16 @@ def getQuantityTopServices():
     return df
 
 def getQuantityTopOrganizations():
-    df = pd.DataFrame(columns=["Organization", "Date", "Number of contracts"])
-    for i in getQ10()["Organization"]:
+    df = pd.DataFrame(columns=["Company", "Date", "Number of contracts"])
+    for i in getQ10()["Company"]:
         dfi=getQ12(i)
-        dfi["Organization"]=i
+        dfi["Company"]=i
         df=pd.concat([df, dfi])
     return df
 
 def getQuantityTopOrganizationsProjects():
     df = pd.DataFrame(columns=["Date", "Contracts satisfied"])
-    for i in getQ10()["Organization"]:
+    for i in getQ10()["Company"]:
         dfi=getQ11_1(i)
         df=pd.concat([df, dfi])
     df = df.groupby(by=["Date"]).mean()
