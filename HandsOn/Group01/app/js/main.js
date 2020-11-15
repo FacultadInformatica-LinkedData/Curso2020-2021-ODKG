@@ -1,18 +1,41 @@
-var dataJSON = '[{"FeeType":"Domestic POS Declined Fee","FeeDescription":"per declined transaction","FeeAmount":"0.50"},{"FeeType":"Domestic PIN Declined Fee","FeeDescription":"per declined transaction","FeeAmount":"0.50"},{"FeeType":"International POS Declined Fee","FeeDescription":"per declined transaction","FeeAmount":"0.95"},{"FeeType":"International PIN Declined Fee ","FeeDescription":"per declined transaction","FeeAmount":"0.95"},{"FeeType":"ATM Domestic Fee <sup>1</sup>","FeeDescription":"One (1) no cost ATM withdrawal per deposit1, then $1.75 per transaction thereafter","FeeAmount":"1.75"},{"FeeType":"Domestic ATM Balance Inquiry Fee <sup>1</sup>","FeeDescription":"per ATM Balance Inquiry","FeeAmount":"0.50"},{"FeeType":"Domestic ATM Declined Fee <sup>1</sup>","FeeDescription":"per declined transaction","FeeAmount":"0.50"},{"FeeType":"International ATM Withdrawal Fee <sup>1</sup>","FeeDescription":"per transaction","FeeAmount":"3.00"},{"FeeType":"International ATM Balance Fee ","FeeDescription":"per ATM Balance Inquiry","FeeAmount":"0.95"},{"FeeType":"International ATM Declined Fee","FeeDescription":"per declined transaction","FeeAmount":"0.95"},{"FeeType":"OTC Withdrawal Fee","FeeDescription":"per transaction","FeeAmount":"4.00"},{"FeeType":"International OTC Withdrawal Fee","FeeDescription":"per transaction","FeeAmount":"4.00"},{"FeeType":"Currency Conversion Fee","FeeDescription":"3% of transaction amount","FeeAmount":"3.00%"},{"FeeType":"Card Replacement Fee","FeeDescription":"One (1) no cost replacement per calendar year or upon expiration; $5.00 per request thereafter for lost, stolen, and damaged cards.","FeeAmount":"5.00"},{"FeeType":" Expedited Card Replacement Fee ","FeeDescription":"$20.00 (per Card; an additional fee when a Card is reissued or replaced for any reason with requested expedited delivery)","FeeAmount":"20.00"},{"FeeType":"Check Refund Fee","FeeDescription":"$12.50 per refund check (When a refund check is issued for the remaining Card balance.","FeeAmount":"12.5"}]';
+var dataJSON = '[{"Code":"435236534654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Abierto","Type of contract":"fegverbtrehb","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte"},{"Code":"3334654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Abierto","Type of contract":"fegverbtrehb","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte"},{"Code":"435236534654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Abierto","Type of contract":"fegverbtrehb","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte"},{"Code":"435236534654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Abierto","Type of contract":"fegverbtrehb","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte"}]';
 
 var dataObject = JSON.parse(dataJSON);
 var listItemString = $('#listItem').html();
 
 dataObject.forEach(buildNewList);
+$('#listItem').remove();
+
+var lookupCodes = {};
+var listCodes = [];
+for (var item, i = 0; item = dataObject[i++];) {
+  var code = item.Code;
+  if (!(code in lookupCodes)) {
+    lookupCodes[code] = 1;
+    listCodes.push(code);
+  }
+}
 
 function buildNewList(item, index) {
-  var listItem = $('<li>' + listItemString + '</li>');
-  var listItemTitle = $('.title', listItem);
-  listItemTitle.html(item.FeeType);
-  var listItemAmount = $('.amount', listItem);
-  listItemAmount.html(item.FeeAmount);
-  var listItemDesc = $('.description', listItem);
-  listItemDesc.html(item.FeeDescription);
+  var cssItem = "mix color-2 check1 radio3 option1";
+  var listItem = $('<li class="' + cssItem + '">' + listItemString + '</li>');
+
+  var listItemCode = $('.code', listItem);
+  listItemCode.html(item.Code);
+  var listItemDescription = $('.description', listItem);
+  listItemDescription.html(item.Description);
+  var listItemGovernmentRequester = $('.governmentRequester', listItem);
+  listItemGovernmentRequester.html(item.GovernmentRequester);
+  var listItemAwardProcedure = $('.awardProcedure', listItem);
+  listItemAwardProcedure.html(item.AwardProcedure);
+  var listItemTypeOfContract = $('.typeOfContract', listItem);
+  listItemTypeOfContract.html(item.TypeOfContract);
+  var listItemBiddingPrice = $('.biddingPrice', listItem);
+  listItemBiddingPrice.html(item.BiddingPrice + ' €');
+  var listItemAwardPrice = $('.awardPrice', listItem);
+  listItemAwardPrice.html(item.AwardPrice + ' €');
+  var listItemCompany = $('.company', listItem);
+  listItemCompany.html(item.Company);
   $('#dataList').append(listItem);
 }
 

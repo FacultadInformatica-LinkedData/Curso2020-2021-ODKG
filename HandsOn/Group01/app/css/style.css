@@ -301,7 +301,9 @@ xgallery
     transition: width 0.3s;
   }
   .cd-gallery li {
-    width: 23%;
+    width: 31%;
+    margin-left: 1%;
+    margin-right: 1%;
   }
   .cd-gallery.filter-is-visible {
     /* reduce width when filter is visible */
@@ -637,4 +639,19 @@ xcustom form elements
   .cd-filter-block .cd-select::after {
     display: none;
   }
+}
+
+.mix {
+    vertical-align: top;
+}
+
+.card {
+    background-color: white;
+    padding: 10px 15px;
+    height: 200px;
+    border-radius: 5px;
+    position: relative;
+}
+.card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
