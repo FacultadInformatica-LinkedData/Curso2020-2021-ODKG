@@ -95,7 +95,7 @@ mappings:
 
         
 
-    triplesmap4:
+  triplesmap4:
     sources:
       - [ingresos-with-links.csv~csv]
     s: default:Ingresos/$(ingresos)
@@ -117,7 +117,7 @@ mappings:
       - [economico:hasMonetaryValue,$(RECAUDADO),xsd:double]
 
 
-    #triplesmap5:
+  #triplesmap5:
     #sources:
     #  - [gastos-with-links.csv~csv]
     #s: default:Gastos/$(Descripcion Seccion)
@@ -130,7 +130,7 @@ mappings:
    #   - [owl:sameAs,$(wikiseccion)~iri]
 
 
-    triplesmap5:
+  triplesmap5:
     sources:
       - [gastos-with-links.csv~csv]
     s: default:Seccion/$(Descripcion Seccion)
