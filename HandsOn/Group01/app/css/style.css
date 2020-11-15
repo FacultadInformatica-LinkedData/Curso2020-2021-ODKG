@@ -524,6 +524,7 @@ xcustom form elements
   /* custom style for the search element */
   border-color: transparent;
   background-color: #e6e6e6;
+  border-radius: 5px;
   /* prevent jump - ios devices */
   font-size: 1.6rem !important;
 }

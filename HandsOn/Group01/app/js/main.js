@@ -1,4 +1,4 @@
-var dataJSON = '[{"Code":"435236534654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Abierto","TypeOfContract":"fegverbtrehb","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte"},{"Code":"3334654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Abierto","TypeOfContract":"fegverbtrehb","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deluitte A"},{"Code":"435236534654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Abierto","TypeOfContract":"fegverbtrehb","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte"},{"Code":"435236534654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Abierto","TypeOfContract":"fegverbtrehb","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte"}]';
+var dataJSON = '[{"Code":"435236534654","Description":"per declined transaction","GovernmentRequester":"aaa","AwardProcedure":"Abierto","TypeOfContract":"bbb","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte"},{"Code":"3334654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Abierto","TypeOfContract":"bbb","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deluitte A"},{"Code":"435236534654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Abierto","TypeOfContract":"ccc","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte"},{"Code":"435236534654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Abierto","TypeOfContract":"bbb","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte"}]';
 
 var dataObject = JSON.parse(dataJSON);
 var listItemString = $('#listItem').html();
@@ -39,6 +39,40 @@ for (var item, i = 0; item = dataObject[i++];) {
     lookupCompany[company] = 1;
     listCompany.push(company);
   }
+}
+
+listGovernmentRequester.forEach(addFilterGov);
+function addFilterGov(item, index) {
+  var html = "<li>" +
+    '<input class="filter" data-filter=".' + item + '" type="checkbox" id="' + item + '">' +
+    '<label class="checkbox-label" for="' + item + '">' + item + '</label>' +
+    "</li>";
+  $('#filter-GovernmentRequester').append(html);
+}
+
+listAwardProcedure.forEach(addFilterAward);
+function addFilterAward(item, index) {
+  var html = "<li>" +
+    '<input class="filter" data-filter=".' + item + '" type="checkbox" id="' + item + '">' +
+    '<label class="checkbox-label" for="' + item + '">' + item + '</label>' +
+    "</li>";
+  $('#filter-AwardProcedure').append(html);
+}
+
+listTypeOfContract.forEach(addFilterContract);
+function addFilterContract(item, index) {
+  var html = '<li class="filter" data-filter=".' + item + '"><a href="#0" data-type="' + item + '">' +
+    item + '</a></li>';
+  $('#filter-TypeOfContract').append(html);
+}
+
+listCompany.forEach(addFilterCompany);
+function addFilterCompany(item, index) {
+  var html = "<li>" +
+    '<input class="filter" data-filter=".' + item + '" type="checkbox" id="' + item + '">' +
+    '<label class="checkbox-label" for="' + item + '">' + item + '</label>' +
+    "</li>";
+  $('#filter-Company').append(html);
 }
 
 function buildNewList(item, index) {
