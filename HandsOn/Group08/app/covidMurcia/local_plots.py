@@ -4,32 +4,24 @@ import pandas as pd
 import plotly.express as px
 import queries
 from plotly.subplots import make_subplots
+import plotly.graph_objects as go
 
 def main():
-    dfQuantityTopProducts = queries.getQuantityTopProducts()
-    dfCovid = queries.getQ06()
-    fig = px.bar(
-        dfQuantityTopProducts,
-        title="Evolution of products ordered",
-        x="Date",
-        y="Quantity",
-        color="Product",
-        template="plotly_white",
-    )
-    fig2 = px.line(x=dfCovid["Date"], y=dfCovid["Number Hospitalizations"] )
+    df = queries.getDataCovidByCcaa("MD")
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(x=df["Date"], y=df["PCR"],
+                             mode='lines',
+                             name='PCR'))
+    fig.add_trace(go.Scatter(x=df["Date"], y=df["Hospitalizations"],
+                             mode='lines',
+                             name='Hospitalizations'))
+    fig.add_trace(go.Scatter(x=df["Date"], y=df["UCI"],
+                             mode='lines',
+                             name='UCI'))
+    fig.add_trace(go.Scatter(x=df["Date"], y=df["AC"],
+                             mode='lines',
+                             name='AC'))
 
-    fig2.update_traces(yaxis="y2")
-    subfig = make_subplots(specs=[[{"secondary_y": True}]])
-
-    subfig.add_traces(fig.data + fig2.data)
-    subfig.layout.xaxis.title = "Time"
-    subfig.layout.yaxis.title = "Linear Y"
-    subfig.layout.yaxis2.type = "log"
-    subfig.layout.yaxis2.title = "Log Y"
-    # recoloring is necessary otherwise lines from fig und fig2 would share each color
-    # e.g. Linear-, Log- = blue; Linear+, Log+ = red... we don't want this
-    subfig.for_each_trace(lambda t: t.update(line=dict(color=t.marker.color)))
-    subfig.show()
-
+    fig.show()
 if __name__ == "__main__":
     main()

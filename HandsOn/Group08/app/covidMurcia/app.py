@@ -21,10 +21,11 @@ dfQuantityTopOrganizations = queries.getQuantityTopOrganizations()
 optionsProducts = [{'label': i, 'value': i} for i in dfProducts["Product"]]
 optionsServices = [{'label': i, 'value': i} for i in dfServices["Service"]]
 optionsOrganizations = [{'label': i, 'value': i} for i in dfOrganizations["Organization"]]
-dfCovid=queries.getQ06()
+dfCovid = queries.getQ07()
+dfCovidacumulado=queries.getQ08()
+optionsCCAA =[{'label':i,'value':i} for i in dfCovid["CCAA"]]
 
-
-PLOTLY_LOGO = "https://images.plot.ly/logo/new-branding/plotly-logomark.png"
+PLOTLY_LOGO = "https://www.upm.es/sfs/Rectorado/Gabinete%20del%20Rector/Logos/UPM/Logotipo%20con%20Leyenda/LOGOTIPO%20leyenda%20color%20PNG.png"
 NAVBAR = dbc.Navbar(
     children=[
         html.A(
@@ -39,62 +40,13 @@ NAVBAR = dbc.Navbar(
                 align="center",
                 no_gutters=True,
             ),
-            href="https://plot.ly",
+            href="https://www.upm.es/sfs/Rectorado/Gabinete%20del%20Rector/Logos/UPM/Logotipo%20con%20Leyenda/LOGOTIPO%20leyenda%20color%20PNG.png",
         )
     ],
     color="dark",
     dark=True,
     sticky="top",
 )
-
-TOP_BIGRAM_PLOT = [
-    dbc.CardHeader(html.H5("Top bigrams found in the database")),
-    dbc.CardBody(
-        [
-            dcc.Loading(
-                id="loading-bigrams-scatter",
-                children=[
-                    dbc.Alert(
-                        "Something's gone wrong! Give us a moment, but try loading this page again if problem persists.",
-                        id="no-data-alert-bigrams",
-                        color="warning",
-                        style={"display": "none"},
-                    ),
-                    dbc.Row(
-                        [
-                            dbc.Col(html.P(["Choose a t-SNE perplexity value:"]), md=6),
-                            dbc.Col(
-                                [
-                                    dcc.Slider(
-                                        id='year-slider',
-                                        min=2001,
-                                        max=204,
-                                        value=2001,
-                                        marks={str(year): str(year) for year in [2001,2002,2003,4004]},
-                                        step=None
-                                    ),
-                                    dcc.Slider(
-                                        id='year-slider2',
-                                        min=2001,
-                                        max=204,
-                                        value=2001,
-                                        marks={str(year): str(year) for year in [2001,2002,2003,4004]},
-                                        step=None
-                                    )
-                                ],
-                                md=3,
-                            ),
-                        ]
-                    ),
-                    dcc.Graph(id='graph-with-slider'),
-                    dcc.Graph(id='graph-with-slider2'),
-                ],
-                type="default",
-            )
-        ],
-        style={"marginTop": 0, "marginBottom": 0},
-    ),
-]
 
 TOP_PRODUCTS_PLOT = [
     dbc.CardHeader(html.H5("Top 10 products ordered and its quantity")),
@@ -113,6 +65,30 @@ TOP_PRODUCTS_PLOT = [
                         id='table-top-products',
                         columns=[{"name": i, "id": i} for i in dfProducts.columns],
                         data=dfProducts.to_dict('records'),
+                        page_size=10,
+                        sort_action="native",
+                        sort_mode='multi',
+                    ),
+                ],
+                type="default",
+            )
+        ],
+        style={"marginTop": 0, "marginBottom": 0},
+    ),
+]
+
+TOP_PRODUCTS_PLOT_ANALYSIS = [
+    dbc.CardHeader(html.H5("Products Analysis")),
+    dbc.CardBody(
+        [
+            dcc.Loading(
+                id="loading-bigrams-scatter",
+                children=[
+                    dbc.Alert(
+                        "Something's gone wrong! Give us a moment, but try loading this page again if problem persists.",
+                        id="no-data-alert-bigrams",
+                        color="warning",
+                        style={"display": "none"},
                     ),
                     dbc.Col(
                         html.H5("Choose week range")
@@ -145,7 +121,7 @@ TOP_PRODUCTS_PLOT = [
 ]
 
 TOP_SERVICES_PLOT = [
-    dbc.CardHeader(html.H5("Services ordered")),
+    dbc.CardHeader(html.H5("Services data")),
     dbc.CardBody(
         [
             dcc.Loading(
@@ -161,6 +137,30 @@ TOP_SERVICES_PLOT = [
                         id='table-top-services',
                         columns=[{"name": i, "id": i} for i in dfServices.columns],
                         data=dfServices.to_dict('records'),
+                        page_size=10,
+                        sort_action="native",
+                        sort_mode='multi',
+                    ),
+                ],
+                type="default",
+            )
+        ],
+        style={"marginTop": 0, "marginBottom": 0},
+    ),
+]
+
+TOP_SERVICES_PLOT_ANALYSIS = [
+    dbc.CardHeader(html.H5("Services Analysis")),
+    dbc.CardBody(
+        [
+            dcc.Loading(
+                id="loading-bigrams-scatter",
+                children=[
+                    dbc.Alert(
+                        "Something's gone wrong! Give us a moment, but try loading this page again if problem persists.",
+                        id="no-data-alert-bigrams",
+                        color="warning",
+                        style={"display": "none"},
                     ),
                     dbc.Col(
                         html.H5("Choose week range")
@@ -208,6 +208,30 @@ TOP_ORGANIZATIONS = [
                         id='table-organizations',
                         columns=[{"name": i, "id": i} for i in dfOrganizations.columns],
                         data=dfOrganizations.to_dict('records'),
+                        page_size=10,
+                        sort_action="native",
+                        sort_mode='multi',
+                    ),
+                ],
+                type="default",
+            )
+        ],
+        style={"marginTop": 0, "marginBottom": 0},
+    ),
+]
+
+TOP_ORGANIZATIONS_ANALYSIS = [
+    dbc.CardHeader(html.H5("Organizations Analysis")),
+    dbc.CardBody(
+        [
+            dcc.Loading(
+                id="loading-bigrams-scatter",
+                children=[
+                    dbc.Alert(
+                        "Something's gone wrong! Give us a moment, but try loading this page again if problem persists.",
+                        id="no-data-alert-bigrams",
+                        color="warning",
+                        style={"display": "none"},
                     ),
                     dbc.Col(
                         html.H5("Choose week range")
@@ -239,8 +263,80 @@ TOP_ORGANIZATIONS = [
     ),
 ]
 
-PENDING_COVID = [
-    dbc.CardHeader(html.H5("Covid Compare")),
+TOTALCOVID_CCAA = [
+    dbc.CardHeader(html.H5("Total accumulated positives by CCAA")),
+    dbc.CardBody(
+        [
+            dcc.Loading(
+                id="loading-bigrams-scatter",
+                children=[
+                    dbc.Alert(
+                        "Something's gone wrong! Give us a moment, but try loading this page again if problem persists.",
+                        id="no-data-alert-bigrams",
+                        color="warning",
+                        style={"display": "none"},
+                    ),
+                    dash_table.DataTable(
+                        id='table-covid-ia',
+                        columns=[{"name": i, "id": i} for i in dfCovidacumulado.columns],
+                        data=dfCovidacumulado.to_dict('records'),
+                        sort_action="native",
+                        sort_mode='multi',
+                    ),
+                    dcc.Graph(figure=px.bar(
+                        dfCovidacumulado,
+                        title="Total accumulated positives by CCAA",
+                        x='CCAA',
+                        y='PCR',
+                        hover_data=['Link'],
+                        template="plotly_white",
+                    )
+                    ),
+                ],
+                type="default",
+            )
+        ],
+        style={"marginTop": 0, "marginBottom": 0},
+    ),
+]
+
+DATACOVID_CCAA = [
+    dbc.CardHeader(html.H5("PCR, hospitalizations and UCI by date and CCAA")),
+    dbc.CardBody(
+        [
+            dcc.Loading(
+                id="loading-bigrams-scatter",
+                children=[
+                    dbc.Alert(
+                        "Something's gone wrong! Give us a moment, but try loading this page again if problem persists.",
+                        id="no-data-alert-bigrams",
+                        color="warning",
+                        style={"display": "none"},
+                    ),
+                    dbc.Col(
+                        html.H5("\nChoose week range")
+                    ),
+                    dcc.RangeSlider(
+                        id='date-slider-ccaa',
+                        marks={i: '{}'.format(i) for i in range(min(dfCovid['Date']).week, max(dfCovid['Date']).week)},
+                        min= min(dfCovid['Date']).week,
+                        max= max(dfCovid['Date']).week,
+                        value=[min(dfCovid['Date']).week, max(dfCovid['Date']).week]
+                    ),
+                    dcc.Graph(id='graph-PCR-CCAA'),
+                    dcc.Graph(id='graph-AC-CCAA'),
+                    dcc.Graph(id='graph-UCI-CCAA'),
+                    dcc.Graph(id='graph-HOS-CCAA')
+                ],
+                type="default",
+            )
+        ],
+        style={"marginTop": 0, "marginBottom": 0},
+    ),
+]
+
+DATACOVID_BY_CCAA = [
+    dbc.CardHeader(html.H5("PCR, hospitalizations and UCI by date and CCAA")),
     dbc.CardBody(
         [
             dcc.Loading(
@@ -255,14 +351,17 @@ PENDING_COVID = [
                     dbc.Col(
                         html.H5("Choose week range")
                     ),
-                    dcc.RangeSlider(
-                        id='date-slider-covid',
-                        marks={i: '{}'.format(i) for i in range(min(dfCovid['Date']).week, max(dfCovid['Date']).week)},
-                        min= min(dfCovid['Date']).week,
-                        max= max(dfCovid['Date']).week,
-                        value=[min(dfCovid['Date']).week, max(dfCovid['Date']).week]
+                    dcc.Dropdown(
+                        id='dropdown-ccaa',
+                        options=optionsCCAA,
+                        multi=False,
+                        value="MD",
+                        placeholder="Select the CCAA to see data below",
+                        style={
+                            'width': '1000px',
+                        },
                     ),
-                    dcc.Graph(id='graph-pending-covid'),
+                    dcc.Graph(id='graph-by-ccaa'),
                 ],
                 type="default",
             )
@@ -271,9 +370,13 @@ PENDING_COVID = [
     ),
 ]
 
+
 BODY_COVID = dbc.Container(
     [
-        dbc.Row([dbc.Col(html.P(["Choose a t-SNE perplexity value:"]), md=6),], style={"marginTop": 30}),
+        dbc.Row([dbc.Col(dbc.Card(TOTALCOVID_CCAA)),],style={"marginTop":30}),
+        dbc.Row([dbc.Col(dbc.Card(DATACOVID_CCAA)),],style={"marginTop":30}),
+        dbc.Row([dbc.Col(dbc.Card(DATACOVID_BY_CCAA)), ], style={"marginTop": 30}),
+
     ],
     className="mt-12",
 )
@@ -281,10 +384,11 @@ BODY_COVID = dbc.Container(
 BODY_MURCIA = dbc.Container(
     [
         dbc.Row([dbc.Col(dbc.Card(TOP_PRODUCTS_PLOT)),], style={"marginTop": 30}),
+        dbc.Row([dbc.Col(dbc.Card(TOP_PRODUCTS_PLOT_ANALYSIS)), ], style={"marginTop": 30}),
         dbc.Row([dbc.Col(dbc.Card(TOP_SERVICES_PLOT)), ], style={"marginTop": 30}),
+        dbc.Row([dbc.Col(dbc.Card(TOP_SERVICES_PLOT_ANALYSIS)), ], style={"marginTop": 30}),
         dbc.Row([dbc.Col(dbc.Card(TOP_ORGANIZATIONS)),], style={"marginTop": 30}),
-        dbc.Row([dbc.Col(dbc.Card(PENDING_COVID)), ], style={"marginTop": 30}),
-
+        dbc.Row([dbc.Col(dbc.Card(TOP_ORGANIZATIONS_ANALYSIS)), ], style={"marginTop": 30}),
     ],
     className="mt-12",
 )
@@ -294,7 +398,7 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 app.config['suppress_callback_exceptions'] = True
 
 app.layout = html.Div([NAVBAR,
-    dcc.Tabs(id="tabs", value='Murcia Public Procurement', children=[
+    dcc.Tabs(id="tabs", value='COVID Analysis', children=[
         dcc.Tab(label='COVID Analysis', value='COVID Analysis'),
         dcc.Tab(label='Murcia Public Procurement', value='Murcia Public Procurement'),
     ]),
@@ -422,17 +526,93 @@ def update_figure6(product, dates):
     fig.update_layout(transition_duration=500)
     return fig
 
+
 @app.callback(
-    Output('graph-pending-covid', 'figure'),
-    [Input('date-slider-covid', 'value')])
-def update_figure7(dates):
+    Output('graph-PCR-CCAA', 'figure'),
+    [Input('date-slider-ccaa', 'value')])
+def update_figure9(dates):
     dfTemp = dfCovid[(dfCovid['Date'].dt.isocalendar().week>=dates[0]) & (dfCovid['Date'].dt.isocalendar().week<=dates[1])]
-    dfTemp["size"]=dfTemp["Quantity pending"]/1000
-    fig = px.line(dfTemp,
-                     title="Evolution of covid compared with pending orders",
-                     x="Date",
-                     y="Number Hospitalizations",
-                     )
+    fig = px.line(
+        dfTemp,
+        title="Evolution of PCR tests by CCAA",
+        x="Date",
+        y="PCR",
+        color="CCAA",
+        template="plotly_white",
+    )
+    fig.update_layout(transition_duration=500)
+
+    return fig
+
+@app.callback(
+    Output('graph-AC-CCAA', 'figure'),
+    [Input('date-slider-ccaa', 'value')])
+def update_figure9_1(dates):
+    dfTemp = dfCovid[(dfCovid['Date'].dt.isocalendar().week>=dates[0]) & (dfCovid['Date'].dt.isocalendar().week<=dates[1])]
+    fig = px.line(
+        dfTemp,
+        title="Evolution of AC tests by CCAA",
+        x="Date",
+        y="AC",
+        color="CCAA",
+        template="plotly_white",
+    )
+    fig.update_layout(transition_duration=500)
+
+    return fig
+
+@app.callback(
+    Output('graph-HOS-CCAA', 'figure'),
+    [Input('date-slider-ccaa', 'value')])
+def update_figure10(dates):
+    dfTemp = dfCovid[(dfCovid['Date'].dt.isocalendar().week>=dates[0]) & (dfCovid['Date'].dt.isocalendar().week<=dates[1])]
+    fig = px.line(
+        dfTemp,
+        title="Evolution of Hospitalizations by CCAA ",
+        x="Date",
+        y="Hospitalizations",
+        color="CCAA",
+        template="plotly_white",
+    )
+    fig.update_layout(transition_duration=500)
+
+    return fig
+
+@app.callback(
+    Output('graph-UCI-CCAA', 'figure'),
+    [Input('date-slider-ccaa', 'value')])
+def update_figure11(dates):
+    dfTemp = dfCovid[(dfCovid['Date'].dt.isocalendar().week>=dates[0]) & (dfCovid['Date'].dt.isocalendar().week<=dates[1])]
+    fig = px.line(
+        dfTemp,
+        title="Evolution of UCI by CCAA ",
+        x="Date",
+        y="UCI",
+        color="CCAA",
+        template="plotly_white",
+    )
+    fig.update_layout(transition_duration=500)
+
+    return fig
+
+@app.callback(
+    Output('graph-by-ccaa', 'figure'),
+    [Input('dropdown-ccaa', 'value')])
+def update_figure11(ccaa):
+    df = queries.getDataCovidByCcaa(ccaa)
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(x=df["Date"], y=df["PCR"],
+                             mode='lines',
+                             name='PCR'))
+    fig.add_trace(go.Scatter(x=df["Date"], y=df["Hospitalizations"],
+                             mode='lines',
+                             name='Hospitalizations'))
+    fig.add_trace(go.Scatter(x=df["Date"], y=df["UCI"],
+                             mode='lines',
+                             name='UCI'))
+    fig.add_trace(go.Scatter(x=df["Date"], y=df["AC"],
+                             mode='lines',
+                             name='AC'))
     fig.update_layout(transition_duration=500)
 
     return fig
@@ -441,7 +621,7 @@ def update_figure7(dates):
               [Input('tabs', 'value')])
 def render_content(tab):
     if tab == 'COVID Analysis':
-        return html.Div()
+        return html.Div(BODY_COVID)
     elif tab == 'Murcia Public Procurement':
         return html.Div(BODY_MURCIA)
 

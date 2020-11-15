@@ -415,7 +415,7 @@ def getQ08():
 
       }
       GROUP BY ?CCAA
-
+      ORDER BY DESC(?npCount)
       ''',
                      initNs={"s": s, "ex": ex, "o": o}
                      )
@@ -530,7 +530,7 @@ def getQ10():
       )
 
     output2 = g.query(q10_1)
-    df2 = pd.DataFrame(output2, columns=["Organization", "Number of contracts not finished"])
+    df2 = pd.DataFrame(output2, columns=["Organization", "Number of contracts pending"])
     df_final = pd.merge(left=df, right=df2, on="Organization")
 
     return df_final
@@ -672,3 +672,11 @@ def getQ11_1(organization):
     df["Date"] = df["Date"].astype(str)
     df['Date'] = pd.to_datetime(df['Date'])
     return df
+
+
+def getDataCovidByCcaa(ccaa):
+    df = getQ07()
+    df["CCAA"] = df["CCAA"].astype(str)
+    newdf = df[df["CCAA"] == ccaa]
+    return newdf
+
