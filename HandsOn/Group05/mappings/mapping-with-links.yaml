@@ -7,7 +7,7 @@ mappings:
       - ['TED_CN_2018-updated-with-links.csv~csv']
     s: vocab:$(CAE_ID)
     po:
-      - [a, owl:Class]
+      - [a, vocab:CAE]
       - [vocab:hasCountryCode, $(ISO_COUNTRY_CODE)]
       - [vocab:hasName, $(CAE_NAME)]
       - [vocab:hasNationalID, $(CAE_NATIONALID)]
@@ -20,7 +20,7 @@ mappings:
       - ['TED_CN_2018-updated-with-links.csv~csv']
     s: vocab:$(NOTICE_ID)
     po:
-      - [a, owl:Class]
+      - [a, vocab:Notice]
       - p: vocab:hasCAE
         o:
             mapping: CAE
