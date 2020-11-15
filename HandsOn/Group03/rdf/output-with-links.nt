@@ -4947,7 +4947,7 @@
 <http://www.odkggroup3/ontology#Jonqui%C3%A8re> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#City>.
 <http://www.odkggroup3/ontology#Jonqui%C3%A8re> <http://www.odkggroup3/ontology#hasProvState> "Quebec"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Jonqui%C3%A8re> <http://www.odkggroup3/ontology#hasCountry> "Canada"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Jonqui%C3%A8re> <http://www.w3.org/2000/01/rdf-schema#label> "Jonquière".
+<http://www.odkggroup3/ontology#Jonqui%C3%A8re> <http://www.w3.org/2000/01/rdf-schema#label> "Jonquiere".
 <http://www.odkggroup3/ontology#Jonqui%C3%A8re> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q63243314>.
 <http://www.odkggroup3/ontology#Mission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#City>.
 <http://www.odkggroup3/ontology#Mission> <http://www.odkggroup3/ontology#hasProvState> "British Columbia"^^<http://www.w3.org/2001/XMLSchemastring>.
@@ -5117,7 +5117,7 @@
 <http://www.odkggroup3/ontology#Cap-Pel%C3%A9%2C%20New%20Brunswick> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#City>.
 <http://www.odkggroup3/ontology#Cap-Pel%C3%A9%2C%20New%20Brunswick> <http://www.odkggroup3/ontology#hasProvState> "New Brunswick"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Cap-Pel%C3%A9%2C%20New%20Brunswick> <http://www.odkggroup3/ontology#hasCountry> "Canada"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Cap-Pel%C3%A9%2C%20New%20Brunswick> <http://www.w3.org/2000/01/rdf-schema#label> "Cap-Pelé, New Brunswick".
+<http://www.odkggroup3/ontology#Cap-Pel%C3%A9%2C%20New%20Brunswick> <http://www.w3.org/2000/01/rdf-schema#label> "Cap-Pele, New Brunswick".
 <http://www.odkggroup3/ontology#Cap-Pel%C3%A9%2C%20New%20Brunswick> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q2936962>.
 <http://www.odkggroup3/ontology#Tignish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#City>.
 <http://www.odkggroup3/ontology#Tignish> <http://www.odkggroup3/ontology#hasProvState> "Prince Edward Island"^^<http://www.w3.org/2001/XMLSchemastring>.
@@ -5137,7 +5137,7 @@
 <http://www.odkggroup3/ontology#Saint-Hubert-de-Rivi%C3%A8re-du-Loup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#City>.
 <http://www.odkggroup3/ontology#Saint-Hubert-de-Rivi%C3%A8re-du-Loup> <http://www.odkggroup3/ontology#hasProvState> "Quebec"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Saint-Hubert-de-Rivi%C3%A8re-du-Loup> <http://www.odkggroup3/ontology#hasCountry> "Canada"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Saint-Hubert-de-Rivi%C3%A8re-du-Loup> <http://www.w3.org/2000/01/rdf-schema#label> "Saint-Hubert-de-Rivière-du-Loup".
+<http://www.odkggroup3/ontology#Saint-Hubert-de-Rivi%C3%A8re-du-Loup> <http://www.w3.org/2000/01/rdf-schema#label> "Saint-Hubert-de-Riviere-du-Loup".
 <http://www.odkggroup3/ontology#Saint-Hubert-de-Rivi%C3%A8re-du-Loup> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q3462425>.
 <http://www.odkggroup3/ontology#Richmond%20Hill> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#City>.
 <http://www.odkggroup3/ontology#Richmond%20Hill> <http://www.odkggroup3/ontology#hasProvState> "Ontario"^^<http://www.w3.org/2001/XMLSchemastring>.
