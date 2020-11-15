@@ -20,9 +20,9 @@
 	<main class="cd-main-content">
 		<div class="cd-tab-filter-wrapper">
 			<div class="cd-tab-filter">
-				<ul class="cd-filters">
+				<ul class="cd-filters" id="cd-filters">
 					<li class="placeholder">
-						<a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+						<a data-type="all" href="#0">All contracts</a> <!-- selected option on mobile -->
 					</li>
 					<li class="filter"><a class="selected" href="#0" data-type="all">All contracts</a></li>
 					<li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Color 1</a></li>
@@ -63,16 +63,14 @@
 			<form>
 				<div class="cd-filter-block">
 					<h4>Search</h4>
-
 					<div class="cd-filter-content">
 						<input type="search" placeholder="Try a company...">
 					</div> <!-- cd-filter-content -->
 				</div> <!-- cd-filter-block -->
 
 				<div class="cd-filter-block">
-					<h4>Check boxes</h4>
-
-					<ul class="cd-filter-content cd-filters list">
+					<h4>Government Requesters</h4>
+					<ul class="cd-filter-content cd-filters list" id="filter-GovernmentRequester">
 						<li>
 							<input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
 			    			<label class="checkbox-label" for="checkbox1">Option 1</label>
@@ -87,8 +85,18 @@
 							<input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
 							<label class="checkbox-label" for="checkbox3">Option 3</label>
 						</li>
-					</ul> <!-- cd-filter-content -->
-				</div> <!-- cd-filter-block -->
+					</ul>
+				</div>
+
+				<div class="cd-filter-block">
+					<h4>Award Procedures</h4>
+					<ul class="cd-filter-content cd-filters list" id="filter-AwardProcedure"></ul>
+				</div>
+
+				<div class="cd-filter-block">
+					<h4>Companies</h4>
+					<ul class="cd-filter-content cd-filters list" id="filter-Companies"></ul>
+				</div>
 			</form>
 
 			<a href="#0" class="cd-close">Close</a>

@@ -1,4 +1,4 @@
-var dataJSON = '[{"Code":"435236534654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Abierto","Type of contract":"fegverbtrehb","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte"},{"Code":"3334654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Abierto","Type of contract":"fegverbtrehb","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte"},{"Code":"435236534654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Abierto","Type of contract":"fegverbtrehb","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte"},{"Code":"435236534654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Abierto","Type of contract":"fegverbtrehb","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte"}]';
+var dataJSON = '[{"Code":"435236534654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Abierto","TypeOfContract":"fegverbtrehb","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte"},{"Code":"3334654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Abierto","TypeOfContract":"fegverbtrehb","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deluitte A"},{"Code":"435236534654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Abierto","TypeOfContract":"fegverbtrehb","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte"},{"Code":"435236534654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Abierto","TypeOfContract":"fegverbtrehb","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte"}]';
 
 var dataObject = JSON.parse(dataJSON);
 var listItemString = $('#listItem').html();
@@ -6,18 +6,50 @@ var listItemString = $('#listItem').html();
 dataObject.forEach(buildNewList);
 $('#listItem').remove();
 
-var lookupCodes = {};
-var listCodes = [];
+/* Get unique list of elements */
+var lookupGovernmentRequester = {};
+var lookupAwardProcedure = {};
+var lookupTypeOfContract = {};
+var lookupCompany = {};
+
+var listGovernmentRequester = [];
+var listAwardProcedure = [];
+var listTypeOfContract = [];
+var listCompany = [];
+
 for (var item, i = 0; item = dataObject[i++];) {
-  var code = item.Code;
-  if (!(code in lookupCodes)) {
-    lookupCodes[code] = 1;
-    listCodes.push(code);
+  var gov      = item.GovernmentRequester;
+  var award    = item.AwardProcedure;
+  var contract = item.TypeOfContract;
+  var company  = item.Company;
+
+  if (!(gov in lookupGovernmentRequester)) {
+    lookupGovernmentRequester[gov] = 1;
+    listGovernmentRequester.push(gov);
+  }
+  if (!(award in lookupAwardProcedure)) {
+    lookupAwardProcedure[award] = 1;
+    listAwardProcedure.push(award);
+  }
+  if (!(contract in lookupTypeOfContract)) {
+    lookupTypeOfContract[contract] = 1;
+    listTypeOfContract.push(contract);
+  }
+  if (!(company in lookupCompany)) {
+    lookupCompany[company] = 1;
+    listCompany.push(company);
   }
 }
 
 function buildNewList(item, index) {
-  var cssItem = "mix color-2 check1 radio3 option1";
+  var cssItem = "mix " +
+    item.Code.replace(/\s/g, "") + " " +
+    item.GovernmentRequester.replace(/\s/g, "") + " " +
+    item.AwardProcedure.replace(/\s/g, "") + " " +
+    item.TypeOfContract.replace(/\s/g, "") + " " +
+    item.BiddingPrice.replace(/\s/g, "") + " " +
+    item.AwardPrice.replace(/\s/g, "") + " " +
+    item.Company.replace(/\s/g, "");
   var listItem = $('<li class="' + cssItem + '">' + listItemString + '</li>');
 
   var listItemCode = $('.code', listItem);
