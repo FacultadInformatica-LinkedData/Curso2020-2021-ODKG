@@ -6,7 +6,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix pproc: <http://contsem.unizar.es/def/sector-publico/pproc#> .
 @prefix pc: <http://purl.org/procurement/public-contracts#> .
-@prefix s: <http://schema.org/> .
+@prefix schema: <http://schema.org/> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
 @base <http://eit-upm-opendata.com/ted> .
 
 <http://eit-upm-opendata.com/ted> rdf:type owl:Ontology .
@@ -43,7 +44,7 @@ pc:mainObject rdf:type owl:FunctionalProperty ;
 
 
 ###  http://schema.org/addressCountry
-s:addressCountry rdf:type owl:DatatypeProperty ;
+schema:addressCountry rdf:type owl:DatatypeProperty ;
          rdfs:isDefinedBy <http://schema.org/> .
 
 
@@ -72,7 +73,7 @@ pproc:contractActivities rdf:type owl:DatatypeProperty ;
 
 
 ###  http://schema.org/name
-s:name rdf:type owl:DatatypeProperty ;
+schema:name rdf:type owl:DatatypeProperty ;
          rdfs:isDefinedBy <http://schema.org/> .
 
 
@@ -83,7 +84,7 @@ s:name rdf:type owl:DatatypeProperty ;
 
 
 ###  https://schema.org/postalCode
-s:postalCode rdf:type owl:DatatypeProperty ;
+schema:postalCode rdf:type owl:DatatypeProperty ;
                rdfs:domain pproc:ContractBodies ;
                rdfs:range xsd:string .
 
@@ -95,14 +96,19 @@ pproc:procedureType rdf:type owl:DatatypeProperty ;
 
 
 ###  https://schema.org/addressLocality
-s:addressLocality rdf:type owl:DatatypeProperty ;
+schema:addressLocality rdf:type owl:DatatypeProperty ;
          rdfs:isDefinedBy <http://schema.org/> .
 
 
-###  http://eit-upm-opendata.com/ted#hasValue
-:hasValue rdf:type owl:DatatypeProperty ;
+###  http://purl.org/goodrelations/v1#hasCurrencyValue
+gr:hasCurrencyValue rdf:type owl:DatatypeProperty ;
           rdfs:domain pproc:ContractNotice ;
           rdfs:range xsd:double .
+
+
+###  http://purl.org/goodrelations/v1#hasCurrency
+gr:hasCurrency rdf:type owl:DatatypeProperty ;                                                       		rdfs:domain pproc:ContractNotice ;
+        rdfs:range xsd:string .
 
 
 # ---- Boolean properties ----
@@ -162,5 +168,5 @@ pproc:ContractNotice rdf:type owl:Class .
 
 ###  http://eit-upm-opendata.com/ted#201871PL
 <http://eit-upm-opendata.com/ted#201871PL> rdf:type owl:NamedIndividual ,          pproc:ContractBodies ;
-                                                                                   s:name "Miejskie Wodociągi i Kanalizacja w Kędzierzynie-Koźlu Sp. z o.o."^^xsd:string ;
-                                                                                   s:postalCode "47-200"^^xsd:string .
+                                                                                   schema:name "Miejskie Wodociągi i Kanalizacja w Kędzierzynie-Koźlu Sp. z o.o."^^xsd:string ;
+                                                                                   schema:postalCode "47-200"^^xsd:string .
