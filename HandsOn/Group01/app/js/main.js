@@ -1,3 +1,5 @@
+var dataJSON = '[{"FeeType":"Domestic POS Declined Fee","FeeDescription":"per declined transaction","FeeAmount":"0.50"},{"FeeType":"Domestic PIN Declined Fee","FeeDescription":"per declined transaction","FeeAmount":"0.50"},{"FeeType":"International POS Declined Fee","FeeDescription":"per declined transaction","FeeAmount":"0.95"},{"FeeType":"International PIN Declined Fee ","FeeDescription":"per declined transaction","FeeAmount":"0.95"},{"FeeType":"ATM Domestic Fee <sup>1</sup>","FeeDescription":"One (1) no cost ATM withdrawal per deposit1, then $1.75 per transaction thereafter","FeeAmount":"1.75"},{"FeeType":"Domestic ATM Balance Inquiry Fee <sup>1</sup>","FeeDescription":"per ATM Balance Inquiry","FeeAmount":"0.50"},{"FeeType":"Domestic ATM Declined Fee <sup>1</sup>","FeeDescription":"per declined transaction","FeeAmount":"0.50"},{"FeeType":"International ATM Withdrawal Fee <sup>1</sup>","FeeDescription":"per transaction","FeeAmount":"3.00"},{"FeeType":"International ATM Balance Fee ","FeeDescription":"per ATM Balance Inquiry","FeeAmount":"0.95"},{"FeeType":"International ATM Declined Fee","FeeDescription":"per declined transaction","FeeAmount":"0.95"},{"FeeType":"OTC Withdrawal Fee","FeeDescription":"per transaction","FeeAmount":"4.00"},{"FeeType":"International OTC Withdrawal Fee","FeeDescription":"per transaction","FeeAmount":"4.00"},{"FeeType":"Currency Conversion Fee","FeeDescription":"3% of transaction amount","FeeAmount":"3.00%"},{"FeeType":"Card Replacement Fee","FeeDescription":"One (1) no cost replacement per calendar year or upon expiration; $5.00 per request thereafter for lost, stolen, and damaged cards.","FeeAmount":"5.00"},{"FeeType":" Expedited Card Replacement Fee ","FeeDescription":"$20.00 (per Card; an additional fee when a Card is reissued or replaced for any reason with requested expedited delivery)","FeeAmount":"20.00"},{"FeeType":"Check Refund Fee","FeeDescription":"$12.50 per refund check (When a refund check is issued for the remaining Card balance.","FeeAmount":"12.5"}]';
+
 jQuery(document).ready(function($){
 	//open/close lateral filter
 	$('.cd-filter-trigger').on('click', function(){
@@ -18,34 +20,34 @@ jQuery(document).ready(function($){
 	var filter_tab_placeholder = $('.cd-tab-filter .placeholder a'),
 		filter_tab_placeholder_default_value = 'Select',
 		filter_tab_placeholder_text = filter_tab_placeholder.text();
-	
+
 	$('.cd-tab-filter li').on('click', function(event){
 		//detect which tab filter item was selected
 		var selected_filter = $(event.target).data('type');
-			
+
 		//check if user has clicked the placeholder item
 		if( $(event.target).is(filter_tab_placeholder) ) {
 			(filter_tab_placeholder_default_value == filter_tab_placeholder.text()) ? filter_tab_placeholder.text(filter_tab_placeholder_text) : filter_tab_placeholder.text(filter_tab_placeholder_default_value) ;
 			$('.cd-tab-filter').toggleClass('is-open');
 
-		//check if user has clicked a filter already selected 
+		//check if user has clicked a filter already selected
 		} else if( filter_tab_placeholder.data('type') == selected_filter ) {
 			filter_tab_placeholder.text($(event.target).text());
-			$('.cd-tab-filter').removeClass('is-open');	
+			$('.cd-tab-filter').removeClass('is-open');
 
 		} else {
 			//close the dropdown and change placeholder text/data-type value
 			$('.cd-tab-filter').removeClass('is-open');
 			filter_tab_placeholder.text($(event.target).text()).data('type', selected_filter);
 			filter_tab_placeholder_text = $(event.target).text();
-			
+
 			//add class selected to the selected filter item
 			$('.cd-tab-filter .selected').removeClass('selected');
 			$(event.target).addClass('selected');
 		}
 	});
-	
-	//close filter dropdown inside lateral .cd-filter 
+
+	//close filter dropdown inside lateral .cd-filter
 	$('.cd-filter-block h4').on('click', function(){
 		$(this).toggleClass('closed').siblings('.cd-filter-content').slideToggle(300);
 	})
@@ -63,7 +65,7 @@ jQuery(document).ready(function($){
 
 	/************************************
 		MitItUp filter settings
-		More details: 
+		More details:
 		https://mixitup.kunkalabs.com/
 		or:
 		http://codepen.io/patrickkunka/
@@ -102,11 +104,11 @@ jQuery(document).ready(function($){
 	  	delay(function(){
 	    	inputText = $(".cd-filter-content input[type='search']").val().toLowerCase();
 	   		// Check to see if input field is empty
-	    	if ((inputText.length) > 0) {            
+	    	if ((inputText.length) > 0) {
 	      		$('.mix').each(function() {
 		        	var $this = $(this);
-		        
-		        	// add item to be filtered out if input text matches items inside the title   
+
+		        	// add item to be filtered out if input text matches items inside the title
 		        	if($this.attr('class').toLowerCase().match(inputText)) {
 		          		$matching = $matching.add(this);
 		        	} else {
@@ -124,7 +126,7 @@ jQuery(document).ready(function($){
 });
 
 /*****************************************************
-	MixItUp - Define a single object literal 
+	MixItUp - Define a single object literal
 	to contain all filter custom functionality
 *****************************************************/
 var buttonFilter = {
@@ -133,28 +135,28 @@ var buttonFilter = {
   	groups: [],
   	outputArray: [],
   	outputString: '',
-  
+
   	// The "init" method will run on document ready and cache any jQuery objects we will need.
   	init: function(){
     	var self = this; // As a best practice, in each method we will asign "this" to the variable "self" so that it remains scope-agnostic. We will use it to refer to the parent "buttonFilter" object so that we can share methods and properties between all parts of the object.
-    
+
     	self.$filters = $('.cd-main-content');
     	self.$container = $('.cd-gallery ul');
-    
+
 	    self.$filters.find('.cd-filters').each(function(){
 	      	var $this = $(this);
-	      
+
 		    self.groups.push({
 		        $inputs: $this.find('.filter'),
 		        active: '',
 		        tracker: false
 		    });
 	    });
-	    
+
 	    self.bindHandlers();
   	},
-  
-  	// The "bindHandlers" method will listen for whenever a button is clicked. 
+
+  	// The "bindHandlers" method will listen for whenever a button is clicked.
   	bindHandlers: function(){
     	var self = this;
 
@@ -162,13 +164,13 @@ var buttonFilter = {
 	      	self.parseFilters();
     	});
 	    self.$filters.on('change', function(){
-	      self.parseFilters();           
+	      self.parseFilters();
 	    });
   	},
-  
+
   	parseFilters: function(){
 	    var self = this;
-	 
+
 	    // loop through each filter group and grap the active filter from each one.
 	    for(var i = 0, group; group = self.groups[i]; i++){
 	    	group.active = [];
@@ -187,20 +189,20 @@ var buttonFilter = {
 	    }
 	    self.concatenate();
   	},
-  
+
   	concatenate: function(){
     	var self = this;
-    
+
     	self.outputString = ''; // Reset output string
-    
+
 	    for(var i = 0, group; group = self.groups[i]; i++){
 	      	self.outputString += group.active;
 	    }
-    
-	    // If the output string is empty, show all rather than none:    
-	    !self.outputString.length && (self.outputString = 'all'); 
-	
-    	// Send the output string to MixItUp via the 'filter' method:    
+
+	    // If the output string is empty, show all rather than none:
+	    !self.outputString.length && (self.outputString = 'all');
+
+    	// Send the output string to MixItUp via the 'filter' method:
 		if(self.$container.mixItUp('isLoaded')){
 	    	self.$container.mixItUp('filter', self.outputString);
 		}
