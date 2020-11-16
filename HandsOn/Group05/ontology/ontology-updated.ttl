@@ -1,0 +1,194 @@
+@prefix : <http://eit-upm-opendata.com/ted#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pproc: <http://contsem.unizar.es/def/sector-publico/pproc#> .
+@prefix pc: <http://purl.org/procurement/public-contracts#> .
+@prefix schema: <http://schema.org/> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@base <http://eit-upm-opendata.com/ted> .
+
+<http://eit-upm-opendata.com/ted> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/procurement/public-contracts#contractingAuthority
+pc:contractingAuthority rdf:type owl:ObjectProperty ;
+        rdfs:domain pproc:ContractNotice ;
+        rdfs:range pproc:ContractBodies .
+
+### http://contsem.unizar.es/def/sector-publico/pproc#informationKind for CAE_TYPE
+pproc:informationKind rdf:type owl:ObjectProperty ;
+         rdfs:domain pproc:ContractBodies ;
+         rdfs:range xsd:integer .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/procurement/public-contracts#mainObject for CPV
+pc:mainObject rdf:type owl:FunctionalProperty ;
+        rdfs:domain pproc:ContractNotice ;
+        rdfs:range xsd:double .
+
+
+###  http://eit-upm-opendata.com/ted#hasContractType
+:hasContractType rdf:type owl:DatatypeProperty ;
+                 rdfs:domain pproc:ContractNotice ;
+                 rdfs:range xsd:string .
+
+
+###  http://schema.org/addressCountry
+schema:addressCountry rdf:type owl:DatatypeProperty ;
+         rdfs:isDefinedBy <http://schema.org/> .
+
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#noticeDate
+pproc:noticeDate rdf:type owl:DatatypeProperty ;
+         rdfs:domain pproc:ContractNotice ;
+         rdfs:range xsd:string .
+
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#duration
+pproc:duration rdf:type owl:DatatypeProperty ;
+             rdfs:domain pproc:ContractNotice ;
+             rdfs:range xsd:double .
+
+
+###  http://eit-upm-opendata.com/ted#hasIDType
+:hasIDType rdf:type owl:DatatypeProperty ;
+           rdfs:domain pproc:ContractNotice ;
+           rdfs:range xsd:integer .
+
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#contractActivities
+pproc:contractActivities rdf:type owl:DatatypeProperty ;
+                 rdfs:domain pproc:ContractNotice ;
+                 rdfs:range xsd:string .
+
+
+###  http://schema.org/name
+schema:name rdf:type owl:DatatypeProperty ;
+         rdfs:isDefinedBy <http://schema.org/> .
+
+
+###  http://eit-upm-opendata.com/ted#hasNationalID
+:hasNationalID rdf:type owl:DatatypeProperty ;
+               rdfs:domain pproc:ContractBodies ;
+               rdfs:range xsd:string .
+
+
+###  https://schema.org/postalCode
+schema:postalCode rdf:type owl:DatatypeProperty ;
+               rdfs:domain pproc:ContractBodies ;
+               rdfs:range xsd:string .
+
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#procedureType
+pproc:procedureType rdf:type owl:DatatypeProperty ;
+        rdfs:domain pproc:ContractNotice ;
+        rdfs:range xsd:string .
+
+
+###  https://schema.org/addressLocality
+schema:addressLocality rdf:type owl:DatatypeProperty ;
+         rdfs:isDefinedBy <http://schema.org/> .
+
+
+###  http://purl.org/goodrelations/v1#hasCurrencyValue
+gr:hasCurrencyValue rdf:type owl:DatatypeProperty ;
+          rdfs:domain pproc:BundlePriceSpecification ;
+          rdfs:range xsd:double .
+
+
+###  http://purl.org/goodrelations/v1#hasCurrency
+gr:hasCurrency rdf:type owl:DatatypeProperty ;                                                       		
+	rdfs:domain pproc:BundlePriceSpecification ;
+        rdfs:range xsd:string .
+
+### http://purl.org/goodrelations/v1#valueAddedTaxIncluded
+gr:valueAddedTaxIncluded rdf:type owl:DatatypeProperty ;
+	rdfs:domain pproc:BundlePriceSpecification ;
+	rdfs:range xsd:boolean .
+
+http://purl.org/goodrelations/v1#hasPriceSpecification
+gr:hasPriceSpecification rdf:type owl:DatatypeProperty ;
+	rdfs:domain pproc:ContractNotice ;
+	rdfs:range pproc:BundlePriceSpecification .
+
+# ---- Boolean properties ----
+
+###  http://eit-upm-opendata.com/ted#hasMultipleCAE
+:hasMultipleCAE rdf:type owl:DatatypeProperty ;
+                rdfs:domain pproc:ContractNotice ;
+                rdfs:range xsd:boolean .
+
+
+###  http://eit-upm-opendata.com/ted#isCancelled
+:isCancelled rdf:type owl:DatatypeProperty ;
+             rdfs:domain pproc:ContractNotice ;
+             rdfs:range xsd:boolean .
+
+
+###  http://eit-upm-opendata.com/ted#isEUFunded
+:isEUFunded rdf:type owl:DatatypeProperty ;
+            rdfs:domain pproc:ContractNotice ;
+            rdfs:range xsd:string .
+
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#electronicAuction
+pproc:electronicAuction rdf:type owl:DatatypeProperty ;
+              rdfs:domain pproc:ContractNotice ;
+              rdfs:range xsd:boolean .
+
+
+###  http://eit-upm-opendata.com/ted#isGPA
+:isGPA rdf:type owl:DatatypeProperty ;
+       rdfs:domain pproc:ContractNotice ;
+       rdfs:range xsd:boolean .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#ContractBodies
+pproc:ContractBodies rdf:type owl:Class .
+
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#ContractNotice
+pproc:ContractNotice rdf:type owl:Class .
+
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#BundlePriceSpecification
+pproc:BundlePriceSpecification rdf:type owl:Class .
+
+
+### http://schema.org/City
+schema:City rdf:type owl:Class .
+
+
+### http://schema.org/Country
+schema:Country rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://eit-upm-opendata.com/ted#201871
+<http://eit-upm-opendata.com/ted#201871> rdf:type owl:NamedIndividual ,          pproc:ContractNotice ;
+                                                                                 pc:contractingAuthority <http://eit-upm-opendata.com/ted#201871PL> ;
+                                                                                 :hasIDType 2 ;
+                                                                                 :isCancelled 0 .
+
+
+###  http://eit-upm-opendata.com/ted#201871PL
+<http://eit-upm-opendata.com/ted#201871PL> rdf:type owl:NamedIndividual ,          pproc:ContractBodies ;
+                                                                                   schema:name "Miejskie Wodociągi i Kanalizacja w Kędzierzynie-Koźlu Sp. z o.o."^^xsd:string ;
+                                                                                   schema:postalCode "47-200"^^xsd:string .
