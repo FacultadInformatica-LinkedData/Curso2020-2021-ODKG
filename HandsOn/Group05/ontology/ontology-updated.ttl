@@ -102,13 +102,18 @@ schema:addressLocality rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.org/goodrelations/v1#hasCurrencyValue
 gr:hasCurrencyValue rdf:type owl:DatatypeProperty ;
-          rdfs:domain pproc:ContractNotice ;
+          rdfs:domain pproc:BundlePriceSpecification ;
           rdfs:range xsd:double .
 
 
 ###  http://purl.org/goodrelations/v1#hasCurrency
-gr:hasCurrency rdf:type owl:DatatypeProperty ;                                                       		rdfs:domain pproc:ContractNotice ;
+gr:hasCurrency rdf:type owl:DatatypeProperty ;                                                       		rdfs:domain pproc:BundlePriceSpecification ;
         rdfs:range xsd:string .
+
+### http://purl.org/goodrelations/v1#valueAddedTaxIncluded
+gr:valueAddedTaxIncluded rdf:type owl:DatatypeProperty ;
+	rdfs:domain pproc:BundlePriceSpecification ;
+	rdfs:range xsd:boolean .
 
 
 # ---- Boolean properties ----
@@ -153,6 +158,18 @@ pproc:ContractBodies rdf:type owl:Class .
 
 ###  http://contsem.unizar.es/def/sector-publico/pproc#ContractNotice
 pproc:ContractNotice rdf:type owl:Class .
+
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#BundlePriceSpecification
+pproc:BundlePriceSpecification rdf:type owl:Class .
+
+
+### http://schema.org/City
+schema:City rdf:type owl:Class .
+
+
+### http://schema.org/Country
+schema:Country rdf:type owl:Class .
 
 
 #################################################################
