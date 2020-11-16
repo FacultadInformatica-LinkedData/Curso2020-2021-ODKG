@@ -15280,71 +15280,71 @@
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.w3.org/2000/01/rdf-schema#label> "Department of National Defence".
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "DGLEPM CAPITAL"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Health%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Health%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Health Canada".
 <http://www.odkggroup3/ontology#Health%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "MARKETING & COMMUNICATIONS"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Health%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Health%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Health%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "FORMATION CONSTRUC.ENGINEERING"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1952"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1952"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Halifax>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "NDHQ DGLEPM"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "DEFENCE R&D CANADA OTTAWA"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Royal%20Canadian%20Mounted%20Police> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Royal%20Canadian%20Mounted%20Police> <http://www.w3.org/2000/01/rdf-schema#label> "Royal Canadian Mounted Police".
 <http://www.odkggroup3/ontology#Royal%20Canadian%20Mounted%20Police> <http://www.odkggroup3/ontology#hasEndUserEntity> "HQ PROCURE.&CONTRACT.SERVS"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Royal%20Canadian%20Mounted%20Police> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Royal%20Canadian%20Mounted%20Police> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Royal%20Canadian%20Mounted%20Police> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "RP OPER UNIT (ATL)DET GAGETOWN"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1965"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1965"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Oromocto>.
 <http://www.odkggroup3/ontology#Canadian%20Human%20Rights%20Commission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Canadian%20Human%20Rights%20Commission> <http://www.w3.org/2000/01/rdf-schema#label> "Canadian Human Rights Commission".
 <http://www.odkggroup3/ontology#Canadian%20Human%20Rights%20Commission> <http://www.odkggroup3/ontology#hasEndUserEntity> "N/A"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Canadian%20Human%20Rights%20Commission> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Canadian%20Human%20Rights%20Commission> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Canadian%20Human%20Rights%20Commission> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Public Works and Government Services Canada".
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "REAL PROPERTY SERVS"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1948"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1948"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Winnipeg>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "NDHQ BTNO TRANSPORTA. OFFICER"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "RPB ADMINISTRATION"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1951"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1951"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Edmonton>.
 <http://www.odkggroup3/ontology#Canadian%20Nuclear%20Safety%20Commission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Canadian%20Nuclear%20Safety%20Commission> <http://www.w3.org/2000/01/rdf-schema#label> "Canadian Nuclear Safety Commission".
 <http://www.odkggroup3/ontology#Canadian%20Nuclear%20Safety%20Commission> <http://www.odkggroup3/ontology#hasEndUserEntity> "MAILROOM"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Canadian%20Nuclear%20Safety%20Commission> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Canadian%20Nuclear%20Safety%20Commission> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Canadian%20Nuclear%20Safety%20Commission> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Correctional%20Service%20of%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Correctional%20Service%20of%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Correctional Service of Canada".
 <http://www.odkggroup3/ontology#Correctional%20Service%20of%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "ATLANTIC REGIONAL HDQTRS."^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Correctional%20Service%20of%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1965"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Correctional%20Service%20of%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1965"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Correctional%20Service%20of%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Moncton>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "CST 1-DFO/TC"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Dorval>.
 <http://www.odkggroup3/ontology#Correctional%20Service%20of%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "SASK.PENITIARY"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Correctional%20Service%20of%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1989"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Correctional%20Service%20of%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1989"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Correctional%20Service%20of%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Prince%20Albert>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "P&T SERVS PRJCT MGNT"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1974"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1974"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Vancouver>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "ONT PTS PROJECT MGT"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Toronto>.
 <http://www.odkggroup3/ontology#Marine%20Atlantic%20Inc.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Marine%20Atlantic%20Inc.> <http://www.w3.org/2000/01/rdf-schema#label> "Marine Atlantic Inc.".
 <http://www.odkggroup3/ontology#Marine%20Atlantic%20Inc.> <http://www.odkggroup3/ontology#hasEndUserEntity> "N/A"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Marine%20Atlantic%20Inc.> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q2003"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Marine%20Atlantic%20Inc.> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q2003"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Marine%20Atlantic%20Inc.> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Channel-Port%20aux%20Basques>.
 <http://www.odkggroup3/ontology#Foreign%20Affairs%2C%20Trade%20And%20Development%20%28Department%20Of%29> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Foreign%20Affairs%2C%20Trade%20And%20Development%20%28Department%20Of%29> <http://www.w3.org/2000/01/rdf-schema#label> "Foreign Affairs, Trade And Development (Department Of)".
 <http://www.odkggroup3/ontology#Foreign%20Affairs%2C%20Trade%20And%20Development%20%28Department%20Of%29> <http://www.odkggroup3/ontology#hasEndUserEntity> "CSNE MGMT SERVS UNIT"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Foreign%20Affairs%2C%20Trade%20And%20Development%20%28Department%20Of%29> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Foreign%20Affairs%2C%20Trade%20And%20Development%20%28Department%20Of%29> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Foreign%20Affairs%2C%20Trade%20And%20Development%20%28Department%20Of%29> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "NDHQ"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Toronto>.
@@ -15353,7 +15353,7 @@
 <http://www.odkggroup3/ontology#Environment%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Environment%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Environment Canada".
 <http://www.odkggroup3/ontology#Environment%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "HEAD COMMUNCIATIONS"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Environment%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Environment%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Environment%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Gatineau>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "GTIS AMS PRGM OFFICE"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Gatineau>.
@@ -15362,124 +15362,124 @@
 <http://www.odkggroup3/ontology#Industry%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Industry%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Industry Canada".
 <http://www.odkggroup3/ontology#Industry%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "COMMUNICATIONS AND MARKETING"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Industry%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Industry%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Industry%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "CF COMMAND COLLEGE"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Department%20of%20Justice%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Department%20of%20Justice%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Department of Justice Canada".
 <http://www.odkggroup3/ontology#Department%20of%20Justice%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "INFORMATION SOLUTION BR."^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Department%20of%20Justice%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Department%20of%20Justice%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Department%20of%20Justice%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "COE-PTS"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Quebec%20City>.
 <http://www.odkggroup3/ontology#Health%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "N/A"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Health%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Health%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Health%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Longueuil>.
 <http://www.odkggroup3/ontology#Natural%20Resources%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Natural%20Resources%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Natural Resources Canada".
 <http://www.odkggroup3/ontology#Natural%20Resources%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "CONTRACTING & PROCUREMENT"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Natural%20Resources%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Natural%20Resources%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Natural%20Resources%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Royal%20Canadian%20Mounted%20Police> <http://www.odkggroup3/ontology#hasEndUserEntity> "NORTH WEST REGION K-DIVISION"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Royal%20Canadian%20Mounted%20Police> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1951"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Royal%20Canadian%20Mounted%20Police> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1951"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Royal%20Canadian%20Mounted%20Police> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Edmonton>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "ALASKA HIGHWAY FORT NELSON"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Fort%20Nelson>.
 <http://www.odkggroup3/ontology#Public%20Health%20Agency%20of%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Public%20Health%20Agency%20of%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Public Health Agency of Canada".
 <http://www.odkggroup3/ontology#Public%20Health%20Agency%20of%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "CDN SCIENCE CTR HUM.&ANL HLTH"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Public%20Health%20Agency%20of%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1948"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Public%20Health%20Agency%20of%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1948"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Public%20Health%20Agency%20of%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Winnipeg>.
 <http://www.odkggroup3/ontology#Governor%20General> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Governor%20General> <http://www.w3.org/2000/01/rdf-schema#label> "Governor General".
 <http://www.odkggroup3/ontology#Governor%20General> <http://www.odkggroup3/ontology#hasEndUserEntity> "N/A"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Governor%20General> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Governor%20General> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Governor%20General> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Parks%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Parks%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Parks Canada".
 <http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "GENERAL ACCTING"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Cornwall>.
 <http://www.odkggroup3/ontology#Agriculture%20and%20Agri-Food%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Agriculture%20and%20Agri-Food%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Agriculture and Agri-Food Canada".
 <http://www.odkggroup3/ontology#Agriculture%20and%20Agri-Food%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "CSB ASSET MGNT&CAPTL PLANNING"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Agriculture%20and%20Agri-Food%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Agriculture%20and%20Agri-Food%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Agriculture%20and%20Agri-Food%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Canadian%20Space%20Agency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Canadian%20Space%20Agency> <http://www.w3.org/2000/01/rdf-schema#label> "Canadian Space Agency".
 <http://www.odkggroup3/ontology#Canadian%20Space%20Agency> <http://www.odkggroup3/ontology#hasEndUserEntity> "COMMUNICATIONS"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Canadian%20Space%20Agency> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Canadian%20Space%20Agency> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Canadian%20Space%20Agency> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Longueuil>.
 <http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Fisheries and Oceans Canada".
 <http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "N/A"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Quebec%20City>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "ENGINEERING ASSETS-VANCOUVER"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Privy%20Council%20Office> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Privy%20Council%20Office> <http://www.w3.org/2000/01/rdf-schema#label> "Privy Council Office".
 <http://www.odkggroup3/ontology#Privy%20Council%20Office> <http://www.odkggroup3/ontology#hasEndUserEntity> "ADMINISTRATION DIV."^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Privy%20Council%20Office> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Privy%20Council%20Office> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Privy%20Council%20Office> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "DALVAY COMPOUND"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1979"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1979"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Dalvay-by-the-Sea>.
 <http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "CHIEF OCEAN SCIENCE&PROD."^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1974"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1974"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Sidney>.
 <http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "AQTC DGNSTCS GNMCS & TCHNG"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Nanaimo>.
 <http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "WATERTON LAKES"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1951"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1951"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Waterton%20Park%2C%20Alberta>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "D&R DEFENCE CANADA VALCARTIER"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Quebec%20City>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "FLEET MAINTENACE FACILITY"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1974"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1974"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Victoria>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "PAY MODERNIZATION PROJECT"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Health%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "HPB PRODUCT SAFETY LABORATORY"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Department%20of%20Finance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Department%20of%20Finance> <http://www.w3.org/2000/01/rdf-schema#label> "Department of Finance".
 <http://www.odkggroup3/ontology#Department%20of%20Finance> <http://www.odkggroup3/ontology#hasEndUserEntity> "MAT.MGNT CTRL SUP.& RECEIVING"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Department%20of%20Finance> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Department%20of%20Finance> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Department%20of%20Finance> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Environment%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "MSC-MGMT & ANALYSIS-ARQM/QM"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Environment%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Environment%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Environment%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Toronto>.
 <http://www.odkggroup3/ontology#Royal%20Canadian%20Mounted%20Police> <http://www.odkggroup3/ontology#hasEndUserEntity> "FLEET MGNT"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "MARINE ENGINEERING"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1952"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1952"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Dartmouth>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "MARITIME FORCES ATLANTIC"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Transport%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Transport%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Transport Canada".
 <http://www.odkggroup3/ontology#Transport%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "AIRCRAFT SERVICES DIRECTORATE"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Transport%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Transport%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Transport%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "PWGSC-MAJOR CROWN PROJECTS"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "NEW BRUNSWICK NORTH FIELD UNIT"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1965"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1965"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Kouchibouguac%2C%20New%20Brunswick>.
 <http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "D/PROJ.MGR STIMULUS PACKAGE"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "SALMONIDS"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q2003"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q2003"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#St.%20Johns>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "DG PROC.SVCS"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Environment%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "SCIENCE & TECHNOLOGY BRANCH"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Environment%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1965"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Environment%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1965"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Environment%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Moncton>.
 <http://www.odkggroup3/ontology#Veterans%20Affairs%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Veterans%20Affairs%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Veterans Affairs Canada".
 <http://www.odkggroup3/ontology#Veterans%20Affairs%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "PROC.CONTRACTING SERVS"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Veterans%20Affairs%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1979"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Veterans%20Affairs%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1979"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Veterans%20Affairs%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Charlottetown>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "RPS A&ES BLDGS DIRECTORATE"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "DEFENCE R&D CANADA-SUFFIELD"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1951"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1951"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Medicine%20Hat>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "DEFENCE R&D CANADA ATLANTIC"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Dartmouth>.
@@ -15492,10 +15492,10 @@
 <http://www.odkggroup3/ontology#National%20Research%20Council%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#National%20Research%20Council%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "National Research Council Canada".
 <http://www.odkggroup3/ontology#National%20Research%20Council%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "ADMIN.SERVS & PROPERTY MGNT BR"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#National%20Research%20Council%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#National%20Research%20Council%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#National%20Research%20Council%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "DETACHMENT COMMANDER"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1989"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1989"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Dundurn>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "BPMS - PRODUCT"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "CONSOLIDATED PROC VIC"^^<http://www.w3.org/2001/XMLSchemastring>.
@@ -15505,18 +15505,18 @@
 <http://www.odkggroup3/ontology#Aboriginal%20Affairs%20%26%20Northern%20Development%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Aboriginal%20Affairs%20%26%20Northern%20Development%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Aboriginal Affairs & Northern Development Canada".
 <http://www.odkggroup3/ontology#Aboriginal%20Affairs%20%26%20Northern%20Development%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "MGR LIBRARY & PUBLIC ENQUIRIES"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Aboriginal%20Affairs%20%26%20Northern%20Development%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Aboriginal%20Affairs%20%26%20Northern%20Development%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Aboriginal%20Affairs%20%26%20Northern%20Development%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Gatineau>.
 <http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "CCG DIRECTOR SERVICES DELIVERY"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "GC HRMS PROGRAM CENTRE"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Office%20of%20Infrastructure%20of%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Office%20of%20Infrastructure%20of%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Office of Infrastructure of Canada".
 <http://www.odkggroup3/ontology#Office%20of%20Infrastructure%20of%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "FINANCE"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Office%20of%20Infrastructure%20of%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Office%20of%20Infrastructure%20of%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Office%20of%20Infrastructure%20of%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Department%20of%20Justice%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "COMMUNICATIONS BR."^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "PROJECT MGNT RPS"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q2003"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q2003"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#St.%20Johns>.
 <http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "JASPER NATL PARK"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Jasper>.
@@ -15525,40 +15525,40 @@
 <http://www.odkggroup3/ontology#Canada%20School%20of%20Public%20Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Canada%20School%20of%20Public%20Service> <http://www.w3.org/2000/01/rdf-schema#label> "Canada School of Public Service".
 <http://www.odkggroup3/ontology#Canada%20School%20of%20Public%20Service> <http://www.odkggroup3/ontology#hasEndUserEntity> "ADMIN SERVICES"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Canada%20School%20of%20Public%20Service> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Canada%20School%20of%20Public%20Service> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Canada%20School%20of%20Public%20Service> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "RPS PROJ.MGNT"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1952"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1952"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Halifax>.
 <http://www.odkggroup3/ontology#Natural%20Resources%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "POLAR CONT.SHELF PROJECT"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Correctional%20Service%20of%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "STONY MOUNTAIN INSTITUTION"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Correctional%20Service%20of%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1948"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Correctional%20Service%20of%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1948"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Correctional%20Service%20of%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Winnipeg>.
 <http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "REAL PROPERTY"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Vancouver>.
 <http://www.odkggroup3/ontology#Royal%20Canadian%20Mounted%20Police> <http://www.odkggroup3/ontology#hasEndUserEntity> "DEPOT DIVISION-FSS BRANCH"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Royal%20Canadian%20Mounted%20Police> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1989"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Royal%20Canadian%20Mounted%20Police> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1989"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Royal%20Canadian%20Mounted%20Police> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Regina>.
 <http://www.odkggroup3/ontology#Status%20of%20Women%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Status%20of%20Women%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Status of Women Canada".
 <http://www.odkggroup3/ontology#Status%20of%20Women%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "OFFICE"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Status%20of%20Women%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Status%20of%20Women%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Status%20of%20Women%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Gatineau>.
 <http://www.odkggroup3/ontology#Administrative%20Tribunals%20Support%20Service%20of%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Administrative%20Tribunals%20Support%20Service%20of%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Administrative Tribunals Support Service of Canada".
 <http://www.odkggroup3/ontology#Administrative%20Tribunals%20Support%20Service%20of%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "ATSSC-SCDATA INFO SER&SOLUTION"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Administrative%20Tribunals%20Support%20Service%20of%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Administrative%20Tribunals%20Support%20Service%20of%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Administrative%20Tribunals%20Support%20Service%20of%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Public%20Health%20Agency%20of%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "CNTR SURV AND APPLIED RSRCH"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Public%20Health%20Agency%20of%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Public%20Health%20Agency%20of%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Public%20Health%20Agency%20of%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Canadian%20Food%20Inspection%20Agency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Canadian%20Food%20Inspection%20Agency> <http://www.w3.org/2000/01/rdf-schema#label> "Canadian Food Inspection Agency".
 <http://www.odkggroup3/ontology#Canadian%20Food%20Inspection%20Agency> <http://www.odkggroup3/ontology#hasEndUserEntity> "NATL PROCURE.&CTRCTG SERV.CTR"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Canadian%20Food%20Inspection%20Agency> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Canadian%20Food%20Inspection%20Agency> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Canadian%20Food%20Inspection%20Agency> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Natural%20Resources%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "GEOLOGICAL SURVEY CAN-ATLANTIC"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Natural%20Resources%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1952"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Natural%20Resources%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1952"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Natural%20Resources%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Dartmouth>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "ATIP DIRECTORATE"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "N/A"^^<http://www.w3.org/2001/XMLSchemastring>.
@@ -15577,7 +15577,7 @@
 <http://www.odkggroup3/ontology#Employment%20and%20Social%20Development%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Employment%20and%20Social%20Development%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Employment and Social Development Canada".
 <http://www.odkggroup3/ontology#Employment%20and%20Social%20Development%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "CANADA ENQUIRY CENTER"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Employment%20and%20Social%20Development%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Employment%20and%20Social%20Development%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Employment%20and%20Social%20Development%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "DISPATCH CENTRE"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "1 SVC BN SUP COY LPO"^^<http://www.w3.org/2001/XMLSchemastring>.
@@ -15585,23 +15585,23 @@
 <http://www.odkggroup3/ontology#Citizenship%20and%20Immigration%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Citizenship%20and%20Immigration%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Citizenship and Immigration Canada".
 <http://www.odkggroup3/ontology#Citizenship%20and%20Immigration%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "CONTRACTING&ACQUISITIONS"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Citizenship%20and%20Immigration%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Citizenship%20and%20Immigration%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Citizenship%20and%20Immigration%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Industry%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "CIPO PATENT ADMINISTRATION"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Industry%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Industry%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Industry%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Gatineau>.
 <http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "STOCK ASSESSMENT& RESEARCH DIV"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "CADET DETACHMENT WINNIPEG"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1948"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1948"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Winnipeg>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "CAS COMPTROLLER"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "GULF ISLANDS NATL PARK RESERVE"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1974"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1974"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Sidney>.
 <http://www.odkggroup3/ontology#Public%20Safety%20and%20Emergency%20Preparedness%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Public%20Safety%20and%20Emergency%20Preparedness%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Public Safety and Emergency Preparedness Canada".
 <http://www.odkggroup3/ontology#Public%20Safety%20and%20Emergency%20Preparedness%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "CONTRACTING DIVISION"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Public%20Safety%20and%20Emergency%20Preparedness%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Public%20Safety%20and%20Emergency%20Preparedness%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Public%20Safety%20and%20Emergency%20Preparedness%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Royal%20Canadian%20Mounted%20Police> <http://www.odkggroup3/ontology#hasEndUserEntity> "MATERIEL&SERVS MGNT BR."^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "HDHQ"^^<http://www.w3.org/2001/XMLSchemastring>.
@@ -15616,7 +15616,7 @@
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "4 WG SUP FLT/POL SECTION"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Cold%20Lake>.
 <http://www.odkggroup3/ontology#Correctional%20Service%20of%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "CONTRACTING&MATERIEL SERVS"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Correctional%20Service%20of%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Correctional%20Service%20of%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Correctional%20Service%20of%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "OFFICE ACCOMMODATION SERV."^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "ENVIRONMENTAL SERVICES"^^<http://www.w3.org/2001/XMLSchemastring>.
@@ -15626,25 +15626,25 @@
 <http://www.odkggroup3/ontology#Canada%20Border%20Services%20Agency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Canada%20Border%20Services%20Agency> <http://www.w3.org/2000/01/rdf-schema#label> "Canada Border Services Agency".
 <http://www.odkggroup3/ontology#Canada%20Border%20Services%20Agency> <http://www.odkggroup3/ontology#hasEndUserEntity> "NATL INVOICE RECEPTION UNIT"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Canada%20Border%20Services%20Agency> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Canada%20Border%20Services%20Agency> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Canada%20Border%20Services%20Agency> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Montreal>.
 <http://www.odkggroup3/ontology#Employment%20and%20Social%20Development%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "CONTRACTING&PROCURE."^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Employment%20and%20Social%20Development%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Employment%20and%20Social%20Development%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Employment%20and%20Social%20Development%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Gatineau>.
 <http://www.odkggroup3/ontology#Public%20Health%20Agency%20of%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "HEALTH PORTFOLIO EMERG.OPS CTR"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Aboriginal%20Affairs%20%26%20Northern%20Development%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "MGR IT SERVICES MANAGEMENT"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Transport%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "PROGRAMS"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Transport%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1965"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Transport%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1965"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Transport%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Moncton>.
 <http://www.odkggroup3/ontology#Foreign%20Affairs%2C%20Trade%20And%20Development%20%28Department%20Of%29> <http://www.odkggroup3/ontology#hasEndUserEntity> "BBI SECTOR C"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#National%20Research%20Council%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "BIOTECHNOLOGY RES.INSTITUTE"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#National%20Research%20Council%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#National%20Research%20Council%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#National%20Research%20Council%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Montreal>.
 <http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "SMALL CRAFT HARBOUR"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "IT ACQUISITION CELL FORM LOGIS"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "MCE"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "REAL PROPERTY SERVICES"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1989"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1989"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Regina>.
 <http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "MT REVELSTOKE GLACIER"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Revelstoke>.
@@ -15654,7 +15654,7 @@
 <http://www.odkggroup3/ontology#Treasury%20Board%20of%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Treasury%20Board%20of%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Treasury Board of Canada".
 <http://www.odkggroup3/ontology#Treasury%20Board%20of%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "MAT.MGNT CTRL SUPPLY RECEIVING"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Treasury%20Board%20of%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Treasury%20Board%20of%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Treasury%20Board%20of%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "DIL PROC 5-HEALTH PROCUREMENT"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "8 WING TRENTON, ATESS"^^<http://www.w3.org/2001/XMLSchemastring>.
@@ -15670,7 +15670,7 @@
 <http://www.odkggroup3/ontology#Library%20of%20Parliament> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Library%20of%20Parliament> <http://www.w3.org/2000/01/rdf-schema#label> "Library of Parliament".
 <http://www.odkggroup3/ontology#Library%20of%20Parliament> <http://www.odkggroup3/ontology#hasEndUserEntity> "FINANCE&MATERIEL MANAGEMENT"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Library%20of%20Parliament> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Library%20of%20Parliament> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Library%20of%20Parliament> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Canadian%20Space%20Agency> <http://www.odkggroup3/ontology#hasEndUserEntity> "SATELLITE OPS"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "COE-PTS-AES"^^<http://www.w3.org/2001/XMLSchemastring>.
@@ -15678,20 +15678,20 @@
 <http://www.odkggroup3/ontology#Canada%20Revenue%20Agency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Canada%20Revenue%20Agency> <http://www.w3.org/2000/01/rdf-schema#label> "Canada Revenue Agency".
 <http://www.odkggroup3/ontology#Canada%20Revenue%20Agency> <http://www.odkggroup3/ontology#hasEndUserEntity> "COMMUNICATIONS BR."^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Canada%20Revenue%20Agency> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Canada%20Revenue%20Agency> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Canada%20Revenue%20Agency> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "CANSOFCOM HQ"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Western%20Economic%20Diversification%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Western%20Economic%20Diversification%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Western Economic Diversification Canada".
 <http://www.odkggroup3/ontology#Western%20Economic%20Diversification%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "N/A"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Western%20Economic%20Diversification%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1989"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Western%20Economic%20Diversification%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1989"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Western%20Economic%20Diversification%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Saskatoon>.
 <http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "N/A"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Calgary>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "TRANSLATION/DOCUMENTARY SERV."^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "CST 4 - HEALTH"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "REAL PROPERTY-PROJ MGMT"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1979"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1979"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Charlottetown>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "CST 2 - PARKS"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "COMBAT TRAINING CENTRE"^^<http://www.w3.org/2001/XMLSchemastring>.
@@ -15706,29 +15706,29 @@
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "NATL PROCURE.&CTRCTG SERV.CTR"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Industry%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "LIBRARY"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Natural%20Resources%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "N/A"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Natural%20Resources%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Natural%20Resources%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Natural%20Resources%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Varennes>.
 <http://www.odkggroup3/ontology#Correctional%20Service%20of%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "CORCAN QUE-PWGSC"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Correctional%20Service%20of%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Correctional%20Service%20of%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Correctional%20Service%20of%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Laval>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "DCRC / ADMINISTRATION"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Matane>.
 <http://www.odkggroup3/ontology#Canada%20Border%20Services%20Agency> <http://www.odkggroup3/ontology#hasEndUserEntity> "PACIFIC REGION"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Canada%20Border%20Services%20Agency> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1974"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Canada%20Border%20Services%20Agency> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1974"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Canada%20Border%20Services%20Agency> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Vancouver>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "SSI-DIR. GENERALS OFFICE(DGO)"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Canada%20Border%20Services%20Agency> <http://www.odkggroup3/ontology#hasEndUserEntity> "FINANCIAL SERVICE DELIVERY CTR"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Canada%20Border%20Services%20Agency> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Canada%20Border%20Services%20Agency> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Canada%20Border%20Services%20Agency> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "LAW ENFORCE-PROT AREAS ESTAB"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Gatineau>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "ADM IE (INFRASTRUCTURE&ENVT)"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "MAJOR CROWN PROJECTS"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "CF JOINT SIGNALS REGIMENT"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "17 MISSION SUPPORT SQUADRON"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#National%20Research%20Council%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "NRC CANADA"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#National%20Research%20Council%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1952"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#National%20Research%20Council%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1952"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#National%20Research%20Council%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Halifax>.
 <http://www.odkggroup3/ontology#Foreign%20Affairs%2C%20Trade%20And%20Development%20%28Department%20Of%29> <http://www.odkggroup3/ontology#hasEndUserEntity> "JWM MGMT SERV.DIRECTORATE"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Industry%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "CHIEF INFORMATION OFFICE"^^<http://www.w3.org/2001/XMLSchemastring>.
@@ -15739,24 +15739,24 @@
 <http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "STRATEGIC SCIENCE OUTREACH"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "COE-APM"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Health%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "REGL DIRECTOR MSB MTBA REGN"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Health%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1948"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Health%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1948"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Health%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Winnipeg>.
 <http://www.odkggroup3/ontology#Natural%20Sciences%20and%20Engineering%20Research%20Council%20of%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Natural%20Sciences%20and%20Engineering%20Research%20Council%20of%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Natural Sciences and Engineering Research Council of Canada".
 <http://www.odkggroup3/ontology#Natural%20Sciences%20and%20Engineering%20Research%20Council%20of%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "MATERIEL MGNT"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Natural%20Sciences%20and%20Engineering%20Research%20Council%20of%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Natural%20Sciences%20and%20Engineering%20Research%20Council%20of%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Natural%20Sciences%20and%20Engineering%20Research%20Council%20of%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "RP OPER UNIT(W) DET SUFFIELD"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Canadian%20Space%20Agency> <http://www.odkggroup3/ontology#hasEndUserEntity> "EXPLORATION DEVELOPMENT"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Statistics%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Statistics%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Statistics Canada".
 <http://www.odkggroup3/ontology#Statistics%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "MATL&CONTRACTS SERVS"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Statistics%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Statistics%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Statistics%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Shared%20Services%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Shared%20Services%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Shared Services Canada".
 <http://www.odkggroup3/ontology#Shared%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "SSC PROCUREMENT"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Shared%20Services%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Shared%20Services%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Shared%20Services%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "NDHQ  ADM (IM) COS / DIMCBM"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "NDHQ DGMPD SEA"^^<http://www.w3.org/2001/XMLSchemastring>.
@@ -15769,7 +15769,7 @@
 <http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "COMMUNICATIONS DIRECTORATE"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "EXT RELTNS & VISITOR EXP DIR"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Industry%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "STRTG & INNVTN PLC SCTR EDM"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Industry%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1951"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Industry%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1951"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Industry%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Edmonton>.
 <http://www.odkggroup3/ontology#Industry%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "N/A"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Industry%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Montreal>.
@@ -15777,12 +15777,12 @@
 <http://www.odkggroup3/ontology#Industry%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "REGIONAL ADMINISTRATION"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Industry%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Toronto>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "A&ES MARINE"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1965"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1965"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Moncton>.
 <http://www.odkggroup3/ontology#Library%20and%20Archives%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Library%20and%20Archives%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Library and Archives Canada".
 <http://www.odkggroup3/ontology#Library%20and%20Archives%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "CONTRACT & MATERIAL MANAGEMENT"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Library%20and%20Archives%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Library%20and%20Archives%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Library%20and%20Archives%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Gatineau>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "ARCHITECTURE&INTERIOR DESIGN"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "CFB GAGETOWN"^^<http://www.w3.org/2001/XMLSchemastring>.
@@ -15799,7 +15799,7 @@
 <http://www.odkggroup3/ontology#Indigenous%20Services%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Indigenous%20Services%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Indigenous Services Canada".
 <http://www.odkggroup3/ontology#Indigenous%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "CORP.SERVS REGL IT"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Indigenous%20Services%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1974"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Indigenous%20Services%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1974"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Indigenous%20Services%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Vancouver>.
 <http://www.odkggroup3/ontology#Canada%20Revenue%20Agency> <http://www.odkggroup3/ontology#hasEndUserEntity> "ACCOUNTS PAYABLE"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "COE-PTS-ENVIRONMENT"^^<http://www.w3.org/2001/XMLSchemastring>.
@@ -15819,12 +15819,12 @@
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "STONY MOUNTAIN INSTITUTION"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "ONT ENV.SERVICES & CONT. SITES"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Agriculture%20and%20Agri-Food%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "N/A"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Agriculture%20and%20Agri-Food%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Agriculture%20and%20Agri-Food%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Agriculture%20and%20Agri-Food%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Saint-Hyacinthe>.
 <http://www.odkggroup3/ontology#Canadian%20International%20Trade%20Tribunal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Canadian%20International%20Trade%20Tribunal> <http://www.w3.org/2000/01/rdf-schema#label> "Canadian International Trade Tribunal".
 <http://www.odkggroup3/ontology#Canadian%20International%20Trade%20Tribunal> <http://www.odkggroup3/ontology#hasEndUserEntity> "FINANCE BR."^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Canadian%20International%20Trade%20Tribunal> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Canadian%20International%20Trade%20Tribunal> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Canadian%20International%20Trade%20Tribunal> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "INCDNT MNGMT DIRECTORATE"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Montreal>.
@@ -15832,7 +15832,7 @@
 <http://www.odkggroup3/ontology#Canadian%20Radio%20Television%20and%20Telecommunications%20Commission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Canadian%20Radio%20Television%20and%20Telecommunications%20Commission> <http://www.w3.org/2000/01/rdf-schema#label> "Canadian Radio Television and Telecommunications Commission".
 <http://www.odkggroup3/ontology#Canadian%20Radio%20Television%20and%20Telecommunications%20Commission> <http://www.odkggroup3/ontology#hasEndUserEntity> "N/A"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Canadian%20Radio%20Television%20and%20Telecommunications%20Commission> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Canadian%20Radio%20Television%20and%20Telecommunications%20Commission> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Canadian%20Radio%20Television%20and%20Telecommunications%20Commission> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Gatineau>.
 <http://www.odkggroup3/ontology#Canadian%20Space%20Agency> <http://www.odkggroup3/ontology#hasEndUserEntity> "CANADIAN ASTRONAUT OFFICE"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "NDHQ DGMPD LAND"^^<http://www.w3.org/2001/XMLSchemastring>.
@@ -15840,18 +15840,18 @@
 <http://www.odkggroup3/ontology#Correctional%20Service%20of%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Saskatoon>.
 <http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Quebec%20City>.
 <http://www.odkggroup3/ontology#Indigenous%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "REGIONAL DIRECTOR"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Indigenous%20Services%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1948"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Indigenous%20Services%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1948"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Indigenous%20Services%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Winnipeg>.
 <http://www.odkggroup3/ontology#Health%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "RADIATION PROTECTION BUREAU"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Transport%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "TRANSPORT DANGEROUS GOODS"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Citizenship%20and%20Immigration%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "COMMUNICATION"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Citizenship%20and%20Immigration%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Citizenship%20and%20Immigration%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Citizenship%20and%20Immigration%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Gatineau>.
 <http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "CCG FLEET"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Canadian%20Grain%20Commission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Canadian%20Grain%20Commission> <http://www.w3.org/2000/01/rdf-schema#label> "Canadian Grain Commission".
 <http://www.odkggroup3/ontology#Canadian%20Grain%20Commission> <http://www.odkggroup3/ontology#hasEndUserEntity> "DIRECTOR, GRL"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Canadian%20Grain%20Commission> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1948"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Canadian%20Grain%20Commission> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1948"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Canadian%20Grain%20Commission> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Winnipeg>.
 <http://www.odkggroup3/ontology#Department%20of%20Justice%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "NATIONAL ACCOMODATION DIVISION"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "DEFENCE RESEARCH DEVLP CANADA"^^<http://www.w3.org/2001/XMLSchemastring>.
@@ -15865,7 +15865,7 @@
 <http://www.odkggroup3/ontology#Financial%20Consumer%20Agency%20of%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Financial%20Consumer%20Agency%20of%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Financial Consumer Agency of Canada".
 <http://www.odkggroup3/ontology#Financial%20Consumer%20Agency%20of%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "ADMIN OFFICER"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Financial%20Consumer%20Agency%20of%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Financial%20Consumer%20Agency%20of%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Financial%20Consumer%20Agency%20of%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "ALASKA HGHWY"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Agriculture%20and%20Agri-Food%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "CANADIAN PARI-MUTUEL AGENCY"^^<http://www.w3.org/2001/XMLSchemastring>.
@@ -15897,11 +15897,11 @@
 <http://www.odkggroup3/ontology#Canada%20Border%20Services%20Agency> <http://www.odkggroup3/ontology#hasEndUserEntity> "CHIEF OCEAN SCIENCE&PROD."^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Canada%20Border%20Services%20Agency> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Sidney>.
 <http://www.odkggroup3/ontology#Transport%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "AIRPORT MGR"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Transport%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1974"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Transport%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1974"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Transport%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Penticton>.
 <http://www.odkggroup3/ontology#Citizenship%20and%20Immigration%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "PROJECT DELIVERY OFFICE, OPMB"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Agriculture%20and%20Agri-Food%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "RESEARCH & DEVELOPMENT CENTRE"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Agriculture%20and%20Agri-Food%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1948"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Agriculture%20and%20Agri-Food%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1948"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Agriculture%20and%20Agri-Food%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Morden>.
 <http://www.odkggroup3/ontology#Canadian%20Space%20Agency> <http://www.odkggroup3/ontology#hasEndUserEntity> "SPACE EXPLORATION OPS & INFRAS"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "CLEANING SUPERVISOR"^^<http://www.w3.org/2001/XMLSchemastring>.
@@ -15921,17 +15921,17 @@
 <http://www.odkggroup3/ontology#Royal%20Canadian%20Mounted%20Police> <http://www.odkggroup3/ontology#hasEndUserEntity> "CO HQ DIV.ATTN FSS S BUDGET"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "DRUG VACCINES BIO DIV"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Environment%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "FINANCE & CORPORATE"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Environment%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1951"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Environment%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1951"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Environment%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Edmonton>.
 <http://www.odkggroup3/ontology#National%20Energy%20Board> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#National%20Energy%20Board> <http://www.w3.org/2000/01/rdf-schema#label> "National Energy Board".
 <http://www.odkggroup3/ontology#National%20Energy%20Board> <http://www.odkggroup3/ontology#hasEndUserEntity> "CANADA ENERGY REGULATOR"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#National%20Energy%20Board> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1951"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#National%20Energy%20Board> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1951"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#National%20Energy%20Board> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Calgary>.
 <http://www.odkggroup3/ontology#Courts%20Administration%20Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Courts%20Administration%20Service> <http://www.w3.org/2000/01/rdf-schema#label> "Courts Administration Service".
 <http://www.odkggroup3/ontology#Courts%20Administration%20Service> <http://www.odkggroup3/ontology#hasEndUserEntity> "N/A"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Courts%20Administration%20Service> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Courts%20Administration%20Service> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Courts%20Administration%20Service> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Department%20of%20Justice%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "NATIONAL LITIGATION SECTOR"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "CARLING CAMPUS"^^<http://www.w3.org/2001/XMLSchemastring>.
@@ -15941,29 +15941,29 @@
 <http://www.odkggroup3/ontology#Office%20of%20the%20Superintendent%20of%20Financial%20Institutions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Office%20of%20the%20Superintendent%20of%20Financial%20Institutions> <http://www.w3.org/2000/01/rdf-schema#label> "Office of the Superintendent of Financial Institutions".
 <http://www.odkggroup3/ontology#Office%20of%20the%20Superintendent%20of%20Financial%20Institutions> <http://www.odkggroup3/ontology#hasEndUserEntity> "N/A"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Office%20of%20the%20Superintendent%20of%20Financial%20Institutions> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Office%20of%20the%20Superintendent%20of%20Financial%20Institutions> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Office%20of%20the%20Superintendent%20of%20Financial%20Institutions> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Canadian%20Heritage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Canadian%20Heritage> <http://www.w3.org/2000/01/rdf-schema#label> "Canadian Heritage".
 <http://www.odkggroup3/ontology#Canadian%20Heritage> <http://www.odkggroup3/ontology#hasEndUserEntity> "STRAT.PLCY PLAN.&RSRCH"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Canadian%20Heritage> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Canadian%20Heritage> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Canadian%20Heritage> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Gatineau>.
 <http://www.odkggroup3/ontology#Canadian%20Heritage> <http://www.odkggroup3/ontology#hasEndUserEntity> "MATL MGNT&CONTRACTING DIR."^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Health%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "RISK ASSESSMENT BUREAU"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Industry%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "CIPO INTERNATL&REG.AFFRS BR."^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "CENTRAL REGISTRY"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1952"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1952"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Parks%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Halifax>.
 <http://www.odkggroup3/ontology#Environment%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "APPLICATIONS DIR CHIEF INFO"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Canadian%20Space%20Agency> <http://www.odkggroup3/ontology#hasEndUserEntity> "DAVID FLORIDA LABORATORY"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Canadian%20Space%20Agency> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Canadian%20Space%20Agency> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Canadian%20Space%20Agency> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Canada%20Revenue%20Agency> <http://www.odkggroup3/ontology#hasEndUserEntity> "OPERATIONS DIV."^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Public%20Health%20Agency%20of%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "CEPR"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Canadian%20Institutes%20of%20Health%20Research> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Canadian%20Institutes%20of%20Health%20Research> <http://www.w3.org/2000/01/rdf-schema#label> "Canadian Institutes of Health Research".
 <http://www.odkggroup3/ontology#Canadian%20Institutes%20of%20Health%20Research> <http://www.odkggroup3/ontology#hasEndUserEntity> "N/A"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Canadian%20Institutes%20of%20Health%20Research> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Canadian%20Institutes%20of%20Health%20Research> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Canadian%20Institutes%20of%20Health%20Research> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Department%20of%20National%20Defence> <http://www.odkggroup3/ontology#hasEndUserEntity> "ADM IM NDHQ"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "RPSBS RSM PROJECT TEAM"^^<http://www.w3.org/2001/XMLSchemastring>.
@@ -15978,33 +15978,33 @@
 <http://www.odkggroup3/ontology#Atlantic%20Canada%20Opportunities%20Agency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Atlantic%20Canada%20Opportunities%20Agency> <http://www.w3.org/2000/01/rdf-schema#label> "Atlantic Canada Opportunities Agency".
 <http://www.odkggroup3/ontology#Atlantic%20Canada%20Opportunities%20Agency> <http://www.odkggroup3/ontology#hasEndUserEntity> "CORPORATE MGR HEAD OFFICE"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Atlantic%20Canada%20Opportunities%20Agency> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1965"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Atlantic%20Canada%20Opportunities%20Agency> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1965"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Atlantic%20Canada%20Opportunities%20Agency> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Moncton>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "ENVIRONMENTAL SERVS"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Auditor%20General%20of%20Canada%2C%20Office%20of%20the> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Auditor%20General%20of%20Canada%2C%20Office%20of%20the> <http://www.w3.org/2000/01/rdf-schema#label> "Auditor General of Canada, Office of the".
 <http://www.odkggroup3/ontology#Auditor%20General%20of%20Canada%2C%20Office%20of%20the> <http://www.odkggroup3/ontology#hasEndUserEntity> "CONTRACT&PROCUREMENT SERVS"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Auditor%20General%20of%20Canada%2C%20Office%20of%20the> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Auditor%20General%20of%20Canada%2C%20Office%20of%20the> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Auditor%20General%20of%20Canada%2C%20Office%20of%20the> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Transportation%20Safety%20Board%20of%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Transportation%20Safety%20Board%20of%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Transportation Safety Board of Canada".
 <http://www.odkggroup3/ontology#Transportation%20Safety%20Board%20of%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "FINANCE&ADMIN"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Transportation%20Safety%20Board%20of%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Transportation%20Safety%20Board%20of%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Transportation%20Safety%20Board%20of%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Gatineau>.
 <http://www.odkggroup3/ontology#Economic%20Development%20Agency%20of%20Canada%20for%20the%20Regions%20of%20Quebec> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Economic%20Development%20Agency%20of%20Canada%20for%20the%20Regions%20of%20Quebec> <http://www.w3.org/2000/01/rdf-schema#label> "Economic Development Agency of Canada for the Regions of Quebec".
 <http://www.odkggroup3/ontology#Economic%20Development%20Agency%20of%20Canada%20for%20the%20Regions%20of%20Quebec> <http://www.odkggroup3/ontology#hasEndUserEntity> "HEAD OFF&GR MONTREAL BUS OFF"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Economic%20Development%20Agency%20of%20Canada%20for%20the%20Regions%20of%20Quebec> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Economic%20Development%20Agency%20of%20Canada%20for%20the%20Regions%20of%20Quebec> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Economic%20Development%20Agency%20of%20Canada%20for%20the%20Regions%20of%20Quebec> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Montreal>.
 <http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "SCIENCE - FRASER RIVER STAD"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Fisheries%20and%20Oceans%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Kamloops>.
 <http://www.odkggroup3/ontology#Foreign%20Affairs%2C%20Trade%20And%20Development%20%28Department%20Of%29> <http://www.odkggroup3/ontology#hasEndUserEntity> "PPCA ADMIN.SERV.MATL MGNT"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Foreign%20Affairs%2C%20Trade%20And%20Development%20%28Department%20Of%29> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Foreign%20Affairs%2C%20Trade%20And%20Development%20%28Department%20Of%29> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q176"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Foreign%20Affairs%2C%20Trade%20And%20Development%20%28Department%20Of%29> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Gatineau>.
 <http://www.odkggroup3/ontology#Supreme%20Court%20of%20Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.odkggroup3/ontology#EntityEndUser>.
 <http://www.odkggroup3/ontology#Supreme%20Court%20of%20Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Supreme Court of Canada".
 <http://www.odkggroup3/ontology#Supreme%20Court%20of%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "HEAD FINANCIAL PLANNING&SYS"^^<http://www.w3.org/2001/XMLSchemastring>.
-<http://www.odkggroup3/ontology#Supreme%20Court%20of%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemastring>.
+<http://www.odkggroup3/ontology#Supreme%20Court%20of%20Canada> <http://www.odkggroup3/ontology#hasProvinceWikiCode> "http://www.wikidata.org/entity/Q1904"^^<http://www.w3.org/2001/XMLSchemaIRI>.
 <http://www.odkggroup3/ontology#Supreme%20Court%20of%20Canada> <http://www.odkggroup3/ontology#hasCity> <http://www.odkggroup3/ontology#Ottawa>.
 <http://www.odkggroup3/ontology#Public%20Works%20and%20Government%20Services%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "GOS DPS FIN.&REP.PROD.DR"^^<http://www.w3.org/2001/XMLSchemastring>.
 <http://www.odkggroup3/ontology#Health%20Canada> <http://www.odkggroup3/ontology#hasEndUserEntity> "AIR HEALTH EFFECTS ASSESS.DIV."^^<http://www.w3.org/2001/XMLSchemastring>.
