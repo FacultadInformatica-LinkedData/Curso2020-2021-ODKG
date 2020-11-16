@@ -1,4 +1,4 @@
-var dataJSON = '[{"Code":"435236534654","Description":"per declined transaction","GovernmentRequester":"aaa","AwardProcedure":"Abierto","TypeOfContract":"bbb","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte"},{"Code":"3334654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Abierto","TypeOfContract":"bbb","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deluitte A"},{"Code":"435236534654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Abierto","TypeOfContract":"ccc","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte"},{"Code":"435236534654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Abierto","TypeOfContract":"bbb","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte"}]';
+var dataJSON = '[{"Code":"435236534654","Description":"per declined transaction gsgvrb gfvretbter gegbertbtrsfrwerwr gegvrteg gewgrteg gegertg grgbert fsa fgvev gfwver sdfs gfsdgvrgrt ggvter gsgvrett gegwvt","GovernmentRequester":"aaa","wikiGovernmentRequester":"https://www.wikidata.org/wiki/Q52670567","AwardProcedure":"Derivado de acuerdo marco","TypeOfContract":"Obras","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte","wikiCompany":"http://www.wikidata.org/entity/Q623133"},{"Code":"3334654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Abierto","TypeOfContract":"Servicios","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deluitte A"},{"Code":"435236534654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Contratación centralizada","TypeOfContract":"Suministros","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte"},{"Code":"435236534654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Abierto","TypeOfContract":"bbb","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte"}]';
 
 var dataObject = JSON.parse(dataJSON);
 var listItemString = $('#listItem').html();
@@ -44,8 +44,8 @@ for (var item, i = 0; item = dataObject[i++];) {
 listGovernmentRequester.forEach(addFilterGov);
 function addFilterGov(item, index) {
   var html = "<li>" +
-    '<input class="filter" data-filter=".' + item + '" type="checkbox" id="' + item + '">' +
-    '<label class="checkbox-label" for="' + item + '">' + item + '</label>' +
+    '<input class="filter" data-filter=".' + item .replace(/\s/g, "")+ '" type="checkbox" id="' + item + '">' +
+    '<label class="checkbox-label" for="' + item.replace(/\s/g, "") + '">' + item + '</label>' +
     "</li>";
   $('#filter-GovernmentRequester').append(html);
 }
@@ -53,15 +53,15 @@ function addFilterGov(item, index) {
 listAwardProcedure.forEach(addFilterAward);
 function addFilterAward(item, index) {
   var html = "<li>" +
-    '<input class="filter" data-filter=".' + item + '" type="checkbox" id="' + item + '">' +
-    '<label class="checkbox-label" for="' + item + '">' + item + '</label>' +
+    '<input class="filter" data-filter=".' + item.replace(/\s/g, "") + '" type="checkbox" id="' + item + '">' +
+    '<label class="checkbox-label" for="' + item.replace(/\s/g, "") + '">' + item + '</label>' +
     "</li>";
   $('#filter-AwardProcedure').append(html);
 }
 
 listTypeOfContract.forEach(addFilterContract);
 function addFilterContract(item, index) {
-  var html = '<li class="filter" data-filter=".' + item + '"><a href="#0" data-type="' + item + '">' +
+  var html = '<li class="filter" data-filter=".' + item.replace(/\s/g, "") + '"><a href="#0" data-type="' + item + '">' +
     item + '</a></li>';
   $('#filter-TypeOfContract').append(html);
 }
@@ -69,8 +69,8 @@ function addFilterContract(item, index) {
 listCompany.forEach(addFilterCompany);
 function addFilterCompany(item, index) {
   var html = "<li>" +
-    '<input class="filter" data-filter=".' + item + '" type="checkbox" id="' + item + '">' +
-    '<label class="checkbox-label" for="' + item + '">' + item + '</label>' +
+    '<input class="filter" data-filter=".' + item.replace(/\s/g, "") + '" type="checkbox" id="' + item + '">' +
+    '<label class="checkbox-label" for="' + item.replace(/\s/g, "") + '">' + item + '</label>' +
     "</li>";
   $('#filter-Company').append(html);
 }
@@ -91,7 +91,12 @@ function buildNewList(item, index) {
   var listItemDescription = $('.description', listItem);
   listItemDescription.html(item.Description);
   var listItemGovernmentRequester = $('.governmentRequester', listItem);
-  listItemGovernmentRequester.html(item.GovernmentRequester);
+  var govItem = item.GovernmentRequester;
+  if( item.wikiGovernmentRequester ) {
+    govItem = "<a href=" + item.wikiGovernmentRequester + ' target="_blank">' + item.GovernmentRequester + "</a>";
+    console.log(govItem);
+  }
+  listItemGovernmentRequester.html(govItem);
   var listItemAwardProcedure = $('.awardProcedure', listItem);
   listItemAwardProcedure.html(item.AwardProcedure);
   var listItemTypeOfContract = $('.typeOfContract', listItem);
@@ -101,7 +106,12 @@ function buildNewList(item, index) {
   var listItemAwardPrice = $('.awardPrice', listItem);
   listItemAwardPrice.html(item.AwardPrice + ' €');
   var listItemCompany = $('.company', listItem);
-  listItemCompany.html(item.Company);
+  var companyItem = item.Company;
+  if( item.wikiCompany ) {
+    companyItem = "<a href=" + item.wikiCompany + ' target="_blank">' + item.Company + "</a>";
+    console.log(companyItem);
+  }
+  listItemCompany.html(companyItem);
   $('#dataList').append(listItem);
 }
 

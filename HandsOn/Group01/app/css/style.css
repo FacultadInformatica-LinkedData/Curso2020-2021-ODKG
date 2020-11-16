@@ -298,7 +298,7 @@ xgallery
 }
 @media only screen and (min-width: 1170px) {
   .cd-gallery {
-    padding: 50px 2%;
+    padding: 25px 2%;
     float: right;
     -webkit-transition: width 0.3s;
     -moz-transition: width 0.3s;
@@ -652,11 +652,86 @@ xcustom form elements
 
 .card {
     background-color: white;
-    padding: 10px 15px;
-    height: 200px;
+    padding: 20px 15px;
+    height: 240px;
     border-radius: 5px;
     position: relative;
 }
 .card:hover {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.col {
+    margin-bottom: 10px;
+}
+
+.col-1 {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.col-2 {
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    float: right;
+}
+
+.top {
+    font-size: 13px;
+}
+
+.description {
+    margin-bottom: 20px;
+    padding-bottom: 2px;
+    line-height: 17.5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.info {
+    color: grey;
+    font-size: 12px;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.typeOfContract {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #41307c;
+    color: white;
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.checkbox-label {
+    display: block;
+    width: 222px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-bottom: 2px;
+}
+
+.checkbox-label::before,
+.cd-filter-block input[type=radio]:checked + label::after, .cd-filter-block input[type=checkbox]:checked + label::after {
+    left: 0;
+}
+
+a {
+    color: blue;
 }

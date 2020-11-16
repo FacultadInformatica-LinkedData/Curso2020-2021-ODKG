@@ -19,7 +19,7 @@
 
 	<main class="cd-main-content">
 		<div class="cd-tab-filter-wrapper">
-			<div class="cd-tab-filter">
+			<div class="cd-tab-filter filter-is-visible">
 				<ul class="cd-filters" id="filter-TypeOfContract">
 					<li class="placeholder">
 						<a data-type="all" href="#0">All contracts</a> <!-- selected option on mobile -->
@@ -33,24 +33,22 @@
 			<ul id="dataList">
 				<div id="listItem">
 					<div class="card">
-					    <div class="col-2">
-							<div class="code"></div>
-							<div class="governmentRequester"></div>
-					    </div>
-					    <div class="col-1">
-						  <div class="description"></div>
-					    </div>
-						<div class="col-2">
-							<div class="awardProcedure"></div>
+						<div class="top">
+							<div class="col col-1 code info"></div>
+							<div class="col col-1 governmentRequester"></div>
+							<div class="col col-1 awardProcedure"></div>
 							<div class="typeOfContract"></div>
-					    </div>
-						<div class="col-1">
-						  <div class="company"></div>
-					    </div>
-						<div class="col-2">
-							<div class="biddingPrice"></div>
-							<div class="awardPrice"></div>
-					    </div>
+							<div class="col col-1 description"></div>
+						</div>
+
+						<div class="bottom">
+							<div class="col col-1 info">Company awarded</div>
+							<div class="col col-1 company"></div>
+							<div class="col col-2 info">Bidding Price</div>
+							<div class="col col-2 info">Award Price</div>
+							<div class="col col-2 biddingPrice"></div>
+							<div class="col col-2 awardPrice"></div>
+						</div>
 					</div>
 				</div>
 			</ul>
