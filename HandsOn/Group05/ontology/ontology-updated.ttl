@@ -107,7 +107,8 @@ gr:hasCurrencyValue rdf:type owl:DatatypeProperty ;
 
 
 ###  http://purl.org/goodrelations/v1#hasCurrency
-gr:hasCurrency rdf:type owl:DatatypeProperty ;                                                       		rdfs:domain pproc:BundlePriceSpecification ;
+gr:hasCurrency rdf:type owl:DatatypeProperty ;                                                       		
+	rdfs:domain pproc:BundlePriceSpecification ;
         rdfs:range xsd:string .
 
 ### http://purl.org/goodrelations/v1#valueAddedTaxIncluded
@@ -115,6 +116,10 @@ gr:valueAddedTaxIncluded rdf:type owl:DatatypeProperty ;
 	rdfs:domain pproc:BundlePriceSpecification ;
 	rdfs:range xsd:boolean .
 
+http://purl.org/goodrelations/v1#hasPriceSpecification
+gr:hasPriceSpecification rdf:type owl:DatatypeProperty ;
+	rdfs:domain pproc:ContractNotice ;
+	rdfs:range pproc:BundlePriceSpecification .
 
 # ---- Boolean properties ----
 
