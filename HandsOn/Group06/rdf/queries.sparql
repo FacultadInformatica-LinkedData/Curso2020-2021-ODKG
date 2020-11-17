@@ -1,4 +1,4 @@
-PREFIX ns: <http://group01.org/aragon/ontology/>
+PREFIX ns: <http://publicprocurement.odkg.es/group06/ontology/ppg6#>
 
 # Get all resources of type contract
 SELECT DISTINCT ?x

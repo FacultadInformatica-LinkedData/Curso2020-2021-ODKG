@@ -1,0 +1,17 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+# Show all the elements of the ontology, including the class to each one belongs to:
+
+SELECT DISTINCT ?x ?y
+WHERE
+{
+  ?x rdf:type ?y
+}
+
+# See all IRIs:
+
+SELECT DISTINCT ?x ?y
+WHERE
+{
+  ?x owl:sameAs ?y
+}

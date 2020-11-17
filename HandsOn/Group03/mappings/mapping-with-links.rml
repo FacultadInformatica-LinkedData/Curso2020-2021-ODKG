@@ -9,6 +9,10 @@ map:jc_0 rr:child "supplier-legal-name";
     rr:parent "supplier-legal-name".
 map:jc_1 rr:child "end-user-entity_en";
     rr:parent "end-user-entity_en".
+map:jc_2 rr:child "supplier-address-city";
+    rr:parent "supplier-address-city".
+map:jc_3 rr:child "contracting-address-city";
+    rr:parent "contracting-address-city".
 map:map_TriplesMap1_0 rml:logicalSource map:source_0;
     a rr:TriplesMap;
     rdfs:label "TriplesMap1";
@@ -18,14 +22,24 @@ map:map_TriplesMap2_0 rml:logicalSource map:source_1;
     a rr:TriplesMap;
     rdfs:label "TriplesMap2";
     rr:subjectMap map:s_1;
-    rr:predicateObjectMap map:pom_9, map:pom_10, map:pom_11, map:pom_12, map:pom_13, map:pom_14, map:pom_15.
+    rr:predicateObjectMap map:pom_9, map:pom_10, map:pom_11, map:pom_12.
 map:map_TriplesMap3_0 rml:logicalSource map:source_2;
     a rr:TriplesMap;
     rdfs:label "TriplesMap3";
     rr:subjectMap map:s_2;
-    rr:predicateObjectMap map:pom_16, map:pom_17, map:pom_18, map:pom_19, map:pom_20, map:pom_21, map:pom_22, map:pom_23.
+    rr:predicateObjectMap map:pom_13, map:pom_14, map:pom_15, map:pom_16, map:pom_17.
+map:map_TriplesMap4_0 rml:logicalSource map:source_3;
+    a rr:TriplesMap;
+    rdfs:label "TriplesMap4";
+    rr:subjectMap map:s_3;
+    rr:predicateObjectMap map:pom_18, map:pom_19, map:pom_20, map:pom_21, map:pom_22.
+map:map_TriplesMap5_0 rml:logicalSource map:source_4;
+    a rr:TriplesMap;
+    rdfs:label "TriplesMap5";
+    rr:subjectMap map:s_4;
+    rr:predicateObjectMap map:pom_23, map:pom_24, map:pom_25, map:pom_26, map:pom_27.
 map:om_0 a rr:ObjectMap;
-    rr:constant "http://www.odkggroup3/ontology#.Contract";
+    rr:constant "http://www.odkggroup3/ontology#Contract";
     rr:termType rr:IRI.
 map:om_1 a rr:ObjectMap;
     rml:reference "contract-number";
@@ -36,80 +50,88 @@ map:om_10 a rr:ObjectMap;
 map:om_11 a rr:ObjectMap;
     rml:reference "organization-employee-count_en";
     rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+    rr:datatype <http://www.w3.org/2001/XMLSchemastring>.
 map:om_12 a rr:ObjectMap;
-    rml:reference "supplier-address-city";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+    rr:parentTriplesMap map:map_TriplesMap4_0;
+    rr:joinCondition map:jc_2.
 map:om_13 a rr:ObjectMap;
-    rml:reference "supplier-address-country";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-map:om_14 a rr:ObjectMap;
-    rml:reference "supplier-address-prov-state";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-map:om_15 a rr:ObjectMap;
-    rml:reference "supplier-address-postal-code";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-map:om_16 a rr:ObjectMap;
-    rr:constant "http://www.odkggroup3/ontology#.EntityEndUser";
+    rr:constant "http://www.odkggroup3/ontology#EntityEndUser";
     rr:termType rr:IRI.
-map:om_17 a rr:ObjectMap;
+map:om_14 a rr:ObjectMap;
     rml:reference "end-user-entity_en";
     rr:termType rr:Literal.
-map:om_18 a rr:ObjectMap;
+map:om_15 a rr:ObjectMap;
+    rml:reference "wikiEndUserEntity";
+    rr:termType rr:IRI.
+map:om_16 a rr:ObjectMap;
     rml:reference "contracting-entity-office-name_en";
     rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+    rr:datatype <http://www.w3.org/2001/XMLSchemastring>.
+map:om_17 a rr:ObjectMap;
+    rr:parentTriplesMap map:map_TriplesMap5_0;
+    rr:joinCondition map:jc_3.
+map:om_18 a rr:ObjectMap;
+    rr:constant "http://www.odkggroup3/ontology#City";
+    rr:termType rr:IRI.
 map:om_19 a rr:ObjectMap;
-    rml:reference "contracting-address-city";
+    rml:reference "supplier-address-prov-state";
     rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+    rr:datatype <http://www.w3.org/2001/XMLSchemastring>.
 map:om_2 a rr:ObjectMap;
     rml:reference "total-contract-value";
     rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#double>.
+    rr:datatype <http://www.w3.org/2001/XMLSchemadouble>.
 map:om_20 a rr:ObjectMap;
-    rml:reference "contracting-address-country";
+    rml:reference "supplier-address-country";
     rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+    rr:datatype <http://www.w3.org/2001/XMLSchemastring>.
 map:om_21 a rr:ObjectMap;
+    rml:reference "supplier-address-city";
+    rr:termType rr:Literal.
+map:om_22 a rr:ObjectMap;
+    rml:reference "wikiCity-Supplier";
+    rr:termType rr:IRI.
+map:om_23 a rr:ObjectMap;
+    rr:constant "http://www.odkggroup3/ontology#City";
+    rr:termType rr:IRI.
+map:om_24 a rr:ObjectMap;
+    rml:reference "contracting-address-city";
+    rr:termType rr:Literal.
+map:om_25 a rr:ObjectMap;
     rml:reference "contracting-address-prov-state";
     rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-map:om_22 a rr:ObjectMap;
-    rml:reference "contracting-address-postal-code";
+    rr:datatype <http://www.w3.org/2001/XMLSchemastring>.
+map:om_26 a rr:ObjectMap;
+    rml:reference "contracting-address-country";
     rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-map:om_23 a rr:ObjectMap;
-    rml:reference "wikiEndUserEntity";
+    rr:datatype <http://www.w3.org/2001/XMLSchemastring>.
+map:om_27 a rr:ObjectMap;
+    rml:reference "wikiCity-EndUser";
     rr:termType rr:IRI.
 map:om_3 a rr:ObjectMap;
     rml:reference "gsin";
     rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+    rr:datatype <http://www.w3.org/2001/XMLSchemastring>.
 map:om_4 a rr:ObjectMap;
     rml:reference "gsin-description_en";
     rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+    rr:datatype <http://www.w3.org/2001/XMLSchemastring>.
 map:om_5 a rr:ObjectMap;
     rml:reference "expiry-date";
     rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#dateTime>.
+    rr:datatype <http://www.w3.org/2001/XMLSchemadateTime>.
 map:om_6 a rr:ObjectMap;
     rml:reference "award-date";
     rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#dateTime>.
+    rr:datatype <http://www.w3.org/2001/XMLSchemadateTime>.
 map:om_7 a rr:ObjectMap;
     rr:parentTriplesMap map:map_TriplesMap2_0;
     rr:joinCondition map:jc_0.
 map:om_8 a rr:ObjectMap;
-    rr:parentTriplesMap map:map_TriplesMap2_0;
+    rr:parentTriplesMap map:map_TriplesMap3_0;
     rr:joinCondition map:jc_1.
 map:om_9 a rr:ObjectMap;
-    rr:constant "http://www.odkggroup3/ontology#.Supplier";
+    rr:constant "http://www.odkggroup3/ontology#Supplier";
     rr:termType rr:IRI.
 map:pm_0 a rr:PredicateMap;
     rr:constant rdf:type.
@@ -118,45 +140,53 @@ map:pm_1 a rr:PredicateMap;
 map:pm_10 a rr:PredicateMap;
     rr:constant rdfs:label.
 map:pm_11 a rr:PredicateMap;
-    rr:constant <http://www.odkggroup3/ontology#.hasEmployees>.
+    rr:constant <http://www.odkggroup3/ontology#hasEmployees>.
 map:pm_12 a rr:PredicateMap;
-    rr:constant <http://www.odkggroup3/ontology#.hasCity>.
+    rr:constant <http://www.odkggroup3/ontology#hasCity>.
 map:pm_13 a rr:PredicateMap;
-    rr:constant <http://www.odkggroup3/ontology#.hasCountry>.
-map:pm_14 a rr:PredicateMap;
-    rr:constant <http://www.odkggroup3/ontology#.hasProvState>.
-map:pm_15 a rr:PredicateMap;
-    rr:constant <http://www.odkggroup3/ontology#.hasPostalCode>.
-map:pm_16 a rr:PredicateMap;
     rr:constant rdf:type.
-map:pm_17 a rr:PredicateMap;
+map:pm_14 a rr:PredicateMap;
     rr:constant rdfs:label.
+map:pm_15 a rr:PredicateMap;
+    rr:constant <http://www.w3.org/2002/07/owl#sameAs>.
+map:pm_16 a rr:PredicateMap;
+    rr:constant <http://www.odkggroup3/ontology#hasEndUserEntity>.
+map:pm_17 a rr:PredicateMap;
+    rr:constant <http://www.odkggroup3/ontology#hasCity>.
 map:pm_18 a rr:PredicateMap;
-    rr:constant <http://www.odkggroup3/ontology#.hasEndUserEntity>.
+    rr:constant rdf:type.
 map:pm_19 a rr:PredicateMap;
-    rr:constant <http://www.odkggroup3/ontology#.hasCity>.
+    rr:constant <http://www.odkggroup3/ontology#hasProvState>.
 map:pm_2 a rr:PredicateMap;
-    rr:constant <http://www.odkggroup3/ontology#.hasContractValue>.
+    rr:constant <http://www.odkggroup3/ontology#hasContractValue>.
 map:pm_20 a rr:PredicateMap;
-    rr:constant <http://www.odkggroup3/ontology#.hasCountry>.
+    rr:constant <http://www.odkggroup3/ontology#hasCountry>.
 map:pm_21 a rr:PredicateMap;
-    rr:constant <http://www.odkggroup3/ontology#.hasProvState>.
+    rr:constant rdfs:label.
 map:pm_22 a rr:PredicateMap;
-    rr:constant <http://www.odkggroup3/ontology#.hasPostalCode>.
+    rr:constant <http://www.w3.org/2002/07/owl#sameAs>.
 map:pm_23 a rr:PredicateMap;
+    rr:constant rdf:type.
+map:pm_24 a rr:PredicateMap;
+    rr:constant rdfs:label.
+map:pm_25 a rr:PredicateMap;
+    rr:constant <http://www.odkggroup3/ontology#hasProvState>.
+map:pm_26 a rr:PredicateMap;
+    rr:constant <http://www.odkggroup3/ontology#hasCountry>.
+map:pm_27 a rr:PredicateMap;
     rr:constant <http://www.w3.org/2002/07/owl#sameAs>.
 map:pm_3 a rr:PredicateMap;
-    rr:constant <http://www.odkggroup3/ontology#.hasGsin>.
+    rr:constant <http://www.odkggroup3/ontology#hasGsin>.
 map:pm_4 a rr:PredicateMap;
-    rr:constant <http://www.odkggroup3/ontology#.hasGsinDescription>.
+    rr:constant <http://www.odkggroup3/ontology#hasGsinDescription>.
 map:pm_5 a rr:PredicateMap;
-    rr:constant <http://www.odkggroup3/ontology#.hasExpireDate>.
+    rr:constant <http://www.odkggroup3/ontology#hasExpireDate>.
 map:pm_6 a rr:PredicateMap;
-    rr:constant <http://www.odkggroup3/ontology#.hasAwardDate>.
+    rr:constant <http://www.odkggroup3/ontology#hasAwardDate>.
 map:pm_7 a rr:PredicateMap;
-    rr:constant <http://www.odkggroup3/ontology#.hasSupplier>.
+    rr:constant <http://www.odkggroup3/ontology#hasSupplier>.
 map:pm_8 a rr:PredicateMap;
-    rr:constant <http://www.odkggroup3/ontology#.belongsTo>.
+    rr:constant <http://www.odkggroup3/ontology#belongsTo>.
 map:pm_9 a rr:PredicateMap;
     rr:constant rdf:type.
 map:pom_0 a rr:PredicateObjectMap;
@@ -210,6 +240,18 @@ map:pom_22 a rr:PredicateObjectMap;
 map:pom_23 a rr:PredicateObjectMap;
     rr:predicateMap map:pm_23;
     rr:objectMap map:om_23.
+map:pom_24 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_24;
+    rr:objectMap map:om_24.
+map:pom_25 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_25;
+    rr:objectMap map:om_25.
+map:pom_26 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_26;
+    rr:objectMap map:om_26.
+map:pom_27 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_27;
+    rr:objectMap map:om_27.
 map:pom_3 a rr:PredicateObjectMap;
     rr:predicateMap map:pm_3;
     rr:objectMap map:om_3.
@@ -232,11 +274,15 @@ map:pom_9 a rr:PredicateObjectMap;
     rr:predicateMap map:pm_9;
     rr:objectMap map:om_9.
 map:s_0 a rr:SubjectMap;
-    rr:template "http://www.odkggroup3/ontology#.{contract-number}".
+    rr:template "http://www.odkggroup3/ontology#{contract-number}".
 map:s_1 a rr:SubjectMap;
-    rr:template "http://www.odkggroup3/ontology#.{supplier-legal-name}".
+    rr:template "http://www.odkggroup3/ontology#{supplier-legal-name}".
 map:s_2 a rr:SubjectMap;
-    rr:template "http://www.odkggroup3/ontology#.{end-user-entity_en}".
+    rr:template "http://www.odkggroup3/ontology#{end-user-entity_en}".
+map:s_3 a rr:SubjectMap;
+    rr:template "http://www.odkggroup3/ontology#{supplier-address-city}".
+map:s_4 a rr:SubjectMap;
+    rr:template "http://www.odkggroup3/ontology#{contracting-address-city}".
 map:source_0 a rml:LogicalSource;
     rml:source "Group3_csv_updated-with-links.csv";
     rml:referenceFormulation ql:CSV.
@@ -244,5 +290,11 @@ map:source_1 a rml:LogicalSource;
     rml:source "Group3_csv_updated-with-links.csv";
     rml:referenceFormulation ql:CSV.
 map:source_2 a rml:LogicalSource;
+    rml:source "Group3_csv_updated-with-links.csv";
+    rml:referenceFormulation ql:CSV.
+map:source_3 a rml:LogicalSource;
+    rml:source "Group3_csv_updated-with-links.csv";
+    rml:referenceFormulation ql:CSV.
+map:source_4 a rml:LogicalSource;
     rml:source "Group3_csv_updated-with-links.csv";
     rml:referenceFormulation ql:CSV.
