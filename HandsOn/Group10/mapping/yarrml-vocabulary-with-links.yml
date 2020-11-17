@@ -1,0 +1,122 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rev: http://purl.org/stuff/rev#
+  schema: http://schema.org/
+  dct: http://purl.org/dc/terms/
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  default: http://group10.com/resource/
+  vocab: http://group10.com/ontology/
+  
+  economico: http://purl.org/cerif/frapo/
+  id: http://schema.mobivoc.org/#
+  descripcion: https://dublincore.org/specifications/dublin-core/dcmi-terms/#
+  
+
+mappings:
+     
+  triplesmap1:
+    sources:
+      - [gastos-with-links.csv~csv]
+    s: default:Centro/$(Descripcion Centro)
+    po:
+      - [a,vocab:Centro]
+      - [rdfs:label,id:id]
+      - [rdfs:comment,descripcion:description]
+
+      - [descripcion:description,$(Descripcion Centro),xsd:string]
+      - [id:id,$(Centro),xsd:string]
+
+      - [owl:sameAs,$(wikicentro)~iri]
+
+
+
+    
+      - p: vocab:Centro
+        o:
+          - mapping: triplesmap2
+            condition:
+              function: equal
+              parameters:
+                - [str1,$(Centro)]
+                - [str2,$(Centro)]
+
+
+  triplesmap2:
+    sources:
+      - [ingresos-with-links.csv~csv]
+    s: default:Centro/$(Descripcion Centro)
+    po:
+      - [a,vocab:Centro]
+      - [rdfs:label,id:id]
+      - [rdfs:comment,descripcion:description]
+      
+      - [descripcion:description,$(Descripcion Centro),xsd:string]
+      - [id:id,$(Centro),xsd:string]
+
+      - [owl:sameAs,$(wikicentro)~iri]
+
+    
+
+  triplesmap3:
+    sources:
+      - [gastos-with-links.csv~csv]
+    s: default:Gastos/$(Gastos)
+    po:
+      - [a,vocab:Gastos]
+      - [rdfs:subClassOf,Economico]
+      - [rdfs:label,id:id]
+      - [rdfs:comment,descripcion:description]
+
+      - [vocab:tieneSeccion,$(Descripcion Seccion),xsd:string]
+      - [id:id,$(Seccion),xsd:string] 
+      - [descripcion:description,$(Descripcion Seccion),xsd:string] 
+
+      - [vocab:tienePrograma,$(Descripcion Programa),xsd:string]
+      - [id:id,$(Programa),xsd:string] 
+      - [descripcion:description,$(Descripcion Programa),xsd:string] 
+
+      - [vocab:tieneCentro,$(Descripcion Centro),xsd:string]
+      - [id:id,$(Centro),xsd:string] 
+      - [descripcion:description,$(Descripcion Centro),xsd:string] 
+
+      - [vocab:tieneCapitulo,$(Descripcion Capitulo),xsd:string]
+      - [id:id,$(Capitulo),xsd:string] 
+      - [descripcion:description,$(Descripcion Capitulo),xsd:string] 
+
+      - [economico:hasCost,$(OBL_RECONOC),xsd:double]
+      - [vocab:creditoDispuesto,$(C_DISPUESTO),xsd:double]
+
+      - [owl:sameAs,$(wikiseccion)~iri] 
+
+  
+
+    triplesmap4:
+    sources:
+      - [ingresos-with-links.csv~csv]
+    s: default:Ingresos/$(ingresos)
+    po:
+      - [a,vocab:Ingresos]
+      - [rdfs:subClassOf,Economico]
+      - [rdfs:label,id:id]
+      - [rdfs:comment,vocab:descripcion]
+
+      - [vocab:tieneCentro,$(Descripcion Centro),xsd:string]
+      - [id:id,$(Centro),xsd:string] 
+      - [vocab:descripcion,$(Descripcion Centro),xsd:string] 
+
+      - [vocab:tieneCapitulo,$(Descripcion Capitulo),xsd:string]
+      - [id:id,$(Capitulo),xsd:string]  
+      - [vocab:descripcion,$(Descripcion Capitulo),xsd:string] 
+
+      - [vocab:previsionIngresos,$(PREV.DEFINITIV),xsd:double]
+      - [economico:hasMonetaryValue,$(RECAUDADO),xsd:double]
+
+
+
+
+
