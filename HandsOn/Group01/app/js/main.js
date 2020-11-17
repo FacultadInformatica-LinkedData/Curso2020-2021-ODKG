@@ -1,6 +1,23 @@
+var xmlhttp = new XMLHttpRequest();
+var query = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>SELECT * WHERE {<http://group01.org/aragon/resource/Contract/CONAD20177500000046> <http://group01.org/aragon/ontology/hasAwardPrice> ?hasAwardPrice . <http://group01.org/aragon/resource/Contract/CONAD20177500000046> <http://group01.org/aragon/ontology/hasAwardProcedure> ?hasAwardProcedure .}LIMIT 10";
+var url = "http://localhost:9000/sparql#query=" + encodeURI(query);
+var dataJSON = "";
+
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        dataJSON = this.responseText;
+    }
+};
+xmlhttp.open("GET", url, true);
+xmlhttp.withCredentials = true;
+xmlhttp.send();
+
+/*
 var dataJSON = '[{"Code":"435236534654","Description":"per declined transaction gsgvrb gfvretbter gegbertbtrsfrwerwr gegvrteg gewgrteg gegertg grgbert fsa fgvev gfwver sdfs gfsdgvrgrt ggvter gsgvrett gegwvt","GovernmentRequester":"aaa","wikiGovernmentRequester":"https://www.wikidata.org/wiki/Q52670567","AwardProcedure":"Derivado de acuerdo marco","TypeOfContract":"Obras","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte","wikiCompany":"http://www.wikidata.org/entity/Q623133"},{"Code":"3334654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Abierto","TypeOfContract":"Servicios","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deluitte A"},{"Code":"435236534654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Contratación centralizada","TypeOfContract":"Suministros","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte"},{"Code":"435236534654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Abierto","TypeOfContract":"bbb","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte"}]';
+*/
 
 var dataObject = JSON.parse(dataJSON);
+console.log(dataobject);
 var listItemString = $('#listItem').html();
 
 dataObject.forEach(buildNewList);
