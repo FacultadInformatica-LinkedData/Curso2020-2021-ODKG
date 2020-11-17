@@ -10,7 +10,7 @@ prefixes:
   ql: http://semweb.mmlab.be/ns/ql#
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns/
   g2: http://MadridPublicContracts/ontology/
-  owl: http://www.w3.org/2002/07/owl/
+  owl: http://www.w3.org/2002/07/owl#
   vocab: http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/
   
 mappings:
@@ -19,7 +19,7 @@ mappings:
       - [actividad_contractual_ayto_madrid_2020-with-links.csv~csv]
     s: http://MadridPublicContracts/resources/contract/$(Numero Contrato)
     po:
-      - [a, g2:Contrato]
+      - [a, g2:Contrato~iri]
       - [g2:hasYear,$(Año),xsd:gYear]
       - [g2:hasMonth,$(Mes),xsd:gMonth]
       - [g2:hasExpNumber,$(Numero Expediente),xsd:string]
@@ -57,7 +57,7 @@ mappings:
       - [actividad_contractual_ayto_madrid_2020-with-links.csv~csv]
     s: http://MadridPublicContracts/resources/contractor/$(Organismo)
     po:
-      - [rdf:type, g2:Contractor]
+      - [rdf:type, g2:Contractor~iri]
       - [g2:orgtype, $(Descripcion Centro),xsd:string]
       - [owl:sameAs, $(wikidataOrganismo)~iri]
 
@@ -66,7 +66,7 @@ mappings:
       - [actividad_contractual_ayto_madrid_2020-with-links.csv~csv]
     s: http://MadridPublicContracts/resources/contractee/$(NIF/CIF Adjudicatario)
     po:
-      - [rdf:type, g2:Contractee]
+      - [rdf:type, g2:Contractee~iri]
       - [g2:orgtype,$(Nombre/Razon Social),xsd:string]
   
   juntasmap:
@@ -74,7 +74,7 @@ mappings:
       - [juntas_distrito_ayuto_madrid-with-links.csv~csv]
     s: http://MadridPublicContracts/resources/junta/$(NOMBRE)
     po:
-      - [rdf:type, g2:Junta]
+      - [rdf:type, g2:Junta~iri]
       - [g2:hasSchedule,$(HORARIO),xsd:string]
       - [g2:hasDescription,$(DESCRIPCION-ENTIDAD),xsd:string]
       - [g2:publicTransport,$(TRANSPORTE),xsd:string]
@@ -98,7 +98,7 @@ mappings:
         - [juntas_distrito_ayuto_madrid-with-links.csv~csv]
       s: http://MadridPublicContracts/resources/neighborhood/$(BARRIO)
       po:
-        - [rdf:type, vocab:Neighborhood]
+        - [rdf:type, vocab:Neighborhood~iri]
         - [owl:sameAs, $(wikiBARRIOS)~iri]
      
   districtsmap:
@@ -106,7 +106,7 @@ mappings:
         - [juntas_distrito_ayuto_madrid-with-links.csv~csv]
       s: http://MadridPublicContracts/resources/district/$(DISTRITO)
       po:
-        - [rdf:type, vocab:District]
+        - [rdf:type, vocab:District~iri]
         - [owl:sameAs, $(wikiDISTRITO)~iri]
         
   provincemap:
@@ -114,7 +114,7 @@ mappings:
         - [juntas_distrito_ayuto_madrid-with-links.csv~csv]
       s: http://MadridPublicContracts/resources/province/$(PROVINCIA)
       po:
-        - [rdf:type, vocab:Province]
+        - [rdf:type, vocab:Province~iri]
         - [owl:sameAs, $(wikiPROVINCIA)~iri]
 
   localitymap:
@@ -122,5 +122,5 @@ mappings:
         - [juntas_distrito_ayuto_madrid-with-links.csv~csv]
       s: http://MadridPublicContracts/resources/locality/$(LOCALIDAD)
       po:
-        - [rdf:type, vocab:Locality]
+        - [rdf:type, vocab:Locality~iri]
         - [owl:sameAs, $(wikiLOCALIDAD)~iri]
