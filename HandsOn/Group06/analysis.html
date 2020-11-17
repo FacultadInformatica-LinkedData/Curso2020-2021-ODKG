@@ -1,43 +1,65 @@
-Analyse Data Set:
-	- Subjective scope: Subjective scope to which the contracting body belongs (String)
-	- Contracting authority: Body that has contracted that batch (String)
-	- File code: File code reported by the contracting authorities (String)
-	- Object of the contract: Description of the object of the specific lot (String)
-	- Description of the service: Description provided by the contracting authority where the details of the contract are explained (String)
-	- Type of file: Form of processing of the file (String)
-	- Type of contract: Type of contract (String)
-	- Bidding budget (without IVA): Bidding budget without IVA in euros (Float)
-	- Estimated value of the contract: Estimated value of the contract in euros (Float)
-	- Publication date: Date the contract is published (Date)
-	- winning company: company winning the contract (String)
-	- Award amount (without IVA): Final amount awarded without IVA in euros (Float)
-	- Link to the publication: Link to the publication in the PSCP (URL)
-	- CPV code: CPV code informed according to the contract description (String)
-	- Award date: Date on which the contract is awarded (Date)
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Analysis</title>
+    </head>
 
-License:
-	Open Data Commons Attribution License 
-	https://opendatacommons.org/licenses/by/1-0/
-	https://contractaciopublica.gencat.cat/ecofin_pscp/AppJava/search.pscp?reqCode=start&set-locale=ca_ES
+    <body>
+        <h2><u>Analyse Data Set:</u></h2> 
+        <ul>
+            <li>Subjective scope: Subjective scope to which the contracting body belongs (String)</li>
+            <li>Contracting authority: Body that has contracted that batch (String)</li>
+            <li>File code: File code reported by the contracting authorities (String)</li>
+            <li>Object of the contract: Description of the object of the specific lot (String)</li>
+            <li>Description of the service: Description provided by the contracting authority where the details of the contract are explained (String)</li>
+            <li>Type of file: Form of processing of the file (String)</li>
+            <li>Type of contract: Type of contract (String)</li>
+            <li>Bidding budget (without IVA): Bidding budget without IVA in euros (Float)</li>
+            <li>Estimated value of the contract: Estimated value of the contract in euros (Float)</li>
+            <li>Publication date: Date the contract is published (Date)</li>
+            <li>winning company: company winning the contract (String)</li>
+            <li>Award amount (without IVA): Final amount awarded without IVA in euros (Float)</li>
+            <li>Link to the publication: Link to the publication in the PSCP (URL)</li>
+            <li>CPV code: CPV code informed according to the contract description (String)</li>
+            <li>Award date: Date on which the contract is awarded (Date)</li>
+        </ul>
+        <br>
 
-Resource naming strategy:
-    Domain -> http://publicprocurement.odkg.es/
-    +
-    Path -> group06/
-    +         
-    1) ontology/       
-        +
-        1.1) ppg6#[className]             
-        1.2) ppg6#[propertyName]
-	2) resource/
-	    + 
-	    [className] / [identifier]
+        <h2><u>License:</u></h2> 
+        <ul>
+            <li>Open Data Commons Attribution License </li>
+            <li><a href="https://opendatacommons.org/licenses/by/1-0/">https://opendatacommons.org/licenses/by/1-0/</a></li>
+            <li><a href="https://contractaciopublica.gencat.cat/ecofin_pscp/AppJava/search.pscp?reqCode=start&set-locale=ca_ES">https://contractaciopublica.gencat.cat/ecofin_pscp/AppJava/search.pscp?reqCode=start&set-locale=ca_ES</a></li>
+            <li>License to be generated: Open Data Commons Attribution License</li>
+        </ul>
+        <br>
 
-    Example:
-    http://publicprocurement.odkg.es/
-    http://publicprocurement.odkg.es/group06/
-    http://publicprocurement.odkg.es/group06/ontology/
-    http://publicprocurement.odkg.es/group06/ontology/ppg6#Contract
-    http://publicprocurement.odkg.es/group06/ontology/ppg6#hasDescription
-    http://publicprocurement.odkg.es/group06/resource/
-    http://publicprocurement.odkg.es/group06/resource/Contract/123456
+        <h2><u>Resource naming strategy:</u></h2> 
+        <ul>
+            <li>Domain -> http://publicprocurement.odkg.es/</li>
+            <li>Path -> group06/</li><br>
+            <li>1) ontology/</li>
+                <ul>
+                    <li>1.1) ppg6#[className]</li>
+                    <li>1.2) ppg6#[propertyName]</li>
+                </ul>
+                <br>
+            <li>2) resource/</li>
+                <ul>
+                    <li>[className] / [identifier]</li>
+                </ul>
+        </ul>
+
+        <h3>Resource naming strategy examples:</h3> 
+        <ul>
+            <li>http://publicprocurement.odkg.es/</li>
+            <li>http://publicprocurement.odkg.es/group06/</li>
+            <li>http://publicprocurement.odkg.es/group06/ontology/</li>
+            <li>http://publicprocurement.odkg.es/group06/ontology/ppg6#Contract</li>
+            <li>http://publicprocurement.odkg.es/group06/ontology/ppg6#hasDescription</li>
+            <li>http://publicprocurement.odkg.es/group06/resource/</li>
+            <li>http://publicprocurement.odkg.es/group06/resource/Contract/123456</li>
+        </ul>
+    </body>
+</html>

@@ -2824,8 +2824,11 @@ div.tocify {
 </div>
 <div id="resource-naming-strategy" class="section level2">
 <h2>Resource naming strategy</h2>
-<p>First we define the classes of Gastos and Ingresos which correspond to the two datasets selected. We add two columns (one in each csv) Ingresos and Gastos. The column Centro is related to both classes with the property “descripcionCentro” and another property related to the new columns. The class Gastos has the following properties (the string after the $ is the name of the column):</p>
+<p>First we define the classes of <em>Gastos</em> and <em>Ingresos</em> which correspond to the two datasets selected. They are both subclasses of <em>Economico</em>. In this class, there is define an inverse relationship with <em>Centro</em> (tieneCentro and tieneEconomico), so each instance of <em>Gastos</em> and <em>Ingresos</em> is related to a single Centro.</p>
+<p>We add two columns on the Ingresos and Gastos csv (one column in each csv), in order to have an identifier of the instance. A column Centro is found on both datasets and relates both classes with Centro.</p>
+<p>The class <em>Gastos</em> has the following properties (the string after the $ is the name of the column):</p>
 <ul>
+<li>id, $(Gasto)</li>
 <li>creditoGastado, $(OBL_RECONOC)</li>
 <li>tieneCapitulo, $(Capitulo)</li>
 <li>creditoDispuesto, $(C_DISPUESTO)</li>
@@ -2833,36 +2836,46 @@ div.tocify {
 </li>
 <li>tieneCentro, $(Centro)</li>
 <li>tieneSeccion, $(Seccion)</li>
-<li>descripcionEconomico, $(Descripcion Economico)</li>
+<li>descripcion, $(Descripcion Economico)</li>
 </ul>
-<p>The class Ingresos has the following properties (the string after the $ is the name of the column):</p>
+<p>The class <em>Ingresos</em> has the following properties (the string after the $ is the name of the column):</p>
 <ul>
+<li>id, $(Ingreso)</li>
 <li>tieneCapitulo, $(Capitulo)</li>
 <li>tieneCentro, $(Centro)]</li>
 <li>recaudado, $(RECAUDADO)</li>
 <li>previsionIngresos, $(PREV.DEFINITIV)</li>
-<li>descripcionIngresos, $(Descripcion Economico)</li>
+<li>descripcion, $(Descripcion Economico)</li>
 </ul>
-<p>The classes Capitulo, Seccion and Programa have a description property which corresponds to a column named “Descripcion …”. Eg “descripcionCapitulo” is the property and the column is “Descripcion Capitulo”. The columns that are not used will be dropped.</p>
-<p>The domain created is: <a href="http://group10.com/" class="uri">http://group10.com/</a> with a slash URI</p>
-<p>Given the example URI: <a href="http://group10.com/Gastos" class="uri">http://group10.com/Gastos</a></p>
+<p>The class Centro has as properties:</p>
 <ul>
-<li><a href="http://" class="uri">http://</a> -&gt; Is the hypertext transfer protocol</li>
-<li>group10.com/ -&gt; Is the domain using a slash URI</li>
-<li>Gastos -&gt; Is an example of a Class</li>
+<li>id</li>
+<li>descripcion</li>
+<li>tieneEconomico</li>
 </ul>
-<p>Another example URI: <a href="http://group10.com/recaudado" class="uri">http://group10.com/recaudado</a></p>
+<p>The domain created is: <a href="http://group10.com/" class="uri">http://group10.com/</a> with a slash URI.</p>
+<p>The resources created follow <a href="http://group10.com/resource/" class="uri">http://group10.com/resource/</a> and the ontologies follow <a href="http://group10.com/ontology/" class="uri">http://group10.com/ontology/</a>.</p>
+<p>Given the example URI: <a href="http://group10.com/ontology/Gastos" class="uri">http://group10.com/ontology/Gastos</a></p>
 <ul>
-<li><a href="http://" class="uri">http://</a> -&gt; Is the hypertext transfer protocol</li>
-<li>group10.com/ -&gt; Is the domain using a slash URI</li>
-<li>recaudado -&gt; Is an example of a Property</li>
+<li><a href="http://" class="uri">http://</a> -&gt; It is the hypertext transfer protocol</li>
+<li>group10.com/ -&gt; It is the domain using a slash URI</li>
+<li>ontology/ -&gt; The URI refers to an ontology object</li>
+<li>Gastos -&gt; It is the class name</li>
 </ul>
-<p>Another example URI: <a href="http://group10.com/Centro/AyuntamientoMadrid" class="uri">http://group10.com/Centro/AyuntamientoMadrid</a></p>
+<p>Another example URI: <a href="http://group10.com/ontology/recaudado" class="uri">http://group10.com/ontology/recaudado</a></p>
 <ul>
-<li><a href="http://" class="uri">http://</a> -&gt; Is the hypertext transfer protocol</li>
-<li>group10.com/ -&gt; Is the domain using a slash URI</li>
-<li>Centro -&gt; Is an example of a Class</li>
-<li>AyuntamientoMadrid -&gt; Is an example of an Individual</li>
+<li><a href="http://" class="uri">http://</a> -&gt; It is the hypertext transfer protocol</li>
+<li>group10.com/ -&gt; It is the domain using a slash URI</li>
+<li>ontology/ -&gt; The URI refers to an ontology object</li>
+<li>recaudado -&gt; It is the property name</li>
+</ul>
+<p>Another example URI: <a href="http://group10.com/resource/Centro/AyuntamientoMadrid" class="uri">http://group10.com/resource/Centro/AyuntamientoMadrid</a></p>
+<ul>
+<li><a href="http://" class="uri">http://</a> -&gt; It is the hypertext transfer protocol</li>
+<li>group10.com/ -&gt; It is the domain using a slash URI</li>
+<li>resource/ -&gt; The URI refers to an instance</li>
+<li>Centro/ -&gt; It is the class of the instance</li>
+<li>AyuntamientoMadrid -&gt; It is the instance name</li>
 </ul>
 </div>
 
