@@ -5,6 +5,26 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#PrivateContract
+<http://contsem.unizar.es/def/sector-publico/pproc#PrivateContract> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://contsem.unizar.es/def/sector-publico/pproc#Contract> .
+
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract
+<http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <http://contsem.unizar.es/def/sector-publico/pproc#Contract> .
+
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#SuppliesContract
+<http://contsem.unizar.es/def/sector-publico/pproc#SuppliesContract> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <http://contsem.unizar.es/def/sector-publico/pproc#Contract> .
+
+
+###  http://contsem.unizar.es/def/sector-publico/pproc#WorksContract
+<http://contsem.unizar.es/def/sector-publico/pproc#WorksContract> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://contsem.unizar.es/def/sector-publico/pproc#Contract> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20177500000046>
   a <http://contsem.unizar.es/def/sector-publico/pproc#WorksContract> ;
