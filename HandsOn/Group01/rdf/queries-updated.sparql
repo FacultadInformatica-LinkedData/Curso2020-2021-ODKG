@@ -35,9 +35,9 @@ SELECT DISTINCT ?x ?link
 WHERE {
     ?x owl:sameAs ?link }
 
-# 6. Get all contracts from El Corte Ingles (http://www.wikidata.org/entity/Q623133)
+# 6. Get all contracts from AUTONIMICOS MADRID S.L. (https://opencorporates.com/companies/es/81913378)
 PREFIX vocab: <http://group01.org/aragon/ontology/>
 SELECT DISTINCT ?contract
 WHERE {
     ?contract vocab:awardedTo ?company .
-    ?company owl:sameAs <http://www.wikidata.org/entity/Q623133> }
+    ?company owl:sameAs <https://opencorporates.com/companies/es/81913378> }
