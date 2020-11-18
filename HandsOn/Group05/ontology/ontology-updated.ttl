@@ -176,19 +176,3 @@ schema:City rdf:type owl:Class .
 ### http://schema.org/Country
 schema:Country rdf:type owl:Class .
 
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  http://eit-upm-opendata.com/ted#201871
-<http://eit-upm-opendata.com/ted#201871> rdf:type owl:NamedIndividual ,          pproc:ContractNotice ;
-                                                                                 pc:contractingAuthority <http://eit-upm-opendata.com/ted#201871PL> ;
-                                                                                 :hasIDType 2 ;
-                                                                                 :isCancelled 0 .
-
-
-###  http://eit-upm-opendata.com/ted#201871PL
-<http://eit-upm-opendata.com/ted#201871PL> rdf:type owl:NamedIndividual ,          pproc:ContractBodies ;
-                                                                                   schema:name "Miejskie Wodociągi i Kanalizacja w Kędzierzynie-Koźlu Sp. z o.o."^^xsd:string ;
-                                                                                   schema:postalCode "47-200"^^xsd:string .
