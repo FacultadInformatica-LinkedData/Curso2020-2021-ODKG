@@ -21,15 +21,17 @@ pc:contractingAuthority rdf:type owl:ObjectProperty ;
         rdfs:domain pproc:ContractNotice ;
         rdfs:range pproc:ContractBodies .
 
-### http://contsem.unizar.es/def/sector-publico/pproc#informationKind for CAE_TYPE
-pproc:informationKind rdf:type owl:ObjectProperty ;
-         rdfs:domain pproc:ContractBodies ;
-         rdfs:range xsd:integer .
+
 
 
 #################################################################
 #    Data properties
 #################################################################
+
+### http://contsem.unizar.es/def/sector-publico/pproc#informationKind for CAE_TYPE
+pproc:informationKind rdf:type owl:DatatypeProperty ;
+         rdfs:domain pproc:ContractBodies ;
+         rdfs:range xsd:integer .
 
 ###  http://purl.org/procurement/public-contracts#mainObject for CPV
 pc:mainObject rdf:type owl:FunctionalProperty ;
@@ -51,7 +53,7 @@ schema:addressCountry rdf:type owl:DatatypeProperty ;
 ###  http://contsem.unizar.es/def/sector-publico/pproc#noticeDate
 pproc:noticeDate rdf:type owl:DatatypeProperty ;
          rdfs:domain pproc:ContractNotice ;
-         rdfs:range xsd:string .
+         rdfs:range xsd:date .
 
 
 ###  http://contsem.unizar.es/def/sector-publico/pproc#duration
