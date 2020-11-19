@@ -14,24 +14,26 @@
 
 ###  http://linkedscience.org/lsc/ns#participatesIn
 <http://linkedscience.org/lsc/ns#participatesIn> rdf:type owl:ObjectProperty ;
-                                                 rdfs:domain <http://schema.org/Researcher> ;
+                                                 rdfs:domain <http://linkedscience.org/lsc/ns#Researcher> ;
                                                  rdfs:range <http://schema.org/Project> .
 
 
 ###  http://schema.org/addressCountry
 <http://schema.org/addressCountry> rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf owl:topObjectProperty ;
                                    rdfs:domain <http://www.w3.org/2006/vcard/ns#Organization> ;
                                    rdfs:range <http://schema.org/Country> .
 
 
 ###  http://schema.org/memberOf
 <http://schema.org/memberOf> rdf:type owl:ObjectProperty ;
-                             rdfs:domain <http://schema.org/Researcher> ;
+                             rdfs:domain <http://linkedscience.org/lsc/ns#Researcher> ;
                              rdfs:range <http://www.w3.org/2006/vcard/ns#Organization> .
 
 
 ###  http://www.example.org/group07/ontology/organization
 <http://www.example.org/group07/ontology/organization> rdf:type owl:ObjectProperty ;
+                                                       rdfs:subPropertyOf owl:topObjectProperty ;
                                                        rdfs:domain <http://www.example.org/group07/ontology/Participation> ;
                                                        rdfs:range <http://www.w3.org/2006/vcard/ns#Organization> .
 
@@ -50,6 +52,7 @@
 
 ###  http://www.w3.org/2006/vcard/ns#hasStreetAddress
 <http://www.w3.org/2006/vcard/ns#hasStreetAddress> rdf:type owl:ObjectProperty ;
+                                                   rdfs:subPropertyOf owl:topObjectProperty ;
                                                    rdfs:domain <http://www.w3.org/2006/vcard/ns#Organization> ;
                                                    rdfs:range <http://dbpedia.org/ontology/Street> .
 
@@ -70,21 +73,15 @@
                                    rdfs:range xsd:double .
 
 
-###  http://dbpedia.org/ontology/projectCoordinator
-<http://dbpedia.org/ontology/projectCoordinator> rdf:type owl:DatatypeProperty ;
-                                                 rdfs:domain <http://schema.org/Project> ;
-                                                 rdfs:range xsd:string .
-
-
-###  http://dbpedia.org/ontology/projectParticipant
-<http://dbpedia.org/ontology/projectParticipant> rdf:type owl:DatatypeProperty ;
-                                                 rdfs:domain <http://schema.org/Project> ;
-                                                 rdfs:range xsd:string .
-
-
 ###  http://dbpedia.org/ontology/role
 <http://dbpedia.org/ontology/role> rdf:type owl:DatatypeProperty ;
                                    rdfs:domain <http://www.example.org/group07/ontology/Participation> ;
+                                   rdfs:range xsd:string .
+
+
+###  http://dbpedia.org/ontology/type
+<http://dbpedia.org/ontology/type> rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain <http://www.w3.org/2006/vcard/ns#Organization> ;
                                    rdfs:range xsd:string .
 
 
@@ -139,22 +136,10 @@
                                                    rdfs:range xsd:boolean .
 
 
-###  http://www.example.org/group07/ontology/participantCountries
-<http://www.example.org/group07/ontology/participantCountries> rdf:type owl:DatatypeProperty ;
-                                                               rdfs:domain <http://schema.org/Project> ;
-                                                               rdfs:range xsd:string .
-
-
 ###  http://www.example.org/group07/ontology/programme
 <http://www.example.org/group07/ontology/programme> rdf:type owl:DatatypeProperty ;
                                                     rdfs:domain <http://schema.org/Project> ;
                                                     rdfs:range xsd:string .
-
-
-###  http://www.w3.org/1999/02/22-rdf-syntax-ns#type
-<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> rdf:type rdf:type owl:DatatypeProperty ;
-                                                  rdfs:domain <http://www.w3.org/2006/vcard/ns#Organization> ;
-                                                  rdfs:range xsd:string .
 
 
 ###  http://www.w3.org/2006/vcard/ns#organization-name
@@ -183,26 +168,25 @@
 
 ###  http://xmlns.com/foaf/0.1/familyName
 <http://xmlns.com/foaf/0.1/familyName> rdf:type owl:DatatypeProperty ;
-                                       rdfs:domain <http://schema.org/Researcher> ;
+                                       rdfs:domain <http://linkedscience.org/lsc/ns#Researcher> ;
                                        rdfs:range xsd:string .
 
 
 ###  http://xmlns.com/foaf/0.1/givenName
 <http://xmlns.com/foaf/0.1/givenName> rdf:type owl:DatatypeProperty ;
-                                      rdfs:domain <http://schema.org/Researcher> ;
+                                      rdfs:domain <http://linkedscience.org/lsc/ns#Researcher> ;
                                       rdfs:range xsd:string .
 
 
 ###  http://xmlns.com/foaf/0.1/name
 <http://xmlns.com/foaf/0.1/name> rdf:type owl:DatatypeProperty ;
-                                 rdfs:domain <http://schema.org/Researcher> ;
+                                 rdfs:domain <http://linkedscience.org/lsc/ns#Researcher> ;
                                  rdfs:range xsd:string .
 
 
 ###  http://xmlns.com/foaf/0.1/title
 <http://xmlns.com/foaf/0.1/title> rdf:type owl:DatatypeProperty ;
-                                  rdfs:subPropertyOf owl:topDataProperty ;
-                                  rdfs:domain <http://schema.org/Researcher> ;
+                                  rdfs:domain <http://linkedscience.org/lsc/ns#Researcher> ;
                                   rdfs:range xsd:string .
 
 
@@ -219,6 +203,11 @@
 ###  http://dbpedia.org/ontology/Street
 <http://dbpedia.org/ontology/Street> rdf:type owl:Class ;
                                      rdfs:subClassOf <http://schema.org/PopulatedPlace> .
+
+
+###  http://linkedscience.org/lsc/ns#Researcher
+<http://linkedscience.org/lsc/ns#Researcher> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://schema.org/Person> .
 
 
 ###  http://schema.org/AdministrativeArea
@@ -257,9 +246,8 @@
 <http://schema.org/Project> rdf:type owl:Class .
 
 
-###  http://schema.org/Researcher
-<http://schema.org/Researcher> rdf:type owl:Class ;
-                               rdfs:subClassOf <http://schema.org/Person> .
+###  http://www.example.org/group07/ontology/Coordinator
+<http://www.example.org/group07/ontology/Coordinator> rdf:type owl:Class .
 
 
 ###  http://www.example.org/group07/ontology/Participation

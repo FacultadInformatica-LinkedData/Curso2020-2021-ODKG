@@ -5,7 +5,7 @@ prefixes:
   transit: http://vocab.org/transit/terms/
   xsd: http://www.w3.org/2001/XMLSchema#
   wgs84_pos: http://www.w3.org/2003/01/geo/wgs84_pos#
-  vocab: http://www.example.com/group07/
+  vocab: http://www.example.org/group07/ontology/
   cerif: http://www.eurocris.org/ontologies/cerif/1.3#
   dbpedia-owl: http://dbpedia.org/ontology/
   dct: http://purl.org/dc/terms/
@@ -23,7 +23,7 @@ mappings:
   Project:
     sources:
       - [cordis-h2020projects-with-links-snippet.csv~csv]
-    s: http://www.example.com/group07/project/$(id)
+    s: http://www.example.com/group07/ontology/project/$(id)
     po:
       - [a, schema:Project]
       - [rdfs:label, $(id)]
@@ -37,11 +37,11 @@ mappings:
       - [vcard:url, $(projectUrl)~IRI]
       - [dg:objective, $(objective),xsd:string]
       - [dbpedia-owl:cost, $(totalCost),xsd:double]
-      - [vocab:Contribution, $(ecMaxContribution),xsd:double]
+      - [vocab:contribution, $(ecMaxContribution),xsd:double]
   WikiCoordinator:
     sources:
       - [cordis-h2020projects-with-links-snippet.csv~csv]
-    s: http://www.example.com/group07/project/$(id)/coordinator/$(Coordinator)
+    s: http://www.example.com/group07/ontology/project/$(id)/coordinator/$(Coordinator)
     po:
       - [a, vocab:Coordinator]
       - [owl:sameAs, $(WikiCoordinator)~iri]
@@ -49,7 +49,7 @@ mappings:
   WikiCountry:
     sources:
       - [cordis-h2020projects-with-links-snippet.csv~csv]
-    s: http://www.example.com/group07/project/$(id)/coordinator/$(Coordinator)/country/$(coordinatorCountry)
+    s: http://www.example.com/group07/ontology/project/$(id)/coordinator/$(Coordinator)/country/$(coordinatorCountry)
     po:
       - [a, schema:Country]
       - [owl:sameAs, $(WikiCountry)~iri]
@@ -57,14 +57,15 @@ mappings:
   Organization:
     sources:
       - [cordis-h2020organizations-with-links-snippet.csv~csv]
-    s: http://www.example.com/group07/organizaton/$(id)
+    s: http://www.example.com/group07/ontology/organization/$(id)
     po:
       - [a, vcard:Organization]
       - [rdfs:label, $(id)]
       - [vcard:organization-name, $(name),xsd:string]
       - [dbpedia-owl:abbreviation, $(shortName),xsd:string]
-      - [rdf:type, $(activityType),xsd:string]
+      - [dbpedia-owl:type, $(activityType),xsd:string]
       - [vcard:postal-code, $(postCode),xsd:string]
+      - [owl:sameAs, $(WikiOrganization)~iri]
       
       - p: schema:addressCountry
         o:
@@ -90,25 +91,16 @@ mappings:
               parameters:
                 - [str1, $(city)]
                 - [str2, $(city)]
-      
-  WikiOrganization:
-    sources:
-      - [cordis-h2020organizations-with-links-snippet.csv~csv]
-    s: http://www.example.com/group07/organization/$(name)
-    po:
-      - [a, vcard:Organization]
-      - [rdfs:label, $(name)]
-      - [owl:sameAs, $(WikiOrganization)~iri]
                 
   Participant:
     sources:
       - [cordis-h2020organizations-with-links-snippet.csv~csv]
-    s: http://www.example.com/group07/participation/$(participationId)
+    s: http://www.example.com/group07/ontology/participation/$(participationId)
     po:
       - [a,  vocab:Participation]
       - [rdfs:label, $(participationId)]
       - [vocab:hasEnded, $(endOfParticipation),xsd:boolean]
-      - [vocab:Contribution, $(ecContribution),xsd:string]
+      - [vocab:contribution, $(ecContribution),xsd:double]
       - [dbpedia-owl:role, $(role),xsd:string]
       
       - p: vocab:project
@@ -131,7 +123,7 @@ mappings:
   Researcher:
     sources:
       - [cordis-h2020-msca-fellows-with-links-snippet.csv~csv]
-    s: http://www.example.com/group07/researcher/$(fullName)
+    s: http://www.example.com/group07/ontology/researcher/$(fullName)
     po:
       - [a,  lsc:Researcher]
       - [rdfs:label, $(fullName)]
@@ -159,21 +151,21 @@ mappings:
   Country:
     sources:
       - [cordis-h2020organizations-with-links-snippet.csv~csv]
-    s: http://www.example.com/group07/Country/$(country)
+    s: http://www.example.com/group07/ontology/Country/$(country)
     po:
       - [a,  schema:Country]
       - [owl:sameAs, $(WikiCountry)~iri]
   City:
     sources:
       - [cordis-h2020organizations-with-links-snippet.csv~csv]
-    s: http://www.example.com/group07/City/$(city)
+    s: http://www.example.com/group07/ontology/City/$(city)
     po:
       - [a,  schema:City]
       - [owl:sameAs, $(WikiCity)~iri]
   Street:
     sources:
       - [cordis-h2020organizations-with-links-snippet.csv~csv]
-    s: http://www.example.com/group07/Street/$(street)
+    s: http://www.example.com/group07/ontology/Street/$(street)
     po:
       - [a,  dbpedia-owl:Street]
       - [owl:sameAs, $(WikiStreet)~iri]   

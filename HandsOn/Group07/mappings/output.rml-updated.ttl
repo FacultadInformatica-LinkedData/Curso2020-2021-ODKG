@@ -11,49 +11,49 @@ map:jc_1 rr:child "street";
     rr:parent "street".
 map:jc_2 rr:child "city";
     rr:parent "city".
-map:jc_3 rr:child "projectID";
-    rr:parent "id".
+map:jc_3 rr:child "id";
+    rr:parent "projectID".
 map:jc_4 rr:child "id";
     rr:parent "id".
-map:jc_5 rr:child "organizationId";
-    rr:parent "id".
-map:jc_6 rr:child "projectId";
-    rr:parent "id".
-map:map_City_0 rml:logicalSource map:source_8;
+map:jc_5 rr:child "id";
+    rr:parent "organizationId".
+map:jc_6 rr:child "id";
+    rr:parent "projectId".
+map:map_City_0 rml:logicalSource map:source_7;
     a rr:TriplesMap;
     rdfs:label "City";
-    rr:subjectMap map:s_8;
-    rr:predicateObjectMap map:pom_46, map:pom_47.
-map:map_Country_0 rml:logicalSource map:source_7;
-    a rr:TriplesMap;
-    rdfs:label "Country";
     rr:subjectMap map:s_7;
     rr:predicateObjectMap map:pom_44, map:pom_45.
+map:map_Country_0 rml:logicalSource map:source_6;
+    a rr:TriplesMap;
+    rdfs:label "Country";
+    rr:subjectMap map:s_6;
+    rr:predicateObjectMap map:pom_42, map:pom_43.
 map:map_Organization_0 rml:logicalSource map:source_3;
     a rr:TriplesMap;
     rdfs:label "Organization";
     rr:subjectMap map:s_3;
-    rr:predicateObjectMap map:pom_17, map:pom_18, map:pom_19, map:pom_20, map:pom_21, map:pom_22, map:pom_23, map:pom_24, map:pom_25.
-map:map_Participant_0 rml:logicalSource map:source_5;
+    rr:predicateObjectMap map:pom_17, map:pom_18, map:pom_19, map:pom_20, map:pom_21, map:pom_22, map:pom_23, map:pom_24, map:pom_25, map:pom_26.
+map:map_Participant_0 rml:logicalSource map:source_4;
     a rr:TriplesMap;
     rdfs:label "Participant";
-    rr:subjectMap map:s_5;
-    rr:predicateObjectMap map:pom_29, map:pom_30, map:pom_31, map:pom_32, map:pom_33, map:pom_34, map:pom_35.
+    rr:subjectMap map:s_4;
+    rr:predicateObjectMap map:pom_27, map:pom_28, map:pom_29, map:pom_30, map:pom_31, map:pom_32, map:pom_33.
 map:map_Project_0 rml:logicalSource map:source_0;
     a rr:TriplesMap;
     rdfs:label "Project";
     rr:subjectMap map:s_0;
     rr:predicateObjectMap map:pom_0, map:pom_1, map:pom_2, map:pom_3, map:pom_4, map:pom_5, map:pom_6, map:pom_7, map:pom_8, map:pom_9, map:pom_10, map:pom_11, map:pom_12.
-map:map_Researcher_0 rml:logicalSource map:source_6;
+map:map_Researcher_0 rml:logicalSource map:source_5;
     a rr:TriplesMap;
     rdfs:label "Researcher";
-    rr:subjectMap map:s_6;
-    rr:predicateObjectMap map:pom_36, map:pom_37, map:pom_38, map:pom_39, map:pom_40, map:pom_41, map:pom_42, map:pom_43.
-map:map_Street_0 rml:logicalSource map:source_9;
+    rr:subjectMap map:s_5;
+    rr:predicateObjectMap map:pom_34, map:pom_35, map:pom_36, map:pom_37, map:pom_38, map:pom_39, map:pom_40, map:pom_41.
+map:map_Street_0 rml:logicalSource map:source_8;
     a rr:TriplesMap;
     rdfs:label "Street";
-    rr:subjectMap map:s_9;
-    rr:predicateObjectMap map:pom_48, map:pom_49.
+    rr:subjectMap map:s_8;
+    rr:predicateObjectMap map:pom_46, map:pom_47.
 map:map_WikiCoordinator_0 rml:logicalSource map:source_1;
     a rr:TriplesMap;
     rdfs:label "WikiCoordinator";
@@ -64,11 +64,6 @@ map:map_WikiCountry_0 rml:logicalSource map:source_2;
     rdfs:label "WikiCountry";
     rr:subjectMap map:s_2;
     rr:predicateObjectMap map:pom_15, map:pom_16.
-map:map_WikiOrganization_0 rml:logicalSource map:source_4;
-    a rr:TriplesMap;
-    rdfs:label "WikiOrganization";
-    rr:subjectMap map:s_4;
-    rr:predicateObjectMap map:pom_26, map:pom_27, map:pom_28.
 map:om_0 a rr:ObjectMap;
     rr:constant "http://schema.org/Project";
     rr:termType rr:IRI.
@@ -88,7 +83,7 @@ map:om_12 a rr:ObjectMap;
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#double>.
 map:om_13 a rr:ObjectMap;
-    rr:constant "http://www.example.com/group07/Coordinator";
+    rr:constant "http://www.example.org/group07/ontology/Coordinator";
     rr:termType rr:IRI.
 map:om_14 a rr:ObjectMap;
     rml:reference "WikiCoordinator";
@@ -126,98 +121,92 @@ map:om_22 a rr:ObjectMap;
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_23 a rr:ObjectMap;
-    rr:parentTriplesMap map:map_Country_0;
-    rr:joinCondition map:jc_0.
-map:om_24 a rr:ObjectMap;
-    rr:parentTriplesMap map:map_Street_0;
-    rr:joinCondition map:jc_1.
-map:om_25 a rr:ObjectMap;
-    rr:parentTriplesMap map:map_City_0;
-    rr:joinCondition map:jc_2.
-map:om_26 a rr:ObjectMap;
-    rr:constant "http://www.w3.org/2006/vcard/ns#Organization";
-    rr:termType rr:IRI.
-map:om_27 a rr:ObjectMap;
-    rml:reference "name";
-    rr:termType rr:Literal.
-map:om_28 a rr:ObjectMap;
     rml:reference "WikiOrganization";
     rr:termType rr:IRI.
-map:om_29 a rr:ObjectMap;
-    rr:constant "http://www.example.com/group07/Participation";
+map:om_24 a rr:ObjectMap;
+    rr:parentTriplesMap map:map_Country_0;
+    rr:joinCondition map:jc_0.
+map:om_25 a rr:ObjectMap;
+    rr:parentTriplesMap map:map_Street_0;
+    rr:joinCondition map:jc_1.
+map:om_26 a rr:ObjectMap;
+    rr:parentTriplesMap map:map_City_0;
+    rr:joinCondition map:jc_2.
+map:om_27 a rr:ObjectMap;
+    rr:constant "http://www.example.org/group07/ontology/Participation";
     rr:termType rr:IRI.
+map:om_28 a rr:ObjectMap;
+    rml:reference "participationId";
+    rr:termType rr:Literal.
+map:om_29 a rr:ObjectMap;
+    rml:reference "endOfParticipation";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#boolean>.
 map:om_3 a rr:ObjectMap;
     rml:reference "acronym";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_30 a rr:ObjectMap;
-    rml:reference "participationId";
-    rr:termType rr:Literal.
-map:om_31 a rr:ObjectMap;
-    rml:reference "endOfParticipation";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#boolean>.
-map:om_32 a rr:ObjectMap;
     rml:reference "ecContribution";
     rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-map:om_33 a rr:ObjectMap;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#double>.
+map:om_31 a rr:ObjectMap;
     rml:reference "role";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-map:om_34 a rr:ObjectMap;
+map:om_32 a rr:ObjectMap;
     rr:parentTriplesMap map:map_Project_0;
     rr:joinCondition map:jc_3.
-map:om_35 a rr:ObjectMap;
+map:om_33 a rr:ObjectMap;
     rr:parentTriplesMap map:map_Organization_0;
     rr:joinCondition map:jc_4.
-map:om_36 a rr:ObjectMap;
+map:om_34 a rr:ObjectMap;
     rr:constant "http://linkedscience.org/lsc/ns#Researcher";
     rr:termType rr:IRI.
-map:om_37 a rr:ObjectMap;
+map:om_35 a rr:ObjectMap;
     rml:reference "fullName";
     rr:termType rr:Literal.
-map:om_38 a rr:ObjectMap;
+map:om_36 a rr:ObjectMap;
     rml:reference "title";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-map:om_39 a rr:ObjectMap;
+map:om_37 a rr:ObjectMap;
     rml:reference "firstName";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+map:om_38 a rr:ObjectMap;
+    rml:reference "lastName";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+map:om_39 a rr:ObjectMap;
+    rml:reference "wikiFullName";
+    rr:termType rr:IRI.
 map:om_4 a rr:ObjectMap;
     rml:reference "programme";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_40 a rr:ObjectMap;
-    rml:reference "lastName";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-map:om_41 a rr:ObjectMap;
-    rml:reference "wikiFullName";
-    rr:termType rr:IRI.
-map:om_42 a rr:ObjectMap;
     rr:parentTriplesMap map:map_Organization_0;
     rr:joinCondition map:jc_5.
-map:om_43 a rr:ObjectMap;
+map:om_41 a rr:ObjectMap;
     rr:parentTriplesMap map:map_Project_0;
     rr:joinCondition map:jc_6.
-map:om_44 a rr:ObjectMap;
+map:om_42 a rr:ObjectMap;
     rr:constant "http://schema.org/Country";
     rr:termType rr:IRI.
-map:om_45 a rr:ObjectMap;
+map:om_43 a rr:ObjectMap;
     rml:reference "WikiCountry";
     rr:termType rr:IRI.
-map:om_46 a rr:ObjectMap;
+map:om_44 a rr:ObjectMap;
     rr:constant "http://schema.org/City";
     rr:termType rr:IRI.
-map:om_47 a rr:ObjectMap;
+map:om_45 a rr:ObjectMap;
     rml:reference "WikiCity";
     rr:termType rr:IRI.
-map:om_48 a rr:ObjectMap;
+map:om_46 a rr:ObjectMap;
     rr:constant "http://dbpedia.org/ontology/Street";
     rr:termType rr:IRI.
-map:om_49 a rr:ObjectMap;
+map:om_47 a rr:ObjectMap;
     rml:reference "WikiStreet";
     rr:termType rr:IRI.
 map:om_5 a rr:ObjectMap;
@@ -248,7 +237,7 @@ map:pm_10 a rr:PredicateMap;
 map:pm_11 a rr:PredicateMap;
     rr:constant <http://dbpedia.org/ontology/cost>.
 map:pm_12 a rr:PredicateMap;
-    rr:constant <http://www.example.com/group07/Contribution>.
+    rr:constant <http://www.example.org/group07/ontology/contribution>.
 map:pm_13 a rr:PredicateMap;
     rr:constant rdf:type.
 map:pm_14 a rr:PredicateMap;
@@ -268,55 +257,55 @@ map:pm_2 a rr:PredicateMap;
 map:pm_20 a rr:PredicateMap;
     rr:constant <http://dbpedia.org/ontology/abbreviation>.
 map:pm_21 a rr:PredicateMap;
-    rr:constant rdf:type.
+    rr:constant <http://dbpedia.org/ontology/type>.
 map:pm_22 a rr:PredicateMap;
     rr:constant <http://www.w3.org/2006/vcard/ns#postal-code>.
 map:pm_23 a rr:PredicateMap;
-    rr:constant <http://schema.org/addressCountry>.
-map:pm_24 a rr:PredicateMap;
-    rr:constant <http://www.w3.org/2006/vcard/ns#hasStreetAddress>.
-map:pm_25 a rr:PredicateMap;
-    rr:constant <http://www.w3.org/2006/vcard/ns#hasLocality>.
-map:pm_26 a rr:PredicateMap;
-    rr:constant rdf:type.
-map:pm_27 a rr:PredicateMap;
-    rr:constant rdfs:label.
-map:pm_28 a rr:PredicateMap;
     rr:constant <http://www.w3.org/2002/07/owl#sameAs>.
-map:pm_29 a rr:PredicateMap;
+map:pm_24 a rr:PredicateMap;
+    rr:constant <http://schema.org/addressCountry>.
+map:pm_25 a rr:PredicateMap;
+    rr:constant <http://www.w3.org/2006/vcard/ns#hasStreetAddress>.
+map:pm_26 a rr:PredicateMap;
+    rr:constant <http://www.w3.org/2006/vcard/ns#hasLocality>.
+map:pm_27 a rr:PredicateMap;
     rr:constant rdf:type.
+map:pm_28 a rr:PredicateMap;
+    rr:constant rdfs:label.
+map:pm_29 a rr:PredicateMap;
+    rr:constant <http://www.example.org/group07/ontology/hasEnded>.
 map:pm_3 a rr:PredicateMap;
     rr:constant <http://www.eurocris.org/ontologies/cerif/1.3#acronym>.
 map:pm_30 a rr:PredicateMap;
-    rr:constant rdfs:label.
+    rr:constant <http://www.example.org/group07/ontology/contribution>.
 map:pm_31 a rr:PredicateMap;
-    rr:constant <http://www.example.com/group07/hasEnded>.
-map:pm_32 a rr:PredicateMap;
-    rr:constant <http://www.example.com/group07/Contribution>.
-map:pm_33 a rr:PredicateMap;
     rr:constant <http://dbpedia.org/ontology/role>.
+map:pm_32 a rr:PredicateMap;
+    rr:constant <http://www.example.org/group07/ontology/project>.
+map:pm_33 a rr:PredicateMap;
+    rr:constant <http://www.example.org/group07/ontology/organization>.
 map:pm_34 a rr:PredicateMap;
-    rr:constant <http://www.example.com/group07/project>.
-map:pm_35 a rr:PredicateMap;
-    rr:constant <http://www.example.com/group07/organization>.
-map:pm_36 a rr:PredicateMap;
     rr:constant rdf:type.
-map:pm_37 a rr:PredicateMap;
+map:pm_35 a rr:PredicateMap;
     rr:constant rdfs:label.
-map:pm_38 a rr:PredicateMap;
+map:pm_36 a rr:PredicateMap;
     rr:constant <http://xmlns.com/foaf/0.1/title>.
-map:pm_39 a rr:PredicateMap;
+map:pm_37 a rr:PredicateMap;
     rr:constant <http://xmlns.com/foaf/0.1/givenName>.
-map:pm_4 a rr:PredicateMap;
-    rr:constant <http://www.example.com/group07/programme>.
-map:pm_40 a rr:PredicateMap;
+map:pm_38 a rr:PredicateMap;
     rr:constant <http://xmlns.com/foaf/0.1/familyName>.
-map:pm_41 a rr:PredicateMap;
+map:pm_39 a rr:PredicateMap;
     rr:constant <http://www.w3.org/2002/07/owl#sameAs>.
-map:pm_42 a rr:PredicateMap;
+map:pm_4 a rr:PredicateMap;
+    rr:constant <http://www.example.org/group07/ontology/programme>.
+map:pm_40 a rr:PredicateMap;
     rr:constant <http://schema.org/memberOf>.
-map:pm_43 a rr:PredicateMap;
+map:pm_41 a rr:PredicateMap;
     rr:constant <http://linkedscience.org/lsc/ns#participatesIn>.
+map:pm_42 a rr:PredicateMap;
+    rr:constant rdf:type.
+map:pm_43 a rr:PredicateMap;
+    rr:constant <http://www.w3.org/2002/07/owl#sameAs>.
 map:pm_44 a rr:PredicateMap;
     rr:constant rdf:type.
 map:pm_45 a rr:PredicateMap;
@@ -324,10 +313,6 @@ map:pm_45 a rr:PredicateMap;
 map:pm_46 a rr:PredicateMap;
     rr:constant rdf:type.
 map:pm_47 a rr:PredicateMap;
-    rr:constant <http://www.w3.org/2002/07/owl#sameAs>.
-map:pm_48 a rr:PredicateMap;
-    rr:constant rdf:type.
-map:pm_49 a rr:PredicateMap;
     rr:constant <http://www.w3.org/2002/07/owl#sameAs>.
 map:pm_5 a rr:PredicateMap;
     rr:constant <http://purl.org/dc/terms/subject>.
@@ -468,12 +453,6 @@ map:pom_46 a rr:PredicateObjectMap;
 map:pom_47 a rr:PredicateObjectMap;
     rr:predicateMap map:pm_47;
     rr:objectMap map:om_47.
-map:pom_48 a rr:PredicateObjectMap;
-    rr:predicateMap map:pm_48;
-    rr:objectMap map:om_48.
-map:pom_49 a rr:PredicateObjectMap;
-    rr:predicateMap map:pm_49;
-    rr:objectMap map:om_49.
 map:pom_5 a rr:PredicateObjectMap;
     rr:predicateMap map:pm_5;
     rr:objectMap map:om_5.
@@ -490,25 +469,23 @@ map:pom_9 a rr:PredicateObjectMap;
     rr:predicateMap map:pm_9;
     rr:objectMap map:om_9.
 map:s_0 a rr:SubjectMap;
-    rr:template "http://www.example.com/group07/project/{id}".
+    rr:template "http://www.example.com/group07/ontology/project/{id}".
 map:s_1 a rr:SubjectMap;
-    rr:template "http://www.example.com/group07/project/{id}/coordinator/{Coordinator}".
+    rr:template "http://www.example.com/group07/ontology/project/{id}/coordinator/{Coordinator}".
 map:s_2 a rr:SubjectMap;
-    rr:template "http://www.example.com/group07/project/{id}/coordinator/{Coordinator}/country/{coordinatorCountry}".
+    rr:template "http://www.example.com/group07/ontology/project/{id}/coordinator/{Coordinator}/country/{coordinatorCountry}".
 map:s_3 a rr:SubjectMap;
-    rr:template "http://www.example.com/group07/organizaton/{id}".
+    rr:template "http://www.example.com/group07/ontology/organization/{id}".
 map:s_4 a rr:SubjectMap;
-    rr:template "http://www.example.com/group07/organization/{name}".
+    rr:template "http://www.example.com/group07/ontology/participation/{participationId}".
 map:s_5 a rr:SubjectMap;
-    rr:template "http://www.example.com/group07/participation/{participationId}".
+    rr:template "http://www.example.com/group07/ontology/researcher/{fullName}".
 map:s_6 a rr:SubjectMap;
-    rr:template "http://www.example.com/group07/researcher/{fullName}".
+    rr:template "http://www.example.com/group07/ontology/Country/{country}".
 map:s_7 a rr:SubjectMap;
-    rr:template "http://www.example.com/group07/Country/{country}".
+    rr:template "http://www.example.com/group07/ontology/City/{city}".
 map:s_8 a rr:SubjectMap;
-    rr:template "http://www.example.com/group07/City/{city}".
-map:s_9 a rr:SubjectMap;
-    rr:template "http://www.example.com/group07/Street/{street}".
+    rr:template "http://www.example.com/group07/ontology/Street/{street}".
 map:source_0 a rml:LogicalSource;
     rml:source "cordis-h2020projects-with-links-snippet.csv";
     rml:referenceFormulation ql:CSV.
@@ -525,17 +502,14 @@ map:source_4 a rml:LogicalSource;
     rml:source "cordis-h2020organizations-with-links-snippet.csv";
     rml:referenceFormulation ql:CSV.
 map:source_5 a rml:LogicalSource;
-    rml:source "cordis-h2020organizations-with-links-snippet.csv";
+    rml:source "cordis-h2020-msca-fellows-with-links-snippet.csv";
     rml:referenceFormulation ql:CSV.
 map:source_6 a rml:LogicalSource;
-    rml:source "cordis-h2020-msca-fellows-with-links-snippet.csv";
+    rml:source "cordis-h2020organizations-with-links-snippet.csv";
     rml:referenceFormulation ql:CSV.
 map:source_7 a rml:LogicalSource;
     rml:source "cordis-h2020organizations-with-links-snippet.csv";
     rml:referenceFormulation ql:CSV.
 map:source_8 a rml:LogicalSource;
-    rml:source "cordis-h2020organizations-with-links-snippet.csv";
-    rml:referenceFormulation ql:CSV.
-map:source_9 a rml:LogicalSource;
     rml:source "cordis-h2020organizations-with-links-snippet.csv";
     rml:referenceFormulation ql:CSV.

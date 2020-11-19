@@ -16,7 +16,7 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix schema: <http://schema.org/> .
-@base <http://www.example.com/group07/ns#>.
+@base <http://www.example.com/group07/ontology/>.
 
 <#TriplesMap1> a rr:TriplesMap;
   rml:logicalSource [
@@ -54,7 +54,7 @@
   ];
 
   rr:predicateObjectMap [
-    rr:predicate rdf:type;
+    rr:predicate dbpedia-owl:type;
     rr:objectMap [
       rml:reference "activityType";
       rr:datatype xsd:string
