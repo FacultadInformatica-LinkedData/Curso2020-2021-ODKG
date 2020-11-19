@@ -1,135 +1,270 @@
 var xmlhttp = new XMLHttpRequest();
-var query = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>SELECT * WHERE {<http://group01.org/aragon/resource/Contract/CONAD20177500000046> <http://group01.org/aragon/ontology/hasAwardPrice> ?hasAwardPrice . <http://group01.org/aragon/resource/Contract/CONAD20177500000046> <http://group01.org/aragon/ontology/hasAwardProcedure> ?hasAwardProcedure .}LIMIT 10";
-var url = "http://localhost:9000/sparql#query=" + encodeURI(query);
+// Query todos los contratos
+var url = "http://localhost:9000/sparql?query=PREFIX%20rdf%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0ASELECT%20*%20WHERE%20%7B%0A%20%20%3Fcont%20a%2Frdfs%3AsubClassOf*%20%3Chttp%3A%2F%2Fcontsem.unizar.es%2Fdef%2Fsector-publico%2Fpproc%23Contract%3E%20.%0A%7D%0A";
 var dataJSON = "";
 
 xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        dataJSON = this.responseText;
-    }
+	if (this.readyState == 4) {
+		if (this.status == 202) {
+			dataJSON = this.responseText;
+            getAllContracts();
+			console.log("getAllContracts");
+		}
+		else {
+			alert("Cannot connect to the helio server");
+		}
+	}
 };
 xmlhttp.open("GET", url, true);
-xmlhttp.withCredentials = true;
+xmlhttp.setRequestHeader("Accept","application/sparql-results+json,*/*;q=0.9");
 xmlhttp.send();
 
-/*
-var dataJSON = '[{"Code":"435236534654","Description":"per declined transaction gsgvrb gfvretbter gegbertbtrsfrwerwr gegvrteg gewgrteg gegertg grgbert fsa fgvev gfwver sdfs gfsdgvrgrt ggvter gsgvrett gegwvt","GovernmentRequester":"aaa","wikiGovernmentRequester":"https://www.wikidata.org/wiki/Q52670567","AwardProcedure":"Derivado de acuerdo marco","TypeOfContract":"Obras","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte","wikiCompany":"http://www.wikidata.org/entity/Q623133"},{"Code":"3334654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Abierto","TypeOfContract":"Servicios","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deluitte A"},{"Code":"435236534654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Contratación centralizada","TypeOfContract":"Suministros","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte"},{"Code":"435236534654","Description":"per declined transaction","GovernmentRequester":"fegverbtrehb","AwardProcedure":"Abierto","TypeOfContract":"bbb","BiddingPrice":"88435342","AwardPrice":"88435342","Company":"Deloitte"}]';
-*/
+var listContractsID = [];
+var infoAllContracts = [];
 
-var dataObject = JSON.parse(dataJSON);
-console.log(dataobject);
+function getAllContracts() {
+    var dataAllContracts = JSON.parse(dataJSON);
+
+    for (key in dataAllContracts) {
+        if (dataAllContracts.hasOwnProperty(key)) {
+            var valueBindings = dataAllContracts[key].bindings;
+
+            if( valueBindings ) {
+                for (keyContract in valueBindings) {
+                    if (valueBindings.hasOwnProperty(keyContract)) {
+                        var valueId = valueBindings[keyContract].cont.value;
+                        if( valueId ) {
+                            listContractsID.push(valueId);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    if( listContractsID.length > 0 ) {
+        var queryResult;
+        listContractsID.forEach((item, index) => {
+            var query = "http://localhost:9000/sparql?query=SELECT%20*%20WHERE%20%7B%0A%20%20%3C" + item + "%3E%20a%20%3FtypeOfContract%20.%0A%20%20%3C" + item + "%3E%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Fidentifier%3E%20%3Fidentifier%20.%0A%20%20%3C" + item + "%3E%20%3Chttp%3A%2F%2Fcontsem.unizar.es%2Fdef%2Fsector-publico%2Fpproc%23contractingBody%3E%20%3FcontractingBody%20.%0A%20%20%3C" + item + "%3E%20%3Chttp%3A%2F%2Fgroup01.org%2Faragon%2Fontology%2FawardedTo%3E%20%3FawardedTo%20.%0A%20%20%3C" + item + "%3E%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Fdescription%3E%20%3Fdescription%20.%0A%20%20%3C" + item + "%3E%20%3Chttp%3A%2F%2Fgroup01.org%2Faragon%2Fontology%2FhasAwardPrice%3E%20%3FhasAwardPrice%20.%0A%20%20%3C" + item + "%3E%20%3Chttp%3A%2F%2Fgroup01.org%2Faragon%2Fontology%2FhasAwardProcedure%3E%20%3FhasAwardProcedure%20.%0A%20%20%3C" + item + "%3E%20%3Chttp%3A%2F%2Fgroup01.org%2Faragon%2Fontology%2FhasBiddingPrice%3E%20%3FhasBiddingPrice%0A%7D%0A";
+            var xmlhttp = new XMLHttpRequest();
+
+            xmlhttp.onreadystatechange = function() {
+            	if (this.readyState == 4) {
+            		if (this.status == 202) {
+            			queryResult = this.responseText;
+                        addContractToList(queryResult, item.split('/Contract/')[1]);
+            		}
+            		else {
+            			alert("Cannot connect to the helio server");
+            		}
+            	}
+            };
+            xmlhttp.open("GET", query, true);
+            xmlhttp.setRequestHeader("Accept","application/sparql-results+json,*/*;q=0.9");
+            xmlhttp.send();
+        });
+    }
+}
+
+var aux = 0;
+function addContractToList(queryResult, code) {
+    var infoContract = JSON.parse(queryResult);
+
+    for (key in infoContract) {
+        if (infoContract.hasOwnProperty(key)) {
+            var valueBindings = infoContract[key].bindings;
+
+            if( valueBindings ) {
+                for (keyContract in valueBindings) {
+                    if (valueBindings.hasOwnProperty(keyContract)) {
+                        let contract = {
+                            "Code": code,
+                            "Company": valueBindings[keyContract].awardedTo.value,
+                            "GovernmentRequester": valueBindings[keyContract].contractingBody.value,
+                            "TypeOfContract": valueBindings[keyContract].typeOfContract.value,
+                            "AwardProcedure": valueBindings[keyContract].hasAwardProcedure.value,
+                            "BiddingPrice": valueBindings[keyContract].hasBiddingPrice.value,
+                            "AwardPrice": valueBindings[keyContract].hasAwardPrice.value
+                        }
+
+                        // QUERY 2
+                        var queryWikiRequest = "http://localhost:9000/sparql?query=PREFIX%20owl%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0APREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0ASELECT%20*%20WHERE%20%7B%0A%20%20%3C" + contract.Company +  "%3E%20rdfs%3Alabel%20%3Flabel%20.%0A%20%20%3C" + contract.Company +  "%3E%20owl%3AsameAs%20%3Furi%0A%7D%0A";
+                        var xmlhttp = new XMLHttpRequest();
+
+                        xmlhttp.onreadystatechange = function() {
+                        	if (this.readyState == 4) {
+                        		if (this.status == 202) {
+                        			queryResult = this.responseText;
+                        			var result = JSON.parse(queryResult);
+                        			if( !isEmpty(result.results.bindings) ) {
+			                        	contract.wikiCompany = result.results.bindings[0].uri.value;
+			                        }
+                                    // QUERY 1
+                                    var queryGovRequest = "http://localhost:9000/sparql?query=PREFIX%20owl%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0ASELECT%20*%20WHERE%20%7B%0A%20%20%3C" + contract.GovernmentRequester + "%3E%20owl%3AsameAs%20%3Furi%0A%7D%0A";
+                                    var xmlhttp2 = new XMLHttpRequest();
+
+                                    xmlhttp2.onreadystatechange = function() {
+                                        if (this.readyState == 4 && this.status == 202) {
+                                            var queryResult2 = this.responseText;
+                                            var result2 = JSON.parse(queryResult2);
+
+                                            if( !isEmpty(result2.results.bindings) ) {
+        			                        	contract.wikiGovernmentRequester = result2.results.bindings[0].uri.value;
+        			                        }
+                                            contract.GovernmentRequester = contract.GovernmentRequester.split("Body/")[1].replaceAll("_", " ");
+                                            contract.Company = contract.Company.split("Company/")[1].replaceAll("_", " ");
+                                            contract.TypeOfContract = contract.TypeOfContract.split("#")[1];
+                                            infoAllContracts.push(contract);
+                                        }
+										aux++;
+
+										if( aux === 99 ){
+											start();
+											console.log("start");
+										}
+                                    }
+                                    xmlhttp2.open("GET", queryGovRequest, true);
+                                    xmlhttp2.setRequestHeader("Accept","application/sparql-results+json,*/*;q=0.9");
+                                    xmlhttp2.send();
+                        		}
+                        		else {
+                        			alert("Cannot connect to the helio server");
+                        		}
+                        	}
+                        };
+                        xmlhttp.open("GET", queryWikiRequest, true);
+                        xmlhttp.setRequestHeader("Accept","application/sparql-results+json,*/*;q=0.9");
+                        xmlhttp.send();
+                    }
+                }
+            }
+        }
+    }
+}
+
+String.prototype.replaceAll = function(str1, str2, ignore)
+{
+    return this.replace(new RegExp(str1.replace(/([\/\,\!\\\^\$\{\}\[\]\(\)\.\*\+\?\|\<\>\-\&])/g,"\\$&"),(ignore?"gi":"g")),(typeof(str2)=="string")?str2.replace(/\$/g,"$$$$"):str2);
+}
+
+function isEmpty(obj) {
+    for(var key in obj) {
+        if(obj.hasOwnProperty(key))
+            return false;
+    }
+    return true;
+}
+
 var listItemString = $('#listItem').html();
+function start() {
+	infoAllContracts.forEach(buildNewList);
+	$('#listItem').remove();
 
-dataObject.forEach(buildNewList);
-$('#listItem').remove();
+	/* Get unique list of elements */
+	var lookupGovernmentRequester = {};
+	var lookupAwardProcedure = {};
+	var lookupTypeOfContract = {};
+	var lookupCompany = {};
 
-/* Get unique list of elements */
-var lookupGovernmentRequester = {};
-var lookupAwardProcedure = {};
-var lookupTypeOfContract = {};
-var lookupCompany = {};
+	var listGovernmentRequester = [];
+	var listAwardProcedure = [];
+	var listTypeOfContract = [];
+	var listCompany = [];
 
-var listGovernmentRequester = [];
-var listAwardProcedure = [];
-var listTypeOfContract = [];
-var listCompany = [];
+	for (var item, i = 0; item = infoAllContracts[i++];) {
+		var gov      = item.GovernmentRequester;
+		var award    = item.AwardProcedure;
+		var contract = item.TypeOfContract;
+		var company  = item.Company;
 
-for (var item, i = 0; item = dataObject[i++];) {
-  var gov      = item.GovernmentRequester;
-  var award    = item.AwardProcedure;
-  var contract = item.TypeOfContract;
-  var company  = item.Company;
+		if (!(gov in lookupGovernmentRequester)) {
+			lookupGovernmentRequester[gov] = 1;
+			listGovernmentRequester.push(gov);
+		}
+		if (!(award in lookupAwardProcedure)) {
+			lookupAwardProcedure[award] = 1;
+			listAwardProcedure.push(award);
+		}
+		if (!(contract in lookupTypeOfContract)) {
+			lookupTypeOfContract[contract] = 1;
+			listTypeOfContract.push(contract);
+		}
+		if (!(company in lookupCompany)) {
+			lookupCompany[company] = 1;
+			listCompany.push(company);
+		}
+	}
 
-  if (!(gov in lookupGovernmentRequester)) {
-    lookupGovernmentRequester[gov] = 1;
-    listGovernmentRequester.push(gov);
-  }
-  if (!(award in lookupAwardProcedure)) {
-    lookupAwardProcedure[award] = 1;
-    listAwardProcedure.push(award);
-  }
-  if (!(contract in lookupTypeOfContract)) {
-    lookupTypeOfContract[contract] = 1;
-    listTypeOfContract.push(contract);
-  }
-  if (!(company in lookupCompany)) {
-    lookupCompany[company] = 1;
-    listCompany.push(company);
-  }
+	listGovernmentRequester.forEach(addFilterGov);
+	listAwardProcedure.forEach(addFilterAward);
+	listTypeOfContract.forEach(addFilterContract);
+	listCompany.forEach(addFilterCompany);
 }
 
-listGovernmentRequester.forEach(addFilterGov);
 function addFilterGov(item, index) {
-  var html = "<li>" +
-    '<input class="filter" data-filter=".' + item .replace(/\s/g, "")+ '" type="checkbox" id="' + item + '">' +
-    '<label class="checkbox-label" for="' + item.replace(/\s/g, "") + '">' + item + '</label>' +
-    "</li>";
-  $('#filter-GovernmentRequester').append(html);
+	var html = "<li>" +
+	'<input class="filter" data-filter=".' + item.replace(/\s/g, "")+ '" type="checkbox" id="' + item.replace(/\s/g, "") + '">' +
+	'<label class="checkbox-label" for="' + item.replace(/\s/g, "") + '">' + item + '</label>' +
+	"</li>";
+	$('#filter-GovernmentRequester').append(html);
 }
 
-listAwardProcedure.forEach(addFilterAward);
 function addFilterAward(item, index) {
-  var html = "<li>" +
-    '<input class="filter" data-filter=".' + item.replace(/\s/g, "") + '" type="checkbox" id="' + item + '">' +
-    '<label class="checkbox-label" for="' + item.replace(/\s/g, "") + '">' + item + '</label>' +
-    "</li>";
-  $('#filter-AwardProcedure').append(html);
+	var html = "<li>" +
+	'<input class="filter" data-filter=".' + item.replace(/\s/g, "") + '" type="checkbox" id="' + item + '">' +
+	'<label class="checkbox-label" for="' + item.replace(/\s/g, "") + '">' + item + '</label>' +
+	"</li>";
+	$('#filter-AwardProcedure').append(html);
 }
 
-listTypeOfContract.forEach(addFilterContract);
 function addFilterContract(item, index) {
-  var html = '<li class="filter" data-filter=".' + item.replace(/\s/g, "") + '"><a href="#0" data-type="' + item + '">' +
-    item + '</a></li>';
-  $('#filter-TypeOfContract').append(html);
+	var html = '<li class="filter" data-filter=".' + item.replace(/\s/g, "") + '"><a href="#0" data-type="' + item + '">' +
+	item + '</a></li>';
+	$('#filter-TypeOfContract').append(html);
 }
 
-listCompany.forEach(addFilterCompany);
 function addFilterCompany(item, index) {
-  var html = "<li>" +
-    '<input class="filter" data-filter=".' + item.replace(/\s/g, "") + '" type="checkbox" id="' + item + '">' +
-    '<label class="checkbox-label" for="' + item.replace(/\s/g, "") + '">' + item + '</label>' +
-    "</li>";
-  $('#filter-Company').append(html);
+	var html = "<li>" +
+	'<input class="filter" data-filter=".' + item.replace(/\s/g, "") + '" type="checkbox" id="' + item + '">' +
+	'<label class="checkbox-label" for="' + item.replace(/\s/g, "") + '">' + item + '</label>' +
+	"</li>";
+	$('#filter-Company').append(html);
 }
 
 function buildNewList(item, index) {
-  var cssItem = "mix " +
-    item.Code.replace(/\s/g, "") + " " +
-    item.GovernmentRequester.replace(/\s/g, "") + " " +
-    item.AwardProcedure.replace(/\s/g, "") + " " +
-    item.TypeOfContract.replace(/\s/g, "") + " " +
-    item.BiddingPrice.replace(/\s/g, "") + " " +
-    item.AwardPrice.replace(/\s/g, "") + " " +
-    item.Company.replace(/\s/g, "");
-  var listItem = $('<li class="' + cssItem + '">' + listItemString + '</li>');
+	var cssItem = "mix " +
+	item.Code.replace(/\s/g, "") + " " +
+	item.GovernmentRequester.replace(/\s/g, "") + " " +
+	item.AwardProcedure.replace(/\s/g, "") + " " +
+	item.TypeOfContract.replace(/\s/g, "") + " " +
+	item.Company.replace(/\s/g, "");
+	var listItem = $('<li class="' + cssItem + '">' + listItemString + '</li>');
 
-  var listItemCode = $('.code', listItem);
-  listItemCode.html(item.Code);
-  var listItemDescription = $('.description', listItem);
-  listItemDescription.html(item.Description);
-  var listItemGovernmentRequester = $('.governmentRequester', listItem);
-  var govItem = item.GovernmentRequester;
-  if( item.wikiGovernmentRequester ) {
-    govItem = "<a href=" + item.wikiGovernmentRequester + ' target="_blank">' + item.GovernmentRequester + "</a>";
-    console.log(govItem);
-  }
-  listItemGovernmentRequester.html(govItem);
-  var listItemAwardProcedure = $('.awardProcedure', listItem);
-  listItemAwardProcedure.html(item.AwardProcedure);
-  var listItemTypeOfContract = $('.typeOfContract', listItem);
-  listItemTypeOfContract.html(item.TypeOfContract);
-  var listItemBiddingPrice = $('.biddingPrice', listItem);
-  listItemBiddingPrice.html(item.BiddingPrice + ' €');
-  var listItemAwardPrice = $('.awardPrice', listItem);
-  listItemAwardPrice.html(item.AwardPrice + ' €');
-  var listItemCompany = $('.company', listItem);
-  var companyItem = item.Company;
-  if( item.wikiCompany ) {
-    companyItem = "<a href=" + item.wikiCompany + ' target="_blank">' + item.Company + "</a>";
-    console.log(companyItem);
-  }
-  listItemCompany.html(companyItem);
-  $('#dataList').append(listItem);
+	var listItemCode = $('.code', listItem);
+	listItemCode.html(item.Code);
+	var listItemDescription = $('.description', listItem);
+	listItemDescription.html(item.Description);
+	var listItemGovernmentRequester = $('.governmentRequester', listItem);
+	var govItem = item.GovernmentRequester;
+	if( item.wikiGovernmentRequester ) {
+		govItem = "<a href=" + item.wikiGovernmentRequester + ' target="_blank">' + item.GovernmentRequester + "</a>";
+	}
+	listItemGovernmentRequester.html(govItem);
+	var listItemAwardProcedure = $('.awardProcedure', listItem);
+	listItemAwardProcedure.html(item.AwardProcedure);
+	var listItemTypeOfContract = $('.typeOfContract', listItem);
+	listItemTypeOfContract.html(item.TypeOfContract);
+	var listItemBiddingPrice = $('.biddingPrice', listItem);
+	listItemBiddingPrice.html(item.BiddingPrice + ' €');
+	var listItemAwardPrice = $('.awardPrice', listItem);
+	listItemAwardPrice.html(item.AwardPrice + ' €');
+	var listItemCompany = $('.company', listItem);
+	var companyItem = item.Company;
+	if( item.wikiCompany ) {
+		companyItem = "<a href=" + item.wikiCompany + ' target="_blank">' + item.Company + "</a>";
+	}
+	listItemCompany.html(companyItem);
+	$('#dataList').append(listItem);
 }
 
 jQuery(document).ready(function($){
