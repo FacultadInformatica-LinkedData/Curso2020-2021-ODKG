@@ -20,44 +20,71 @@
                                  dc:description "undefined"@en . 
 #################################################################
 
-###  Property Definitions (Number of Property) 7 ###
+###  Property Definitions (Number of Property) 14 ###
 #  --------------------------- Property 0------------------------- 
+:hasOfficeName rdf:type owl:DatatypeProperty ;
+               rdfs:label "hasOfficeName"@IRI-based; 
+               rdfs:range xsd:string . 
+#  --------------------------- Property 1------------------------- 
+:hasNumber rdf:type owl:DatatypeProperty ;
+           rdfs:label "hasNumber"@IRI-based; 
+           rdfs:range xsd:string . 
+#  --------------------------- Property 2------------------------- 
 owl:topObjectProperty rdf:type owl:ObjectProperty ;
                       rdfs:label "topObjectProperty"@IRI-based; 
                       rdfs:label "topObjectProperty"@iri-based . 
-#  --------------------------- Property 1------------------------- 
-:entityProperties rdf:type owl:DatatypeProperty ;
-                  rdfs:label "entityProperties"@IRI-based; 
-                  rdfs:label "entityProperties"@iri-based; 
-                  rdfs:range rdfs:Literal . 
-#  --------------------------- Property 2------------------------- 
-:contractProperties rdf:type owl:DatatypeProperty ;
-                    rdfs:label "contractProperties"@IRI-based; 
-                    rdfs:label "contractProperties"@iri-based; 
-                    rdfs:range rdfs:Literal . 
 #  --------------------------- Property 3------------------------- 
-:hasAdressStreet rdf:type owl:DatatypeProperty ;
-                 rdfs:label "hasAdressStreet"@IRI-based; 
-                 rdfs:label "hasAdressStreet"@iri-based; 
-                 rdfs:range rdfs:Literal . 
+:hasGsin rdf:type owl:DatatypeProperty ;
+         rdfs:label "hasGsin"@IRI-based; 
+         rdfs:range xsd:string . 
 #  --------------------------- Property 4------------------------- 
-:hasPCValue rdf:type owl:DatatypeProperty ;
-            rdfs:label "hasPCValue"@IRI-based; 
-            rdfs:label "hasPCValue"@iri-based; 
-            rdfs:range rdfs:Literal . 
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:label "hasName"@IRI-based; 
+         rdfs:range xsd:string . 
 #  --------------------------- Property 5------------------------- 
+:hasProvState rdf:type owl:DatatypeProperty ;
+              rdfs:label "hasProvState"@IRI-based; 
+              rdfs:range xsd:string . 
+#  --------------------------- Property 6------------------------- 
+:hasGsinDescription rdf:type owl:DatatypeProperty ;
+                    rdfs:label "hasGsinDescription"@IRI-based; 
+                    rdfs:range xsd:string . 
+#  --------------------------- Property 7------------------------- 
+:hasContractValue rdf:type owl:DatatypeProperty ;
+                  rdfs:label "hasContractValue"@IRI-based; 
+                  rdfs:range xsd:double . 
+#  --------------------------- Property 8------------------------- 
+:hasEndUserEntity rdf:type owl:DatatypeProperty ;
+                  rdfs:label "hasEndUserEntity"@IRI-based; 
+                  rdfs:range xsd:string . 
+#  --------------------------- Property 9------------------------- 
+:hasCountry rdf:type owl:DatatypeProperty ;
+            rdfs:label "hasCountry"@IRI-based; 
+            rdfs:range xsd:string . 
+#  --------------------------- Property 10------------------------- 
+:hasEmployees rdf:type owl:DatatypeProperty ;
+              rdfs:label "hasEmployees"@IRI-based; 
+              rdfs:range xsd:string . 
+#  --------------------------- Property 11------------------------- 
 owl:topDataProperty rdf:type owl:DatatypeProperty ;
                     rdfs:label "topDataProperty"@IRI-based; 
                     rdfs:label "topDataProperty"@iri-based; 
                     rdfs:range rdfs:Literal . 
-#  --------------------------- Property 6------------------------- 
-:supplierProperties rdf:type owl:DatatypeProperty ;
-                    rdfs:label "supplierProperties"@IRI-based; 
-                    rdfs:label "supplierProperties"@iri-based; 
-                    rdfs:range rdfs:Literal . 
-###  Class Definitions (Number of Classes) 3 ###
+#  --------------------------- Property 12------------------------- 
+:hasExpireDate rdf:type owl:DatatypeProperty ;
+               rdfs:label "hasExpireDate"@IRI-based; 
+               rdfs:range xsd:dateTime . 
+#  --------------------------- Property 13------------------------- 
+:hasAwardDate rdf:type owl:DatatypeProperty ;
+              rdfs:label "hasAwardDate"@IRI-based; 
+              rdfs:range xsd:dateTime . 
+###  Class Definitions (Number of Classes) 4 ###
 #  --------------------------- Class  0------------------------- 
 :Contract rdf:type owl:Class; 
+          rdfs:subClassOf [ rdf:type owl:Restriction ; 
+                            owl:onProperty :hasExpireDate;
+                            owl:someValuesFrom xsd:dateTime
+                          ];
           rdfs:subClassOf [ rdf:type owl:Restriction ; 
                             owl:onProperty :hasGsin;
                             owl:someValuesFrom xsd:string
@@ -67,16 +94,16 @@ owl:topDataProperty rdf:type owl:DatatypeProperty ;
                             owl:someValuesFrom xsd:double
                           ];
           rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                            owl:onProperty :hasAwardDate;
-                            owl:someValuesFrom xsd:dateTime
-                          ];
-          rdfs:subClassOf [ rdf:type owl:Restriction ; 
                             owl:onProperty :belongsTo;
                             owl:someValuesFrom :EntityEndUser
                           ];
           rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                            owl:onProperty :hasExpireDate;
+                            owl:onProperty :hasAwardDate;
                             owl:someValuesFrom xsd:dateTime
+                          ];
+          rdfs:subClassOf [ rdf:type owl:Restriction ; 
+                            owl:onProperty :hasNumber;
+                            owl:someValuesFrom xsd:string
                           ];
           rdfs:subClassOf [ rdf:type owl:Restriction ; 
                             owl:onProperty :hasSupplier;
@@ -95,43 +122,39 @@ owl:topDataProperty rdf:type owl:DatatypeProperty ;
                             owl:someValuesFrom xsd:string
                           ];
           rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                            owl:onProperty :hasProvState;
-                            owl:someValuesFrom xsd:string
-                          ];
-          rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                            owl:onProperty :hasCountry;
-                            owl:someValuesFrom xsd:string
-                          ];
-          rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                            owl:onProperty :hasPostalCode;
-                            owl:someValuesFrom xsd:string
-                          ];
-          rdfs:subClassOf [ rdf:type owl:Restriction ; 
                             owl:onProperty :hasCity;
+                            owl:someValuesFrom :City
+                          ];
+          rdfs:subClassOf [ rdf:type owl:Restriction ; 
+                            owl:onProperty :hasName;
                             owl:someValuesFrom xsd:string
                           ];
           rdfs:label "Supplier"@IRI-based; 
           rdfs:label "Supplier"@iri-based . 
 #  --------------------------- Class  2------------------------- 
+:City rdf:type owl:Class; 
+      rdfs:subClassOf [ rdf:type owl:Restriction ; 
+                        owl:onProperty :hasProvState;
+                        owl:someValuesFrom xsd:string
+                      ];
+      rdfs:subClassOf [ rdf:type owl:Restriction ; 
+                        owl:onProperty :hasCountry;
+                        owl:someValuesFrom xsd:string
+                      ];
+      rdfs:label "City"@IRI-based; 
+      rdfs:label "City"@iri-based . 
+#  --------------------------- Class  3------------------------- 
 :EntityEndUser rdf:type owl:Class; 
-               rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                 owl:onProperty :hasPostalCode;
-                                 owl:someValuesFrom xsd:string
-                               ];
                rdfs:subClassOf [ rdf:type owl:Restriction ; 
                                  owl:onProperty :hasEndUserEntity;
                                  owl:someValuesFrom xsd:string
                                ];
                rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                 owl:onProperty :hasCountry;
-                                 owl:someValuesFrom xsd:string
-                               ];
-               rdfs:subClassOf [ rdf:type owl:Restriction ; 
                                  owl:onProperty :hasCity;
-                                 owl:someValuesFrom xsd:string
+                                 owl:someValuesFrom :City
                                ];
                rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                 owl:onProperty :hasProvState;
+                                 owl:onProperty :hasOfficeName;
                                  owl:someValuesFrom xsd:string
                                ];
                rdfs:label "EntityEndUser"@IRI-based; 
@@ -139,28 +162,44 @@ owl:topDataProperty rdf:type owl:DatatypeProperty ;
 
 
 
-:OCLC%20Online%20Computer%20Library%20Center%20Inc rdf:type :Supplier; 
-:hasEmployees "1000 to 1499 employees"^^xsd:string;
-:hasProvState "Quebec"^^xsd:string;
-:hasCountry "Canada"^^xsd:string;
-:hasPostalCode "J4Z3V5"^^xsd:string;
-:hasCity "Brossard"^^xsd:string
+
+:HCL%20Canada%20Inc. rdf:type :Supplier; 
+:hasEmployees "5000 employees and over"^^xsd:string;
+:hasCity :Mississauga;
+rdfs:label "HCL Canada Inc."^^xsd:string
 .
+
+
+:Mississauga rdf:type :City;
+:hasProvState "Ontario"^^xsd:string;
+:hasCountry "Canada"^^xsd:string;
+owl:sameAs "http://www.wikidata.org/entity/Q50816"^^xsd:URI;
+rdfs:label "Mississauga"^^xsd:string
+.
+
+:Ottawa rdf:type :City;
+:hasProvState "Ontario"^^xsd:string;
+:hasCountry "Canada"^^xsd:string;
+owl:sameAs "http://www.wikidata.org/entity/Q25246576"^^xsd:URI;
+rdfs:label "Ottawa"^^xsd:string
+.
+
 
 :Agriculture%20and%20Agri-Food%20Canada rdf:type :EntityEndUser; 
-:hasPostalCode "K1A0C5"^^xsd:string;
+owl:sameAs "http://www.wikidata.org/entity/Q1046164"^^xsd:URI;
 :hasEndUserEntity "CSB ASSET MGNT&CAPTL PLANNING"^^xsd:string;
-:hasCountry "Canada"^^xsd:string;
-:hasCity "Ottawa"^^xsd:string;
-:hasProvState "Ontario"^^xsd:string
+:hasCity :Ottawa;
+rdfs:label "Agriculture and Agri-Food Canada"^^xsd:string
 .
 
-:01044-150366-001-XL rdf:type :Contract;
-:hasGsin "N7030"^^xsd:string;
-:hasContractValue "168431.0"^^xsd:double;
-:hasAwardDate "2020-01-30T00:00:00Z"^^xsd:dateTime;
-:belongsTo :Agriculture%20and%20Agri-Food%20Canada;
+
+:01044-200486-001-EEM rdf:type :Contract;
 :hasExpireDate "2021-03-31T00:00:00Z"^^xsd:date;
-:hasSupplier :OCLC%20Online%20Computer%20Library%20Center%20Inc;
-:hasGsinDescription "ADP Software"^^xsd:string;
+:hasGsin "N7030"^^xsd:string;
+:hasContractValue "47644.0"^^xsd:double;
+:belongsTo :Agriculture%20and%20Agri-Food%20Canada;
+:hasAwardDate "2020-03-26T00:00:00Z"^^xsd:dateTime;
+rdfs:label "01044-200486-001-EEM"^^xsd:string;
+:hasSupplier :HCL%20Canada%20Inc.;
+:hasGsinDescription "ADP Software"^^xsd:string
 .

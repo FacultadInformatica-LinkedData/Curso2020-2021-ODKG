@@ -1,0 +1,454 @@
+[
+    {
+      "op": "core/column-removal",
+      "columnName": "PREV.INICIAL",
+      "description": "Remove column PREV.INICIAL"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "MODIFICACIONES",
+      "description": "Remove column MODIFICACIONES"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "D. RECON.NETOS",
+      "description": "Remove column D. RECON.NETOS"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "Economico",
+      "description": "Remove column Economico"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "PREV.DEFINITIV",
+      "expression": "value.replace(\",\",\".\")",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column PREV.DEFINITIV using expression value.replace(\",\",\".\")"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "RECAUDADO",
+      "expression": "value.replace(\",\",\".\")",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column RECAUDADO using expression value.replace(\",\",\".\")"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "PREV.DEFINITIV",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column PREV.DEFINITIV using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "RECAUDADO",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column RECAUDADO using expression value.toNumber()"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "Centro",
+      "expression": "grel:\"0000\"[0,4-row.index.length()]+row.index",
+      "onError": "set-to-blank",
+      "newColumnName": "ingresos",
+      "columnInsertIndex": 1,
+      "description": "Create column ingresos at index 1 based on column Centro using expression grel:\"0000\"[0,4-row.index.length()]+row.index"
+    },
+    {
+      "op": "core/column-reorder",
+      "columnNames": [
+        "ingresos",
+        "Centro",
+        "Descripcion Centro",
+        "Capitulo",
+        "Descripcion Capitulo",
+        "Descripcion Economico",
+        "PREV.DEFINITIV",
+        "RECAUDADO"
+      ],
+      "description": "Reorder columns"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "ingresos",
+      "expression": "value.trim()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column ingresos using expression value.trim()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Centro",
+      "expression": "value.trim()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column Centro using expression value.trim()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Centro",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column Centro using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Descripcion Centro",
+      "expression": "value.trim()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column Descripcion Centro using expression value.trim()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Capitulo",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column Capitulo using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Capitulo",
+      "expression": "value.trim()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column Capitulo using expression value.trim()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Descripcion Capitulo",
+      "expression": "value.trim()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column Descripcion Capitulo using expression value.trim()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Descripcion Economico",
+      "expression": "value.trim()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column Descripcion Economico using expression value.trim()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "PREV.DEFINITIV",
+      "expression": "value.trim()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column PREV.DEFINITIV using expression value.trim()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "RECAUDADO",
+      "expression": "value.trim()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column RECAUDADO using expression value.trim()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "ingresos",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column ingresos using expression value.toNumber()"
+    },
+    {
+      "op": "core/recon",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Descripcion Centro",
+      "config": {
+        "mode": "standard-service",
+        "service": "https://wdreconcile.toolforge.org/es/api",
+        "identifierSpace": "http://www.wikidata.org/entity/",
+        "schemaSpace": "http://www.wikidata.org/prop/direct/",
+        "autoMatch": true,
+        "columnDetails": [],
+        "limit": 0
+      },
+      "description": "Reconcile cells in column Descripcion Centro to type null"
+    },
+    {
+      "op": "core/recon-judge-similar-cells",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Descripcion Centro",
+      "similarValue": "AYUNTAMIENTO DE MADRID",
+      "judgment": "matched",
+      "match": {
+        "id": "Q3773976",
+        "name": "Ayuntamiento de Madrid",
+        "types": [
+          "Q22996476"
+        ],
+        "score": 100
+      },
+      "shareNewTopics": false,
+      "description": "Match item Ayuntamiento de Madrid (Q3773976) for cells containing \"AYUNTAMIENTO DE MADRID\" in column Descripcion Centro"
+    },
+    {
+      "op": "core/recon-judge-similar-cells",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "Descripcion Centro: judgment",
+            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+            "columnName": "Descripcion Centro",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "none",
+                  "l": "none"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "Descripcion Centro",
+      "similarValue": "INFORMÁTICA DEL AYUNTAMIENTO DE MADRID",
+      "judgment": "new",
+      "shareNewTopics": true,
+      "description": "Mark to create one single new item for all cells containing \"INFORMÁTICA DEL AYUNTAMIENTO DE MADRID\" in column Descripcion Centro"
+    },
+    {
+      "op": "core/recon-judge-similar-cells",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "Descripcion Centro: judgment",
+            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+            "columnName": "Descripcion Centro",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "none",
+                  "l": "none"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "Descripcion Centro",
+      "similarValue": "AGENCIA PARA EL EMPLEO DE MADRID",
+      "judgment": "new",
+      "shareNewTopics": true,
+      "description": "Mark to create one single new item for all cells containing \"AGENCIA PARA EL EMPLEO DE MADRID\" in column Descripcion Centro"
+    },
+    {
+      "op": "core/recon-judge-similar-cells",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "Descripcion Centro: judgment",
+            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+            "columnName": "Descripcion Centro",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "none",
+                  "l": "none"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "Descripcion Centro",
+      "similarValue": "AGENCIA TRIBUTARIA  MADRID",
+      "judgment": "new",
+      "shareNewTopics": true,
+      "description": "Mark to create one single new item for all cells containing \"AGENCIA TRIBUTARIA  MADRID\" in column Descripcion Centro"
+    },
+    {
+      "op": "core/recon-judge-similar-cells",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "Descripcion Centro: judgment",
+            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+            "columnName": "Descripcion Centro",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "none",
+                  "l": "none"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "Descripcion Centro",
+      "similarValue": "AGENCIA DE ACTIVIDADES",
+      "judgment": "new",
+      "shareNewTopics": true,
+      "description": "Mark to create one single new item for all cells containing \"AGENCIA DE ACTIVIDADES\" in column Descripcion Centro"
+    },
+    {
+      "op": "core/recon-judge-similar-cells",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "Descripcion Centro: judgment",
+            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+            "columnName": "Descripcion Centro",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "none",
+                  "l": "none"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "Descripcion Centro",
+      "similarValue": "CONSOR. PLAN REHAB.EQUIP.TEATROS MADRID",
+      "judgment": "new",
+      "shareNewTopics": true,
+      "description": "Mark to create one single new item for all cells containing \"CONSOR. PLAN REHAB.EQUIP.TEATROS MADRID\" in column Descripcion Centro"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "Descripcion Centro",
+      "expression": "grel:\"https://www.wikidata.org/wiki/\"+cell.recon.match.id",
+      "onError": "set-to-blank",
+      "newColumnName": "wikicentro",
+      "columnInsertIndex": 3,
+      "description": "Create column wikicentro at index 3 based on column Descripcion Centro using expression grel:\"https://www.wikidata.org/wiki/\"+cell.recon.match.id"
+    }

@@ -1,0 +1,126 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1#
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rev: http://purl.org/stuff/rev/
+  schema: http://schema.org/
+  dct: http://purl.org/dc/terms/
+  rml: http://semweb.mmlab.be/ns/rml/
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns/
+  g2: http://MadridPublicContracts/ontology/
+  owl: http://www.w3.org/2002/07/owl#
+  vocab: http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/
+  
+mappings:
+  contractsmap:
+    sources:
+      - [actividad_contractual_ayto_madrid_2020-with-links.csv~csv]
+    s: http://MadridPublicContracts/resources/contract/$(Numero Contrato)
+    po:
+      - [a, g2:Contrato~iri]
+      - [g2:hasYear,$(Año),xsd:gYear]
+      - [g2:hasMonth,$(Mes),xsd:gMonth]
+      - [g2:hasExpNumber,$(Numero Expediente),xsd:string]
+      - [g2:hasDescription,$(Descripcion Contrato),xsd:string]
+      - [g2:hasContractType,$(Tipo Contrato),xsd:string]
+      - [g2:hasProcedure,$(Procedimiento Adjudicacion),xsd:string]
+      - [g2:hasArticle,$(Articulo),xsd:integer]
+      - [g2:hasSection,$(Apartado),xsd:string]
+      - [g2:hasCriteria,$(Criterios Adjudicacion),xsd:string]
+      - [g2:hasBudget,$(Presupuesto Total(IVA Incluido)),xsd:double]
+      - [g2:hasAmount,$(Importe Adjudicacion (IVA Incluido)),xsd:double]
+      - [g2:hasContractDate,$(Fecha Adjudicacion),xsd:dateTime]
+      - p: g2:hasContractee
+        o:
+          - mapping: contracteemap
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(NIF/CIF Adjudicatario)]
+                - [str2, $(NIF/CIF Adjudicatario)]
+      - [g2:isDeal,$(Tiene acuerdo Marco),xsd:boolean]
+      - [g2:isZeroCost,$(Tiene Ingreso/Coste Cero),xsd:boolean]
+      - [g2:unitaryAdjudication,$(Adjudicado por precios unitarios),xsd:boolean]
+      - p: g2:hasContractor
+        o:
+          - mapping: juntasmap
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(Organismo)]
+                - [str2, $(NOMBRE)]
+
+  contractormap:
+    sources:
+      - [actividad_contractual_ayto_madrid_2020-with-links.csv~csv]
+    s: http://MadridPublicContracts/resources/contractor/$(Organismo)
+    po:
+      - [rdf:type, g2:Contractor~iri]
+      - [g2:orgtype, $(Descripcion Centro),xsd:string]
+      - [owl:sameAs, $(wikidataOrganismo)~iri]
+
+  contracteemap:
+    sources:
+      - [actividad_contractual_ayto_madrid_2020-with-links.csv~csv]
+    s: http://MadridPublicContracts/resources/contractee/$(NIF/CIF Adjudicatario)
+    po:
+      - [rdf:type, g2:Contractee~iri]
+      - [g2:orgtype,$(Nombre/Razon Social),xsd:string]
+  
+  juntasmap:
+    sources:
+      - [juntas_distrito_ayuto_madrid-with-links.csv~csv]
+    s: http://MadridPublicContracts/resources/junta/$(NOMBRE)
+    po:
+      - [rdf:type, g2:Junta~iri]
+      - [g2:hasSchedule,$(HORARIO),xsd:string]
+      - [g2:hasDescription,$(DESCRIPCION-ENTIDAD),xsd:string]
+      - [g2:publicTransport,$(TRANSPORTE),xsd:string]
+      - [g2:hasWeb,$(PAGINA WEB),xsd:string]
+      - [g2:isinRoad,$(NOMBRE-VIA),xsd:string]
+      - [g2:hasRoadType,$(TIPO-VIA),xsd:string]
+      - [g2:isinRoadNumber,$(NUMERO),xsd:integer]
+      - [g2:locality,http://MadridPublicContracts/resources/locality/$(LOCALIDAD)~iri]
+      - [g2:province,http://MadridPublicContracts/resources/province/$(PROVINCIA)~iri]
+      - [g2:pc,$(CODIGO POSTAL),xsd:integer]
+      - [g2:neighborhood,http://MadridPublicContracts/resources/neighborhood/$(BARRIO)~iri]
+      - [g2:district,http://MadridPublicContracts/resources/district/$(DISTRITO)~iri]
+      - [g2:hasCoordenateX,$(COORDENADA-X),xsd:integer]
+      - [g2:hasCoordenateY,$(COORDENADA-Y),xsd:integer]
+      - [g2:hasEmail,$(EMAIL),xsd:string]
+      - [owl:sameAs, $(wikiJUNTA)~iri]
+    
+    
+  neighborhoodmap:
+      sources:
+        - [juntas_distrito_ayuto_madrid-with-links.csv~csv]
+      s: http://MadridPublicContracts/resources/neighborhood/$(BARRIO)
+      po:
+        - [rdf:type, vocab:Neighborhood~iri]
+        - [owl:sameAs, $(wikiBARRIOS)~iri]
+     
+  districtsmap:
+      sources:
+        - [juntas_distrito_ayuto_madrid-with-links.csv~csv]
+      s: http://MadridPublicContracts/resources/district/$(DISTRITO)
+      po:
+        - [rdf:type, vocab:District~iri]
+        - [owl:sameAs, $(wikiDISTRITO)~iri]
+        
+  provincemap:
+      sources:
+        - [juntas_distrito_ayuto_madrid-with-links.csv~csv]
+      s: http://MadridPublicContracts/resources/province/$(PROVINCIA)
+      po:
+        - [rdf:type, vocab:Province~iri]
+        - [owl:sameAs, $(wikiPROVINCIA)~iri]
+
+  localitymap:
+      sources:
+        - [juntas_distrito_ayuto_madrid-with-links.csv~csv]
+      s: http://MadridPublicContracts/resources/locality/$(LOCALIDAD)
+      po:
+        - [rdf:type, vocab:Locality~iri]
+        - [owl:sameAs, $(wikiLOCALIDAD)~iri]

@@ -1,6 +1,5 @@
-PREFIX default: <http://group10.com/>
+PREFIX default: <http://group10.com/ontology/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX ns: <http://group10.com/>
 
 # Show all the elements of the ontology, including the class to each one belongs to:
 
@@ -51,7 +50,7 @@ WHERE
 SELECT DISTINCT ?x ?y ?clase
 WHERE
 {
-  ?x ns:tieneCentro ?y
+  ?x default:tieneCentro ?y
   ?x a ?clase.
 }
 
@@ -71,7 +70,7 @@ WHERE
 SELECT DISTINCT ?x
 WHERE
 {
-  ?x rdf:type ns:Centro
+  ?x rdf:type default:Centro
 }
 
 
