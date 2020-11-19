@@ -33,8 +33,8 @@
   ns0:hasAwardProcedure "Por administración"^^xsd:string ;
   ns0:hasBiddingPrice 7.160690e+3 ;
   dc:description "obras adecuación oficinas inaga zaragoza"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/EXPO%20ZARAGOZA%20EMPRESARIAL%20SOCIEDAD%20ANONIMA> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20GESTI%C3%93N%20AMBIENTAL> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/EXPO_ZARAGOZA_EMPRESARIAL_SOCIEDAD_ANONIMA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DE_GESTION_AMBIENTAL> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171800000239>
   a ns1:ServicesContract ;
@@ -43,8 +43,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 7.707700e+4 ;
   dc:description "seguridad sede departamento educación, cultura y deporte en expo"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/ILUNION%20SEGURIDAD%20S.A.> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon%20%28Spain%29.%20Departamento%20de%20Educaci%C3%B3n%2C%20Cultura%20y%20Deporte> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/ILUNION_SEGURIDAD_SA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon_Spain_Departamento_de_Educacion_Cultura_y_Deporte> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171800000298>
   a ns1:SuppliesContract ;
@@ -53,8 +53,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 2.165500e+2 ;
   dc:description "compra prendas trabajo guardería infantil santa maria del pilar"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/ANATOMICOS%20MADRID%20SL> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon%20%28Spain%29.%20Departamento%20de%20Educaci%C3%B3n%2C%20Cultura%20y%20Deporte> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/ANATOMICOS_MADRID_SL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon_Spain_Departamento_de_Educacion_Cultura_y_Deporte> .
 
 <http://group01.org/aragon/resource/Contract/CONLT20171600000006>
   a ns1:SuppliesContract ;
@@ -63,8 +63,8 @@
   ns0:hasAwardProcedure "Abierto"^^xsd:string ;
   ns0:hasBiddingPrice 3.696400e+4 ;
   dc:description "materiales para cromatografía líquidos y generalidades"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/SUMINISTROS%20MATERIAL%20Y%20APARATOS%20DE> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Ministerio%20de%20Sanidad%20y%20Consumo> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/SUMINISTROS_MATERIAL_Y_APARATOS_DE> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Ministerio_de_Sanidad_y_Consumo> .
 
 <http://group01.org/aragon/resource/Contract/CONLT20171600000007>
   a ns1:SuppliesContract ;
@@ -73,8 +73,8 @@
   ns0:hasAwardProcedure "Abierto"^^xsd:string ;
   ns0:hasBiddingPrice 1.701580e+4 ;
   dc:description "materiales para cromatografía gases e icp-ms"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/ALFAQUIMIA%20SL> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Ministerio%20de%20Sanidad%20y%20Consumo> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/ALFAQUIMIA_SL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Ministerio_de_Sanidad_y_Consumo> .
 
 <http://group01.org/aragon/resource/Contract/CONLT20171600000008>
   a ns1:SuppliesContract ;
@@ -83,8 +83,8 @@
   ns0:hasAwardProcedure "Abierto"^^xsd:string ;
   ns0:hasBiddingPrice 1.576266e+4 ;
   dc:description "materiales para cromatografía iónica"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/JAVIER%20SOLANAS%20LABOARAGON%20SOCIEDAD%20LIMITADA> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Ministerio%20de%20Sanidad%20y%20Consumo> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/JAVIER_SOLANAS_LABOARAGON_SOCIEDAD_LIMITADA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Ministerio_de_Sanidad_y_Consumo> .
 
 <http://group01.org/aragon/resource/Contract/CONLT20171600000009>
   a ns1:SuppliesContract ;
@@ -93,8 +93,8 @@
   ns0:hasAwardProcedure "Abierto"^^xsd:string ;
   ns0:hasBiddingPrice 3.610307e+4 ;
   dc:description "material general laboratorio"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/VIDRA%20FOC%20S.A.> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Ministerio%20de%20Sanidad%20y%20Consumo> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/VIDRA_FOC_SA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Ministerio_de_Sanidad_y_Consumo> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20175500000022>
   a ns1:ServicesContract ;
@@ -103,8 +103,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 5.592078e+4 ;
   dc:description "vigilancia y seguridad residencias juveniles iaj 2017"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/GARDA%20SERVICIOS%20DE%20SEGURIDAD%20SA> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20LA%20JUVENTUD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/GARDA_SERVICIOS_DE_SEGURIDAD_SA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DE_LA_JUVENTUD> .
 
 <http://group01.org/aragon/resource/Contract/CONMY20177500000054>
   a ns1:ServicesContract ;
@@ -113,8 +113,8 @@
   ns0:hasAwardProcedure "Negociado"^^xsd:string ;
   ns0:hasBiddingPrice 2.385000e+4 ;
   dc:description "i-170018 mantenimiento aplicaciones cartograficas inf. georreferenciada"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/SOFTWARE%20GRUPO%20V%20SL> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20GESTI%C3%93N%20AMBIENTAL> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/SOFTWARE_GRUPO_V_SL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DE_GESTION_AMBIENTAL> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171800000307>
   a ns1:SuppliesContract ;
@@ -123,8 +123,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 8.813800e+2 ;
   dc:description "compra prendas trabajo santo angel custodio"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/EL%20CORTE%20INGLES> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon%20%28Spain%29.%20Departamento%20de%20Educaci%C3%B3n%2C%20Cultura%20y%20Deporte> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/EL_CORTE_INGLES> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon_Spain_Departamento_de_Educacion_Cultura_y_Deporte> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171800000308>
   a ns1:SuppliesContract ;
@@ -133,8 +133,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 2.864500e+2 ;
   dc:description "compra prendas trabajo santo angel custodio"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/ANATOMICOS%20MADRID%20SL> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon%20%28Spain%29.%20Departamento%20de%20Educaci%C3%B3n%2C%20Cultura%20y%20Deporte> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/ANATOMICOS_MADRID_SL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon_Spain_Departamento_de_Educacion_Cultura_y_Deporte> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20175100000121>
   a ns1:SuppliesContract ;
@@ -143,8 +143,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 5.700000e+1 ;
   dc:description "suministro pesacartas para espacio empresas"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/SOLITIUM%20S.L.> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20EMPLEO> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/SOLITIUM_SL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DE_EMPLEO> .
 
 <http://group01.org/aragon/resource/Contract/CONMY20171100000012>
   a ns1:SuppliesContract ;
@@ -153,8 +153,8 @@
   ns0:hasAwardProcedure "Negociado"^^xsd:string ;
   ns0:hasBiddingPrice 3.308430e+4 ;
   dc:description "arrendamiento vehículo representación departamento ciudadanía"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/BANCO%20SANTANDER> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Departamento%20de%20Ciudadan%C3%ADa%20y%20Derechos%20Sociales%20del%20Gobierno%20de%20Arag%C3%B3n> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/BANCO_SANTANDER> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Departamento_de_Ciudadania_y_Derechos_Sociales_del_Gobierno_de_Aragon> .
 
 <http://group01.org/aragon/resource/Contract/CONLT20175300000030>
   a ns1:SuppliesContract ;
@@ -163,8 +163,8 @@
   ns0:hasAwardProcedure "Abierto"^^xsd:string ;
   ns0:hasBiddingPrice 1.573136e+4 ;
   dc:description "material limpieza"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/LIDERA%20HIGIENE%20SL> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20SERVICIOS%20SOCIALES> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/LIDERA_HIGIENE_SL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DE_SERVICIOS_SOCIALES> .
 
 <http://group01.org/aragon/resource/Contract/CONLT20175300000031>
   a ns1:SuppliesContract ;
@@ -173,8 +173,8 @@
   ns0:hasAwardProcedure "Abierto"^^xsd:string ;
   ns0:hasBiddingPrice 1.622020e+3 ;
   dc:description "productos de limpieza"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/CELQUISA%20S.L.LABORAL> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20SERVICIOS%20SOCIALES> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/CELQUISA_SLLABORAL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DE_SERVICIOS_SOCIALES> .
 
 <http://group01.org/aragon/resource/Contract/CONLT20175300000032>
   a ns1:SuppliesContract ;
@@ -183,8 +183,8 @@
   ns0:hasAwardProcedure "Abierto"^^xsd:string ;
   ns0:hasBiddingPrice 1.531130e+3 ;
   dc:description "productos de aseo personal"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/CELQUISA%20S.L.LABORAL> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20SERVICIOS%20SOCIALES> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/CELQUISA_SLLABORAL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DE_SERVICIOS_SOCIALES> .
 
 <http://group01.org/aragon/resource/Contract/CONLT20175300000033>
   a ns1:SuppliesContract ;
@@ -193,8 +193,8 @@
   ns0:hasAwardProcedure "Abierto"^^xsd:string ;
   ns0:hasBiddingPrice 3.656200e+3 ;
   dc:description "productos tren lavado"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/DISTRIBUCIONES%20NAVARRO-MIR%20SOCIEDAD%20LIMITADA> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20SERVICIOS%20SOCIALES> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/DISTRIBUCIONES_NAVARRO-MIR_SOCIEDAD_LIMITADA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DE_SERVICIOS_SOCIALES> .
 
 <http://group01.org/aragon/resource/Contract/CONLT20175300000034>
   a ns1:SuppliesContract ;
@@ -203,8 +203,8 @@
   ns0:hasAwardProcedure "Abierto"^^xsd:string ;
   ns0:hasBiddingPrice 2.366716e+4 ;
   dc:description "productos desechables"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/CELQUISA%20S.L.LABORAL> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20SERVICIOS%20SOCIALES> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/CELQUISA_SLLABORAL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DE_SERVICIOS_SOCIALES> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171400000043>
   a ns1:ServicesContract ;
@@ -213,8 +213,8 @@
   ns0:hasAwardProcedure "Por administración"^^xsd:string ;
   ns0:hasBiddingPrice 8.943447e+4 ;
   dc:description "145 tb73470 mto y control visit teruel"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/SDAD%20ARAGONESA%20DE%20GESTION> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/SDAD_ARAGONESA_DE_GESTION> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO_RURAL_Y_SOSTENIBILIDAD> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171000000071>
   a ns1:ServicesContract ;
@@ -223,7 +223,7 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 2.057562e+6 ;
   dc:description "seguridad en edificios institucionales gobierno de aragón"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/CIA%20VIGILANCIA%20ARAGONESA%20S.L.> ;
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/CIA_VIGILANCIA_ARAGONESA_SL> ;
   ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/presidency> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171600000142>
@@ -233,8 +233,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 1.707555e+4 ;
   dc:description "equipos multifuncion 03-17"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/SOLITIUM%20S.L.> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Ministerio%20de%20Sanidad%20y%20Consumo> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/SOLITIUM_SL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Ministerio_de_Sanidad_y_Consumo> .
 
 <http://group01.org/aragon/resource/Contract/CONEX20175200000758>
   a ns1:ServicesContract ;
@@ -243,8 +243,8 @@
   ns0:hasAwardProcedure "Abierto"^^xsd:string ;
   ns0:hasBiddingPrice 3.801652e+4 ;
   dc:description "mantenimiento preventivo, correctivo y técnico legal del tac"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/SIEMENS%20HEALTHCARE%20SL> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/SIEMENS_HEALTHCARE_SL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO_ARAGONES_DE_SALUD> .
 
 <http://group01.org/aragon/resource/Contract/CONEX20175200000791>
   a ns1:ServicesContract ;
@@ -253,8 +253,8 @@
   ns0:hasAwardProcedure "Contratación centralizada"^^xsd:string ;
   ns0:hasBiddingPrice 1.000363e+5 ;
   dc:description "servicio de vigilancia y seguridad en el hospital de alcañiz"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/EULEN%20SEGURIDAD%20SA> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/EULEN_SEGURIDAD_SA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO_ARAGONES_DE_SALUD> .
 
 <http://group01.org/aragon/resource/Contract/CONEX20175200000792>
   a ns1:ServicesContract ;
@@ -264,7 +264,7 @@
   ns0:hasBiddingPrice 1.186876e+5 ;
   dc:description "p.c. 1ha/2017 realización de tacs en instalaciones móviles"^^xsd:string ;
   ns0:awardedTo <http://group01.org/aragon/resource/Company/QDIAGNOSTICA> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD> .
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO_ARAGONES_DE_SALUD> .
 
 <http://group01.org/aragon/resource/Contract/CONEX20175200000800>
   a ns1:ServicesContract ;
@@ -273,8 +273,8 @@
   ns0:hasAwardProcedure "Contratación centralizada"^^xsd:string ;
   ns0:hasBiddingPrice 2.440000e+3 ;
   dc:description "resonancias magnéticas en instalaciones fijas"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/CLINICA%20MONTPELLIER%20GRUPO%20HLA%2C%20SAU> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/CLINICA_MONTPELLIER_GRUPO_HLA_SAU> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO_ARAGONES_DE_SALUD> .
 
 <http://group01.org/aragon/resource/Contract/CONEX20175200000801>
   a ns1:ServicesContract ;
@@ -283,8 +283,8 @@
   ns0:hasAwardProcedure "Contratación centralizada"^^xsd:string ;
   ns0:hasBiddingPrice 1.170520e+3 ;
   dc:description "resonancias magnéticas en instalaciones fijas"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/DRA%20ROCA%20DIAGNOSTICO%20MEDICO%20S.L.> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/DRA_ROCA_DIAGNOSTICO_MEDICO_SL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO_ARAGONES_DE_SALUD> .
 
 <http://group01.org/aragon/resource/Contract/CONEX20175200000802>
   a ns1:ServicesContract ;
@@ -293,8 +293,8 @@
   ns0:hasAwardProcedure "Contratación centralizada"^^xsd:string ;
   ns0:hasBiddingPrice 1.110000e+3 ;
   dc:description "resonancias magnéticas en instalaciones fijas"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/PARACELSO%20DIAGNOSTICO%20MEDICO%20SL> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/PARACELSO_DIAGNOSTICO_MEDICO_SL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO_ARAGONES_DE_SALUD> .
 
 <http://group01.org/aragon/resource/Contract/CONEX20175200000803>
   a ns1:ServicesContract ;
@@ -303,8 +303,8 @@
   ns0:hasAwardProcedure "Contratación centralizada"^^xsd:string ;
   ns0:hasBiddingPrice 3.924000e+3 ;
   dc:description "procedimientos diagnósticos de neurofisiología"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/NFC%20Y%20SUE%C3%91O%2C%20SL> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/NFC_Y_SUENO_SL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO_ARAGONES_DE_SALUD> .
 
 <http://group01.org/aragon/resource/Contract/CONEX20175200000804>
   a ns1:ServicesContract ;
@@ -313,8 +313,8 @@
   ns0:hasAwardProcedure "Contratación centralizada"^^xsd:string ;
   ns0:hasBiddingPrice 1.200000e+3 ;
   dc:description "resonancias magnéticas en instalaciones fijas"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/CLINICA%20MONTPELLIER%20GRUPO%20HLA%2C%20SAU> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/CLINICA_MONTPELLIER_GRUPO_HLA_SAU> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO_ARAGONES_DE_SALUD> .
 
 <http://group01.org/aragon/resource/Contract/CONEX20175200000805>
   a ns1:ServicesContract ;
@@ -323,8 +323,8 @@
   ns0:hasAwardProcedure "Contratación centralizada"^^xsd:string ;
   ns0:hasBiddingPrice 7.385000e+2 ;
   dc:description "resonancias magnéticas en instalaciones fijas"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/DRA%20ROCA%20DIAGNOSTICO%20MEDICO%20S.L.> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/DRA_ROCA_DIAGNOSTICO_MEDICO_SL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO_ARAGONES_DE_SALUD> .
 
 <http://group01.org/aragon/resource/Contract/CONEX20175200000937>
   a ns1:SuppliesContract ;
@@ -333,8 +333,8 @@
   ns0:hasAwardProcedure "Contratación centralizada"^^xsd:string ;
   ns0:hasBiddingPrice 8.734400e+2 ;
   dc:description "gasoleo calefaccion"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/REPSOL%20COMERCIAL%20DE%20PRODUCTOS%20PETROLIFEROS%20SA> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/REPSOL_COMERCIAL_DE_PRODUCTOS_PETROLIFEROS_SA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO_ARAGONES_DE_SALUD> .
 
 <http://group01.org/aragon/resource/Contract/CONEX20175200000938>
   a ns1:SuppliesContract ;
@@ -343,8 +343,8 @@
   ns0:hasAwardProcedure "Contratación centralizada"^^xsd:string ;
   ns0:hasBiddingPrice 4.745700e+2 ;
   dc:description "gasoleo calefaccion"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/REPSOL%20COMERCIAL%20DE%20PRODUCTOS%20PETROLIFEROS%20SA> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/REPSOL_COMERCIAL_DE_PRODUCTOS_PETROLIFEROS_SA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO_ARAGONES_DE_SALUD> .
 
 <http://group01.org/aragon/resource/Contract/CONEX20175200000806>
   a ns1:ServicesContract ;
@@ -353,8 +353,8 @@
   ns0:hasAwardProcedure "Contratación centralizada"^^xsd:string ;
   ns0:hasBiddingPrice 3.411000e+3 ;
   dc:description "procedimientos diagnósticos de neurofisiología"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/NFC%20Y%20SUE%C3%91O%2C%20SL> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/NFC_Y_SUENO_SL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO_ARAGONES_DE_SALUD> .
 
 <http://group01.org/aragon/resource/Contract/CONEX20175200000812>
   a ns1:SuppliesContract ;
@@ -363,8 +363,8 @@
   ns0:hasAwardProcedure "Negociado"^^xsd:string ;
   ns0:hasBiddingPrice 1.720794e+5 ;
   dc:description "material de neuroestimulacion de raices sacras para urologia"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/MEDTRONIC%20IBERICA%20SA> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/MEDTRONIC_IBERICA_SA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO_ARAGONES_DE_SALUD> .
 
 <http://group01.org/aragon/resource/Contract/CONMY20175400000081>
   a ns1:ServicesContract ;
@@ -373,8 +373,8 @@
   ns0:hasAwardProcedure "Abierto"^^xsd:string ;
   ns0:hasBiddingPrice 4.875000e+4 ;
   dc:description "1704 atencion psicologica teruel a mujeres en especial situacion de necesid"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/FUNDACION%20ADCARA> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20LA%20MUJER> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/FUNDACION_ADCARA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DE_LA_MUJER> .
 
 <http://group01.org/aragon/resource/Contract/CONMY20177200000028>
   a ns1:ServicesContract ;
@@ -383,8 +383,8 @@
   ns0:hasAwardProcedure "Abierto"^^xsd:string ;
   ns0:hasBiddingPrice 2.053671e+6 ;
   dc:description "c19/2016 edar's de plaza, la muela y epila. mantenimiento"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/SA%20AGRICULTORES%20VEGA%20DE%20VALENCIA-> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DEL%20AGUA> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/SA_AGRICULTORES_VEGA_DE_VALENCIA-> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DEL_AGUA> .
 
 <http://group01.org/aragon/resource/Contract/CONMY20175200001041>
   a ns1:WorksContract ;
@@ -393,8 +393,8 @@
   ns0:hasAwardProcedure "Abierto"^^xsd:string ;
   ns0:hasBiddingPrice 1.733169e+5 ;
   dc:description "obras actuaciones previas acondicionamiento parcela hosp. alcañiz"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/ARAGONESA%20OBRAS%20CIVILES%20SL%20IEASA%20UTE> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/ARAGONESA_OBRAS_CIVILES_SL_IEASA_UTE> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO_ARAGONES_DE_SALUD> .
 
 <http://group01.org/aragon/resource/Contract/CONMY20171200000135>
   a ns1:ServicesContract ;
@@ -403,8 +403,8 @@
   ns0:hasAwardProcedure "Abierto"^^xsd:string ;
   ns0:hasBiddingPrice 1.700000e+5 ;
   dc:description "servicios colaboración con interv.general cert.feaga-feader 2018-2019"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/GRANT%20THORNTON%20SL%20PROFESIONAL> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/HACIENDA%20Y%20ADMINISTRACI%C3%93N%20P%C3%9ABLICA> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/GRANT_THORNTON_SL_PROFESIONAL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/HACIENDA_Y_ADMINISTRACION_PUBLICA> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20175300000645>
   a ns1:ServicesContract ;
@@ -413,8 +413,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 2.232463e+6 ;
   dc:description "servicio de vigilancia residencia cesaraugusta y centro juslibol"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/UTE-CIS%20COMPA%C3%91IA%20INTEGRAL%20DE> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20SERVICIOS%20SOCIALES> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/UTE-CIS_COMPANIA_INTEGRAL_DE> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DE_SERVICIOS_SOCIALES> .
 
 <http://group01.org/aragon/resource/Contract/CONMY20171400000452>
   a ns1:ServicesContract ;
@@ -423,8 +423,8 @@
   ns0:hasAwardProcedure "Abierto"^^xsd:string ;
   ns0:hasBiddingPrice 7.114500e+4 ;
   dc:description "2017-tratamientos aereos contra langosta"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/TRATAMIENTOS%20AGRICOLAS%20AEREOS%20PERAN%20SL> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/TRATAMIENTOS_AGRICOLAS_AEREOS_PERAN_SL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO_RURAL_Y_SOSTENIBILIDAD> .
 
 <http://group01.org/aragon/resource/Contract/CONMY20171300000159>
   a ns1:ServicesContract ;
@@ -433,8 +433,8 @@
   ns0:hasAwardProcedure "Abierto"^^xsd:string ;
   ns0:hasBiddingPrice 3.140496e+5 ;
   dc:description "serv. arrend. de maq. y prov. de mater. en crtra. a-1702.-ejulve-organos de"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/EZAGUE%20SL> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/VERTEBRACI%C3%93N%20DEL%20TERRITORIO%2C%20MOVILIDAD%20Y%20VIVIENDA> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/EZAGUE_SL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/VERTEBRACION_DEL_TERRITORIO_MOVILIDAD_Y_VIVIENDA> .
 
 <http://group01.org/aragon/resource/Contract/CONMY20171400000550>
   a ns1:ServicesContract ;
@@ -443,8 +443,8 @@
   ns0:hasAwardProcedure "Abierto"^^xsd:string ;
   ns0:hasBiddingPrice 7.100000e+4 ;
   dc:description "plan de evaluacio de indicadores pdr 2014-2020 a160005"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/REGIO%20PLUS%20CONSULTING%20SL> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/REGIO_PLUS_CONSULTING_SL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO_RURAL_Y_SOSTENIBILIDAD> .
 
 <http://group01.org/aragon/resource/Contract/CONMY20175300000722>
   a ns1:ServicesContract ;
@@ -454,7 +454,7 @@
   ns0:hasBiddingPrice 4.022000e+5 ;
   dc:description "sistema información dependencia"^^xsd:string ;
   ns0:awardedTo <http://group01.org/aragon/resource/Company/UTE-VIRTUAL-ANEUM> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20SERVICIOS%20SOCIALES> .
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DE_SERVICIOS_SOCIALES> .
 
 <http://group01.org/aragon/resource/Contract/CONLT20171800000628>
   a ns1:ServicesContract ;
@@ -463,8 +463,8 @@
   ns0:hasAwardProcedure "Abierto"^^xsd:string ;
   ns0:hasBiddingPrice 1.475264e+5 ;
   dc:description "ruta 101/epes/h/2013"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/ALOSA%2C%20AUTOCARES%20Y%20AUTOBUSES%20SOCIEDAD%20LIMITADA> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon%20%28Spain%29.%20Departamento%20de%20Educaci%C3%B3n%2C%20Cultura%20y%20Deporte> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/ALOSA_AUTOCARES_Y_AUTOBUSES_SOCIEDAD_LIMITADA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon_Spain_Departamento_de_Educacion_Cultura_y_Deporte> .
 
 <http://group01.org/aragon/resource/Contract/CONMY20171700000074>
   a ns1:ServicesContract ;
@@ -473,8 +473,8 @@
   ns0:hasAwardProcedure "Abierto"^^xsd:string ;
   ns0:hasBiddingPrice 2.216335e+6 ;
   dc:description "conmy 22/2016: tant tdt - transporte zonas remotas (pliego neutro)"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/RETEVISION%20I%20SA> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INNOVACI%C3%93N%2C%20INVESTIGACI%C3%93N%20Y%20UNIVERSIDAD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/RETEVISION_I_SA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INNOVACION_INVESTIGACION_Y_UNIVERSIDAD> .
 
 <http://group01.org/aragon/resource/Contract/CONMY20171300000163>
   a ns1:WorksContract ;
@@ -483,8 +483,8 @@
   ns0:hasAwardProcedure "Abierto"^^xsd:string ;
   ns0:hasBiddingPrice 1.339506e+6 ;
   dc:description "construcc. refuerzo y regular. a-1503 tramo:i llueca-cruce cv-698"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/UTE%20ILLUECA%20-%20CONST.M.LOPEZ%20NAVARRO> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/VERTEBRACI%C3%93N%20DEL%20TERRITORIO%2C%20MOVILIDAD%20Y%20VIVIENDA> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/UTE_ILLUECA_-_CONSTMLOPEZ_NAVARRO> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/VERTEBRACION_DEL_TERRITORIO_MOVILIDAD_Y_VIVIENDA> .
 
 <http://group01.org/aragon/resource/Contract/CONMY20175400000083>
   a ns1:ServicesContract ;
@@ -493,8 +493,8 @@
   ns0:hasAwardProcedure "Abierto"^^xsd:string ;
   ns0:hasBiddingPrice 1.302000e+5 ;
   dc:description "iam1705 asesoram.lab. perspect. genero pª favorecer inserc.mujers mundo lab"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/INTELECTO%20CONSULTORIA%20DE%20PROYECTOS> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20LA%20MUJER> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/INTELECTO_CONSULTORIA_DE_PROYECTOS> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DE_LA_MUJER> .
 
 <http://group01.org/aragon/resource/Contract/CONMY20175400000080>
   a ns1:ServicesContract ;
@@ -503,8 +503,8 @@
   ns0:hasAwardProcedure "Abierto"^^xsd:string ;
   ns0:hasBiddingPrice 4.875000e+4 ;
   dc:description "1703 atencion psicologica huesca a mujeres especial situacion necesidad"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/FUNDACION%20ADCARA> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20LA%20MUJER> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/FUNDACION_ADCARA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DE_LA_MUJER> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20175300000583>
   a ns1:ServicesContract ;
@@ -513,8 +513,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 2.321582e+4 ;
   dc:description "seguridad dir provincial iass huesca 2017"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/ILUNION%20SEGURIDAD%20S.A.> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20SERVICIOS%20SOCIALES> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/ILUNION_SEGURIDAD_SA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DE_SERVICIOS_SOCIALES> .
 
 <http://group01.org/aragon/resource/Contract/CONMY20171200000110>
   a ns1:ServicesContract ;
@@ -523,8 +523,8 @@
   ns0:hasAwardProcedure "Abierto"^^xsd:string ;
   ns0:hasBiddingPrice 3.418897e+5 ;
   dc:description "mantenimiento conducción-gestión y asistencia edificios interdep. zaragoza"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/VEOLIA%20SERVICIOS%20NORTE%20S.A.U.> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/HACIENDA%20Y%20ADMINISTRACI%C3%93N%20P%C3%9ABLICA> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/VEOLIA_SERVICIOS_NORTE_SAU> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/HACIENDA_Y_ADMINISTRACION_PUBLICA> .
 
 <http://group01.org/aragon/resource/Contract/CONMY20171700000052>
   a ns1:ServicesContract ;
@@ -533,8 +533,8 @@
   ns0:hasAwardProcedure "Abierto"^^xsd:string ;
   ns0:hasBiddingPrice 1.024032e+5 ;
   dc:description "conmy 11/2016: desarrollo e implementación aplicación archivo"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/DELOITTE%20CONSULTING%20SL> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INNOVACI%C3%93N%2C%20INVESTIGACI%C3%93N%20Y%20UNIVERSIDAD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/DELOITTE_CONSULTING_SL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INNOVACION_INVESTIGACION_Y_UNIVERSIDAD> .
 
 <http://group01.org/aragon/resource/Contract/CONMY20171200000109>
   a ns1:ServicesContract ;
@@ -543,8 +543,8 @@
   ns0:hasAwardProcedure "Abierto"^^xsd:string ;
   ns0:hasBiddingPrice 9.703756e+4 ;
   dc:description "mantenimiento-conducción de gestión y asistencia de teruel y calamocha"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/VEOLIA%20SERVICIOS%20NORTE%20S.A.U.> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/HACIENDA%20Y%20ADMINISTRACI%C3%93N%20P%C3%9ABLICA> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/VEOLIA_SERVICIOS_NORTE_SAU> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/HACIENDA_Y_ADMINISTRACION_PUBLICA> .
 
 <http://group01.org/aragon/resource/Contract/CONMY20171700000056>
   a ns1:ServicesContract ;
@@ -553,8 +553,8 @@
   ns0:hasAwardProcedure "Abierto"^^xsd:string ;
   ns0:hasBiddingPrice 1.649853e+5 ;
   dc:description "conmy 13/2016: firma electrónica y validación datos"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/IA%20SOFT%20ARAGON%20SL> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INNOVACI%C3%93N%2C%20INVESTIGACI%C3%93N%20Y%20UNIVERSIDAD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/IA_SOFT_ARAGON_SL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INNOVACION_INVESTIGACION_Y_UNIVERSIDAD> .
 
 <http://group01.org/aragon/resource/Contract/CONMY20171000000020>
   a ns1:ServicesContract ;
@@ -563,7 +563,7 @@
   ns0:hasAwardProcedure "Negociado"^^xsd:string ;
   ns0:hasBiddingPrice 7.591814e+5 ;
   dc:description "transporte sanitario y de emergencias mediante helicóptero"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/BABCOCK%20MISSION%20CRITICAL%20SERVICES%20LTD> ;
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/BABCOCK_MISSION_CRITICAL_SERVICES_LTD> ;
   ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/presidency> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20175300000066>
@@ -573,8 +573,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 5.461456e+4 ;
   dc:description "servicio de seguridad sección de protección del menor"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/GARDA%20SERVICIOS%20DE%20SEGURIDAD%20SA> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20SERVICIOS%20SOCIALES> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/GARDA_SERVICIOS_DE_SEGURIDAD_SA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DE_SERVICIOS_SOCIALES> .
 
 <http://group01.org/aragon/resource/Contract/CONLT20175300000799>
   a ns1:SuppliesContract ;
@@ -583,8 +583,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 1.414374e+4 ;
   dc:description "productos limpieza 2017"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/DISTRIBUCIONES%20NAVARRO-MIR%20SOCIEDAD%20LIMITADA> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20SERVICIOS%20SOCIALES> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/DISTRIBUCIONES_NAVARRO-MIR_SOCIEDAD_LIMITADA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DE_SERVICIOS_SOCIALES> .
 
 <http://group01.org/aragon/resource/Contract/CONLT20175300000800>
   a ns1:SuppliesContract ;
@@ -593,8 +593,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 8.658710e+3 ;
   dc:description "productos lavanderia y lavavajillas 2017"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/DISTRIBUCIONES%20NAVARRO-MIR%20SOCIEDAD%20LIMITADA> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20SERVICIOS%20SOCIALES> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/DISTRIBUCIONES_NAVARRO-MIR_SOCIEDAD_LIMITADA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DE_SERVICIOS_SOCIALES> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171400000163>
   a ns1:ServicesContract ;
@@ -603,8 +603,8 @@
   ns0:hasAwardProcedure "Por administración"^^xsd:string ;
   ns0:hasBiddingPrice 7.262394e+5 ;
   dc:description "146 zb71600 at.veterin.y conservacion centro recup.fauna silvestre alfranca"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/SDAD%20ARAGONESA%20DE%20GESTION> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/SDAD_ARAGONESA_DE_GESTION> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO_RURAL_Y_SOSTENIBILIDAD> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171800000240>
   a ns1:ServicesContract ;
@@ -613,8 +613,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 4.316312e+4 ;
   dc:description "seguridad en el edificio rosa arjó"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/GARDA%20SERVICIOS%20DE%20SEGURIDAD%20SA> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon%20%28Spain%29.%20Departamento%20de%20Educaci%C3%B3n%2C%20Cultura%20y%20Deporte> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/GARDA_SERVICIOS_DE_SEGURIDAD_SA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon_Spain_Departamento_de_Educacion_Cultura_y_Deporte> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171800000309>
   a ns1:SuppliesContract ;
@@ -623,8 +623,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 3.939000e+1 ;
   dc:description "compra prendas trabajo gi santo angel custodio"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/INSERCION%20Y%20TRABAJO%20SL> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon%20%28Spain%29.%20Departamento%20de%20Educaci%C3%B3n%2C%20Cultura%20y%20Deporte> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/INSERCION_Y_TRABAJO_SL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon_Spain_Departamento_de_Educacion_Cultura_y_Deporte> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171400000042>
   a ns1:ServicesContract ;
@@ -633,8 +633,8 @@
   ns0:hasAwardProcedure "Por administración"^^xsd:string ;
   ns0:hasBiddingPrice 3.427967e+5 ;
   dc:description "145 hb72008.conservación valles occ y sj peña"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/SDAD%20ARAGONESA%20DE%20GESTION> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/SDAD_ARAGONESA_DE_GESTION> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO_RURAL_Y_SOSTENIBILIDAD> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171400000237>
   a ns1:ServicesContract ;
@@ -643,8 +643,8 @@
   ns0:hasAwardProcedure "Por administración"^^xsd:string ;
   ns0:hasBiddingPrice 7.435390e+3 ;
   dc:description "145 zb71614 caracteriz vegetación arbórea rnd galachos ebro"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/CENTRO%20INVESTIGACION%20Y%20TECNOLOGIA> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/CENTRO_INVESTIGACION_Y_TECNOLOGIA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO_RURAL_Y_SOSTENIBILIDAD> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20175100000115>
   a ns1:SuppliesContract ;
@@ -653,8 +653,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 4.027660e+3 ;
   dc:description "suministro mobiliario diverso de oficina"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/OFITECNICA%2C%20OFICINA%20TECNICA%20SOCIEDAD%20LIMITADA> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20EMPLEO> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/OFITECNICA_OFICINA_TECNICA_SOCIEDAD_LIMITADA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DE_EMPLEO> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20175100000116>
   a ns1:SuppliesContract ;
@@ -663,8 +663,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 2.280000e+3 ;
   dc:description "suministro de 8 sillas oficina de empleo de binéfar"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/BALLAROL%20OFICINAS%20S.L.L.> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20EMPLEO> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/BALLAROL_OFICINAS_SLL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DE_EMPLEO> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20175100000117>
   a ns1:SuppliesContract ;
@@ -673,8 +673,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 2.074040e+3 ;
   dc:description "suministro de mobiliario oficina de empleo de monzón"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/OFITECNICA%2C%20OFICINA%20TECNICA%20SOCIEDAD%20LIMITADA> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20EMPLEO> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/OFITECNICA_OFICINA_TECNICA_SOCIEDAD_LIMITADA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DE_EMPLEO> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171200000080>
   a ns1:SuppliesContract ;
@@ -683,8 +683,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 3.953000e+3 ;
   dc:description "adquisición fotocopiadora para gabinete (anexo 680/2017)"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/SOLITIUM%20S.L.> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/HACIENDA%20Y%20ADMINISTRACI%C3%93N%20P%C3%9ABLICA> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/SOLITIUM_SL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/HACIENDA_Y_ADMINISTRACION_PUBLICA> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171800000392>
   a ns1:SuppliesContract ;
@@ -693,8 +693,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 3.185000e+1 ;
   dc:description "compra prendas de trabajo gi san lorenzo"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/CONFECCIONES%20OROEL%20SA> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon%20%28Spain%29.%20Departamento%20de%20Educaci%C3%B3n%2C%20Cultura%20y%20Deporte> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/CONFECCIONES_OROEL_SA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon_Spain_Departamento_de_Educacion_Cultura_y_Deporte> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171800000397>
   a ns1:SuppliesContract ;
@@ -703,8 +703,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 9.333200e+2 ;
   dc:description "compra prendas de trabajo virgen de la oliva"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/EL%20CORTE%20INGLES> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon%20%28Spain%29.%20Departamento%20de%20Educaci%C3%B3n%2C%20Cultura%20y%20Deporte> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/EL_CORTE_INGLES> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon_Spain_Departamento_de_Educacion_Cultura_y_Deporte> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171400000172>
   a ns1:ServicesContract ;
@@ -713,8 +713,8 @@
   ns0:hasAwardProcedure "Por administración"^^xsd:string ;
   ns0:hasBiddingPrice 1.986718e+4 ;
   dc:description "145 rb74042 mejora aplicaciones s información pn ordesa"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/TECNOLOGIAS%20Y%20SERVICIOS%20AGRARIOS%20SA> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/TECNOLOGIAS_Y_SERVICIOS_AGRARIOS_SA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO_RURAL_Y_SOSTENIBILIDAD> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171800000391>
   a ns1:SuppliesContract ;
@@ -723,8 +723,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 5.018100e+2 ;
   dc:description "compra prendas de trabajo gi san lorenzo"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/EL%20CORTE%20INGLES> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon%20%28Spain%29.%20Departamento%20de%20Educaci%C3%B3n%2C%20Cultura%20y%20Deporte> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/EL_CORTE_INGLES> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon_Spain_Departamento_de_Educacion_Cultura_y_Deporte> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171800000393>
   a ns1:SuppliesContract ;
@@ -733,8 +733,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 2.961000e+2 ;
   dc:description "compra de prendas de trabajo gi san lorenzo"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/ANATOMICOS%20MADRID%20SL> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon%20%28Spain%29.%20Departamento%20de%20Educaci%C3%B3n%2C%20Cultura%20y%20Deporte> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/ANATOMICOS_MADRID_SL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon_Spain_Departamento_de_Educacion_Cultura_y_Deporte> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171800000399>
   a ns1:SuppliesContract ;
@@ -743,8 +743,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 1.443200e+2 ;
   dc:description "compra prendas de trabajo virgen de la oliva"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/INSERCION%20Y%20TRABAJO%20SL> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon%20%28Spain%29.%20Departamento%20de%20Educaci%C3%B3n%2C%20Cultura%20y%20Deporte> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/INSERCION_Y_TRABAJO_SL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon_Spain_Departamento_de_Educacion_Cultura_y_Deporte> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171800000296>
   a ns1:SuppliesContract ;
@@ -753,8 +753,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 5.940100e+2 ;
   dc:description "compra prendas trabajo guardería infantil santa maria del pilar"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/EL%20CORTE%20INGLES> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon%20%28Spain%29.%20Departamento%20de%20Educaci%C3%B3n%2C%20Cultura%20y%20Deporte> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/EL_CORTE_INGLES> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon_Spain_Departamento_de_Educacion_Cultura_y_Deporte> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171800000297>
   a ns1:SuppliesContract ;
@@ -763,8 +763,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 1.720000e+0 ;
   dc:description "compra prendas trabajo guardería infantil santa maria del pilar"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/CONFECCIONES%20OROEL%20SA> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon%20%28Spain%29.%20Departamento%20de%20Educaci%C3%B3n%2C%20Cultura%20y%20Deporte> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/CONFECCIONES_OROEL_SA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon_Spain_Departamento_de_Educacion_Cultura_y_Deporte> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171600000173>
   a ns1:SuppliesContract ;
@@ -773,8 +773,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 1.270000e+2 ;
   dc:description "reposición ropa trabajo personal sanitario ryc, 68-05/17"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/EL%20CORTE%20INGLES> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Ministerio%20de%20Sanidad%20y%20Consumo> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/EL_CORTE_INGLES> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Ministerio_de_Sanidad_y_Consumo> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171800000261>
   a ns1:SuppliesContract ;
@@ -783,8 +783,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 2.216000e+1 ;
   dc:description "prendas de trabajo guardería infantil inmaculada concepción"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/CONFECCIONES%20OROEL%20SA> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon%20%28Spain%29.%20Departamento%20de%20Educaci%C3%B3n%2C%20Cultura%20y%20Deporte> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/CONFECCIONES_OROEL_SA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon_Spain_Departamento_de_Educacion_Cultura_y_Deporte> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171000000147>
   a ns1:ServicesContract ;
@@ -793,7 +793,7 @@
   ns0:hasAwardProcedure "Por administración"^^xsd:string ;
   ns0:hasBiddingPrice 2.492280e+4 ;
   dc:description "desarrollo de una aplicación móvil para el portal aragonhoy"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/ARAGONESA%20DE%20SERVICIOS%20TELEMATICOS> ;
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/ARAGONESA_DE_SERVICIOS_TELEMATICOS> ;
   ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/presidency> .
 
 <http://group01.org/aragon/resource/Contract/CONMY20171000000054>
@@ -803,7 +803,7 @@
   ns0:hasAwardProcedure "Negociado"^^xsd:string ;
   ns0:hasBiddingPrice 2.900000e+4 ;
   dc:description "soporte, mant. y desarrollo aplic. iboa"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/EUROHELP%20CONSULTING%20SL> ;
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/EUROHELP_CONSULTING_SL> ;
   ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/presidency> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171400000025>
@@ -813,8 +813,8 @@
   ns0:hasAwardProcedure "Por administración"^^xsd:string ;
   ns0:hasBiddingPrice 3.673052e+4 ;
   dc:description "hf 72006 cartografía mups y vias pecuarias huesca"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/SDAD%20ARAGONESA%20DE%20GESTION> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/SDAD_ARAGONESA_DE_GESTION> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO_RURAL_Y_SOSTENIBILIDAD> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171400000060>
   a ns1:ServicesContract ;
@@ -823,8 +823,8 @@
   ns0:hasAwardProcedure "Por administración"^^xsd:string ;
   ns0:hasBiddingPrice 1.424620e+5 ;
   dc:description "vigilancia ambiental planes coordinados 2017 a170001"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/SDAD%20ARAGONESA%20DE%20GESTION> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/SDAD_ARAGONESA_DE_GESTION> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO_RURAL_Y_SOSTENIBILIDAD> .
 
 <http://group01.org/aragon/resource/Contract/CONLT20171200000118>
   a ns1:SuppliesContract ;
@@ -833,8 +833,8 @@
   ns0:hasAwardProcedure "Abierto"^^xsd:string ;
   ns0:hasBiddingPrice 3.028700e+4 ;
   dc:description "suministro artículos higiénicos de papel"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/CELQUISA%20S.L.LABORAL> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/HACIENDA%20Y%20ADMINISTRACI%C3%93N%20P%C3%9ABLICA> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/CELQUISA_SLLABORAL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/HACIENDA_Y_ADMINISTRACION_PUBLICA> .
 
 <http://group01.org/aragon/resource/Contract/CONLT20171200000119>
   a ns1:SuppliesContract ;
@@ -843,8 +843,8 @@
   ns0:hasAwardProcedure "Abierto"^^xsd:string ;
   ns0:hasBiddingPrice 2.651260e+4 ;
   dc:description "suministro productos y útiles de limpieza"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/CELQUISA%20S.L.LABORAL> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/HACIENDA%20Y%20ADMINISTRACI%C3%93N%20P%C3%9ABLICA> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/CELQUISA_SLLABORAL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/HACIENDA_Y_ADMINISTRACION_PUBLICA> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171800000266>
   a ns1:SuppliesContract ;
@@ -853,8 +853,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 1.189230e+3 ;
   dc:description "prendas de trabajo guardería infantil n.s carmen"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/EL%20CORTE%20INGLES> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon%20%28Spain%29.%20Departamento%20de%20Educaci%C3%B3n%2C%20Cultura%20y%20Deporte> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/EL_CORTE_INGLES> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon_Spain_Departamento_de_Educacion_Cultura_y_Deporte> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171800000267>
   a ns1:SuppliesContract ;
@@ -863,8 +863,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 1.136000e+1 ;
   dc:description "prendas de trabajo guardería infantil n.s. carmen"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/CONFECCIONES%20OROEL%20SA> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon%20%28Spain%29.%20Departamento%20de%20Educaci%C3%B3n%2C%20Cultura%20y%20Deporte> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/CONFECCIONES_OROEL_SA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon_Spain_Departamento_de_Educacion_Cultura_y_Deporte> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171800000291>
   a ns1:SuppliesContract ;
@@ -873,8 +873,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 1.292000e+2 ;
   dc:description "compra prendas de trabajo guardería infantil la paz"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/INSERCION%20Y%20TRABAJO%20SL> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon%20%28Spain%29.%20Departamento%20de%20Educaci%C3%B3n%2C%20Cultura%20y%20Deporte> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/INSERCION_Y_TRABAJO_SL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon_Spain_Departamento_de_Educacion_Cultura_y_Deporte> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171500000013>
   a ns1:ServicesContract ;
@@ -883,8 +883,8 @@
   ns0:hasAwardProcedure "Por administración"^^xsd:string ;
   ns0:hasBiddingPrice 1.231901e+4 ;
   dc:description "bolsa de horas proyecto data warehouse para i.a.estadística"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/ARAGONESA%20DE%20SERVICIOS%20TELEMATICOS> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/ECONOM%C3%8DA%2C%20INDUSTRIA%20Y%20EMPLEO> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/ARAGONESA_DE_SERVICIOS_TELEMATICOS> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/ECONOMIA_INDUSTRIA_Y_EMPLEO> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171000000091>
   a ns1:ServicesContract ;
@@ -893,7 +893,7 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 2.501861e+6 ;
   dc:description "servicio de vigilancia y seguridad órganos judiciales de aragón"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/CIA%20VIGILANCIA%20ARAGONESA%20S.L.> ;
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/CIA_VIGILANCIA_ARAGONESA_SL> ;
   ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/presidency> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171800000292>
@@ -903,8 +903,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 3.709000e+2 ;
   dc:description "compra prendas de trabajo guardería infantil la paz"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/ANATOMICOS%20MADRID%20SL> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon%20%28Spain%29.%20Departamento%20de%20Educaci%C3%B3n%2C%20Cultura%20y%20Deporte> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/ANATOMICOS_MADRID_SL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon_Spain_Departamento_de_Educacion_Cultura_y_Deporte> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171400000053>
   a ns1:ServicesContract ;
@@ -913,8 +913,8 @@
   ns0:hasAwardProcedure "Por administración"^^xsd:string ;
   ns0:hasBiddingPrice 1.499148e+4 ;
   dc:description "d.o. proy. obras c.p. torres de barbues h170001"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/SDAD%20ARAGONESA%20DE%20GESTION> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/SDAD_ARAGONESA_DE_GESTION> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO_RURAL_Y_SOSTENIBILIDAD> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171800000096>
   a ns1:ServicesContract ;
@@ -923,8 +923,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 1.509104e+4 ;
   dc:description "seguridad archivo hº provincial huesca 2017 (2)"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/CIA%20VIGILANCIA%20ARAGONESA%20S.L.> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon%20%28Spain%29.%20Departamento%20de%20Educaci%C3%B3n%2C%20Cultura%20y%20Deporte> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/CIA_VIGILANCIA_ARAGONESA_SL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon_Spain_Departamento_de_Educacion_Cultura_y_Deporte> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171800000097>
   a ns1:ServicesContract ;
@@ -933,8 +933,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 2.263096e+4 ;
   dc:description "seguridad museo huesca 2017 (2)"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/CIA%20VIGILANCIA%20ARAGONESA%20S.L.> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon%20%28Spain%29.%20Departamento%20de%20Educaci%C3%B3n%2C%20Cultura%20y%20Deporte> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/CIA_VIGILANCIA_ARAGONESA_SL> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/Aragon_Spain_Departamento_de_Educacion_Cultura_y_Deporte> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171400000021>
   a ns1:ServicesContract ;
@@ -943,8 +943,8 @@
   ns0:hasAwardProcedure "Por administración"^^xsd:string ;
   ns0:hasBiddingPrice 4.189732e+4 ;
   dc:description "tf 73369 sanidad forestal en teruel"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/SDAD%20ARAGONESA%20DE%20GESTION> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/SDAD_ARAGONESA_DE_GESTION> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO_RURAL_Y_SOSTENIBILIDAD> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171400000058>
   a ns1:ServicesContract ;
@@ -953,8 +953,8 @@
   ns0:hasAwardProcedure "Por administración"^^xsd:string ;
   ns0:hasBiddingPrice 6.272089e+4 ;
   dc:description "encargo seguridad y salud obras 2017 a170003"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/SDAD%20ARAGONESA%20DE%20GESTION> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/SDAD_ARAGONESA_DE_GESTION> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO_RURAL_Y_SOSTENIBILIDAD> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171400000067>
   a ns1:ServicesContract ;
@@ -963,8 +963,8 @@
   ns0:hasAwardProcedure "Por administración"^^xsd:string ;
   ns0:hasBiddingPrice 2.939741e+5 ;
   dc:description "146 rb74011 catálogo especies amenazadas"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/SDAD%20ARAGONESA%20DE%20GESTION> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/SDAD_ARAGONESA_DE_GESTION> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO_RURAL_Y_SOSTENIBILIDAD> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20175100000061>
   a ns1:SuppliesContract ;
@@ -973,8 +973,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 4.521000e+2 ;
   dc:description "suministro silla de trabajo o.e. huesca"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/EL%20CORTE%20INGLES> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20EMPLEO> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/EL_CORTE_INGLES> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DE_EMPLEO> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171400000033>
   a ns1:ServicesContract ;
@@ -983,8 +983,8 @@
   ns0:hasAwardProcedure "Por administración"^^xsd:string ;
   ns0:hasBiddingPrice 5.696352e+5 ;
   dc:description "145 rb74019. educ ambiental en c interpretación naturaleza aragón"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/SDAD%20ARAGONESA%20DE%20GESTION> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/SDAD_ARAGONESA_DE_GESTION> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO_RURAL_Y_SOSTENIBILIDAD> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20171400000034>
   a ns1:ServicesContract ;
@@ -993,8 +993,8 @@
   ns0:hasAwardProcedure "Por administración"^^xsd:string ;
   ns0:hasBiddingPrice 2.598224e+5 ;
   dc:description "145 rb74006. planes de gestión enp aragón"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/SDAD%20ARAGONESA%20DE%20GESTION> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/SDAD_ARAGONESA_DE_GESTION> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/DESARROLLO_RURAL_Y_SOSTENIBILIDAD> .
 
 <http://group01.org/aragon/resource/Contract/CONAD20175100000135>
   a ns1:SuppliesContract ;
@@ -1003,8 +1003,8 @@
   ns0:hasAwardProcedure "Derivado de acuerdo marco"^^xsd:string ;
   ns0:hasBiddingPrice 2.302000e+2 ;
   dc:description "suministro tablón anuncios corcho para cpfip movera"^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/TORRES%20EQUIPAMIENTOS%20DE%20OFICINAS%20SOCIEDAD%20LIMITADA> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20EMPLEO> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/TORRES_EQUIPAMIENTOS_DE_OFICINAS_SOCIEDAD_LIMITADA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DE_EMPLEO> .
 
 <http://group01.org/aragon/resource/Contract/CONEX20175200000949>
   a ns1:ServicesContract ;
@@ -1014,311 +1014,312 @@
   ns0:hasBiddingPrice 9.752852e+4 ;
   dc:description """s.a.;2017;conex20175200000906;"
 servicio vigilancia hospital "obispo polanco\""""^^xsd:string ;
-  ns0:awardedTo <http://group01.org/aragon/resource/Company/ILUNION%20SEGURIDAD%20S.A.> ;
-  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD> .
+  ns0:awardedTo <http://group01.org/aragon/resource/Company/ILUNION_SEGURIDAD_SA> ;
+  ns1:contractingBody <http://group01.org/aragon/resource/GovernmentBody/SERVICIO_ARAGONES_DE_SALUD> .
 
-<http://group01.org/aragon/resource/Company/EXPO%20ZARAGOZA%20EMPRESARIAL%20SOCIEDAD%20ANONIMA>
+<http://group01.org/aragon/resource/Company/EXPO_ZARAGOZA_EMPRESARIAL_SOCIEDAD_ANONIMA>
   owl:sameAs <https://opencorporates.com/companies/es/99056442> ;
   a ns1:AwardedTender ;
-  rdfs:label "EXPO ZARAGOZA EMPRESARIAL SOCIEDAD ANONIMA" .
+  rdfs:label "EXPO_ZARAGOZA_EMPRESARIAL_SOCIEDAD_ANONIMA" .
 
-<http://group01.org/aragon/resource/Company/ILUNION%20SEGURIDAD%20S.A.>
+<http://group01.org/aragon/resource/Company/ILUNION_SEGURIDAD_SA>
   a ns1:AwardedTender ;
-  rdfs:label "ILUNION SEGURIDAD S.A." .
+  rdfs:label "ILUNION_SEGURIDAD_SA" .
 
-<http://group01.org/aragon/resource/Company/ANATOMICOS%20MADRID%20SL>
+<http://group01.org/aragon/resource/Company/ANATOMICOS_MADRID_SL>
   owl:sameAs <https://opencorporates.com/companies/es/81913378> ;
   a ns1:AwardedTender ;
-  rdfs:label "ANATOMICOS MADRID SL" .
+  rdfs:label "ANATOMICOS_MADRID_SL" .
 
-<http://group01.org/aragon/resource/Company/SUMINISTROS%20MATERIAL%20Y%20APARATOS%20DE>
+<http://group01.org/aragon/resource/Company/SUMINISTROS_MATERIAL_Y_APARATOS_DE>
   a ns1:AwardedTender ;
-  rdfs:label "SUMINISTROS MATERIAL Y APARATOS DE" .
+  rdfs:label "SUMINISTROS_MATERIAL_Y_APARATOS_DE" .
 
-<http://group01.org/aragon/resource/Company/ALFAQUIMIA%20SL>
+<http://group01.org/aragon/resource/Company/ALFAQUIMIA_SL>
   owl:sameAs <https://opencorporates.com/companies/es/81397390> ;
   a ns1:AwardedTender ;
-  rdfs:label "ALFAQUIMIA SL" .
+  rdfs:label "ALFAQUIMIA_SL" .
 
-<http://group01.org/aragon/resource/Company/JAVIER%20SOLANAS%20LABOARAGON%20SOCIEDAD%20LIMITADA>
+<http://group01.org/aragon/resource/Company/JAVIER_SOLANAS_LABOARAGON_SOCIEDAD_LIMITADA>
   owl:sameAs <https://opencorporates.com/companies/es/99079188> ;
   a ns1:AwardedTender ;
-  rdfs:label "JAVIER SOLANAS LABOARAGON SOCIEDAD LIMITADA" .
+  rdfs:label "JAVIER_SOLANAS_LABOARAGON_SOCIEDAD_LIMITADA" .
 
-<http://group01.org/aragon/resource/Company/VIDRA%20FOC%20S.A.>
+<http://group01.org/aragon/resource/Company/VIDRA_FOC_SA>
   a ns1:AwardedTender ;
-  rdfs:label "VIDRA FOC S.A." .
+  rdfs:label "VIDRA_FOC_SA" .
 
-<http://group01.org/aragon/resource/Company/GARDA%20SERVICIOS%20DE%20SEGURIDAD%20SA>
+<http://group01.org/aragon/resource/Company/GARDA_SERVICIOS_DE_SEGURIDAD_SA>
   owl:sameAs <https://opencorporates.com/companies/es/50595305> ;
   a ns1:AwardedTender ;
-  rdfs:label "GARDA SERVICIOS DE SEGURIDAD SA" .
+  rdfs:label "GARDA_SERVICIOS_DE_SEGURIDAD_SA" .
 
-<http://group01.org/aragon/resource/Company/SOFTWARE%20GRUPO%20V%20SL>
+<http://group01.org/aragon/resource/Company/SOFTWARE_GRUPO_V_SL>
   owl:sameAs <https://opencorporates.com/companies/es/50598895> ;
   a ns1:AwardedTender ;
-  rdfs:label "SOFTWARE GRUPO V SL" .
+  rdfs:label "SOFTWARE_GRUPO_V_SL" .
 
-<http://group01.org/aragon/resource/Company/EL%20CORTE%20INGLES>
+<http://group01.org/aragon/resource/Company/EL_CORTE_INGLES>
   owl:sameAs <https://opencorporates.com/companies/bo/00031518> ;
   a ns1:AwardedTender ;
-  rdfs:label "EL CORTE INGLES" .
+  rdfs:label "EL_CORTE_INGLES" .
 
-<http://group01.org/aragon/resource/Company/SOLITIUM%20S.L.>
+<http://group01.org/aragon/resource/Company/SOLITIUM_SL>
   a ns1:AwardedTender ;
-  rdfs:label "SOLITIUM S.L." .
+  rdfs:label "SOLITIUM_SL" .
 
-<http://group01.org/aragon/resource/Company/BANCO%20SANTANDER>
+<http://group01.org/aragon/resource/Company/BANCO_SANTANDER>
   owl:sameAs <https://opencorporates.com/companies/be/0414225236> ;
   a ns1:AwardedTender ;
-  rdfs:label "BANCO SANTANDER" .
+  rdfs:label "BANCO_SANTANDER" .
 
-<http://group01.org/aragon/resource/Company/LIDERA%20HIGIENE%20SL>
+<http://group01.org/aragon/resource/Company/LIDERA_HIGIENE_SL>
   owl:sameAs <https://opencorporates.com/companies/es/64794746> ;
   a ns1:AwardedTender ;
-  rdfs:label "LIDERA HIGIENE SL" .
+  rdfs:label "LIDERA_HIGIENE_SL" .
 
-<http://group01.org/aragon/resource/Company/CELQUISA%20S.L.LABORAL>
+<http://group01.org/aragon/resource/Company/CELQUISA_SLLABORAL>
   a ns1:AwardedTender ;
-  rdfs:label "CELQUISA S.L.LABORAL" .
+  rdfs:label "CELQUISA_SLLABORAL" .
 
-<http://group01.org/aragon/resource/Company/DISTRIBUCIONES%20NAVARRO-MIR%20SOCIEDAD%20LIMITADA>
+<http://group01.org/aragon/resource/Company/DISTRIBUCIONES_NAVARRO-MIR_SOCIEDAD_LIMITADA>
   owl:sameAs <https://opencorporates.com/companies/es/50731090> ;
   a ns1:AwardedTender ;
-  rdfs:label "DISTRIBUCIONES NAVARRO-MIR SOCIEDAD LIMITADA" .
+  rdfs:label "DISTRIBUCIONES_NAVARRO-MIR_SOCIEDAD_LIMITADA" .
 
-<http://group01.org/aragon/resource/Company/SDAD%20ARAGONESA%20DE%20GESTION>
+<http://group01.org/aragon/resource/Company/SDAD_ARAGONESA_DE_GESTION>
   a ns1:AwardedTender ;
-  rdfs:label "SDAD ARAGONESA DE GESTION" .
+  rdfs:label "SDAD_ARAGONESA_DE_GESTION" .
 
-<http://group01.org/aragon/resource/Company/CIA%20VIGILANCIA%20ARAGONESA%20S.L.>
+<http://group01.org/aragon/resource/Company/CIA_VIGILANCIA_ARAGONESA_SL>
   a ns1:AwardedTender ;
-  rdfs:label "CIA VIGILANCIA ARAGONESA S.L." .
+  rdfs:label "CIA_VIGILANCIA_ARAGONESA_SL" .
 
-<http://group01.org/aragon/resource/Company/SIEMENS%20HEALTHCARE%20SL>
+<http://group01.org/aragon/resource/Company/SIEMENS_HEALTHCARE_SL>
   owl:sameAs <https://opencorporates.com/companies/no/920191223> ;
   a ns1:AwardedTender ;
-  rdfs:label "SIEMENS HEALTHCARE SL" .
+  rdfs:label "SIEMENS_HEALTHCARE_SL" .
 
-<http://group01.org/aragon/resource/Company/EULEN%20SEGURIDAD%20SA>
+<http://group01.org/aragon/resource/Company/EULEN_SEGURIDAD_SA>
   owl:sameAs <https://opencorporates.com/companies/es/28369395> ;
   a ns1:AwardedTender ;
-  rdfs:label "EULEN SEGURIDAD SA" .
+  rdfs:label "EULEN_SEGURIDAD_SA" .
 
 <http://group01.org/aragon/resource/Company/QDIAGNOSTICA>
   a ns1:AwardedTender ;
   rdfs:label "QDIAGNOSTICA" .
 
-<http://group01.org/aragon/resource/Company/CLINICA%20MONTPELLIER%20GRUPO%20HLA%2C%20SAU>
+<http://group01.org/aragon/resource/Company/CLINICA_MONTPELLIER_GRUPO_HLA_SAU>
   a ns1:AwardedTender ;
-  rdfs:label "CLINICA MONTPELLIER GRUPO HLA, SAU" .
+  rdfs:label "CLINICA_MONTPELLIER_GRUPO_HLA_SAU" .
 
-<http://group01.org/aragon/resource/Company/DRA%20ROCA%20DIAGNOSTICO%20MEDICO%20S.L.>
+<http://group01.org/aragon/resource/Company/DRA_ROCA_DIAGNOSTICO_MEDICO_SL>
   a ns1:AwardedTender ;
-  rdfs:label "DRA ROCA DIAGNOSTICO MEDICO S.L." .
+  rdfs:label "DRA_ROCA_DIAGNOSTICO_MEDICO_SL" .
 
-<http://group01.org/aragon/resource/Company/PARACELSO%20DIAGNOSTICO%20MEDICO%20SL>
+<http://group01.org/aragon/resource/Company/PARACELSO_DIAGNOSTICO_MEDICO_SL>
   owl:sameAs <https://opencorporates.com/companies/es/99009433> ;
   a ns1:AwardedTender ;
-  rdfs:label "PARACELSO DIAGNOSTICO MEDICO SL" .
+  rdfs:label "PARACELSO_DIAGNOSTICO_MEDICO_SL" .
 
-<http://group01.org/aragon/resource/Company/NFC%20Y%20SUE%C3%91O%2C%20SL>
+<http://group01.org/aragon/resource/Company/NFC_Y_SUENO_SL>
   a ns1:AwardedTender ;
-  rdfs:label "NFC Y SUEÑO, SL" .
+  rdfs:label "NFC_Y_SUENO_SL" .
 
-<http://group01.org/aragon/resource/Company/REPSOL%20COMERCIAL%20DE%20PRODUCTOS%20PETROLIFEROS%20SA>
+<http://group01.org/aragon/resource/Company/REPSOL_COMERCIAL_DE_PRODUCTOS_PETROLIFEROS_SA>
   owl:sameAs <https://opencorporates.com/companies/es/80298839> ;
   a ns1:AwardedTender ;
-  rdfs:label "REPSOL COMERCIAL DE PRODUCTOS PETROLIFEROS SA" .
+  rdfs:label "REPSOL_COMERCIAL_DE_PRODUCTOS_PETROLIFEROS_SA" .
 
-<http://group01.org/aragon/resource/Company/MEDTRONIC%20IBERICA%20SA>
+<http://group01.org/aragon/resource/Company/MEDTRONIC_IBERICA_SA>
   owl:sameAs <https://opencorporates.com/companies/es/28389484> ;
   a ns1:AwardedTender ;
-  rdfs:label "MEDTRONIC IBERICA SA" .
+  rdfs:label "MEDTRONIC_IBERICA_SA" .
 
-<http://group01.org/aragon/resource/Company/FUNDACION%20ADCARA>
+<http://group01.org/aragon/resource/Company/FUNDACION_ADCARA>
   a ns1:AwardedTender ;
-  rdfs:label "FUNDACION ADCARA" .
+  rdfs:label "FUNDACION_ADCARA" .
 
-<http://group01.org/aragon/resource/Company/SA%20AGRICULTORES%20VEGA%20DE%20VALENCIA->
+<http://group01.org/aragon/resource/Company/SA_AGRICULTORES_VEGA_DE_VALENCIA->
   a ns1:AwardedTender ;
-  rdfs:label "SA AGRICULTORES VEGA DE VALENCIA-" .
+  rdfs:label "SA_AGRICULTORES_VEGA_DE_VALENCIA-" .
 
-<http://group01.org/aragon/resource/Company/ARAGONESA%20OBRAS%20CIVILES%20SL%20IEASA%20UTE>
+<http://group01.org/aragon/resource/Company/ARAGONESA_OBRAS_CIVILES_SL_IEASA_UTE>
   owl:sameAs <https://opencorporates.com/companies/es/44187771> ;
   a ns1:AwardedTender ;
-  rdfs:label "ARAGONESA OBRAS CIVILES SL IEASA UTE" .
+  rdfs:label "ARAGONESA_OBRAS_CIVILES_SL_IEASA_UTE" .
 
-<http://group01.org/aragon/resource/Company/GRANT%20THORNTON%20SL%20PROFESIONAL>
+<http://group01.org/aragon/resource/Company/GRANT_THORNTON_SL_PROFESIONAL>
   a ns1:AwardedTender ;
-  rdfs:label "GRANT THORNTON SL PROFESIONAL" .
+  rdfs:label "GRANT_THORNTON_SL_PROFESIONAL" .
 
-<http://group01.org/aragon/resource/Company/UTE-CIS%20COMPA%C3%91IA%20INTEGRAL%20DE>
+<http://group01.org/aragon/resource/Company/UTE-CIS_COMPANIA_INTEGRAL_DE>
   a ns1:AwardedTender ;
-  rdfs:label "UTE-CIS COMPAÑIA INTEGRAL DE" .
+  rdfs:label "UTE-CIS_COMPANIA_INTEGRAL_DE" .
 
-<http://group01.org/aragon/resource/Company/TRATAMIENTOS%20AGRICOLAS%20AEREOS%20PERAN%20SL>
+<http://group01.org/aragon/resource/Company/TRATAMIENTOS_AGRICOLAS_AEREOS_PERAN_SL>
   owl:sameAs <https://opencorporates.com/companies/es/14343909> ;
   a ns1:AwardedTender ;
-  rdfs:label "TRATAMIENTOS AGRICOLAS AEREOS PERAN SL" .
+  rdfs:label "TRATAMIENTOS_AGRICOLAS_AEREOS_PERAN_SL" .
 
-<http://group01.org/aragon/resource/Company/EZAGUE%20SL>
+<http://group01.org/aragon/resource/Company/EZAGUE_SL>
   owl:sameAs <https://opencorporates.com/companies/es/44102556> ;
   a ns1:AwardedTender ;
-  rdfs:label "EZAGUE SL" .
+  rdfs:label "EZAGUE_SL" .
 
-<http://group01.org/aragon/resource/Company/REGIO%20PLUS%20CONSULTING%20SL>
+<http://group01.org/aragon/resource/Company/REGIO_PLUS_CONSULTING_SL>
   owl:sameAs <https://opencorporates.com/companies/es/85325181> ;
   a ns1:AwardedTender ;
-  rdfs:label "REGIO PLUS CONSULTING SL" .
+  rdfs:label "REGIO_PLUS_CONSULTING_SL" .
 
 <http://group01.org/aragon/resource/Company/UTE-VIRTUAL-ANEUM>
   a ns1:AwardedTender ;
   rdfs:label "UTE-VIRTUAL-ANEUM" .
 
-<http://group01.org/aragon/resource/Company/ALOSA%2C%20AUTOCARES%20Y%20AUTOBUSES%20SOCIEDAD%20LIMITADA>
+<http://group01.org/aragon/resource/Company/ALOSA_AUTOCARES_Y_AUTOBUSES_SOCIEDAD_LIMITADA>
   owl:sameAs <https://opencorporates.com/companies/es/22329825> ;
   a ns1:AwardedTender ;
-  rdfs:label "ALOSA, AUTOCARES Y AUTOBUSES SOCIEDAD LIMITADA" .
+  rdfs:label "ALOSA_AUTOCARES_Y_AUTOBUSES_SOCIEDAD_LIMITADA" .
 
-<http://group01.org/aragon/resource/Company/RETEVISION%20I%20SA>
+<http://group01.org/aragon/resource/Company/RETEVISION_I_SA>
   owl:sameAs <https://opencorporates.com/companies/es/62275680> ;
   a ns1:AwardedTender ;
-  rdfs:label "RETEVISION I SA" .
+  rdfs:label "RETEVISION_I_SA" .
 
-<http://group01.org/aragon/resource/Company/UTE%20ILLUECA%20-%20CONST.M.LOPEZ%20NAVARRO>
+<http://group01.org/aragon/resource/Company/UTE_ILLUECA_-_CONSTMLOPEZ_NAVARRO>
   a ns1:AwardedTender ;
-  rdfs:label "UTE ILLUECA - CONST.M.LOPEZ NAVARRO" .
+  rdfs:label "UTE_ILLUECA_-_CONSTMLOPEZ_NAVARRO" .
 
-<http://group01.org/aragon/resource/Company/INTELECTO%20CONSULTORIA%20DE%20PROYECTOS>
+<http://group01.org/aragon/resource/Company/INTELECTO_CONSULTORIA_DE_PROYECTOS>
   a ns1:AwardedTender ;
-  rdfs:label "INTELECTO CONSULTORIA DE PROYECTOS" .
+  rdfs:label "INTELECTO_CONSULTORIA_DE_PROYECTOS" .
 
-<http://group01.org/aragon/resource/Company/VEOLIA%20SERVICIOS%20NORTE%20S.A.U.>
+<http://group01.org/aragon/resource/Company/VEOLIA_SERVICIOS_NORTE_SAU>
   a ns1:AwardedTender ;
-  rdfs:label "VEOLIA SERVICIOS NORTE S.A.U." .
+  rdfs:label "VEOLIA_SERVICIOS_NORTE_SAU" .
 
-<http://group01.org/aragon/resource/Company/DELOITTE%20CONSULTING%20SL>
+<http://group01.org/aragon/resource/Company/DELOITTE_CONSULTING_SL>
   owl:sameAs <https://opencorporates.com/companies/es/81690471> ;
   a ns1:AwardedTender ;
-  rdfs:label "DELOITTE CONSULTING SL" .
+  rdfs:label "DELOITTE_CONSULTING_SL" .
 
-<http://group01.org/aragon/resource/Company/IA%20SOFT%20ARAGON%20SL>
+<http://group01.org/aragon/resource/Company/IA_SOFT_ARAGON_SL>
   owl:sameAs <https://opencorporates.com/companies/es/50658046> ;
   a ns1:AwardedTender ;
-  rdfs:label "IA SOFT ARAGON SL" .
+  rdfs:label "IA_SOFT_ARAGON_SL" .
 
-<http://group01.org/aragon/resource/Company/BABCOCK%20MISSION%20CRITICAL%20SERVICES%20LTD>
+<http://group01.org/aragon/resource/Company/BABCOCK_MISSION_CRITICAL_SERVICES_LTD>
   owl:sameAs <https://opencorporates.com/companies/gb/08010453> ;
   a ns1:AwardedTender ;
-  rdfs:label "BABCOCK MISSION CRITICAL SERVICES LTD" .
+  rdfs:label "BABCOCK_MISSION_CRITICAL_SERVICES_LTD" .
 
-<http://group01.org/aragon/resource/Company/INSERCION%20Y%20TRABAJO%20SL>
+<http://group01.org/aragon/resource/Company/INSERCION_Y_TRABAJO_SL>
   owl:sameAs <https://opencorporates.com/companies/es/50799014> ;
   a ns1:AwardedTender ;
-  rdfs:label "INSERCION Y TRABAJO SL" .
+  rdfs:label "INSERCION_Y_TRABAJO_SL" .
 
-<http://group01.org/aragon/resource/Company/CENTRO%20INVESTIGACION%20Y%20TECNOLOGIA>
+<http://group01.org/aragon/resource/Company/CENTRO_INVESTIGACION_Y_TECNOLOGIA>
   a ns1:AwardedTender ;
-  rdfs:label "CENTRO INVESTIGACION Y TECNOLOGIA" .
+  rdfs:label "CENTRO_INVESTIGACION_Y_TECNOLOGIA" .
 
-<http://group01.org/aragon/resource/Company/OFITECNICA%2C%20OFICINA%20TECNICA%20SOCIEDAD%20LIMITADA>
+<http://group01.org/aragon/resource/Company/OFITECNICA_OFICINA_TECNICA_SOCIEDAD_LIMITADA>
   owl:sameAs <https://opencorporates.com/companies/es/22146609> ;
   a ns1:AwardedTender ;
-  rdfs:label "OFITECNICA, OFICINA TECNICA SOCIEDAD LIMITADA" .
+  rdfs:label "OFITECNICA_OFICINA_TECNICA_SOCIEDAD_LIMITADA" .
 
-<http://group01.org/aragon/resource/Company/BALLAROL%20OFICINAS%20S.L.L.>
+<http://group01.org/aragon/resource/Company/BALLAROL_OFICINAS_SLL>
   a ns1:AwardedTender ;
-  rdfs:label "BALLAROL OFICINAS S.L.L." .
+  rdfs:label "BALLAROL_OFICINAS_SLL" .
 
-<http://group01.org/aragon/resource/Company/CONFECCIONES%20OROEL%20SA>
+<http://group01.org/aragon/resource/Company/CONFECCIONES_OROEL_SA>
   owl:sameAs <https://opencorporates.com/companies/es/50068477> ;
   a ns1:AwardedTender ;
-  rdfs:label "CONFECCIONES OROEL SA" .
+  rdfs:label "CONFECCIONES_OROEL_SA" .
 
-<http://group01.org/aragon/resource/Company/TECNOLOGIAS%20Y%20SERVICIOS%20AGRARIOS%20SA>
+<http://group01.org/aragon/resource/Company/TECNOLOGIAS_Y_SERVICIOS_AGRARIOS_SA>
   owl:sameAs <https://opencorporates.com/companies/es/79365821> ;
   a ns1:AwardedTender ;
-  rdfs:label "TECNOLOGIAS Y SERVICIOS AGRARIOS SA" .
+  rdfs:label "TECNOLOGIAS_Y_SERVICIOS_AGRARIOS_SA" .
 
-<http://group01.org/aragon/resource/Company/ARAGONESA%20DE%20SERVICIOS%20TELEMATICOS>
+<http://group01.org/aragon/resource/Company/ARAGONESA_DE_SERVICIOS_TELEMATICOS>
   a ns1:AwardedTender ;
-  rdfs:label "ARAGONESA DE SERVICIOS TELEMATICOS" .
+  rdfs:label "ARAGONESA_DE_SERVICIOS_TELEMATICOS" .
 
-<http://group01.org/aragon/resource/Company/EUROHELP%20CONSULTING%20SL>
+<http://group01.org/aragon/resource/Company/EUROHELP_CONSULTING_SL>
   owl:sameAs <https://opencorporates.com/companies/es/38472197> ;
   a ns1:AwardedTender ;
-  rdfs:label "EUROHELP CONSULTING SL" .
+  rdfs:label "EUROHELP_CONSULTING_SL" .
 
-<http://group01.org/aragon/resource/Company/TORRES%20EQUIPAMIENTOS%20DE%20OFICINAS%20SOCIEDAD%20LIMITADA>
+<http://group01.org/aragon/resource/Company/TORRES_EQUIPAMIENTOS_DE_OFICINAS_SOCIEDAD_LIMITADA>
   owl:sameAs <https://opencorporates.com/companies/es/99263907> ;
   a ns1:AwardedTender ;
-  rdfs:label "TORRES EQUIPAMIENTOS DE OFICINAS SOCIEDAD LIMITADA" .
+  rdfs:label "TORRES_EQUIPAMIENTOS_DE_OFICINAS_SOCIEDAD_LIMITADA" .
 
-<http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20GESTI%C3%93N%20AMBIENTAL>
+<http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DE_GESTION_AMBIENTAL>
   a org:Organization ;
-  rdfs:label "INSTITUTO ARAGONÉS DE GESTIÓN AMBIENTAL" .
+  rdfs:label "INSTITUTO_ARAGONES_DE_GESTION_AMBIENTAL" .
 
-<http://group01.org/aragon/resource/GovernmentBody/Aragon%20%28Spain%29.%20Departamento%20de%20Educaci%C3%B3n%2C%20Cultura%20y%20Deporte>
+<http://group01.org/aragon/resource/GovernmentBody/Aragon_Spain_Departamento_de_Educacion_Cultura_y_Deporte>
   a org:Organization ;
-  rdfs:label "Aragon (Spain). Departamento de Educación, Cultura y Deporte" ;
+  rdfs:label "Aragon_Spain_Departamento_de_Educacion_Cultura_y_Deporte" ;
   owl:sameAs <http://www.wikidata.org/entity/Q57870124> .
 
-<http://group01.org/aragon/resource/GovernmentBody/Ministerio%20de%20Sanidad%20y%20Consumo>
+<http://group01.org/aragon/resource/GovernmentBody/Ministerio_de_Sanidad_y_Consumo>
   a org:Organization ;
-  rdfs:label "Ministerio de Sanidad y Consumo" ;
+  rdfs:label "Ministerio_de_Sanidad_y_Consumo" ;
   owl:sameAs <http://www.wikidata.org/entity/Q52670567> .
 
-<http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20LA%20JUVENTUD>
+<http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DE_LA_JUVENTUD>
   a org:Organization ;
-  rdfs:label "INSTITUTO ARAGONÉS DE LA JUVENTUD" .
+  rdfs:label "INSTITUTO_ARAGONES_DE_LA_JUVENTUD" .
 
-<http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20EMPLEO>
+<http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DE_EMPLEO>
   a org:Organization ;
-  rdfs:label "INSTITUTO ARAGONÉS DE EMPLEO" .
+  rdfs:label "INSTITUTO_ARAGONES_DE_EMPLEO" .
 
-<http://group01.org/aragon/resource/GovernmentBody/Departamento%20de%20Ciudadan%C3%ADa%20y%20Derechos%20Sociales%20del%20Gobierno%20de%20Arag%C3%B3n>
+<http://group01.org/aragon/resource/GovernmentBody/Departamento_de_Ciudadania_y_Derechos_Sociales_del_Gobierno_de_Aragon>
   a org:Organization ;
-  rdfs:label "Departamento de Ciudadanía y Derechos Sociales del Gobierno de Aragón" ;
+  rdfs:label "Departamento_de_Ciudadania_y_Derechos_Sociales_del_Gobierno_de_Aragon" ;
   owl:sameAs <http://www.wikidata.org/entity/Q57871914> .
 
-<http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20SERVICIOS%20SOCIALES>
+<http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DE_SERVICIOS_SOCIALES>
   a org:Organization ;
-  rdfs:label "INSTITUTO ARAGONÉS DE SERVICIOS SOCIALES" .
+  rdfs:label "INSTITUTO_ARAGONES_DE_SERVICIOS_SOCIALES" .
 
-<http://group01.org/aragon/resource/GovernmentBody/DESARROLLO%20RURAL%20Y%20SOSTENIBILIDAD>
+<http://group01.org/aragon/resource/GovernmentBody/DESARROLLO_RURAL_Y_SOSTENIBILIDAD>
   a org:Organization ;
-  rdfs:label "DESARROLLO RURAL Y SOSTENIBILIDAD" .
+  rdfs:label "DESARROLLO_RURAL_Y_SOSTENIBILIDAD" .
 
 <http://group01.org/aragon/resource/GovernmentBody/presidency>
   a org:Organization ;
   rdfs:label "presidency" ;
   owl:sameAs <http://www.wikidata.org/entity/Q3558349> .
 
-<http://group01.org/aragon/resource/GovernmentBody/SERVICIO%20ARAGON%C3%89S%20DE%20SALUD>
+<http://group01.org/aragon/resource/GovernmentBody/SERVICIO_ARAGONES_DE_SALUD>
   a org:Organization ;
-  rdfs:label "SERVICIO ARAGONÉS DE SALUD" .
+  rdfs:label "SERVICIO_ARAGONES_DE_SALUD" .
 
-<http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DE%20LA%20MUJER>
+<http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DE_LA_MUJER>
   a org:Organization ;
-  rdfs:label "INSTITUTO ARAGONÉS DE LA MUJER" .
+  rdfs:label "INSTITUTO_ARAGONES_DE_LA_MUJER" .
 
-<http://group01.org/aragon/resource/GovernmentBody/INSTITUTO%20ARAGON%C3%89S%20DEL%20AGUA>
+<http://group01.org/aragon/resource/GovernmentBody/INSTITUTO_ARAGONES_DEL_AGUA>
   a org:Organization ;
-  rdfs:label "INSTITUTO ARAGONÉS DEL AGUA" .
+  rdfs:label "INSTITUTO_ARAGONES_DEL_AGUA" .
 
-<http://group01.org/aragon/resource/GovernmentBody/HACIENDA%20Y%20ADMINISTRACI%C3%93N%20P%C3%9ABLICA>
+<http://group01.org/aragon/resource/GovernmentBody/HACIENDA_Y_ADMINISTRACION_PUBLICA>
   a org:Organization ;
-  rdfs:label "HACIENDA Y ADMINISTRACIÓN PÚBLICA" .
+  rdfs:label "HACIENDA_Y_ADMINISTRACION_PUBLICA" .
 
-<http://group01.org/aragon/resource/GovernmentBody/VERTEBRACI%C3%93N%20DEL%20TERRITORIO%2C%20MOVILIDAD%20Y%20VIVIENDA>
+<http://group01.org/aragon/resource/GovernmentBody/VERTEBRACION_DEL_TERRITORIO_MOVILIDAD_Y_VIVIENDA>
   a org:Organization ;
-  rdfs:label "VERTEBRACIÓN DEL TERRITORIO, MOVILIDAD Y VIVIENDA" .
+  rdfs:label "VERTEBRACION_DEL_TERRITORIO_MOVILIDAD_Y_VIVIENDA" .
 
-<http://group01.org/aragon/resource/GovernmentBody/INNOVACI%C3%93N%2C%20INVESTIGACI%C3%93N%20Y%20UNIVERSIDAD>
+<http://group01.org/aragon/resource/GovernmentBody/INNOVACION_INVESTIGACION_Y_UNIVERSIDAD>
   a org:Organization ;
-  rdfs:label "INNOVACIÓN, INVESTIGACIÓN Y UNIVERSIDAD" .
+  rdfs:label "INNOVACION_INVESTIGACION_Y_UNIVERSIDAD" .
 
-<http://group01.org/aragon/resource/GovernmentBody/ECONOM%C3%8DA%2C%20INDUSTRIA%20Y%20EMPLEO>
+<http://group01.org/aragon/resource/GovernmentBody/ECONOMIA_INDUSTRIA_Y_EMPLEO>
   a org:Organization ;
-  rdfs:label "ECONOMÍA, INDUSTRIA Y EMPLEO" .
+  rdfs:label "ECONOMIA_INDUSTRIA_Y_EMPLEO" .
+
