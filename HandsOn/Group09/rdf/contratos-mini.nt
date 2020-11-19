@@ -14,40 +14,40 @@
 <http://www.example.com/group09/department/AREA_DE_GOBIERNO_DE_PORTAVOZ%2C_SEGURIDAD_Y_EMERGENCIAS> <http://schema.org/name> "AREA DE GOBIERNO DE PORTAVOZ, SEGURIDAD Y EMERGENCIAS"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/department/DISTRITO_DE_MONCLOA-ARAVACA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit>.
 <http://www.example.com/group09/department/DISTRITO_DE_MONCLOA-ARAVACA> <http://schema.org/name> "DISTRITO DE MONCLOA-ARAVACA"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.example.com/group09/department/EMPRESA_MUNICIPAL_DE_TRANSPORTES_S.A./contracting_body/DIRECTOR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#Organization>.
-<http://www.example.com/group09/department/EMPRESA_MUNICIPAL_DE_TRANSPORTES_S.A./contracting_body/DIRECTOR> <http://schema.org/name> "DIRECTOR"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.example.com/group09/department/EMPRESA_MUNICIPAL_DE_TRANSPORTES_S.A./contracting_body/DIRECTOR> <http://www.w3.org/ns/org#subOrganizationOf> <http://www.example.com/group09/department/EMPRESA_MUNICIPAL_DE_TRANSPORTES_S.A.>.
-<http://www.example.com/group09/department/DISTRITO_DE_RETIRO/contracting_body/COORDINADOR%2FA_DISTRITO_DE_RETIRO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#Organization>.
-<http://www.example.com/group09/department/DISTRITO_DE_RETIRO/contracting_body/COORDINADOR%2FA_DISTRITO_DE_RETIRO> <http://schema.org/name> "COORDINADOR/A DISTRITO DE RETIRO"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.example.com/group09/department/DISTRITO_DE_RETIRO/contracting_body/COORDINADOR%2FA_DISTRITO_DE_RETIRO> <http://www.w3.org/ns/org#subOrganizationOf> <http://www.example.com/group09/department/DISTRITO_DE_RETIRO>.
-<http://www.example.com/group09/department/DISTRITO_DE_CENTRO/contracting_body/COORDINADOR%2FA_DISTRITO_CENTRO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#Organization>.
-<http://www.example.com/group09/department/DISTRITO_DE_CENTRO/contracting_body/COORDINADOR%2FA_DISTRITO_CENTRO> <http://schema.org/name> "COORDINADOR/A DISTRITO CENTRO"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.example.com/group09/department/DISTRITO_DE_CENTRO/contracting_body/COORDINADOR%2FA_DISTRITO_CENTRO> <http://www.w3.org/ns/org#subOrganizationOf> <http://www.example.com/group09/department/DISTRITO_DE_CENTRO>.
-<http://www.example.com/group09/department/DISTRITO_DE_CIUDAD_LINEAL/contracting_body/COORDINADOR%2FA_DISTRITO_DE_CIUDAD_LINEAL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#Organization>.
-<http://www.example.com/group09/department/DISTRITO_DE_CIUDAD_LINEAL/contracting_body/COORDINADOR%2FA_DISTRITO_DE_CIUDAD_LINEAL> <http://schema.org/name> "COORDINADOR/A DISTRITO DE CIUDAD LINEAL"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.example.com/group09/department/DISTRITO_DE_CIUDAD_LINEAL/contracting_body/COORDINADOR%2FA_DISTRITO_DE_CIUDAD_LINEAL> <http://www.w3.org/ns/org#subOrganizationOf> <http://www.example.com/group09/department/DISTRITO_DE_CIUDAD_LINEAL>.
-<http://www.example.com/group09/department/%C3%81REA_DE_GOBIERNO_DE_FAMILIAS%2C_IGUALDAD_Y_BIENESTAR_SOCIAL/contracting_body/DIRECTOR%2FA_ATENCION_PRIMARIA%2C_INTERVENCION_COMUNITARIA_Y_EMERGENCIA_SOCIAL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#Organization>.
-<http://www.example.com/group09/department/%C3%81REA_DE_GOBIERNO_DE_FAMILIAS%2C_IGUALDAD_Y_BIENESTAR_SOCIAL/contracting_body/DIRECTOR%2FA_ATENCION_PRIMARIA%2C_INTERVENCION_COMUNITARIA_Y_EMERGENCIA_SOCIAL> <http://schema.org/name> "DIRECTOR/A ATENCION PRIMARIA, INTERVENCION COMUNITARIA Y EMERGENCIA SOCIAL"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.example.com/group09/department/%C3%81REA_DE_GOBIERNO_DE_FAMILIAS%2C_IGUALDAD_Y_BIENESTAR_SOCIAL/contracting_body/DIRECTOR%2FA_ATENCION_PRIMARIA%2C_INTERVENCION_COMUNITARIA_Y_EMERGENCIA_SOCIAL> <http://www.w3.org/ns/org#subOrganizationOf> <http://www.example.com/group09/department/%C3%81REA_DE_GOBIERNO_DE_FAMILIAS%2C_IGUALDAD_Y_BIENESTAR_SOCIAL>.
-<http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A./contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#Organization>.
-<http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A./contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA> <http://schema.org/name> "DIRECCION PRODUCCION Y COORDINACION TECNICA"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A./contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA> <http://www.w3.org/ns/org#subOrganizationOf> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A.>.
-<http://www.example.com/group09/department/AREA_DE_GOBIERNO_DE_PORTAVOZ%2C_SEGURIDAD_Y_EMERGENCIAS/contracting_body/DIRECTOR%2FA_GENERAL_EMERGENCIAS_Y_PROTECCION_CIVIL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#Organization>.
-<http://www.example.com/group09/department/AREA_DE_GOBIERNO_DE_PORTAVOZ%2C_SEGURIDAD_Y_EMERGENCIAS/contracting_body/DIRECTOR%2FA_GENERAL_EMERGENCIAS_Y_PROTECCION_CIVIL> <http://schema.org/name> "DIRECTOR/A GENERAL EMERGENCIAS Y PROTECCION CIVIL"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.example.com/group09/department/AREA_DE_GOBIERNO_DE_PORTAVOZ%2C_SEGURIDAD_Y_EMERGENCIAS/contracting_body/DIRECTOR%2FA_GENERAL_EMERGENCIAS_Y_PROTECCION_CIVIL> <http://www.w3.org/ns/org#subOrganizationOf> <http://www.example.com/group09/department/AREA_DE_GOBIERNO_DE_PORTAVOZ%2C_SEGURIDAD_Y_EMERGENCIAS>.
-<http://www.example.com/group09/department/DISTRITO_DE_MONCLOA-ARAVACA/contracting_body/COORDINADOR%2FA_DISTRITO_DE_MONCLOA-_ARAVACA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#Organization>.
-<http://www.example.com/group09/department/DISTRITO_DE_MONCLOA-ARAVACA/contracting_body/COORDINADOR%2FA_DISTRITO_DE_MONCLOA-_ARAVACA> <http://schema.org/name> "COORDINADOR/A DISTRITO DE MONCLOA- ARAVACA"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.example.com/group09/department/DISTRITO_DE_MONCLOA-ARAVACA/contracting_body/COORDINADOR%2FA_DISTRITO_DE_MONCLOA-_ARAVACA> <http://www.w3.org/ns/org#subOrganizationOf> <http://www.example.com/group09/department/DISTRITO_DE_MONCLOA-ARAVACA>.
-<http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A./contracting_body/GERENCIA_TEATRO_CIRCO_PRICE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#Organization>.
-<http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A./contracting_body/GERENCIA_TEATRO_CIRCO_PRICE> <http://schema.org/name> "GERENCIA TEATRO CIRCO PRICE"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A./contracting_body/GERENCIA_TEATRO_CIRCO_PRICE> <http://www.w3.org/ns/org#subOrganizationOf> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A.>.
+<http://www.example.com/group09/contracting_body/DIRECTOR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#Organization>.
+<http://www.example.com/group09/contracting_body/DIRECTOR> <http://schema.org/name> "DIRECTOR"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.example.com/group09/contracting_body/DIRECTOR> <http://www.w3.org/ns/org#subOrganizationOf> <http://www.example.com/group09/department/EMPRESA_MUNICIPAL_DE_TRANSPORTES_S.A.>.
+<http://www.example.com/group09/contracting_body/COORDINADOR%2FA_DISTRITO_DE_RETIRO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#Organization>.
+<http://www.example.com/group09/contracting_body/COORDINADOR%2FA_DISTRITO_DE_RETIRO> <http://schema.org/name> "COORDINADOR/A DISTRITO DE RETIRO"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.example.com/group09/contracting_body/COORDINADOR%2FA_DISTRITO_DE_RETIRO> <http://www.w3.org/ns/org#subOrganizationOf> <http://www.example.com/group09/department/DISTRITO_DE_RETIRO>.
+<http://www.example.com/group09/contracting_body/COORDINADOR%2FA_DISTRITO_CENTRO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#Organization>.
+<http://www.example.com/group09/contracting_body/COORDINADOR%2FA_DISTRITO_CENTRO> <http://schema.org/name> "COORDINADOR/A DISTRITO CENTRO"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.example.com/group09/contracting_body/COORDINADOR%2FA_DISTRITO_CENTRO> <http://www.w3.org/ns/org#subOrganizationOf> <http://www.example.com/group09/department/DISTRITO_DE_CENTRO>.
+<http://www.example.com/group09/contracting_body/COORDINADOR%2FA_DISTRITO_DE_CIUDAD_LINEAL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#Organization>.
+<http://www.example.com/group09/contracting_body/COORDINADOR%2FA_DISTRITO_DE_CIUDAD_LINEAL> <http://schema.org/name> "COORDINADOR/A DISTRITO DE CIUDAD LINEAL"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.example.com/group09/contracting_body/COORDINADOR%2FA_DISTRITO_DE_CIUDAD_LINEAL> <http://www.w3.org/ns/org#subOrganizationOf> <http://www.example.com/group09/department/DISTRITO_DE_CIUDAD_LINEAL>.
+<http://www.example.com/group09/contracting_body/DIRECTOR%2FA_ATENCION_PRIMARIA%2C_INTERVENCION_COMUNITARIA_Y_EMERGENCIA_SOCIAL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#Organization>.
+<http://www.example.com/group09/contracting_body/DIRECTOR%2FA_ATENCION_PRIMARIA%2C_INTERVENCION_COMUNITARIA_Y_EMERGENCIA_SOCIAL> <http://schema.org/name> "DIRECTOR/A ATENCION PRIMARIA, INTERVENCION COMUNITARIA Y EMERGENCIA SOCIAL"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.example.com/group09/contracting_body/DIRECTOR%2FA_ATENCION_PRIMARIA%2C_INTERVENCION_COMUNITARIA_Y_EMERGENCIA_SOCIAL> <http://www.w3.org/ns/org#subOrganizationOf> <http://www.example.com/group09/department/%C3%81REA_DE_GOBIERNO_DE_FAMILIAS%2C_IGUALDAD_Y_BIENESTAR_SOCIAL>.
+<http://www.example.com/group09/contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#Organization>.
+<http://www.example.com/group09/contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA> <http://schema.org/name> "DIRECCION PRODUCCION Y COORDINACION TECNICA"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.example.com/group09/contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA> <http://www.w3.org/ns/org#subOrganizationOf> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A.>.
+<http://www.example.com/group09/contracting_body/DIRECTOR%2FA_GENERAL_EMERGENCIAS_Y_PROTECCION_CIVIL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#Organization>.
+<http://www.example.com/group09/contracting_body/DIRECTOR%2FA_GENERAL_EMERGENCIAS_Y_PROTECCION_CIVIL> <http://schema.org/name> "DIRECTOR/A GENERAL EMERGENCIAS Y PROTECCION CIVIL"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.example.com/group09/contracting_body/DIRECTOR%2FA_GENERAL_EMERGENCIAS_Y_PROTECCION_CIVIL> <http://www.w3.org/ns/org#subOrganizationOf> <http://www.example.com/group09/department/AREA_DE_GOBIERNO_DE_PORTAVOZ%2C_SEGURIDAD_Y_EMERGENCIAS>.
+<http://www.example.com/group09/contracting_body/COORDINADOR%2FA_DISTRITO_DE_MONCLOA-_ARAVACA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#Organization>.
+<http://www.example.com/group09/contracting_body/COORDINADOR%2FA_DISTRITO_DE_MONCLOA-_ARAVACA> <http://schema.org/name> "COORDINADOR/A DISTRITO DE MONCLOA- ARAVACA"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.example.com/group09/contracting_body/COORDINADOR%2FA_DISTRITO_DE_MONCLOA-_ARAVACA> <http://www.w3.org/ns/org#subOrganizationOf> <http://www.example.com/group09/department/DISTRITO_DE_MONCLOA-ARAVACA>.
+<http://www.example.com/group09/contracting_body/GERENCIA_TEATRO_CIRCO_PRICE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#Organization>.
+<http://www.example.com/group09/contracting_body/GERENCIA_TEATRO_CIRCO_PRICE> <http://schema.org/name> "GERENCIA TEATRO CIRCO PRICE"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.example.com/group09/contracting_body/GERENCIA_TEATRO_CIRCO_PRICE> <http://www.w3.org/ns/org#subOrganizationOf> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A.>.
 <http://www.example.com/group09/contract/M202000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#SuppliesContract>.
 <http://www.example.com/group09/contract/M202000001> <http://www.example.com/group09awardDate> "2019-12-17"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000001> <http://www.example.com/group09awardNum> "M202000001"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000001> <http://www.example.com/group09recordNum> "EMT/2019/10109"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000001> <http://www.example.com/group09registryReportDate> "2020-02-01"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000001> <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> <http://www.example.com/group09/contract/M202000001/object>.
-<http://www.example.com/group09/contract/M202000001> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/department/EMPRESA_MUNICIPAL_DE_TRANSPORTES_S.A./contracting_body/DIRECTOR>.
+<http://www.example.com/group09/contract/M202000001> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/contracting_body/DIRECTOR>.
 <http://www.example.com/group09/contract/M202000001> <http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://www.example.com/group09/department/EMPRESA_MUNICIPAL_DE_TRANSPORTES_S.A.>.
 <http://www.example.com/group09/contract/M202000002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract>.
 <http://www.example.com/group09/contract/M202000002> <http://www.example.com/group09awardDate> "2019-12-12"^^<http://www.w3.org/2001/XMLSchema#date>.
@@ -55,7 +55,7 @@
 <http://www.example.com/group09/contract/M202000002> <http://www.example.com/group09recordNum> "EMT/2019/10101"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000002> <http://www.example.com/group09registryReportDate> "2020-02-01"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000002> <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> <http://www.example.com/group09/contract/M202000002/object>.
-<http://www.example.com/group09/contract/M202000002> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/department/EMPRESA_MUNICIPAL_DE_TRANSPORTES_S.A./contracting_body/DIRECTOR>.
+<http://www.example.com/group09/contract/M202000002> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/contracting_body/DIRECTOR>.
 <http://www.example.com/group09/contract/M202000002> <http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://www.example.com/group09/department/EMPRESA_MUNICIPAL_DE_TRANSPORTES_S.A.>.
 <http://www.example.com/group09/contract/M202000003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#SuppliesContract>.
 <http://www.example.com/group09/contract/M202000003> <http://www.example.com/group09awardDate> "2019-12-27"^^<http://www.w3.org/2001/XMLSchema#date>.
@@ -63,7 +63,7 @@
 <http://www.example.com/group09/contract/M202000003> <http://www.example.com/group09recordNum> "103/2019/04514"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000003> <http://www.example.com/group09registryReportDate> "2020-02-01"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000003> <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> <http://www.example.com/group09/contract/M202000003/object>.
-<http://www.example.com/group09/contract/M202000003> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/department/DISTRITO_DE_RETIRO/contracting_body/COORDINADOR%2FA_DISTRITO_DE_RETIRO>.
+<http://www.example.com/group09/contract/M202000003> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/contracting_body/COORDINADOR%2FA_DISTRITO_DE_RETIRO>.
 <http://www.example.com/group09/contract/M202000003> <http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://www.example.com/group09/department/DISTRITO_DE_RETIRO>.
 <http://www.example.com/group09/contract/M202000004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract>.
 <http://www.example.com/group09/contract/M202000004> <http://www.example.com/group09awardDate> "2019-12-20"^^<http://www.w3.org/2001/XMLSchema#date>.
@@ -71,7 +71,7 @@
 <http://www.example.com/group09/contract/M202000004> <http://www.example.com/group09recordNum> "101/2019/07924"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000004> <http://www.example.com/group09registryReportDate> "2020-02-01"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000004> <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> <http://www.example.com/group09/contract/M202000004/object>.
-<http://www.example.com/group09/contract/M202000004> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/department/DISTRITO_DE_CENTRO/contracting_body/COORDINADOR%2FA_DISTRITO_CENTRO>.
+<http://www.example.com/group09/contract/M202000004> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/contracting_body/COORDINADOR%2FA_DISTRITO_CENTRO>.
 <http://www.example.com/group09/contract/M202000004> <http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://www.example.com/group09/department/DISTRITO_DE_CENTRO>.
 <http://www.example.com/group09/contract/M202000005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract>.
 <http://www.example.com/group09/contract/M202000005> <http://www.example.com/group09awardDate> "2019-12-30"^^<http://www.w3.org/2001/XMLSchema#date>.
@@ -79,7 +79,7 @@
 <http://www.example.com/group09/contract/M202000005> <http://www.example.com/group09recordNum> "101/2019/07918"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000005> <http://www.example.com/group09registryReportDate> "2020-02-01"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000005> <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> <http://www.example.com/group09/contract/M202000005/object>.
-<http://www.example.com/group09/contract/M202000005> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/department/DISTRITO_DE_CENTRO/contracting_body/COORDINADOR%2FA_DISTRITO_CENTRO>.
+<http://www.example.com/group09/contract/M202000005> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/contracting_body/COORDINADOR%2FA_DISTRITO_CENTRO>.
 <http://www.example.com/group09/contract/M202000005> <http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://www.example.com/group09/department/DISTRITO_DE_CENTRO>.
 <http://www.example.com/group09/contract/M202000006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract>.
 <http://www.example.com/group09/contract/M202000006> <http://www.example.com/group09awardDate> "2019-12-23"^^<http://www.w3.org/2001/XMLSchema#date>.
@@ -87,7 +87,7 @@
 <http://www.example.com/group09/contract/M202000006> <http://www.example.com/group09recordNum> "103/2019/04605"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000006> <http://www.example.com/group09registryReportDate> "2020-02-01"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000006> <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> <http://www.example.com/group09/contract/M202000006/object>.
-<http://www.example.com/group09/contract/M202000006> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/department/DISTRITO_DE_RETIRO/contracting_body/COORDINADOR%2FA_DISTRITO_DE_RETIRO>.
+<http://www.example.com/group09/contract/M202000006> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/contracting_body/COORDINADOR%2FA_DISTRITO_DE_RETIRO>.
 <http://www.example.com/group09/contract/M202000006> <http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://www.example.com/group09/department/DISTRITO_DE_RETIRO>.
 <http://www.example.com/group09/contract/M202000007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#SuppliesContract>.
 <http://www.example.com/group09/contract/M202000007> <http://www.example.com/group09awardDate> "2019-12-17"^^<http://www.w3.org/2001/XMLSchema#date>.
@@ -95,7 +95,7 @@
 <http://www.example.com/group09/contract/M202000007> <http://www.example.com/group09recordNum> "101/2019/07741"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000007> <http://www.example.com/group09registryReportDate> "2020-02-01"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000007> <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> <http://www.example.com/group09/contract/M202000007/object>.
-<http://www.example.com/group09/contract/M202000007> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/department/DISTRITO_DE_CENTRO/contracting_body/COORDINADOR%2FA_DISTRITO_CENTRO>.
+<http://www.example.com/group09/contract/M202000007> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/contracting_body/COORDINADOR%2FA_DISTRITO_CENTRO>.
 <http://www.example.com/group09/contract/M202000007> <http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://www.example.com/group09/department/DISTRITO_DE_CENTRO>.
 <http://www.example.com/group09/contract/M202000008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract>.
 <http://www.example.com/group09/contract/M202000008> <http://www.example.com/group09awardDate> "2019-12-13"^^<http://www.w3.org/2001/XMLSchema#date>.
@@ -103,7 +103,7 @@
 <http://www.example.com/group09/contract/M202000008> <http://www.example.com/group09recordNum> "116/2019/05351"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000008> <http://www.example.com/group09registryReportDate> "2020-02-01"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000008> <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> <http://www.example.com/group09/contract/M202000008/object>.
-<http://www.example.com/group09/contract/M202000008> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/department/DISTRITO_DE_CIUDAD_LINEAL/contracting_body/COORDINADOR%2FA_DISTRITO_DE_CIUDAD_LINEAL>.
+<http://www.example.com/group09/contract/M202000008> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/contracting_body/COORDINADOR%2FA_DISTRITO_DE_CIUDAD_LINEAL>.
 <http://www.example.com/group09/contract/M202000008> <http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://www.example.com/group09/department/DISTRITO_DE_CIUDAD_LINEAL>.
 <http://www.example.com/group09/contract/M202000009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract>.
 <http://www.example.com/group09/contract/M202000009> <http://www.example.com/group09awardDate> "2019-12-30"^^<http://www.w3.org/2001/XMLSchema#date>.
@@ -111,7 +111,7 @@
 <http://www.example.com/group09/contract/M202000009> <http://www.example.com/group09recordNum> "101/2019/07537"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000009> <http://www.example.com/group09registryReportDate> "2020-02-01"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000009> <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> <http://www.example.com/group09/contract/M202000009/object>.
-<http://www.example.com/group09/contract/M202000009> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/department/DISTRITO_DE_CENTRO/contracting_body/COORDINADOR%2FA_DISTRITO_CENTRO>.
+<http://www.example.com/group09/contract/M202000009> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/contracting_body/COORDINADOR%2FA_DISTRITO_CENTRO>.
 <http://www.example.com/group09/contract/M202000009> <http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://www.example.com/group09/department/DISTRITO_DE_CENTRO>.
 <http://www.example.com/group09/contract/M202000010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract>.
 <http://www.example.com/group09/contract/M202000010> <http://www.example.com/group09awardDate> "2019-07-11"^^<http://www.w3.org/2001/XMLSchema#date>.
@@ -119,7 +119,7 @@
 <http://www.example.com/group09/contract/M202000010> <http://www.example.com/group09recordNum> "171/2019/01223"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000010> <http://www.example.com/group09registryReportDate> "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000010> <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> <http://www.example.com/group09/contract/M202000010/object>.
-<http://www.example.com/group09/contract/M202000010> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/department/%C3%81REA_DE_GOBIERNO_DE_FAMILIAS%2C_IGUALDAD_Y_BIENESTAR_SOCIAL/contracting_body/DIRECTOR%2FA_ATENCION_PRIMARIA%2C_INTERVENCION_COMUNITARIA_Y_EMERGENCIA_SOCIAL>.
+<http://www.example.com/group09/contract/M202000010> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/contracting_body/DIRECTOR%2FA_ATENCION_PRIMARIA%2C_INTERVENCION_COMUNITARIA_Y_EMERGENCIA_SOCIAL>.
 <http://www.example.com/group09/contract/M202000010> <http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://www.example.com/group09/department/%C3%81REA_DE_GOBIERNO_DE_FAMILIAS%2C_IGUALDAD_Y_BIENESTAR_SOCIAL>.
 <http://www.example.com/group09/contract/M202000011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#SuppliesContract>.
 <http://www.example.com/group09/contract/M202000011> <http://www.example.com/group09awardDate> "2019-12-30"^^<http://www.w3.org/2001/XMLSchema#date>.
@@ -127,7 +127,7 @@
 <http://www.example.com/group09/contract/M202000011> <http://www.example.com/group09recordNum> "EMT/2019/10133"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000011> <http://www.example.com/group09registryReportDate> "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000011> <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> <http://www.example.com/group09/contract/M202000011/object>.
-<http://www.example.com/group09/contract/M202000011> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/department/EMPRESA_MUNICIPAL_DE_TRANSPORTES_S.A./contracting_body/DIRECTOR>.
+<http://www.example.com/group09/contract/M202000011> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/contracting_body/DIRECTOR>.
 <http://www.example.com/group09/contract/M202000011> <http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://www.example.com/group09/department/EMPRESA_MUNICIPAL_DE_TRANSPORTES_S.A.>.
 <http://www.example.com/group09/contract/M202000012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract>.
 <http://www.example.com/group09/contract/M202000012> <http://www.example.com/group09awardDate> "2019-12-23"^^<http://www.w3.org/2001/XMLSchema#date>.
@@ -135,7 +135,7 @@
 <http://www.example.com/group09/contract/M202000012> <http://www.example.com/group09recordNum> "MDC/2019/03179"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000012> <http://www.example.com/group09registryReportDate> "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000012> <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> <http://www.example.com/group09/contract/M202000012/object>.
-<http://www.example.com/group09/contract/M202000012> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A./contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA>.
+<http://www.example.com/group09/contract/M202000012> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA>.
 <http://www.example.com/group09/contract/M202000012> <http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A.>.
 <http://www.example.com/group09/contract/M202000013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract>.
 <http://www.example.com/group09/contract/M202000013> <http://www.example.com/group09awardDate> "2019-12-19"^^<http://www.w3.org/2001/XMLSchema#date>.
@@ -143,7 +143,7 @@
 <http://www.example.com/group09/contract/M202000013> <http://www.example.com/group09recordNum> "MDC/2019/03180"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000013> <http://www.example.com/group09registryReportDate> "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000013> <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> <http://www.example.com/group09/contract/M202000013/object>.
-<http://www.example.com/group09/contract/M202000013> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A./contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA>.
+<http://www.example.com/group09/contract/M202000013> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA>.
 <http://www.example.com/group09/contract/M202000013> <http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A.>.
 <http://www.example.com/group09/contract/M202000014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract>.
 <http://www.example.com/group09/contract/M202000014> <http://www.example.com/group09awardDate> "2019-11-14"^^<http://www.w3.org/2001/XMLSchema#date>.
@@ -151,7 +151,7 @@
 <http://www.example.com/group09/contract/M202000014> <http://www.example.com/group09recordNum> "MDC/2019/03181"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000014> <http://www.example.com/group09registryReportDate> "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000014> <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> <http://www.example.com/group09/contract/M202000014/object>.
-<http://www.example.com/group09/contract/M202000014> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A./contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA>.
+<http://www.example.com/group09/contract/M202000014> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA>.
 <http://www.example.com/group09/contract/M202000014> <http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A.>.
 <http://www.example.com/group09/contract/M202000015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract>.
 <http://www.example.com/group09/contract/M202000015> <http://www.example.com/group09awardDate> "2019-05-11"^^<http://www.w3.org/2001/XMLSchema#date>.
@@ -159,7 +159,7 @@
 <http://www.example.com/group09/contract/M202000015> <http://www.example.com/group09recordNum> "MDC/2019/03182"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000015> <http://www.example.com/group09registryReportDate> "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000015> <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> <http://www.example.com/group09/contract/M202000015/object>.
-<http://www.example.com/group09/contract/M202000015> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A./contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA>.
+<http://www.example.com/group09/contract/M202000015> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA>.
 <http://www.example.com/group09/contract/M202000015> <http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A.>.
 <http://www.example.com/group09/contract/M202000016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#SuppliesContract>.
 <http://www.example.com/group09/contract/M202000016> <http://www.example.com/group09awardDate> "2019-10-10"^^<http://www.w3.org/2001/XMLSchema#date>.
@@ -167,7 +167,7 @@
 <http://www.example.com/group09/contract/M202000016> <http://www.example.com/group09recordNum> "EMT/2019/36982"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000016> <http://www.example.com/group09registryReportDate> "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000016> <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> <http://www.example.com/group09/contract/M202000016/object>.
-<http://www.example.com/group09/contract/M202000016> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/department/EMPRESA_MUNICIPAL_DE_TRANSPORTES_S.A./contracting_body/DIRECTOR>.
+<http://www.example.com/group09/contract/M202000016> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/contracting_body/DIRECTOR>.
 <http://www.example.com/group09/contract/M202000016> <http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://www.example.com/group09/department/EMPRESA_MUNICIPAL_DE_TRANSPORTES_S.A.>.
 <http://www.example.com/group09/contract/M202000017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract>.
 <http://www.example.com/group09/contract/M202000017> <http://www.example.com/group09awardDate> "2019-10-23"^^<http://www.w3.org/2001/XMLSchema#date>.
@@ -175,7 +175,7 @@
 <http://www.example.com/group09/contract/M202000017> <http://www.example.com/group09recordNum> "MDC/2019/03183"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000017> <http://www.example.com/group09registryReportDate> "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000017> <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> <http://www.example.com/group09/contract/M202000017/object>.
-<http://www.example.com/group09/contract/M202000017> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A./contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA>.
+<http://www.example.com/group09/contract/M202000017> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA>.
 <http://www.example.com/group09/contract/M202000017> <http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A.>.
 <http://www.example.com/group09/contract/M202000018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract>.
 <http://www.example.com/group09/contract/M202000018> <http://www.example.com/group09awardDate> "2019-11-13"^^<http://www.w3.org/2001/XMLSchema#date>.
@@ -183,7 +183,7 @@
 <http://www.example.com/group09/contract/M202000018> <http://www.example.com/group09recordNum> "MDC/2019/03184"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000018> <http://www.example.com/group09registryReportDate> "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000018> <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> <http://www.example.com/group09/contract/M202000018/object>.
-<http://www.example.com/group09/contract/M202000018> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A./contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA>.
+<http://www.example.com/group09/contract/M202000018> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA>.
 <http://www.example.com/group09/contract/M202000018> <http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A.>.
 <http://www.example.com/group09/contract/M202000019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract>.
 <http://www.example.com/group09/contract/M202000019> <http://www.example.com/group09awardDate> "2019-10-12"^^<http://www.w3.org/2001/XMLSchema#date>.
@@ -191,7 +191,7 @@
 <http://www.example.com/group09/contract/M202000019> <http://www.example.com/group09recordNum> "MDC/2019/03185"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000019> <http://www.example.com/group09registryReportDate> "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000019> <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> <http://www.example.com/group09/contract/M202000019/object>.
-<http://www.example.com/group09/contract/M202000019> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A./contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA>.
+<http://www.example.com/group09/contract/M202000019> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA>.
 <http://www.example.com/group09/contract/M202000019> <http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A.>.
 <http://www.example.com/group09/contract/M202000020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract>.
 <http://www.example.com/group09/contract/M202000020> <http://www.example.com/group09awardDate> "2019-10-12"^^<http://www.w3.org/2001/XMLSchema#date>.
@@ -199,7 +199,7 @@
 <http://www.example.com/group09/contract/M202000020> <http://www.example.com/group09recordNum> "MDC/2019/03186"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000020> <http://www.example.com/group09registryReportDate> "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000020> <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> <http://www.example.com/group09/contract/M202000020/object>.
-<http://www.example.com/group09/contract/M202000020> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A./contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA>.
+<http://www.example.com/group09/contract/M202000020> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA>.
 <http://www.example.com/group09/contract/M202000020> <http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A.>.
 <http://www.example.com/group09/contract/M202000021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract>.
 <http://www.example.com/group09/contract/M202000021> <http://www.example.com/group09awardDate> "2019-10-12"^^<http://www.w3.org/2001/XMLSchema#date>.
@@ -207,7 +207,7 @@
 <http://www.example.com/group09/contract/M202000021> <http://www.example.com/group09recordNum> "MDC/2019/03187"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000021> <http://www.example.com/group09registryReportDate> "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000021> <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> <http://www.example.com/group09/contract/M202000021/object>.
-<http://www.example.com/group09/contract/M202000021> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A./contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA>.
+<http://www.example.com/group09/contract/M202000021> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA>.
 <http://www.example.com/group09/contract/M202000021> <http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A.>.
 <http://www.example.com/group09/contract/M202000022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#SuppliesContract>.
 <http://www.example.com/group09/contract/M202000022> <http://www.example.com/group09awardDate> "2019-12-19"^^<http://www.w3.org/2001/XMLSchema#date>.
@@ -215,7 +215,7 @@
 <http://www.example.com/group09/contract/M202000022> <http://www.example.com/group09recordNum> "MDC/2019/03188"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000022> <http://www.example.com/group09registryReportDate> "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000022> <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> <http://www.example.com/group09/contract/M202000022/object>.
-<http://www.example.com/group09/contract/M202000022> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A./contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA>.
+<http://www.example.com/group09/contract/M202000022> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA>.
 <http://www.example.com/group09/contract/M202000022> <http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A.>.
 <http://www.example.com/group09/contract/M202000023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract>.
 <http://www.example.com/group09/contract/M202000023> <http://www.example.com/group09awardDate> "2019-12-26"^^<http://www.w3.org/2001/XMLSchema#date>.
@@ -223,7 +223,7 @@
 <http://www.example.com/group09/contract/M202000023> <http://www.example.com/group09recordNum> "135/2019/00060"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000023> <http://www.example.com/group09registryReportDate> "2020-07-01"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000023> <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> <http://www.example.com/group09/contract/M202000023/object>.
-<http://www.example.com/group09/contract/M202000023> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/department/AREA_DE_GOBIERNO_DE_PORTAVOZ%2C_SEGURIDAD_Y_EMERGENCIAS/contracting_body/DIRECTOR%2FA_GENERAL_EMERGENCIAS_Y_PROTECCION_CIVIL>.
+<http://www.example.com/group09/contract/M202000023> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/contracting_body/DIRECTOR%2FA_GENERAL_EMERGENCIAS_Y_PROTECCION_CIVIL>.
 <http://www.example.com/group09/contract/M202000023> <http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://www.example.com/group09/department/AREA_DE_GOBIERNO_DE_PORTAVOZ%2C_SEGURIDAD_Y_EMERGENCIAS>.
 <http://www.example.com/group09/contract/M202000024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract>.
 <http://www.example.com/group09/contract/M202000024> <http://www.example.com/group09awardDate> "2019-11-22"^^<http://www.w3.org/2001/XMLSchema#date>.
@@ -231,7 +231,7 @@
 <http://www.example.com/group09/contract/M202000024> <http://www.example.com/group09recordNum> "109/2019/05428"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000024> <http://www.example.com/group09registryReportDate> "2020-07-01"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000024> <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> <http://www.example.com/group09/contract/M202000024/object>.
-<http://www.example.com/group09/contract/M202000024> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/department/DISTRITO_DE_MONCLOA-ARAVACA/contracting_body/COORDINADOR%2FA_DISTRITO_DE_MONCLOA-_ARAVACA>.
+<http://www.example.com/group09/contract/M202000024> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/contracting_body/COORDINADOR%2FA_DISTRITO_DE_MONCLOA-_ARAVACA>.
 <http://www.example.com/group09/contract/M202000024> <http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://www.example.com/group09/department/DISTRITO_DE_MONCLOA-ARAVACA>.
 <http://www.example.com/group09/contract/M202000025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract>.
 <http://www.example.com/group09/contract/M202000025> <http://www.example.com/group09awardDate> "2019-10-12"^^<http://www.w3.org/2001/XMLSchema#date>.
@@ -239,7 +239,7 @@
 <http://www.example.com/group09/contract/M202000025> <http://www.example.com/group09recordNum> "MDC/2019/03189"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000025> <http://www.example.com/group09registryReportDate> "2020-07-01"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000025> <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> <http://www.example.com/group09/contract/M202000025/object>.
-<http://www.example.com/group09/contract/M202000025> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A./contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA>.
+<http://www.example.com/group09/contract/M202000025> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA>.
 <http://www.example.com/group09/contract/M202000025> <http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A.>.
 <http://www.example.com/group09/contract/M202000026> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract>.
 <http://www.example.com/group09/contract/M202000026> <http://www.example.com/group09awardDate> "2019-03-09"^^<http://www.w3.org/2001/XMLSchema#date>.
@@ -247,7 +247,7 @@
 <http://www.example.com/group09/contract/M202000026> <http://www.example.com/group09recordNum> "MDC/2019/03194"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000026> <http://www.example.com/group09registryReportDate> "2020-07-01"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000026> <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> <http://www.example.com/group09/contract/M202000026/object>.
-<http://www.example.com/group09/contract/M202000026> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A./contracting_body/GERENCIA_TEATRO_CIRCO_PRICE>.
+<http://www.example.com/group09/contract/M202000026> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/contracting_body/GERENCIA_TEATRO_CIRCO_PRICE>.
 <http://www.example.com/group09/contract/M202000026> <http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A.>.
 <http://www.example.com/group09/contract/M202000027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract>.
 <http://www.example.com/group09/contract/M202000027> <http://www.example.com/group09awardDate> "2019-04-12"^^<http://www.w3.org/2001/XMLSchema#date>.
@@ -255,7 +255,7 @@
 <http://www.example.com/group09/contract/M202000027> <http://www.example.com/group09recordNum> "MDC/2019/03190"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000027> <http://www.example.com/group09registryReportDate> "2020-07-01"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000027> <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> <http://www.example.com/group09/contract/M202000027/object>.
-<http://www.example.com/group09/contract/M202000027> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A./contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA>.
+<http://www.example.com/group09/contract/M202000027> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/contracting_body/DIRECCION_PRODUCCION_Y_COORDINACION_TECNICA>.
 <http://www.example.com/group09/contract/M202000027> <http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A.>.
 <http://www.example.com/group09/contract/M202000028> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#SuppliesContract>.
 <http://www.example.com/group09/contract/M202000028> <http://www.example.com/group09awardDate> "2019-12-13"^^<http://www.w3.org/2001/XMLSchema#date>.
@@ -263,7 +263,7 @@
 <http://www.example.com/group09/contract/M202000028> <http://www.example.com/group09recordNum> "MDC/2019/03030"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.example.com/group09/contract/M202000028> <http://www.example.com/group09registryReportDate> "2020-07-01"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://www.example.com/group09/contract/M202000028> <http://contsem.unizar.es/def/sector-publico/pproc#contractObject> <http://www.example.com/group09/contract/M202000028/object>.
-<http://www.example.com/group09/contract/M202000028> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A./contracting_body/GERENCIA_TEATRO_CIRCO_PRICE>.
+<http://www.example.com/group09/contract/M202000028> <http://contsem.unizar.es/def/sector-publico/pproc#contractingBody> <http://www.example.com/group09/contracting_body/GERENCIA_TEATRO_CIRCO_PRICE>.
 <http://www.example.com/group09/contract/M202000028> <http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://www.example.com/group09/department/MADRID_DESTINO%2C_CULTURA%2C_TURISMO_Y_NEGOCIO%2C_S.A.>.
 <http://www.example.com/group09/contract/M202000001/object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://contsem.unizar.es/def/sector-publico/pproc#ContractObject>.
 <http://www.example.com/group09/contract/M202000001/object> <http://contsem.unizar.es/def/sector-publico/pproc#contractEconomicConditions> <http://www.example.com/group09/contract/M202000001/economicConditions>.
