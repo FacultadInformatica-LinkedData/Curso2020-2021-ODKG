@@ -137,7 +137,7 @@ map:om_8 a rr:ObjectMap;
     rr:parentTriplesMap map:map_CAE_0;
     rr:joinCondition map:jc_2.
 map:om_9 a rr:ObjectMap;
-    rr:template "http://eit-upm-opendata.com/ted#/Notice/{NOTICE_ID}/Price";
+    rr:template "https://eit-opendata.arken-cloud.ir/contract/notice/{NOTICE_ID}/price";
     rr:termType rr:Literal.
 map:pm_0 a rr:PredicateMap;
     rr:constant rdf:type.
@@ -290,15 +290,15 @@ map:pom_9 a rr:PredicateObjectMap;
     rr:predicateMap map:pm_9;
     rr:objectMap map:om_9.
 map:s_0 a rr:SubjectMap;
-    rr:template "http://eit-upm-opendata.com/ted/CAE/{CAE_ID}".
+    rr:template "https://eit-opendata.arken-cloud.ir/contract/body/{CAE_ID}".
 map:s_1 a rr:SubjectMap;
-    rr:template "http://eit-upm-opendata.com/ted/Notice/{NOTICE_ID}".
+    rr:template "https://eit-opendata.arken-cloud.ir/contract/notice/{NOTICE_ID}".
 map:s_2 a rr:SubjectMap;
-    rr:template "http://eit-upm-opendata.com/ted/Town/{CAE_TOWN}".
+    rr:template "https://eit-opendata.arken-cloud.ir/town/{CAE_TOWN}".
 map:s_3 a rr:SubjectMap;
-    rr:template "http://eit-upm-opendata.com/ted/Country/{ISO_COUNTRY_CODE}".
+    rr:template "https://eit-opendata.arken-cloud.ir/country/{ISO_COUNTRY_CODE}".
 map:s_4 a rr:SubjectMap;
-    rr:template "http://eit-upm-opendata.com/ted/Notice/{NOTICE_ID}/Price".
+    rr:template "https://eit-opendata.arken-cloud.ir/contract/notice/{NOTICE_ID}/pIrice".
 map:source_0 a rml:LogicalSource;
     rml:source "TED_CN_2018-updated-with-links.csv";
     rml:referenceFormulation ql:CSV.
