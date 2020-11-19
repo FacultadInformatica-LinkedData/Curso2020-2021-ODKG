@@ -69,9 +69,10 @@ mappings:
     s: default:Gastos/$(Gastos)
     po:
       - [a,vocab:Gastos]
-      
       - [rdfs:label,id:id]
-      - [rdfs:comment,descripcion:description]
+
+
+      - [id:id,$(Gastos),xsd:string]
 
       - [vocab:tieneSeccion,$(Descripcion Seccion),xsd:string]
   
@@ -79,9 +80,7 @@ mappings:
 
       - [vocab:tieneCentro,$(Descripcion Centro),xsd:string]
 
-
       - [vocab:tieneCapitulo,$(Descripcion Capitulo),xsd:string]
-
 
       - [economico:hasCost,$(OBL_RECONOC),xsd:double]
       - [vocab:creditoDispuesto,$(C_DISPUESTO),xsd:double]
@@ -94,7 +93,9 @@ mappings:
     s: default:Ingresos/$(ingresos)
     po:
       - [a,vocab:Ingresos]
+      - [rdfs:label,id:id]
 
+      - [id:id,$(ingresos),xsd:string]
 
       - [vocab:tieneCentro,$(Descripcion Centro),xsd:string]
 
@@ -136,43 +137,4 @@ mappings:
     s: default:Ingresos/$(ingresos)
     po:
       - [rdfs:subClassOf,Economico]
-
-
-  triplesmap8:
-    sources:
-      - [gastos-with-links.csv~csv]
-    s: default:Gastos/Programa/$(Descripcion Programa)
-    po:
-       
-      - [rdfs:label,id:id]
-      - [rdfs:comment,descripcion:description]
- 
-      - [id:id,$(Programa),xsd:string] 
-      - [descripcion:description,$(Descripcion Programa),xsd:string] 
-
-
-  triplesmap9:
-    sources:
-      - [gastos-with-links.csv~csv]
-    s: default:Gastos/Capitulo/$(Descripcion Capitulo)
-    po:
-       
-      - [rdfs:label,id:id]
-      - [rdfs:comment,descripcion:description]
- 
-      - [id:id,$(Capitulo),xsd:string] 
-      - [descripcion:description,$(Descripcion Capitulo),xsd:string] 
-
-
-  triplesmap10:
-    sources:
-      - [ingresos-with-links.csv~csv]
-    s: default:Ingresos/Capitulo/$(Descripcion Capitulo)
-    po:
-       
-      - [rdfs:label,id:id]
-      - [rdfs:comment,descripcion:description]
- 
-      - [id:id,$(Capitulo),xsd:string] 
-      - [descripcion:description,$(Descripcion Capitulo),xsd:string] 
 

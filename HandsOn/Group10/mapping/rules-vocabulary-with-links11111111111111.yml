@@ -12,11 +12,6 @@ map:map_triplesmap1_0 rml:logicalSource map:source_0;
     rdfs:label "triplesmap1";
     rr:subjectMap map:s_0;
     rr:predicateObjectMap map:pom_0, map:pom_1, map:pom_2, map:pom_3, map:pom_4, map:pom_5, map:pom_6.
-map:map_triplesmap10_0 rml:logicalSource map:source_9;
-    a rr:TriplesMap;
-    rdfs:label "triplesmap10";
-    rr:subjectMap map:s_9;
-    rr:predicateObjectMap map:pom_47, map:pom_48, map:pom_49, map:pom_50.
 map:map_triplesmap2_0 rml:logicalSource map:source_1;
     a rr:TriplesMap;
     rdfs:label "triplesmap2";
@@ -31,32 +26,22 @@ map:map_triplesmap4_0 rml:logicalSource map:source_3;
     a rr:TriplesMap;
     rdfs:label "triplesmap4";
     rr:subjectMap map:s_3;
-    rr:predicateObjectMap map:pom_22, map:pom_23, map:pom_24, map:pom_25, map:pom_26.
+    rr:predicateObjectMap map:pom_22, map:pom_23, map:pom_24, map:pom_25, map:pom_26, map:pom_27, map:pom_28.
 map:map_triplesmap5_0 rml:logicalSource map:source_4;
     a rr:TriplesMap;
     rdfs:label "triplesmap5";
     rr:subjectMap map:s_4;
-    rr:predicateObjectMap map:pom_27, map:pom_28, map:pom_29, map:pom_30, map:pom_31, map:pom_32, map:pom_33, map:pom_34, map:pom_35, map:pom_36.
+    rr:predicateObjectMap map:pom_29, map:pom_30, map:pom_31, map:pom_32, map:pom_33, map:pom_34, map:pom_35, map:pom_36, map:pom_37, map:pom_38.
 map:map_triplesmap6_0 rml:logicalSource map:source_5;
     a rr:TriplesMap;
     rdfs:label "triplesmap6";
     rr:subjectMap map:s_5;
-    rr:predicateObjectMap map:pom_37.
+    rr:predicateObjectMap map:pom_39.
 map:map_triplesmap7_0 rml:logicalSource map:source_6;
     a rr:TriplesMap;
     rdfs:label "triplesmap7";
     rr:subjectMap map:s_6;
-    rr:predicateObjectMap map:pom_38.
-map:map_triplesmap8_0 rml:logicalSource map:source_7;
-    a rr:TriplesMap;
-    rdfs:label "triplesmap8";
-    rr:subjectMap map:s_7;
-    rr:predicateObjectMap map:pom_39, map:pom_40, map:pom_41, map:pom_42.
-map:map_triplesmap9_0 rml:logicalSource map:source_8;
-    a rr:TriplesMap;
-    rdfs:label "triplesmap9";
-    rr:subjectMap map:s_8;
-    rr:predicateObjectMap map:pom_43, map:pom_44, map:pom_45, map:pom_46.
+    rr:predicateObjectMap map:pom_40.
 map:om_0 a rr:ObjectMap;
     rr:constant "http://group10.com/ontology/Centro";
     rr:termType rr:IRI.
@@ -81,8 +66,9 @@ map:om_14 a rr:ObjectMap;
     rr:constant "http://schema.mobivoc.org/#id";
     rr:termType rr:Literal.
 map:om_15 a rr:ObjectMap;
-    rr:constant "https://dublincore.org/specifications/dublin-core/dcmi-terms/#description";
-    rr:termType rr:Literal.
+    rml:reference "Gastos";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_16 a rr:ObjectMap;
     rml:reference "Descripcion Seccion";
     rr:termType rr:Literal;
@@ -114,116 +100,81 @@ map:om_22 a rr:ObjectMap;
     rr:constant "http://group10.com/ontology/Ingresos";
     rr:termType rr:IRI.
 map:om_23 a rr:ObjectMap;
-    rml:reference "Descripcion Centro";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+    rr:constant "http://schema.mobivoc.org/#id";
+    rr:termType rr:Literal.
 map:om_24 a rr:ObjectMap;
-    rml:reference "Descripcion Capitulo";
+    rml:reference "ingresos";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_25 a rr:ObjectMap;
+    rml:reference "Descripcion Centro";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+map:om_26 a rr:ObjectMap;
+    rml:reference "Descripcion Capitulo";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+map:om_27 a rr:ObjectMap;
     rml:reference "PREV.DEFINITIV";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#double>.
-map:om_26 a rr:ObjectMap;
+map:om_28 a rr:ObjectMap;
     rml:reference "RECAUDADO";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#double>.
-map:om_27 a rr:ObjectMap;
+map:om_29 a rr:ObjectMap;
     rr:constant "http://group10.com/ontology/Seccion";
     rr:termType rr:IRI.
-map:om_28 a rr:ObjectMap;
-    rr:constant "http://schema.mobivoc.org/#id";
-    rr:termType rr:Literal.
-map:om_29 a rr:ObjectMap;
-    rr:constant "https://dublincore.org/specifications/dublin-core/dcmi-terms/#description";
-    rr:termType rr:Literal.
 map:om_3 a rr:ObjectMap;
     rml:reference "Descripcion Centro";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_30 a rr:ObjectMap;
+    rr:constant "http://schema.mobivoc.org/#id";
+    rr:termType rr:Literal.
+map:om_31 a rr:ObjectMap;
+    rr:constant "https://dublincore.org/specifications/dublin-core/dcmi-terms/#description";
+    rr:termType rr:Literal.
+map:om_32 a rr:ObjectMap;
     rml:reference "wikipoblacion";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#integer>.
-map:om_31 a rr:ObjectMap;
+map:om_33 a rr:ObjectMap;
     rml:reference "wikicoordenadas";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-map:om_32 a rr:ObjectMap;
+map:om_34 a rr:ObjectMap;
     rml:reference "wikisuperficie";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#double>.
-map:om_33 a rr:ObjectMap;
+map:om_35 a rr:ObjectMap;
     rml:reference "wikiseccion";
     rr:termType rr:IRI.
-map:om_34 a rr:ObjectMap;
-    rml:reference "Descripcion Seccion";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-map:om_35 a rr:ObjectMap;
-    rml:reference "Seccion";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_36 a rr:ObjectMap;
     rml:reference "Descripcion Seccion";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_37 a rr:ObjectMap;
-    rr:constant "Economico";
-    rr:termType rr:Literal.
+    rml:reference "Seccion";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_38 a rr:ObjectMap;
-    rr:constant "Economico";
-    rr:termType rr:Literal.
+    rml:reference "Descripcion Seccion";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_39 a rr:ObjectMap;
-    rr:constant "http://schema.mobivoc.org/#id";
+    rr:constant "Economico";
     rr:termType rr:Literal.
 map:om_4 a rr:ObjectMap;
     rml:reference "Centro";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_40 a rr:ObjectMap;
-    rr:constant "https://dublincore.org/specifications/dublin-core/dcmi-terms/#description";
+    rr:constant "Economico";
     rr:termType rr:Literal.
-map:om_41 a rr:ObjectMap;
-    rml:reference "Programa";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-map:om_42 a rr:ObjectMap;
-    rml:reference "Descripcion Programa";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-map:om_43 a rr:ObjectMap;
-    rr:constant "http://schema.mobivoc.org/#id";
-    rr:termType rr:Literal.
-map:om_44 a rr:ObjectMap;
-    rr:constant "https://dublincore.org/specifications/dublin-core/dcmi-terms/#description";
-    rr:termType rr:Literal.
-map:om_45 a rr:ObjectMap;
-    rml:reference "Capitulo";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-map:om_46 a rr:ObjectMap;
-    rml:reference "Descripcion Capitulo";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-map:om_47 a rr:ObjectMap;
-    rr:constant "http://schema.mobivoc.org/#id";
-    rr:termType rr:Literal.
-map:om_48 a rr:ObjectMap;
-    rr:constant "https://dublincore.org/specifications/dublin-core/dcmi-terms/#description";
-    rr:termType rr:Literal.
-map:om_49 a rr:ObjectMap;
-    rml:reference "Capitulo";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_5 a rr:ObjectMap;
     rml:reference "wikicentro";
     rr:termType rr:IRI.
-map:om_50 a rr:ObjectMap;
-    rml:reference "Descripcion Capitulo";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_6 a rr:ObjectMap;
     rr:parentTriplesMap map:map_triplesmap2_0;
     rr:joinCondition map:jc_0.
@@ -251,7 +202,7 @@ map:pm_13 a rr:PredicateMap;
 map:pm_14 a rr:PredicateMap;
     rr:constant rdfs:label.
 map:pm_15 a rr:PredicateMap;
-    rr:constant rdfs:comment.
+    rr:constant <http://schema.mobivoc.org/#id>.
 map:pm_16 a rr:PredicateMap;
     rr:constant <http://group10.com/ontology/tieneSeccion>.
 map:pm_17 a rr:PredicateMap;
@@ -269,67 +220,47 @@ map:pm_21 a rr:PredicateMap;
 map:pm_22 a rr:PredicateMap;
     rr:constant rdf:type.
 map:pm_23 a rr:PredicateMap;
-    rr:constant <http://group10.com/ontology/tieneCentro>.
-map:pm_24 a rr:PredicateMap;
-    rr:constant <http://group10.com/ontology/tieneCapitulo>.
-map:pm_25 a rr:PredicateMap;
-    rr:constant <http://group10.com/ontology/previsionIngresos>.
-map:pm_26 a rr:PredicateMap;
-    rr:constant <http://purl.org/cerif/frapo/hasMonetaryValue>.
-map:pm_27 a rr:PredicateMap;
-    rr:constant rdf:type.
-map:pm_28 a rr:PredicateMap;
     rr:constant rdfs:label.
+map:pm_24 a rr:PredicateMap;
+    rr:constant <http://schema.mobivoc.org/#id>.
+map:pm_25 a rr:PredicateMap;
+    rr:constant <http://group10.com/ontology/tieneCentro>.
+map:pm_26 a rr:PredicateMap;
+    rr:constant <http://group10.com/ontology/tieneCapitulo>.
+map:pm_27 a rr:PredicateMap;
+    rr:constant <http://group10.com/ontology/previsionIngresos>.
+map:pm_28 a rr:PredicateMap;
+    rr:constant <http://purl.org/cerif/frapo/hasMonetaryValue>.
 map:pm_29 a rr:PredicateMap;
-    rr:constant rdfs:comment.
+    rr:constant rdf:type.
 map:pm_3 a rr:PredicateMap;
     rr:constant <https://dublincore.org/specifications/dublin-core/dcmi-terms/#description>.
 map:pm_30 a rr:PredicateMap;
-    rr:constant <http://group10.com/ontology/tienePoblacion>.
-map:pm_31 a rr:PredicateMap;
-    rr:constant <http://group10.com/ontology/tieneCoordenadas>.
-map:pm_32 a rr:PredicateMap;
-    rr:constant <http://group10.com/ontology/tieneSuperficie>.
-map:pm_33 a rr:PredicateMap;
-    rr:constant <http://www.w3.org/2002/07/owl#sameAs>.
-map:pm_34 a rr:PredicateMap;
-    rr:constant <http://group10.com/ontology/tieneSeccion>.
-map:pm_35 a rr:PredicateMap;
-    rr:constant <http://schema.mobivoc.org/#id>.
-map:pm_36 a rr:PredicateMap;
-    rr:constant <https://dublincore.org/specifications/dublin-core/dcmi-terms/#description>.
-map:pm_37 a rr:PredicateMap;
-    rr:constant rdfs:subClassOf.
-map:pm_38 a rr:PredicateMap;
-    rr:constant rdfs:subClassOf.
-map:pm_39 a rr:PredicateMap;
     rr:constant rdfs:label.
+map:pm_31 a rr:PredicateMap;
+    rr:constant rdfs:comment.
+map:pm_32 a rr:PredicateMap;
+    rr:constant <http://group10.com/ontology/tienePoblacion>.
+map:pm_33 a rr:PredicateMap;
+    rr:constant <http://group10.com/ontology/tieneCoordenadas>.
+map:pm_34 a rr:PredicateMap;
+    rr:constant <http://group10.com/ontology/tieneSuperficie>.
+map:pm_35 a rr:PredicateMap;
+    rr:constant <http://www.w3.org/2002/07/owl#sameAs>.
+map:pm_36 a rr:PredicateMap;
+    rr:constant <http://group10.com/ontology/tieneSeccion>.
+map:pm_37 a rr:PredicateMap;
+    rr:constant <http://schema.mobivoc.org/#id>.
+map:pm_38 a rr:PredicateMap;
+    rr:constant <https://dublincore.org/specifications/dublin-core/dcmi-terms/#description>.
+map:pm_39 a rr:PredicateMap;
+    rr:constant rdfs:subClassOf.
 map:pm_4 a rr:PredicateMap;
     rr:constant <http://schema.mobivoc.org/#id>.
 map:pm_40 a rr:PredicateMap;
-    rr:constant rdfs:comment.
-map:pm_41 a rr:PredicateMap;
-    rr:constant <http://schema.mobivoc.org/#id>.
-map:pm_42 a rr:PredicateMap;
-    rr:constant <https://dublincore.org/specifications/dublin-core/dcmi-terms/#description>.
-map:pm_43 a rr:PredicateMap;
-    rr:constant rdfs:label.
-map:pm_44 a rr:PredicateMap;
-    rr:constant rdfs:comment.
-map:pm_45 a rr:PredicateMap;
-    rr:constant <http://schema.mobivoc.org/#id>.
-map:pm_46 a rr:PredicateMap;
-    rr:constant <https://dublincore.org/specifications/dublin-core/dcmi-terms/#description>.
-map:pm_47 a rr:PredicateMap;
-    rr:constant rdfs:label.
-map:pm_48 a rr:PredicateMap;
-    rr:constant rdfs:comment.
-map:pm_49 a rr:PredicateMap;
-    rr:constant <http://schema.mobivoc.org/#id>.
+    rr:constant rdfs:subClassOf.
 map:pm_5 a rr:PredicateMap;
     rr:constant <http://www.w3.org/2002/07/owl#sameAs>.
-map:pm_50 a rr:PredicateMap;
-    rr:constant <https://dublincore.org/specifications/dublin-core/dcmi-terms/#description>.
 map:pm_6 a rr:PredicateMap;
     rr:constant <http://group10.com/ontology/Centro>.
 map:pm_7 a rr:PredicateMap;
@@ -446,39 +377,9 @@ map:pom_4 a rr:PredicateObjectMap;
 map:pom_40 a rr:PredicateObjectMap;
     rr:predicateMap map:pm_40;
     rr:objectMap map:om_40.
-map:pom_41 a rr:PredicateObjectMap;
-    rr:predicateMap map:pm_41;
-    rr:objectMap map:om_41.
-map:pom_42 a rr:PredicateObjectMap;
-    rr:predicateMap map:pm_42;
-    rr:objectMap map:om_42.
-map:pom_43 a rr:PredicateObjectMap;
-    rr:predicateMap map:pm_43;
-    rr:objectMap map:om_43.
-map:pom_44 a rr:PredicateObjectMap;
-    rr:predicateMap map:pm_44;
-    rr:objectMap map:om_44.
-map:pom_45 a rr:PredicateObjectMap;
-    rr:predicateMap map:pm_45;
-    rr:objectMap map:om_45.
-map:pom_46 a rr:PredicateObjectMap;
-    rr:predicateMap map:pm_46;
-    rr:objectMap map:om_46.
-map:pom_47 a rr:PredicateObjectMap;
-    rr:predicateMap map:pm_47;
-    rr:objectMap map:om_47.
-map:pom_48 a rr:PredicateObjectMap;
-    rr:predicateMap map:pm_48;
-    rr:objectMap map:om_48.
-map:pom_49 a rr:PredicateObjectMap;
-    rr:predicateMap map:pm_49;
-    rr:objectMap map:om_49.
 map:pom_5 a rr:PredicateObjectMap;
     rr:predicateMap map:pm_5;
     rr:objectMap map:om_5.
-map:pom_50 a rr:PredicateObjectMap;
-    rr:predicateMap map:pm_50;
-    rr:objectMap map:om_50.
 map:pom_6 a rr:PredicateObjectMap;
     rr:predicateMap map:pm_6;
     rr:objectMap map:om_6.
@@ -505,12 +406,6 @@ map:s_5 a rr:SubjectMap;
     rr:template "http://group10.com/resource/Gastos/{Gastos}".
 map:s_6 a rr:SubjectMap;
     rr:template "http://group10.com/resource/Ingresos/{ingresos}".
-map:s_7 a rr:SubjectMap;
-    rr:template "http://group10.com/resource/Gastos/Programa/{Descripcion Programa}".
-map:s_8 a rr:SubjectMap;
-    rr:template "http://group10.com/resource/Gastos/Capitulo/{Descripcion Capitulo}".
-map:s_9 a rr:SubjectMap;
-    rr:template "http://group10.com/resource/Ingresos/Capitulo/{Descripcion Capitulo}".
 map:source_0 a rml:LogicalSource;
     rml:source "gastos-with-links.csv";
     rml:referenceFormulation ql:CSV.
@@ -530,14 +425,5 @@ map:source_5 a rml:LogicalSource;
     rml:source "gastos-with-links.csv";
     rml:referenceFormulation ql:CSV.
 map:source_6 a rml:LogicalSource;
-    rml:source "ingresos-with-links.csv";
-    rml:referenceFormulation ql:CSV.
-map:source_7 a rml:LogicalSource;
-    rml:source "gastos-with-links.csv";
-    rml:referenceFormulation ql:CSV.
-map:source_8 a rml:LogicalSource;
-    rml:source "gastos-with-links.csv";
-    rml:referenceFormulation ql:CSV.
-map:source_9 a rml:LogicalSource;
     rml:source "ingresos-with-links.csv";
     rml:referenceFormulation ql:CSV.
