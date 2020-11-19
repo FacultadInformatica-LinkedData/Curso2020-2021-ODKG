@@ -406,6 +406,7 @@ app.layout = html.Div([NAVBAR,
     html.Div(id='tabs-content')
 ])
 
+server = app.server
 
 @app.callback(
     Output('graph-all-products', 'figure'),
