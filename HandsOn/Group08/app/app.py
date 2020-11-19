@@ -34,7 +34,7 @@ NAVBAR = dbc.Navbar(
                 [
                     dbc.Col(html.Img(src=PLOTLY_LOGO, height="30px")),
                     dbc.Col(
-                        dbc.NavbarBrand("Public Procurement Murcia", className="ml-2")
+                        dbc.NavbarBrand("Emergency contracts due to COVID-19 in Murcia", className="ml-2")
                     ),
                 ],
                 align="center",
@@ -47,6 +47,29 @@ NAVBAR = dbc.Navbar(
     dark=True,
     sticky="top",
 )
+
+BOTTOM = dbc.Navbar(
+    children=[
+        html.A(
+            # Use row and col to control vertical alignment of logo / brand
+            dbc.Row(
+                [
+
+                    dbc.Col(
+                        dbc.NavbarBrand("Authors: Cerro Gutierrez Laura, Donís Ebri Pablo, Gómez-Carpintero García Teresa, Herranz Somoza Alberto", className="ml-2")
+                    ),
+                ],
+                align="center",
+                no_gutters=True,
+            ),
+
+        )
+    ],
+    color="dark",
+    dark=True,
+    sticky="bottom",
+)
+
 
 TOP_PRODUCTS_PLOT = [
     dbc.CardHeader(html.H5("Top 10 products by quantity ordered and pending quantity")),
@@ -195,6 +218,7 @@ TOP_ORGANIZATIONS = [
     dbc.CardHeader(html.H5("Information about the companies")),
     dbc.CardBody(
         [
+
             dcc.Loading(
                 id="loading-bigrams-scatter",
                 children=[
@@ -214,7 +238,8 @@ TOP_ORGANIZATIONS = [
                     ),
                 ],
                 type="default",
-            )
+            ),
+            html.P( "*Contracts pending: We consider a contract as pending if some quantity of the product is yet to be delivered.", className="card-text", )
         ],
         style={"marginTop": 0, "marginBottom": 0},
     ),
@@ -245,6 +270,7 @@ TOP_ORGANIZATIONS_ANALYSIS = [
                     ),
                     dcc.Graph(id='graph-all-organizations'),
                     dcc.Graph(id='graph-all-organizations-2'),
+                    html.P( "*The contract satisfied percentage represents the percentage of non-pending contracts.", className="card-text", ),
                     dcc.Dropdown(
                         id='dropdown-organizations',
                         options=optionsOrganizations,
@@ -254,7 +280,8 @@ TOP_ORGANIZATIONS_ANALYSIS = [
                         'width': '1000px',
                         },
                     ),
-                    dcc.Graph(id='graph-organizations'),
+                    dcc.Graph(id='graph-organizations')
+
                 ],
                 type="default",
             )
@@ -267,6 +294,7 @@ TOTALCOVID_CCAA = [
     dbc.CardHeader(html.H5("Total accumulated positives tests by region")),
     dbc.CardBody(
         [
+            html.P( "*Link: Link to the Wikidata page for that region.", className="card-text", ),
             dcc.Loading(
                 id="loading-bigrams-scatter",
                 children=[
@@ -291,10 +319,11 @@ TOTALCOVID_CCAA = [
                         hover_data=['Link'],
                         template="plotly_white",
                     )
-                    ),
+                    )
                 ],
                 type="default",
-            )
+            ),
+
         ],
         style={"marginTop": 0, "marginBottom": 0},
     ),
@@ -323,6 +352,7 @@ DATACOVID_CCAA = [
                         max= max(dfCovid['Date']).week,
                         value=[min(dfCovid['Date']).week, max(dfCovid['Date']).week]
                     ),
+
                     dcc.Graph(id='graph-PCR-CCAA'),
                     dcc.Graph(id='graph-AC-CCAA'),
                     dcc.Graph(id='graph-UCI-CCAA'),
@@ -371,12 +401,72 @@ DATACOVID_BY_CCAA = [
     ),
 ]
 
+INTRO = [
+    dbc.CardHeader(html.H5("Description")),
+    dbc.CardBody(
+        [
+            dcc.Loading(
+                id="loading-bigrams-scatter",
+                children=[
+                    dbc.Alert(
+                        "Something's gone wrong! Give us a moment, but try loading this page again if problem persists.",
+                        id="no-data-alert-bigrams",
+                        color="warning",
+                        style={"display": "none"},
+                    ),
+                    dbc.Col(
+                        html.H5("")
+                    ),
+
+                 html.P( "In this page we intend to address the COVID-19 status in Spain, throughout the regions that conform it. We will be looking at the evolution of to the number of positive cases, hospitalizations, ICU and deaths by date, ranging from the 20th of February to the 20th of May of 2020.", className="card-text", )
+
+
+                ],
+                type="default",
+            )
+        ],
+        style={"marginTop": 0, "marginBottom": 0},
+    ),
+]
+
+
+INTRO_2 = [
+    dbc.CardHeader(html.H5("Description")),
+    dbc.CardBody(
+        [
+            dcc.Loading(
+                id="loading-bigrams-scatter",
+                children=[
+                    dbc.Alert(
+                        "Something's gone wrong! Give us a moment, but try loading this page again if problem persists.",
+                        id="no-data-alert-bigrams",
+                        color="warning",
+                        style={"display": "none"},
+                    ),
+                    dbc.Col(
+                        html.H5("")
+                    ),
+
+                 html.P( "In this page we want to represent the contracts made by the region of Murcia between the 15th of March and the 21st of June of 2020 in relation to COVID-19. The contracts are either for products or services in the medical domain. Information about the supplying companies will be shown too. ", className="card-text", )
+
+
+                ],
+                type="default",
+            )
+        ],
+        style={"marginTop": 0, "marginBottom": 0},
+    ),
+]
 
 BODY_COVID = dbc.Container(
     [
+        dbc.Row([dbc.Col(dbc.Card(INTRO)),],style={"marginTop":30}),
         dbc.Row([dbc.Col(dbc.Card(TOTALCOVID_CCAA)),],style={"marginTop":30}),
         dbc.Row([dbc.Col(dbc.Card(DATACOVID_CCAA)),],style={"marginTop":30}),
         dbc.Row([dbc.Col(dbc.Card(DATACOVID_BY_CCAA)), ], style={"marginTop": 30}),
+        BOTTOM
+
+
 
     ],
     className="mt-12",
@@ -384,12 +474,15 @@ BODY_COVID = dbc.Container(
 
 BODY_MURCIA = dbc.Container(
     [
+        dbc.Row([dbc.Col(dbc.Card(INTRO_2)),], style={"marginTop": 30}),
         dbc.Row([dbc.Col(dbc.Card(TOP_PRODUCTS_PLOT)),], style={"marginTop": 30}),
         dbc.Row([dbc.Col(dbc.Card(TOP_PRODUCTS_PLOT_ANALYSIS)), ], style={"marginTop": 30}),
         dbc.Row([dbc.Col(dbc.Card(TOP_SERVICES_PLOT)), ], style={"marginTop": 30}),
         dbc.Row([dbc.Col(dbc.Card(TOP_SERVICES_PLOT_ANALYSIS)), ], style={"marginTop": 30}),
         dbc.Row([dbc.Col(dbc.Card(TOP_ORGANIZATIONS)),], style={"marginTop": 30}),
         dbc.Row([dbc.Col(dbc.Card(TOP_ORGANIZATIONS_ANALYSIS)), ], style={"marginTop": 30}),
+        BOTTOM
+
     ],
     className="mt-12",
 )
@@ -402,8 +495,11 @@ app.layout = html.Div([NAVBAR,
     dcc.Tabs(id="tabs", value='COVID Analysis', children=[
         dcc.Tab(label='COVID Analysis', value='COVID Analysis'),
         dcc.Tab(label='Murcia Public Procurement', value='Murcia Public Procurement'),
+
     ]),
-    html.Div(id='tabs-content')
+
+    html.Div(id='tabs-content'),
+
 ])
 
 server = app.server
@@ -469,7 +565,7 @@ def update_figure31(dates):
     dfTemp = dfTemp[(dfTemp['Date'].dt.isocalendar().week>=dates[0]) & (dfTemp['Date'].dt.isocalendar().week<=dates[1])]
     fig = px.line(
         dfTemp,
-        title="Evolution of contract satisfied percentage",
+        title="Evolution of contract satisfied percentage by all companies",
         x="Date",
         y="Contracts satisfied",
         template="plotly_white",
