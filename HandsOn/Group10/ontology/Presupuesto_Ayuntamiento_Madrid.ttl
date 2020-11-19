@@ -1,4 +1,4 @@
-@prefix default:  <http://group10.com/> .
+@prefix default:  <http://group10.com/ontology/> .
 @prefix xsp:     <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -10,42 +10,54 @@
 
 <http://group10.com>
       a       owl:Ontology .
-
-default:Capitulo
-      a       owl:Class .
-
-default:Gastos
-      a       owl:Class .
-	  
-default:Programa
-      a       owl:Class .
 	  
 default:Centro
       a       owl:Class .
-	  
-default:Seccion
+
+default:Economico
       a       owl:Class .
-	  
+
+default:Gastos
+      a       owl:Class ;
+      rdfs:subClassOf default:Economico .
+
 default:Ingresos
-      a       owl:Class .
-
-default:creditoGastado
-      a       owl:DatatypeProperty ;
-      rdfs:domain default:Gastos ;
-      rdfs:range xsd:float .
-
-default:creditoDispuesto
-      a       owl:DatatypeProperty ;
-      rdfs:domain default:Gastos ;
-      rdfs:range xsd:float .
+      a       owl:Class ;
+      rdfs:subClassOf default:Economico .
 	  
-default:recaudado
-      a       owl:DatatypeProperty ;
-      rdfs:domain default:Ingresos ;
-      rdfs:range xsd:float .
-	  
+default:tieneCentro
+      a       owl:InverseFunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:Economico ;
+      rdfs:range default:Centro ;
+      owl:inverseOf default:tieneEconomico .
+
+default:tieneEconomico
+      a       owl:InverseFunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:Centro ;
+      rdfs:range default:Economico ;
+      owl:inverseOf default:tieneCentro .
+
 default:id
       a       owl:DatatypeProperty ;
+      rdfs:range xsd:string .
+
+default:descripcion
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:string .
+
+default:tieneCapitulo
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Economico ;
+      rdfs:range xsd:string .
+	  
+default:tieneSeccion
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Gastos ;
+      rdfs:range xsd:string .
+
+default:tienePrograma
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Gastos ;
       rdfs:range xsd:string .
 	  
 default:previsionIngresos
@@ -53,38 +65,17 @@ default:previsionIngresos
       rdfs:domain default:Ingresos ;
       rdfs:range xsd:float .
 
-default:descripcion
+default:creditoGastado
       a       owl:DatatypeProperty ;
-      rdfs:range xsd:string .
-
-default:tieneCapitulo
-      a       owl:ObjectProperty ;
-      rdfs:domain
-              [ owl:unionOf (default:Gastos default:Ingresos)] ;
-      rdfs:range default:Capitulo .
-
-default:tienePrograma
-      a       owl:ObjectProperty ;
       rdfs:domain default:Gastos ;
-      rdfs:range default:Programa .
-	  
-default:tieneGasto
-      a       owl:ObjectProperty ;
-      rdfs:domain default:Centro ;
-      rdfs:range default:Gastos .
-	  
-default:tieneCentro
-      a       owl:ObjectProperty ;
-      rdfs:domain
-              [ owl:unionOf (default:Gastos default:Ingresos) ] ;
-      rdfs:range default:Centro .
+      rdfs:range xsd:float .
 
-default:tieneIngresos
-      a       owl:ObjectProperty ;
-      rdfs:domain default:Centro ;
-      rdfs:range default:Ingresos .
+default:recaudado
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Ingresos ;
+      rdfs:range xsd:float .
 
-default:tieneSeccion
-      a       owl:ObjectProperty ;
+default:creditoDispuesto
+      a       owl:DatatypeProperty ;
       rdfs:domain default:Gastos ;
-      rdfs:range default:Seccion .
+      rdfs:range xsd:float .
