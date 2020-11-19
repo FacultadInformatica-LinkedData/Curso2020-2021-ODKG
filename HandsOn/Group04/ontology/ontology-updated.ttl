@@ -8,7 +8,7 @@
 @prefix pproc: <http://contsem.unizar.es/def/sector-publico/pproc#> .
 @prefix org: <https://www.w3.org/ns/org#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@base <http://exercise.publicprocurement.es/about/ontology/group04ppp> .
+
 
 <http://exercise.publicprocurement.es/about/ontology/group04ppp> rdf:type owl:Ontology .
 
@@ -125,7 +125,7 @@ foaf:name rdf:type owl:DatatypeProperty ;
 
 ###  http://xmlns.com/foaf/0.1/name
 foaf:name rdf:type owl:DatatypeProperty ;
-             rdfs:domain pproc:Organization ;
+             rdfs:domain org:Organization ;
              rdfs:range xsd:string .
 
 ###  http://exercise.publicprocurement.es/about/ontology/group04pp#hasLPAnumber

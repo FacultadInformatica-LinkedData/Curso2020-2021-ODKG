@@ -150,7 +150,7 @@ map:om_36 a rr:ObjectMap;
 map:om_37 a rr:ObjectMap;
     rml:reference "Supplier Code";
     rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+    rr:datatype <http://www.w3.org/2001/XMLSchema#long>.
 map:om_38 a rr:ObjectMap;
     rml:reference "Supplier Zip Code";
     rr:termType rr:Literal;
@@ -182,7 +182,7 @@ map:om_9 a rr:ObjectMap;
 map:pm_0 a rr:PredicateMap;
     rr:constant rdf:type.
 map:pm_1 a rr:PredicateMap;
-    rr:constant <http://xmlns.com/foaf/0.1/name>.
+    rr:constant <http://exercise.publicprocurement.es/about/ontology/group04pp/hasDepartmentName>.
 map:pm_10 a rr:PredicateMap;
     rr:constant <http://exercise.publicprocurement.es/about/ontology/group04pp/hasClassTitle>.
 map:pm_11 a rr:PredicateMap;
@@ -234,7 +234,7 @@ map:pm_31 a rr:PredicateMap;
 map:pm_32 a rr:PredicateMap;
     rr:constant rdf:type.
 map:pm_33 a rr:PredicateMap;
-    rr:constant <http://xmlns.com/foaf/0.1/name>.
+    rr:constant <http://exercise.publicprocurement.es/about/ontology/group04pp/hasSupplierName>.
 map:pm_34 a rr:PredicateMap;
     rr:constant <http://www.w3.org/2003/01/geo/wgs84_pos#lat>.
 map:pm_35 a rr:PredicateMap;
@@ -250,7 +250,7 @@ map:pm_4 a rr:PredicateMap;
 map:pm_5 a rr:PredicateMap;
     rr:constant rdfs:comment.
 map:pm_6 a rr:PredicateMap;
-    rr:constant <http://xmlns.com/foaf/0.1/name>.
+    rr:constant <http://exercise.publicprocurement.es/about/ontology/group04pp/hasItemName>.
 map:pm_7 a rr:PredicateMap;
     rr:constant <https://www.wikidata.org/wiki/Property:P2167>.
 map:pm_8 a rr:PredicateMap;
@@ -375,13 +375,13 @@ map:pom_9 a rr:PredicateObjectMap;
     rr:predicateMap map:pm_9;
     rr:objectMap map:om_9.
 map:s_0 a rr:SubjectMap;
-    rr:template "http://dbpedia.org/ontology/Department#{Department Name}".
+    rr:template "http://exercise.publicprocurement.es/about/ontology/group04pp/Department/{Department Name}".
 map:s_1 a rr:SubjectMap;
-    rr:template "http://contsem.unizar.es/def/sector-publico/pproc#{Normalized UNSPSC}".
+    rr:template "http://exercise.publicprocurement.es/about/ontology/group04pp/Resource/unspsc/{Normalized UNSPSC}".
 map:s_2 a rr:SubjectMap;
-    rr:template "http://contsem.unizar.es/def/sector-publico/pproc#{Purchase Order Number}".
+    rr:template "http://exercise.publicprocurement.es/about/ontology/group04pp/Contract/{Purchase Order Number}".
 map:s_3 a rr:SubjectMap;
-    rr:template "http://www.w3.org/ns/org#{Supplier Code}".
+    rr:template "http://exercise.publicprocurement.es/about/ontology/group04pp/Organization/{Supplier Code}".
 map:source_0 a rml:LogicalSource;
     rml:source "purchase-order-2014-2015-updated-with-links.csv";
     rml:referenceFormulation ql:CSV.

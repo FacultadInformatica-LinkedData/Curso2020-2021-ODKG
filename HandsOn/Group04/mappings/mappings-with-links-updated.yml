@@ -22,20 +22,20 @@ mappings:
   Department:
     sources:
       - [purchase-order-2014-2015-updated-with-links.csv~csv]
-    s: dp:Department#$(Department Name)
+    s: pp:Department/$(Department Name)
     po:
       - [a, dp:Department]
-      - [foaf:name, $(Department Name),xsd:string]
+      - [pp:hasDepartmentName, $(Department Name),xsd:string]
       - [owl:sameAs, $(wikidataDepartment)~iri]
   ContractObject:
     sources:
       - [purchase-order-2014-2015-updated-with-links.csv~csv]
-    s: pproc:$(Normalized UNSPSC)
+    s: pp:Resource/unspsc/$(Normalized UNSPSC)
     po:
       - [a, pproc:ContractObject]
       - [pp:hasCommodityTitle , $(Commodity Title),xsd:string]
       - [rdfs:comment, $(Item Description),xsd:string]
-      - [foaf:name, $(Item Name),xsd:string]
+      - [pp:hasItemName, $(Item Name),xsd:string]
       - [https://www.wikidata.org/wiki/Property:P2167, $(Normalized UNSPSC),xsd:string]
       - [pp:hasIdentifier, $(Identifier2),xsd:string]
       - [pp:hasClassNumber, $(Class),xsd:long]
@@ -47,7 +47,7 @@ mappings:
   Contract:
     sources:
       - [purchase-order-2014-2015-updated-with-links.csv~csv]
-    s: pproc:$(Purchase Order Number)
+    s: pp:Contract/$(Purchase Order Number)
     po:
       - [a, pproc:Contract]
       - [pp:hasCalCards, $(CalCard),xsd:boolean]
@@ -90,13 +90,13 @@ mappings:
   Organization:
     sources:
       - [purchase-order-2014-2015-updated-with-links.csv~csv]
-    s: organ:$(Supplier Code)
+    s: pp:Organization/$(Supplier Code)
     po:
       - [a, organ:Organization]
-      - [foaf:name, $(Supplier Name),xsd:string]
+      - [pp:hasSupplierName, $(Supplier Name),xsd:string]
       - [geo:lat, $(Latitude),xsd:float]
       - [geo:long, $(Longitude),xsd:float]
       - [pp:hasQualifications, $(Supplier Qualifications),xsd:string]
-      - [pp:hasSupplierCode, $(Supplier Code),xsd:string]
+      - [pp:hasSupplierCode, $(Supplier Code),xsd:long]
       - [http://dbpedia.org/ontology/zipCode, $(Supplier Zip Code),xsd:string]
       
