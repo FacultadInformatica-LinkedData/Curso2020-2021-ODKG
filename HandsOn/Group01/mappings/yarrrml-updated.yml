@@ -1,0 +1,61 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rev: http://purl.org/stuff/rev#
+  schema: http://schema.org/
+  dct: http://purl.org/dc/terms/
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  vocab: http://group01.org/aragon/ontology/
+  pproc: http://contsem.unizar.es/def/sector-publico/pproc#
+  org: http://www.w3.org/ns/org#
+  
+mappings:
+  triplesmap1:
+    sources:
+      - [contratos_gobierno_aragon_2017-updated-with-links-updated.csv~csv]
+    s: http://group01.org/aragon/resource/Contract/$(Code)
+    po:
+      - [a, pproc:$(TypeOfContract)]
+      - [dct:identifier, $(Code)]
+      - [vocab:hasAwardPrice,$(AwardPrice),xsd:double]
+      - [vocab:hasAwardProcedure,$(AwardProcedure),xsd:string]
+      - [vocab:hasBiddingPrice,$(BiddingPrice),xsd:double]
+      - [dct:description,$(Description),xsd:string]
+      - p: vocab:awardedTo
+        o:
+          - mapping: triplesmap2
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(Company)]
+                - [str2, $(Company)]
+      - p: pproc:contractingBody
+        o:
+          - mapping: triplesmap3
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(GovernmentRequester)]
+                - [str2, $(GovernmentRequester)]
+            
+  triplesmap2:
+    sources:
+      - [contratos_gobierno_aragon_2017-updated-with-links-updated.csv~csv]
+    s: http://group01.org/aragon/resource/Company/$(Company)
+    po:
+      - [a, pproc:AwardedTender]
+      - [rdfs:label, $(Company)]
+      - [owl:sameAs, $(wikiCompany)~iri]
+
+  triplesmap3:
+    sources:
+      - [contratos_gobierno_aragon_2017-updated-with-links-updated.csv~csv]
+    s: http://group01.org/aragon/resource/GovernmentBody/$(GovernmentRequester)
+    po:
+      - [a, org:Organization]
+      - [rdfs:label, $(GovernmentRequester)]
+      - [owl:sameAs, $(wikiGovernmentRequester)~iri]

@@ -1,0 +1,105 @@
+@prefix default:  <http://group10.com/ontology/> .
+@prefix xsp:     <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix protege:  <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix swrl:    <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb:   <http://www.w3.org/2003/11/swrlb#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix economico: <http://purl.org/cerif/frapo/> .
+@prefix id:      <http://schema.mobivoc.org/#> .
+@prefix descripcion:      <https://dublincore.org/specifications/dublin-core/dcmi-terms/#> .
+
+<http://group10.com>
+      a       owl:Ontology .
+      
+default:Centro
+      a       owl:Class .
+      
+ default:Economico
+      a       owl:Class .
+      
+ default:Gastos
+      a       economico:Income ;
+      rdfs:subClassOf default:Economico .
+	  
+default:Ingresos
+      a       economico:Payment ;
+      rdfs:subClassOf default:Economico .
+	  
+default:tieneCentro
+      a       owl:InverseFunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:Economico ;
+      rdfs:range default:Centro ;
+      owl:inverseOf default:tieneEconomico .
+
+default:tieneEconomico
+      a       owl:InverseFunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:Centro ;
+      rdfs:range default:Economico ;
+      owl:inverseOf default:tieneCentro .
+
+default:tieneCapitulo
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Economico ;
+      rdfs:range xsd:string .
+	  
+default:tieneSeccion
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Gastos ;
+      rdfs:range xsd:string .
+
+default:tienePrograma
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Gastos ;
+      rdfs:range xsd:string .
+	  
+default:previsionIngresos
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Ingresos ;
+      rdfs:range xsd:float .
+
+default:creditoDispuesto
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Gastos ;
+      rdfs:range xsd:float .
+      
+# The properties id, descripcion, creditoGastado and recaudado have been replaced.
+#It can be seen on the following example:
+	  
+# Example:
+
+# <http://group10.com/resource/Centro/AyuntamientoMadrid>
+      # a       default:Centro ;
+      # descripcion:descripcion "Ayuntamiento de Madrid"@es ;
+      # id:id "1"@es ;
+      # default:tieneEconomico
+              # <http://group10.com/resource/Gastos/Canones> , <http://group10.com/resource/Ingresos/IRPF> .
+	  
+# <http://group10.com/resource/Ingresos/IRPF>
+      # a       default:Ingresos ;
+      # descripcion:descripcion "Impuesto sobre la Renta de las Personas Físicas"@es ;
+      # id:id "10000"@es ;
+      # default:previsionIngresos
+              # "1.30870792E8"^^xsd:float ;
+      # economico:hasMonetaryValue "1.54049248E8"^^xsd:float ;
+      # default:tieneCapitulo
+              # "Impuestos directos"@es ;
+      # default:tieneCentro <http://group10.com/resource/Centro/AyuntamientoMadrid> .
+
+# <http://group10.com/resource/Gastos/Canones>
+      # a       default:Gastos ;
+      # default:creditoDispuesto
+              # "3630.0"^^xsd:float ;
+      # economico:hasCost
+              # "3630.0"^^xsd:float ;
+      # descripcion:descripcion "Cánones"@es ;
+      # id:id "20901"@es ;
+      # default:tieneCapitulo
+              # "Gastos en Bienes Corrientes y Servicios"@es ;
+      # default:tieneCentro <http://group10.com/resource/Centro/AyuntamientoMadrid> ;
+      # default:tienePrograma
+              # "Promoción del Plan de Derechos Humanos"@es ;
+      # default:tieneSeccion
+              # "Presidencia del Pleno"@es .

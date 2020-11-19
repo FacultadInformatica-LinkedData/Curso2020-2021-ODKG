@@ -1,17 +1,16 @@
-@prefix : <http://MadridPublicContracts/ontology> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix ns: <http://example.org#>.
+PREFIX : <http://MadridPublicContracts/ontology/> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX xml: <http://www.w3.org/XML/1998/namespace> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 
 # 1.- Total number of contracts by month
 
     SELECT ?Month (COUNT(?contract) as ?Number_of_contrancts)
     WHERE 
     {
-      ?contract ns:hasMonth ?Month.
+      ?contract :hasMonth ?Month.
     }
     GROUP BY ?Month
 
@@ -22,7 +21,7 @@
 SELECT DISTINCT ?Contract ?description
     WHERE 
     {
-      ?Contract ns:hasDescription ?description.
+      ?Contract :hasDescription ?description.
       FILTER regex(?description, \"distrito de chamartin\")
     }
 
@@ -32,6 +31,6 @@ SELECT DISTINCT ?Contract ?description
 SELECT ?State (COUNT(?Contract) as ?Number_of_contracts)
     WHERE 
     {
-      ?Contract ns:hasProcedure ?State.
+      ?Contract :hasProcedure ?State.
     }
     GROUP BY ?State

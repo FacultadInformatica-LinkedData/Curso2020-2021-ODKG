@@ -9,23 +9,25 @@ prefixes:
   rml: http://semweb.mmlab.be/ns/rml#
   ql: http://semweb.mmlab.be/ns/ql#
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
-  vocab: http://example.org#
-  default: http://group10.com/
+  default: http://group10.com/resource/
+  vocab: http://group10.com/ontology/
   
 mappings:
+     
   triplesmap1:
     sources:
-      - [gastos-updated.csv~csv]
-    s: default:centro/$(Descripcion Centro)
+      - [gastos-with-links.csv~csv]
+    s: default:Centro/$(Descripcion Centro)
     po:
-      - [a,default:Centro]
+      - [a,vocab:Centro]
+      - [rdfs:label,vocab:id]
+      - [rdfs:comment,vocab:descripcion]
 
-      - [default: descripcionCentro,$(Descripcion Centro),xsd:string]
-      - [default: tieneGasto,$(Gastos)]  
+      - [vocab:descripcion,$(Descripcion Centro),xsd:string]
+      - [vocab:id,$(Centro),xsd:string]
 
-     
-
-      - p: default:Centro
+    
+      - p: vocab:Centro
         o:
           - mapping: triplesmap2
             condition:
@@ -33,94 +35,72 @@ mappings:
               parameters:
                 - [str1,$(Centro)]
                 - [str2,$(Centro)]
-            
+
 
   triplesmap2:
     sources:
-      - [ingresos-updated.csv~csv]
-    s: default:centro/$(Descripcion Centro)
+      - [ingresos-with-links.csv~csv]
+    s: default:Centro/$(Descripcion Centro)
     po:
-      - [a,default:Centro]
+      - [a,vocab:Centro]
+      - [rdfs:label,vocab:id]
+      - [rdfs:comment,vocab:descripcion]
+      
+      - [vocab:descripcion,$(Descripcion Centro),xsd:string]
+      - [vocab:id,$(Centro),xsd:string]
+    
 
-      - [default:descripcionCentro,$(Descripcion Centro),xsd:string]
-      - [default:tieneIngresos,$(Ingresos)]
-
-  triplesmap3:  
+  triplesmap3:
     sources:
-      - [gastos-updated.csv~csv]
-    s: default:gastos/$(Gastos)
+      - [gastos-with-links.csv~csv]
+    s: default:Gastos/$(Gastos)
     po:
-      - [a,default:Gastos]
+      - [a,vocab:Gastos]
+      - [rdfs:subClassOf,Economico]
+      - [rdfs:label,vocab:id]
+      - [rdfs:comment,vocab:descripcion]
 
-      - [default:creditoGastado,$(OBL_RECONOC),xsd:double]  
-      - [default:tieneCapitulo,$(Capitulo),xsd:integer]
-      - [default:creditoDispuesto,$(C_DISPUESTO),xsd:double]   
-      - [default:tienePrograma,$(Programa),xsd:integer]     
-      - [default:tieneCentro,$(Centro),xsd:integer]   
-      - [default:tieneSeccion,$(Seccion),xsd:integer] 
-      - [default:descripcionEconomico,$(Descripcion Economico),xsd:string]
+      - [vocab:tieneSeccion,$(Descripcion Seccion),xsd:string]
+      - [vocab:id,$(Seccion),xsd:string] 
+      - [vocab:descripcion,$(Descripcion Seccion),xsd:string] 
+
+      - [vocab:tienePrograma,$(Descripcion Programa),xsd:string]
+      - [vocab:id,$(Programa),xsd:string] 
+      - [vocab:descripcion,$(Descripcion Programa),xsd:string] 
+
+      - [vocab:tieneCentro,$(Descripcion Centro),xsd:string]
+      - [vocab:id,$(Centro),xsd:string] 
+      - [vocab:descripcion,$(Descripcion Centro),xsd:string] 
+
+      - [vocab:tieneCapitulo,$(Descripcion Capitulo),xsd:string]
+      - [vocab:id,$(Capitulo),xsd:string] 
+      - [vocab:descripcion,$(Descripcion Capitulo),xsd:string] 
+
+      - [vocab:creditoGastado,$(OBL_RECONOC),xsd:double]
+      - [vocab:creditoDispuesto,$(C_DISPUESTO),xsd:double]
 
 
-  triplesmap4:
+
+    triplesmap4:
     sources:
-      - [gastos-updated.csv~csv]
-    s: default:capitulo/$(Descripcion Capitulo)
+      - [ingresos-with-links.csv~csv]
+    s: default:Ingresos/$(ingresos)
     po:
-      - [a,default:Capitulo]
+      - [a,vocab:Ingresos]
+      - [rdfs:subClassOf,Economico]
+      - [rdfs:label,vocab:id]
+      - [rdfs:comment,vocab:descripcion]
 
-      - [default:descripcionCapitulo,$(Descripcion Capitulo),xsd:string]  
+      - [vocab:tieneCentro,$(Descripcion Centro),xsd:string]
+      - [vocab:id,$(Centro),xsd:string] 
+      - [vocab:descripcion,$(Descripcion Centro),xsd:string] 
 
-      - p: default:Centro
-        o:
-          - mapping: triplesmap8
-            condition:
-              function: equal
-              parameters:
-                - [str1,$(Capitulo)]
-                - [str2,$(Capitulo)]
+      - [vocab:tieneCapitulo,$(Descripcion Capitulo),xsd:string]
+      - [vocab:id,$(Capitulo),xsd:string]  
+      - [vocab:descripcion,$(Descripcion Capitulo),xsd:string] 
 
-
-  triplesmap5:
-    sources:
-      - [gastos-updated.csv~csv]
-    s: default:programa/$(Descripcion Programa) 
-    po:
-      - [a,default:Programa]
-
-      - [default:descripcionPrograma,$(Descripcion Programa),xsd:string]  
-     
+      - [vocab:previsionIngresos,$(PREV.DEFINITIV),xsd:double]
+      - [vocab:recaudado,$(RECAUDADO),xsd:double]   
 
 
-  triplesmap6:
-    sources:
-      - [gastos-updated.csv~csv]
-    s: default:seccion/$(Descripcion Seccion) 
-    po:
-      - [a,default:Seccion]
-
-      - [default:descripcionSeccion,$(Descripcion Seccion),xsd:string]
-
-
-
-  triplesmap7:
-    sources:
-      - [ingresos-updated.csv~csv]
-    s: default:ingresos/$(Ingresos)
-    po:
-      - [a,default:Ingresos]
-
-      - [default:tieneCapitulo,$(Capitulo),xsd:integer]
-      - [default:tieneCentro,$(Centro),xsd:integer]
-      - [default:recaudado,$(RECAUDADO),xsd:double]
-      - [default:previsionIngresos,$(PREV.DEFINITIV),xsd:double]
-      - [default:descripcionIngresos,$(Descripcion Economico),xsd:string]
-
-  triplesmap8:
-    sources:
-      - [ingresos-updated.csv~csv]
-    s: default:capitulo/$(Descripcion Capitulo)
-    po:
-      - [a,default:Capitulo]
-
-      - [default:descripcionCapitulo,$(Descripcion Capitulo),xsd:string]
 

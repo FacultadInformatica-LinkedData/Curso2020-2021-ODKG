@@ -1,0 +1,54 @@
+PREFIX : <http://MadridPublicContracts/ontology/> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns/> 
+PREFIX xml: <http://www.w3.org/XML/1998/namespace> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema/> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema/> 
+PREFIX wikidata: <http://www.wikidata.org/entity/>
+PREFIX foaf; <http://xmlns.com/foaf/0.1/>
+
+# 1.- Localities with the same name
+
+    SELECT ?localidad ?name ?name2
+    WHERE 
+    {
+		?localidad a foaf:Localidad FILTER REGEX(?localidad ,"http://MadridPublicContracts/resources/locality/localidad").
+		?localidad foaf:name ?name .
+		?localidad owl:sameAs ?name2 .
+    }
+    limit 8;
+
+
+
+# 2.- Number of Juntas in Distrito de Chamartin
+
+SELECT DISTINCT ?Junta ?District
+    WHERE 
+    {
+      ?Junta :district ?District.
+      FILTER regex(?district, "http://MadridPublicContracts/resources/district/Chamartín")
+    }
+
+
+
+# 3.- Contracts for distrito de Vallecas and their state
+
+ SELECT DISTINCT ?Contract ?Org ?State
+    WHERE {
+      ?Contract :hasContractor ?Org.
+      ?Org owl:sameAs wikidata:Q56191848.
+      ?Contract :hasProcedure ?State.
+    }
+
+
+
+# 4.- Contracts made by district of Retiro, gropued by month
+
+SELECT ?Month ?Org (COUNT(?Contract) as ?Number_of_contrancts)
+    WHERE {
+      ?Contract :hasContractor ?Org.
+      ?Org owl:sameAs wikidata:Q56191993.
+      ?Contract :hasMonth ?Month.
+    }GROUP BY ?Month
+
+
