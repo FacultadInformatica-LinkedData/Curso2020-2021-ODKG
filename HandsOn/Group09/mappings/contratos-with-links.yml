@@ -1,0 +1,148 @@
+base: http://www.example.com/group09
+prefixes:
+  "": http://www.example.com/group09
+  schema: http://schema.org/
+  owl: "http://www.w3.org/2002/07/owl#"
+  db: https://es.dbpedia.org/page/
+  pproc: http://contsem.unizar.es/def/sector-publico/pproc#
+  org: http://www.w3.org/ns/org#
+  gr: http://purl.org/goodrelations/v1#
+  pc: http://purl.org/procurement/public-contracts#
+
+mappings:
+  department:
+    sources:
+      - [ContratosMenores2020-updated-with-links.csv~csv]
+    s: :/department/$(Section_IRI)
+    po:
+      - [a, org:OrganizationalUnit]
+      - [schema:name, $(Section), xsd:string]
+      - [owl:sameAs, $(wikiSection)~iri]
+#      - [org:subOrganizationOf, db:Ayuntamiento_de_Madrid]
+
+  contractingBody:
+    sources:
+      - [ContratosMenores2020-updated-with-links.csv~csv]
+    s: :/department/$(Section_IRI)/contracting_body/$(Contracting_Body_IRI)
+    po:
+      - [a, org:Organization]
+      - [schema:name, $(Contracting_Body), xsd:string]
+      - [owl:sameAs, $(wikiContractingBody)~iri]
+      - p: org:subOrganizationOf
+        o:
+          - mapping : department
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(Recognition_Number)]
+                - [str2, $(Recognition_Number)]
+
+  contract:
+    sources:
+      - [ContratosMenores2020-updated-with-links.csv~csv]
+    s: :/contract/$(Recognition_Number)
+    po:
+      - [a, $(Contract_Type)]
+      - [:awardDate, $(Approval_Date), xsd:date]
+      - [:awardNum, $(Recognition_Number), xsd:string]
+      - [:recordNum, $(File_Number), xsd:string]
+      - [:registryReportDate, $(Reg_Comm_Date), xsd:date]
+      - p: pproc:contractObject
+        o:
+          - mapping: contractObject
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(Recognition_Number)]
+                - [str2, $(Recognition_Number)]
+      - p: pproc:contractingBody
+        o:
+          - mapping: contractingBody
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(Recognition_Number)]
+                - [str2, $(Recognition_Number)]
+      - p: pproc:managingDepartment
+        o:
+          - mapping: department
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(Recognition_Number)]
+                - [str2, $(Recognition_Number)]
+#      - [pc:contractingAuthority, db:Ayuntamiento_de_Madrid]
+
+  contractObject:
+    sources:
+      - [ContratosMenores2020-updated-with-links.csv~csv]
+    s: :/contract/$(Recognition_Number)/object
+    po:
+      - [a, pproc:ContractObject]
+      - p: pproc:contractEconomicConditions
+        o:
+          - mapping: economicConditions
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(Recognition_Number)]
+                - [str2, $(Recognition_Number)]
+      - p: pproc:contractTemporalConditions
+        o:
+          - mapping: temporalConditions
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(Recognition_Number)]
+                - [str2, $(Recognition_Number)]
+      - [:objectOfContract, $(Object_Of_Contract), xsd:string]
+
+  economicConditions:
+    sources:
+      - [ContratosMenores2020-updated-with-links.csv~csv]
+    s: :/contract/$(Recognition_Number)/economicConditions
+    po:
+      - [a, pproc:ContractEconomicConditions]
+      - p: pproc:budgetPrice
+        o:
+          - mapping: price
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(Recognition_Number)]
+                - [str2, $(Recognition_Number)]
+
+  price:
+    sources:
+      - [ContratosMenores2020-updated-with-links.csv~csv]
+    s: :/contract/$(Recognition_Number)/price
+    po:
+      - [a, pproc:BundlePriceSpecification]
+      - [gr:hasCurrency, $(Currency), xsd:string]
+      - [gr:hasCurrencyValue, $(Currency_Value), xsd:float]
+      - [gr:valueAddedTaxIncluded, $(Tax_Included), xsd:boolean]
+
+  temporalConditions:
+    sources:
+      - [ContratosMenores2020-updated-with-links.csv~csv]
+    s: :/contract/$(Recognition_Number)/temporalConditions
+    po:
+      - [a, pproc:ContractTemporalConditions]
+      - [pproc:estimatedDuration, $(Term), xsd:float]
+
+  contractor:
+    sources:
+      - [ContratosMenores2020-updated-with-links.csv~csv]
+    s: :/contractor/$(N.I.F)
+    po:
+      - [a, org:Organization]
+      - p: pproc:supplier
+        o:
+          - mapping: contract
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(Recognition_Number)]
+                - [str2, $(Recognition_Number)]
+      - [schema:name, $(Contractor), xsd:string]
+      - [org:identifier, $(N.I.F), xsd:string]

@@ -1,0 +1,68 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rev: http://purl.org/stuff/rev#
+  schema: http://schema.org/
+  dct: http://purl.org/dc/terms/
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  owl: http://www.w3.org/2002/07/owl#
+  vocab: http://example.org#
+  ns: http://publicprocurement.odkg.es/group06/ontology/ppg6#
+  pproc: http://contsem.unizar.es/def/sector-publico/pproc#
+  org: http://www.w3.org/ns/org#
+
+mappings:
+  Contract:
+    sources:
+      - [Public_procurement_catalonia_COVID-19-updated-csv-with-links-reduced.csv~csv]
+    s: http://publicprocurement.odkg.es/group06/resource/Contract/$(id)
+    po:
+      - [a, pproc:Contract]
+      - [ns:awardAmount, $(Import de adjudicacio), xsd:double]
+      - [ns:awardDate, $(Data de adjudicacio), xsd:dateTime]
+      - [ns:contractObject, $(Objecte del contracte), xsd:string]
+      - [ns:cpv, $(Codi CPV), xsd:string]
+      - [dct:description, $(Descripcio de la prestacio), xsd:string]
+      - [ns:expedientNumber, $(Codi de expedient), xsd:string]
+      - [ns:linktoPublication, $(Enllace a la publicacio)~iri]
+      - [ns:publicationDate, $(Data de publicacio), xsd:dateTime]
+      - [ns:tenderBudget, $(Pressupost de licitacio), xsd:double]
+      - [ns:typeOfContract, $(Tipus de contracte), xsd:string]
+      - p: pproc:contractingBody
+        o:
+          - mapping: PublicOrganization
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(Organ de contractacio)]
+                - [str2, $(Organ de contractacio)]
+      - p: ns:contractor
+        o:
+          - mapping: Company
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(Empresa adjudicataria)]
+                - [str2, $(Empresa adjudicataria)]
+
+  PublicOrganization:
+    sources:
+      - [Public_procurement_catalonia_COVID-19-updated-csv-with-links-reduced.csv~csv]
+    s: http://publicprocurement.odkg.es/group06/resource/PublicOrganization/$(Organ de contractacio)
+    po:
+      - [a, org:Organization]
+      - [ns:scope, $(Ambit subjectiu), xsd:string]
+      - [schema:name, $(Organ de contractacio), xsd:string] 
+      - [owl:sameAs, $(Organ de contractacio wikidata link)~iri] 
+
+  Company:
+    sources:
+      - [Public_procurement_catalonia_COVID-19-updated-csv-with-links-reduced.csv~csv]
+    s: http://publicprocurement.odkg.es/group06/resource/Company/$(Empresa adjudicataria)
+    po:
+      - [a, pproc:AwardedTender]
+      - [schema:name, $(Empresa adjudicataria), xsd:string]
