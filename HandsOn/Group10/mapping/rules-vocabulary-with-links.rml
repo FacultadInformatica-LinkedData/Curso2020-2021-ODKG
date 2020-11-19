@@ -31,7 +31,7 @@ map:map_triplesmap5_0 rml:logicalSource map:source_4;
     a rr:TriplesMap;
     rdfs:label "triplesmap5";
     rr:subjectMap map:s_4;
-    rr:predicateObjectMap map:pom_43, map:pom_44, map:pom_45, map:pom_46, map:pom_47.
+    rr:predicateObjectMap map:pom_43, map:pom_44, map:pom_45, map:pom_46, map:pom_47, map:pom_48, map:pom_49, map:pom_50, map:pom_51, map:pom_52.
 map:om_0 a rr:ObjectMap;
     rr:constant "http://group10.com/ontology/Centro";
     rr:termType rr:IRI.
@@ -176,23 +176,41 @@ map:om_43 a rr:ObjectMap;
     rr:constant "http://group10.com/ontology/Seccion";
     rr:termType rr:IRI.
 map:om_44 a rr:ObjectMap;
+    rr:constant "http://schema.mobivoc.org/#id";
+    rr:termType rr:Literal.
+map:om_45 a rr:ObjectMap;
+    rr:constant "https://dublincore.org/specifications/dublin-core/dcmi-terms/#description";
+    rr:termType rr:Literal.
+map:om_46 a rr:ObjectMap;
     rml:reference "wikipoblacion";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#integer>.
-map:om_45 a rr:ObjectMap;
+map:om_47 a rr:ObjectMap;
     rml:reference "wikicoordenadas";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-map:om_46 a rr:ObjectMap;
+map:om_48 a rr:ObjectMap;
     rml:reference "wikisuperficie";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#double>.
-map:om_47 a rr:ObjectMap;
+map:om_49 a rr:ObjectMap;
     rml:reference "wikiseccion";
     rr:termType rr:IRI.
 map:om_5 a rr:ObjectMap;
     rml:reference "wikicentro";
     rr:termType rr:IRI.
+map:om_50 a rr:ObjectMap;
+    rml:reference "Descripcion Seccion";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+map:om_51 a rr:ObjectMap;
+    rml:reference "Seccion";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+map:om_52 a rr:ObjectMap;
+    rml:reference "Descripcion Seccion";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_6 a rr:ObjectMap;
     rr:parentTriplesMap map:map_triplesmap2_0;
     rr:joinCondition map:jc_0.
@@ -284,15 +302,25 @@ map:pm_42 a rr:PredicateMap;
 map:pm_43 a rr:PredicateMap;
     rr:constant rdf:type.
 map:pm_44 a rr:PredicateMap;
-    rr:constant <http://group10.com/ontology/tienePoblacion>.
+    rr:constant rdfs:label.
 map:pm_45 a rr:PredicateMap;
-    rr:constant <http://group10.com/ontology/tieneCoordenadas>.
+    rr:constant rdfs:comment.
 map:pm_46 a rr:PredicateMap;
-    rr:constant <http://group10.com/ontology/tieneSuperficie>.
+    rr:constant <http://group10.com/ontology/tienePoblacion>.
 map:pm_47 a rr:PredicateMap;
+    rr:constant <http://group10.com/ontology/tieneCoordenadas>.
+map:pm_48 a rr:PredicateMap;
+    rr:constant <http://group10.com/ontology/tieneSuperficie>.
+map:pm_49 a rr:PredicateMap;
     rr:constant <http://www.w3.org/2002/07/owl#sameAs>.
 map:pm_5 a rr:PredicateMap;
     rr:constant <http://www.w3.org/2002/07/owl#sameAs>.
+map:pm_50 a rr:PredicateMap;
+    rr:constant <http://group10.com/ontology/tieneSeccion>.
+map:pm_51 a rr:PredicateMap;
+    rr:constant <http://schema.mobivoc.org/#id>.
+map:pm_52 a rr:PredicateMap;
+    rr:constant <https://dublincore.org/specifications/dublin-core/dcmi-terms/#description>.
 map:pm_6 a rr:PredicateMap;
     rr:constant <http://group10.com/ontology/Centro>.
 map:pm_7 a rr:PredicateMap;
@@ -430,9 +458,24 @@ map:pom_46 a rr:PredicateObjectMap;
 map:pom_47 a rr:PredicateObjectMap;
     rr:predicateMap map:pm_47;
     rr:objectMap map:om_47.
+map:pom_48 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_48;
+    rr:objectMap map:om_48.
+map:pom_49 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_49;
+    rr:objectMap map:om_49.
 map:pom_5 a rr:PredicateObjectMap;
     rr:predicateMap map:pm_5;
     rr:objectMap map:om_5.
+map:pom_50 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_50;
+    rr:objectMap map:om_50.
+map:pom_51 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_51;
+    rr:objectMap map:om_51.
+map:pom_52 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_52;
+    rr:objectMap map:om_52.
 map:pom_6 a rr:PredicateObjectMap;
     rr:predicateMap map:pm_6;
     rr:objectMap map:om_6.
