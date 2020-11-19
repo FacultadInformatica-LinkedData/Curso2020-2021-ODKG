@@ -502,6 +502,7 @@ app.layout = html.Div([NAVBAR,
 
 ])
 
+server = app.server
 
 @app.callback(
     Output('graph-all-products', 'figure'),
