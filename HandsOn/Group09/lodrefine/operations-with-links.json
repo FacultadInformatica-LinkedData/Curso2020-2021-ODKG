@@ -1,0 +1,5351 @@
+[
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column Section to type Q3814115",
+    "columnName": "Section",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q3814115",
+        "name": "Junta Municipal de Distrito"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Junta Municipal del Distrito Centro (Q56164302) for cells containing \"DISTRITO DE CENTRO\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Section",
+    "similarValue": "DISTRITO DE CENTRO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q56164302",
+      "name": "Junta Municipal del Distrito Centro",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Junta Municipal del Distrito de Retiro (Q56191993) for cells containing \"DISTRITO DE RETIRO\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Section",
+    "similarValue": "DISTRITO DE RETIRO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q56191993",
+      "name": "Junta Municipal del Distrito de Retiro",
+      "score": 64,
+      "types": [
+        "Q3814115"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Junta Municipal del Distrito de Ciudad Lineal (Q56190334) for cells containing \"DISTRITO DE CIUDAD LINEAL\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "DISTRITO DE CIUDAD LINEAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q56190334",
+      "name": "Junta Municipal del Distrito de Ciudad Lineal",
+      "score": 71,
+      "types": [
+        "Q3814115"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Empresa Municipal de Transportes de Madrid (Q1094755) for cells containing \"EMPRESA MUNICIPAL DE TRANSPORTES S.A.\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "EMPRESA MUNICIPAL DE TRANSPORTES S.A.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1094755",
+      "name": "Empresa Municipal de Transportes de Madrid",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Madrid Destino (Q57725558) for cells containing \"MADRID DESTINO, CULTURA, TURISMO Y NEGOCIO, S.A.\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "MADRID DESTINO, CULTURA, TURISMO Y NEGOCIO, S.A.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q57725558",
+      "name": "Madrid Destino",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Junta Municipal del Distrito de Moncloa-Aravaca (Q56164038) for cells containing \"DISTRITO DE MONCLOA-ARAVACA\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "DISTRITO DE MONCLOA-ARAVACA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q56164038",
+      "name": "Junta Municipal del Distrito de Moncloa-Aravaca",
+      "score": 74,
+      "types": [
+        "Q3814115"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"ÁREA DE GOBIERNO DE FAMILIAS, IGUALDAD Y BIENESTAR SOCIAL\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "ÁREA DE GOBIERNO DE FAMILIAS, IGUALDAD Y BIENESTAR SOCIAL",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"AREA DE GOBIERNO DE PORTAVOZ, SEGURIDAD Y EMERGENCIAS\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "AREA DE GOBIERNO DE PORTAVOZ, SEGURIDAD Y EMERGENCIAS",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"ÁREA DELEGADA DE DEPORTE\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "ÁREA DELEGADA DE DEPORTE",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Club de Campo Villa de Madrid (Q1103198) for cells containing \"EMPRESA MIXTA CLUB DE CAMPO VILLA DE MADRID, S.A.\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "EMPRESA MIXTA CLUB DE CAMPO VILLA DE MADRID, S.A.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1103198",
+      "name": "Club de Campo Villa de Madrid",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Junta Municipal del Distrito de Latina (Q56164656) for cells containing \"DISTRITO DE LATINA\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "DISTRITO DE LATINA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q56164656",
+      "name": "Junta Municipal del Distrito de Latina",
+      "score": 64,
+      "types": [
+        "Q3814115"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Junta Municipal del Distrito de Carabanchel (Q56192449) for cells containing \"DISTRITO DE CARABANCHEL\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "DISTRITO DE CARABANCHEL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q56192449",
+      "name": "Junta Municipal del Distrito de Carabanchel",
+      "score": 70,
+      "types": [
+        "Q3814115"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Empresa Municipal de Servicios Funerarios y Cementerios de Madrid (Q62023696) for cells containing \"EMPRESA MUNICIPAL DE SERVICIOS FUNERARIOS Y CEMENTERIOS DE MADRID, S.A.\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "EMPRESA MUNICIPAL DE SERVICIOS FUNERARIOS Y CEMENTERIOS DE MADRID, S.A.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q62023696",
+      "name": "Empresa Municipal de Servicios Funerarios y Cementerios de Madrid",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"ÁREA DE GOBIERNO DE CULTURA, TURISMO Y DEPORTE\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "ÁREA DE GOBIERNO DE CULTURA, TURISMO Y DEPORTE",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"ÁREA DE GOBIERNO DE MEDIO AMBIENTE Y MOVILIDAD\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "ÁREA DE GOBIERNO DE MEDIO AMBIENTE Y MOVILIDAD",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic San Blas (Q2001937) for cells containing \"DISTRITO DE SAN BLAS-CANILLEJAS\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "DISTRITO DE SAN BLAS-CANILLEJAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2001937",
+      "name": "San Blas",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"ÁREA DE GOBIERNO DE ECONOMIA, INNOVACION Y EMPLEO\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "ÁREA DE GOBIERNO DE ECONOMIA, INNOVACION Y EMPLEO",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Barajas district hall (Q56705807) for cells containing \"DISTRITO DE BARAJAS\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "DISTRITO DE BARAJAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q56705807",
+      "name": "Barajas district hall",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"INFORMÁTICA AYUNTAMIENTO DE MADRID\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "INFORMÁTICA AYUNTAMIENTO DE MADRID",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Junta Municipal del Distrito de Tetuán (Q56163839) for cells containing \"DISTRITO DE TETUÁN\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "DISTRITO DE TETUÁN",
+    "judgment": "matched",
+    "match": {
+      "id": "Q56163839",
+      "name": "Junta Municipal del Distrito de Tetuán",
+      "score": 64,
+      "types": [
+        "Q3814115"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"ÁREA DE GOBIERNO DE OBRAS Y EQUIPAMIENTOS\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "ÁREA DE GOBIERNO DE OBRAS Y EQUIPAMIENTOS",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Junta Municipal del Distrito de Fuencarral-El Pardo (Q56190433) for cells containing \"DISTRITO DE FUENCARRAL - EL PARDO\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "DISTRITO DE FUENCARRAL - EL PARDO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q56190433",
+      "name": "Junta Municipal del Distrito de Fuencarral-El Pardo",
+      "score": 76,
+      "types": [
+        "Q3814115"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Junta Municipal del Distrito de Hortaleza (Q56190091) for cells containing \"DISTRITO DE HORTALEZA\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "DISTRITO DE HORTALEZA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q56190091",
+      "name": "Junta Municipal del Distrito de Hortaleza",
+      "score": 68,
+      "types": [
+        "Q3814115"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Mercamadrid (Q6010695) for cells containing \"MERCAMADRID, S.A.\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "MERCAMADRID, S.A.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6010695",
+      "name": "Mercamadrid",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Junta Municipal del Distrito de Salamanca (Q56190957) for cells containing \"DISTRITO DE SALAMANCA\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "DISTRITO DE SALAMANCA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q56190957",
+      "name": "Junta Municipal del Distrito de Salamanca",
+      "score": 68,
+      "types": [
+        "Q3814115"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Junta Municipal del Distrito de Puente de Vallecas (Q56191848) for cells containing \"DISTRITO DE PUENTE DE VALLECAS\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "DISTRITO DE PUENTE DE VALLECAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q56191848",
+      "name": "Junta Municipal del Distrito de Puente de Vallecas",
+      "score": 77,
+      "types": [
+        "Q3814115"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"ÁREA DE GOBIERNO DE DESARROLLO URBANO\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "ÁREA DE GOBIERNO DE DESARROLLO URBANO",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"ÁREA DELEGADA DE VIVIENDA\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "ÁREA DELEGADA DE VIVIENDA",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"ÁREA DE GOBIERNO DE HACIENDA Y PERSONAL\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "ÁREA DE GOBIERNO DE HACIENDA Y PERSONAL",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Junta Municipal del Distrito de Moratalaz (Q56191300) for cells containing \"DISTRITO DE MORATALAZ\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "DISTRITO DE MORATALAZ",
+    "judgment": "matched",
+    "match": {
+      "id": "Q56191300",
+      "name": "Junta Municipal del Distrito de Moratalaz",
+      "score": 68,
+      "types": [
+        "Q3814115"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"ÁREA DELEGADA DE EMPRENDIMIENTO, EMPLEO E INNOVACIÓN\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "ÁREA DELEGADA DE EMPRENDIMIENTO, EMPLEO E INNOVACIÓN",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Junta Municipal del Distrito de Arganzuela (Q56191719) for cells containing \"DISTRITO DE ARGANZUELA\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "DISTRITO DE ARGANZUELA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q56191719",
+      "name": "Junta Municipal del Distrito de Arganzuela",
+      "score": 69,
+      "types": [
+        "Q3814115"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Centro Madrid Salud (Q97182180) for cells containing \"MADRID SALUD\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "MADRID SALUD",
+    "judgment": "matched",
+    "match": {
+      "id": "Q97182180",
+      "name": "Centro Madrid Salud",
+      "score": 38.5,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"ÁREA DELEGADA DE COORDINACION TERRITORIAL, TRANSPARENCIA Y PARTICIPACION CIUDADANA\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "ÁREA DELEGADA DE COORDINACION TERRITORIAL, TRANSPARENCIA Y PARTICIPACION CIUDADANA",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Agencia Estatal de Administración Tributaria (Q4891205) for cells containing \"AGENCIA TRIBUTARIA MADRID\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "AGENCIA TRIBUTARIA MADRID",
+    "judgment": "matched",
+    "match": {
+      "id": "Q4891205",
+      "name": "Agencia Estatal de Administración Tributaria",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Junta Municipal del Distrito de Villa de Vallecas (Q56191978) for cells containing \"DISTRITO DE VILLA DE VALLECAS\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "DISTRITO DE VILLA DE VALLECAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q56191978",
+      "name": "Junta Municipal del Distrito de Villa de Vallecas",
+      "score": 76,
+      "types": [
+        "Q3814115"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Empresa Municipal de la Vivienda y Suelo de Madrid (Q30267242) for cells containing \"EMPRESA MUNICIPAL DE LA VIVIENDA Y SUELO DE MADRID, S.A.\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "EMPRESA MUNICIPAL DE LA VIVIENDA Y SUELO DE MADRID, S.A.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q30267242",
+      "name": "Empresa Municipal de la Vivienda y Suelo de Madrid",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Junta Municipal del Distrito de Chamartín (Q56192459) for cells containing \"DISTRITO DE CHAMARTÍN\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "DISTRITO DE CHAMARTÍN",
+    "judgment": "matched",
+    "match": {
+      "id": "Q56192459",
+      "name": "Junta Municipal del Distrito de Chamartín",
+      "score": 68,
+      "types": [
+        "Q3814115"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Junta Municipal del Distrito de Chamberí (Q56164429) for cells containing \"DISTRITO DE CHAMBERÍ\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "DISTRITO DE CHAMBERÍ",
+    "judgment": "matched",
+    "match": {
+      "id": "Q56164429",
+      "name": "Junta Municipal del Distrito de Chamberí",
+      "score": 67,
+      "types": [
+        "Q3814115"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Usera (Q953368) for cells containing \"DISTRITO DE USERA\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "DISTRITO DE USERA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q953368",
+      "name": "Usera",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"COORDINACIÓN GENERAL DE LA ALCALDIA\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "COORDINACIÓN GENERAL DE LA ALCALDIA",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"PRESIDENCIA DEL PLENO\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "PRESIDENCIA DEL PLENO",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"OFICINA MUNICIPAL CONTRA EL FRAUDE Y LA CORRUPCION\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "OFICINA MUNICIPAL CONTRA EL FRAUDE Y LA CORRUPCION",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"ÁREA DELEGADA DE INTERNACIONALIZACION Y COOPERACIÓN\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "ÁREA DELEGADA DE INTERNACIONALIZACION Y COOPERACIÓN",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"ÁREA DE GOBIERNO DE LA VICEALCALDIA\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "ÁREA DE GOBIERNO DE LA VICEALCALDIA",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"MADRID CALLE 30.S.A.\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "MADRID CALLE 30.S.A.",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Tribunales Económico-Administrativos de España (Q6152406) for cells containing \"TRIBUNAL ECONÓMICO-ADMINISTRATIVO\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "TRIBUNAL ECONÓMICO-ADMINISTRATIVO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6152406",
+      "name": "Tribunales Económico-Administrativos de España",
+      "score": 42,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"AGENCIA DE ACTIVIDADES\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "AGENCIA DE ACTIVIDADES",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Junta Municipal del Distrito de Villaverde (Q56190652) for cells containing \"DISTRITO DE VILLAVERDE\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "DISTRITO DE VILLAVERDE",
+    "judgment": "matched",
+    "match": {
+      "id": "Q56190652",
+      "name": "Junta Municipal del Distrito de Villaverde",
+      "score": 69,
+      "types": [
+        "Q3814115"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"AGENCIA PARA EL EMPLEO DE MADRID\" in column Section",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Section: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Section"
+        }
+      ]
+    },
+    "columnName": "Section",
+    "similarValue": "AGENCIA PARA EL EMPLEO DE MADRID",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column Contracting_Body to type Q12737077",
+    "columnName": "Contracting_Body",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q12737077",
+        "name": "occupation"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic director (Q1162163) for cells containing \"DIRECTOR\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "DIRECTOR",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1162163",
+      "name": "director",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic coordinator (Q20481199) for cells containing \"COORDINADOR/A DISTRITO DE RETIRO\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "COORDINADOR/A DISTRITO DE RETIRO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20481199",
+      "name": "coordinator",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic coordinator (Q20481199) for cells containing \"COORDINADOR/A DISTRITO CENTRO\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "COORDINADOR/A DISTRITO CENTRO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20481199",
+      "name": "coordinator",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic coordinator (Q20481199) for cells containing \"COORDINADOR/A DISTRITO DE CIUDAD LINEAL\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "COORDINADOR/A DISTRITO DE CIUDAD LINEAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20481199",
+      "name": "coordinator",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic operations management (Q1423657) for cells containing \"DIRECCION PRODUCCION Y COORDINACION TECNICA\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "DIRECCION PRODUCCION Y COORDINACION TECNICA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1423657",
+      "name": "operations management",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic coordinator (Q20481199) for cells containing \"COORDINADOR/A DISTRITO DE MONCLOA- ARAVACA\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "COORDINADOR/A DISTRITO DE MONCLOA- ARAVACA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20481199",
+      "name": "coordinator",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"DIRECTOR/A ATENCION PRIMARIA, INTERVENCION COMUNITARIA Y EMERGENCIA SOCIAL\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "DIRECTOR/A ATENCION PRIMARIA, INTERVENCION COMUNITARIA Y EMERGENCIA SOCIAL",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"DIRECTOR/A GENERAL EMERGENCIAS Y PROTECCION CIVIL\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "DIRECTOR/A GENERAL EMERGENCIAS Y PROTECCION CIVIL",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"GERENCIA TEATRO CIRCO PRICE\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "GERENCIA TEATRO CIRCO PRICE",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic director general (Q1501800) for cells containing \"DIRECTOR/A GENERAL DEPORTE\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "DIRECTOR/A GENERAL DEPORTE",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1501800",
+      "name": "director general",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"GERENCIA TEATRO FERNAN GOMEZ. CENTRO CULTURAL LA VILLA\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "GERENCIA TEATRO FERNAN GOMEZ. CENTRO CULTURAL LA VILLA",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"GERENCIA CENTROCENTRO\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "GERENCIA CENTROCENTRO",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic coordinator (Q20481199) for cells containing \"COORDINADOR/A DISTRITO DE LATINA\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "COORDINADOR/A DISTRITO DE LATINA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20481199",
+      "name": "coordinator",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic coordinator (Q20481199) for cells containing \"COORDINADOR/A DISTRITO DE CARABANCHEL\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "COORDINADOR/A DISTRITO DE CARABANCHEL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20481199",
+      "name": "coordinator",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic director general (Q1501800) for cells containing \"DIRECTOR/A GENERAL LA POLICIA MUNICIPAL\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "DIRECTOR/A GENERAL LA POLICIA MUNICIPAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1501800",
+      "name": "director general",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"GERENCIA TEATRO ESPA?OL\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "GERENCIA TEATRO ESPA?OL",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic secretary (Q80687) for cells containing \"SECRETARIO/A TECNICO AREA DE GOBIERNO DE PORTAVOZ, SEGURIDAD Y EMERGENCIAS\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "SECRETARIO/A TECNICO AREA DE GOBIERNO DE PORTAVOZ, SEGURIDAD Y EMERGENCIAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q80687",
+      "name": "secretary",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic manager (Q2462658) for cells containing \"GERENTE\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "GERENTE",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2462658",
+      "name": "manager",
+      "score": 100,
+      "types": [
+        "Q28640",
+        "Q4164871"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic director general (Q1501800) for cells containing \"DIRECTOR/A GENERAL PROGRAMAS Y ACTIVIDADES CULTURALES\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "DIRECTOR/A GENERAL PROGRAMAS Y ACTIVIDADES CULTURALES",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1501800",
+      "name": "director general",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic director general (Q1501800) for cells containing \"DIRECTOR/A GENERAL BIBLIOTECAS,ARCHIVOS Y MUSEOS\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "DIRECTOR/A GENERAL BIBLIOTECAS,ARCHIVOS Y MUSEOS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1501800",
+      "name": "director general",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic director general (Q1501800) for cells containing \"DIRECTOR/A GENERAL GESTION Y VIGILANCIA DE LA CIRCULACION\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "DIRECTOR/A GENERAL GESTION Y VIGILANCIA DE LA CIRCULACION",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1501800",
+      "name": "director general",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic public relations (Q133080) for cells containing \"DIRECCION COMUNICACION\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "DIRECCION COMUNICACION",
+    "judgment": "matched",
+    "match": {
+      "id": "Q133080",
+      "name": "public relations",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic managing director (Q19940089) for cells containing \"DIRECTOR/A GERENTE  AGENCIA PARA EL EMPLEO MADRID\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "DIRECTOR/A GERENTE  AGENCIA PARA EL EMPLEO MADRID",
+    "judgment": "matched",
+    "match": {
+      "id": "Q19940089",
+      "name": "managing director",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic chief executive officer (Q484876) for cells containing \"CONSEJERO EGADO\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "CONSEJERO EGADO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q484876",
+      "name": "chief executive officer",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic management (Q2920921) for cells containing \"GERENCIA MATADERO\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "GERENCIA MATADERO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2920921",
+      "name": "management",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic financial management (Q4738155) for cells containing \"DIRECCION ECONOMICA FINANCIERA\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "DIRECCION ECONOMICA FINANCIERA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q4738155",
+      "name": "financial management",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic coordinator (Q20481199) for cells containing \"COORDINADOR/A DISTRITO DE SAN BLAS- CANILLEJAS\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "COORDINADOR/A DISTRITO DE SAN BLAS- CANILLEJAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20481199",
+      "name": "coordinator",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic director general (Q1501800) for cells containing \"DIRECTOR/A GENERAL COMERCIO Y PARTENARIADO\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "DIRECTOR/A GENERAL COMERCIO Y PARTENARIADO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1501800",
+      "name": "director general",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic coordinator (Q20481199) for cells containing \"COORDINADOR/A DISTRITO DE BARAJAS\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "COORDINADOR/A DISTRITO DE BARAJAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20481199",
+      "name": "coordinator",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic coordinator (Q20481199) for cells containing \"COORDINADOR/A DISTRITO DE TETUAN\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "COORDINADOR/A DISTRITO DE TETUAN",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20481199",
+      "name": "coordinator",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic coordinator (Q20481199) for cells containing \"COORDINADOR/A DISTRITO DE FUENCARRAL-EL PARDO\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "COORDINADOR/A DISTRITO DE FUENCARRAL-EL PARDO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20481199",
+      "name": "coordinator",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic coordinator (Q20481199) for cells containing \"COORDINADOR/A DISTRITO DE HORTALEZA\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "COORDINADOR/A DISTRITO DE HORTALEZA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20481199",
+      "name": "coordinator",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic security management (Q3954104) for cells containing \"DIRECCION SEGURIDAD Y EMERGENCIAS\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "DIRECCION SEGURIDAD Y EMERGENCIAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3954104",
+      "name": "security management",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic director general (Q1501800) for cells containing \"DIRECTOR/A GENERAL FAMILIAS,INFANCIA,EDUCACION Y JUVENTUD\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "DIRECTOR/A GENERAL FAMILIAS,INFANCIA,EDUCACION Y JUVENTUD",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1501800",
+      "name": "director general",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic director general (Q1501800) for cells containing \"DIRECTOR/A GENERAL CONSERVACION DE LAS VIAS PUBLICAS\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "DIRECTOR/A GENERAL CONSERVACION DE LAS VIAS PUBLICAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1501800",
+      "name": "director general",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic director general (Q1501800) for cells containing \"DIRECTOR/A GENERAL ECONOMIA\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "DIRECTOR/A GENERAL ECONOMIA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1501800",
+      "name": "director general",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic director general (Q1501800) for cells containing \"DIRECTOR/A GENERAL SOSTENIBILIDAD Y CONTROL AMBIENTAL\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "DIRECTOR/A GENERAL SOSTENIBILIDAD Y CONTROL AMBIENTAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1501800",
+      "name": "director general",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic director general (Q1501800) for cells containing \"DIRECTOR/A GENERAL GESTION AGUA Y ZONAS VERDES\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "DIRECTOR/A GENERAL GESTION AGUA Y ZONAS VERDES",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1501800",
+      "name": "director general",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic coordinator (Q20481199) for cells containing \"COORDINADOR/A DISTRITO DE SALAMANCA\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "COORDINADOR/A DISTRITO DE SALAMANCA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20481199",
+      "name": "coordinator",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic coordinator (Q20481199) for cells containing \"COORDINADOR/A DISTRITO DE PUENTE DE VALLECAS\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "COORDINADOR/A DISTRITO DE PUENTE DE VALLECAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20481199",
+      "name": "coordinator",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic coordinator (Q20481199) for cells containing \"COORDINADOR/A GENERAL ECONOMIA, COMERCIO, CONSUMO Y PARTENARIADO\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "COORDINADOR/A GENERAL ECONOMIA, COMERCIO, CONSUMO Y PARTENARIADO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20481199",
+      "name": "coordinator",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic general secretary (Q6501749) for cells containing \"SECRETARIO/A GENERAL TECNICO/A LA COORDINACION GENERAL DE LA ALCALDIA\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SECRETARIO/A GENERAL TECNICO/A LA COORDINACION GENERAL DE LA ALCALDIA",
+                "l": "SECRETARIO/A GENERAL TECNICO/A LA COORDINACION GENERAL DE LA ALCALDIA"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "SECRETARIO/A GENERAL TECNICO/A LA COORDINACION GENERAL DE LA ALCALDIA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6501749",
+      "name": "general secretary",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic general secretary (Q6501749) for cells containing \"SECRETARIO/A GENERAL TECNICO AREA DE GOBIERNO DE HACIENDA Y PERSONAL\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SECRETARIO/A GENERAL TECNICO AREA DE GOBIERNO DE HACIENDA Y PERSONAL",
+                "l": "SECRETARIO/A GENERAL TECNICO AREA DE GOBIERNO DE HACIENDA Y PERSONAL"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "SECRETARIO/A GENERAL TECNICO AREA DE GOBIERNO DE HACIENDA Y PERSONAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6501749",
+      "name": "general secretary",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic general secretary (Q6501749) for cells containing \"SECRETARIO/A GENERAL TECNICO/A AREA DE GOBIERNO DE VICEALCALDIA\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SECRETARIO/A GENERAL TECNICO/A AREA DE GOBIERNO DE VICEALCALDIA",
+                "l": "SECRETARIO/A GENERAL TECNICO/A AREA DE GOBIERNO DE VICEALCALDIA"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "SECRETARIO/A GENERAL TECNICO/A AREA DE GOBIERNO DE VICEALCALDIA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6501749",
+      "name": "general secretary",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic general secretary (Q6501749) for cells containing \"SECRETARIO/A GENERAL TECNICO/A AREA DE GOBIERNO DE ECONOMIA, INNOVACION Y EMPLEO\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SECRETARIO/A GENERAL TECNICO/A AREA DE GOBIERNO DE ECONOMIA, INNOVACION Y EMPLEO",
+                "l": "SECRETARIO/A GENERAL TECNICO/A AREA DE GOBIERNO DE ECONOMIA, INNOVACION Y EMPLEO"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "SECRETARIO/A GENERAL TECNICO/A AREA DE GOBIERNO DE ECONOMIA, INNOVACION Y EMPLEO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6501749",
+      "name": "general secretary",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic general secretary (Q6501749) for cells containing \"SECRETARIO/A GENERAL TECNICO AREA DE GOBIERNO DE MEDIO AMBIENTE Y MOVILIDAD\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SECRETARIO/A GENERAL TECNICO AREA DE GOBIERNO DE MEDIO AMBIENTE Y MOVILIDAD",
+                "l": "SECRETARIO/A GENERAL TECNICO AREA DE GOBIERNO DE MEDIO AMBIENTE Y MOVILIDAD"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "SECRETARIO/A GENERAL TECNICO AREA DE GOBIERNO DE MEDIO AMBIENTE Y MOVILIDAD",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6501749",
+      "name": "general secretary",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic general secretary (Q6501749) for cells containing \"SECRETARIO/A GENERAL TECNICO AREA DE GOBIERNO DE FAMILIA, IGUALDAD Y BIENESTAR SOCIAL\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SECRETARIO/A GENERAL TECNICO AREA DE GOBIERNO DE FAMILIA, IGUALDAD Y BIENESTAR SOCIAL",
+                "l": "SECRETARIO/A GENERAL TECNICO AREA DE GOBIERNO DE FAMILIA, IGUALDAD Y BIENESTAR SOCIAL"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "SECRETARIO/A GENERAL TECNICO AREA DE GOBIERNO DE FAMILIA, IGUALDAD Y BIENESTAR SOCIAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6501749",
+      "name": "general secretary",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic general secretary (Q6501749) for cells containing \"SECRETARIO/A GENERAL TECNICO AREA DE GOBIERNO DE CULTURA, TURISMO Y DEPORTE\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SECRETARIO/A GENERAL TECNICO AREA DE GOBIERNO DE CULTURA, TURISMO Y DEPORTE",
+                "l": "SECRETARIO/A GENERAL TECNICO AREA DE GOBIERNO DE CULTURA, TURISMO Y DEPORTE"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "SECRETARIO/A GENERAL TECNICO AREA DE GOBIERNO DE CULTURA, TURISMO Y DEPORTE",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6501749",
+      "name": "general secretary",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic general secretary (Q6501749) for cells containing \"SECRETARIO/A GENERAL TECNICO AREA DE DESARROLLO URBANO\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SECRETARIO/A GENERAL TECNICO AREA DE DESARROLLO URBANO",
+                "l": "SECRETARIO/A GENERAL TECNICO AREA DE DESARROLLO URBANO"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "SECRETARIO/A GENERAL TECNICO AREA DE DESARROLLO URBANO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6501749",
+      "name": "general secretary",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic general secretary (Q6501749) for cells containing \"SECRETARIO/A GENERAL TECNICO AG MEDIO AMBIENTE Y MOVILIDAD\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SECRETARIO/A GENERAL TECNICO AG MEDIO AMBIENTE Y MOVILIDAD",
+                "l": "SECRETARIO/A GENERAL TECNICO AG MEDIO AMBIENTE Y MOVILIDAD"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "SECRETARIO/A GENERAL TECNICO AG MEDIO AMBIENTE Y MOVILIDAD",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6501749",
+      "name": "general secretary",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic general secretary (Q6501749) for cells containing \"SECRETARIO/A GENERAL TECNICO A.G. ECONOMIA Y HACIENDA\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SECRETARIO/A GENERAL TECNICO A.G. ECONOMIA Y HACIENDA",
+                "l": "SECRETARIO/A GENERAL TECNICO A.G. ECONOMIA Y HACIENDA"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "SECRETARIO/A GENERAL TECNICO A.G. ECONOMIA Y HACIENDA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6501749",
+      "name": "general secretary",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic general secretary (Q6501749) for cells containing \"SECRETARIO/A GENERAL TECNICO A.G. CULTURA Y DEPORTES\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SECRETARIO/A GENERAL TECNICO A.G. CULTURA Y DEPORTES",
+                "l": "SECRETARIO/A GENERAL TECNICO A.G. CULTURA Y DEPORTES"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "SECRETARIO/A GENERAL TECNICO A.G. CULTURA Y DEPORTES",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6501749",
+      "name": "general secretary",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic general secretary (Q6501749) for cells containing \"SECRETARIO/A GENERAL PLENO\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SECRETARIO/A GENERAL PLENO",
+                "l": "SECRETARIO/A GENERAL PLENO"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "SECRETARIO/A GENERAL PLENO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6501749",
+      "name": "general secretary",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic general secretary (Q6501749) for cells containing \"SECRETARIO/A GEENERAL TECNICO AREA DE GOBIERNO DE OBRAS Y EQUIPAMIENTOS\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SECRETARIO/A GEENERAL TECNICO AREA DE GOBIERNO DE OBRAS Y EQUIPAMIENTOS",
+                "l": "SECRETARIO/A GEENERAL TECNICO AREA DE GOBIERNO DE OBRAS Y EQUIPAMIENTOS"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "SECRETARIO/A GEENERAL TECNICO AREA DE GOBIERNO DE OBRAS Y EQUIPAMIENTOS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6501749",
+      "name": "general secretary",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic council (Q4358176) for cells containing \"CONCEJAL/A PRESIDENTE/A DISTRITO  DE  CIUDAD LINEAL\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CONCEJAL/A PRESIDENTE/A DISTRITO  DE  CIUDAD LINEAL",
+                "l": "CONCEJAL/A PRESIDENTE/A DISTRITO  DE  CIUDAD LINEAL"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "CONCEJAL/A PRESIDENTE/A DISTRITO  DE  CIUDAD LINEAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q4358176",
+      "name": "council",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DIRECTOR/A GENERAL COMERCIO Y HOSTELERIA",
+          "DIRECTOR/A GENERAL INNOVACION Y EMPRENDIMIENTO",
+          "DIRECTOR/A GENERAL PATRIMONIO CULTURAL",
+          "DIRECTOR/A GENERAL PLANIFICACION E INFRAESTRUCTURAS DE MOVILIDAD",
+          "DIRECTOR/A GENERAL COMUNICACION",
+          "DIRECTOR/A GENERAL PLANIFICACION ESTRATEGICA",
+          "DIRECTOR/A GENERAL CONTRATACION Y SERVICIOS",
+          "DIRECTOR/A GENERAL SERVICIOS DE LIMPIEZA Y RESIDUOS",
+          "DIRECTOR/A GENERAL ARQUITECTURA Y CONSERVACION PATRIMONIO",
+          "DIRECTOR/A GENERAL ATENCION CIUDADANA",
+          "DIRECTOR/A GENERAL ESPACIO PUBLICO, OBRAS E INFRAESTRUCTURAS",
+          "DIRECTOR/A GENERAL PLANIFICACION Y PROGRAMACION DE RECURSOS HUMANOS",
+          "DIRECTOR/A GENERAL PREVENCION Y ATENCION FRENTE A LA VIOLENCIA DE GENERO",
+          "DIRECTOR/A GENERAL CONCILIACION Y COOPERACION INSTITUCIONAL PARA LA IGUALDAD DE OPORTUNIDADES",
+          "DIRECTOR/A GENERAL INONOVACION Y ESTRATEGIA SOCIAL",
+          "DIRECTOR/A GENERAL MAYORES",
+          "DIRECTOR/A GENERAL TRANSPARENCIA",
+          "DIRECTOR/A GENERAL COOPERACION Y CIUDADANIA GLOBAL",
+          "DIRECTOR/A GENERAL FAMILIA, INFANCIA, EDUCACION Y JUVENTUD",
+          "DIRECTOR/A GENERAL VIVIENDA, REHABILITACION Y REGENERACION",
+          "DIRECTOR/A GENERAL COORDINACION TERRITORIAL Y DESCONCENTRACION",
+          "DIRECTOR/A GENERAL GESTION URBANISTICA",
+          "DIRECTOR/A GENERAL LA OFICINA MUNICIPAL CONTRA EL FRAUDE Y LA CORRUPCION",
+          "DIRECTOR/A GENERAL PREVENCION Y ATENCION FRENTE A LA VIOLENCIA DE GENERO, IGUALDAD Y DIVERSIDAD"
+        ],
+        "to": "DIRECTOR/A GENERAL "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "COORDINADOR/A DISTRITO DE MORATALAZ",
+          "COORDINADOR/A DISTRITO DE CHAMBERI",
+          "COORDINADOR/A DISTRITO DE ARGANZUELA",
+          "COORDINADOR/A DISTRITO DE VILLA DE VALLECAS",
+          "COORDINADOR/A DISTRITO DE CHAMARTIN",
+          "COORDINADOR/A DISTRITO DE USERA",
+          "COORDINADOR/A DISTRITO DE VILLAVERDE"
+        ],
+        "to": "COORDINADOR/A "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "COORDINADOR/A GENERAL SEGURIDAD Y EMERGENCIAS",
+          "COORDINADOR/A GENERAL LA ALCALDIA"
+        ],
+        "to": "COORDINADOR/A GENERAL "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CONCEJAL/A-PRESIDENTE/A DISTRITO DE CHAMBERI",
+          "CONCEJAL/A-PRESIDENTE/A DISTRITO DE MONCLOA-ARAVACA"
+        ],
+        "to": "CONCEJAL/A-PRESIDENTE/A "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DELEGADO/A AREA DE GOBIERNO DE HACIENDA Y PERSONAL",
+          "DELEGADO/A AREA DE GOBIERNO DE OBRAS Y EQUIPAMIENTOS"
+        ],
+        "to": "DELEGADO/A "
+      }
+    ]
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic council (Q4358176) for cells containing \"CONCEJAL/A-PRESIDENTE/A \" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CONCEJAL/A-PRESIDENTE/A ",
+                "l": "CONCEJAL/A-PRESIDENTE/A "
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "CONCEJAL/A-PRESIDENTE/A ",
+    "judgment": "matched",
+    "match": {
+      "id": "Q4358176",
+      "name": "council",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic coordinator (Q20481199) for cells containing \"COORDINADOR/A \" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "COORDINADOR/A ",
+                "l": "COORDINADOR/A "
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "COORDINADOR/A ",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20481199",
+      "name": "coordinator",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic coordinator (Q20481199) for cells containing \"COORDINADOR/A GENERAL \" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "COORDINADOR/A GENERAL ",
+                "l": "COORDINADOR/A GENERAL "
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "COORDINADOR/A GENERAL ",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20481199",
+      "name": "coordinator",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic chairperson (Q140686) for cells containing \"CONSEJO ADMINISTRACION\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CONSEJO ADMINISTRACION",
+                "l": "CONSEJO ADMINISTRACION"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "CONSEJO ADMINISTRACION",
+    "judgment": "matched",
+    "match": {
+      "id": "Q140686",
+      "name": "chairperson",
+      "score": 71,
+      "types": [
+        "Q11488158",
+        "Q12737077",
+        "Q4164871"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic delegate (Q994779) for cells containing \"DELEGADO/A \" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DELEGADO/A ",
+                "l": "DELEGADO/A "
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "DELEGADO/A ",
+    "judgment": "matched",
+    "match": {
+      "id": "Q994779",
+      "name": "delegate",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic director general (Q1501800) for cells containing \"DIRECCION GENERAL PARTICIPACION CIUDADANA\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DIRECCION GENERAL PARTICIPACION CIUDADANA",
+                "l": "DIRECCION GENERAL PARTICIPACION CIUDADANA"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "DIRECCION GENERAL PARTICIPACION CIUDADANA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1501800",
+      "name": "director general",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic human resource management (Q1056396) for cells containing \"DIRECCION ORGANIZACION Y RRHH\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DIRECCION ORGANIZACION Y RRHH",
+                "l": "DIRECCION ORGANIZACION Y RRHH"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "DIRECCION ORGANIZACION Y RRHH",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1056396",
+      "name": "human resource management",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic tourism management (Q15851294) for cells containing \"DIRECCION TURISMO\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DIRECCION TURISMO",
+                "l": "DIRECCION TURISMO"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "DIRECCION TURISMO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q15851294",
+      "name": "tourism management",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic director general (Q1501800) for cells containing \"DIRECTOR/A GENERAL \" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DIRECTOR/A GENERAL ",
+                "l": "DIRECTOR/A GENERAL "
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "DIRECTOR/A GENERAL ",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1501800",
+      "name": "director general",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic director (Q1162163) for cells containing \"DIRECTOR/A OOAA AGENCIA TRIBUTARIA MADRID\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DIRECTOR/A OOAA AGENCIA TRIBUTARIA MADRID",
+                "l": "DIRECTOR/A OOAA AGENCIA TRIBUTARIA MADRID"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "DIRECTOR/A OOAA AGENCIA TRIBUTARIA MADRID",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1162163",
+      "name": "director",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"GERENCIA CONDE DUQUE\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "GERENCIA CONDE DUQUE",
+                "l": "GERENCIA CONDE DUQUE"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "GERENCIA CONDE DUQUE",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"GERENCIA MEDIALAB-PRADO\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "GERENCIA MEDIALAB-PRADO",
+                "l": "GERENCIA MEDIALAB-PRADO"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "GERENCIA MEDIALAB-PRADO",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic manager (Q2462658) for cells containing \"GERENTE AGENCIA DE ACTIVIDADES\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "GERENTE AGENCIA DE ACTIVIDADES",
+                "l": "GERENTE AGENCIA DE ACTIVIDADES"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "GERENTE AGENCIA DE ACTIVIDADES",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2462658",
+      "name": "manager",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic manager (Q2462658) for cells containing \"GERENTE INFORMATICA AYUNTAMIENTO MADRID\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "GERENTE INFORMATICA AYUNTAMIENTO MADRID",
+                "l": "GERENTE INFORMATICA AYUNTAMIENTO MADRID"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "GERENTE INFORMATICA AYUNTAMIENTO MADRID",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2462658",
+      "name": "manager",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic manager (Q2462658) for cells containing \"GERENTE MADRID SALUD\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "GERENTE MADRID SALUD",
+                "l": "GERENTE MADRID SALUD"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "GERENTE MADRID SALUD",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2462658",
+      "name": "manager",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"INSTITUTO MUNICIPAL CONSUMO\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "INSTITUTO MUNICIPAL CONSUMO",
+                "l": "INSTITUTO MUNICIPAL CONSUMO"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "INSTITUTO MUNICIPAL CONSUMO",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic chairperson (Q140686) for cells containing \"PRESIDENTE/A TRIBUNAL ECONOMICO-ADMINISTRATIVO\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "PRESIDENTE/A TRIBUNAL ECONOMICO-ADMINISTRATIVO",
+                "l": "PRESIDENTE/A TRIBUNAL ECONOMICO-ADMINISTRATIVO"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "PRESIDENTE/A TRIBUNAL ECONOMICO-ADMINISTRATIVO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q140686",
+      "name": "chairperson",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"SUBDIRECCION INFRAESTRUCTURAS\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        },
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "SUBDIRECCION INFRAESTRUCTURAS",
+                "l": "SUBDIRECCION INFRAESTRUCTURAS"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Contracting_Body",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Contracting_Body"
+        }
+      ]
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "SUBDIRECCION INFRAESTRUCTURAS",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"DIRECTOR/A ATENCION PRIMARIA, INTERVENCION COMUNITARIA Y EMERGENCIA SOCIAL\" in column Contracting_Body",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Contracting_Body",
+    "similarValue": "DIRECTOR/A ATENCION PRIMARIA, INTERVENCION COMUNITARIA Y EMERGENCIA SOCIAL",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column wikiSection at index 3 based on column Section using expression grel:\"http://wikidata.org/entity/\"+cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "wikiSection",
+    "columnInsertIndex": 3,
+    "baseColumnName": "Section",
+    "expression": "grel:\"http://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column wikiContractingBody at index 6 based on column Contracting_Body using expression grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "wikiContractingBody",
+    "columnInsertIndex": 6,
+    "baseColumnName": "Contracting_Body",
+    "expression": "grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank"
+  }
+]

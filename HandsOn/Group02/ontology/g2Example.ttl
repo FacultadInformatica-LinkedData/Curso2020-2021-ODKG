@@ -1,29 +1,57 @@
-:comp1 a :Publicorg;
-	rdfs:label "MADRID DESTINO, CULTURA, TURISMO Y NEGOCIO, S.A." ;
+@prefix : <http://MadridPublicContracts/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema/> .
+@prefix vocab: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/>.
+
+:MADRID DESTINO, CULTURA, TURISMO Y NEGOCIO, S.A.a :Contractor;
 	:orgType "EMPRESAS".
 	
-:comp2 a :Org;
-	rdfs:label "EL ANGEL DE PEKIN" ;
-	:hasNID "B82917063".
+:B82917063 a :Contractee;
+	:nameSR "EL ANGEL DE PEKIN" .
 	
 	
-:contract1 a :Contract;
-	:contractor :comp1;
-	:contractee :comp2;
+:202000001 a :Contract;
+	:hasContractor :MADRID DESTINO, CULTURA, TURISMO Y NEGOCIO, S.A. ;
+	:hasContractee :B82917063 ;
 	:hasYear "2020"^^xsd:gYear;
-	:hasMonth "Enero";
-	:hasContractNumber "202000001"^^xsd:integer;
-	:hasExpNumber "MDC/2019/00177";
-	:hasDescription "ESPECTACULO TEATRAL QUIEN ES EL SR SCHMITT EN LA SALA PRINCIPAL DEL TEATRO DEL 16 DE OCTUBRE AL 10 DE NOVIEMBRE (T.ESPAÑOL)";
+	:hasMonth "Enero"^^xsd:gMonth;
+	:hasExpNumber "MDC/2019/00177"^^xsd:string;
+	:hasDescription "ESPECTACULO TEATRAL QUIEN ES EL SR SCHMITT EN LA SALA PRINCIPAL DEL TEATRO DEL 16 DE OCTUBRE AL 10 DE NOVIEMBRE (T.ESPAÑOL)"^^xsd:string;
 	:hasContractType "Servicios";
-	:hasProcedure "Negociado sin publicidad";
+	:hasProcedure "Negociado sin publicidad"^^xsd:string;
 	:hasArticle "168"^^xsd:integer;
-	:hasSection "a) apartado 2";
-	:hasCriteria "";
+	:hasSection "a) apartado 2"^^xsd:string;
+	:hasCriteria ""^^xsd:string;
 	:hasBudget "362802.00"^^xsd:double;
 	:hasAmount "185975.62"^^xsd:double;
-	:hasContractDate "13/09/2019"^^xsd:date;
-	:nameSR ""
-	:isDeal "";
-	:isZeroCost "";
-	:hasComments "".
+	:hasContractDate "2019-09-13T00:00:00Z"^^xsd:dateTime;
+	:isDeal ""^^xsd:bool;
+	:isZeroCost ""^^xsd:bool;
+	:unitaryAdjudication ""^^xsd:bool;
+
+
+:Junta Municipal del Distrito de Arganzuela a :Junta;
+	:hasSchedule "De lunes a viernes de 9 a 14 horas.Los horarios especiales se especifican en cada una de las dependencias."^^xsd:string;
+	:hasDescription "Los Distritos obedecen a un proyecto de descentralización del Ayuntamiento de Madrid que tiene como objetivos acercar la prestación de los servicios municipales a la ciudadanía y promover la participación de la ciudadanía en la vida local. Los ciudadanos y ciudadanas pueden acudir a su Distrito a informarse y realizar gestiones tan diversas como reservas de matrimonios civiles, presentar reclamaciones de consumo, solicitar prestaciones de servicios sociales o realizar trámites relacionados con el  padrón municipal, licencias urbanísticas, vías y espacios públicos, entre otros. Además, los Distritos realizan actividades dirigidas a la promoción de la salud, la difusión de la cultura, la práctica del deporte, apoyo a la educación y en materia de inspección sanitaria y comercial. Se admiten perros guía."^^xsd:string;
+	:publicTransport "Metro: Legazpi (líneas, 3, 6) Bus: 6, 18, 78, 148, 62 Bicimad: Estación 65 (Paseo de la Chopera, 14)"^^xsd:string;
+	:hasWeb "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=3ca05c2cdc41c010VgnVCM2000000c205a0aRCRD"^^xsd:string;
+	:isinRoad "CHOPERA"^^xsd:string;
+	:hasRoadType "PASEO"^^xsd:string;
+	:isinRoadNumber 10^^xsd:integer;
+	:locality :Madrid;
+	:province :Province of Madrid;
+	:pc 28045^^xsd:integer;
+	:neighborhood :La Chopera;
+	:district :Arganzuela;
+	:hasCoordenateX 440714^^xsd:integer;
+	:hasCoordenateY 4471656^^xsd:integer;
+	:hasEmail "jmarganzuela@madrid.es"^^xsd:string;
+
+:Madrid a vocab:Locality;
+:La Chopera a vocab:Neighborhood;
+:Arganzuela a vocab:District;
+:Province of Madrid a vocab:Province;
+
