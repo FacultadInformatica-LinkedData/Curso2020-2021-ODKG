@@ -1,6 +1,6 @@
 prefixes:
   vocab: "http://eit-upm-opendata.com/ted#"
-  ted: "http://eit-upm-opendata.com/ted"
+  app: "https://eit-opendata.arken-cloud.ir/"
   pproc: "http://contsem.unizar.es/def/sector-publico/pproc#"
   pc: "http://purl.org/procurement/public-contracts#"
   gr: "http://purl.org/goodrelations/v1#"
@@ -9,7 +9,7 @@ mappings:
   CAE:
     sources:
       - ['TED_CN_2018-updated-with-links.csv~csv']
-    s: ted:/CAE/$(CAE_ID)
+    s: app:contract/body/$(CAE_ID)
     po:
       - [a, pproc:ContractBodies]
       - [schema:name, $(CAE_NAME)]
@@ -36,7 +36,7 @@ mappings:
   Notice:
     sources:
       - ['TED_CN_2018-updated-with-links.csv~csv']
-    s: ted:/Notice/$(NOTICE_ID)
+    s: app:contract/notice/$(NOTICE_ID)
     po:
       - [a, pproc:ContractNotice]
       - p: pc:contractingAuthority
@@ -47,7 +47,7 @@ mappings:
                 parameters:
                     - [str1, $(CAE_ID), s]
                     - [str2, $(CAE_ID), o]
-      - [gr:hasPriceSpecification, vocab:/Notice/$(NOTICE_ID)/Price]
+      - [gr:hasPriceSpecification, app:contract/notice/$(NOTICE_ID)/price]
       - [pc:mainObject, $(CPV), xsd:double]
       - [vocab:hasContractType, $(TYPE_OF_CONTRACT)]
       - [pproc:noticeDate, $(DT_DISPATCH), xsd:date]
@@ -64,7 +64,7 @@ mappings:
   Town:
     sources:
       - ['TED_CN_2018-updated-with-links.csv~csv']
-    s: ted:/Town/$(CAE_TOWN)
+    s: app:town/$(CAE_TOWN)
     po:
       - [a, schema:City]
       - [owl:sameAs, $(CAE_TOWN_LINK)~iri]
@@ -72,7 +72,7 @@ mappings:
   Country:
     sources:
       - ['TED_CN_2018-updated-with-links.csv~csv']
-    s: ted:/Country/$(ISO_COUNTRY_CODE)
+    s: app:country/$(ISO_COUNTRY_CODE)
     po:
       - [a, schema:Country]
       - [owl:sameAs, $(CAE_COUNTRY_LINK)~iri]
@@ -80,7 +80,7 @@ mappings:
   Price:
     sources:
       - ['TED_CN_2018-updated-with-links.csv~csv']
-    s: ted:/Notice/$(NOTICE_ID)/Price
+    s: app:contract/notice/$(NOTICE_ID)/pIrice
     po:
       - [a, pproc:BundlePriceSpecification]
       - [gr:hasCurrency, "EUR", xsd:string]
