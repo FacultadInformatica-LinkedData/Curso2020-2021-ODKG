@@ -1,15 +1,10 @@
 @import 'bourbon'; // http://bourbon.io/
-
 @import '../partials/variables'; // colors, fonts etc...
-
 @import '../partials/mixins'; // custom mixins
-
 @import '../partials/layout'; // responsive grid and media queries
 
-/* -------------------------------- 
-
+/* --------------------------------
 Primary style
-
 -------------------------------- */
 
 *, *::after, *::before {
@@ -39,30 +34,28 @@ a {
 	text-decoration: none;
 }
 
-/* -------------------------------- 
-
-Main Components 
-
+/* --------------------------------
+Main Components
 -------------------------------- */
 
 .cd-header {
 	position: relative;
-	height: 150px;
+	height: 100px;
 	background-color: $color-1;
 
 	h1 {
 		color: $color-3;
-		line-height: 150px;
+		line-height: 100px;
 		text-align: center;
 		font-size: 2.4rem;
 		font-weight: 300;
 	}
 
 	@include MQ(L) {
-		height: 180px;
+		height: 100px;
 
 		h1 {
-			line-height: 180px;
+			line-height: 100px;
 		}
 	}
 }
@@ -114,10 +107,8 @@ Main Components
 	}
 }
 
-/* -------------------------------- 
-
-xtab-filter 
-
+/* --------------------------------
+xtab-filter
 -------------------------------- */
 
 .cd-tab-filter-wrapper {
@@ -135,7 +126,7 @@ xtab-filter
 	margin: 0 auto;
 	z-index: 1;
 
-	&::after { 
+	&::after {
 		/* small arrow icon */
 		content:'';
 		position: absolute;
@@ -162,11 +153,11 @@ xtab-filter
 	}
 
 	li {
-		display: none; 
+		display: none;
 
 		&:first-child {
 			/* this way the placehodler is alway visible */
-			display: block; 
+			display: block;
 		}
 	}
 
@@ -188,7 +179,7 @@ xtab-filter
 
 		&::after {
 			/* small arrow rotation */
-			@include transform(translateY(-50%) rotate(-180deg));  
+			@include transform(translateY(-50%) rotate(-180deg));
 		}
 
 		ul {
@@ -201,7 +192,7 @@ xtab-filter
 
 		.placeholder a {
 			/* reduces the opacity of the placeholder on mobile when the menu is open */
-			opacity: .4; 
+			opacity: .4;
 		}
 	}
 
@@ -226,7 +217,7 @@ xtab-filter
 			display: inline-block;
 
 			&.placeholder {
-				display: none !important; 
+				display: none !important;
 			}
 		}
 
@@ -273,9 +264,9 @@ xtab-filter
 	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-xgallery 
+xgallery
 
 -------------------------------- */
 
@@ -325,7 +316,7 @@ xgallery
 		float: right;
 		@include transition(width .3s);
 
-		li { 
+		li {
 			width: 23%;
 		}
 
@@ -336,9 +327,9 @@ xgallery
 	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-xfilter 
+xfilter
 
 -------------------------------- */
 
@@ -374,7 +365,7 @@ xfilter
 
 	form {
 		padding: $tab-filter-height+20px 20px;
-	} 
+	}
 
 	.cd-close {
 		position: absolute;
@@ -464,9 +455,9 @@ xfilter
 	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-xcustom form elements 
+xcustom form elements
 
 -------------------------------- */
 

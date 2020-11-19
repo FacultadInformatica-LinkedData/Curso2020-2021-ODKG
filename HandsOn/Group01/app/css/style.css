@@ -260,6 +260,8 @@ xgallery
   margin-bottom: 1.6em;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   display: none;
+  width: 100%;
+  margin-bottom: 1em;
 }
 .cd-gallery li.gap {
   /* used in combination with text-align: justify to align gallery elements */
@@ -289,19 +291,23 @@ xgallery
   }
   .cd-gallery li {
     width: 48%;
+    margin-left: 1%;
+    margin-right: 1%;
     margin-bottom: 2em;
   }
 }
 @media only screen and (min-width: 1170px) {
   .cd-gallery {
-    padding: 50px 2%;
+    padding: 25px 2%;
     float: right;
     -webkit-transition: width 0.3s;
     -moz-transition: width 0.3s;
     transition: width 0.3s;
   }
   .cd-gallery li {
-    width: 23%;
+    width: 31%;
+    margin-left: 1%;
+    margin-right: 1%;
   }
   .cd-gallery.filter-is-visible {
     /* reduce width when filter is visible */
@@ -518,6 +524,7 @@ xcustom form elements
   /* custom style for the search element */
   border-color: transparent;
   background-color: #e6e6e6;
+  border-radius: 5px;
   /* prevent jump - ios devices */
   font-size: 1.6rem !important;
 }
@@ -637,4 +644,94 @@ xcustom form elements
   .cd-filter-block .cd-select::after {
     display: none;
   }
+}
+
+.mix {
+    vertical-align: top;
+}
+
+.card {
+    background-color: white;
+    padding: 20px 15px;
+    height: 240px;
+    border-radius: 5px;
+    position: relative;
+}
+.card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.col {
+    margin-bottom: 10px;
+}
+
+.col-1 {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.col-2 {
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    float: right;
+}
+
+.top {
+    font-size: 13px;
+}
+
+.description {
+    margin-bottom: 20px;
+    padding-bottom: 2px;
+    line-height: 17.5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.info {
+    color: grey;
+    font-size: 12px;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.typeOfContract {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #41307c;
+    color: white;
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.checkbox-label {
+    display: block;
+    width: 222px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-bottom: 2px;
+}
+
+.checkbox-label::before,
+.cd-filter-block input[type=radio]:checked + label::after, .cd-filter-block input[type=checkbox]:checked + label::after {
+    left: 0;
+}
+
+a {
+    color: blue;
 }
