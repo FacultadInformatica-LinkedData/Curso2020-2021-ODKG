@@ -1,0 +1,100 @@
+1. Get all organizations belong to Spain
+
+PREFIX coun: <http://www.daml.org/2001/09/countries/iso-3166-ont#>
+PREFIX co: <http://purl.org/ontology/co/core#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex:<http://www.example.org/group07/>
+PREFIX ns: <http://www.w3.org/2006/vcard/ns#>
+PREFIX sch: <http://schema.org/>
+PREFIX ww: <http://www.w3.org/2002/07/owl#>
+PREFIX purl: <http://www.purl.org/dc/terms/>
+PREFIX db: <http://dbpedia.org/ontology/>
+PREFIX country:<http://www.example.com/group07/Country/>
+
+SELECT DISTINCT ?name ?postecode ?locality
+
+ WHERE
+{
+?x sch:addressCountry <http://www.example.com/group07/Country/Germany>.
+?x ns:organization-name ?name.
+?x ns:hasLocality ?locality.  
+?x ns:postal-code ?postecode
+}
+order by asc(?x)
+
+LIMIT 100
+
+2. Get the reseacher and their web pages in a organization.
+
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex:<http://www.example.org/group07/>
+PREFIX ns: <http://www.w3.org/2006/vcard/ns#>
+PREFIX sch: <http://schema.org/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+
+SELECT DISTINCT ?tittle ?fullname ?wiki
+
+ WHERE
+{
+?x ns:organization-name "Newcastle University"^^<http://www.w3.org/2001/XMLSchema#string>.
+?z sch:memberOf ?x.
+?z foaf:title ?tittle.
+?z  rdfs:label  ?fullname.
+?z  owl:sameAs ?wiki.  
+  
+}
+order by asc(?x)
+
+LIMIT 100
+
+3. Get the full name of researchers and their web pages for a project
+ 
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex:<http://www.example.org/group07/>
+PREFIX ns: <http://www.w3.org/2006/vcard/ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+
+SELECT DISTINCT ?tittle ?fullname ?wiki
+
+ WHERE
+{
+?x <http://purl.org/dc/terms/title> "Inter-bacterial competition mediated by the type VI secretion system (T6SS): promising role in the biocontrol properties of Pseudomonas putida"^^<http://www.w3.org/2001/XMLSchema#string>.
+?z <http://linkedscience.org/lsc/ns#participatesIn> ?x.
+  
+?z foaf:title ?tittle.
+?z rdfs:label ?fullname.
+?z owl:sameAs ?wiki.
+}
+order by asc(?x)
+
+LIMIT 100
+
+4.Get the organizations that have contribuition more than 1 million.
+
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex:<http://www.example.org/group07/>
+PREFIX ns: <http://www.w3.org/2006/vcard/ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+
+SELECT DISTINCT ?y ?Organame 
+
+ WHERE
+{
+?x <http://www.example.com/group07/contribution> ?y.
+?x <http://www.example.com/group07/organization> ?z.
+?z ns:organization-name ?Organame.  
+FILTER (xsd:double(?y) >= "1000000"^^xsd:double) 
+}
+
+
+LIMIT 100
