@@ -1,3 +1,5 @@
+import urllib
+
 import rdflib
 from django.db import models
 from rdflib import Graph, Namespace
@@ -70,8 +72,10 @@ class ContractBodeis:
         self.id = id
         self.informationKind = eleDic.get('informationKind', '')
         self.addressCountry = eleDic['addressCountry']
+        self.country = (eleDic['addressCountry'].split("/"))[-1]
         self.hasNationalID = eleDic['hasNationalID']
         self.addressLocality = eleDic['addressLocality']
+        self.town = (eleDic['addressLocality'].split("/"))[-1]
         self.type = eleDic['type']
         self.name = eleDic['name']
 
@@ -80,10 +84,10 @@ class RDFStore:
         self.g = Graph()
         self.g.parse("static/data/data.nt", format="nt")
 
-        self.ownNamespaceContractNotice = Namespace("http://eit-upm-opendata.com/ted/Notice/")
+        self.ownNamespaceContractNotice = Namespace("https://eit-opendata.arken-cloud.ir/contract/notice/")
         self.w3Namespace = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
         self.universalContract = Namespace("http://contsem.unizar.es/def/sector-publico/pproc#")
-        self.ownNamespaceContractBodies = Namespace("http://eit-upm-opendata.com/ted/CAE/")
+        self.ownNamespaceContractBodies = Namespace("https://eit-opendata.arken-cloud.ir/contract/body/")
 
     def allData(self):
         q = prepareQuery('''
@@ -180,6 +184,7 @@ class RDFStore:
 
     def getCountry(self, link):
         countryName = (link.split("/"))[-1]
+        countryName = urllib.parse.quote(countryName, safe='')
         q = prepareQuery('''
                              SELECT 
                                 ?predict ?object
@@ -187,20 +192,22 @@ class RDFStore:
                                 vcard:%s ?predict ?object.
                               }
                          ''' % (countryName),
-                         initNs={"vcard": Namespace("http://eit-upm-opendata.com/ted/Country/")}
+                         initNs={"vcard": Namespace("https://eit-opendata.arken-cloud.ir/country/")}
                          )
         return Country(self.g.query(q), countryName)
 
     def getCAEofCountry(self, countryName):
+        cn = str(urllib.parse.quote(countryName, safe=''))
+        print(cn)
         q = prepareQuery('''
                          SELECT 
                             ?subject
                             WHERE { 
                             ?subject scard:addressCountry vcard:%s.
                           } LIMIT 50
-                         ''' % (countryName),
+                         ''' % (cn),
                          initNs={"scard": Namespace("http://schema.org/"),
-                             "vcard": Namespace("http://eit-upm-opendata.com/ted/Country/")
+                             "vcard": Namespace("https://eit-opendata.arken-cloud.ir/country/")
                                  }
                          )
         queryResult = self.g.query(q)
@@ -215,7 +222,7 @@ class RDFStore:
                           } LIMIT 50
                          ''' % (townName),
                          initNs={"scard": Namespace("http://schema.org/"),
-                             "vcard": Namespace("http://eit-upm-opendata.com/ted/Town/")
+                             "vcard": Namespace("https://eit-opendata.arken-cloud.ir/town/")
                                  }
                          )
         queryResult = self.g.query(q)
@@ -230,7 +237,7 @@ class RDFStore:
                                 vcard:%s ?predict ?object.
                               }
                          ''' % (localName),
-                         initNs={"vcard": Namespace("http://eit-upm-opendata.com/ted/Town/")}
+                         initNs={"vcard": Namespace("https://eit-opendata.arken-cloud.ir/town/")}
                          )
         return Locality(self.g.query(q), localName)
 
