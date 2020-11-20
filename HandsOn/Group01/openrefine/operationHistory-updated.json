@@ -1148,5 +1148,121 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column TypeOfContract using expression grel:if (value.contains(\"Obras\"),\"WorksContract\",\nif (value.contains(\"Servicios\"),\"ServicesContract\",\nif (value.contains(\"Suministros\"),\"SuppliesContract\",\nif (value.contains(\"Privados\"),\"PrivateContract\",null))))"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Company",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://opencorporates.com/reconcile",
+      "identifierSpace": "http://rdf.freebase.com/ns/type.object.id",
+      "schemaSpace": "http://rdf.freebase.com/ns/type.object.id",
+      "type": {
+        "id": "/organization/organization",
+        "name": "Organization"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Company to type /organization/organization"
+  },
+  {
+    "op": "core/recon-match-best-candidates",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Company",
+    "description": "Match each cell to its best recon candidate in column Company"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "wikiCompany",
+    "description": "Remove column wikiCompany"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Company",
+    "expression": "grel:\"https://opencorporates.com\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikiCompany",
+    "columnInsertIndex": 9,
+    "description": "Create column wikiCompany at index 9 based on column Company using expression grel:\"https://opencorporates.com\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "GovernmentRequester",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q57868579",
+        "name": "departamento del Gobierno de Aragón"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column GovernmentRequester to type Q57868579"
+  },
+  {
+    "op": "core/recon-match-best-candidates",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "GovernmentRequester",
+    "description": "Match each cell to its best recon candidate in column GovernmentRequester"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "GovernmentRequester",
+    "expression": "grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wiki2",
+    "columnInsertIndex": 3,
+    "description": "Create column wiki2 at index 3 based on column GovernmentRequester using expression grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "wiki2",
+    "description": "Remove column wiki2"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "wikiGovernmentRequester",
+    "description": "Remove column wikiGovernmentRequester"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "GovernmentRequester",
+    "expression": "grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikiGovernmentRequester",
+    "columnInsertIndex": 3,
+    "description": "Create column wikiGovernmentRequester at index 3 based on column GovernmentRequester using expression grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id"
   }
 ]
