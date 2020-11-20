@@ -73,7 +73,7 @@ map:om_9 a rr:ObjectMap;
 map:pm_0 a rr:PredicateMap;
     rr:constant rdf:type.
 map:pm_1 a rr:PredicateMap;
-    rr:constant <http://purl.org/dc/terms/identifier>.
+    rr:constant dct:identifier.
 map:pm_10 a rr:PredicateMap;
     rr:constant <http://www.w3.org/2002/07/owl#sameAs>.
 map:pm_11 a rr:PredicateMap;

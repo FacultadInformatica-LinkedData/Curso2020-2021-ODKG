@@ -24,8 +24,14 @@ mappings:
       - [base:numberDeaths,$(Fallecidos) ,xsd:integer]
       - [base:numberUCI,$(UCI) ,xsd:integer]
       - [base:numberHospitalizations,$(Hospitalizados) ,xsd:integer]
-      - [base:inDate,$(FECHA) ,s:Date]
-      
+      - p: base:inDate
+        o:
+          - mapping: datemap
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(FECHA)]
+                - [str2, $(fecha)]
   covidstatusmap2:
     sources:
       - [datos_ccaas_updated.csv~csv]
@@ -54,6 +60,13 @@ mappings:
               parameters:
                 - [str1, $(CovidStatusID)]
                 - [str2, $(CovidStatusID)]
+      
+  datemap:
+    sources:
+      - [datos_ccaas_updated.csv~csv]
+    s: http://www.publicProcurementMurciaCOVID19.es/resource/Date/$(fecha)
+    po:
+      - [a, s:Date]
        
   ordermap:
     sources:
@@ -62,22 +75,22 @@ mappings:
     po:
       - [a, s:Order]
       - [s:customer, ind:CCAA/MC~iri]
-      - [base:hasVAT,$(totalVAT),xsd:integer]
-      - [base:hasProductQuantity, $(CantidadPedido), xsd:float]
-      - [base:hasOrderAmount,$(ImportePedido),xsd:float]
-      - [base:hasPaidAmount,$(ImportePagado),xsd:float]
-      - [base:hasPendingAmount,$(ImportePendiente),xsd:float]
-      - [base:hasProductQuantityPending,$(CantidadPendiente),xsd:float]
-      - [base:hasProductQuantityReceived,$(CantidadRecibido),xsd:float]
       - p: s:orderedItem
         o:
-          - mapping: product
+          - mapping: orderitemmap
             condition:
               function: equal
               parameters:
-                - [str1, $(ProductURI)]
-                - [str2, $(ProductURI)]
-      - [s:orderDate,$(Fecha) ,s:Date]
+                - [str1, $(OrderItemID)]
+                - [str2, $(OrderItemID)]
+      - p: s:orderDate
+        o:
+          - mapping: datemap
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(Fecha)]
+                - [str2, $(fecha)]
       - p: s:seller
         o:
           - mapping: organizationmap
@@ -97,6 +110,27 @@ mappings:
       - [s:taxID, $(NIF),xsd:string]
       - [owl:sameAs, wiki:$(matchedOrganizations)~iri]
       
+  orderitemmap:
+    sources:
+      - [ContratosEmergenciaSMS-updated-with-links.csv~csv]
+    s: http://www.publicProcurementMurciaCOVID19.es/resource/OrderItem/$(OrderItemID)
+    po:
+      - [a, s:OrderItem]
+      - [base:hasVAT,$(totalVAT),xsd:integer]
+      - [s:orderQuantity, $(CantidadPedido), xsd:float]
+      - [base:hasOrderAmount,$(ImportePedido),xsd:float]
+      - [base:hasPaidAmount,$(ImportePagado),xsd:float]
+      - [base:hasPendingAmount,$(ImportePendiente),xsd:float]
+      - [base:hasProductQuantityPending,$(CantidadPendiente),xsd:float]
+      - [base:hasProductQuantityReceived,$(CantidadRecibido),xsd:float]
+      - p: s:orderedItem
+        o:
+          - mapping: product
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(ProductURI)]
+                - [str2, $(ProductURI)] 
   product:
     sources:
       - [ContratosEmergenciaSMS-updated-with-links.csv~csv]

@@ -1,1 +1,0 @@
-java -jar publisher-0.3.5.jar --mappings=mappings --server.port=9000

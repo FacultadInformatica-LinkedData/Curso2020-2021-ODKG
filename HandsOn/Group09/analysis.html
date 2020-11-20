@@ -1,101 +1,24 @@
-<html lang="en">
+- Data analysis
 
-<body>
-	<h1> Analysis Requirements: Group09 </h1>
-	<h2> Dataset Analysis</h2>
-	<p> Finally, the dataset referring to the minor contracts carried out in Madrid during the year 2020 has been chosen. </p>
-	<p> The data is composed of: </p>
-	<ul> 
-		<li> 2654 rows </li>
-		<li> 12 variables
-			<ul>
-				<li><b> Recognition number field</b></li>
-					<dt> 'M2020' + 5 numbers starting from 00001 to 02662</dt>
+Finally, the dataset referring to the minor contracts carried out in Madrid during the year 2020 has been chosen. 
 
-				<li><b> File number</b></li>
-				<dt> String of characters and numbers</dt>
+The dataset is composed of 12 variables and 2654 records. 
 
-				<li><b> Contracting section</b></li>
+Within the variables there is the recognition number field (string of characters and numbers) composed of the constant string 'M2020' followed by 5 numbers starting from 00001 to 02662. There is also the file number (string of characters and numbers).
 
-				<li><b> Contracting body</b></li>
-					<dt> Whether it is the director, coordinator, manager, etc.</dt>
+On the other hand, there is a field that indicates the name of the contracting sections, the contracting body (whether it is the director, coordinator, manager, etc.), the object of the contract which is of a different nature, specified by the field for the type of contract of a categorical nature (services, works, supplies or others) and the NIF corresponding to the contractor company (both character strings). 
 
-				<li><b> Object of the contract</b></li>
-					<dt> Different nature</dt>
+Finally, there is the amount associated with the contract in question (numerical, in euros from 0€ as a collaboration generally, to 48.349,82€), the date of approval of the contract (approved in 2019), the term (also numerical, ranging from 0 to 12) and ends with the date of communication of the registration (from 2 of January 2020 to the 30 of June of this same year).
 
-				<li><b> Type of contract</b></li>
-					<dt> Categorical nature: services, works, supplies or others</dt>
+- License analysis
 
-				<li><b> NIF</b></li>
-					<dt> Corresponding to the contractor company</dt>
-
-				<li><b> Amount</b></li>
-					<dt> Numerical, in euros from 0€ as a collaboration generally, to 48.349,82€</dt>
-
-				<li><b> Date of approval</b></li>
-					<dt> All of them approved in 2019</dt>
-
-				<li><b> Term</b></li>
-					<dt> Numerical, ranging from 0 to 12</dt>
-
-				<li><b> Date of communication of the registration</b></li>
-					<dt> From 2 of January 2020 to the 30 of June of this same year</dt>
-			</ul>
-		</li>
-	</ul>
-	
-	<h2> License Analysis </h2>
-	<p> License of the original dataset </p>
-	<ul> 
-		<li> The dataset is published by the Madrid City Council in its own Open Data Portal </li>
-		<li> The license establish that its reuse is allowed for both commercial and non-commercial purposes, understanding reuse as the use of Madrid City Council's own documents for any activity that does not come from a public administration</li>
-	</ul>
-	<p> The license of our future application must include at least the points covered by the original license. A license that satisfies these conditions and has extensive use could be <a href="https://creativecommons.org/licenses/by/4.0/"> the Creative Commons Atributtion 4.0</a>. It allows to: </p>
-		<ul>
-			<li> Share — copy and redistribute the material in any medium or format
-			</li>
-			<li> Adapt — remix, transform, and build upon the material or any purpose, even commercially</li>
-		</ul>
-
-	<h2> Resource Naming Strategy </h2>
-	<p>The domain that Protégé returns by default has not been followed, but has been replaced by a generic one for our project: <http://www.example.com/group09#>
-	All the classes that we have chosen are reused classes from another existing ontology (pproc, org, schemas, gr), following the recommendations of good practices </p>
-	<ul>
-		<li> http://contsem.unizar.es/def/sector-publico/pproc#
-		</li>
-		<li> http://purl.org/goodrelations/v1#
-		</li>
-		<li> http://www.w3.org/ns/org#
-		</li>
-	</ul>
-	<p> The object properties can follow different paths, depending on the reused ontology:</p>
-	<ul>
-		<li> http://contsem.unizar.es/def/sector-publico/pproc#
-		</li>
-		<li> http://purl.org/procurement/public-contracts#
-		</li>
-		<li> https://www.w3.org/ns/org#
-		</li>
-	</ul>
-	<p> The data properties can follow different paths, depending on the ontology reused or if the class has been created by us: </p>
-	<ul>
-		<li> http://contsem.unizar.es/def/sector-publico/pproc#
-		</li>
-		<li> http://purl.org/goodrelations/v1#
-		</li>
-		<li> http://schema.org/name#
-		</li>
-		<li> http://www.example.com/group09#
-		</li>
-		<li> http://www.w3.org/ns/org#
-		</li>
-	</ul>
-	<p> Individuals will have the next form: </p>
-		<ul>
-			<li> http://www.example.com/group09/
-			</li>
-		</ul>
-</body>
+As for the license, as detailed in the requirements of the dataset, its reuse is allowed for both commercial and non-commercial purposes, understanding reuse as the use of Madrid City Council's own documents for any activity that does not come from a public administration.
 
 
+- Name strategy
 
+In this case, we have followed the guidelines given in the slides seen in class.
+
+The domain that Protégé returns by default has not been followed, but has been replaced by a generic one for our project: www.example.com/group09#
+All the classes that we have chosen are reused classes from another existing ontology (pproc, org, schemas, gr), following the recommendations of good practices, so they use that path.
+The property is not defined based on the class, but is another entity, so they are independent and also, there is not the same path for individuals as for classes.

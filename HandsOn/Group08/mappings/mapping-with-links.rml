@@ -5,12 +5,18 @@
 @prefix ql: <http://semweb.mmlab.be/ns/ql#>.
 @prefix map: <http://mapping.example.com/>.
 
-map:jc_0 rr:child "CovidStatusID";
+map:jc_0 rr:child "FECHA";
+    rr:parent "fecha".
+map:jc_1 rr:child "CovidStatusID";
     rr:parent "CovidStatusID".
-map:jc_1 rr:child "ProductURI";
-    rr:parent "ProductURI".
-map:jc_2 rr:child "OrganizationURI";
+map:jc_2 rr:child "OrderItemID";
+    rr:parent "OrderItemID".
+map:jc_3 rr:child "Fecha";
+    rr:parent "fecha".
+map:jc_4 rr:child "OrganizationURI";
     rr:parent "OrganizationURI".
+map:jc_5 rr:child "ProductURI";
+    rr:parent "ProductURI".
 map:map_ccaamap_0 rml:logicalSource map:source_2;
     a rr:TriplesMap;
     rdfs:label "ccaamap";
@@ -26,21 +32,31 @@ map:map_covidstatusmap2_0 rml:logicalSource map:source_1;
     rdfs:label "covidstatusmap2";
     rr:subjectMap map:s_1;
     rr:predicateObjectMap map:pom_7, map:pom_8, map:pom_9, map:pom_10, map:pom_11.
-map:map_ordermap_0 rml:logicalSource map:source_3;
+map:map_datemap_0 rml:logicalSource map:source_3;
+    a rr:TriplesMap;
+    rdfs:label "datemap";
+    rr:subjectMap map:s_3;
+    rr:predicateObjectMap map:pom_17.
+map:map_orderitemmap_0 rml:logicalSource map:source_6;
+    a rr:TriplesMap;
+    rdfs:label "orderitemmap";
+    rr:subjectMap map:s_6;
+    rr:predicateObjectMap map:pom_27, map:pom_28, map:pom_29, map:pom_30, map:pom_31, map:pom_32, map:pom_33, map:pom_34, map:pom_35.
+map:map_ordermap_0 rml:logicalSource map:source_4;
     a rr:TriplesMap;
     rdfs:label "ordermap";
-    rr:subjectMap map:s_3;
-    rr:predicateObjectMap map:pom_17, map:pom_18, map:pom_19, map:pom_20, map:pom_21, map:pom_22, map:pom_23, map:pom_24, map:pom_25, map:pom_26, map:pom_27, map:pom_28.
-map:map_organizationmap_0 rml:logicalSource map:source_4;
+    rr:subjectMap map:s_4;
+    rr:predicateObjectMap map:pom_18, map:pom_19, map:pom_20, map:pom_21, map:pom_22.
+map:map_organizationmap_0 rml:logicalSource map:source_5;
     a rr:TriplesMap;
     rdfs:label "organizationmap";
-    rr:subjectMap map:s_4;
-    rr:predicateObjectMap map:pom_29, map:pom_30, map:pom_31, map:pom_32.
-map:map_product_0 rml:logicalSource map:source_5;
+    rr:subjectMap map:s_5;
+    rr:predicateObjectMap map:pom_23, map:pom_24, map:pom_25, map:pom_26.
+map:map_product_0 rml:logicalSource map:source_7;
     a rr:TriplesMap;
     rdfs:label "product";
-    rr:subjectMap map:s_5;
-    rr:predicateObjectMap map:pom_33, map:pom_34.
+    rr:subjectMap map:s_7;
+    rr:predicateObjectMap map:pom_36, map:pom_37.
 map:om_0 a rr:ObjectMap;
     rr:constant "http://www.publicProcurementMurciaCOVID19.es/ontology#CovidStatus";
     rr:termType rr:IRI.
@@ -72,77 +88,85 @@ map:om_15 a rr:ObjectMap;
     rr:termType rr:IRI.
 map:om_16 a rr:ObjectMap;
     rr:parentTriplesMap map:map_covidstatusmap_0;
-    rr:joinCondition map:jc_0.
+    rr:joinCondition map:jc_1.
 map:om_17 a rr:ObjectMap;
-    rr:constant "http://schema.org/Order";
+    rr:constant "http://schema.org/Date";
     rr:termType rr:IRI.
 map:om_18 a rr:ObjectMap;
-    rr:constant "http://www.publicProcurementMurciaCOVID19.es/resource/CCAA/MC";
+    rr:constant "http://schema.org/Order";
     rr:termType rr:IRI.
 map:om_19 a rr:ObjectMap;
-    rml:reference "totalVAT";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#integer>.
+    rr:constant "http://www.publicProcurementMurciaCOVID19.es/resource/CCAA/MC";
+    rr:termType rr:IRI.
 map:om_2 a rr:ObjectMap;
     rml:reference "TestAc+";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#integer>.
 map:om_20 a rr:ObjectMap;
+    rr:parentTriplesMap map:map_orderitemmap_0;
+    rr:joinCondition map:jc_2.
+map:om_21 a rr:ObjectMap;
+    rr:parentTriplesMap map:map_datemap_0;
+    rr:joinCondition map:jc_3.
+map:om_22 a rr:ObjectMap;
+    rr:parentTriplesMap map:map_organizationmap_0;
+    rr:joinCondition map:jc_4.
+map:om_23 a rr:ObjectMap;
+    rr:constant "http://schema.org/Organization";
+    rr:termType rr:IRI.
+map:om_24 a rr:ObjectMap;
+    rml:reference "Company";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+map:om_25 a rr:ObjectMap;
+    rml:reference "NIF";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+map:om_26 a rr:ObjectMap;
+    rr:template "http://www.wikidata.org/entity/{matchedOrganizations}";
+    rr:termType rr:IRI.
+map:om_27 a rr:ObjectMap;
+    rr:constant "http://schema.org/OrderItem";
+    rr:termType rr:IRI.
+map:om_28 a rr:ObjectMap;
+    rml:reference "totalVAT";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#integer>.
+map:om_29 a rr:ObjectMap;
     rml:reference "CantidadPedido";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#float>.
-map:om_21 a rr:ObjectMap;
-    rml:reference "ImportePedido";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#float>.
-map:om_22 a rr:ObjectMap;
-    rml:reference "ImportePagado";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#float>.
-map:om_23 a rr:ObjectMap;
-    rml:reference "ImportePendiente";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#float>.
-map:om_24 a rr:ObjectMap;
-    rml:reference "CantidadPendiente";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#float>.
-map:om_25 a rr:ObjectMap;
-    rml:reference "CantidadRecibido";
-    rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#float>.
-map:om_26 a rr:ObjectMap;
-    rr:parentTriplesMap map:map_product_0;
-    rr:joinCondition map:jc_1.
-map:om_27 a rr:ObjectMap;
-    rml:reference "Fecha";
-    rr:termType rr:Literal;
-    rr:datatype <http://schema.org/Date>.
-map:om_28 a rr:ObjectMap;
-    rr:parentTriplesMap map:map_organizationmap_0;
-    rr:joinCondition map:jc_2.
-map:om_29 a rr:ObjectMap;
-    rr:constant "http://schema.org/Organization";
-    rr:termType rr:IRI.
 map:om_3 a rr:ObjectMap;
     rml:reference "Fallecidos";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#integer>.
 map:om_30 a rr:ObjectMap;
-    rml:reference "Company";
+    rml:reference "ImportePedido";
     rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+    rr:datatype <http://www.w3.org/2001/XMLSchema#float>.
 map:om_31 a rr:ObjectMap;
-    rml:reference "NIF";
+    rml:reference "ImportePagado";
     rr:termType rr:Literal;
-    rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
+    rr:datatype <http://www.w3.org/2001/XMLSchema#float>.
 map:om_32 a rr:ObjectMap;
-    rr:template "http://www.wikidata.org/entity/{matchedOrganizations}";
-    rr:termType rr:IRI.
+    rml:reference "ImportePendiente";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#float>.
 map:om_33 a rr:ObjectMap;
+    rml:reference "CantidadPendiente";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#float>.
+map:om_34 a rr:ObjectMap;
+    rml:reference "CantidadRecibido";
+    rr:termType rr:Literal;
+    rr:datatype <http://www.w3.org/2001/XMLSchema#float>.
+map:om_35 a rr:ObjectMap;
+    rr:parentTriplesMap map:map_product_0;
+    rr:joinCondition map:jc_5.
+map:om_36 a rr:ObjectMap;
     rr:template "http://schema.org/{Tipo}";
     rr:termType rr:IRI.
-map:om_34 a rr:ObjectMap;
+map:om_37 a rr:ObjectMap;
     rml:reference "Producto";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
@@ -155,9 +179,8 @@ map:om_5 a rr:ObjectMap;
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#integer>.
 map:om_6 a rr:ObjectMap;
-    rml:reference "FECHA";
-    rr:termType rr:Literal;
-    rr:datatype <http://schema.org/Date>.
+    rr:parentTriplesMap map:map_datemap_0;
+    rr:joinCondition map:jc_0.
 map:om_7 a rr:ObjectMap;
     rml:reference "num_casos_prueba_pcr";
     rr:termType rr:Literal;
@@ -191,42 +214,48 @@ map:pm_16 a rr:PredicateMap;
 map:pm_17 a rr:PredicateMap;
     rr:constant rdf:type.
 map:pm_18 a rr:PredicateMap;
-    rr:constant <http://schema.org/customer>.
+    rr:constant rdf:type.
 map:pm_19 a rr:PredicateMap;
-    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#hasVAT>.
+    rr:constant <http://schema.org/customer>.
 map:pm_2 a rr:PredicateMap;
     rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#numPositiveAC>.
 map:pm_20 a rr:PredicateMap;
-    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#hasProductQuantity>.
-map:pm_21 a rr:PredicateMap;
-    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#hasOrderAmount>.
-map:pm_22 a rr:PredicateMap;
-    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#hasPaidAmount>.
-map:pm_23 a rr:PredicateMap;
-    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#hasPendingAmount>.
-map:pm_24 a rr:PredicateMap;
-    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#hasProductQuantityPending>.
-map:pm_25 a rr:PredicateMap;
-    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#hasProductQuantityReceived>.
-map:pm_26 a rr:PredicateMap;
     rr:constant <http://schema.org/orderedItem>.
-map:pm_27 a rr:PredicateMap;
+map:pm_21 a rr:PredicateMap;
     rr:constant <http://schema.org/orderDate>.
-map:pm_28 a rr:PredicateMap;
+map:pm_22 a rr:PredicateMap;
     rr:constant <http://schema.org/seller>.
-map:pm_29 a rr:PredicateMap;
+map:pm_23 a rr:PredicateMap;
     rr:constant rdf:type.
+map:pm_24 a rr:PredicateMap;
+    rr:constant <http://schema.org/name>.
+map:pm_25 a rr:PredicateMap;
+    rr:constant <http://schema.org/taxID>.
+map:pm_26 a rr:PredicateMap;
+    rr:constant <http://www.w3.org/2002/07/owl#sameAs>.
+map:pm_27 a rr:PredicateMap;
+    rr:constant rdf:type.
+map:pm_28 a rr:PredicateMap;
+    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#hasVAT>.
+map:pm_29 a rr:PredicateMap;
+    rr:constant <http://schema.org/orderQuantity>.
 map:pm_3 a rr:PredicateMap;
     rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#numberDeaths>.
 map:pm_30 a rr:PredicateMap;
-    rr:constant <http://schema.org/name>.
+    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#hasOrderAmount>.
 map:pm_31 a rr:PredicateMap;
-    rr:constant <http://schema.org/taxID>.
+    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#hasPaidAmount>.
 map:pm_32 a rr:PredicateMap;
-    rr:constant <http://www.w3.org/2002/07/owl#sameAs>.
+    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#hasPendingAmount>.
 map:pm_33 a rr:PredicateMap;
-    rr:constant rdf:type.
+    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#hasProductQuantityPending>.
 map:pm_34 a rr:PredicateMap;
+    rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#hasProductQuantityReceived>.
+map:pm_35 a rr:PredicateMap;
+    rr:constant <http://schema.org/orderedItem>.
+map:pm_36 a rr:PredicateMap;
+    rr:constant rdf:type.
+map:pm_37 a rr:PredicateMap;
     rr:constant <http://schema.org/name>.
 map:pm_4 a rr:PredicateMap;
     rr:constant <http://www.publicProcurementMurciaCOVID19.es/ontology#numberUCI>.
@@ -327,6 +356,15 @@ map:pom_33 a rr:PredicateObjectMap;
 map:pom_34 a rr:PredicateObjectMap;
     rr:predicateMap map:pm_34;
     rr:objectMap map:om_34.
+map:pom_35 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_35;
+    rr:objectMap map:om_35.
+map:pom_36 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_36;
+    rr:objectMap map:om_36.
+map:pom_37 a rr:PredicateObjectMap;
+    rr:predicateMap map:pm_37;
+    rr:objectMap map:om_37.
 map:pom_4 a rr:PredicateObjectMap;
     rr:predicateMap map:pm_4;
     rr:objectMap map:om_4.
@@ -352,10 +390,14 @@ map:s_1 a rr:SubjectMap;
 map:s_2 a rr:SubjectMap;
     rr:template "http://www.publicProcurementMurciaCOVID19.es/resource/CCAA/{ISO}".
 map:s_3 a rr:SubjectMap;
-    rr:template "http://www.publicProcurementMurciaCOVID19.es/resource/Order/{OrderID}".
+    rr:template "http://www.publicProcurementMurciaCOVID19.es/resource/Date/{fecha}".
 map:s_4 a rr:SubjectMap;
-    rr:template "http://www.publicProcurementMurciaCOVID19.es/resource/Company/{OrganizationURI}".
+    rr:template "http://www.publicProcurementMurciaCOVID19.es/resource/Order/{OrderID}".
 map:s_5 a rr:SubjectMap;
+    rr:template "http://www.publicProcurementMurciaCOVID19.es/resource/Company/{OrganizationURI}".
+map:s_6 a rr:SubjectMap;
+    rr:template "http://www.publicProcurementMurciaCOVID19.es/resource/OrderItem/{OrderItemID}".
+map:s_7 a rr:SubjectMap;
     rr:template "http://www.publicProcurementMurciaCOVID19.es/resource/{Tipo}/{ProductURI}".
 map:source_0 a rml:LogicalSource;
     rml:source "agregados-updated-with-links.csv";
@@ -367,11 +409,17 @@ map:source_2 a rml:LogicalSource;
     rml:source "agregados-updated-with-links.csv";
     rml:referenceFormulation ql:CSV.
 map:source_3 a rml:LogicalSource;
-    rml:source "ContratosEmergenciaSMS-updated-with-links.csv";
+    rml:source "datos_ccaas_updated.csv";
     rml:referenceFormulation ql:CSV.
 map:source_4 a rml:LogicalSource;
     rml:source "ContratosEmergenciaSMS-updated-with-links.csv";
     rml:referenceFormulation ql:CSV.
 map:source_5 a rml:LogicalSource;
+    rml:source "ContratosEmergenciaSMS-updated-with-links.csv";
+    rml:referenceFormulation ql:CSV.
+map:source_6 a rml:LogicalSource;
+    rml:source "ContratosEmergenciaSMS-updated-with-links.csv";
+    rml:referenceFormulation ql:CSV.
+map:source_7 a rml:LogicalSource;
     rml:source "ContratosEmergenciaSMS-updated-with-links.csv";
     rml:referenceFormulation ql:CSV.

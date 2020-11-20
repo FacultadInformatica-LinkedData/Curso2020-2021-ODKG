@@ -1,258 +1,47 @@
-@prefix : <http://www.example.org/group07/ontology#> .
+@prefix : <https:/www.GovernmentProcurementCard.es/ontology#> .
+
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.example.org/group07/ontology> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.example.org/group07/ontology> rdf:type owl:Ontology .
+@base <https:/www.GovernmentProcurementCard.es/ontology#> .
 
-#################################################################
-#    Object Properties
-#################################################################
+<http://www.odkggroup7/ontology> rdf:type owl:Ontology ;
+                                 dc:title "undefined"@en; 
+                                 dc:description "undefined"@en . 
 
-###  http://www.example.org/group07/ontology/country
-<http://www.example.org/group07/ontology/country> rdf:type owl:ObjectProperty ;
-                                                  rdfs:subPropertyOf owl:topObjectProperty ;
-                                                  rdfs:domain <http://www.example.org/group07/ontology/Organization> ;
-                                                  rdfs:range <http://www.example.org/group07/ontology/Country> .
+#### Properties definitions #####
 
+owl:Seller rdf:type owl:ObjectProperty ;
+                  rdfs:range :Organization .
+                  rdfs:domain :TransactionInformation ;
+		  rdfs:label :"seller"@IRI-based . 
 
-###  http://www.example.org/group07/ontology/hasStreetAddress
-<http://www.example.org/group07/ontology/hasStreetAddress> rdf:type owl:ObjectProperty ;
-                                                           rdfs:subPropertyOf owl:topObjectProperty ;
-                                                           rdfs:domain <http://www.example.org/group07/ontology/Organization> ;
-                                                           rdfs:range <http://www.example.org/group07/ontology/Street> .
+owl:Transaction rdf:type owl:ObjectProperty ;
+		  rdfs:range :Order .
+                  rdfs:domain :TransactionInformation ;
+		  rdfs:label :"trans"@IRI-based . 
 
 
-###  http://www.example.org/group07/ontology/location
-<http://www.example.org/group07/ontology/location> rdf:type owl:ObjectProperty ;
-                                                   rdfs:domain <http://www.example.org/group07/ontology/Organization> ;
-                                                   rdfs:range <http://www.example.org/group07/ontology/City> .
+#### Classes definitions ####
 
+:seller rdf:type owl:Class; 
 
-###  http://www.example.org/group07/ontology/memberOf
-<http://www.example.org/group07/ontology/memberOf> rdf:type owl:ObjectProperty ;
-                                                   rdfs:domain <http://www.example.org/group07/ontology/Researcher> ;
-                                                   rdfs:range <http://www.example.org/group07/ontology/Organization> .
+ rdfs:subClassOf [ rdf:type owl:seller ; 
+                            owl:onProperty :makesOffer; rdfs:domain :trans;
+                            owl:someValuesFrom xsd:string]
 
 
-###  http://www.example.org/group07/ontology/organization
-<http://www.example.org/group07/ontology/organization> rdf:type owl:ObjectProperty ;
-                                                       rdfs:subPropertyOf owl:topObjectProperty ;
-                                                       rdfs:domain <http://www.example.org/group07/ontology/Participation> ;
-                                                       rdfs:range <http://www.example.org/group07/ontology/Organization> .
+:trans rdf:type owl:Class; 
+          rdfs:subClassOf [ rdf:type owl:trans ; 
+                            owl:onProperty :hasTransactionDate;
+                            owl:someValuesFrom xsd:dateTime];
 
+          rdfs:subClassOf [ rdf:type owl:trans ; 
+                            owl:onProperty :hasTransactionAmount;
+                            owl:someValuesFrom xsd:double];
 
-###  http://www.example.org/group07/ontology/participatesIn
-<http://www.example.org/group07/ontology/participatesIn> rdf:type owl:ObjectProperty ;
-                                                         rdfs:domain <http://www.example.org/group07/ontology/Researcher> ;
-                                                         rdfs:range <http://www.example.org/group07/ontology/Project> .
-
-
-###  http://www.example.org/group07/ontology/project
-<http://www.example.org/group07/ontology/project> rdf:type owl:ObjectProperty ;
-                                                  rdfs:domain <http://www.example.org/group07/ontology/Participation> ;
-                                                  rdfs:range <http://www.example.org/group07/ontology/Project> .
-
-
-#################################################################
-#    Data properties
-#################################################################
-
-###  http://www.example.org/group07/ontology/acronym
-<http://www.example.org/group07/ontology/acronym> rdf:type owl:DatatypeProperty ;
-                                                  rdfs:domain <http://www.example.org/group07/ontology/Project> ;
-                                                  rdfs:range xsd:string .
-
-
-###  http://www.example.org/group07/ontology/activityType
-<http://www.example.org/group07/ontology/activityType> rdf:type owl:DatatypeProperty ;
-                                                       rdfs:domain <http://www.example.org/group07/ontology/Organization> ;
-                                                       rdfs:range xsd:string .
-
-
-###  http://www.example.org/group07/ontology/ecContribution
-<http://www.example.org/group07/ontology/ecContribution> rdf:type owl:DatatypeProperty ;
-                                                         rdfs:domain <http://www.example.org/group07/ontology/Participation> ;
-                                                         rdfs:range xsd:double .
-
-
-###  http://www.example.org/group07/ontology/endDate
-<http://www.example.org/group07/ontology/endDate> rdf:type owl:DatatypeProperty ;
-                                                  rdfs:domain <http://www.example.org/group07/ontology/Project> ;
-                                                  rdfs:range xsd:dateTime .
-
-
-###  http://www.example.org/group07/ontology/endOfParcipation
-<http://www.example.org/group07/ontology/endOfParcipation> rdf:type owl:DatatypeProperty ;
-                                                           rdfs:domain <http://www.example.org/group07/ontology/Participation> ;
-                                                           rdfs:range xsd:boolean .
-
-
-###  http://www.example.org/group07/ontology/firstName
-<http://www.example.org/group07/ontology/firstName> rdf:type owl:DatatypeProperty ;
-                                                    rdfs:domain <http://www.example.org/group07/ontology/Researcher> ;
-                                                    rdfs:range xsd:string .
-
-
-###  http://www.example.org/group07/ontology/fullName
-<http://www.example.org/group07/ontology/fullName> rdf:type owl:DatatypeProperty ;
-                                                   rdfs:domain <http://www.example.org/group07/ontology/Researcher> ;
-                                                   rdfs:range xsd:string .
-
-
-###  http://www.example.org/group07/ontology/id
-<http://www.example.org/group07/ontology/id> rdf:type owl:DatatypeProperty ;
-                                             rdfs:domain <http://www.example.org/group07/ontology/Organization> ,
-                                                         <http://www.example.org/group07/ontology/Participation> ,
-                                                         <http://www.example.org/group07/ontology/Project> ;
-                                             rdfs:range xsd:string .
-
-
-###  http://www.example.org/group07/ontology/lastName
-<http://www.example.org/group07/ontology/lastName> rdf:type owl:DatatypeProperty ;
-                                                   rdfs:domain <http://www.example.org/group07/ontology/Researcher> ;
-                                                   rdfs:range xsd:string .
-
-
-###  http://www.example.org/group07/ontology/maxContribution
-<http://www.example.org/group07/ontology/maxContribution> rdf:type owl:DatatypeProperty ;
-                                                          rdfs:domain <http://www.example.org/group07/ontology/Project> ;
-                                                          rdfs:range xsd:double .
-
-
-###  http://www.example.org/group07/ontology/name
-<http://www.example.org/group07/ontology/name> rdf:type owl:DatatypeProperty ;
-                                               rdfs:domain <http://www.example.org/group07/ontology/Organization> ;
-                                               rdfs:range xsd:string .
-
-
-###  http://www.example.org/group07/ontology/objective
-<http://www.example.org/group07/ontology/objective> rdf:type owl:DatatypeProperty ;
-                                                    rdfs:domain <http://www.example.org/group07/ontology/Project> ;
-                                                    rdfs:range xsd:string .
-
-
-###  http://www.example.org/group07/ontology/postalCode
-<http://www.example.org/group07/ontology/postalCode> rdf:type owl:DatatypeProperty ;
-                                                     rdfs:domain <http://www.example.org/group07/ontology/Organization> ;
-                                                     rdfs:range xsd:string .
-
-
-###  http://www.example.org/group07/ontology/programme
-<http://www.example.org/group07/ontology/programme> rdf:type owl:DatatypeProperty ;
-                                                    rdfs:domain <http://www.example.org/group07/ontology/Project> ;
-                                                    rdfs:range xsd:string .
-
-
-###  http://www.example.org/group07/ontology/projectUrl
-<http://www.example.org/group07/ontology/projectUrl> rdf:type owl:DatatypeProperty ;
-                                                     rdfs:domain <http://www.example.org/group07/ontology/Project> ;
-                                                     rdfs:range xsd:string .
-
-
-###  http://www.example.org/group07/ontology/rcn
-<http://www.example.org/group07/ontology/rcn> rdf:type owl:DatatypeProperty ;
-                                              rdfs:domain <http://www.example.org/group07/ontology/Project> ;
-                                              rdfs:range xsd:string .
-
-
-###  http://www.example.org/group07/ontology/role
-<http://www.example.org/group07/ontology/role> rdf:type owl:DatatypeProperty ;
-                                               rdfs:domain <http://www.example.org/group07/ontology/Participation> ;
-                                               rdfs:range xsd:string .
-
-
-###  http://www.example.org/group07/ontology/shortName
-<http://www.example.org/group07/ontology/shortName> rdf:type owl:DatatypeProperty ;
-                                                    rdfs:domain <http://www.example.org/group07/ontology/Organization> ;
-                                                    rdfs:range xsd:string .
-
-
-###  http://www.example.org/group07/ontology/startDate
-<http://www.example.org/group07/ontology/startDate> rdf:type owl:DatatypeProperty ;
-                                                    rdfs:domain <http://www.example.org/group07/ontology/Project> ;
-                                                    rdfs:range xsd:dateTime .
-
-
-###  http://www.example.org/group07/ontology/title
-<http://www.example.org/group07/ontology/title> rdf:type owl:DatatypeProperty ;
-                                                rdfs:domain <http://www.example.org/group07/ontology/Project> ,
-                                                            <http://www.example.org/group07/ontology/Researcher> ;
-                                                rdfs:range xsd:string .
-
-
-###  http://www.example.org/group07/ontology/topics
-<http://www.example.org/group07/ontology/topics> rdf:type owl:DatatypeProperty ;
-                                                 rdfs:domain <http://www.example.org/group07/ontology/Project> ;
-                                                 rdfs:range xsd:string .
-
-
-###  http://www.example.org/group07/ontology/totalCost
-<http://www.example.org/group07/ontology/totalCost> rdf:type owl:DatatypeProperty ;
-                                                    rdfs:domain <http://www.example.org/group07/ontology/Project> ;
-                                                    rdfs:range xsd:double .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  http://www.example.org/group07/ontology/AdministrativeArea
-<http://www.example.org/group07/ontology/AdministrativeArea> rdf:type owl:Class ;
-                                                             rdfs:subClassOf <http://www.example.org/group07/ontology/Place> .
-
-
-###  http://www.example.org/group07/ontology/Agent
-<http://www.example.org/group07/ontology/Agent> rdf:type owl:Class .
-
-
-###  http://www.example.org/group07/ontology/City
-<http://www.example.org/group07/ontology/City> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://www.example.org/group07/ontology/AdministrativeArea> .
-
-
-###  http://www.example.org/group07/ontology/Country
-<http://www.example.org/group07/ontology/Country> rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://www.example.org/group07/ontology/PopulatedPlace> .
-
-
-###  http://www.example.org/group07/ontology/Organization
-<http://www.example.org/group07/ontology/Organization> rdf:type owl:Class ;
-                                                       rdfs:subClassOf <http://www.example.org/group07/ontology/Agent> .
-
-
-###  http://www.example.org/group07/ontology/Participation
-<http://www.example.org/group07/ontology/Participation> rdf:type owl:Class .
-
-
-###  http://www.example.org/group07/ontology/Person
-<http://www.example.org/group07/ontology/Person> rdf:type owl:Class .
-
-
-###  http://www.example.org/group07/ontology/Place
-<http://www.example.org/group07/ontology/Place> rdf:type owl:Class .
-
-
-###  http://www.example.org/group07/ontology/PopulatedPlace
-<http://www.example.org/group07/ontology/PopulatedPlace> rdf:type owl:Class ;
-                                                         rdfs:subClassOf <http://www.example.org/group07/ontology/Place> .
-
-
-###  http://www.example.org/group07/ontology/Project
-<http://www.example.org/group07/ontology/Project> rdf:type owl:Class .
-
-
-###  http://www.example.org/group07/ontology/Researcher
-<http://www.example.org/group07/ontology/Researcher> rdf:type owl:Class ;
-                                                     rdfs:subClassOf <http://www.example.org/group07/ontology/Person> .
-
-
-###  http://www.example.org/group07/ontology/Street
-<http://www.example.org/group07/ontology/Street> rdf:type owl:Class ;
-                                                 rdfs:subClassOf <http://www.example.org/group07/ontology/PopulatedPlace> .
-
-
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+          rdfs:subClassOf [ rdf:type owl:trans ; 
+                            owl:onProperty :hasExplanation;
+                            owl:someValuesFrom xsd:string]

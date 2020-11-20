@@ -1,0 +1,1236 @@
+[
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Posting Date",
+      "expression": "value.toDate()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column Posting Date using expression value.toDate()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Transaction \nAmount",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column Transaction \nAmount using expression value.toNumber()"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "Posting Date",
+      "expression": "join ([coalesce(cells['Posting Date'].value,''),coalesce(cells['Merchant Name'].value,''),coalesce(cells['Transaction \nAmount'].value,'')],'_ ')",
+      "onError": "keep-original",
+      "newColumnName": "Transaction",
+      "columnInsertIndex": 1,
+      "description": "Create column Transaction at index 1 based on column Posting Date using expression join ([coalesce(cells['Posting Date'].value,''),coalesce(cells['Merchant Name'].value,''),coalesce(cells['Transaction \nAmount'].value,'')],'_ ')"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "WWW..MANCHESTER.AC.UK"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "MANCHESTER"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "WWW.BARPROFESSIONALTRA"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "BAR PROFESSIONAL TRA"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "WWW.CONNEVANS.COM"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "CONNEVANS"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "WWW.GAK.CO.UK"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "GAK"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "WWW.GEAR4MUSIC.COM"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "GEAR4MUSIC"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "WWW.MY.CHUBB.CO.UK"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "MY CHUBB"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "WWW.NEOPOST.CO.UK"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "NEOPOST"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "WWW.OFFICEFURNITUREONL"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "OFFICE FURNITURE ONL"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "WWW.PANELWAREHOUSE.COM"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "PANEL WAREHOUSE"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "WWW.PREMIERPOLYTUNNELS"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "PREMIER POLYTUNNELS"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "WWW.TRACKS-DIRECT.COM"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "TRACKS DIRECT"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "WWW.ZIGGYART.CO.UK"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "ZIGGY ART"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "WICKES"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "WICKES BUILDINGS"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "WHITTON & FROST & SON"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "WHITTON FROST & SON"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "WICKES BUILDING"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "WICKES BUILDINGS"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "THE INSERT COMPANY (UK"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "THE INSERT COMPANY"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "Amazon Svcs Europe,SAR"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Amazon Svcs Europe"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "AVG WWW.AVG.COM"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "AVG"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "CLAYTON-FIRSTAID."
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "CLAYTON-FIRSTAID"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "CLAYTON-FIRSTAID"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "CLAYTON FIRSTAID"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "DETECTNOLOGY (UK) LTD"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "DETECTNOLOGY LTD"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "EDMUNDSON ELECTRICAL L"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "EDMUNDSON ELECTRICAL"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "ECMUNDSON ELECTRICAL"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "EDMUNDSON ELECTRICAL"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "EDMUNSON ELEC"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "EDMUNSON ELECTRICAL"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "EDMUNSON ELECTRICAL"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "EDMUDNSON ELECTRICAL"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "EBUYER (UK) LTD"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "EBUYER LTD"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "ELMBRIDGE TYRE SERV LT"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "ELMBRIDGE TYRE SERV LTd"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "ELMBRIDGE TYRE SERV LTd"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "ELMBRIDGE TYRE SERV LTD"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "ISD TELFORD.CO.UK"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "ISD TELFORD"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "JOHN ELTON (LEICEST) L"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "JOHN ELTON LTD"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "NAS UK"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "NAS"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "MOLES SEEDS (UK) LTD"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "MOLES SEEDS LTD"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "MPD - IPSWICH 03"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "MPD"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "NEWTON-LE-WILLOWS BLIN"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "NEWTON LEWILLOWS BLIN"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "NEWTON LEWILLOWS BLIN"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "NEWTON LE WILLOWS BLIN"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "NOVA CHROME UK LTD"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "NOVA CHROME LTD"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "PC WORLD ONLINE"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "PC WORLD"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "PULMAN (DURHAM)"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "PULMAN"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "TAYLORS OF BOSTON - FO"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "TAYLORS OF BOSTON"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "UKBA3783952010"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "UK BANK AGENCY"
+        }
+      ],
+      "description": "Mass edit cells in column Merchant Name"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "Transaction",
+      "description": "Remove column Transaction"
+    },
+    {
+      "op": "core/column-split",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Posting Date",
+      "guessCellType": true,
+      "removeOriginalColumn": false,
+      "mode": "lengths",
+      "fieldLengths": [
+        10
+      ],
+      "description": "Split column Posting Date by field lengths"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "Merchant Name",
+      "expression": "grel:value.replace(\" \",\"_\")",
+      "onError": "set-to-blank",
+      "newColumnName": "Merchant Name Typed",
+      "columnInsertIndex": 3,
+      "description": "Create column Merchant Name Typed at index 3 based on column Merchant Name using expression grel:value.replace(\" \",\"_\")"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "Posting Date 1",
+      "expression": "join ([coalesce(cells['Posting Date 1'].value,''),coalesce(cells['Merchant Name Typed'].value,'')],'_')",
+      "onError": "keep-original",
+      "newColumnName": "Transaction",
+      "columnInsertIndex": 2,
+      "description": "Create column Transaction at index 2 based on column Posting Date 1 using expression join ([coalesce(cells['Posting Date 1'].value,''),coalesce(cells['Merchant Name Typed'].value,'')],'_')"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Posting Date 1",
+      "expression": "grel:value.replace(\"-\",\"\")",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column Posting Date 1 using expression grel:value.replace(\"-\",\"\")"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "Transaction",
+      "description": "Remove column Transaction"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "Transaction \nAmount",
+      "expression": "grel:value.replace(\".\",\"\")",
+      "onError": "set-to-blank",
+      "newColumnName": "Amount Number",
+      "columnInsertIndex": 5,
+      "description": "Create column Amount Number at index 5 based on column Transaction \nAmount using expression grel:value.replace(\".\",\"\")"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "Posting Date 1",
+      "expression": "join ([coalesce(cells['Posting Date 1'].value,''),coalesce(cells['Merchant Name Typed'].value,''),coalesce(cells['Amount Number'].value,'')],'_')",
+      "onError": "keep-original",
+      "newColumnName": "Transaction",
+      "columnInsertIndex": 2,
+      "description": "Create column Transaction at index 2 based on column Posting Date 1 using expression join ([coalesce(cells['Posting Date 1'].value,''),coalesce(cells['Merchant Name Typed'].value,''),coalesce(cells['Amount Number'].value,'')],'_')"
+    },
+    {
+      "op": "core/blank-down",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "timerange",
+            "name": "Posting Date",
+            "expression": "value",
+            "columnName": "Posting Date",
+            "from": 1422921600000,
+            "to": 1449100800000,
+            "selectTime": true,
+            "selectNonTime": true,
+            "selectBlank": false,
+            "selectError": true
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "Transaction",
+      "description": "Blank down cells in column Transaction"
+    },
+    {
+      "op": "core/row-removal",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "timerange",
+            "name": "Posting Date",
+            "expression": "value",
+            "columnName": "Posting Date",
+            "from": 1422921600000,
+            "to": 1449100800000,
+            "selectTime": true,
+            "selectNonTime": true,
+            "selectBlank": false,
+            "selectError": true
+          },
+          {
+            "type": "list",
+            "name": "Transaction",
+            "expression": "isBlank(value)",
+            "columnName": "Transaction",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": true,
+                  "l": "true"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "description": "Remove rows"
+    },
+    {
+      "op": "core/row-removal",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "timerange",
+            "name": "Posting Date",
+            "expression": "value",
+            "columnName": "Posting Date",
+            "from": 1422921600000,
+            "to": 1449100800000,
+            "selectTime": false,
+            "selectNonTime": true,
+            "selectBlank": true,
+            "selectError": true
+          }
+        ],
+        "mode": "row-based"
+      },
+      "description": "Remove rows"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name Typed",
+      "expression": "value.trim()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column Merchant Name Typed using expression value.trim()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Explanation Category: \nSee Guidance Sheet and use drop down list",
+      "expression": "value.trim()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column Explanation Category: \nSee Guidance Sheet and use drop down list using expression value.trim()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Posting Date",
+      "expression": "value.trim()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column Posting Date using expression value.trim()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Transaction",
+      "expression": "value.trim()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column Transaction using expression value.trim()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "value.trim()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column Merchant Name using expression value.trim()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Transaction \nAmount",
+      "expression": "value.trim()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column Transaction \nAmount using expression value.trim()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Amount Number",
+      "expression": "value.trim()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column Amount Number using expression value.trim()"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "Posting Date 1",
+      "description": "Remove column Posting Date 1"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "Merchant Name Typed",
+      "description": "Remove column Merchant Name Typed"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "Amount Number",
+      "description": "Remove column Amount Number"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "grel:value.replace(\"&\",\"\")",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column Merchant Name using expression grel:value.replace(\"&\",\"\")"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "grel:value.replace(\"  \",\"_\")",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column Merchant Name using expression grel:value.replace(\"  \",\"_\")"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Merchant Name",
+      "expression": "grel:value.replace(\" \", \"_\")",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column Merchant Name using expression grel:value.replace(\" \", \"_\")"
+    },
+    {
+      "op": "core/column-split",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Posting Date",
+      "guessCellType": true,
+      "removeOriginalColumn": false,
+      "mode": "lengths",
+      "fieldLengths": [
+        10
+      ],
+      "description": "Split column Posting Date by field lengths"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "Posting Date 1",
+      "expression": "grel:value.replace(\"-\",\"\")",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column Posting Date 1 using expression grel:value.replace(\"-\",\"\")"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "Transaction \nAmount",
+      "expression": "grel:value.replace(\".\",\"\")",
+      "onError": "set-to-blank",
+      "newColumnName": "Amount Number",
+      "columnInsertIndex": 5,
+      "description": "Create column Amount Number at index 5 based on column Transaction \nAmount using expression grel:value.replace(\".\",\"\")"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "Transaction",
+      "description": "Remove column Transaction"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "Posting Date 1",
+      "expression": "join ([coalesce(cells['Posting Date 1'].value,''),coalesce(cells['Amount Number'].value,'')],'_')",
+      "onError": "keep-original",
+      "newColumnName": "Transaction",
+      "columnInsertIndex": 2,
+      "description": "Create column Transaction at index 2 based on column Posting Date 1 using expression join ([coalesce(cells['Posting Date 1'].value,''),coalesce(cells['Amount Number'].value,'')],'_')"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "Transaction",
+      "description": "Remove column Transaction"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "Posting Date 1",
+      "expression": "join ([coalesce(cells['Posting Date 1'].value,''),coalesce(cells['Merchant Name'].value,''),coalesce(cells['Amount Number'].value,'')],'_')",
+      "onError": "keep-original",
+      "newColumnName": "Transaction",
+      "columnInsertIndex": 2,
+      "description": "Create column Transaction at index 2 based on column Posting Date 1 using expression join ([coalesce(cells['Posting Date 1'].value,''),coalesce(cells['Merchant Name'].value,''),coalesce(cells['Amount Number'].value,'')],'_')"
+    }
+  ]

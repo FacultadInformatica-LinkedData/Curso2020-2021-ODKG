@@ -66,7 +66,7 @@
     rdfs:label "contractingBody".
 :s_001 a rr:SubjectMap.
 :map_contractingBody_000 rr:subjectMap :s_001.
-:s_001 rr:template "http://www.example.com/group09/contracting_body/{Contracting_Body_IRI}".
+:s_001 rr:template "http://www.example.com/group09/department/{Section_IRI}/contracting_body/{Contracting_Body_IRI}".
 :pom_003 a rr:PredicateObjectMap.
 :map_contractingBody_000 rr:predicateObjectMap :pom_003.
 :pm_003 a rr:PredicateMap.
