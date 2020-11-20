@@ -298,7 +298,7 @@ map:s_2 a rr:SubjectMap;
 map:s_3 a rr:SubjectMap;
     rr:template "https://eit-opendata.arken-cloud.ir/country/{ISO_COUNTRY_CODE}".
 map:s_4 a rr:SubjectMap;
-    rr:template "https://eit-opendata.arken-cloud.ir/contract/notice/{NOTICE_ID}/pIrice".
+    rr:template "https://eit-opendata.arken-cloud.ir/contract/notice/{NOTICE_ID}/price".
 map:source_0 a rml:LogicalSource;
     rml:source "TED_CN_2018-updated-with-links.csv";
     rml:referenceFormulation ql:CSV.
