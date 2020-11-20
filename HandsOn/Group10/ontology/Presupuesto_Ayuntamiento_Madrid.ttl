@@ -24,7 +24,10 @@ default:Gastos
 default:Ingresos
       a       owl:Class ;
       rdfs:subClassOf default:Economico .
-	  
+
+default:Seccion
+      a       owl:Class .
+	  	  
 default:tieneCentro
       a       owl:InverseFunctionalProperty , owl:ObjectProperty ;
       rdfs:domain default:Economico ;
@@ -37,6 +40,11 @@ default:tieneEconomico
       rdfs:range default:Economico ;
       owl:inverseOf default:tieneCentro .
 
+default:tieneSeccion
+      a       owl:ObjectProperty ;
+      rdfs:domain default:Gastos ;
+      rdfs:range default:Seccion .
+
 default:id
       a       owl:DatatypeProperty ;
       rdfs:range xsd:string .
@@ -48,11 +56,6 @@ default:descripcion
 default:tieneCapitulo
       a       owl:DatatypeProperty ;
       rdfs:domain default:Economico ;
-      rdfs:range xsd:string .
-	  
-default:tieneSeccion
-      a       owl:DatatypeProperty ;
-      rdfs:domain default:Gastos ;
       rdfs:range xsd:string .
 
 default:tienePrograma
@@ -79,3 +82,18 @@ default:creditoDispuesto
       a       owl:DatatypeProperty ;
       rdfs:domain default:Gastos ;
       rdfs:range xsd:float .
+
+default:tienePoblacion
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Seccion ;
+      rdfs:range xsd:integer .
+
+default:tieneCoordenadas
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Seccion ;
+      rdfs:range xsd:string .
+
+default:tieneSuperficie
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Seccion ;
+      rdfs:range xsd:double .

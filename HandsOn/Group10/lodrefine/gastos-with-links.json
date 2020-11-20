@@ -1,1752 +1,2933 @@
 [
-    {
-      "op": "core/text-transform",
-      "engineConfig": {
-        "facets": [],
-        "mode": "row-based"
-      },
-      "columnName": "CRED_INICIAL",
-      "expression": "value.toNumber()",
-      "onError": "keep-original",
-      "repeat": false,
-      "repeatCount": 10,
-      "description": "Text transform on cells in column CRED_INICIAL using expression value.toNumber()"
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
     },
-    {
-      "op": "core/text-transform",
-      "engineConfig": {
-        "facets": [],
-        "mode": "row-based"
-      },
-      "columnName": "MOD_CREDITO",
-      "expression": "value.toNumber()",
-      "onError": "keep-original",
-      "repeat": false,
-      "repeatCount": 10,
-      "description": "Text transform on cells in column MOD_CREDITO using expression value.toNumber()"
+    "columnName": "CRED_INICIAL",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CRED_INICIAL using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
     },
-    {
-      "op": "core/text-transform",
-      "engineConfig": {
-        "facets": [],
-        "mode": "row-based"
-      },
-      "columnName": "MOD_CREDITO",
-      "expression": "value.replace(\",\",\".\")",
-      "onError": "keep-original",
-      "repeat": false,
-      "repeatCount": 10,
-      "description": "Text transform on cells in column MOD_CREDITO using expression value.replace(\",\",\".\")"
+    "columnName": "MOD_CREDITO",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MOD_CREDITO using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
     },
-    {
-      "op": "core/text-transform",
-      "engineConfig": {
-        "facets": [],
-        "mode": "row-based"
-      },
-      "columnName": "MOD_CREDITO",
-      "expression": "value.toNumber()",
-      "onError": "keep-original",
-      "repeat": false,
-      "repeatCount": 10,
-      "description": "Text transform on cells in column MOD_CREDITO using expression value.toNumber()"
+    "columnName": "MOD_CREDITO",
+    "expression": "value.replace(\",\",\".\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MOD_CREDITO using expression value.replace(\",\",\".\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
     },
-    {
-      "op": "core/text-transform",
-      "engineConfig": {
-        "facets": [],
-        "mode": "row-based"
-      },
-      "columnName": "C_AUTORIZADO",
-      "expression": "value.replace(\",\",\".\")",
-      "onError": "keep-original",
-      "repeat": false,
-      "repeatCount": 10,
-      "description": "Text transform on cells in column C_AUTORIZADO using expression value.replace(\",\",\".\")"
+    "columnName": "MOD_CREDITO",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MOD_CREDITO using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
     },
-    {
-      "op": "core/text-transform",
-      "engineConfig": {
-        "facets": [],
-        "mode": "row-based"
-      },
-      "columnName": "C_AUTORIZADO",
-      "expression": "value.toNumber()",
-      "onError": "keep-original",
-      "repeat": false,
-      "repeatCount": 10,
-      "description": "Text transform on cells in column C_AUTORIZADO using expression value.toNumber()"
+    "columnName": "C_AUTORIZADO",
+    "expression": "value.replace(\",\",\".\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column C_AUTORIZADO using expression value.replace(\",\",\".\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
     },
-    {
-      "op": "core/text-transform",
-      "engineConfig": {
-        "facets": [],
-        "mode": "row-based"
-      },
-      "columnName": "C_DEFINITIVO",
-      "expression": "value.toNumber()",
-      "onError": "keep-original",
-      "repeat": false,
-      "repeatCount": 10,
-      "description": "Text transform on cells in column C_DEFINITIVO using expression value.toNumber()"
+    "columnName": "C_AUTORIZADO",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column C_AUTORIZADO using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
     },
-    {
-      "op": "core/text-transform",
-      "engineConfig": {
-        "facets": [],
-        "mode": "row-based"
-      },
-      "columnName": "C_AUTORIZADO",
-      "expression": "value.replace(\",\",\".\")",
-      "onError": "keep-original",
-      "repeat": false,
-      "repeatCount": 10,
-      "description": "Text transform on cells in column C_AUTORIZADO using expression value.replace(\",\",\".\")"
+    "columnName": "C_DEFINITIVO",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column C_DEFINITIVO using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
     },
-    {
-      "op": "core/text-transform",
-      "engineConfig": {
-        "facets": [],
-        "mode": "row-based"
-      },
-      "columnName": "C_AUTORIZADO",
-      "expression": "value.toNumber()",
-      "onError": "keep-original",
-      "repeat": false,
-      "repeatCount": 10,
-      "description": "Text transform on cells in column C_AUTORIZADO using expression value.toNumber()"
+    "columnName": "C_AUTORIZADO",
+    "expression": "value.replace(\",\",\".\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column C_AUTORIZADO using expression value.replace(\",\",\".\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
     },
-    {
-      "op": "core/text-transform",
-      "engineConfig": {
-        "facets": [],
-        "mode": "row-based"
-      },
-      "columnName": "C_DISPUESTO",
-      "expression": "value.replace(\",\",\".\")",
-      "onError": "keep-original",
-      "repeat": false,
-      "repeatCount": 10,
-      "description": "Text transform on cells in column C_DISPUESTO using expression value.replace(\",\",\".\")"
+    "columnName": "C_AUTORIZADO",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column C_AUTORIZADO using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
     },
-    {
-      "op": "core/text-transform",
-      "engineConfig": {
-        "facets": [],
-        "mode": "row-based"
-      },
-      "columnName": "C_DISPUESTO",
-      "expression": "value.toNumber()",
-      "onError": "keep-original",
-      "repeat": false,
-      "repeatCount": 10,
-      "description": "Text transform on cells in column C_DISPUESTO using expression value.toNumber()"
+    "columnName": "C_DISPUESTO",
+    "expression": "value.replace(\",\",\".\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column C_DISPUESTO using expression value.replace(\",\",\".\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
     },
-    {
-      "op": "core/text-transform",
-      "engineConfig": {
-        "facets": [],
-        "mode": "row-based"
-      },
-      "columnName": "OBL_RECONOC",
-      "expression": "value.replace(\",\",\".\")",
-      "onError": "keep-original",
-      "repeat": false,
-      "repeatCount": 10,
-      "description": "Text transform on cells in column OBL_RECONOC using expression value.replace(\",\",\".\")"
+    "columnName": "C_DISPUESTO",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column C_DISPUESTO using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
     },
-    {
-      "op": "core/text-transform",
-      "engineConfig": {
-        "facets": [],
-        "mode": "row-based"
-      },
-      "columnName": "OBL_RECONOC",
-      "expression": "value.toNumber()",
-      "onError": "keep-original",
-      "repeat": false,
-      "repeatCount": 10,
-      "description": "Text transform on cells in column OBL_RECONOC using expression value.toNumber()"
+    "columnName": "OBL_RECONOC",
+    "expression": "value.replace(\",\",\".\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column OBL_RECONOC using expression value.replace(\",\",\".\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
     },
-    {
-      "op": "core/mass-edit",
-      "engineConfig": {
-        "facets": [],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Economico",
-      "expression": "value",
-      "edits": [
+    "columnName": "OBL_RECONOC",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column OBL_RECONOC using expression value.toNumber()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Economico",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "A LA EMPRESA MUNICIPAL DE LA VIVIENDA Y SUELO SA",
+          "A LA EMPRESA MUNICIPAL DE LA VIVIENDA Y SUELO, S.A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "A LA EMPRESA MUNICIPAL DE LA VIVIENDA Y SUELO SA"
+      }
+    ],
+    "description": "Mass edit cells in column Descripcion Economico"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CRED_INICIAL",
+    "description": "Remove column CRED_INICIAL"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "MOD_CREDITO",
+    "description": "Remove column MOD_CREDITO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "C_DEFINITIVO",
+    "description": "Remove column C_DEFINITIVO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "C_AUTORIZADO",
+    "description": "Remove column C_AUTORIZADO"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Centro",
+    "expression": "grel:\"00\"[0,4-row.index.length()]+row.index",
+    "onError": "set-to-blank",
+    "newColumnName": "Gastos",
+    "columnInsertIndex": 1,
+    "description": "Create column Gastos at index 1 based on column Centro using expression grel:\"00\"[0,4-row.index.length()]+row.index"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Economico",
+    "description": "Remove column Economico"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "Gastos",
+      "Centro",
+      "Descripcion Centro",
+      "Seccion",
+      "Descripcion Seccion",
+      "Programa",
+      "Descripcion Programa",
+      "Capitulo",
+      "Descripcion Capitulo",
+      "Descripcion Economico",
+      "C_DISPUESTO",
+      "OBL_RECONOC"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Gastos",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Gastos using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Centro",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Centro using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Seccion",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Seccion using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Programa",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Programa using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Capitulo",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Capitulo using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "C_DISPUESTO",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column C_DISPUESTO using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "OBL_RECONOC",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column OBL_RECONOC using expression value.toNumber()"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Centro",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/es/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Descripcion Centro to type null"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Centro",
+    "similarValue": "AYUNTAMIENTO DE MADRID",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3773976",
+      "name": "Ayuntamiento de Madrid",
+      "types": [
+        "Q22996476"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Ayuntamiento de Madrid (Q3773976) for cells containing \"AYUNTAMIENTO DE MADRID\" in column Descripcion Centro"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
         {
-          "from": [
-            "A LA EMPRESA MUNICIPAL DE LA VIVIENDA Y SUELO SA",
-            "A LA EMPRESA MUNICIPAL DE LA VIVIENDA Y SUELO, S.A"
+          "type": "list",
+          "name": "Descripcion Centro: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Centro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
           ],
-          "fromBlank": false,
-          "fromError": false,
-          "to": "A LA EMPRESA MUNICIPAL DE LA VIVIENDA Y SUELO SA"
+          "selectBlank": false,
+          "selectError": false
         }
       ],
-      "description": "Mass edit cells in column Descripcion Economico"
+      "mode": "row-based"
     },
-    {
-      "op": "core/column-removal",
-      "columnName": "CRED_INICIAL",
-      "description": "Remove column CRED_INICIAL"
-    },
-    {
-      "op": "core/column-removal",
-      "columnName": "MOD_CREDITO",
-      "description": "Remove column MOD_CREDITO"
-    },
-    {
-      "op": "core/column-removal",
-      "columnName": "C_DEFINITIVO",
-      "description": "Remove column C_DEFINITIVO"
-    },
-    {
-      "op": "core/column-removal",
-      "columnName": "C_AUTORIZADO",
-      "description": "Remove column C_AUTORIZADO"
-    },
-    {
-      "op": "core/column-addition",
-      "engineConfig": {
-        "facets": [],
-        "mode": "row-based"
-      },
-      "baseColumnName": "Centro",
-      "expression": "grel:\"00\"[0,4-row.index.length()]+row.index",
-      "onError": "set-to-blank",
-      "newColumnName": "Gastos",
-      "columnInsertIndex": 1,
-      "description": "Create column Gastos at index 1 based on column Centro using expression grel:\"00\"[0,4-row.index.length()]+row.index"
-    },
-    {
-      "op": "core/column-removal",
-      "columnName": "Economico",
-      "description": "Remove column Economico"
-    },
-    {
-      "op": "core/column-reorder",
-      "columnNames": [
-        "Gastos",
-        "Centro",
-        "Descripcion Centro",
-        "Seccion",
-        "Descripcion Seccion",
-        "Programa",
-        "Descripcion Programa",
-        "Capitulo",
-        "Descripcion Capitulo",
-        "Descripcion Economico",
-        "C_DISPUESTO",
-        "OBL_RECONOC"
+    "columnName": "Descripcion Centro",
+    "similarValue": "INFORMÁTICA DEL AYUNTAMIENTO DE MADRID",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"INFORMÁTICA DEL AYUNTAMIENTO DE MADRID\" in column Descripcion Centro"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Centro: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Centro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
       ],
-      "description": "Reorder columns"
+      "mode": "row-based"
     },
-    {
-      "op": "core/text-transform",
-      "engineConfig": {
-        "facets": [],
-        "mode": "row-based"
-      },
-      "columnName": "Gastos",
-      "expression": "value.toNumber()",
-      "onError": "keep-original",
-      "repeat": false,
-      "repeatCount": 10,
-      "description": "Text transform on cells in column Gastos using expression value.toNumber()"
-    },
-    {
-      "op": "core/text-transform",
-      "engineConfig": {
-        "facets": [],
-        "mode": "row-based"
-      },
-      "columnName": "Centro",
-      "expression": "value.toNumber()",
-      "onError": "keep-original",
-      "repeat": false,
-      "repeatCount": 10,
-      "description": "Text transform on cells in column Centro using expression value.toNumber()"
-    },
-    {
-      "op": "core/text-transform",
-      "engineConfig": {
-        "facets": [],
-        "mode": "row-based"
-      },
-      "columnName": "Seccion",
-      "expression": "value.toNumber()",
-      "onError": "keep-original",
-      "repeat": false,
-      "repeatCount": 10,
-      "description": "Text transform on cells in column Seccion using expression value.toNumber()"
-    },
-    {
-      "op": "core/text-transform",
-      "engineConfig": {
-        "facets": [],
-        "mode": "row-based"
-      },
-      "columnName": "Programa",
-      "expression": "value.toNumber()",
-      "onError": "keep-original",
-      "repeat": false,
-      "repeatCount": 10,
-      "description": "Text transform on cells in column Programa using expression value.toNumber()"
-    },
-    {
-      "op": "core/text-transform",
-      "engineConfig": {
-        "facets": [],
-        "mode": "row-based"
-      },
-      "columnName": "Capitulo",
-      "expression": "value.toNumber()",
-      "onError": "keep-original",
-      "repeat": false,
-      "repeatCount": 10,
-      "description": "Text transform on cells in column Capitulo using expression value.toNumber()"
-    },
-    {
-      "op": "core/text-transform",
-      "engineConfig": {
-        "facets": [],
-        "mode": "row-based"
-      },
-      "columnName": "C_DISPUESTO",
-      "expression": "value.toNumber()",
-      "onError": "keep-original",
-      "repeat": false,
-      "repeatCount": 10,
-      "description": "Text transform on cells in column C_DISPUESTO using expression value.toNumber()"
-    },
-    {
-      "op": "core/text-transform",
-      "engineConfig": {
-        "facets": [],
-        "mode": "row-based"
-      },
-      "columnName": "OBL_RECONOC",
-      "expression": "value.toNumber()",
-      "onError": "keep-original",
-      "repeat": false,
-      "repeatCount": 10,
-      "description": "Text transform on cells in column OBL_RECONOC using expression value.toNumber()"
-    },
-    {
-      "op": "core/recon",
-      "engineConfig": {
-        "facets": [],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Centro",
-      "config": {
-        "mode": "standard-service",
-        "service": "https://wdreconcile.toolforge.org/es/api",
-        "identifierSpace": "http://www.wikidata.org/entity/",
-        "schemaSpace": "http://www.wikidata.org/prop/direct/",
-        "autoMatch": true,
-        "columnDetails": [],
-        "limit": 0
-      },
-      "description": "Reconcile cells in column Descripcion Centro to type null"
-    },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Centro",
-      "similarValue": "AYUNTAMIENTO DE MADRID",
-      "judgment": "matched",
-      "match": {
-        "id": "Q3773976",
-        "name": "Ayuntamiento de Madrid",
-        "types": [
-          "Q22996476"
-        ],
-        "score": 100
-      },
-      "shareNewTopics": false,
-      "description": "Match item Ayuntamiento de Madrid (Q3773976) for cells containing \"AYUNTAMIENTO DE MADRID\" in column Descripcion Centro"
-    },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Centro: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Centro",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Centro",
+    "similarValue": "AGENCIA PARA EL EMPLEO DE MADRID",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"AGENCIA PARA EL EMPLEO DE MADRID\" in column Descripcion Centro"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Centro: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Centro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Centro",
-      "similarValue": "INFORMÁTICA DEL AYUNTAMIENTO DE MADRID",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"INFORMÁTICA DEL AYUNTAMIENTO DE MADRID\" in column Descripcion Centro"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Centro: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Centro",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Centro",
+    "similarValue": "AGENCIA TRIBUTARIA  MADRID",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"AGENCIA TRIBUTARIA  MADRID\" in column Descripcion Centro"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Centro: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Centro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Centro",
-      "similarValue": "AGENCIA PARA EL EMPLEO DE MADRID",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"AGENCIA PARA EL EMPLEO DE MADRID\" in column Descripcion Centro"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Centro: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Centro",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Centro",
+    "similarValue": "AGENCIA DE ACTIVIDADES",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"AGENCIA DE ACTIVIDADES\" in column Descripcion Centro"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Centro: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Centro",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Centro",
-      "similarValue": "AGENCIA TRIBUTARIA  MADRID",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"AGENCIA TRIBUTARIA  MADRID\" in column Descripcion Centro"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Centro: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Centro",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Centro",
+    "similarValue": "CONSOR. PLAN REHAB.EQUIP.TEATROS MADRID",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"CONSOR. PLAN REHAB.EQUIP.TEATROS MADRID\" in column Descripcion Centro"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Seccion",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/es/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Descripcion Seccion to type null"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Seccion",
+    "similarValue": "PRESIDENCIA DEL PLENO",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"PRESIDENCIA DEL PLENO\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Centro",
-      "similarValue": "AGENCIA DE ACTIVIDADES",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"AGENCIA DE ACTIVIDADES\" in column Descripcion Centro"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Centro: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Centro",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "OF. MPAL. CONTRA FRAUDE Y CORRUPCIÓN",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"OF. MPAL. CONTRA FRAUDE Y CORRUPCIÓN\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Centro",
-      "similarValue": "CONSOR. PLAN REHAB.EQUIP.TEATROS MADRID",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"CONSOR. PLAN REHAB.EQUIP.TEATROS MADRID\" in column Descripcion Centro"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon",
-      "engineConfig": {
-        "facets": [],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "config": {
-        "mode": "standard-service",
-        "service": "https://wdreconcile.toolforge.org/es/api",
-        "identifierSpace": "http://www.wikidata.org/entity/",
-        "schemaSpace": "http://www.wikidata.org/prop/direct/",
-        "autoMatch": true,
-        "columnDetails": [],
-        "limit": 0
-      },
-      "description": "Reconcile cells in column Descripcion Seccion to type null"
-    },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "PRESIDENCIA DEL PLENO",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"PRESIDENCIA DEL PLENO\" in column Descripcion Seccion"
-    },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "ALCALDÍA",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"ALCALDÍA\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "OF. MPAL. CONTRA FRAUDE Y CORRUPCIÓN",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"OF. MPAL. CONTRA FRAUDE Y CORRUPCIÓN\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "COORDINACIÓN GENERAL DE LA ALCALDÍA",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"COORDINACIÓN GENERAL DE LA ALCALDÍA\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "ALCALDÍA",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"ALCALDÍA\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "GERENCIA DE LA CIUDAD",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"GERENCIA DE LA CIUDAD\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "COORDINACIÓN GENERAL DE LA ALCALDÍA",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"COORDINACIÓN GENERAL DE LA ALCALDÍA\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "VICEALCALDÍA",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"VICEALCALDÍA\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "GERENCIA DE LA CIUDAD",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"GERENCIA DE LA CIUDAD\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "FAMILIAS, IGUALDAD Y BIENESTAR SOCIAL",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"FAMILIAS, IGUALDAD Y BIENESTAR SOCIAL\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "VICEALCALDÍA",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"VICEALCALDÍA\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "A.D. COORD.TERRIT., TRANSP. Y PART.CIUD.",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"A.D. COORD.TERRIT., TRANSP. Y PART.CIUD.\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "FAMILIAS, IGUALDAD Y BIENESTAR SOCIAL",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"FAMILIAS, IGUALDAD Y BIENESTAR SOCIAL\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "A.D. INTERNACIONALIZACIÓN Y COOPERACIÓN",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"A.D. INTERNACIONALIZACIÓN Y COOPERACIÓN\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "A.D. COORD.TERRIT., TRANSP. Y PART.CIUD.",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"A.D. COORD.TERRIT., TRANSP. Y PART.CIUD.\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "POLÍTICAS DE GÉNERO Y DIVERSIDAD",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"POLÍTICAS DE GÉNERO Y DIVERSIDAD\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "A.D. INTERNACIONALIZACIÓN Y COOPERACIÓN",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"A.D. INTERNACIONALIZACIÓN Y COOPERACIÓN\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "ÁREA DELEGADA VIVIENDA",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"ÁREA DELEGADA VIVIENDA\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "POLÍTICAS DE GÉNERO Y DIVERSIDAD",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"POLÍTICAS DE GÉNERO Y DIVERSIDAD\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "COORD. TERRITORIAL Y COOP. PÚBLICO-SOCIAL",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"COORD. TERRITORIAL Y COOP. PÚBLICO-SOCIAL\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "ÁREA DELEGADA VIVIENDA",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"ÁREA DELEGADA VIVIENDA\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "PORTAVOZ, COORD. JUNTA GOB. Y REL. PLENO",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"PORTAVOZ, COORD. JUNTA GOB. Y REL. PLENO\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "COORD. TERRITORIAL Y COOP. PÚBLICO-SOCIAL",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"COORD. TERRITORIAL Y COOP. PÚBLICO-SOCIAL\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "OBRAS Y EQUIPAMIENTOS",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"OBRAS Y EQUIPAMIENTOS\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "PORTAVOZ, COORD. JUNTA GOB. Y REL. PLENO",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"PORTAVOZ, COORD. JUNTA GOB. Y REL. PLENO\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "HACIENDA Y PERSONAL",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"HACIENDA Y PERSONAL\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "OBRAS Y EQUIPAMIENTOS",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"OBRAS Y EQUIPAMIENTOS\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "ECONOMÍA, INNOVACIÓN Y EMPLEO",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"ECONOMÍA, INNOVACIÓN Y EMPLEO\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "HACIENDA Y PERSONAL",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"HACIENDA Y PERSONAL\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "PORTAVOZ, SEGURIDAD Y EMERGENCIAS",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"PORTAVOZ, SEGURIDAD Y EMERGENCIAS\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "ECONOMÍA, INNOVACIÓN Y EMPLEO",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"ECONOMÍA, INNOVACIÓN Y EMPLEO\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "ÁREA DELEGADA DEPORTE",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"ÁREA DELEGADA DEPORTE\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "PORTAVOZ, SEGURIDAD Y EMERGENCIAS",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"PORTAVOZ, SEGURIDAD Y EMERGENCIAS\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "ÁREA DELEGADA TURISMO",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"ÁREA DELEGADA TURISMO\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "ÁREA DELEGADA DEPORTE",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"ÁREA DELEGADA DEPORTE\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "A.D. EMPRENDIMIENTO, EMPLEO E INNOVACIÓN",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"A.D. EMPRENDIMIENTO, EMPLEO E INNOVACIÓN\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "ÁREA DELEGADA TURISMO",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"ÁREA DELEGADA TURISMO\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "PARTICIP.CIUDADANA,TRANSP. Y GOB.ABIERTO",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"PARTICIP.CIUDADANA,TRANSP. Y GOB.ABIERTO\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "A.D. EMPRENDIMIENTO, EMPLEO E INNOVACIÓN",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"A.D. EMPRENDIMIENTO, EMPLEO E INNOVACIÓN\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "MEDIO AMBIENTE Y MOVILIDAD",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"MEDIO AMBIENTE Y MOVILIDAD\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "PARTICIP.CIUDADANA,TRANSP. Y GOB.ABIERTO",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"PARTICIP.CIUDADANA,TRANSP. Y GOB.ABIERTO\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "CULTURA, TURISMO Y DEPORTE",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"CULTURA, TURISMO Y DEPORTE\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "MEDIO AMBIENTE Y MOVILIDAD",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"MEDIO AMBIENTE Y MOVILIDAD\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "ENDEUDAMIENTO",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"ENDEUDAMIENTO\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "CULTURA, TURISMO Y DEPORTE",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"CULTURA, TURISMO Y DEPORTE\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "CRÉDITOS GLOBALES Y FONDO CONTINGENCIA",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"CRÉDITOS GLOBALES Y FONDO CONTINGENCIA\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "ENDEUDAMIENTO",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"ENDEUDAMIENTO\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "TRIBUNAL ECONÓMICO-ADMINISTRATIVO",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"TRIBUNAL ECONÓMICO-ADMINISTRATIVO\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "CRÉDITOS GLOBALES Y FONDO CONTINGENCIA",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"CRÉDITOS GLOBALES Y FONDO CONTINGENCIA\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE CENTRO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1763376",
+      "name": "Centro",
+      "types": [
+        "Q3032114"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Centro (Q1763376) for cells containing \"DISTRITO DE CENTRO\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "TRIBUNAL ECONÓMICO-ADMINISTRATIVO",
-      "judgment": "new",
-      "shareNewTopics": true,
-      "description": "Mark to create one single new item for all cells containing \"TRIBUNAL ECONÓMICO-ADMINISTRATIVO\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE SALAMANCA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1773521",
+      "name": "Salamanca",
+      "types": [
+        "Q3032114"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Salamanca (Q1773521) for cells containing \"DISTRITO DE SALAMANCA\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "DISTRITO DE CENTRO",
-      "judgment": "matched",
-      "match": {
-        "id": "Q1763376",
-        "name": "Centro",
-        "types": [
-          "Q3032114"
-        ],
-        "score": 100
-      },
-      "shareNewTopics": false,
-      "description": "Match item Centro (Q1763376) for cells containing \"DISTRITO DE CENTRO\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE FUENCARRAL-EL PARDO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q656196",
+      "name": "Fuencarral-El Pardo",
+      "types": [
+        "Q3032114"
+      ],
+      "score": 92
+    },
+    "shareNewTopics": false,
+    "description": "Match item Fuencarral-El Pardo (Q656196) for cells containing \"DISTRITO DE FUENCARRAL-EL PARDO\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "DISTRITO DE SALAMANCA",
-      "judgment": "matched",
-      "match": {
-        "id": "Q1773521",
-        "name": "Salamanca",
-        "types": [
-          "Q3032114"
-        ],
-        "score": 100
-      },
-      "shareNewTopics": false,
-      "description": "Match item Salamanca (Q1773521) for cells containing \"DISTRITO DE SALAMANCA\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE USERA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q953368",
+      "name": "Usera",
+      "types": [
+        "Q3032114"
+      ],
+      "score": 84
+    },
+    "shareNewTopics": false,
+    "description": "Match item Usera (Q953368) for cells containing \"DISTRITO DE USERA\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "DISTRITO DE FUENCARRAL-EL PARDO",
-      "judgment": "matched",
-      "match": {
-        "id": "Q656196",
-        "name": "Fuencarral-El Pardo",
-        "types": [
-          "Q3032114"
-        ],
-        "score": 92
-      },
-      "shareNewTopics": false,
-      "description": "Match item Fuencarral-El Pardo (Q656196) for cells containing \"DISTRITO DE FUENCARRAL-EL PARDO\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE PUENTE DE VALLECAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2003054",
+      "name": "Puente de Vallecas",
+      "types": [
+        "Q3032114"
+      ],
+      "score": 91
+    },
+    "shareNewTopics": false,
+    "description": "Match item Puente de Vallecas (Q2003054) for cells containing \"DISTRITO DE PUENTE DE VALLECAS\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "DISTRITO DE USERA",
-      "judgment": "matched",
-      "match": {
-        "id": "Q953368",
-        "name": "Usera",
-        "types": [
-          "Q3032114"
-        ],
-        "score": 84
-      },
-      "shareNewTopics": false,
-      "description": "Match item Usera (Q953368) for cells containing \"DISTRITO DE USERA\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE HORTALEZA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1928529",
+      "name": "Hortaleza",
+      "types": [
+        "Q3032114"
+      ],
+      "score": 87
+    },
+    "shareNewTopics": false,
+    "description": "Match item Hortaleza (Q1928529) for cells containing \"DISTRITO DE HORTALEZA\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "DISTRITO DE PUENTE DE VALLECAS",
-      "judgment": "matched",
-      "match": {
-        "id": "Q2003054",
-        "name": "Puente de Vallecas",
-        "types": [
-          "Q3032114"
-        ],
-        "score": 91
-      },
-      "shareNewTopics": false,
-      "description": "Match item Puente de Vallecas (Q2003054) for cells containing \"DISTRITO DE PUENTE DE VALLECAS\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE VILLAVERDE",
+    "judgment": "matched",
+    "match": {
+      "id": "Q919536",
+      "name": "Villaverde",
+      "types": [
+        "Q3032114"
+      ],
+      "score": 88
+    },
+    "shareNewTopics": false,
+    "description": "Match item Villaverde (Q919536) for cells containing \"DISTRITO DE VILLAVERDE\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "DISTRITO DE HORTALEZA",
-      "judgment": "matched",
-      "match": {
-        "id": "Q1928529",
-        "name": "Hortaleza",
-        "types": [
-          "Q3032114"
-        ],
-        "score": 87
-      },
-      "shareNewTopics": false,
-      "description": "Match item Hortaleza (Q1928529) for cells containing \"DISTRITO DE HORTALEZA\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE VICÁLVARO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q589403",
+      "name": "Vicálvaro",
+      "types": [
+        "Q3032114"
+      ],
+      "score": 87
+    },
+    "shareNewTopics": false,
+    "description": "Match item Vicálvaro (Q589403) for cells containing \"DISTRITO DE VICÁLVARO\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "DISTRITO DE VILLAVERDE",
-      "judgment": "matched",
-      "match": {
-        "id": "Q919536",
-        "name": "Villaverde",
-        "types": [
-          "Q3032114"
-        ],
-        "score": 88
-      },
-      "shareNewTopics": false,
-      "description": "Match item Villaverde (Q919536) for cells containing \"DISTRITO DE VILLAVERDE\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE SAN BLAS-CANILLEJAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2001937",
+      "name": "San Blas-Canillejas",
+      "types": [
+        "Q3032114"
+      ],
+      "score": 78
+    },
+    "shareNewTopics": false,
+    "description": "Match item San Blas-Canillejas (Q2001937) for cells containing \"DISTRITO DE SAN BLAS-CANILLEJAS\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Descripcion Centro",
+    "expression": "grel:\"https://www.wikidata.org/wiki/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikicentro",
+    "columnInsertIndex": 3,
+    "description": "Create column wikicentro at index 3 based on column Descripcion Centro using expression grel:\"https://www.wikidata.org/wiki/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Descripcion Seccion",
+    "expression": "grel:\"https://www.wikidata.org/wiki/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikiseccion",
+    "columnInsertIndex": 6,
+    "description": "Create column wikiseccion at index 6 based on column Descripcion Seccion using expression grel:\"https://www.wikidata.org/wiki/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Centro",
+    "expression": "value.replace(\"Á\",\"A\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Descripcion Centro using expression value.replace(\"Á\",\"A\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Seccion",
+    "expression": "value.replace(\"Á\",\"A\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Descripcion Seccion using expression value.replace(\"Á\",\"A\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Seccion",
+    "expression": "value.replace(\"É\",\"E\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Descripcion Seccion using expression value.replace(\"É\",\"E\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Seccion",
+    "expression": "value.replace(\"Í\",\"I\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Descripcion Seccion using expression value.replace(\"Í\",\"I\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Seccion",
+    "expression": "value.replace(\"Ó\",\"O\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Descripcion Seccion using expression value.replace(\"Ó\",\"O\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Seccion",
+    "expression": "value.replace(\"Ú\",\"U\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Descripcion Seccion using expression value.replace(\"Ú\",\"U\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Programa",
+    "expression": "value.replace(\"Á\",\"A\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Descripcion Programa using expression value.replace(\"Á\",\"A\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Programa",
+    "expression": "value.replace(\"É\",\"E\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Descripcion Programa using expression value.replace(\"É\",\"E\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Programa",
+    "expression": "value.replace(\"Í\",\"I\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Descripcion Programa using expression value.replace(\"Í\",\"I\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Programa",
+    "expression": "value.replace(\"Ó\",\"O\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Descripcion Programa using expression value.replace(\"Ó\",\"O\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Programa",
+    "expression": "value.replace(\"Ú\",\"U\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Descripcion Programa using expression value.replace(\"Ú\",\"U\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Capitulo",
+    "expression": "value.replace(\"Á\",\"A\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Descripcion Capitulo using expression value.replace(\"Á\",\"A\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Capitulo",
+    "expression": "value.replace(\"É\",\"E\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Descripcion Capitulo using expression value.replace(\"É\",\"E\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Capitulo",
+    "expression": "value.replace(\"Í\",\"I\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Descripcion Capitulo using expression value.replace(\"Í\",\"I\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Capitulo",
+    "expression": "value.replace(\"Ó\",\"O\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Descripcion Capitulo using expression value.replace(\"Ó\",\"O\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Capitulo",
+    "expression": "value.replace(\"Ú\",\"U\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Descripcion Capitulo using expression value.replace(\"Ú\",\"U\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Economico",
+    "expression": "value.replace(\"Á\",\"A\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Descripcion Economico using expression value.replace(\"Á\",\"A\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Economico",
+    "expression": "value.replace(\"É\",\"E\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Descripcion Economico using expression value.replace(\"É\",\"E\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Economico",
+    "expression": "value.replace(\"Í\",\"I\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Descripcion Economico using expression value.replace(\"Í\",\"I\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Economico",
+    "expression": "value.replace(\"Ó\",\"O\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Descripcion Economico using expression value.replace(\"Ó\",\"O\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Economico",
+    "expression": "value.replace(\"Ú\",\"U\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Descripcion Economico using expression value.replace(\"Ú\",\"U\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "wikiseccion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "https://www.wikidata.org/wiki/Q69883"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column wikiseccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion",
+          "expression": "value",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DISTRITO DE ARGANZUELA",
+                "l": "DISTRITO DE ARGANZUELA"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "DISTRITO DE VICÁLVARO",
-      "judgment": "matched",
-      "match": {
-        "id": "Q589403",
-        "name": "Vicálvaro",
-        "types": [
-          "Q3032114"
-        ],
-        "score": 87
-      },
-      "shareNewTopics": false,
-      "description": "Match item Vicálvaro (Q589403) for cells containing \"DISTRITO DE VICÁLVARO\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/recon-judge-similar-cells",
-      "engineConfig": {
-        "facets": [
-          {
-            "type": "list",
-            "name": "Descripcion Seccion: judgment",
-            "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
-            "columnName": "Descripcion Seccion",
-            "invert": false,
-            "omitBlank": false,
-            "omitError": false,
-            "selection": [
-              {
-                "v": {
-                  "v": "none",
-                  "l": "none"
-                }
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE ARGANZUELA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2000929",
+      "name": "Arganzuela",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Arganzuela (Q2000929) for cells containing \"DISTRITO DE ARGANZUELA\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion",
+          "expression": "value",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DISTRITO DE BARAJAS",
+                "l": "DISTRITO DE BARAJAS"
               }
-            ],
-            "selectBlank": false,
-            "selectError": false
-          }
-        ],
-        "mode": "row-based"
-      },
-      "columnName": "Descripcion Seccion",
-      "similarValue": "DISTRITO DE SAN BLAS-CANILLEJAS",
-      "judgment": "matched",
-      "match": {
-        "id": "Q2001937",
-        "name": "San Blas-Canillejas",
-        "types": [
-          "Q3032114"
-        ],
-        "score": 78
-      },
-      "shareNewTopics": false,
-      "description": "Match item San Blas-Canillejas (Q2001937) for cells containing \"DISTRITO DE SAN BLAS-CANILLEJAS\" in column Descripcion Seccion"
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
     },
-    {
-      "op": "core/column-addition",
-      "engineConfig": {
-        "facets": [],
-        "mode": "row-based"
-      },
-      "baseColumnName": "Descripcion Centro",
-      "expression": "grel:\"https://www.wikidata.org/wiki/\"+cell.recon.match.id",
-      "onError": "set-to-blank",
-      "newColumnName": "wikicentro",
-      "columnInsertIndex": 3,
-      "description": "Create column wikicentro at index 3 based on column Descripcion Centro using expression grel:\"https://www.wikidata.org/wiki/\"+cell.recon.match.id"
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE BARAJAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q807230",
+      "name": "Barajas",
+      "types": [
+        ""
+      ],
+      "score": 100
     },
-    {
-      "op": "core/column-addition",
-      "engineConfig": {
-        "facets": [],
-        "mode": "row-based"
-      },
-      "baseColumnName": "Descripcion Seccion",
-      "expression": "grel:\"https://www.wikidata.org/wiki/\"+cell.recon.match.id",
-      "onError": "set-to-blank",
-      "newColumnName": "wikiseccion",
-      "columnInsertIndex": 6,
-      "description": "Create column wikiseccion at index 6 based on column Descripcion Seccion using expression grel:\"https://www.wikidata.org/wiki/\"+cell.recon.match.id"
-    }
+    "shareNewTopics": false,
+    "description": "Match item Barajas (Q807230) for cells containing \"DISTRITO DE BARAJAS\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion",
+          "expression": "value",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DISTRITO DE CARABANCHEL",
+                "l": "DISTRITO DE CARABANCHEL"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE CARABANCHEL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1001991",
+      "name": "Carabanchel",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Carabanchel (Q1001991) for cells containing \"DISTRITO DE CARABANCHEL\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion",
+          "expression": "value",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DISTRITO DE CENTRO",
+                "l": "DISTRITO DE CENTRO"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE CENTRO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1763376",
+      "name": "Centro",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Centro (Q1763376) for cells containing \"DISTRITO DE CENTRO\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion",
+          "expression": "value",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DISTRITO DE CHAMARTIN",
+                "l": "DISTRITO DE CHAMARTIN"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE CHAMARTIN",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1766348",
+      "name": "Chamartín",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Chamartín (Q1766348) for cells containing \"DISTRITO DE CHAMARTIN\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion",
+          "expression": "value",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DISTRITO DE CHAMBERI",
+                "l": "DISTRITO DE CHAMBERI"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE CHAMBERI",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1763370",
+      "name": "Chamberí",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Chamberí (Q1763370) for cells containing \"DISTRITO DE CHAMBERI\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion",
+          "expression": "value",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DISTRITO DE CIUDAD LINEAL",
+                "l": "DISTRITO DE CIUDAD LINEAL"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE CIUDAD LINEAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1763694",
+      "name": "Ciudad Lineal",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Ciudad Lineal (Q1763694) for cells containing \"DISTRITO DE CIUDAD LINEAL\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion",
+          "expression": "value",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DISTRITO DE FUENCARRAL-EL PARDO",
+                "l": "DISTRITO DE FUENCARRAL-EL PARDO"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE FUENCARRAL-EL PARDO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q656196",
+      "name": "Fuencarral-El Pardo",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Fuencarral-El Pardo (Q656196) for cells containing \"DISTRITO DE FUENCARRAL-EL PARDO\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion",
+          "expression": "value",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DISTRITO DE HORTALEZA",
+                "l": "DISTRITO DE HORTALEZA"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE HORTALEZA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1928529",
+      "name": "Hortaleza",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Hortaleza (Q1928529) for cells containing \"DISTRITO DE HORTALEZA\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion",
+          "expression": "value",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DISTRITO DE LATINA",
+                "l": "DISTRITO DE LATINA"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE LATINA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q794954",
+      "name": "Latina",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Latina (Q794954) for cells containing \"DISTRITO DE LATINA\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion",
+          "expression": "value",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DISTRITO DE MONCLOA-ARAVACA",
+                "l": "DISTRITO DE MONCLOA-ARAVACA"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE MONCLOA-ARAVACA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2017682",
+      "name": "Moncloa-Aravaca",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Moncloa-Aravaca (Q2017682) for cells containing \"DISTRITO DE MONCLOA-ARAVACA\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion",
+          "expression": "value",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DISTRITO DE MORATALAZ",
+                "l": "DISTRITO DE MORATALAZ"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE MORATALAZ",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2076109",
+      "name": "Moratalaz",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Moratalaz (Q2076109) for cells containing \"DISTRITO DE MORATALAZ\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion",
+          "expression": "value",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DISTRITO DE PUENTE DE VALLECAS",
+                "l": "DISTRITO DE PUENTE DE VALLECAS"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE PUENTE DE VALLECAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2003054",
+      "name": "Puente de Vallecas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Puente de Vallecas (Q2003054) for cells containing \"DISTRITO DE PUENTE DE VALLECAS\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion",
+          "expression": "value",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DISTRITO DE RETIRO",
+                "l": "DISTRITO DE RETIRO"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE RETIRO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2002296",
+      "name": "Retiro",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Retiro (Q2002296) for cells containing \"DISTRITO DE RETIRO\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion",
+          "expression": "value",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DISTRITO DE SALAMANCA",
+                "l": "DISTRITO DE SALAMANCA"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE SALAMANCA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1773521",
+      "name": "Salamanca",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Salamanca (Q1773521) for cells containing \"DISTRITO DE SALAMANCA\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion",
+          "expression": "value",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DISTRITO DE SAN BLAS-CANILLEJAS",
+                "l": "DISTRITO DE SAN BLAS-CANILLEJAS"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE SAN BLAS-CANILLEJAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2001937",
+      "name": "San Blas-Canillejas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item San Blas-Canillejas (Q2001937) for cells containing \"DISTRITO DE SAN BLAS-CANILLEJAS\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion",
+          "expression": "value",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DISTRITO DE TETUAN",
+                "l": "DISTRITO DE TETUAN"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE TETUAN",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1773540",
+      "name": "Tetuán",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Tetuán (Q1773540) for cells containing \"DISTRITO DE TETUAN\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion",
+          "expression": "value",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DISTRITO DE USERA",
+                "l": "DISTRITO DE USERA"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE USERA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q953368",
+      "name": "Usera",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Usera (Q953368) for cells containing \"DISTRITO DE USERA\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion",
+          "expression": "value",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DISTRITO DE VICALVARO",
+                "l": "DISTRITO DE VICALVARO"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE VICALVARO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q589403",
+      "name": "Vicálvaro",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Vicálvaro (Q589403) for cells containing \"DISTRITO DE VICALVARO\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion",
+          "expression": "value",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DISTRITO DE VILLA DE VALLECAS",
+                "l": "DISTRITO DE VILLA DE VALLECAS"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE VILLA DE VALLECAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1947988",
+      "name": "Villa de Vallecas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Villa de Vallecas (Q1947988) for cells containing \"DISTRITO DE VILLA DE VALLECAS\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Descripcion Seccion",
+          "expression": "value",
+          "columnName": "Descripcion Seccion",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DISTRITO DE VILLAVERDE",
+                "l": "DISTRITO DE VILLAVERDE"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Descripcion Seccion",
+    "similarValue": "DISTRITO DE VILLAVERDE",
+    "judgment": "matched",
+    "match": {
+      "id": "Q919536",
+      "name": "Villaverde",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Villaverde (Q919536) for cells containing \"DISTRITO DE VILLAVERDE\" in column Descripcion Seccion"
+  },
+  {
+    "op": "core/extend-reconciled-data",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Descripcion Seccion",
+    "endpoint": "https://wdreconcile.toolforge.org/es/api",
+    "identifierSpace": "http://www.wikidata.org/entity/",
+    "schemaSpace": "http://www.wikidata.org/prop/direct/",
+    "extension": {
+      "properties": [
+        {
+          "id": "P1082",
+          "name": "población"
+        },
+        {
+          "id": "P625",
+          "name": "coordenadas"
+        },
+        {
+          "id": "P2046",
+          "name": "superficie"
+        }
+      ]
+    },
+    "columnInsertIndex": 6,
+    "description": "Extend data at index 6 based on column Descripcion Seccion"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "población",
+    "newColumnName": "wikipoblacion",
+    "description": "Rename column población to wikipoblacion"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "coordenadas",
+    "newColumnName": "wikicoordenadas",
+    "description": "Rename column coordenadas to wikicoordenadas"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "superficie",
+    "newColumnName": "wikisuperficie",
+    "description": "Rename column superficie to wikisuperficie"
+  }
+]

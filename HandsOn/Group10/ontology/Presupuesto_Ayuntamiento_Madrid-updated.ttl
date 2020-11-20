@@ -28,6 +28,9 @@ default:Ingresos
       a       economico:Payment ;
       rdfs:subClassOf default:Economico .
 	  
+default:Seccion
+      a       owl:Class .
+
 default:tieneCentro
       a       owl:InverseFunctionalProperty , owl:ObjectProperty ;
       rdfs:domain default:Economico ;
@@ -40,14 +43,14 @@ default:tieneEconomico
       rdfs:range default:Economico ;
       owl:inverseOf default:tieneCentro .
 
+default:tieneSeccion
+      a       owl:ObjectProperty ;
+      rdfs:domain default:Gastos ;
+      rdfs:range default:Seccion .
+
 default:tieneCapitulo
       a       owl:DatatypeProperty ;
       rdfs:domain default:Economico ;
-      rdfs:range xsd:string .
-	  
-default:tieneSeccion
-      a       owl:DatatypeProperty ;
-      rdfs:domain default:Gastos ;
       rdfs:range xsd:string .
 
 default:tienePrograma
@@ -64,6 +67,21 @@ default:creditoDispuesto
       a       owl:DatatypeProperty ;
       rdfs:domain default:Gastos ;
       rdfs:range xsd:float .
+ 
+default:tienePoblacion
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Seccion ;
+      rdfs:range xsd:integer .
+
+default:tieneCoordenadas
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Seccion ;
+      rdfs:range xsd:string .
+
+default:tieneSuperficie
+      a       owl:DatatypeProperty ;
+      rdfs:domain default:Seccion ;
+      rdfs:range xsd:double .
       
 # The properties id, descripcion, creditoGastado and recaudado have been replaced.
 #It can be seen on the following example:
@@ -101,5 +119,26 @@ default:creditoDispuesto
       # default:tieneCentro <http://group10.com/resource/Centro/AyuntamientoMadrid> ;
       # default:tienePrograma
               # "Promoción del Plan de Derechos Humanos"@es ;
-      # default:tieneSeccion
-              # "Presidencia del Pleno"@es .
+      # default:tieneSeccion <http://group10.com/resource/Seccion/PresidenciaDelPleno> .
+
+    # <http://group10.com/resource/Seccion/PresidenciaDelPleno>
+          # a       default:Seccion ;
+          # default:tienePoblacion
+                  # "0"^^xsd:integer ;
+          # default:tieneCoordenadas
+                  # "0"^^xsd:string ;
+          # default:tieneSuperficie
+                  # "0"^^xsd:double ;
+          # default:descripcion "Presidencia del Pleno"@es ;
+          # default:id "1"@es .
+                  
+    # <http://group10.com/resource/Seccion/Hortaleza>
+          # a       default:Seccion ;
+          # default:tienePoblacion
+                  # "180462"^^xsd:integer ;
+          # default:tieneCoordenadas
+                  # "40.469457,-3.640482"^^xsd:string ;
+          # default:tieneSuperficie
+                  # "27.4197624962822"^^xsd:double ;
+          # default:descripcion "Hortaleza"@es ;
+          # default:id "2"@es .
