@@ -28,7 +28,7 @@ map:map_Town_0 rml:logicalSource map:source_2;
     rr:subjectMap map:s_2;
     rr:predicateObjectMap map:pom_22, map:pom_23.
 map:om_0 a rr:ObjectMap;
-    rr:constant "http://eit-upm-opendata.com/ted#CAE";
+    rr:constant "http://www.w3.org/2002/07/owl#Class";
     rr:termType rr:IRI.
 map:om_1 a rr:ObjectMap;
     rml:reference "ISO_COUNTRY_CODE";
@@ -107,7 +107,7 @@ map:om_6 a rr:ObjectMap;
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#integer>.
 map:om_7 a rr:ObjectMap;
-    rr:constant "http://eit-upm-opendata.com/ted#Notice";
+    rr:constant "http://www.w3.org/2002/07/owl#Class";
     rr:termType rr:IRI.
 map:om_8 a rr:ObjectMap;
     rr:parentTriplesMap map:map_CAE_0;

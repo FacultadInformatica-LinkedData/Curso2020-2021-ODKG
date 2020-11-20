@@ -16,7 +16,6 @@ prefixes:
   id: http://schema.mobivoc.org/#
   descripcion: https://dublincore.org/specifications/dublin-core/dcmi-terms/#
   
-  
 
 mappings:
      
@@ -75,8 +74,7 @@ mappings:
 
       - [vocab:tieneSeccion,$(Descripcion Seccion),xsd:string]
       - [id:id,$(Seccion),xsd:string] 
-      - [descripcion:description,$(Descripcion Seccion),xsd:string]    
-
+      - [descripcion:description,$(Descripcion Seccion),xsd:string] 
 
       - [vocab:tienePrograma,$(Descripcion Programa),xsd:string]
       - [id:id,$(Programa),xsd:string] 
@@ -93,9 +91,11 @@ mappings:
       - [economico:hasCost,$(OBL_RECONOC),xsd:double]
       - [vocab:creditoDispuesto,$(C_DISPUESTO),xsd:double]
 
-        
+      - [owl:sameAs,$(wikiseccion)~iri] 
 
-  triplesmap4:
+  
+
+    triplesmap4:
     sources:
       - [ingresos-with-links.csv~csv]
     s: default:Ingresos/$(ingresos)
@@ -116,24 +116,6 @@ mappings:
       - [vocab:previsionIngresos,$(PREV.DEFINITIV),xsd:double]
       - [economico:hasMonetaryValue,$(RECAUDADO),xsd:double]
 
-
-  triplesmap5:
-    sources:
-      - [gastos-with-links.csv~csv]
-    s: default:Seccion/$(Descripcion Seccion)
-    po:
-      - [a,vocab:Seccion]
-      - [rdfs:label,id:id]
-      - [rdfs:comment,descripcion:description]
-
-      - [vocab:tienePoblacion,$(wikipoblacion),xsd:integer]
-      - [vocab:tieneCoordenadas,$(wikicoordenadas),xsd:string]
-      - [vocab:tieneSuperficie,$(wikisuperficie),xsd:double]
-      - [owl:sameAs,$(wikiseccion)~iri]
-
-      - [vocab:tieneSeccion,$(Descripcion Seccion),xsd:string]
-      - [id:id,$(Seccion),xsd:string] 
-      - [descripcion:description,$(Descripcion Seccion),xsd:string] 
 
 
 

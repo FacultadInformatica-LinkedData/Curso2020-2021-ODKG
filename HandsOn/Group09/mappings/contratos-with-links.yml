@@ -3,7 +3,7 @@ prefixes:
   "": http://www.example.com/group09
   schema: http://schema.org/
   owl: "http://www.w3.org/2002/07/owl#"
-  db: https://es.dbpedia.org/resource/
+  db: https://es.dbpedia.org/page/
   pproc: http://contsem.unizar.es/def/sector-publico/pproc#
   org: http://www.w3.org/ns/org#
   gr: http://purl.org/goodrelations/v1#
@@ -18,12 +18,12 @@ mappings:
       - [a, org:OrganizationalUnit]
       - [schema:name, $(Section), xsd:string]
       - [owl:sameAs, $(wikiSection)~iri]
-      - [org:subOrganizationOf, db:Ayuntamiento_de_Madrid]
+#      - [org:subOrganizationOf, db:Ayuntamiento_de_Madrid]
 
   contractingBody:
     sources:
       - [ContratosMenores2020-updated-with-links.csv~csv]
-    s: :/contracting_body/$(Contracting_Body_IRI)
+    s: :/department/$(Section_IRI)/contracting_body/$(Contracting_Body_IRI)
     po:
       - [a, org:Organization]
       - [schema:name, $(Contracting_Body), xsd:string]
