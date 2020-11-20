@@ -80,7 +80,7 @@ mappings:
   Price:
     sources:
       - ['TED_CN_2018-updated-with-links.csv~csv']
-    s: app:contract/notice/$(NOTICE_ID)/pIrice
+    s: app:contract/notice/$(NOTICE_ID)/price
     po:
       - [a, pproc:BundlePriceSpecification]
       - [gr:hasCurrency, "EUR", xsd:string]
