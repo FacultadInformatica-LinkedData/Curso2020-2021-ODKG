@@ -85,11 +85,11 @@ tr:nth-child(odd) {
                   </tr>
                     <tr>
                     <td>Address Country</td>
-                    <td><a></a>{{ contarctBody.addressCountry }}</td>
+                    <td><a href="/country/{{ contarctBody.country }}">{{ contarctBody.addressCountry }}</a></td>
                   </tr>
                   <tr>
                     <td>Address Locality</td>
-                    <td>{{ contarctBody.addressLocality }}</td>
+                    <td><a href="/town/{{ contarctBody.town }}">{{ contarctBody.addressLocality }}</a></td>
                   </tr>
                 </table>
             </div>
@@ -100,6 +100,7 @@ tr:nth-child(odd) {
         <div class="col-md-9 col-12">
             <div class="row text-left">
                 <h3>Country of CAE</h3>
+                <p><a href="/country/{{ country.name }}">visit the page</a></p>
             </div>
             <div class="row">
                 <table>
@@ -129,6 +130,7 @@ tr:nth-child(odd) {
         <div class="col-md-9 col-12">
             <div class="row text-left">
                 <h3>Town of CAE</h3>
+                <p><a href="/town/{{ locality.name }}">visit the page</a></p>
             </div>
             <div class="row">
                 <table>

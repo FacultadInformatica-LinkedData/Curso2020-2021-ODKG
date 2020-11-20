@@ -23,20 +23,14 @@ selfVCARD = Namespace("http://contsem.unizar.es/def/sector-publico/pproc#")
 sVCard = Namespace("http://eit-upm-opendata.com/ted/")
 universalContract = Namespace("http://contsem.unizar.es/def/sector-publico/pproc#")
 
-tim = rdflib.term.Literal('OPE')
-
 q = prepareQuery('''
               SELECT 
-                ?subject
+                ?predictor ?object
                 WHERE { 
-                ?subject vcard:type scard:ContractBodies.
-                ?subject nameCard:name ?oname .
-                FILTER contains(?oname, "%s")
+                vcard:%s ?predict ?object.
               } 
-              '''%("Oslo"),
-                 initNs={"vcard":  Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#"),
-                         "scard": Namespace("http://contsem.unizar.es/def/sector-publico/pproc#"),
-                         "nameCard": Namespace("http://schema.org/")
+              '''%("20184427"),
+                 initNs={"vcard":  Namespace("https://eit-opendata.arken-cloud.ir/contract/notice/")
                          }
         )
 
