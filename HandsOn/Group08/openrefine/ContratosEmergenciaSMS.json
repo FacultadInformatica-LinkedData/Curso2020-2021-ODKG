@@ -220,19 +220,6 @@
       "mode": "row-based"
     },
     "baseColumnName": "ProductURI",
-    "expression": "join ([coalesce(cells['ProductURI'].value,''),coalesce(cells['OrganizationURI'].value,'')],'_')",
-    "onError": "keep-original",
-    "newColumnName": "OrderItemID",
-    "columnInsertIndex": 2,
-    "description": "Create column OrderItemID at index 2 based on column ProductURI using expression join ([coalesce(cells['ProductURI'].value,''),coalesce(cells['OrganizationURI'].value,'')],'_')"
-  },
-  {
-    "op": "core/column-addition",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "baseColumnName": "ProductURI",
     "expression": "join ([coalesce(cells['ProductURI'].value,''),coalesce(cells['OrganizationURI'].value,''),coalesce(cells['Fecha'].value,'')],'_')",
     "onError": "keep-original",
     "newColumnName": "OrderID",
@@ -264,8 +251,8 @@
     "expression": "grel:row.record.cells[\"Cantidad Pedido\"].value.sum()",
     "onError": "set-to-blank",
     "newColumnName": "CantidadPedido",
-    "columnInsertIndex": 10,
-    "description": "Create column CantidadPedido at index 10 based on column Cantidad Pedido using expression grel:row.record.cells[\"Cantidad Pedido\"].value.sum()"
+    "columnInsertIndex": 9,
+    "description": "Create column CantidadPedido at index 9 based on column Cantidad Pedido using expression grel:row.record.cells[\"Cantidad Pedido\"].value.sum()"
   },
   {
     "op": "core/column-addition",
@@ -277,8 +264,8 @@
     "expression": "grel:row.record.cells[\"Cantidad Recibido\"].value.sum()",
     "onError": "set-to-blank",
     "newColumnName": "CantidadRecibido",
-    "columnInsertIndex": 12,
-    "description": "Create column CantidadRecibido at index 12 based on column Cantidad Recibido using expression grel:row.record.cells[\"Cantidad Recibido\"].value.sum()"
+    "columnInsertIndex": 11,
+    "description": "Create column CantidadRecibido at index 11 based on column Cantidad Recibido using expression grel:row.record.cells[\"Cantidad Recibido\"].value.sum()"
   },
   {
     "op": "core/column-addition",
@@ -290,8 +277,8 @@
     "expression": "grel:row.record.cells[\"Cantidad Pendiente\"].value.sum()",
     "onError": "set-to-blank",
     "newColumnName": "CantidadPendiente",
-    "columnInsertIndex": 14,
-    "description": "Create column CantidadPendiente at index 14 based on column Cantidad Pendiente using expression grel:row.record.cells[\"Cantidad Pendiente\"].value.sum()"
+    "columnInsertIndex": 13,
+    "description": "Create column CantidadPendiente at index 13 based on column Cantidad Pendiente using expression grel:row.record.cells[\"Cantidad Pendiente\"].value.sum()"
   },
   {
     "op": "core/column-addition",
@@ -303,8 +290,8 @@
     "expression": "grel:row.record.cells[\"Importe del Pedido\"].value.sum()",
     "onError": "set-to-blank",
     "newColumnName": "ImportePedido",
-    "columnInsertIndex": 16,
-    "description": "Create column ImportePedido at index 16 based on column Importe del Pedido using expression grel:row.record.cells[\"Importe del Pedido\"].value.sum()"
+    "columnInsertIndex": 15,
+    "description": "Create column ImportePedido at index 15 based on column Importe del Pedido using expression grel:row.record.cells[\"Importe del Pedido\"].value.sum()"
   },
   {
     "op": "core/column-addition",
@@ -316,8 +303,8 @@
     "expression": "grel:row.record.cells[\"Importe Pagado\"].value.sum()",
     "onError": "set-to-blank",
     "newColumnName": "ImportePagado",
-    "columnInsertIndex": 18,
-    "description": "Create column ImportePagado at index 18 based on column Importe Pagado using expression grel:row.record.cells[\"Importe Pagado\"].value.sum()"
+    "columnInsertIndex": 17,
+    "description": "Create column ImportePagado at index 17 based on column Importe Pagado using expression grel:row.record.cells[\"Importe Pagado\"].value.sum()"
   },
   {
     "op": "core/column-addition",
@@ -329,8 +316,8 @@
     "expression": "grel:value",
     "onError": "set-to-blank",
     "newColumnName": "ImportePendiente",
-    "columnInsertIndex": 20,
-    "description": "Create column ImportePendiente at index 20 based on column Importe Pendiente using expression grel:value"
+    "columnInsertIndex": 19,
+    "description": "Create column ImportePendiente at index 19 based on column Importe Pendiente using expression grel:value"
   },
   {
     "op": "core/column-removal",
@@ -372,8 +359,8 @@
     "expression": "grel:row.record.cells[\"VAT\"].value.uniques().get(row.record.cells[\"VAT\"].value.uniques().length()-1)",
     "onError": "set-to-blank",
     "newColumnName": "totalVAT",
-    "columnInsertIndex": 16,
-    "description": "Create column totalVAT at index 16 based on column VAT using expression grel:row.record.cells[\"VAT\"].value.uniques().get(row.record.cells[\"VAT\"].value.uniques().length()-1)"
+    "columnInsertIndex": 15,
+    "description": "Create column totalVAT at index 15 based on column VAT using expression grel:row.record.cells[\"VAT\"].value.uniques().get(row.record.cells[\"VAT\"].value.uniques().length()-1)"
   },
   {
     "op": "core/column-removal",
