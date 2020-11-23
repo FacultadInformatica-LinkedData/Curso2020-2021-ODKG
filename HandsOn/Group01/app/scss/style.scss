@@ -593,7 +593,7 @@ xcustom form elements
 	.checkbox-label,
 	.radio-label {
 		padding-left: 24px;
-		font-size: 1.4rem;
+		font-size: 1rem;
 		@include user-select(none);
 
 		&::before,
