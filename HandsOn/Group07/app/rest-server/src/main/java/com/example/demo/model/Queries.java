@@ -10,7 +10,7 @@ public class Queries {
 	 * Show all contents
 	 */
 	public static String showAll() {	
-		return "SELECT * {?s ?p ?o} LIMIT 100";
+		return "SELECT * {?s ?p ?o}";
 	}
 	
 	public static String showAllResearchers() {
@@ -39,15 +39,57 @@ public class Queries {
 				+ "SELECT DISTINCT ?x ?p ?o"
 				+ " WHERE"
 				+ "{"
-				+ "?x <http://schema.org/addressCountry> <http://www.example.com/group07/ontology/Country/" + Country + ">." 
+				+ "?x <http://schema.org/addressCountry> <http://www.example.com/group07/ontology/Country/"+ Country +">." 
 				+ "?x ?p ?o"
 				+ "}";
+	}
+	
+	/*
+	 * Show the organizations based on the name
+	 */
+	public static String getOrganizationsByName(String Name) {
+		
+		return  "SELECT DISTINCT ?x ?p ?o " + 
+				"WHERE " + 
+				"{ " + 
+				"  ?x <http://www.w3.org/2006/vcard/ns#organization-name> ?n." + 
+				"  FILTER(regex(str(?n),'"+Name+"')) " + 
+				"  ?x ?p ?o " + 
+				"}";
+	}
+	
+	/*
+	 * Show the projects based on the title
+	 */
+	public static String getProjectsByTitle(String Name) {
+		
+		return  "SELECT DISTINCT ?x ?p ?o " + 
+				"WHERE " + 
+				"{ " + 
+				"  ?x <http://purl.org/dc/terms/title> ?n. " + 
+				"  FILTER(regex(str(?n),\"Cancer\")) " + 
+				"  ?x ?p ?o " + 
+				"}";
+	}
+	
+	/*
+	 * Show the researchers based on the name
+	 */
+	public static String getResearchersByName(String Name) {
+		
+		return  "SELECT DISTINCT ?x ?p ?o " + 
+				"WHERE " + 
+				"{ " + 
+				"  ?x <http://xmlns.com/foaf/0.1/givenName>|<http://xmlns.com/foaf/0.1/familyName> ?n. " + 
+				"  FILTER(regex(str(?n),'"+Name+"')) " + 
+				"  ?x ?p ?o " + 
+				"}";
 	}
     
 	/*
 	 * Contribuction of each project 
 	 */
-	public static String getProjectContribuction(String Contribution) {
+	public static String getProjectContribution(String Contribution) {
 		
 		return "PREFIX foaf: <http://xmlns.com/foaf/0.1/> " + 
 				"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " + 
@@ -55,18 +97,17 @@ public class Queries {
 				"PREFIX ex:<http://www.example.org/group07/> " + 
 				"PREFIX ns: <http://www.w3.org/2006/vcard/ns#> " + 
 				"PREFIX owl: <http://www.w3.org/2002/07/owl#> " +
-				"SELECT DISTINCT ?y ?Organame" + 
-				" WHERE" + 
-				"?x <http://www.example.com/group07/contribution> ?y. " + 
-				"?x <http://www.example.com/group07/organization> ?z. " + 
-				"?z ns:organization-name ?Organame. " + 
-				"FILTER (xsd:double(?y) >= \'"+Contribution+"'\"^^xsd:double) " + 
+				"SELECT DISTINCT ?x ?p ?o" + 
+				" WHERE {" + 
+				" ?x <http://dbpedia.org/ontology/cost> ?cost. "+
+				" FILTER (?cost >= "+Contribution+") "+
+				" ?x ?p ?o "+
 				"}"; 
 	}
 	/*
 	 * Project states
 	 */
-	public static String getStateProject( String state) {
+	public static String getStateProject(String state) {
 		
 		return "PREFIX foaf: <http://xmlns.com/foaf/0.1/>" + 
 				"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>" + 
@@ -84,26 +125,23 @@ public class Queries {
 	}
 	
 	/*
-	 * Looking for reserchers that works in the organization
+	 * Looking for researchers that works in the organization
 	 */
 	
-	public static String getResercherOrganization(String Organization) {
+	public static String getResearchersOrganization(String Organization) {
 		
 		return "PREFIX foaf: <http://xmlns.com/foaf/0.1/>"
 				+ "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"
 				+ "PREFIX ns: <http://www.w3.org/2006/vcard/ns#>"
 				+ "PREFIX sch: <http://schema.org/>"
 				+ "PREFIX owl: <http://www.w3.org/2002/07/owl#>"
-				+ "SELECT DISTINCT ?tittle ?fullname ?wiki"
-				+ " WHERE"
-				+ "{"
-				+ "?x ns:organization-name '"+Organization+"'^^<http://www.w3.org/2001/XMLSchema#string>."
-				+ "?z sch:memberOf ?x."
-				+ "?z foaf:title ?tittle."
-				+ "?z  rdfs:label  ?fullname."
-				+ "?z  owl:sameAs ?wiki."
-				+ "}"
-				+ "order by asc(?x)";
+				+ "SELECT DISTINCT ?x ?p ?o " + 
+				"WHERE" + 
+				"{" + 
+				"  ?s ns:organization-name '"+Organization+"'." + 
+				"  ?x <http://schema.org/memberOf> ?s." + 
+				"  ?x ?p ?o" + 
+				"}";
 	}
 	
 }

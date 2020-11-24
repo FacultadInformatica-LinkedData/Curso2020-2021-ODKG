@@ -9,7 +9,7 @@
 
         <v-toolbar-title
           ><router-link style="color:white" :to="{ name: 'Home' }"
-            >CORDIS-EU RESEARCH PROJECTS</router-link
+            >PROJEU: LINKED RESEARCH AND INNOVATION PROJECTS</router-link
           ></v-toolbar-title
         >
 

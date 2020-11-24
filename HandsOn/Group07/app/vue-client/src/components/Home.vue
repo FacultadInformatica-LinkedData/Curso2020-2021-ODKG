@@ -1,49 +1,57 @@
 <template>
   <v-layout wrap>
     <v-flex mb-4>
-      <v-row justify="center" class="mx-2">
         <h1 class="display-2 font-weight-bold">
           PROJECTS UNDER HORIZON 2020
         </h1>
-          <v-spacer></v-spacer>
-          <v-text-field
-            v-model="search"
-            append-icon="mdi-magnify"
-            label="Search by title"
-            single-line
-            hide-details
-            class="shrink mb-n10"
-          ></v-text-field>
+        <v-row class="mb-2">
+          <v-col cols=9>
+          <v-toolbar dense>
+            <v-text-field
+              hide-details
+              label="Search by name"
+              v-model="searchName"
+            ></v-text-field>
+            <v-btn icon @click="searchByName(searchName)"><v-icon>mdi-magnify</v-icon></v-btn>
+            <v-text-field
+              hide-details
+              persistent-hint
+              label="Search projects with contribution greater than:"
+              v-model="searchContribution"
+            ></v-text-field>
+            <v-btn icon @click="searchByContribution(searchContribution)"><v-icon>mdi-magnify</v-icon></v-btn>
+          </v-toolbar>
+          </v-col>
         </v-row>
       <v-row no-gutters justify="center" class="mx-n16">
           <v-col
-            v-for="(project,key,index) in res"
-            :key="project.label"
-            cols="3"
+            v-for="(project,key) in projects"
+            :key="project.id"
+            cols="4"
           >
-            <v-card v-if="res" class=" ma-1" outlined tile>
-              <v-responsive :aspect-ratio="8 / 12">
+            <v-card v-if="res" class="ma-1 pa-n1" outlined tile>
+              <v-responsive :aspect-ratio="7 / 9">
                 <v-card-title v-if="titles"
-                  >{{titles[index].o.value}} ({{acronyms[index].o.value}})</v-card-title
+                  >{{titles[key].o.value}} ({{acronyms[key].o.value}})</v-card-title
                 >
 
                 <v-card-text justify="left">
                   <div><span style="font-weight:bold; font-size:1.1em;"
-                                  >Objective:</span> {{objectives[index].o.value}}</div>
+                                  >Objective:</span> {{objectives[key].o.value}}</div>
                   <div><span style="font-weight:bold; font-size:1.1em;"
-                                  >Programme:</span> {{programmes[index].o.value}}</div>
+                                  >Programme:</span> {{programmes[key].o.value}}</div>
                   <div><span style="font-weight:bold; font-size:1.1em;"
-                                  >Topic:</span> {{topics[index].o.value}}</div>
+                                  >Topic:</span> {{topics[key].o.value}}</div>
                   <div><span style="font-weight:bold; font-size:1.1em;"
-                                  >Total cost:</span> {{costs[index].o.value}}</div>
+                                  >Total cost:</span> {{costs[key].o.value}}</div>
                   <div><span style="font-weight:bold; font-size:1.1em;"
-                                  >Maximum contribution:</span> {{contributions[index].o.value}}</div>
+                                  >Maximum contribution:</span> {{contributions[key].o.value}}</div>
                   <div><span style="font-weight:bold; font-size:1.1em;"
-                                  >Dates:</span> {{ends[index].o.value.slice(0,10)}} - {{starts[index].o.value.slice(0,10)}}</div>
+                                  >Dates:</span> {{ends[key].o.value.slice(0,10)}} - {{starts[key].o.value.slice(0,10)}}</div>
                 </v-card-text>
 
                 <v-card-actions justify="center" class="card-actions">
-                  <v-btn text @click="visitWebpage(urls[index].o.value.replace('~IRI',''))">VISIT WEBPAGE</v-btn>
+                  <v-btn text @click="visitWebpage(urls[key].o.value.replace('~IRI',''))">VISIT WEBPAGE</v-btn>
                 </v-card-actions>
               </v-responsive>
             </v-card>
@@ -59,23 +67,39 @@ const CommonRepository = RepositoryFactory.get("common");
 
 export default {
   data: () => ({
-    search: "",
-    res:""
+    searchContribution: "",
+    searchTitle: "",
+    res:"",
+    projects: []
   }),
   async created() {
     this.res = await CommonRepository.getProjects();
+    this.projects = this.res.data.results.bindings.filter(resAux => {
+      return (resAux.p.value == "http://www.w3.org/2000/01/rdf-schema#label");
+    })
   },
   methods: {
     async visitWebpage(externalURL) {
       window.open(externalURL);
+    },
+    async searchByContribution(contribution){
+      this.res = "";
+      this.res = await CommonRepository.getProjectContribution(contribution);
+      this.projects=[];
+      this.projects = this.res.data.results.bindings.filter(resAux => {
+          return (resAux.p.value == "http://www.w3.org/2000/01/rdf-schema#label");
+        })
+    },
+    async searchByName(name){
+      this.res = "";
+      this.res = await CommonRepository.getProjectsByTitle(name);
+      this.projects=[];
+      this.projects = this.res.data.results.bindings.filter(resAux => {
+          return (resAux.p.value == "http://www.w3.org/2000/01/rdf-schema#label");
+        })
     }
   },
   computed: {
-    filteredList() {
-      return this.projects.filter(project => {
-          return project.title.toLowerCase().includes(this.search.toLowerCase());      
-      });
-    },
     titles(){
       return this.res.data.results.bindings.filter(proj => {
         return (proj.p.value == "http://purl.org/dc/terms/title");
@@ -143,6 +167,6 @@ h1 {
 .card-actions {
   position: absolute;
   bottom: 0;
-  left: 23%;
+  left: 30%;
 }
 </style>

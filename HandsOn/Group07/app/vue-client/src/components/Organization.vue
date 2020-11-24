@@ -1,49 +1,58 @@
 <template>
   <v-layout wrap>
-    <v-flex mb-4><v-row justify="center" class="mb-2">
+    <v-flex mb-4>
       <h1 class="display-2 font-weight-bold">
-        ORGANIZATIONS
+        ORGANIZATIONS UNDER HORIZON 2020
       </h1>
-      
-          <v-spacer></v-spacer>
-          <v-text-field
-            v-model="search"
-            append-icon="mdi-magnify"
-            label="Search"
-            single-line
-            hide-details
-            class="shrink mb-n10"
-          ></v-text-field>
+      <v-row class="mb-2">
+          <v-col cols=8>
+          <v-toolbar dense>
+            <v-text-field
+              hide-details
+              label="Search by name"
+              single-line
+              v-model="searchName"
+            ></v-text-field>
+            <v-btn icon @click="searchByName(searchName)"><v-icon>mdi-magnify</v-icon></v-btn>
+            <v-text-field
+              hide-details
+              label="Search by country"
+              single-line
+              v-model="searchCountry"
+            ></v-text-field>
+            <v-btn icon @click="searchByCountry(searchCountry)"><v-icon>mdi-magnify</v-icon></v-btn>
+          </v-toolbar>
+          </v-col>
         </v-row>
       <v-row no-gutters justify="center" class="mx-n16">
           <v-col
-            v-for="(org,key,index) in orgs"
-            :key="org.label"
+            v-for="(org,key) in organizations"
+            :key="org.id"
             cols="3"
           >
             <v-card v-if="orgs" class=" ma-1" outlined tile>
+              <div>
               <v-responsive :aspect-ratio="8 / 10">
                 <v-card-title v-if="names"
-                  >{{ names[index].o.value }} ({{abbreviations[index].o.value}})</v-card-title
+                  >{{ names[key].o.value }} ({{abbreviations[key].o.value}})</v-card-title
                 >
-
                 <v-card-text justify="left">
                   <div><span style="font-weight:bold; font-size:1.1em;"
-                                  >Country:</span> {{countries[index].o.value.slice(48).replaceAll("%20"," ")}}</div>
+                                  >Country:</span> {{countries[key].o.value.slice(48).replaceAll("%20"," ")}}</div>
                   <div><span style="font-weight:bold; font-size:1.1em;"
-                                  >City:</span> {{localities[index].o.value.slice(45).replaceAll("%20"," ")}}</div>
+                                  >City:</span> {{localities[key].o.value.slice(45).replaceAll("%20"," ")}}</div>
                   <div><span style="font-weight:bold; font-size:1.1em;"
-                                  >Street:</span> {{streets[index].o.value.slice(47).replaceAll("%20"," ")}}</div>
+                                  >Street:</span> {{streets[key].o.value.slice(47).replaceAll("%20"," ")}}</div>
                   <div><span style="font-weight:bold; font-size:1.1em;"
-                                  >Postal code:</span> {{postals[index].o.value}}</div>
+                                  >Postal code:</span> {{postals[key].o.value}}</div>
                   <div><span style="font-weight:bold; font-size:1.1em;"
-                                  >Activity type:</span> {{types[index].o.value}}</div>
+                                  >Activity type:</span> {{types[key].o.value}}</div>
                   </v-card-text>
                 <v-card-actions justify="center" class="card-actions">
-                  <v-btn text @click="visitWebpage(urls[index].o.value)">VISIT WEBPAGE</v-btn
+                  <v-btn text @click="visitWebpage(urls[key].o.value)">VISIT WEBPAGE</v-btn
       >
                 </v-card-actions>
-              </v-responsive>
+              </v-responsive></div>
             </v-card>
           </v-col>
         </v-row>
@@ -57,23 +66,39 @@ const CommonRepository = RepositoryFactory.get("common");
 
 export default {
   data: () => ({
-    search: "",
-    orgs:""
+    searchCountry: "",
+    searchName: "",
+    orgs: "",
+    organizations:[]
   }),
   async created() {
     this.orgs = await CommonRepository.getOrganizations();
+    this.organizations = this.orgs.data.results.bindings.filter(org => {
+          return (org.p.value == "http://www.w3.org/2000/01/rdf-schema#label");
+        })
   },
   methods: {
     async visitWebpage(externalURL) {
       window.open(externalURL);
+    },
+    async searchByName(name){
+      this.orgs = "";
+      this.orgs = await CommonRepository.getOrganizationsByName(name);
+      this.organizations=[];
+      this.organizations = this.orgs.data.results.bindings.filter(org => {
+        return (org.p.value == "http://www.w3.org/2000/01/rdf-schema#label");
+      });
+    },
+    async searchByCountry(country){
+      this.orgs = "";
+      this.orgs = await CommonRepository.getOrganizationsByCountry(country);
+      this.organizations=[];
+      this.organizations = this.orgs.data.results.bindings.filter(org => {
+          return (org.p.value == "http://www.w3.org/2000/01/rdf-schema#label");
+        })
     }
   },
   computed: {
-    filteredList() {
-      return this.organizations.filter(org => {
-          return org.name.toLowerCase().includes(this.search.toLowerCase());      
-      });
-    },
     names(){
       return this.orgs.data.results.bindings.filter(org => {
         return (org.p.value == "http://www.w3.org/2006/vcard/ns#organization-name");
