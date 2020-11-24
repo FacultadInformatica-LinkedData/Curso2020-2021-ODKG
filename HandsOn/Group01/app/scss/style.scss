@@ -30,7 +30,7 @@ body {
 }
 
 a {
-	color: $color-2;
+	color: blue;
 	text-decoration: none;
 }
 
@@ -226,7 +226,7 @@ xtab-filter
 			padding: 0 1em;
 			width: auto;
 
-			color: $color-4;
+			color: blue;
 			text-transform: uppercase;
 			font-weight: 700;
 			font-size: 1.3rem;
@@ -593,7 +593,7 @@ xcustom form elements
 	.checkbox-label,
 	.radio-label {
 		padding-left: 24px;
-		font-size: 1.4rem;
+		font-size: 1rem;
 		@include user-select(none);
 
 		&::before,
