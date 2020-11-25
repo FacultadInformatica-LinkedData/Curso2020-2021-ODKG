@@ -1,0 +1,14 @@
+// Global styles
+
+.notifications {
+  margin-top: 20px;
+}
+
+/* clase para no resaltar el icono de la toolbar de login
+   cuando se está en la página de login */
+.v-btn:not(.v-btn--text):not(.v-btn--outlined).v-btn--active.hide-active:before {
+  opacity: 0;
+}
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';

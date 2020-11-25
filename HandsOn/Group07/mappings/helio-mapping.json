@@ -1,0 +1,15 @@
+{
+  "datasources" : [
+      {
+        "id" : "RDF file",
+        "handler" : {"type" : "RDFHandler", "format" : "TURTLE"},
+        "provider"  : { "type" : "FileProvider", "file" : "./mapping-helio/data/output.ttl"}
+      }
+  ],
+  "resource_rules" : [
+    { 
+      "id" : "RDF file rules",
+      "datasource_ids" : ["RDF file"]
+    }
+  ]
+}
