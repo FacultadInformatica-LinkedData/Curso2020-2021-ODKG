@@ -1,39 +1,181 @@
 prefixes:
   rr: http://www.w3.org/ns/r2rml#
-  foaf: http://xmlns.com/foaf/0.1/
-  xsd: http://www.w3.org/2001/XMLSchema#
-  rdfs: http://www.w3.org/2000/01/rdf-schema#
-  rev: http://purl.org/stuff/rev#
-  schema: http://schema.org/
-  dct: http://purl.org/dc/terms/
   rml: http://semweb.mmlab.be/ns/rml#
   ql: http://semweb.mmlab.be/ns/ql#
-  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
-  vocab: http://example.org#
-  
+  transit: http://vocab.org/transit/terms/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  wgs84_pos: http://www.w3.org/2003/01/geo/wgs84_pos#
+  vocab: http://www.example.com/group07/
+ 
 mappings:
-  triplesmap1:
+  Project:
     sources:
-      - [moj-gpc-transactions-march-2015-updated.csv~csv]
-    s: http://GovernmentProcurementCard.es/trans/$(Transaction)
+      - [cordis-h2020projects-updated-snippet.csv~csv]
+    s: http://www.example.com/group07/project/$(id)
     po:
-      - [a, vocab:trans]
-      - [vocab:hasTransactionDate, $(PostingDate),xsd:dateTime]
-      - [vocab:hasTransactionAmount, $(TransactionAmount),xsd:double]
-      - [vocab:hasExplanation, $(ExplanationCategory),xsd:string]
-
-  triplesmap2:
-    sources:
-      - [C:\Users\delfi\Documents\MCD\ODKG\gitODKG\HandsOn\Group07\csv\moj-gpc-transactions-march-2015-updated.csv~csv]
-    s: http://GovernmentProcurementCard.es/seller/$(MerchantName)
-    po:
-      - [a, vocab:seller]
-      - p: vocab:makesOffer
+      - [a, vocab:project]
+      - [vocab:record, $(rcn),xsd:string]
+      - [vocab:acronym, $(acronym),xsd:string]
+      - [vocab:hasProgramme, $(programme),xsd:string]
+      - [vocab:topic, $(topics),xsd:string]
+      - [vocab:title, $(title),xsd:string]
+      - [vocab:startDate, $(startDate),xsd:dateTime]
+      - [vocab:endDate, $(endDate),xsd:dateTime]
+      - [vocab:url, $(projectUrl)~IRI]
+      - [vocab:objective, $(objective),xsd:string]
+      - [vocab:cost, $(totalCost),xsd:double]
+      - [vocab:Contribution, $(ecMaxContribution),xsd:double]
+      
+      - p: vocab:projectCoordinator
         o:
-          - mapping: triplesmap1
+          - mapping: Organization
             condition:
               function: equal
               parameters:
-                - [str1, $(Transaction)]
-                - [str2, $(Transaction)]
+                - [str1, $(coordinator)]
+                - [str2, $(name)] 
+                
+      - p: vocab:participant
+        o:
+          - mapping: Organization
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(participants)]
+                - [str2, $(shortName)] 
+      - p: vocab:coordinatorCountry
+        o:
+          - mapping: Organization
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(coordinatorCountries)]
+                - [str2, $(country)] 
+      - p: vocab:participantCountry
+        o:
+          - mapping: Organization
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(participantCountries)]
+                - [str2, $(country)] 
+      
+      
 
+  Organization:
+    sources:
+      - [cordis-h2020organizations-updated-snippet.csv~csv]
+    s: http://www.example.com/group07/organizaton/$(id)
+    po:
+      - [a, vocab:organization]
+      - [vocab:name, $(name),xsd:string]
+      - [vocab:shortName, $(shortName),xsd:string]
+      - [vocab:ActivityType, $(activityType),xsd:string]
+      - [vocab:country, $(country),xsd:string]
+      - [vocab:Street, $(street),xsd:string]
+      - [vocab:locality, $(city),xsd:string]
+      - [vocab:hasPostalCode, $(postCode),xsd:string]
+      
+                
+  Participant:
+    sources:
+      - [cordis-h2020organizations-updated-snippet.csv~csv]
+    s: http://www.example.com/group07/participant/$(id)
+    po:
+      - [a,  vocab:Participant]
+      - [vocab:End, $(endOfParticipation),xsd:boolean]
+      - [vocab:Contribution, $(ecContribution),xsd:string]
+      - [vocab:role, $(role),xsd:string]
+      
+      - p: vocab:projectID
+        o:
+          - mapping: Project
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(projectID)]
+                - [str2, $(id)] 
+      - p: vocab:projectRecord
+        o:
+          - mapping: Project
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(projectRcn)]
+                - [str2, $(rcn)] 
+      - p: vocab:acronym
+        o:
+          - mapping: Project
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(projectAcronym)]
+                - [str2, $(acronym)]
+      - p: vocab:organizationID
+        o:
+          - mapping: Organization
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(id)]
+                - [str2, $(id)] 
+      - p: vocab:name
+        o:
+          - mapping: Organization
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(name)]
+                - [str2, $(name)] 
+      - p: vocab:shortName
+        o:
+          - mapping: Organization
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(shortName)]
+                - [str2, $(shortName)] 
+      - p: vocab:country
+        o:
+          - mapping: Organization
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(country)]
+                - [str2, $(country)] 
+      
+  Researcher:
+    sources:
+      - [cordis-h2020-msca-fellows-updated-snippet.csv~csv]
+    s: http://www.example.com/group07/researcher/$(fullName)
+    po:
+      - [a,  vocab:Researcher]
+      - [vocab:title, $(title),xsd:string]
+      - [vocab:givenName, $(firstName),xsd:string]
+      - [vocab:lastName, $(lastName),xsd:string]
+      
+      - p: vocab:organizationId
+        o:
+          - mapping: Organization
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(organizationId)]
+                - [str2, $(id)] 
+      - p: vocab:projectId
+        o:
+          - mapping: Project
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(projectId)]
+                - [str2, $(id)]
+      - p: vocab:projectAcronym
+        o:
+          - mapping: Project
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(projectAcronym)]
+                - [str2, $(acronym)]
+    

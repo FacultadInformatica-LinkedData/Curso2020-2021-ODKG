@@ -1,0 +1,195 @@
+
+1: Get all the properties that can be applied to instance of the Project Class
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+ SELECT DISTINCT ?properties
+
+WHERE
+{
+?x a <http://www.wikidata.org/entity/Project>. 
+?x ?properties ?y
+} 
+LIMIT 100
+
+2: Get all the properties, except rdf:type, that can be applied to instances of the Organization class
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+SELECT DISTINCT ?properties
+
+WHERE
+{
+?x a <http://www.wikidata.org/entity/Organization>. 
+?x ?properties ?y
+FILTER(?properties != rdf:type)
+} 
+LIMIT 100
+
+3: Which different values exist for the properties, except for rdf:type, applicable to the instances of Politician?
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex:<http://www.example.org/group07/ontology/>
+
+
+SELECT DISTINCT ?value
+
+WHERE
+{
+?x a <http://www.wikidata.org/entity/Project>. 
+?x ?properties ?value
+FILTER(?properties != rdf:type) 
+} 
+LIMIT 100
+
+4: In class organization or each of these applicable properties, except for rdf:type, which different values do they take globally for all those instances?
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex:<http://www.example.org/group07/ontology/>
+
+SELECT DISTINCT ?properties ?value
+
+WHERE 
+{
+?x a <http://www.wikidata.org/entity/Organization>.
+?x ?properties ?value
+filter(?properties != rdf:type)
+}
+LIMIT 100
+
+5.Get all full name of researchers, together with the wikidata link of researchers,ordered by name(ascending)
+ 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex:<http://www.example.org/group07/ontology/>
+
+ 
+SELECT DISTINCT ?x ?name
+
+ WHERE {​​​​
+ 
+?x ex:wikidataFullName ?name.
+ 
+?x rdfs:label ?name.
+ 
+}​​​​
+
+6.Get all countries, together with the wikidata link of countries,ordered by name of country(ascending)
+ 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex:<http://www.example.org/group07/ontology/>
+
+ 
+SELECT DISTINCT ?x ?country
+
+ WHERE {​​​​
+ 
+?x ex:wikidataCountry ?country.
+ 
+?x rdfs:label ?country.
+}​​​​
+
+7.Get all the classes
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex:<http://www.example.org/group07/ontology/>
+ 
+SELECT DISTINCT ?class
+
+ WHERE
+
+ {​​​​
+
+ {​​​​?x a ?class}​​​​ 
+
+ UNION
+
+ {​​​​?class rdf:type rdfs:Class}​​​​
+
+ }​​​​
+ 
+8. Get all the subclasses of the class organization
+ 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex:<http://www.example.org/group07/ontology/>
+
+ 
+SELECT DISTINCT ?x
+
+ WHERE
+
+ {​​​​
+
+ ?x rdfs:subClassOf/rdfs:subClassOf* ex:Organization
+
+ }​​​​
+ 
+9.Get the amount of the ecContribution of projectID  705217
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex:<http://www.example.org/group07/ontology/>
+
+ 
+SELECT DISTINCT ?X
+
+ WHERE {​​​​
+
+ ex:705217 ex:contribution ?x
+
+ }​​​​
+ 
+10. Get all project record number, together with the coordinator country,ordered by project record number (ascending)
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex:<http://www.example.org/group07/ontology/>
+
+ 
+SELECT DISTINCT ?x ?rcn
+
+ WHERE {​​​​
+ 
+?x ex:country ?rcn.
+ 
+?x rdfs:label ?rcn.
+ 
+}​​​​
+
+ order by asc(asc(?rcn))
+ 
+
+
+ 11.Get all ecContribution with more than 100000
+ 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex:<http://www.example.org/group07/ontology/>
+
+ 
+SELECT DISTINCT ?x amonut
+
+ WHERE
+
+ {​​​​​​​​​
+
+ ?x rdf:type/rdfs:subClassOf* ex:contribution .​
+
+ ?x ex:Contribution ?amount.
+ 
+}​​​​​​​​​
+
+ FILTER ((?amount)^xsd:double > 100000)
+
+ }​​​​​​​​​
+ 
+LIMIT 100
+ 
+

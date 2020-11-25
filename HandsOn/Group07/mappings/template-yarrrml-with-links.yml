@@ -1,0 +1,169 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  transit: http://vocab.org/transit/terms/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  wgs84_pos: http://www.w3.org/2003/01/geo/wgs84_pos#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  vocab: http://www.example.com/group07/
+ 
+mappings:
+  Project:
+    sources:
+      - [cordis-h2020projects-with-links-snippet.csv~csv]
+    s: http://www.example.com/group07/project/$(id)
+    po:
+      - [a, vocab:project]
+      - [rdfs:label, $(id)]
+      - [vocab:record, $(rcn),xsd:string]
+      - [vocab:acronym, $(acronym),xsd:string]
+      - [vocab:programme, $(programme),xsd:string]
+      - [vocab:topic, $(topics),xsd:string]
+      - [vocab:title, $(title),xsd:string]
+      - [vocab:startDate, $(startDate),xsd:dateTime]
+      - [vocab:endDate, $(endDate),xsd:dateTime]
+      - [vocab:url, $(projectUrl)~IRI]
+      - [vocab:objective, $(objective),xsd:string]
+      - [vocab:cost, $(totalCost),xsd:double]
+      - [vocab:Contribution, $(ecMaxContribution),xsd:double]
+      
+  WikiCoordinator:
+    sources:
+      - [cordis-h2020projects-with-links-snippet.csv~csv]
+    s: http://www.example.com/group07/project/$(id)/coordinator/$(Coordinator)
+    po:
+      - [a, vocab:Coordinator]
+      - [owl:sameAs, $(WikiCoordinator)~iri]
+  
+  WikiCountry:
+    sources:
+      - [cordis-h2020projects-with-links-snippet.csv~csv]
+    s: http://www.example.com/group07/project/$(id)/coordinator/$(Coordinator)/country/$(coordinatorCountry)
+    po:
+      - [a, vocab:coordinatorCountry]
+      - [owl:sameAs, $(WikiCountry)~iri]
+      
+  Organization:
+    sources:
+      - [cordis-h2020organizations-with-links-snippet.csv~csv]
+    s: http://www.example.com/group07/organizaton/$(id)
+    po:
+      - [a, vocab:organization]
+      - [rdfs:label, $(id)]
+      - [vocab:name, $(name),xsd:string]
+      - [vocab:shortName, $(shortName),xsd:string]
+      - [vocab:ActivityType, $(activityType),xsd:string]
+      - [vocab:hasPostalCode, $(postCode),xsd:string]
+      
+      - p: vocab:Country
+        o:
+          - mapping: Country
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(country)]
+                - [str2, $(country)] 
+      - p: vocab:Street
+        o:
+          - mapping: Street
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(street)]
+                - [str2, $(street)]
+      - p: vocab:City
+        o:
+          - mapping: City
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(city)]
+                - [str2, $(city)]
+      
+  WikiOrganization:
+    sources:
+      - [cordis-h2020organizations-with-links-snippet.csv~csv]
+    s: http://www.example.com/group07/organization/$(name)
+    po:
+      - [a, vocab:organization]
+      - [rdfs:label, $(name)]
+      - [owl:sameAs, $(WikiOrganization)~iri]
+                
+  Participant:
+    sources:
+      - [cordis-h2020organizations-with-links-snippet.csv~csv]
+    s: http://www.example.com/group07/participation/$(participationId)
+    po:
+      - [a,  vocab:Participation]
+      - [rdfs:label, $(participationId)]
+      - [vocab:hasEnded, $(endOfParticipation),xsd:boolean]
+      - [vocab:Contribution, $(ecContribution),xsd:string]
+      - [vocab:role, $(role),xsd:string]
+      
+      - p: vocab:project
+        o:
+          - mapping: Project
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(projectID)]
+                - [str2, $(id)] 
+      - p: vocab:organization
+        o:
+          - mapping: Organization
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(id)]
+                - [str2, $(id)] 
+      
+  Researcher:
+    sources:
+      - [cordis-h2020-msca-fellows-with-links-snippet.csv~csv]
+    s: http://www.example.com/group07/researcher/$(fullName)
+    po:
+      - [a,  vocab:Researcher]
+      - [rdfs:label, $(fullName)]
+      - [vocab:title, $(title),xsd:string]
+      - [vocab:givenName, $(firstName),xsd:string]
+      - [vocab:lastName, $(lastName),xsd:string]
+      - [owl:sameAs, $(wikiFullName)~iri]
+      
+      - p: vocab:memberOf
+        o:
+          - mapping: Organization
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(organizationId)]
+                - [str2, $(id)] 
+      - p: vocab:participatesIn
+        o:
+          - mapping: Project
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(projectId)]
+                - [str2, $(id)]
+  Country:
+    sources:
+      - [cordis-h2020organizations-with-links-snippet.csv~csv]
+    s: http://www.example.com/group07/Country/$(country)
+    po:
+      - [a,  vocab:Country]
+      - [owl:sameAs, $(WikiCountry)~iri]
+  City:
+    sources:
+      - [cordis-h2020organizations-with-links-snippet.csv~csv]
+    s: http://www.example.com/group07/City/$(city)
+    po:
+      - [a,  vocab:City]
+      - [owl:sameAs, $(WikiCity)~iri]
+  Street:
+    sources:
+      - [cordis-h2020organizations-with-links-snippet.csv~csv]
+    s: http://www.example.com/group07/Street/$(street)
+    po:
+      - [a,  vocab:Street]
+      - [owl:sameAs, $(WikiStreet)~iri]   

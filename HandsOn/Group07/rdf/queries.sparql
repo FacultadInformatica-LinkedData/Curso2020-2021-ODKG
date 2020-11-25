@@ -1,67 +1,130 @@
 1.Get all the classes
-
+ 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?class
 WHERE
 {
-{?x a ?class} 
-UNION
-{?class rdf:type rdfs:Class}
+ {?x a ?class} 
+ UNION
+ {?class rdf:type rdfs:Class}
 }
+ 
 
-2. Get all the subclasses of the class Transaction (=trans)
+2. Get all the subclasses of the class Place
+ 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex:<http://www.example.org/group07/ontology/>
 
-PREFIX ex: <http://GovernmentProcurementCard.es#>
+SELECT DISTINCT ?x ?z
 
-SELECT DISTINCT ?x
-WHERE
+ WHERE
+
 {
-?x rdfs:subClassOf/rdfs:subClassOf* ex:trans
+ ?x rdfs:subClassOf ex:Place
 }
-
-3.Get the amount of the transaction 20150320_ALEXANDER_BROWN_AND_CO_166919 
-
-PREFIX ex: <http://GovernmentProcurementCard.es#>
-
-SELECT DISTINCT ?amount
+ 
+ 
+3.List class hierarchy
+ 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+ 
+SELECT DISTINCT ?subject ?label ?supertype
 WHERE {
-ex:20150320_ALEXANDER_BROWN_AND_CO_166919 ex:hasTransactionAmount ?amount.
-}
+    { ?subject a owl:Class . } UNION { ?individual a ?subject . } .
+    OPTIONAL { ?subject rdfs:subClassOf ?supertype } .
+    OPTIONAL { ?subject rdfs:label ?label }
+} ORDER BY ?subject
+ }​​​​
+ 
+4. Get all project record numbers, together with the coordinator country,ordered by rcn (ascending)
+ 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex:<http://www.example.org/group07/ontology/>
 
-4. Get all amounts, ordered by transaction date (ascending)
+ 
+SELECT DISTINCT ?x ?rcn
 
-PREFIX ex: <http://GovernmentProcurementCard.es#>
+ WHERE {​​​​
+ 
+?x ex:country ?rcn.
+ 
+?x rdfs:label ?rcn.
+ 
+}​​​​
 
-SELECT DISTINCT ?x ?amount
-WHERE {
-
-?x ex:hasTransactionDate ?amount .
-
-?amount ex:hasTransactionAmount ?date.
-
-}
-order by asc(str(?date))
+ order by asc(asc(?rcn))
+ 
 
 
-5.Get all transactions with more than 1.000 £
+ 5.Get all ecContribution with more than 100000
+ 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex:<http://www.example.org/group07/ontology/>
 
-PREFIX ex: <http://GovernmentProcurementCard.es#>
+ 
+SELECT DISTINCT ?x amonut
 
-SELECT DISTINCT ?x ?amount
-WHERE
-{​​​​​
-?x rdf:type/rdfs:subClassOf* ex:trans .​
-?x ex:hasTransactionAmount ?amount.
+ WHERE
 
-}​​​​​
-FILTER ((?amount)^xsd:double > 1000)
-}​​​​​
+ {​​​​​​​​​
 
+ ?x rdf:type/rdfs:subClassOf* ex:Contribution .​
+
+ ?x ex:Contribution ?amount.
+ 
+}​​​​​​​​​
+
+ FILTER ((?amount)^xsd:double > 100000)
+
+ }​​​​​​​​​
+ 
 LIMIT 100
+ 
+6. Describe the resource with  rdfs:label "Jan Gieseler”
+ 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex:<http://www.example.org/group07/ontology/>
 
-6. Describe seller named "ALEXANDER_BROWN_AND_CO"
 
-PREFIX ex: <http://GovernmentProcurementCard.es#>
-DESCRIBE ?x 
+ DESCRIBE ?x 
+ 
+WHERE{​​​​?x rdfs:label "Jan Gieseler" .
 
-WHERE{?x rdfs:label "ALEXANDER_BROWN_AND_CO" .
+ }​​​​
+
+7. Get all instance of class Organization
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex:<http://www.example.org/group07/ontology/>
+
+ 
+SELECT DISTINCT ?x
+
+ WHERE
+
+ {
+
+ ?x a/rdfs:subClassOf* ex:organization.
+
+ } LIMIT 100
+ 
+8. Get all resouces of status "closed"
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex:<http://www.example.org/group07/ontology/>
+
+ SELECT DISTINCT ?x ?status
+ WHERE
+{
+	?x ex:status ?status .
+	FILTER regex(?status, "^CLOSED")
 }
+
+ LIMIT 100

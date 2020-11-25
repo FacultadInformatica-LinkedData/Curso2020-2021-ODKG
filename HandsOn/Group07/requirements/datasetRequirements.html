@@ -9,24 +9,50 @@
      <body>
      <h1 >Dataset Requirements</h1>
         <ul>
-      <li> 1. Data are related to the public procurement domain.</li> 
-      <li> 2. Data are available as a CSV file (moj-gpc-transactions-march-2015.cvs).</li> 
-      <li> 3. Data have an open license of UK´s goverment as we show below.  
-                   <p> https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</p>
+      <li> R1. Data are related to European Union public procurement.</li> 
+      <li> R2. Data are available as a CSV file. There are three datasets which are used in this project.
+       <ul> 
+         <li> cordis-h2020projects.csv. This dataset contains projects and related organisations funded by European Union under the Horizon 2020 framework programme for research and innovation from 2014 to 2020. 
+         For more information click on the <a href="https://data.europa.eu/euodp/en/data/dataset/cordisH2020projects">link.  </a></li>
+         <li>cordis-h2020organizations.csv. The dataset contains information about the participating organisations. For detailed information click on the <a href="https://data.europa.eu/euodp/en/data/dataset/cordisH2020projects">link.  </a></li>
+         <li>cordis-h2020-msca-fellows.xlsx. This dataset lists the researchers working on projects funded by the Marie Skłodowska-Curie actions under the Horizon 2020 framework programme (H2020). For more information click on the <a href="https://data.europa.eu/euodp/en/data/dataset/cordisH2020projects/resource/5d050a7b-d902-4820-8c4a-078c2979679d">link.</a> </li>
+       </ul>
+      </li> 
+      <li> R3. Data published by EU institutions and bodies have an open license. The link is shown below.  
+                   <p> https://data.europa.eu/euodp/en/copyright</p>
             You are free to:<br>
                 - copy, publish, distribute and transmit the Information;<br>
                 - adapt the Information;<br>
                 - exploit the Information commercially and non-commercially for example, by combining it with other Information, or by including it in your own product or application.<br><br>
      
-      <li> 4. Some of the fiels are real-world entities. 
-            <p> We found only one: The Merchant. This entity can be linked another datasets for different dates.
-            </p> 
+      <li> R4. Some of the fiels are real-world entities. 
+            <ul>
+                <li> These entities can linked the projects in the dataset with participating organizations and  researchers.
+                   <ul>
+                       <li>ProjectRcn. It means Record Control Number </li>
+                       <li>ProjectID</li>
+                       <li>Acronym</li>
+                       <li>Coordinator. This entity show the organization's names</li>
+                       <li>OrganizationID</li>
+                   </ul>
+                </li> 
+                <li>Entities in other datasets that can be linked with entities in the selected datasets.
+                   <ul>
+                       <li>projectRcn </li>
+                       <li> projectId</li>
+                       <li>projectAcronym</li>
+                       <li>Coordinator's name</li>
+                       <li>OrganizationID</li>
+                   </ul>
+                </li>
+             </ul>
+               
        </li> 
-       <li> 5. There is a documentation for our dataset.It can be found in this 
-             <a href="https://www.gov.uk/government/publications/government-procurement-card--2">link.  </a>
-             </li>   
-       <li>6. We have one data source, the Ministry of Justice are publishing details of all transactions of £500 and over. </li>
+       <li> R5.There are more datasets related with our datasets. For more details, you can go to this
+             <a href="https://data.europa.eu/euodp/en/data/dataset/cordisH2020projects">link.  </a>
+             </li>  
+        <li> R6. Data come from multiple data sources.
+             </li>  
       </ul>
-
     </body>
 </html> 
