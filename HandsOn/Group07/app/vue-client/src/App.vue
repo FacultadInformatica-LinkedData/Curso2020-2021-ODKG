@@ -6,7 +6,6 @@
     <!-- Barra horizontal superior -->
     <div>
       <v-app-bar app color="primary" dark>
-
         <v-toolbar-title
           ><router-link style="color:white" :to="{ name: 'Home' }"
             >PROJEU: LINKED RESEARCH AND INNOVATION PROJECTS</router-link
@@ -47,10 +46,8 @@ export default {
       { title: "Click Me 2" }
     ]
   }),
-  computed: {
-  },
-  methods: {
-  }
+  computed: {},
+  methods: {}
 };
 </script>
 

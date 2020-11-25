@@ -17,7 +17,7 @@ public class H2020Service {
 	Model model;
 	Queries query;
 	
-	String namespace = "http://192.168.0.24:9999/blazegraph/namespace/h2020/sparql";
+	String namespace = "http://192.168.1.110:9999/blazegraph/namespace/h2020/sparql";
 	
 	public H2020Service() {
 	}
