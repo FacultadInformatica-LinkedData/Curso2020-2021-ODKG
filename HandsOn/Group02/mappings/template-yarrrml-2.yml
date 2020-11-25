@@ -1,0 +1,87 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rev: http://purl.org/stuff/rev#
+  schema: http://schema.org/
+  dct: http://purl.org/dc/terms/
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  vocab: http://example.org#
+  
+mappings:
+  contractsmap:
+    sources:
+      - [actividad_contractual_ayto_madrid_2020-updated.csv~csv]
+    s: http://MadridPublicContracts/ontology/$(Numero Contrato)
+    po:
+      - [a, vocab:Contrato]
+      - [vocab:hasYear,$(Año),xsd:gYear]
+      - [vocab:hasMonth,$(Mes),xsd:string]
+      - [vocab:hasContractNumber,$(Numero Contrato),xsd:integer]
+      - [vocab:hasExpNumber,$(Numero Expediente),xsd:integer]
+      - [vocab:hasDescription,$(Descripcion Contrato),xsd:string]
+      - [vocab:hasContractType,$(Tipo Contrato),xsd:string]
+      - [vocab:hasProcedure,$(Procedimiento Adjudicacion),xsd:string]
+      - [vocab:hasArticle,$(Articulo),xsd:integer]
+      - [vocab:hasSection,$(Apartado),xsd:string]
+      - [vocab:hasCriteria,$(Criterios Adjudicacion),xsd:string]
+      - [vocab:hasBudget,$(Presupuesto Total(IVA Incluido)),xsd:double]
+      - [vocab:hasAmount,$(Importe Adjudicacion (IVA Incluido)),xsd:double]
+      - [vocab:hasContractDate,$(Fecha Adjudicacion),xsd:date]
+      - [vocab:nameSR,$(Nombre/Razon Social),xsd:string]
+      - [vocab:isDeal,$(Acuerdo Marco),xsd:string]
+      - [vocab:isZeroCost,$(Ingreso/Coste Cero),xsd:string]
+      - [vocab:hasComments,$(Observaciones),xsd:string]
+      - p: vocab:hasOrganismoContratante
+        o:
+          - mapping: juntasmap
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(Organismo)]
+                - [str2, $(NOMBRE)]
+
+  organismosmap:
+    sources:
+      - [actividad_contractual_ayto_madrid_2020-updated.csv~csv]
+    s: http://MadridPublicContracts/ontology/$(Organismo)
+    po:
+      - [rdf:type, vocab:Publicorg]
+      - [vocab:orgtype,$(Descripcion Centro),xsd:string]
+
+  adjudicatariosmap:
+    sources:
+      - [actividad_contractual_ayto_madrid_2020-updated.csv~csv]
+    s: http://MadridPublicContracts/ontology/$(Nombre/Razon Social)
+    po:
+      - [rdf:type, vocab:Org]
+      - [vocab:orgtype,$(NIF/CIF Adjudicatario),xsd:string]
+
+  juntasmap:
+    sources:
+      - [juntas_distrito_ayuto_madrid-updated.csv~csv]
+    s: http://MadridPublicContracts/ontology/$(NOMBRE)
+    po:
+      - [rdf:type, vocab:Publicorg]
+      - [vocab:nombre,$(PK),xsd:string]
+      - [vocab:descripcion,$(DESCRIPCION-ENTIDAD),xsd:string]
+      - [vocab:horario,$(HORARIO),xsd:string]
+      - [vocab:equipamiento,$(EQUIPAMIENTO),xsd:string]
+      - [vocab:transporte,$(TRANSPORTE),xsd:string]
+      - [vocab:web,$(PÁGINA WEB),xsd:string]
+      - [vocab:nombrevia,$(NOMBRE-VÍA),xsd:string]
+      - [vocab:tipovia,$(TIPO-VIA),xsd:string]
+      - [vocab:numero,$(NÚMERO),xsd:integer]
+      - [vocab:localidad,$(LOCALIDAD),xsd:string]
+      - [vocab:provincia,$(PROVINCIA),xsd:string]
+      - [vocab:codigopostal,$(CÓDIGO POSTAL),xsd:integer]
+      - [vocab:barrio,$(BARRIO),xsd:string]
+      - [vocab:distrito,$(DISTRITO),xsd:string]
+      - [vocab:coordenadax,$(COORDENADA-X),xsd:integer]
+      - [vocab:coordenaday,$(COORDENADA-Y),xsd:integer]
+      - [vocab:latitud,$(LATITUD),xsd:integer]
+      - [vocab:longitud,$(LONGITUD),xsd:integer]
+      - [vocab:email,$(EMAIL),xsd:string]
